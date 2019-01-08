@@ -1,0 +1,12 @@
+Author:
+diwako
+
+Contributors:
+Nigel (Code, UI config)
+Terry (Icons [Terry])
+
+Special thanks:
+alganthe (General Arma modding support)
+baermitumlaut (General Arma modding support)
+dedmen (General Arma modding support)
+commy2 (Code examples / General Arma modding support)

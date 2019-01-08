@@ -8,14 +8,17 @@ diwako_dui_namebox_lists = [];
 diwako_dui_toggled_off = false;
 
 private _availableFonts = [
-    // "EtelkaNarrowMediumPro",
     "PuristaBold",
     "PuristaLight",
     "PuristaMedium",
     "PuristaSemibold",
     "RobotoCondensed",
     "RobotoCondensedBold",
-    "RobotoCondensedLight"
+    "RobotoCondensedLight",
+    "EtelkaMonospacePro",
+    // "EtelkaMonospaceProBold",
+    // "EtelkaNarrowMediumPro",
+    "LCD14"
     // "TahomaB"
 ];
 

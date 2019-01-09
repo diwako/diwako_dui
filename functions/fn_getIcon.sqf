@@ -1,7 +1,19 @@
 #include "../script_component.hpp"
 params [["_unit", objNull, [objNull]], ["_ignoreVehicleSeat", false]];
-diwako_dui_icon_style params ["_sql", "_medic", "_auto_rifleman", "_at_gunner", "_engineer", "_explosive_specialist", "_rifleman","_vehicle_cargo", "_vehicle_driver", "_fire_from_vehicle", "_vehicle_gunner", "_vehicle_commander"];
 if (isNull _unit) exitWith {_rifleman};
+
+diwako_dui_icon_style params ["_sql", "_medic", "_auto_rifleman", "_at_gunner", "_engineer", "_explosive_specialist", "_rifleman", "_vehicle_cargo", "_vehicle_driver", "_fire_from_vehicle", "_vehicle_gunner", "_vehicle_commander", "_rank_private", "_rank_corporal", "_rank_sergeant", "_rank_lieutenant", "_rank_captain", "_rank_major", "_rank_colonel"];
+
+if (!_ignoreVehicleSeat && {diwako_dui_showRank}) exitWith {
+        private _rank = rank _unit;
+    if (_rank =="PRIVATE") exitWith {_rank_private};
+    if (_rank =="CORPORAL") exitWith {_rank_corporal};
+    if (_rank =="SERGEANT") exitWith {_rank_sergeant};
+    if (_rank =="LIEUTENANT") exitWith {_rank_lieutenant};
+    if (_rank =="CAPTAIN") exitWith {_rank_captain};
+    if (_rank =="MAJOR") exitWith {_rank_major};
+    if (_rank =="COLONEL") exitWith {_rank_colonel};
+};
 
 if !(isNull objectParent _unit || {_ignoreVehicleSeat}) exitWith {
     private _crewInfo = ((fullCrew (vehicle _unit)) select {_x select 0 isEqualTo _unit}) select 0;

@@ -6,6 +6,7 @@ diwako_dui_group = [];
 diwako_dui_compass_pfHandle = -1;
 diwako_dui_namebox_lists = [];
 diwako_dui_toggled_off = false;
+diwako_dui_showRank = false;
 
 private _availableFonts = [
     "PuristaBold",
@@ -105,8 +106,6 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
     ,false
 ] call CBA_Settings_fnc_init;
 
-// todo keybind
-
 [
     "diwako_dui_compassRange"
     ,"SLIDER"
@@ -179,3 +178,12 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 },
 {false},
 [DIK_NUMPADMINUS, [false, true, false]], false] call CBA_fnc_addKeybind;
+
+[CBA_SETTINGS_CAT, "diwako_dui_button_showRank", "Hold to show ranks", {
+    diwako_dui_showRank = true;
+    true
+},
+{
+    diwako_dui_showRank = false;
+    true
+}] call CBA_fnc_addKeybind;

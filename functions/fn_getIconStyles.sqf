@@ -1,4 +1,5 @@
 private _configs = "true" configClasses (configFile >> "diwako_dui_icon_style");
+private _missionConfigs = "true" configClasses (missionConfigFile >> "diwako_dui_icon_style");
 
 private _iconNames = [];
 private _iconPaths = [];
@@ -18,27 +19,14 @@ private _iconPaths = [];
 	_paths pushBack getText (_x >> "fire_from_vehicle");
 	_paths pushBack getText (_x >> "vehicle_gunner");
 	_paths pushBack getText (_x >> "vehicle_commander");
+	_paths pushBack getText (_x >> "rank_private");
+	_paths pushBack getText (_x >> "rank_corporal");
+	_paths pushBack getText (_x >> "rank_sergeant");
+	_paths pushBack getText (_x >> "rank_lieutenant");
+	_paths pushBack getText (_x >> "rank_captain");
+	_paths pushBack getText (_x >> "rank_major");
+	_paths pushBack getText (_x >> "rank_colonel");
 	_iconPaths pushBack _paths;
-} forEach _configs;
-
-private _configs = "true" configClasses (missionConfigFile >> "diwako_dui_icon_style");
-
-{
-	private _paths = [];
-	_iconNames pushback getText (_x >> "name");
-	_paths pushBack getText (_x >> "sql");
-	_paths pushBack getText (_x >> "medic");
-	_paths pushBack getText (_x >> "auto_rifleman");
-	_paths pushBack getText (_x >> "at_gunner");
-	_paths pushBack getText (_x >> "engineer");
-	_paths pushBack getText (_x >> "explosive_specialist");
-	_paths pushBack getText (_x >> "rifleman");
-	_paths pushBack getText (_x >> "vehicle_cargo");
-	_paths pushBack getText (_x >> "vehicle_driver");
-	_paths pushBack getText (_x >> "fire_from_vehicle");
-	_paths pushBack getText (_x >> "vehicle_gunner");
-	_paths pushBack getText (_x >> "vehicle_commander");
-	_iconPaths pushBack _paths;
-} forEach _configs;
+} forEach (_configs + _missionConfigs);
 
 [_iconNames, _iconPaths]

@@ -16,6 +16,14 @@ class diwako_dui_icon_style
         fire_from_vehicle = "a3\ui_f\data\igui\cfg\simpletasks\types\rifle_ca.paa";
         vehicle_gunner = "a3\ui_f\data\igui\cfg\commandbar\imagegunner_ca.paa";
         vehicle_commander = "a3\ui_f\data\igui\cfg\commandbar\imagecommander_ca.paa";
+
+        rank_private = "a3\ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
+        rank_corporal = "a3\ui_f\data\GUI\Cfg\Ranks\corporal_gs.paa";
+        rank_sergeant = "a3\ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
+        rank_lieutenant = "a3\ui_f\data\GUI\Cfg\Ranks\lieutenant_gs.paa";
+        rank_captain = "a3\ui_f\data\GUI\Cfg\Ranks\captain_gs.paa";
+        rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_gs.paa";
+        rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa";
     };
 
     class terry
@@ -34,5 +42,13 @@ class diwako_dui_icon_style
         fire_from_vehicle = "a3\ui_f\data\igui\cfg\simpletasks\types\rifle_ca.paa";
         vehicle_gunner = "a3\ui_f\data\igui\cfg\commandbar\imagegunner_ca.paa";
         vehicle_commander = "a3\ui_f\data\igui\cfg\commandbar\imagecommander_ca.paa";
+
+        rank_private = "a3\ui_f\data\GUI\Cfg\Ranks\private_pr.paa";
+        rank_corporal = "a3\ui_f\data\GUI\Cfg\Ranks\corporal_pr.paa";
+        rank_sergeant = "a3\ui_f\data\GUI\Cfg\Ranks\sergeant_pr.paa";
+        rank_lieutenant = "a3\ui_f\data\GUI\Cfg\Ranks\lieutenant_pr.paa";
+        rank_captain = "a3\ui_f\data\GUI\Cfg\Ranks\captain_pr.paa";
+        rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_pr.paa";
+        rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_pr.paa";
     };
 };

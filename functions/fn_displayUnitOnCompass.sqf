@@ -20,6 +20,25 @@ private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
 private _fade = linearConversion [_circleRange*0.90, _circleRange, _distance, 1, 0, true];
 
+if (diwako_dui_enable_occlusion && {_fade > 0}) then {
+    private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
+    private _lastSeen = _unit getVariable "diwako_dui_lastSeen";
+
+    if (_vis == 0) then {
+        // unit not visible anymore
+        if (isNil "_lastSeen") then {
+            _lastSeen = time;
+            _unit setVariable ["diwako_dui_lastSeen", _lastSeen];
+        };
+        _fade = linearConversion [0, 10, time - _lastSeen, 1, 0, true] min _fade;
+    } else {
+        // unit visible
+        if !(isNil "_lastSeen") then {
+            _unit setVariable ["diwako_dui_lastSeen", nil];
+        };
+    };
+};
+
 private _ctrl = _ctrlGrp getVariable [('diwako_dui_ctrl_unit_' + str _unitID), controlNull];
 
 if (_fade <= 0) exitWith {
@@ -28,7 +47,6 @@ if (_fade <= 0) exitWith {
     controlNull
 };
 
-// todo exception for player direction (self)
 private _dir = -(_viewDir - (getDir _unit)) mod 360;
 private _divisor = linearConversion [35,50,_circleRange,2.25,2.75,false]; //2.25;
 

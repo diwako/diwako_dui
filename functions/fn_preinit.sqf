@@ -131,6 +131,15 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
     }
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_enable_occlusion"
+    ,"CHECKBOX"
+    ,["Enable Occlusion", "If player cannot see a unit it will slowly vanish from the compass until it is seen again."]
+    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

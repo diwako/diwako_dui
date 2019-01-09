@@ -13,6 +13,7 @@ class cfgFunctions {
             class getColorStyles {recompile = 1;};
             class canHudBeShown {recompile = 1;};
             class setCustomCode {recompile = 1;};
+            class pairBuddies {recompile = 1;};
         };
     };
 };

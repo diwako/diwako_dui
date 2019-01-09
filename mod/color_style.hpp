@@ -9,9 +9,10 @@ class diwako_dui_colors
         green = "#00E600";
         blue = "#005CFF";
         yellow = "#E6E600";
+        buddy = "#EE42F4";
     };
 
-    class ace
+    class ace:standard
     {
         name = "ACE 3";
 
@@ -22,7 +23,7 @@ class diwako_dui_colors
         yellow = "#FFFFAB";
     };
 
-    class sthud
+    class sthud:standard
     {
         name = "STUI";
 

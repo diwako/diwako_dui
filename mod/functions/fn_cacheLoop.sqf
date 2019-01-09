@@ -34,9 +34,9 @@ private _getColorFromHex = {
         if (_this == "BLUE") exitwith {diwako_dui_colors # 3};
         if (_this == "YELLOW") exitwith {diwako_dui_colors # 4};
         diwako_dui_colors # 0
-    };
+    }; 
     _x setVariable ["diwako_dui_color", _color];
-    _x setVariable ["diwako_dui_compass_color", _color call _getColorFromHex];
+    _x setVariable ["diwako_dui_compass_color", ([_color, diwako_dui_colors # 5] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]))) call _getColorFromHex];
 } forEach diwako_dui_group;
 
 if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {

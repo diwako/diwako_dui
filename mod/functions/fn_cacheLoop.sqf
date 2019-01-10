@@ -26,7 +26,7 @@ private _getColorFromHex = {
 };
 
 {
-    _x setVariable ["diwako_dui_compass_icon", [_x, true] call diwako_dui_fnc_getIcon];
+    _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
     _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
     private _color = assignedTeam _x call {
         if (_this == "RED") exitwith {diwako_dui_colors # 1};
@@ -34,9 +34,10 @@ private _getColorFromHex = {
         if (_this == "BLUE") exitwith {diwako_dui_colors # 3};
         if (_this == "YELLOW") exitwith {diwako_dui_colors # 4};
         diwako_dui_colors # 0
-    }; 
+    };
     _x setVariable ["diwako_dui_color", _color];
-    _x setVariable ["diwako_dui_compass_color", ([_color, diwako_dui_colors # 5] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]))) call _getColorFromHex];
+    _x setVariable ["diwako_dui_compass_color", _color call _getColorFromHex];
+    // _x setVariable ["diwako_dui_compass_color", ([_color, diwako_dui_colors # 5] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]))) call _getColorFromHex];
 } forEach diwako_dui_group;
 
 if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {
@@ -113,7 +114,15 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     };
     private _unit = _x;
     private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
-    _text = format ["%1<t color='%4' size='%6' shadow='1' shadowColor='#000000' align='left'>%5<img image='%2'valign='bottom'/> %3</t><br/>", _text, _unit getVariable ["diwako_dui_icon", DUI_DEFAULT_ICON], _unit getVariable ["ACE_Name", name _unit], _unit getVariable ["diwako_dui_color","#FFFFFF"],_selected,_textSize];
+    private _buddy = ["", diwako_dui_icon_style # 19] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
+    _text = format ["%1<t color='%4' size='%6' shadow='1' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
+        _text, // 1
+        _unit getVariable ["diwako_dui_icon", DUI_DEFAULT_ICON], // 2
+        _unit getVariable ["ACE_Name", name _unit], // 3
+        _unit getVariable ["diwako_dui_color","#FFFFFF"], // 4
+        _selected, // 5
+        _textSize, // 6
+        _buddy]; // 7
 } forEach diwako_dui_group;
 
 if !(isNull _curList) then {

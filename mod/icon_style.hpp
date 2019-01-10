@@ -24,9 +24,11 @@ class diwako_dui_icon_style
         rank_captain = "a3\ui_f\data\GUI\Cfg\Ranks\captain_gs.paa";
         rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_gs.paa";
         rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa";
+
+        buddy = "a3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa";
     };
 
-    class terry
+    class terry:standard
     {
         name = "Terry";
 

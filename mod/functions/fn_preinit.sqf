@@ -109,7 +109,7 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_compassRange"
     ,"SLIDER"
-    ,["Compas Range", "How far should players see units in the same group in meters"]
+    ,["Compass Range", "How far should players see units in the same group in meters"]
     ,[CBA_SETTINGS_CAT, "Compass"]
     ,[DUI_MIN_RANGE, DUI_MAX_RANGE, 35, 0]
     ,false

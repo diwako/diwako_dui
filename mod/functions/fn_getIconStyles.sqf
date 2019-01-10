@@ -26,6 +26,7 @@ private _iconPaths = [];
 	_paths pushBack getText (_x >> "rank_captain");
 	_paths pushBack getText (_x >> "rank_major");
 	_paths pushBack getText (_x >> "rank_colonel");
+	_paths pushBack getText (_x >> "buddy");
 	_iconPaths pushBack _paths;
 } forEach (_configs + _missionConfigs);
 

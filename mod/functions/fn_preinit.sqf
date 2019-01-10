@@ -164,6 +164,15 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_namelist_only_buddy_icon"
+    ,"CHECKBOX"
+    ,["Show Only Buddy Icon", "Shows only the buddy icon in the name list instead of both, buddy and unit class"]
+    ,[CBA_SETTINGS_CAT, "Name List"]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
 
 // keybind to toggle whole UI
 [CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", "Toggle UI on and off", {

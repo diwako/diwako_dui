@@ -11,7 +11,7 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
 } else {
 	private _action = ["diwako_dui_buddy_action", _label, "", {
 		[ace_player, _target] call diwako_dui_fnc_pairBuddies;
-	},{cursorObject in (units group ace_player)},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+	},{_target in (units group ace_player)},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
 	["CAManBase", 0, ["ACE_MainActions","ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 };

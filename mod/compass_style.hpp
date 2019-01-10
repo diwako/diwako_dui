@@ -13,4 +13,11 @@ class diwako_dui_compass_style
         full = "a3\ui_f\data\IGUI\Cfg\SquadRadar\SquadRadarCompassBackgroundTexture_ca.paa";
         limited = "a3\ui_f\data\IGUI\Cfg\SquadRadar\SquadRadarBackgroundTexture_ca.paa";
     };
+
+    class pizza
+    {
+        name = "Pizza Time";
+        full = "diwako_dui\UI\compass_styles\pizza\compass.paa";
+        limited = "diwako_dui\UI\compass_styles\pizza\compass_limited.paa";
+    };
 };

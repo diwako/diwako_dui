@@ -26,6 +26,7 @@ class diwako_dui_icon_style
         rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa";
 
         buddy = "a3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa";
+        buddy_compass = "diwako_dui\UI\icon_styles\standard\buddy_compass";
     };
 
     class terry:standard

@@ -10,35 +10,39 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 };
 
 private _player = [] call CBA_fnc_currentUnit;
-diwako_dui_group = units group _player;
-private _nums = toArray "0123456789ABCDEF"; //for converting hex nibbles to base 10 equivalents
+_group = units group _player;
+diwako_dui_group = _group;
+
+private _colorNameSpace = diwako_dui_colors;
 
 private _getColorFromHex = {
-    params ["_hex"];
+    params ["_key", "_hex"];
     _hex = toArray _hex;
     _hex deleteAt 0; //remove the '#' at the beginning
+    private _nums = toArray "0123456789ABCDEF"; //for converting hex nibbles to base 10 equivalents
 
     private _r = (_nums find (_hex select 0)) * 16 + (_nums find (_hex select 1));
     private _g = (_nums find (_hex select 2)) * 16 + (_nums find (_hex select 3));
     private _b = (_nums find (_hex select 4)) * 16 + (_nums find (_hex select 5));
-
-    [(_r/255),(_g/255),(_b/255)];
+    
+    private _color = [(_r/255),(_g/255),(_b/255)];
+    _colorNameSpace setVariable [_key, _color];
+    _color
 };
 
 {
     _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
     _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
-    private _color = assignedTeam _x call {
-        if (_this == "RED") exitwith {diwako_dui_colors # 1};
-        if (_this == "GREEN") exitwith {diwako_dui_colors # 2};
-        if (_this == "BLUE") exitwith {diwako_dui_colors # 3};
-        if (_this == "YELLOW") exitwith {diwako_dui_colors # 4};
-        diwako_dui_colors # 0
-    };
+    private _assignedTeam = assignedTeam _x;
+    private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
     _x setVariable ["diwako_dui_color", _color];
-    _x setVariable ["diwako_dui_compass_color", _color call _getColorFromHex];
-    // _x setVariable ["diwako_dui_compass_color", ([_color, diwako_dui_colors # 5] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]))) call _getColorFromHex];
-} forEach diwako_dui_group;
+
+    private _compassColor = _colorNameSpace getVariable (format ["%1_compass", _assignedTeam]);
+    if (isNil "_compassColor") then {
+        _compassColor = [format ["%1_compass", _assignedTeam], _color] call _getColorFromHex
+    };
+    _x setVariable ["diwako_dui_compass_color", _compassColor];
+} forEach _group;
 
 if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {
     ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
@@ -66,7 +70,7 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
     _grpCtrl ctrlShow false;
 };
 
-if (count diwako_dui_group == 1) exitWith {
+if (count _group == 1) exitWith {
     for "_i" from (count _lists) -1 to 0 step -1 do {
         ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
     };
@@ -114,7 +118,7 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     };
     private _unit = _x;
     private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
-    private _buddy = ["", diwako_dui_icon_style # 19] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
+    private _buddy = ["", diwako_dui_icon_style getVariable ["buddy", DUI_BUDDY]] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_DEFAULT_ICON], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
     _text = format ["%1<t color='%4' size='%6' shadow='1' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
@@ -124,7 +128,7 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
         _selected, // 5
         _textSize, // 6
         _buddy]; // 7
-} forEach diwako_dui_group;
+} forEach _group;
 
 if !(isNull _curList) then {
     _curList ctrlSetStructuredText parseText _text;

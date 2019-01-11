@@ -2,18 +2,18 @@ private _configs = "true" configClasses (configFile >> "diwako_dui_colors");
 private _missionConfigs = "true" configClasses (missionConfigFile >> "diwako_dui_colors");
 
 private _colorNames = [];
-private _colorPaths = [];
+private _namespaces = [];
 
 {
-	private _colors = [];
+	private _namespace = [] call CBA_fnc_createNamespace;
 	_colorNames pushback getText (_x >> "name");
-	_colors pushBack getText (_x >> "white");
-	_colors pushBack getText (_x >> "red");
-	_colors pushBack getText (_x >> "green");
-	_colors pushBack getText (_x >> "blue");
-	_colors pushBack getText (_x >> "yellow");
-	_colors pushBack getText (_x >> "buddy");
-	_colorPaths pushBack _colors;
+
+	_namespace setVariable ["MAIN", getText (_x >> "white")];
+	_namespace setVariable ["RED", getText (_x >> "red")];
+	_namespace setVariable ["GREEN", getText (_x >> "green")];
+	_namespace setVariable ["BLUE", getText (_x >> "blue")];
+	_namespace setVariable ["YELLOW", getText (_x >> "yellow")];
+	_namespaces pushBack _namespace;
 } forEach (_configs + _missionConfigs);
 
-[_colorNames, _colorPaths]
+[_colorNames, _namespaces]

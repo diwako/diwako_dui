@@ -2,32 +2,34 @@ private _configs = "true" configClasses (configFile >> "diwako_dui_icon_style");
 private _missionConfigs = "true" configClasses (missionConfigFile >> "diwako_dui_icon_style");
 
 private _iconNames = [];
-private _iconPaths = [];
+private _namespaces = [];
 
 {
-	private _paths = [];
+	private _namespace = [] call CBA_fnc_createNamespace;
 	_iconNames pushback getText (_x >> "name");
-	_paths pushBack getText (_x >> "sql");
-	_paths pushBack getText (_x >> "medic");
-	_paths pushBack getText (_x >> "auto_rifleman");
-	_paths pushBack getText (_x >> "at_gunner");
-	_paths pushBack getText (_x >> "engineer");
-	_paths pushBack getText (_x >> "explosive_specialist");
-	_paths pushBack getText (_x >> "rifleman");
-	_paths pushBack getText (_x >> "vehicle_cargo");
-	_paths pushBack getText (_x >> "vehicle_driver");
-	_paths pushBack getText (_x >> "fire_from_vehicle");
-	_paths pushBack getText (_x >> "vehicle_gunner");
-	_paths pushBack getText (_x >> "vehicle_commander");
-	_paths pushBack getText (_x >> "rank_private");
-	_paths pushBack getText (_x >> "rank_corporal");
-	_paths pushBack getText (_x >> "rank_sergeant");
-	_paths pushBack getText (_x >> "rank_lieutenant");
-	_paths pushBack getText (_x >> "rank_captain");
-	_paths pushBack getText (_x >> "rank_major");
-	_paths pushBack getText (_x >> "rank_colonel");
-	_paths pushBack getText (_x >> "buddy");
-	_iconPaths pushBack _paths;
+
+	_namespace setVariable ["sql", getText (_x >> "sql")];
+	_namespace setVariable ["medic", getText (_x >> "medic")];
+	_namespace setVariable ["auto_rifleman", getText (_x >> "auto_rifleman")];
+	_namespace setVariable ["at_gunner", getText (_x >> "at_gunner")];
+	_namespace setVariable ["engineer", getText (_x >> "engineer")];
+	_namespace setVariable ["explosive_specialist", getText (_x >> "explosive_specialist")];
+	_namespace setVariable ["rifleman", getText (_x >> "rifleman")];
+	_namespace setVariable ["vehicle_cargo", getText (_x >> "vehicle_cargo")];
+	_namespace setVariable ["vehicle_driver", getText (_x >> "vehicle_driver")];
+	_namespace setVariable ["fire_from_vehicle", getText (_x >> "fire_from_vehicle")];
+	_namespace setVariable ["vehicle_gunner", getText (_x >> "vehicle_gunner")];
+	_namespace setVariable ["vehicle_commander", getText (_x >> "vehicle_commander")];
+	_namespace setVariable ["PRIVATE", getText (_x >> "rank_private")];
+	_namespace setVariable ["CORPORAL", getText (_x >> "rank_corporal")];
+	_namespace setVariable ["SERGEANT", getText (_x >> "rank_sergeant")];
+	_namespace setVariable ["LIEUTENANT", getText (_x >> "rank_lieutenant")];
+	_namespace setVariable ["CAPTAIN", getText (_x >> "rank_captain")];
+	_namespace setVariable ["MAJOR", getText (_x >> "rank_major")];
+	_namespace setVariable ["COLONEL", getText (_x >> "rank_colonel")];
+	_namespace setVariable ["buddy", getText (_x >> "buddy")];
+	_namespace setVariable ["buddy_compass", getText (_x >> "buddy_compass")];
+	_namespaces pushBack _namespace;
 } forEach (_configs + _missionConfigs);
 
-[_iconNames, _iconPaths]
+[_iconNames, _namespaces]^

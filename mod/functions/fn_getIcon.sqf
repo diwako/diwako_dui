@@ -2,75 +2,63 @@
 params [["_unit", objNull, [objNull]], ["_player", objNull, [objNull]],["_forCompass", false]];
 if (isNull _unit) exitWith {_rifleman};
 
-diwako_dui_icon_style params ["_sql", "_medic", "_auto_rifleman", "_at_gunner", "_engineer", "_explosive_specialist", "_rifleman", "_vehicle_cargo", "_vehicle_driver", "_fire_from_vehicle", "_vehicle_gunner", "_vehicle_commander", "_rank_private", "_rank_corporal", "_rank_sergeant", "_rank_lieutenant", "_rank_captain", "_rank_major", "_rank_colonel", "_buddy"];
-
 if (!_forCompass && {diwako_dui_showRank}) exitWith {
-        private _rank = rank _unit;
-    if (_rank =="PRIVATE") exitWith {_rank_private};
-    if (_rank =="CORPORAL") exitWith {_rank_corporal};
-    if (_rank =="SERGEANT") exitWith {_rank_sergeant};
-    if (_rank =="LIEUTENANT") exitWith {_rank_lieutenant};
-    if (_rank =="CAPTAIN") exitWith {_rank_captain};
-    if (_rank =="MAJOR") exitWith {_rank_major};
-    if (_rank =="COLONEL") exitWith {_rank_colonel};
+    diwako_dui_icon_style getVariable [rank _unit, DUI_RANK_PRIVATE];
 };
 
 if !(isNull objectParent _unit || {_forCompass}) exitWith {
     private _crewInfo = ((fullCrew (vehicle _unit)) select {_x select 0 isEqualTo _unit}) select 0;
     _crewInfo params ["", "_role", "_index", "_turretPath", "_isTurret"];
 
+    // Cargo
     if (_role == "cargo") exitWith {
-        _vehicle_cargo
+        diwako_dui_icon_style getVariable ["vehicle_cargo", DUI_VEHICLE_CARGO];
     };
 
+    // Drivers
     if (_role == "driver") exitWith {
-        // if (vehicle _unit isKindOf "Air") then
-        // {
-        // //no suitable icons for this so we are using a resized one
-        // "@stui\addons\grouphud\imagepilot_ca.paa"
-        // } else
-        // {
-            _vehicle_driver
-        // };
+        diwako_dui_icon_style getVariable ["vehicle_driver", DUI_VEHICLE_DRIVER];
     };
 
-    //FFV
+    // FFV
     if (_role == "turret" && _isTurret) exitWith {
-        _fire_from_vehicle
+        diwako_dui_icon_style getVariable ["fire_from_vehicle", DUI_FIRE_FROM_VEHICLE];
     };
 
-    //gunners and sometimes copilots
+    // Gunners or Copilots
     if (_role == "gunner" || (_role == "turret" && !_isTurret)) exitWith {
-        _vehicle_gunner
+        diwako_dui_icon_style getVariable ["vehicle_gunner", DUI_VEHICLE_GUNNER];
     };
+
+    // Commander
     if (_role == "commander") exitWith {
-        _vehicle_commander
+        diwako_dui_icon_style getVariable ["vehicle_commander", DUI_VEHICLE_COMMANDER];
     };
 };
 
 // Buddy
 if (_player == (_unit getVariable ["diwako_dui_buddy", objNull])) exitWith {
-    _buddy
+    diwako_dui_icon_style getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
 };
 
 // Leader
 if (leader(_unit) == _unit) exitWith {
-    _sql
+    diwako_dui_icon_style getVariable ["sql", DUI_SQL];
 };
 
 // AR
 if (getText(configFile >> "CfgWeapons" >> (primaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_mg_ca.paa") exitWith {
-    _auto_rifleman
+    diwako_dui_icon_style getVariable ["auto_rifleman", DUI_AUTO_RIFLEMAN];
 };
 
 // AT
 if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa") exitWith {
-    _at_gunner
+    diwako_dui_icon_style getVariable ["at_gunner", DUI_AT_GUNNER];
 };
 
 // Medic
 if (_unit getVariable ["ace_medical_medicClass", getNumber (configFile >> "CfgVehicles" >> typeOf _unit >> "attendant")] > 0) exitWith {
-    _medic
+    diwako_dui_icon_style getVariable ["medic", DUI_MEDIC];
 };
 
 // Engineer
@@ -78,12 +66,12 @@ private _isEngineer = _unit getVariable ["ACE_isEngineer", _unit getUnitTrait "e
 if (_isEngineer isEqualType 0) then {_isEngineer = _isEngineer > 0};
 
 if (_isEngineer) exitWith {
-    _engineer
+    diwako_dui_icon_style getVariable ["engineer", DUI_ENGINEER];
 };
 
 // Explosive Specialist
 if (_unit getVariable ["ACE_isEOD", _unit getUnitTrait "explosiveSpecialist"]) exitWith {
-    _explosive_specialist
+    diwako_dui_icon_style getVariable ["explosive_specialist", DUI_EXPLOSIVE_SPECIALIST];
 }; 
 
-_rifleman
+diwako_dui_icon_style getVariable ["rifleman", DUI_RIFLEMAN];

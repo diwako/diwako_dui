@@ -15,21 +15,6 @@ diwako_dui_group = _group;
 
 private _colorNameSpace = diwako_dui_colors;
 
-private _getColorFromHex = {
-    params ["_key", "_hex"];
-    _hex = toArray _hex;
-    _hex deleteAt 0; //remove the '#' at the beginning
-    private _nums = toArray "0123456789ABCDEF"; //for converting hex nibbles to base 10 equivalents
-
-    private _r = (_nums find (_hex select 0)) * 16 + (_nums find (_hex select 1));
-    private _g = (_nums find (_hex select 2)) * 16 + (_nums find (_hex select 3));
-    private _b = (_nums find (_hex select 4)) * 16 + (_nums find (_hex select 5));
-    
-    private _color = [(_r/255),(_g/255),(_b/255)];
-    _colorNameSpace setVariable [_key, _color];
-    _color
-};
-
 {
     _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
     _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
@@ -37,10 +22,7 @@ private _getColorFromHex = {
     private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
     _x setVariable ["diwako_dui_color", _color];
 
-    private _compassColor = _colorNameSpace getVariable (format ["%1_compass", _assignedTeam]);
-    if (isNil "_compassColor") then {
-        _compassColor = [format ["%1_compass", _assignedTeam], _color] call _getColorFromHex
-    };
+    private _compassColor = _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]];
     _x setVariable ["diwako_dui_compass_color", _compassColor];
 } forEach _group;
 

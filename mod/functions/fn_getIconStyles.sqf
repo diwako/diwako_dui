@@ -1,5 +1,8 @@
 private _configs = "true" configClasses (configFile >> "diwako_dui_icon_style");
 private _missionConfigs = "true" configClasses (missionConfigFile >> "diwako_dui_icon_style");
+if (isNil "_missionConfigs") then {
+	_missionConfigs = [];
+};
 
 private _iconNames = [];
 private _namespaces = [];
@@ -32,4 +35,4 @@ private _namespaces = [];
 	_namespaces pushBack _namespace;
 } forEach (_configs + _missionConfigs);
 
-[_iconNames, _namespaces]^
+[_iconNames, _namespaces]

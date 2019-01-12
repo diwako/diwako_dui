@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="diwako_dui">
     <Package name="dui">
+        <Key ID="STR_dui_empty">
+            <Original></Original>
+            <English></English>
+            <Czech></Czech>
+            <French></French>
+            <German></German>
+            <Italian></Italian>
+            <Polish></Polish>
+            <Portuguese></Portuguese>
+            <Russian></Russian>
+            <Spanish></Spanish>
+            <Korean></Korean>
+            <Japanese></Japanese>
+            <Chinesesimp></Chinesesimp>
+            <Chinese></Chinese>
+        </Key>
         <Key ID="STR_dui_mod">
             <English>DUI - Squad Radar</English>
             <German>DUI - Squad Radar</German>

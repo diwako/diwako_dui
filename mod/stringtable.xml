@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="dui">
+        <Key ID="STR_dui_mod">
+            <English>DUI - Squad Radar</English>
+            <German>DUI - Squad Radar</German>
+        </Key>
+        <Key ID="STR_dui_font">
+            <English>Font</English>
+            <German>Schriftart</German>
+        </Key>
+        <Key ID="STR_dui_font_desc">
+            <English>Which font should be used?</English>
+            <German>Welche Schriftart soll verwendet werden?</German>
+        </Key>
+        <Key ID="STR_dui_icon">
+            <English>Icon S'tyle</English>
+            <German>Icon Style</German>
+        </Key>
+        <Key ID="STR_dui_icon_desc">
+            <English>Which icon style should be used?</English>
+            <German>Welcher Icon Style soll genutzt werden?</German>
+        </Key>
+        <Key ID="STR_dui_color">
+            <English>Color Scheme</English>
+            <German>Farbschema</German>
+        </Key>
+        <Key ID="STR_dui_color_desc">
+            <English>Which color scheme should be used?</English>
+            <German>Welches Farbschema soll verwendet werden?</German>
+        </Key>
+        <Key ID="STR_dui_show_compass">
+            <English>Show Compass</English>
+            <German>Kompass anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_show_compass_desc">
+            <English>Shows compass and unit markers on it</English>
+            <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
+        </Key>
+        <Key ID="STR_dui_show_dir">
+            <English>Show Bearing</English>
+            <German>Richtung anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_show_dir_desc">
+            <English>Shows bearing above the compass, compass it self needs to be enabled!</English>
+            <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
+        </Key>
+        <Key ID="STR_dui_show_milrad">
+            <English>Schow bearing also in milradians</English>
+            <German>Richtung auch in Milradians anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_show_milrad_desc">
+            <English>Shows milradians next to the regular bearing</English>
+            <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
+        </Key>
+        <Key ID="STR_dui_compass_style">
+            <English>Compass Style</English>
+            <German>Kompassstyle</German>
+        </Key>
+        <Key ID="STR_dui_compass_style_desc">
+            <English>Which compass style should be used?</English>
+            <German>Welcher Kompassstyle soll verwendet werden?</German>
+        </Key>
+        <Key ID="STR_dui_compass_range">
+            <English>Compass Range</English>
+            <German>Kompassreichweite</German>
+        </Key>
+        <Key ID="STR_dui_compass_range_desc">
+            <English>How far should players see units in the same group in meters?</English>
+            <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
+        </Key>
+        <Key ID="STR_dui_compass_refresh">
+            <English>Refresh Rate</English>
+            <German>Aktualisierungsrate</German>
+        </Key>
+        <Key ID="STR_dui_compass_refresh_desc">
+            <English>How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!</English>
+            <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
+        </Key>
+        <Key ID="STR_dui_occlusion">
+            <English>Enable Occlusion</English>
+            <German>Okklusion anschalten</German>
+        </Key>
+        <Key ID="STR_dui_occlusion_desc">
+            <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
+            <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
+        </Key>
+        <Key ID="STR_dui_namelist">
+            <English>Show Names</English>
+            <German>Namen anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_namelist_desc">
+            <English>Shows a list of names of units currently in the same group</English>
+            <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
+        </Key>
+        <Key ID="STR_dui_namelist_buddy">
+            <English>Show Only Buddy Icon</English>
+            <German>Nur Buddy Icon anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_namelist_buddy_desc">
+            <English>Shows only the buddy icon in the name list instead of both, buddy and unit class</English>
+            <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon  in der Namensliste an</German>
+        </Key>
+        <Key ID="STR_dui_namelist_size">
+            <English>TextSize</English>
+            <German>Textgröße</German>
+        </Key>
+        <Key ID="STR_dui_namelist_size_desc">
+            <English>Size of the names, smaller means more in one column</English>
+            <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
+        </Key>
+        <Key ID="STR_dui_key_toggle">
+            <English>Toggle UI on and off</English>
+            <German>UI an- und ausschalten</German>
+        </Key>
+        <Key ID="STR_dui_key_increase_range">
+            <English>Increase Compass Range</English>
+            <German>Kompassreichweite erhöhen</German>
+        </Key>
+        <Key ID="STR_dui_key_decrease_range">
+            <English>Decrease Compass Range</English>
+            <German>Kompassreichweite verkleinern</German>
+        </Key>
+        <Key ID="STR_dui_key_rank">
+            <English>Hold to show ranks</English>
+            <German>Taste halten um Ränge anzuzeigen</German>
+        </Key>
+        <Key ID="STR_dui_cat_compass">
+            <English>Compass</English>
+            <German>Kompass</German>
+        </Key>
+        <Key ID="STR_dui_cat_namelist">
+            <English>Name List</English>
+            <German>Namesliste</German>
+        </Key>
+        <Key ID="STR_dui_cat_general">
+            <English>General Settings</English>
+            <German>Allgmeine Einstellungen</German>
+        </Key>
+    </Package>
+</Project>

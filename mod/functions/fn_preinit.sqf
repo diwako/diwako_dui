@@ -1,12 +1,14 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #include "../script_component.hpp"
-#define CBA_SETTINGS_CAT "Diwako UI"
+#define CBA_SETTINGS_CAT localize "STR_dui_mod"
 
 diwako_dui_group = [];
 diwako_dui_compass_pfHandle = -1;
 diwako_dui_namebox_lists = [];
 diwako_dui_toggled_off = false;
 diwako_dui_showRank = false;
+
+private _curCat = localize "STR_dui_cat_general";
 
 private _availableFonts = [
     "PuristaBold",
@@ -26,8 +28,8 @@ private _availableFonts = [
 [
     "diwako_dui_font"
     ,"LIST"
-    ,["Font", "Which font should be used?"]
-    ,[CBA_SETTINGS_CAT, "General"]
+    ,[localize "STR_dui_font", localize "STR_dui_font_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         _availableFonts,
         _availableFonts,
@@ -40,8 +42,8 @@ private _iconStyles = [] call diwako_dui_fnc_getIconStyles;
 [
     "diwako_dui_icon_style"
     ,"LIST"
-    ,["Icon Style", "Which icon style should be used?"]
-    ,[CBA_SETTINGS_CAT, "General"]
+    ,[localize "STR_dui_icon", localize "STR_dui_icon_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         _iconStyles select 1,
         _iconStyles select 0,
@@ -54,8 +56,8 @@ private _colorStyles = [] call diwako_dui_fnc_getColorStyles;
 [
     "diwako_dui_colors"
     ,"LIST"
-    ,["Color Scheme", "Which color scheme should be used?"]
-    ,[CBA_SETTINGS_CAT, "General"]
+    ,[localize "STR_dui_color", localize "STR_dui_color_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         _colorStyles select 1,
         _colorStyles select 0,
@@ -64,12 +66,14 @@ private _colorStyles = [] call diwako_dui_fnc_getColorStyles;
     ,false
 ] call CBA_Settings_fnc_init;
 
-// todo keybind
+
+private _curCat = localize "STR_dui_cat_compass";
+
 [
     "diwako_dui_enable_compass"
     ,"CHECKBOX"
-    ,["Show compass", "Shows compass and unit markers on it"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_show_compass", localize "STR_dui_show_compass_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
 ] call CBA_Settings_fnc_init;
@@ -77,8 +81,8 @@ private _colorStyles = [] call diwako_dui_fnc_getColorStyles;
 [
     "diwako_dui_enable_compass_dir"
     ,"CHECKBOX"
-    ,["Show Bearing", "Shows bearing above the compass, compass it self needs to be enabled!"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_show_dir", localize "STR_dui_show_dir_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
 ] call CBA_Settings_fnc_init;
@@ -86,8 +90,8 @@ private _colorStyles = [] call diwako_dui_fnc_getColorStyles;
 [
     "diwako_dui_dir_showMildot"
     ,"CHECKBOX"
-    ,["Show bearing also in miliradians", "Shows miliradians next to the regular bearing"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_show_milrad", localize "STR_dui_show_milrad_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
 ] call CBA_Settings_fnc_init;
@@ -96,8 +100,8 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_compass_style"
     ,"LIST"
-    ,["Compass Style", "Which compass style should be used?"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_compass_style", localize "STR_dui_compass_style_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         _compassStyles select 1,
         _compassStyles select 0,
@@ -109,8 +113,8 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_compassRange"
     ,"SLIDER"
-    ,["Compass Range", "How far should players see units in the same group in meters"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_compass_range", localize "STR_dui_compass_range_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[DUI_MIN_RANGE, DUI_MAX_RANGE, 35, 0]
     ,false
 ] call CBA_Settings_fnc_init;
@@ -118,8 +122,8 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_compassRefreshrate"
     ,"SLIDER"
-    ,["Refresh Rate", "How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!"]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_compass_refresh", localize "STR_dui_compass_refresh_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 10, 0, 2]
     ,false
     ,{
@@ -134,8 +138,8 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_enable_occlusion"
     ,"CHECKBOX"
-    ,["Enable Occlusion", "If player cannot see a unit it will slowly vanish from the compass until it is seen again."]
-    ,[CBA_SETTINGS_CAT, "Compass"]
+    ,[localize "STR_dui_occlusion", localize "STR_dui_occlusion_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
 ] call CBA_Settings_fnc_init;
@@ -146,11 +150,13 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 // + scaling
 // + reset per axis
 
+private _curCat = localize "STR_dui_cat_namelist";
+
 [
     "diwako_dui_namelist"
     ,"CHECKBOX"
-    ,["Show Names", "Shows a list of names of units currently in the same group"]
-    ,[CBA_SETTINGS_CAT, "Name List"]
+    ,[localize "STR_dui_namelist", localize "STR_dui_namelist_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
 ] call CBA_Settings_fnc_init;
@@ -158,8 +164,8 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_namelist_size"
     ,"SLIDER"
-    ,["Text Size", "Size of the names"]
-    ,[CBA_SETTINGS_CAT, "Name List"]
+    ,[localize "STR_dui_namelist_size", localize "STR_dui_namelist_size_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.5, 1.75, 1, 2]
     ,false
 ] call CBA_Settings_fnc_init;
@@ -167,15 +173,15 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [
     "diwako_dui_namelist_only_buddy_icon"
     ,"CHECKBOX"
-    ,["Show Only Buddy Icon", "Shows only the buddy icon in the name list instead of both, buddy and unit class"]
-    ,[CBA_SETTINGS_CAT, "Name List"]
+    ,[localize "STR_dui_namelist_buddy", localize "STR_dui_namelist_buddy_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
 ] call CBA_Settings_fnc_init;
 
 
 // keybind to toggle whole UI
-[CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", "Toggle UI on and off", {
+[CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", localize "STR_dui_key_toggle", {
     diwako_dui_toggled_off = !diwako_dui_toggled_off;
     true
 },
@@ -183,21 +189,21 @@ private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
 [DIK_MULTIPLY, [false, true, false]], false] call CBA_fnc_addKeybind;
 
 // keybinds for zooming
-[CBA_SETTINGS_CAT, "diwako_dui_button_increase_range", "Increase Range", {
+[CBA_SETTINGS_CAT, "diwako_dui_button_increase_range", localize "STR_dui_key_increase_range", {
     [true] call diwako_dui_fnc_rangeButton;
     true
 },
 {false},
 [DIK_NUMPADPLUS, [false, true, false]], false] call CBA_fnc_addKeybind;
 
-[CBA_SETTINGS_CAT, "diwako_dui_button_decrease_range", "Decrease Range", {
+[CBA_SETTINGS_CAT, "diwako_dui_button_decrease_range", localize "STR_dui_key_decrease_range", {
     [false] call diwako_dui_fnc_rangeButton;
     true
 },
 {false},
 [DIK_NUMPADMINUS, [false, true, false]], false] call CBA_fnc_addKeybind;
 
-[CBA_SETTINGS_CAT, "diwako_dui_button_showRank", "Hold to show ranks", {
+[CBA_SETTINGS_CAT, "diwako_dui_button_showRank", localize "STR_dui_key_rank", {
     diwako_dui_showRank = true;
     true
 },

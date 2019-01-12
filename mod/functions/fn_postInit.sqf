@@ -2,7 +2,7 @@
 if (is3DEN) exitWith {};
 [] call diwako_dui_fnc_cacheLoop;
 
-private _label = "Assign Buddy [HUD]";
+private _label = localize "STR_dui_buddy_action";
 private _range = 10;
 if (isNil "ace_interact_menu_fnc_createAction") then {
 	[[_label, {

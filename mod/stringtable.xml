@@ -153,5 +153,9 @@
             <English>General Settings</English>
             <German>Allgmeine Einstellungen</German>
         </Key>
+        <Key ID="STR_dui_buddy_action">
+            <English>Assign Buddy [HUD]</English>
+            <German>Als Buddy markieren [HUD]</German>
+        </Key>
     </Package>
 </Project>

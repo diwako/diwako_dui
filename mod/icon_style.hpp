@@ -2,7 +2,7 @@ class diwako_dui_icon_style
 {
     class standard
     {
-        name = "Bohemia Interactive";
+        name = "Standard";
 
         sql = "\A3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";
         medic = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";
@@ -53,5 +53,7 @@ class diwako_dui_icon_style
         rank_captain = "a3\ui_f\data\GUI\Cfg\Ranks\captain_pr.paa";
         rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_pr.paa";
         rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_pr.paa";
+
+        buddy_compass = "\A3\ui_f\data\map\vehicleicons\iconManCommander2_ca.paa";
     };
 };

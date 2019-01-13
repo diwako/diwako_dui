@@ -105,7 +105,7 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style];
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
-    _text = format ["%1<t color='%4' size='%6' shadow='1' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
+    _text = format ["%1<t color='%4' size='%6' shadow='2' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
         _icon, // 2
         _unit getVariable ["ACE_Name", name _unit], // 3

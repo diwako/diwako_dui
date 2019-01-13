@@ -16,14 +16,16 @@ diwako_dui_group = _group;
 private _colorNameSpace = diwako_dui_colors;
 
 {
-    _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
-    _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
-    private _assignedTeam = assignedTeam _x;
-    private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
-    _x setVariable ["diwako_dui_color", _color];
+    if (alive _x) then {
+        _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
+        _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
+        private _assignedTeam = assignedTeam _x;
+        private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
+        _x setVariable ["diwako_dui_color", _color];
 
-    private _compassColor = _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]];
-    _x setVariable ["diwako_dui_compass_color", _compassColor];
+        private _compassColor = _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]];
+        _x setVariable ["diwako_dui_compass_color", _compassColor];
+    };
 } forEach _group;
 
 if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {

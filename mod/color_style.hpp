@@ -27,7 +27,7 @@ class diwako_dui_colors
     {
         name = "STUI";
 
-        white = "#B3B3B3";
+        white = "#FFFFFF";
         red = "#E60000";
         green = "#00CC00";
         blue = "#3333FF";

@@ -5,11 +5,13 @@ if (isNil "_missionConfigs") then {
 };
 
 private _iconNames = [];
-private _namespaces = [];
+private _iconIdent = [];
 
 {
 	private _namespace = [] call CBA_fnc_createNamespace;
 	_iconNames pushback getText (_x >> "name");
+	private _configName = configName _x;
+	_iconIdent pushBack _configName;
 
 	_namespace setVariable ["sql", getText (_x >> "sql")];
 	_namespace setVariable ["medic", getText (_x >> "medic")];
@@ -32,7 +34,6 @@ private _namespaces = [];
 	_namespace setVariable ["COLONEL", getText (_x >> "rank_colonel")];
 	_namespace setVariable ["buddy", getText (_x >> "buddy")];
 	_namespace setVariable ["buddy_compass", getText (_x >> "buddy_compass")];
-	_namespaces pushBack _namespace;
-} forEach (_configs + _missionConfigs);
 
-[_iconNames, _namespaces]
+	missionNamespace setVariable [format["diwako_dui_icon_%1", _configName], _namespace]
+} forEach (_configs + _missionConfigs);

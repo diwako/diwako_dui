@@ -13,7 +13,7 @@ private _player = [] call CBA_fnc_currentUnit;
 _group = units group _player;
 diwako_dui_group = _group;
 
-private _colorNameSpace = diwako_dui_colors;
+private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors_%1", diwako_dui_colors];
 
 {
     if (alive _x) then {
@@ -102,8 +102,9 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     };
     private _unit = _x;
     private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
-    private _buddy = ["", diwako_dui_icon_style getVariable ["buddy", DUI_BUDDY]] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
-    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_DEFAULT_ICON], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
+    private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style];
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
+    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
     _text = format ["%1<t color='%4' size='%6' shadow='1' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
         _icon, // 2

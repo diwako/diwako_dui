@@ -9,11 +9,11 @@ params [
 ];
 if (isNull _unit) exitWith {};
 
-private _unitID = _unit getVariable ['diwako_dui_unit_id',nil];
+private _unitID = _unit getVariable ["diwako_dui_unit_id",nil];
 if (isNil '_unitID') then {
-    _unitID = (missionNamespace getVariable ['diwako_dui_lastID',0])+1;
-    missionNamespace setVariable ['diwako_dui_lastID',_unitID];
-    _unit setVariable ['diwako_dui_unit_id',_unitID];
+    _unitID = (missionNamespace getVariable ["diwako_dui_lastID", 0])+1;
+    missionNamespace setVariable ["diwako_dui_lastID", _unitID];
+    _unit setVariable ["diwako_dui_unit_id", _unitID];
 };
 
 private _circleRange = diwako_dui_compassRange;
@@ -80,11 +80,11 @@ _ctrl ctrlSetAngle [_dir,0.5,0.5,false];
 _ctrl ctrlCommit 0;
 
 private _color = [0.85, 0.4, 0];
-if (_distance > 3 || {vehicle _unit == vehicle _player || {_unit == _player}}) then {
-    _color = [] + (_unit getVariable ["diwako_dui_compass_color", [1,1,1]]);
+if (_distance > 3 || {!(isNull objectParent _unit) || {_unit == _player}}) then {
+    _color = + (_unit getVariable ["diwako_dui_compass_color", [1,1,1]]);
 };
 _color pushBack _fade;
 _ctrl ctrlSetTextColor _color;
-_ctrl ctrlSetText (_unit getVariable ["diwako_dui_compass_icon", DUI_DEFAULT_ICON]);
+_ctrl ctrlSetText (_unit getVariable ["diwako_dui_compass_icon", DUI_RIFLEMAN]);
 
 _ctrl

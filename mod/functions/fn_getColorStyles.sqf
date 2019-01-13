@@ -5,7 +5,7 @@ if (isNil "_missionConfigs") then {
 };
 
 private _colorNames = [];
-private _namespaces = [];
+private _colorIdent = [];
 
 private _getColorFromHex = {
     params ["_key", "_hex"];
@@ -22,6 +22,8 @@ private _getColorFromHex = {
 
 {
 	private _namespace = [] call CBA_fnc_createNamespace;
+	private _configName = configName _x;
+	_colorIdent pushBack _configName;
 	_colorNames pushback getText (_x >> "name");
 
 	_namespace setVariable ["main", getText (_x >> "white")];
@@ -34,7 +36,6 @@ private _getColorFromHex = {
 	["blue", _namespace getVariable "blue"] call _getColorFromHex;
 	_namespace setVariable ["yellow", getText (_x >> "yellow")];
 	["yellow", _namespace getVariable "yellow"] call _getColorFromHex;
-	_namespaces pushBack _namespace;
-} forEach (_configs + _missionConfigs);
 
-[_colorNames, _namespaces]
+	missionNamespace setVariable [format["diwako_dui_colors_%1", _configName], _namespace]
+} forEach (_configs + _missionConfigs);

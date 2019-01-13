@@ -8,9 +8,6 @@ class cfgFunctions {
             class displayUnitOnCompass {recompile = 1;};
             class cacheLoop {recompile = 1;};
             class rangeButton {recompile = 1;};
-            class getCompassStyles {recompile = 1;};
-            class getIconStyles {recompile = 1;};
-            class getColorStyles {recompile = 1;};
             class canHudBeShown {recompile = 1;};
             class setCustomCode {recompile = 1;};
             class pairBuddies {recompile = 1;};

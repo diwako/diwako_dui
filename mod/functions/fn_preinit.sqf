@@ -38,29 +38,30 @@ private _availableFonts = [
     ,false
 ] call CBA_Settings_fnc_init;
 
-private _iconStyles = [] call diwako_dui_fnc_getIconStyles;
+// include the sqf file as the compiled cfgfunction is not available during some preinit events
+#include "fn_getIconStyles.sqf"
 [
     "diwako_dui_icon_style"
     ,"LIST"
     ,[localize "STR_dui_icon", localize "STR_dui_icon_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        _iconStyles select 1,
-        _iconStyles select 0,
+        _iconIdent,
+        _iconNames,
         0
     ]
     ,false
 ] call CBA_Settings_fnc_init;
 
-private _colorStyles = [] call diwako_dui_fnc_getColorStyles;
+#include "fn_getColorStyles.sqf"
 [
     "diwako_dui_colors"
     ,"LIST"
     ,[localize "STR_dui_color", localize "STR_dui_color_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        _colorStyles select 1,
-        _colorStyles select 0,
+        _colorIdent,
+        _colorNames,
         0
     ]
     ,false
@@ -96,15 +97,15 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_Settings_fnc_init;
 
-private _compassStyles = [] call diwako_dui_fnc_getCompassStyles;
+#include "fn_getCompassStyles.sqf"
 [
     "diwako_dui_compass_style"
     ,"LIST"
     ,[localize "STR_dui_compass_style", localize "STR_dui_compass_style_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        _compassStyles select 1,
-        _compassStyles select 0,
+        _compassPaths,
+        _compassNames,
         0
     ]
     ,false

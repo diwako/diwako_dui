@@ -20,6 +20,9 @@ private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors
         _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
         _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
         private _assignedTeam = assignedTeam _x;
+        if (isNil "_assignedTeam") then {
+            _assignedTeam = "main";
+        };
         private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
         _x setVariable ["diwako_dui_color", _color];
 

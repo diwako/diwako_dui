@@ -157,5 +157,9 @@
             <English>Assign Buddy [HUD]</English>
             <German>Als Buddy markieren [HUD]</German>
         </Key>
+        <Key ID="STR_dui_buddy_action_remove">
+            <English>Unassign Buddy [HUD]</English>
+            <German>Buddymarkierung aufheben [HUD]</German>
+        </Key>
     </Package>
 </Project>

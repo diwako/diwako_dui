@@ -1,5 +1,5 @@
 #include "../script_component.hpp"
-if (is3DEN) exitWith {};
+if (is3DEN || !hasInterface) exitWith {};
 params [["_display", displayNull]];
 if !(diwako_dui_enable_compass) exitWith {
     diwako_dui_compass_id cutFadeOut 0;

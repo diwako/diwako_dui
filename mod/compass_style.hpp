@@ -10,8 +10,8 @@ class diwako_dui_compass_style
     class bohemia
     {
         name = "Bohemia Interactive";
-        full = "a3\ui_f\data\IGUI\Cfg\SquadRadar\SquadRadarCompassBackgroundTexture_ca.paa";
-        limited = "a3\ui_f\data\IGUI\Cfg\SquadRadar\SquadRadarBackgroundTexture_ca.paa";
+        full = "diwako_dui\UI\compass_styles\bi\compass.paa";
+        limited = "diwako_dui\UI\compass_styles\bi\compass_limited.paa";
     };
 
     class pizza

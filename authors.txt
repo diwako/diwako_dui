@@ -5,6 +5,7 @@ Contributors:
 Nigel (Code, UI config)
 Terry (Icons [Terry])
 Gordon Weedman (Compass [Pizza Time])
+cyruz (Compass [BI])
 
 Special thanks:
 alganthe (General Arma modding support)

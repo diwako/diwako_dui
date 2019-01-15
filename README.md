@@ -61,3 +61,8 @@ For requesting features create a new issue with the tag word "FEATURE" at the be
 
 # Pull requests
 Tell in detail what your PR will change, why it should be added and what benefits you think it will bring. PRs can be from new styles, bug fixes to whole new functionality. The changes will be reviewed within the PR.
+
+# Additional
+[Playable version (DEV - Current friends only)](https://steamcommunity.com/sharedfiles/filedetails/?id=1617125729) (You can build from source as well)\
+Playable version (STABLE) [TBA]\
+BI Thread [TBA]

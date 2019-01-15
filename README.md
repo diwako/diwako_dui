@@ -1,3 +1,5 @@
+# Currently testing is underway before official 1.0.0 release!
+
 # DUI - Squad Radar for ARMA 3
 
 ## A HUD showing unit positions and names of units in your squad

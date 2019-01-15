@@ -31,7 +31,7 @@ class diwako_dui_icon_style
 
     class terry:standard
     {
-        name = "Terry";
+        name = "Just The Tip";
 
         sql = "diwako_dui\UI\icon_styles\terry\iconManLeader_ca.paa";
         medic = "diwako_dui\UI\icon_styles\terry\iconManMedic_ca.paa";
@@ -54,6 +54,6 @@ class diwako_dui_icon_style
         rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_pr.paa";
         rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_pr.paa";
 
-        buddy_compass = "\A3\ui_f\data\map\vehicleicons\iconManCommander2_ca.paa";
+        buddy_compass = "diwako_dui\UI\icon_styles\terry\buddy_compass.paa";
     };
 };

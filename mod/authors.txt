@@ -3,7 +3,7 @@ diwako
 
 Contributors:
 Nigel (Code, UI config)
-Terry (Icons [Terry])
+Terry (Icons [Just The Tip])
 Gordon Weedman (Compass [Pizza Time])
 cyruz (Compass [BI])
 

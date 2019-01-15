@@ -3,7 +3,7 @@
 // loop
 [diwako_dui_fnc_cacheLoop,[],0.5] call CBA_fnc_waitAndExecute;
 
-// if both compass and namelist are not enabled, just remove the controlls if there are any
+// if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     {
         ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
@@ -16,17 +16,14 @@ _group = units group _player;
 diwako_dui_group = _group;
 
 private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors_%1", diwako_dui_colors];
+private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style];
 
 {
     if (alive _x) then {
-        _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
-        _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
-        private _assignedTeam = assignedTeam _x;
-
-        // enemy remote controlled units might not have a team assigned
-        if (isNil "_assignedTeam") then {
-            _assignedTeam = "main";
-        };
+        _x setVariable ["diwako_dui_compass_icon", [_x, _iconNamespace, _player, true] call diwako_dui_fnc_getIcon];
+        _x setVariable ["diwako_dui_icon", [_x, _iconNamespace] call diwako_dui_fnc_getIcon];
+        // when remote controling a an AI assign can return nil
+        private _assignedTeam = [assignedTeam _x] param [0, "MAIN"];
 
         private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
         _x setVariable ["diwako_dui_color", _color];
@@ -53,12 +50,14 @@ if (isNull _display) exitWith {
 private _grpCtrl = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
 private _lists = diwako_dui_namebox_lists;
 
-// delete all name list controlls if not active
+// delete all name list controls if not active
 if !(diwako_dui_namelist) exitWith {
-    for "_i" from (count _lists) -1 to 0 step -1 do {
-        ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
+    if ((count _lists) > 0) then {
+        for "_i" from (count _lists) -1 to 0 step -1 do {
+            ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
+        };
+        ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
     };
-    ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
 };
 
 if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
@@ -67,8 +66,10 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
 
 // no need to show any names if you are alone in the group
 if (count _group == 1) exitWith {
-    for "_i" from (count _lists) -1 to 0 step -1 do {
-        ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
+    if ((count _lists) > 0) then {
+        for "_i" from (count _lists) -1 to 0 step -1 do {
+            ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
+        };
     };
 };
 if !(ctrlShown _grpCtrl) then {
@@ -114,8 +115,7 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     };
     private _unit = _x;
     private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
-    private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style];
-    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_x getVariable ["diwako_dui_buddy", objNull]));
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
     _text = format ["%1<t color='%4' size='%6' shadow='2' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1

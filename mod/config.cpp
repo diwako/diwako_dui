@@ -17,6 +17,7 @@ class CfgPatches {
     };
 };
 
+#include "script_component.hpp"
 #include "CfgFunctions.hpp"
 #include "gui.hpp"
 #include "compass_style.hpp"

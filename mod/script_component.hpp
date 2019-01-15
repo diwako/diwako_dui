@@ -1,3 +1,6 @@
+// DEV stuff
+#define DUI_RECOMPILE           0
+
 // UI values
 #define IDC_COMPASS             1337001
 #define IDC_DIRECTION           1337002
@@ -30,3 +33,4 @@
 #define DUI_RANK_COLONEL        "a3\ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa"
 #define DUI_BUDDY               "a3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa"
 #define DUI_BUDDY_COMPASS       "diwako_dui\UI\icon_styles\standard\buddy_compass"
+#define DUI_DEBUG               1

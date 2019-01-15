@@ -1,5 +1,4 @@
 #include "RscCommon.hpp"
-#include "script_component.hpp"
 
 class diwako_dui_DialogCompass {
     idd = -1;

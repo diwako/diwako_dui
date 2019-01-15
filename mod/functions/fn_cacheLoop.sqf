@@ -1,7 +1,9 @@
 #include "../script_component.hpp"
 
+// loop
 [diwako_dui_fnc_cacheLoop,[],0.5] call CBA_fnc_waitAndExecute;
 
+// if both compass and namelist are not enabled, just remove the controlls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     {
         ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
@@ -20,9 +22,12 @@ private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors
         _x setVariable ["diwako_dui_compass_icon", [_x, _player, true] call diwako_dui_fnc_getIcon];
         _x setVariable ["diwako_dui_icon", [_x] call diwako_dui_fnc_getIcon];
         private _assignedTeam = assignedTeam _x;
+
+        // enemy remote controlled units might not have a team assigned
         if (isNil "_assignedTeam") then {
             _assignedTeam = "main";
         };
+
         private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
         _x setVariable ["diwako_dui_color", _color];
 
@@ -31,6 +36,7 @@ private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors
     };
 } forEach _group;
 
+// start compass if enabeld but not running yet
 if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {
     ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
     [] call diwako_dui_fnc_compass;
@@ -46,6 +52,8 @@ if (isNull _display) exitWith {
 
 private _grpCtrl = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
 private _lists = diwako_dui_namebox_lists;
+
+// delete all name list controlls if not active
 if !(diwako_dui_namelist) exitWith {
     for "_i" from (count _lists) -1 to 0 step -1 do {
         ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
@@ -57,6 +65,7 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
     _grpCtrl ctrlShow false;
 };
 
+// no need to show any names if you are alone in the group
 if (count _group == 1) exitWith {
     for "_i" from (count _lists) -1 to 0 step -1 do {
         ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);

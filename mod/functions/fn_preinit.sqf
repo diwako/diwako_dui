@@ -81,10 +81,14 @@ private _curCat = localize "STR_dui_cat_compass";
 
 [
     "diwako_dui_enable_compass_dir"
-    ,"CHECKBOX"
+    ,"LIST"
     ,[localize "STR_dui_show_dir", localize "STR_dui_show_dir_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
+    ,[
+        [0,1,2],
+        [localize "STR_dui_show_dir_opt1",localize "STR_dui_show_dir_opt2",localize "STR_dui_show_dir_opt3"],
+        1
+    ]
     ,false
 ] call CBA_Settings_fnc_init;
 

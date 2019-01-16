@@ -161,5 +161,17 @@
             <English>Unassign Buddy [HUD]</English>
             <German>Buddymarkierung aufheben [HUD]</German>
         </Key>
+        <Key ID="STR_dui_show_dir_opt1">
+            <English>Never</English>
+            <German>Niemals</German>
+        </Key>
+        <Key ID="STR_dui_show_dir_opt2">
+            <English>Always</English>
+            <German>Immer</German>
+        </Key>
+        <Key ID="STR_dui_show_dir_opt3">
+            <English>Only In Vehicles</English>
+            <German>Nur In Fahrzeugen</German>
+        </Key>
     </Package>
 </Project>

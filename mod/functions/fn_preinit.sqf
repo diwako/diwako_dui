@@ -7,6 +7,9 @@ diwako_dui_compass_pfHandle = -1;
 diwako_dui_namebox_lists = [];
 diwako_dui_toggled_off = false;
 diwako_dui_showRank = false;
+diwako_dui_inFeatureCamera = false;
+diwako_dui_setCompass = true;
+diwako_dui_setNamelist = true;
 
 private _curCat = localize "STR_dui_cat_general";
 
@@ -163,6 +166,9 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
+    ,{
+        diwako_dui_setNamelist = true;
+    }
 ] call CBA_Settings_fnc_init;
 
 [
@@ -172,6 +178,20 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.5, 3, 1, 2]
     ,false
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_namelist_bg"
+    ,"SLIDER"
+    ,[localize "STR_dui_namelist_bg", localize "STR_dui_namelist_bg_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 1, 0, 2]
+    ,false
+    ,{
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    }
 ] call CBA_Settings_fnc_init;
 
 [
@@ -190,25 +210,21 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,"SLIDER"
     ,[localize "STR_dui_ui_scale", ""]
     ,[CBA_SETTINGS_CAT, localize "STR_dui_cat_general"]
-    ,[1, 3, 1, 2]
+    ,[0.5, 3, 1, 2]
     ,false
     ,{
         params ["_value"];
+        diwako_dui_setCompass = true;
+        diwako_dui_setNamelist = true;
         diwako_dui_uiPixels = 128 * _value;
-        if (diwako_dui_enable_compass) then {
-            [diwako_dui_compass_pfHandle] call CBA_fnc_removePerFrameHandler;
-            ("diwako_dui_compass" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
-            diwako_dui_compass_pfHandle = -1;
-        };
+        // if (diwako_dui_enable_compass) then {
+        //     [diwako_dui_compass_pfHandle] call CBA_fnc_removePerFrameHandler;
+        //     ("diwako_dui_compass" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
+        //     diwako_dui_compass_pfHandle = -1;
+        // };
 
-        if (diwako_dui_namelist) then {
-            private _list = diwako_dui_namebox_lists;
-            if ((count _lists) > 0) then {
-                for "_i" from (count _lists) -1 to 0 step -1 do {
-                    ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
-                };
-                ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
-            };
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
         };
     }
 ] call CBA_Settings_fnc_init;

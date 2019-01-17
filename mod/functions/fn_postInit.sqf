@@ -36,7 +36,6 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
 };
 
 // cba eh for hiding the hud when in certain camera modes
-diwako_dui_inFeatureCamera = false;
 ["featureCamera", {
     params ["_player", "_featureCamera"];
     diwako_dui_inFeatureCamera = !(_featureCamera isEqualTo "");

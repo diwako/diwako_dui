@@ -48,7 +48,7 @@ if (_fade <= 0) exitWith {
 };
 
 private _dir = -(_viewDir - (getDir _unit)) mod 360;
-private _divisor = linearConversion [35,50,_circleRange,2.25,2.75,false]; //2.25;
+private _divisor = linearConversion [35,50,_circleRange,2.25,2.75,false] / diwako_dui_hudScaling; //2.25;
 
 if (isNull _ctrl) then {
     _ctrl = _display ctrlCreate ['RscPicture', -1, _ctrlGrp];
@@ -65,7 +65,7 @@ if (isNull _ctrl) then {
 ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
 private _center = [_left + _width/2, _top + _height/2];
 private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
-private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];;
+private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];
 private _newWidth = (safeZoneW/40)/_divisor;
 private _newHeight = (safeZoneH/25)/_divisor;
 private _ctrlPos = [

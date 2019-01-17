@@ -31,7 +31,7 @@ diwako_dui_compass_pfHandle = [{
         // private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
         // private _dir = _camDirVec call CBA_fnc_vectDir;
         private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
-        private _hasCompass = ('ItemCompass' in assignedItems _player);
+        private _hasCompass = ("ItemCompass" in assignedItems _player);
 
         _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];
         _compassCtrl ctrlSetTextColor [1, 1, 1, 1];
@@ -41,7 +41,7 @@ diwako_dui_compass_pfHandle = [{
             _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
             _dirCtrl ctrlSetFont diwako_dui_font;
             if (diwako_dui_dir_showMildot) then {
-                _dirCtrl ctrlSetText format ["%1%3%2", (round _dir) mod 360, round (_dir / 0.056250),endl];
+                _dirCtrl ctrlSetText format ["%1 %2", (round _dir) mod 360, round (_dir / 0.056250)];
             } else {
                 _dirCtrl ctrlSetText format ["%1", (round _dir) mod 360];
             };

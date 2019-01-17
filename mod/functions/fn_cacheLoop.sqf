@@ -5,9 +5,9 @@
 
 // if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
-    {
+    for "_i" from 0 to (count diwako_dui_namebox_lists) do {
         ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-    } forEach diwako_dui_namebox_lists;
+    };
     ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
 };
 
@@ -42,7 +42,8 @@ if (diwako_dui_enable_compass) then {
         [] call diwako_dui_fnc_compass;
     };
     private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
-    if !(isNull _compassDisplay) then {
+    if (!isNull _compassDisplay && diwako_dui_setCompass) then {
+        diwako_dui_setCompass = false;
         private _ctrlHeight = pixelH * _uiPixels;
         private _ctrlWidth = pixelW * _uiPixels;
         private _ctrlMiddleX = 0.5 - (pixelW * (_uiPixels / 2));
@@ -61,7 +62,7 @@ if (diwako_dui_enable_compass) then {
         _compassCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
             _ctrlMiddleX,
-            safeZoneY + safeZoneH - (pixelH * (_uiPixels + (50 * _uiScale))),
+            safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
         ];
@@ -102,16 +103,20 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
     _grpCtrl ctrlShow false;
 };
 
-private _nameList = _display displayCtrl IDC_NAMEBOX;
-private _grpList = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
-private _nameListPos = [
-    0.5 + (pixelW * (_uiPixels / 2 + 10)),
-    safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10)),
-    (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
-    pixelH * (_uiPixels + 10)
-];
-_grpCtrl ctrlSetPosition _nameListPos;
-_grpCtrl ctrlCommit 0;
+if (diwako_dui_setNamelist) then {
+    diwako_dui_setNamelist = false;
+    private _nameList = _display displayCtrl IDC_NAMEBOX;
+    private _nameListPos = [
+        0.5 + (pixelW * (_uiPixels / 2 + 10)),
+        safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10)),
+        (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
+        pixelH * (_uiPixels + 10)
+    ];
+    _grpCtrl ctrlSetPosition _nameListPos;
+    _grpCtrl ctrlCommit 0;
+    _nameList ctrlSetPosition _nameListPos;
+    _nameList ctrlCommit 0;
+};
 
 
 // no need to show any names if you are alone in the group
@@ -137,7 +142,6 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     if (_forEachIndex mod round(5/_textSize*_uiScale) == 0) then {
         if !(isNull _curList) then {
             _curList ctrlSetStructuredText parseText _text;
-            _curList ctrlSetFont diwako_dui_font;
             _curList ctrlSetPosition _ctrlPosList;
             _curList ctrlCommit 0;
             _text = "";
@@ -147,9 +151,9 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
         } else {
             ctrlPosition _grpCtrl params ["_left", "_top", "_width", "_height"];
             // create group
-            private _curGrp = _display ctrlCreate['RscControlsGroupNoScrollbars', -1, _grpCtrl];
+            private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];
             private _ctrlPos = [
-                (5 * pixelW) * _listIndex + _listWidth * _listIndex,
+                (0 * pixelW) * _listIndex + _listWidth * _listIndex,
                 0,
                 _listWidth,
                 _listHeight
@@ -158,6 +162,8 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
             _curGrp ctrlCommit 0;
 
             _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
+            _curList ctrlSetFont diwako_dui_font;
+            _curList ctrlSetBackgroundColor [0,0,0,diwako_dui_namelist_bg];
             _lists pushBack _curList;
             _curList ctrlCommit 0;
         };
@@ -167,7 +173,7 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
     private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
-    _text = format ["%1<t color='%4' size='%6' shadow='2' shadowColor='#000000' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
+    _text = format ["%1<t color='%4' size='%6' shadow='2' shadowColor='#000000' valign='middle' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
         _icon, // 2
         _unit getVariable ["ACE_Name", name _unit], // 3
@@ -179,7 +185,6 @@ private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 
 if !(isNull _curList) then {
     _curList ctrlSetStructuredText parseText _text;
-    _curList ctrlSetFont diwako_dui_font;
     _curList ctrlSetPosition _ctrlPosList;
     _curList ctrlCommit 0;
 };

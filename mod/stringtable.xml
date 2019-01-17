@@ -177,5 +177,17 @@
             <English>UI Scaling</English>
             <German>UI Größe</German>
         </Key>
+        <Key ID="STR_dui_ui_scale_desc">
+            <English></English>
+            <German></German>
+        </Key>
+        <Key ID="STR_dui_namelist_bg">
+            <English>Background Opacity</English>
+            <German>Hintergrund Sichtbarkeit</German>
+        </Key>
+        <Key ID="STR_dui_namelist_bg_desc">
+            <English>How strong should the black background be visible</English>
+            <German>Wie stark soll der Hintergrund sichtbar sein</German>
+        </Key>
     </Package>
 </Project>

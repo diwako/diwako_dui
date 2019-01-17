@@ -14,6 +14,8 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 private _player = [] call CBA_fnc_currentUnit;
 _group = units group _player;
 diwako_dui_group = _group;
+private _uiScale = diwako_dui_hudScaling;
+private _uiPixels = diwako_dui_uiPixels;
 
 private _colorNameSpace = missionNamespace getVariable format["diwako_dui_colors_%1", diwako_dui_colors];
 private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style];
@@ -34,9 +36,44 @@ private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1
 } forEach _group;
 
 // start compass if enabeld but not running yet
-if (diwako_dui_enable_compass && {diwako_dui_compass_pfHandle <= -1}) then {
-    ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
-    [] call diwako_dui_fnc_compass;
+if (diwako_dui_enable_compass) then {
+    if (diwako_dui_compass_pfHandle <= -1) then {
+        ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
+        [] call diwako_dui_fnc_compass;
+    };
+    private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
+    if !(isNull _compassDisplay) then {
+        private _ctrlHeight = pixelH * _uiPixels;
+        private _ctrlWidth = pixelW * _uiPixels;
+        private _ctrlMiddleX = 0.5 - (pixelW * (_uiPixels / 2));
+        private _compassY = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
+
+        private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
+        private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
+        private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
+
+        _compassCtrl ctrlSetPosition [
+            _ctrlMiddleX,
+            _compassY,
+            _ctrlWidth,
+            _ctrlHeight
+        ];
+        _compassCtrl ctrlCommit 0;
+        _dirCtrl ctrlSetPosition [
+            _ctrlMiddleX,
+            safeZoneY + safeZoneH - (pixelH * (_uiPixels + (50 * _uiScale))),
+            _ctrlWidth,
+            pixelH * 70 * _uiScale
+        ];
+        _dirCtrl ctrlCommit 0;
+        _grpCtrl ctrlSetPosition [
+           _ctrlMiddleX,
+           _compassY,
+           _ctrlWidth,
+           _ctrlHeight
+        ];
+        _grpCtrl ctrlCommit 0;
+    };
 };
 
 // built name list from here
@@ -44,6 +81,7 @@ private _display = uiNamespace getVariable ["diwako_dui_RscNameBox", displayNull
 if (isNull _display) exitWith {
     if (diwako_dui_namelist) then {
         ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
+        _display = uiNamespace getVariable ["diwako_dui_RscNameBox", displayNull];
     };
 };
 
@@ -64,6 +102,18 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
     _grpCtrl ctrlShow false;
 };
 
+private _nameList = _display displayCtrl IDC_NAMEBOX;
+private _grpList = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
+private _nameListPos = [
+    0.5 + (pixelW * (_uiPixels / 2 + 10)),
+    safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10)),
+    (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
+    pixelH * (_uiPixels + 10)
+];
+_grpCtrl ctrlSetPosition _nameListPos;
+_grpCtrl ctrlCommit 0;
+
+
 // no need to show any names if you are alone in the group
 if (count _group == 1) exitWith {
     if ((count _lists) > 0) then {
@@ -80,11 +130,11 @@ private _curList = controlNull;
 private _listIndex = 0;
 private _selectedUnits = groupSelectedUnits _player;
 private _textSize = diwako_dui_namelist_size;
-private _listWidth = 215 * pixelW;
-private _listHeight = 128 * pixelH;
+private _listWidth = 215 * pixelW * diwako_dui_hudScaling;
+private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 {
-    if (_forEachIndex mod round(5/_textSize) == 0) then {
+    if (_forEachIndex mod round(5/_textSize*_uiScale) == 0) then {
         if !(isNull _curList) then {
             _curList ctrlSetStructuredText parseText _text;
             _curList ctrlSetFont diwako_dui_font;

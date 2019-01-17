@@ -1,9 +1,7 @@
 #include "../script_component.hpp"
 if (is3DEN || !hasInterface) exitWith {};
 params [["_display", displayNull]];
-if !(diwako_dui_enable_compass) exitWith {
-    diwako_dui_compass_id cutFadeOut 0;
-};
+if !(diwako_dui_enable_compass) exitWith {};
 
 if (isNull _display) then {
     _display = uiNamespace getVariable "diwako_dui_RscCompass";
@@ -39,7 +37,7 @@ diwako_dui_compass_pfHandle = [{
         _compassCtrl ctrlSetTextColor [1, 1, 1, 1];
         _compassCtrl ctrlSetText (diwako_dui_compass_style select _hasCompass);
 
-        if (_hasCompass && {diwako_dui_enable_compass_dir == 1 || {diwako_dui_enable_compass_dir == 2 && {!(isNull objectParent _player)}}}) then {
+        if (_hasCompass && {diwako_dui_enable_compass_dir == 2 || {diwako_dui_enable_compass_dir == 1 && {!(isNull objectParent _player)}}}) then {
             _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
             _dirCtrl ctrlSetFont diwako_dui_font;
             if (diwako_dui_dir_showMildot) then {

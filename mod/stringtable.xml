@@ -165,13 +165,17 @@
             <English>Never</English>
             <German>Niemals</German>
         </Key>
-        <Key ID="STR_dui_show_dir_opt2">
+        <Key ID="STR_dui_show_dir_opt3">
             <English>Always</English>
             <German>Immer</German>
         </Key>
-        <Key ID="STR_dui_show_dir_opt3">
+        <Key ID="STR_dui_show_dir_opt2">
             <English>Only In Vehicles</English>
             <German>Nur In Fahrzeugen</German>
+        </Key>
+        <Key ID="STR_dui_ui_scale">
+            <English>UI Scaling</English>
+            <German>UI Größe</German>
         </Key>
     </Package>
 </Project>

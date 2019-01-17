@@ -7,6 +7,7 @@
 #define IDC_COMPASS_CTRLGRP     1337003
 #define IDC_NAMEBOX             1337004
 #define IDC_NAMEBOX_CTRLGRP     1337005
+#define DUI_128PX               (128 * diwako_dui_hudScaling)
 
 // Script values
 #define DUI_MAX_RANGE           50

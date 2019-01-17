@@ -1,5 +1,9 @@
+#include "../script_component.hpp"
 // start the loop
 if (is3DEN || !hasInterface) exitWith {};
+
+diwako_dui_uiPixels = DUI_128PX;
+
 [] call diwako_dui_fnc_cacheLoop;
 
 private _label = localize "STR_dui_buddy_action";

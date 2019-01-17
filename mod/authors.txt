@@ -6,6 +6,7 @@ Nigel (Code, UI config)
 Terry (Icons [Just The Tip])
 Gordon Weedman (Compass [Pizza Time])
 cyruz (Compass [BI])
+G4rrus Vakarian (NATO icons)
 
 Special thanks:
 alganthe (General Arma modding support)

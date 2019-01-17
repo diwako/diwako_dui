@@ -56,4 +56,16 @@ class diwako_dui_icon_style
 
         buddy_compass = "diwako_dui\UI\icon_styles\terry\buddy_compass.paa";
     };
+
+    class nato:standard
+    {
+        name = "NATO JMS";
+        
+        sql = "diwako_dui\UI\icon_styles\nato\GAR_iconManLeader_ca.paa";
+        medic = "diwako_dui\UI\icon_styles\nato\GAR_iconManMedic_ca.paa";
+        auto_rifleman = "diwako_dui\UI\icon_styles\nato\GAR_iconManMG_ca.paa";
+        at_gunner = "diwako_dui\UI\icon_styles\nato\GAR_iconManAT_ca.paa";
+        engineer = "diwako_dui\UI\icon_styles\nato\GAR_iconManEngineer_ca.paa";
+        explosive_specialist = "diwako_dui\UI\icon_styles\nato\GAR_iconManExplosive_ca.paa";
+    };
 };

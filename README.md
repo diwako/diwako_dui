@@ -15,6 +15,9 @@ A strong point of this UI is its customizability and its many features are all s
 - ACE 3
 
 ## Features
+####  Scaling
+Rescale the UI elements in CBA settings, text can be rescaled on its own as well!
+
 ####  Font
 Choose which font is used in the UI
 

@@ -189,5 +189,21 @@
             <English>How strong should the black background be visible</English>
             <German>Wie stark soll der Hintergrund sichtbar sein</German>
         </Key>
+        <Key ID="STR_dui_namelist_width">
+            <English>Column Width</English>
+            <German>Spaltenbreite</German>
+        </Key>
+        <Key ID="STR_dui_namelist_width_desc">
+            <English>Which width in pixels should be used for the column widths? Be aware that UI scaling will affect this!</English>
+            <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale">
+            <English>Icon Scaling</English>
+            <German>Icon Größe</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale_desc">
+            <English>Set the icon scale for units on your compass</English>
+            <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
+        </Key>
     </Package>
 </Project>

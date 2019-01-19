@@ -66,8 +66,9 @@ ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
 private _center = [_left + _width/2, _top + _height/2];
 private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
 private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];
-private _newWidth = (safeZoneW/40)/_divisor;
-private _newHeight = (safeZoneH/25)/_divisor;
+private _iconScale = diwako_dui_compass_icon_scale;
+private _newWidth = (safeZoneW/40)/_divisor * _iconScale;
+private _newHeight = (safeZoneH/25)/_divisor * _iconScale;
 private _ctrlPos = [
     _width/2 + _width * (sin _relDir * _dist) - _newWidth/2,
     _height/2 - _height * (cos _relDir * _dist) - _newHeight/2,

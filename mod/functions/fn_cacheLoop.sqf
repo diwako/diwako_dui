@@ -135,7 +135,7 @@ private _curList = controlNull;
 private _listIndex = 0;
 private _selectedUnits = groupSelectedUnits _player;
 private _textSize = diwako_dui_namelist_size;
-private _listWidth = 215 * pixelW * diwako_dui_hudScaling;
+private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 {

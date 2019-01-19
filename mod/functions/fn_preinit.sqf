@@ -151,6 +151,28 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_compass_icon_scale"
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0.01, 4, 1, 2]
+    ,false
+    ,{
+        params ["_value"];
+        private _display = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
+        if !(isNull _display) then {
+            private _ctrlGrp = _display displayCtrl IDC_COMPASS_CTRLGRP;
+            private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
+            {
+                ctrlDelete _x;
+            } forEach _ctrls;
+            _ctrlGrp setVariable ["diwako_dui_ctrlArr",[]];
+        };
+        diwako_dui_setCompass = true;
+    }
+] call CBA_Settings_fnc_init;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace
@@ -204,6 +226,23 @@ private _curCat = localize "STR_dui_cat_namelist";
 ] call CBA_Settings_fnc_init;
 
 
+[
+    "diwako_dui_namelist_width"
+    ,"SLIDER"
+    ,[localize "STR_dui_namelist_width", localize "STR_dui_namelist_width_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[100, 500, 215, 0]
+    ,false
+    ,{
+        params ["_value"];
+        diwako_dui_setNamelist = true;
+
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    }
+] call CBA_Settings_fnc_init;
+
 
 [
     "diwako_dui_hudScaling"
@@ -217,11 +256,6 @@ private _curCat = localize "STR_dui_cat_namelist";
         diwako_dui_setCompass = true;
         diwako_dui_setNamelist = true;
         diwako_dui_uiPixels = 128 * _value;
-        // if (diwako_dui_enable_compass) then {
-        //     [diwako_dui_compass_pfHandle] call CBA_fnc_removePerFrameHandler;
-        //     ("diwako_dui_compass" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
-        //     diwako_dui_compass_pfHandle = -1;
-        // };
 
         for "_i" from 0 to (count diwako_dui_namebox_lists) do {
             ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);

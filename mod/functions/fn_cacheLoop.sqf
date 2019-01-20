@@ -54,22 +54,24 @@ if (diwako_dui_enable_compass) then {
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
         _compassCtrl ctrlSetPosition [
-            _ctrlMiddleX,
-            _compassY,
+            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
+            profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
             _ctrlWidth,
             _ctrlHeight
         ];
+        _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
         _compassCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
-            _ctrlMiddleX,
-            safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
+            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
+            (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 50 * _uiScale),
+            // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
         ];
         _dirCtrl ctrlCommit 0;
         _grpCtrl ctrlSetPosition [
-           _ctrlMiddleX,
-           _compassY,
+           profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
+           profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
            _ctrlWidth,
            _ctrlHeight
         ];
@@ -107,8 +109,8 @@ if (diwako_dui_setNamelist) then {
     diwako_dui_setNamelist = false;
     private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
-        0.5 + (pixelW * (_uiPixels / 2 + 10)),
-        safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10)),
+        profileNamespace getVariable ["diwako_dui_namelist_x", 0.5 + (pixelW * (_uiPixels / 2 + 10))],
+        profileNamespace getVariable ["diwako_dui_namelist_y",safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10))],
         (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
         pixelH * (_uiPixels + 10)
     ];

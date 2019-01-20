@@ -115,6 +115,9 @@ private _curCat = localize "STR_dui_cat_compass";
         0
     ]
     ,false
+    ,{
+        diwako_dui_setCompass = true;
+    }
 ] call CBA_Settings_fnc_init;
 
 [
@@ -158,19 +161,6 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.01, 4, 1, 2]
     ,false
-    ,{
-        params ["_value"];
-        private _display = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
-        if !(isNull _display) then {
-            private _ctrlGrp = _display displayCtrl IDC_COMPASS_CTRLGRP;
-            private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
-            {
-                ctrlDelete _x;
-            } forEach _ctrls;
-            _ctrlGrp setVariable ["diwako_dui_ctrlArr",[]];
-        };
-        diwako_dui_setCompass = true;
-    }
 ] call CBA_Settings_fnc_init;
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
@@ -267,6 +257,15 @@ private _curCat = localize "STR_dui_cat_namelist";
 // keybind to toggle whole UI
 [CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", localize "STR_dui_key_toggle", {
     diwako_dui_toggled_off = !diwako_dui_toggled_off;
+
+    if (diwako_dui_toggled_off) then {
+        // set position and size for namelist and compassa gain
+        diwako_dui_setCompass = true;
+        diwako_dui_setNamelist = true;
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    };
     true
 },
 {false},

@@ -35,7 +35,6 @@ diwako_dui_compass_pfHandle = [{
 
         _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];
         _compassCtrl ctrlSetTextColor [1, 1, 1, 1];
-        _compassCtrl ctrlSetText (diwako_dui_compass_style select _hasCompass);
 
         if (_hasCompass && {diwako_dui_enable_compass_dir == 2 || {diwako_dui_enable_compass_dir == 1 && {!(isNull objectParent _player)}}}) then {
             _dirCtrl ctrlSetTextColor [1, 1, 1, 1];

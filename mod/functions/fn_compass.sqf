@@ -28,9 +28,9 @@ diwako_dui_compass_pfHandle = [{
         if !(ctrlShown _ctrlGrp) then {
             _ctrlGrp ctrlShow true;
         };
-        // private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
-        // private _dir = _camDirVec call CBA_fnc_vectDir;
-        private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
+        private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
+        private _dir = _camDirVec call CBA_fnc_vectDir;
+        // private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
         private _hasCompass = ("ItemCompass" in assignedItems _player);
 
         _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];

@@ -40,19 +40,6 @@ class diwako_dui_icon_style
         engineer = "diwako_dui\UI\icon_styles\terry\iconManEngineer_ca.paa";
         explosive_specialist = "diwako_dui\UI\icon_styles\terry\iconManExplosive_ca.paa";
         rifleman = "diwako_dui\UI\icon_styles\terry\iconMan_ca.paa";
-        vehicle_cargo = "diwako_dui\UI\icon_styles\terry\imagecargo_ca.paa";
-        vehicle_driver = "a3\ui_f\data\igui\cfg\commandbar\imagedriver_ca.paa";
-        fire_from_vehicle = "a3\ui_f\data\igui\cfg\simpletasks\types\rifle_ca.paa";
-        vehicle_gunner = "a3\ui_f\data\igui\cfg\commandbar\imagegunner_ca.paa";
-        vehicle_commander = "a3\ui_f\data\igui\cfg\commandbar\imagecommander_ca.paa";
-
-        rank_private = "a3\ui_f\data\GUI\Cfg\Ranks\private_pr.paa";
-        rank_corporal = "a3\ui_f\data\GUI\Cfg\Ranks\corporal_pr.paa";
-        rank_sergeant = "a3\ui_f\data\GUI\Cfg\Ranks\sergeant_pr.paa";
-        rank_lieutenant = "a3\ui_f\data\GUI\Cfg\Ranks\lieutenant_pr.paa";
-        rank_captain = "a3\ui_f\data\GUI\Cfg\Ranks\captain_pr.paa";
-        rank_major = "a3\ui_f\data\GUI\Cfg\Ranks\major_pr.paa";
-        rank_colonel = "a3\ui_f\data\GUI\Cfg\Ranks\colonel_pr.paa";
 
         buddy_compass = "diwako_dui\UI\icon_styles\terry\buddy_compass.paa";
     };

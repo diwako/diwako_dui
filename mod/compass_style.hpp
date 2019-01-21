@@ -20,4 +20,18 @@ class diwako_dui_compass_style
         full = "diwako_dui\UI\compass_styles\pizza\compass.paa";
         limited = "diwako_dui\UI\compass_styles\pizza\compass_limited.paa";
     };
+
+    class olde
+    {
+        name = "Ye Olde Times";
+        full = "diwako_dui\UI\compass_styles\olde\full.paa";
+        limited = "diwako_dui\UI\compass_styles\olde\limited.paa";
+    };
+
+    class clock
+    {
+        name = "Clock";
+        full = "diwako_dui\UI\compass_styles\clock\full.paa";
+        limited = "diwako_dui\UI\compass_styles\clock\limited.paa";
+    };
 };

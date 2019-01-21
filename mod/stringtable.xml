@@ -62,7 +62,7 @@
             <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
         </Key>
         <Key ID="STR_dui_show_milrad">
-            <English>Schow bearing also in milradians</English>
+            <English>Show bearing also in milradians</English>
             <German>Richtung auch in Milradians anzeigen</German>
         </Key>
         <Key ID="STR_dui_show_milrad_desc">

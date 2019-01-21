@@ -41,7 +41,10 @@ if (diwako_dui_enable_compass) then {
         ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
         [] call diwako_dui_fnc_compass;
     };
+
     private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
+    private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
     if (!isNull _compassDisplay && diwako_dui_setCompass) then {
         diwako_dui_setCompass = false;
         private _ctrlHeight = pixelH * _uiPixels;
@@ -49,7 +52,6 @@ if (diwako_dui_enable_compass) then {
         private _ctrlMiddleX = 0.5 - (pixelW * (_uiPixels / 2));
         private _compassY = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
 
-        private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
         private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
@@ -59,7 +61,6 @@ if (diwako_dui_enable_compass) then {
             _ctrlWidth,
             _ctrlHeight
         ];
-        _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
         _compassCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
             profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],

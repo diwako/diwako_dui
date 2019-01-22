@@ -6,5 +6,6 @@ params [["_player",[] call CBA_fnc_currentUnit]];
 	{(_player getVariable ["ace_spectator_isSet", false]) ||
 	{dialog ||
 	{missionNamespace getVariable ["ace_interact_menu_openedMenuType",-1] > -1 || 
-	{diwako_dui_inFeatureCamera}}}}}}
+	{!isnull (missionNamespace getVariable ["ace_arsenal_camera", objNull]) || 
+	{diwako_dui_inFeatureCamera}}}}}}}
 )

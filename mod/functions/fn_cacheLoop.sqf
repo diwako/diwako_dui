@@ -64,7 +64,7 @@ if (diwako_dui_enable_compass) then {
         _compassCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
             profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-            (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 50 * _uiScale),
+            (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
             // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
@@ -137,8 +137,8 @@ private _text = "";
 private _curList = controlNull;
 private _listIndex = 0;
 private _selectedUnits = groupSelectedUnits _player;
-private _a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];;
-private _textSize = diwako_dui_namelist_size * _a3UiScale;
+private _a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
+private _textSize = diwako_dui_namelist_size * diwako_dui_a3UiScale;
 private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];

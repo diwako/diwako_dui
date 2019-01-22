@@ -4,6 +4,8 @@ if (is3DEN || !hasInterface) exitWith {};
 
 diwako_dui_uiPixels = DUI_128PX;
 
+diwako_dui_a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
+
 [] call diwako_dui_fnc_cacheLoop;
 
 private _label = localize "STR_dui_buddy_action";

@@ -1,10 +1,10 @@
 #include "../script_component.hpp"
 params [
     ["_unit", objNull],
-    "_display", 
-    ["_viewDir", 0], 
-    ["_playerDir", 0], 
-    ["_player", [] call CBA_fnc_currentUnit], 
+    "_display",
+    ["_viewDir", 0],
+    ["_playerDir", 0],
+    "_player",
     "_ctrlGrp"
 ];
 if (isNull _unit) exitWith {};
@@ -14,6 +14,10 @@ if (isNil "_unitID") then {
     _unitID = (missionNamespace getVariable ["diwako_dui_lastID", 0])+1;
     missionNamespace setVariable ["diwako_dui_lastID", _unitID];
     _unit setVariable ["diwako_dui_unit_id", _unitID];
+};
+
+if (isNil "_player") then {
+    _player = [] call CBA_fnc_currentUnit;
 };
 
 private _circleRange = diwako_dui_compassRange;

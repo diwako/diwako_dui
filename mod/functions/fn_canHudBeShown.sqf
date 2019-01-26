@@ -1,4 +1,4 @@
-params [["_player",[] call CBA_fnc_currentUnit]];
+params ["_player"];
 !(
 	visibleMap || 
 	{diwako_dui_toggled_off || 

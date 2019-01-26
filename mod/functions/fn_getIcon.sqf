@@ -43,7 +43,7 @@ if (_player == (_unit getVariable ["diwako_dui_buddy", objNull])) exitWith {
 };
 
 // Leader
-if (leader(_unit) == _unit) exitWith {
+if ((leader _unit) == _unit) exitWith {
     _namespace getVariable ["sql", DUI_SQL];
 };
 

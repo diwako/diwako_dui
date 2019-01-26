@@ -10,7 +10,7 @@ params [
 if (isNull _unit) exitWith {};
 
 private _unitID = _unit getVariable ["diwako_dui_unit_id",nil];
-if (isNil '_unitID') then {
+if (isNil "_unitID") then {
     _unitID = (missionNamespace getVariable ["diwako_dui_lastID", 0])+1;
     missionNamespace setVariable ["diwako_dui_lastID", _unitID];
     _unit setVariable ["diwako_dui_unit_id", _unitID];
@@ -18,7 +18,7 @@ if (isNil '_unitID') then {
 
 private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
-private _fade = linearConversion [_circleRange*0.90, _circleRange, _distance, 1, 0, true];
+private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, 1, 0, true];
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
     private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
@@ -39,7 +39,7 @@ if (diwako_dui_enable_occlusion && {_fade > 0}) then {
     };
 };
 
-private _ctrl = _ctrlGrp getVariable [('diwako_dui_ctrl_unit_' + str _unitID), controlNull];
+private _ctrl = _ctrlGrp getVariable [("diwako_dui_ctrl_unit_" + str _unitID), controlNull];
 
 if (_fade <= 0) exitWith {
     if (isNull _ctrl) exitWith {controlNull};
@@ -51,13 +51,13 @@ private _dir = -(_viewDir - (getDir _unit)) mod 360;
 private _divisor = linearConversion [35,50,_circleRange,2.25,2.75,false] / diwako_dui_hudScaling; //2.25;
 
 if (isNull _ctrl) then {
-    _ctrl = _display ctrlCreate ['RscPicture', -1, _ctrlGrp];
-    _ctrlGrp setVariable [('diwako_dui_ctrl_unit_' + str _unitID), _ctrl];
+    _ctrl = _display ctrlCreate ["RscPicture", -1, _ctrlGrp];
+    _ctrlGrp setVariable [("diwako_dui_ctrl_unit_" + str _unitID), _ctrl];
 
-    private _ctrlArr = _ctrlGrp getVariable ['ctrl_diw_ctrlArr', nil];
-    if (isNil '_ctrlArr') then {
+    private _ctrlArr = _ctrlGrp getVariable ["ctrl_diw_ctrlArr", nil];
+    if (isNil "_ctrlArr") then {
         _ctrlArr = [];
-        _ctrlGrp setVariable ['ctrl_diw_ctrlArr', _ctrlArr];
+        _ctrlGrp setVariable ["ctrl_diw_ctrlArr", _ctrlArr];
     };
     _ctrlArr pushBack _ctrl;
 };

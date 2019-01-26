@@ -1,11 +1,11 @@
 #include "../script_component.hpp"
-// start the loop
 if (is3DEN || !hasInterface) exitWith {};
 
 diwako_dui_uiPixels = DUI_128PX;
 
 diwako_dui_a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
 
+// start the loop
 [] call diwako_dui_fnc_cacheLoop;
 
 private _label = localize "STR_dui_buddy_action";
@@ -42,3 +42,15 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
     params ["_player", "_featureCamera"];
     diwako_dui_inFeatureCamera = !(_featureCamera isEqualTo "");
 }, true] call CBA_fnc_addPlayerEventHandler;
+
+// player remote controls another unit or changes avatar
+// mainly used for the change in avatar / switch unit part as displays will be closed
+["unit", {
+	params ["_newPlayerUnit", "_oldPlayerUnit"];
+	diwako_dui_setCompass = true;
+	diwako_dui_setNamelist = true;
+	for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+		ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+	};
+}, true] call CBA_fnc_addPlayerEventHandler;
+

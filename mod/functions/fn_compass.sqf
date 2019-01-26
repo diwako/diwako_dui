@@ -22,7 +22,6 @@ diwako_dui_compass_pfHandle = [{
         diwako_dui_compass_pfHandle = -1;
     };
 
-    // todo spectator and death
     private _player = [] call CBA_fnc_currentUnit;
     if ([_player] call diwako_dui_fnc_canHudBeShown) then {
         if !(ctrlShown _ctrlGrp) then {

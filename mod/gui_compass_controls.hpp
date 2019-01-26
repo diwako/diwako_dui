@@ -22,14 +22,11 @@ class ControlsBackground
     {
         idc = IDC_DIRECTION;
         moving = 1;
-        //type = 0;
-        //style = 2;
         x = "0.5 - (pixelW * 64)";
         y = "safeZoneY + safeZoneH - (pixelH * 195)";
         w = "pixelW * 128";
         h = "pixelH * 70";
         font = "EtelkaNarrowMediumPro";
-        //sizeEx = 0.04;
         colorBackground[] = {0,0,0,0};
         colorText[] = {1,1,1,1};
         text = "";

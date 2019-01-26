@@ -37,12 +37,13 @@ private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1
 
 // start compass if enabeld but not running yet
 if (diwako_dui_enable_compass) then {
-    if (diwako_dui_compass_pfHandle <= -1) then {
+    private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
+    if (diwako_dui_compass_pfHandle <= -1 || {isNull _compassDisplay}) then {
+        [diwako_dui_compass_pfHandle] call CBA_fnc_removePerFrameHandler;
         ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
         [] call diwako_dui_fnc_compass;
     };
 
-    private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
     _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
     if (!isNull _compassDisplay && diwako_dui_setCompass) then {

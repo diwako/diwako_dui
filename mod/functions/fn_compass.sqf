@@ -36,8 +36,6 @@ diwako_dui_compass_pfHandle = [{
         _compassCtrl ctrlSetTextColor [1, 1, 1, 1];
 
         if (_hasCompass && {diwako_dui_enable_compass_dir == 2 || {diwako_dui_enable_compass_dir == 1 && {!(isNull objectParent _player)}}}) then {
-            _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
-            _dirCtrl ctrlSetFont diwako_dui_font;
             if (diwako_dui_dir_showMildot) then {
                 _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%3' shadow='2' shadowColor='#000000'>%1 | %2</t>", (round _dir) mod 360, round (_dir / 0.056250), 1.25 * diwako_dui_a3UiScale * diwako_dui_hudScaling];
             } else {

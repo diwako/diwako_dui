@@ -39,6 +39,12 @@ private _availableFonts = [
         4
     ]
     ,false
+    ,{
+        diwako_dui_setCompass = true;
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    }
 ] call CBA_Settings_fnc_init;
 
 // include the sqf file as the compiled cfgfunction is not available during some preinit events

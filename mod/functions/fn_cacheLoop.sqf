@@ -70,6 +70,8 @@ if (diwako_dui_enable_compass) then {
             _ctrlWidth,
             pixelH * 70 * _uiScale
         ];
+        _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
+        _dirCtrl ctrlSetFont diwako_dui_font;
         _dirCtrl ctrlCommit 0;
         _grpCtrl ctrlSetPosition [
            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],

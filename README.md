@@ -3,7 +3,7 @@
 ## A HUD showing unit positions and names of units in your squad
 
 ## Summary
-This mod shows a compass in the bottom middle of you screen and a list of people in your current squad. It is made with SQF commands which recently have been added to Arma3 and where not available back in the days of Arma2 or early Arma3. Meaning no weird workarounds with map elements are needed anymore which just eat more frames.
+This mod shows a compass in the bottom middle of your screen and a list of people in your current squad. It is made with SQF commands which recently have been added to Arma3 and were not available back in the days of Arma2 or early Arma3. Meaning no weird workarounds with map elements are needed anymore which just eat more frames.
 A strong point of this UI is its customizability and its many features are all settable with CBA settings.
 
 ## Requirements

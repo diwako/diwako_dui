@@ -67,5 +67,5 @@ Tell in detail what your PR will change, why it should be added and what benefit
 
 # Additional
 [Playable version (DEV)](https://steamcommunity.com/sharedfiles/filedetails/?id=1617125729) (You can build from source as well)\
-[Playable version (STABLE)](https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1638341685)\
+[Playable version (STABLE)](https://steamcommunity.com/sharedfiles/filedetails/?id=1638341685)\
 [BI Thread](https://forums.bohemia.net/forums/topic/221597-dui-squad-radar/)

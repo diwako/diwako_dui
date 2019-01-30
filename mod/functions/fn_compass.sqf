@@ -26,6 +26,8 @@ diwako_dui_compass_pfHandle = [{
     if ([_player] call diwako_dui_fnc_canHudBeShown) then {
         if !(ctrlShown _ctrlGrp) then {
             _ctrlGrp ctrlShow true;
+            _compassCtrl ctrlShow true;
+            _dirCtrl ctrlShow true;
         };
         private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
         private _dir = _camDirVec call CBA_fnc_vectDir;
@@ -73,9 +75,8 @@ diwako_dui_compass_pfHandle = [{
             [_display, _compass, _dirCtrl, _ctrlGrp, _usedCtrls] call diwako_dui_custom_code;
         };
     } else {
-        _compassCtrl ctrlSetTextColor [1, 1, 1, 0];
-        _dirCtrl ctrlSetTextColor [1, 1, 1, 0];
-
+        _compassCtrl ctrlShow false;
+        _dirCtrl ctrlShow false;
         _ctrlGrp ctrlShow false;
     };
 }, diwako_dui_compassRefreshrate, [_display, _compass, _dirCtrl, _ctrlGrp] ] call CBA_fnc_addPerFrameHandler;

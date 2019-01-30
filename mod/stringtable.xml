@@ -221,5 +221,13 @@
             <English></English>
             <German></German>
         </Key>
+        <Key ID="STR_dui_dir_size">
+            <English>Bearing Size</English>
+            <German>Größe der Richtungsanzeige</German>
+        </Key>
+        <Key ID="STR_dui_dir_size_desc">
+            <English></English>
+            <German></German>
+        </Key>
     </Package>
 </Project>

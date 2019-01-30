@@ -82,6 +82,8 @@ if (diwako_dui_enable_compass) then {
            _ctrlHeight
         ];
         _grpCtrl ctrlCommit 0;
+
+        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling;
     };
 };
 

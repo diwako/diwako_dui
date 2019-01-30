@@ -4,6 +4,7 @@ if (is3DEN || !hasInterface) exitWith {};
 diwako_dui_uiPixels = DUI_128PX;
 
 diwako_dui_a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
+diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling;
 
 // start the loop
 [] call diwako_dui_fnc_cacheLoop;

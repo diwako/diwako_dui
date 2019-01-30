@@ -183,6 +183,18 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_compass_opacity"
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_opacity", localize "STR_dui_compass_opacity_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 1, 1, 2]
+    ,false
+    ,{
+        diwako_dui_setCompass = true;
+    }
+] call CBA_Settings_fnc_init;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

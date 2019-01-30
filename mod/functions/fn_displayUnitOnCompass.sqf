@@ -22,7 +22,7 @@ if (isNil "_player") then {
 
 private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
-private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, 1, 0, true];
+private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
     private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];

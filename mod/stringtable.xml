@@ -213,5 +213,13 @@
             <English>When interacting with thing with ACE interaction should the UI be hidden?</English>
             <German>Wenn man mit ACE mit dinge interagiert, soll die UI versteckt werden?</German>
         </Key>
+        <Key ID="STR_dui_compass_opacity">
+            <English>Opacity</English>
+            <German>Opazität</German>
+        </Key>
+        <Key ID="STR_dui_compass_opacity_desc">
+            <English></English>
+            <German></German>
+        </Key>
     </Package>
 </Project>

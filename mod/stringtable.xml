@@ -205,5 +205,13 @@
             <English>Set the icon scale for units on your compass</English>
             <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
         </Key>
+        <Key ID="STR_dui_ace_hide_interaction">
+            <English>Hide While ACE Interacting</English>
+            <German>Während ACE Interaktionen verstecken</German>
+        </Key>
+        <Key ID="STR_dui_ace_hide_interaction_desc">
+            <English>When interacting with thing with ACE interaction should the UI be hidden?</English>
+            <German>Wenn man mit ACE mit dinge interagiert, soll die UI versteckt werden?</German>
+        </Key>
     </Package>
 </Project>

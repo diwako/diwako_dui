@@ -76,6 +76,20 @@ private _availableFonts = [
     ,false
 ] call CBA_Settings_fnc_init;
 
+if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
+    [
+        "diwako_dui_ace_hide_interaction"
+        ,"CHECKBOX"
+        ,[localize "STR_dui_ace_hide_interaction", localize "STR_dui_ace_hide_interaction_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+    ] call CBA_Settings_fnc_init;
+} else {
+    diwako_dui_ace_hide_interaction = false;
+};
+
+
 private _curCat = localize "STR_dui_cat_compass";
 
 [

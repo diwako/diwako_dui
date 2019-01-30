@@ -229,5 +229,25 @@
             <English></English>
             <German></German>
         </Key>
+        <Key ID="STR_dui_namelist_text_shadow">
+            <English>Text Outline</English>
+            <German>Text Umrandung</German>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_desc">
+            <English></English>
+            <German></German>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_0">
+            <English>None</English>
+            <German>Nichts</German>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_1">
+            <English>Shadow</English>
+            <German>Schatten</German>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_2">
+            <English>Outline</English>
+            <German>Umrandung</German>
+        </Key>
     </Package>
 </Project>

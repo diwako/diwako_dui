@@ -37,7 +37,7 @@ class diwako_dui_compass_style
     
         class classic
     {
-        name = "Clock";
+        name = "Classic";
         full = "diwako_dui\UI\compass_styles\classic\full.paa";
         limited = "diwako_dui\UI\compass_styles\classic\limited.paa";
     };

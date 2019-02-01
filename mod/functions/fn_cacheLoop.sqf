@@ -83,7 +83,7 @@ if (diwako_dui_enable_compass) then {
         ];
         _grpCtrl ctrlCommit 0;
 
-        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling;
+        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
     };
 };
 
@@ -145,7 +145,7 @@ private _curList = controlNull;
 private _listIndex = 0;
 private _selectedUnits = groupSelectedUnits _player;
 private _a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
-private _textSize = diwako_dui_namelist_size * diwako_dui_a3UiScale;
+private _textSize = diwako_dui_namelist_size * diwako_dui_a3UiScale * diwako_dui_windowHeightMod;
 private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];

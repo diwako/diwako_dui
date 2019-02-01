@@ -20,162 +20,202 @@
         <Key ID="STR_dui_mod">
             <English>DUI - Squad Radar</English>
             <German>DUI - Squad Radar</German>
+            <Japanese>DUI - スクワッド レーダー</Japanese>
         </Key>
         <Key ID="STR_dui_font">
             <English>Font</English>
             <German>Schriftart</German>
+            <Japanese>フォント</Japanese>
         </Key>
         <Key ID="STR_dui_font_desc">
             <English>Which font should be used?</English>
             <German>Welche Schriftart soll verwendet werden?</German>
+            <Japanese>使用するフォントを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
             <German>Icon Style</German>
+            <Japanese>アイコンのスタイル</Japanese>
         </Key>
         <Key ID="STR_dui_icon_desc">
             <English>Which icon style should be used?</English>
             <German>Welcher Icon Style soll genutzt werden?</German>
+            <Japanese>使用するアイコン スタイルを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_color">
             <English>Color Scheme</English>
             <German>Farbschema</German>
+            <Japanese>カラー テーマ</Japanese>
         </Key>
         <Key ID="STR_dui_color_desc">
             <English>Which color scheme should be used?</English>
             <German>Welches Farbschema soll verwendet werden?</German>
+            <Japanese>使用するカラー テーマを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_show_compass">
             <English>Show Compass</English>
             <German>Kompass anzeigen</German>
+            <Japanese>コンパスを表示</Japanese>
         </Key>
         <Key ID="STR_dui_show_compass_desc">
             <English>Shows compass and unit markers on it</English>
             <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
+            <Japanese>コンパスとユニット マーカーを表示します。</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir">
             <English>Show Bearing</English>
             <German>Richtung anzeigen</German>
+            <Japanese>方位を表示</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir_desc">
             <English>Shows bearing above the compass, compass it self needs to be enabled!</English>
             <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
+            <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
         </Key>
         <Key ID="STR_dui_show_milrad">
             <English>Show bearing also in milradians</English>
             <German>Richtung auch in Milradians anzeigen</German>
+            <Japanese>方位をミル ラジアンで表示</Japanese>
         </Key>
         <Key ID="STR_dui_show_milrad_desc">
             <English>Shows milradians next to the regular bearing</English>
             <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
+            <Japanese>方位の隣にミル ラジアンを表示します。</Japanese>
         </Key>
         <Key ID="STR_dui_compass_style">
             <English>Compass Style</English>
             <German>Kompassstyle</German>
+            <Japanese>コンパスのスタイル</Japanese>
         </Key>
         <Key ID="STR_dui_compass_style_desc">
             <English>Which compass style should be used?</English>
             <German>Welcher Kompassstyle soll verwendet werden?</German>
+            <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_compass_range">
             <English>Compass Range</English>
             <German>Kompassreichweite</German>
+            <Japanese>コンパスの範囲</Japanese>
         </Key>
         <Key ID="STR_dui_compass_range_desc">
             <English>How far should players see units in the same group in meters?</English>
             <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
+            <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_compass_refresh">
             <English>Refresh Rate</English>
             <German>Aktualisierungsrate</German>
+            <Japanese>リフレッシュ レート</Japanese>
         </Key>
         <Key ID="STR_dui_compass_refresh_desc">
             <English>How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!</English>
             <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
+            <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
         </Key>
         <Key ID="STR_dui_occlusion">
             <English>Enable Occlusion</English>
             <German>Okklusion anschalten</German>
+            <Japanese>オクルージョンを有効化</Japanese>
         </Key>
         <Key ID="STR_dui_occlusion_desc">
             <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
+            <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
         </Key>
         <Key ID="STR_dui_namelist">
             <English>Show Names</English>
             <German>Namen anzeigen</German>
+            <Japanese>名前を表示</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_desc">
             <English>Shows a list of names of units currently in the same group</English>
             <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
+            <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_buddy">
             <English>Show Only Buddy Icon</English>
             <German>Nur Buddy Icon anzeigen</German>
+            <Japanese>バディ アイコンのみ表示</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_buddy_desc">
             <English>Shows only the buddy icon in the name list instead of both, buddy and unit class</English>
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon  in der Namensliste an</German>
+            <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>TextSize</English>
             <German>Textgröße</German>
+            <Japanese>テキストの大きさ</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_size_desc">
             <English>Size of the names, smaller means more in one column</English>
             <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
+            <Japanese>名前の大きさを設定します。小さければ一つの幅にたくさんの名前が収まります。</Japanese>
         </Key>
         <Key ID="STR_dui_key_toggle">
             <English>Toggle UI on and off</English>
             <German>UI an- und ausschalten</German>
+            <Japanese>UI 切り替えのオン/オフ</Japanese>
         </Key>
         <Key ID="STR_dui_key_increase_range">
             <English>Increase Compass Range</English>
             <German>Kompassreichweite erhöhen</German>
+            <Japanese>コンパスの範囲を増加</Japanese>
         </Key>
         <Key ID="STR_dui_key_decrease_range">
             <English>Decrease Compass Range</English>
             <German>Kompassreichweite verkleinern</German>
+            <Japanese>コンパスの範囲を減少</Japanese>
         </Key>
         <Key ID="STR_dui_key_rank">
             <English>Hold to show ranks</English>
             <German>Taste halten um Ränge anzuzeigen</German>
+            <Japanese>長押しで階級を表示</Japanese>
         </Key>
         <Key ID="STR_dui_cat_compass">
             <English>Compass</English>
             <German>Kompass</German>
+            <Japanese>コンパス</Japanese>
         </Key>
         <Key ID="STR_dui_cat_namelist">
             <English>Name List</English>
             <German>Namesliste</German>
+            <Japanese>名前リスト</Japanese>
         </Key>
         <Key ID="STR_dui_cat_general">
             <English>General Settings</English>
             <German>Allgmeine Einstellungen</German>
+            <Japanese>全般設定</Japanese>
         </Key>
         <Key ID="STR_dui_buddy_action">
             <English>Assign Buddy [HUD]</English>
             <German>Als Buddy markieren [HUD]</German>
+            <Japanese>バディに登録 [HUD]</Japanese>
         </Key>
         <Key ID="STR_dui_buddy_action_remove">
             <English>Unassign Buddy [HUD]</English>
             <German>Buddymarkierung aufheben [HUD]</German>
+            <Japanese>バディを解除 [HUD]</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
             <German>Niemals</German>
+            <Japanese>行わない</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir_opt3">
             <English>Always</English>
             <German>Immer</German>
+            <Japanese>常に</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir_opt2">
             <English>Only In Vehicles</English>
             <German>Nur In Fahrzeugen</German>
+            <Japanese>車両内のみ</Japanese>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
             <German>UI Größe</German>
+            <Japanese>UI スケール</Japanese>
         </Key>
         <Key ID="STR_dui_ui_scale_desc">
             <English></English>
@@ -184,38 +224,47 @@
         <Key ID="STR_dui_namelist_bg">
             <English>Background Opacity</English>
             <German>Hintergrund Sichtbarkeit</German>
+            <Japanese>背景の透明度</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_bg_desc">
             <English>How strong should the black background be visible</English>
             <German>Wie stark soll der Hintergrund sichtbar sein</German>
+            <Japanese>背景の透明度を設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_width">
             <English>Column Width</English>
             <German>Spaltenbreite</German>
+            <Japanese>カラムの幅</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_width_desc">
             <English>Which width in pixels should be used for the column widths? Be aware that UI scaling will affect this!</English>
             <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
+            <Japanese>カラムの幅をピクセルで設定します。UI スケールはこの設定に影響を及ぼします!</Japanese>
         </Key>
         <Key ID="STR_dui_compass_icon_scale">
             <English>Icon Scaling</English>
             <German>Icon Größe</German>
+            <Japanese>アイコンのスケール</Japanese>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_desc">
             <English>Set the icon scale for units on your compass</English>
             <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
+            <Japanese>コンパス上に表示されるユニット アイコンのスケールを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
             <English>Hide While ACE Interacting</English>
             <German>Während ACE Interaktionen verstecken</German>
+            <Japanese>インタラクション中は非表示</Japanese>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction_desc">
             <English>When interacting with thing with ACE interaction should the UI be hidden?</English>
             <German>Wenn man mit ACE mit dinge interagiert, soll die UI versteckt werden?</German>
+            <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Opacity</English>
             <German>Opazität</German>
+            <Japanese>透明度</Japanese>
         </Key>
         <Key ID="STR_dui_compass_opacity_desc">
             <English></English>
@@ -224,6 +273,7 @@
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
             <German>Größe der Richtungsanzeige</German>
+            <Japanese>方位の大きさ</Japanese>
         </Key>
         <Key ID="STR_dui_dir_size_desc">
             <English></English>
@@ -232,6 +282,7 @@
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
             <German>Text Umrandung</German>
+            <Japanese>テキストのアウトライン</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_desc">
             <English></English>
@@ -240,14 +291,17 @@
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
             <German>Nichts</German>
+            <Japanese>無し</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_1">
             <English>Shadow</English>
             <German>Schatten</German>
+            <Japanese>影付き</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_2">
             <English>Outline</English>
             <German>Umrandung</German>
+            <Japanese>アウトライン</Japanese>
         </Key>
     </Package>
 </Project>

@@ -62,7 +62,7 @@ class diwako_dui_compass_style
         full = "diwako_dui\UI\compass_styles\xeno\bluef.paa";
         limited = "diwako_dui\UI\compass_styles\xeno\blue.paa";
     };
-	    class milint
+	class milint
     {
         name = "Military Interface";
         full = "diwako_dui\UI\compass_styles\milint\full.paa";

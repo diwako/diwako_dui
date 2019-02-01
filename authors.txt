@@ -8,6 +8,7 @@ Gordon Weedman (Compass [Pizza Time])
 cyruz (Compass [BI])
 G4rrus Vakarian (NATO icons)
 Pilotguy (Ye Olde Times, Clock compass)
+Engee (Classic Compass)
 classicarma (Added Japanese translation)
 
 Special thanks:

@@ -10,6 +10,8 @@ G4rrus Vakarian (NATO icons)
 Pilotguy (Ye Olde Times, Clock compass)
 Engee (Classic Compass)
 classicarma (Added Japanese translation)
+Psychodewon (Added French translation)
+phreaky (Added Czech translation)
 
 Special thanks:
 alganthe (General Arma modding support)

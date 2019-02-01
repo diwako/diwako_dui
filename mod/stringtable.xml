@@ -303,5 +303,15 @@
             <German>Umrandung</German>
             <Japanese>アウトライン</Japanese>
         </Key>
+        <Key ID="STR_dui_compass_warning">
+            <English>Distance Warning</English>
+            <German>Abstandswarnung</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
+        <Key ID="STR_dui_compass_warning_desc">
+            <English>Sets the distance in meters which will turn a unit icon orange when being too close to you</English>
+            <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
     </Package>
 </Project>

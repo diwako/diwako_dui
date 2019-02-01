@@ -85,7 +85,7 @@ _ctrl ctrlSetAngle [_dir,0.5,0.5,false];
 _ctrl ctrlCommit 0;
 
 private _color = [0.85, 0.4, 0];
-if (_distance > 3 || {!(isNull objectParent _unit) || {_unit == _player}}) then {
+if (_distance > diwako_dui_distanceWarning || {!(isNull objectParent _unit) || {_unit == _player}}) then {
     _color = + (_unit getVariable ["diwako_dui_compass_color", [1,1,1]]);
 };
 _color pushBack _fade;

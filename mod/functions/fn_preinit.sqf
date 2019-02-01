@@ -24,7 +24,8 @@ private _availableFonts = [
     "EtelkaMonospacePro",
     // "EtelkaMonospaceProBold",
     // "EtelkaNarrowMediumPro",
-    "LCD14"
+    "LCD14",
+    "Bombardier"
     // "TahomaB"
 ];
 

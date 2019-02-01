@@ -313,5 +313,25 @@
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
             <!-- <Japanese></Japanese> -->
         </Key>
+        <Key ID="STR_dui_compass_hide_when_alone">
+            <English>Hide Whole Compass When Alone</English>
+            <German>Verstecke den Kompass wenn man alleine ist</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
+        <Key ID="STR_dui_compass_hide_when_alone_desc">
+            <English>When you are alone in a group, this will hide the compass UI element from your screen</English>
+            <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
+        <Key ID="STR_dui_compass_hide_blip_when_alone">
+            <English>Hide Player Marker when alone</English>
+            <German>Verstecke den Spieler Marker wenn man alleine ist</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
+        <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
+            <English>When you are alone in a group, this will only hide the player marker on the compass</English>
+            <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
+            <!-- <Japanese></Japanese> -->
+        </Key>
     </Package>
 </Project>

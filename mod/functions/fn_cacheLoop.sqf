@@ -13,7 +13,11 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 
 private _player = [] call CBA_fnc_currentUnit;
 _group = units group _player;
+if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
+    _group = [];
+};
 diwako_dui_group = _group;
+
 private _uiScale = diwako_dui_hudScaling;
 private _uiPixels = diwako_dui_uiPixels;
 
@@ -130,7 +134,7 @@ if (diwako_dui_setNamelist) then {
 
 
 // no need to show any names if you are alone in the group
-if (count _group == 1) exitWith {
+if (count _group <= 1) exitWith {
     if ((count _lists) > 0) then {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);

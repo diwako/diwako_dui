@@ -216,6 +216,24 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_compass_hide_alone_group"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_compass_hide_when_alone", localize "STR_dui_compass_hide_when_alone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_compass_hide_blip_alone_group"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_compass_hide_blip_when_alone", localize "STR_dui_compass_hide_blip_when_alone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

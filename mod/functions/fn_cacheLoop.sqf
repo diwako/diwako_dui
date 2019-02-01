@@ -149,7 +149,7 @@ private _curList = controlNull;
 private _listIndex = 0;
 private _selectedUnits = groupSelectedUnits _player;
 private _a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
-private _textSize = diwako_dui_namelist_size * diwako_dui_a3UiScale * diwako_dui_windowHeightMod;
+private _textSize = diwako_dui_namelist_size * diwako_dui_a3UiScale;
 private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
@@ -195,7 +195,7 @@ private _shadow = diwako_dui_namelist_text_shadow;
         _unit getVariable ["ACE_Name", name _unit], // 3
         _unit getVariable ["diwako_dui_color","#FFFFFF"], // 4
         _selected, // 5
-        _textSize, // 6
+        (_textSize * diwako_dui_windowHeightMod), // 6
         _buddy, // 7
         _shadow]; // 8
 } forEach _group;

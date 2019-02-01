@@ -33,7 +33,7 @@ class diwako_dui_colors
         blue = "#3333FF";
         yellow = "#D9D900";
     };
-	    class wargame:standard
+	class wargame:standard
     {
         name = "Wargame";
 
@@ -43,7 +43,7 @@ class diwako_dui_colors
         blue = "#94EDD7";
         yellow = "#DC9845";
     };
-	    class wargame2:standard
+	class wargame2:standard
     {
         name = "Wargame (Military Green)";
 

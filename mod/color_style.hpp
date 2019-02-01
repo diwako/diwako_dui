@@ -34,7 +34,7 @@ class diwako_dui_colors
         yellow = "#D9D900";
     };
 
-    class cblind:protanopia
+    class protanopia:standard
     {
         name = "Protanopia";
 
@@ -45,7 +45,7 @@ class diwako_dui_colors
         yellow = "#D9D934";
     };
 
-    class cblind:protanomaly
+    class protanomaly:standard
     {
         name = "Protanomaly";
 
@@ -56,7 +56,7 @@ class diwako_dui_colors
         yellow = "#D9D91B";
     };
 
-    class cblind:deuteranopia
+    class deuteranopia:standard
     {
         name = "Deuteranopia";
 
@@ -67,7 +67,7 @@ class diwako_dui_colors
         yellow = "#D9D941";
     };
 
-    class cblind:deuteranomaly
+    class deuteranomaly:standard
     {
         name = "Deuteranomaly";
 
@@ -78,7 +78,7 @@ class diwako_dui_colors
         yellow = "#D9D91F";
     };
 
-    class cblind:tritanopia
+    class tritanopia:standard
     {
         name = "Tritanopia";
 
@@ -89,7 +89,7 @@ class diwako_dui_colors
         yellow = "#D95E67";
     };
 
-    class cblind:tritanomaly
+    class tritanomaly:standard
     {
         name = "Tritanomaly";
 
@@ -100,7 +100,7 @@ class diwako_dui_colors
         yellow = "#D99F28";
     };
 
-    class cblind:achromatopsia
+    class achromatopsia:standard
     {
         name = "Achromatopsia";
 
@@ -111,7 +111,7 @@ class diwako_dui_colors
         yellow = "#C0C0C0";
     };
 
-    class cblind:achromatomaly
+    class achromatomaly:standard
     {
         name = "Achromatomaly";
 

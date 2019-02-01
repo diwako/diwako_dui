@@ -4,7 +4,7 @@ diwako
 Contributors:
 Nigel (Code, UI config)
 Terry (Icons [Just The Tip])
-Gordon Weedman (Compass [Pizza Time])
+Gordon Weedman (Compass [Pizza Time], Xeno)
 cyruz (Compass [BI])
 G4rrus Vakarian (NATO icons)
 Pilotguy (Ye Olde Times, Clock compass)

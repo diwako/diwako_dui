@@ -41,4 +41,25 @@ class diwako_dui_compass_style
         full = "diwako_dui\UI\compass_styles\classic\full.paa";
         limited = "diwako_dui\UI\compass_styles\classic\limited.paa";
     };
+
+    class xeno_red
+    {
+        name = "Xeno - Red";
+        full = "diwako_dui\UI\compass_styles\xeno\redf.paa";
+        limited = "diwako_dui\UI\compass_styles\xeno\red.paa";
+    };
+
+    class xeno_green
+    {
+        name = "Xeno - Green";
+        full = "diwako_dui\UI\compass_styles\xeno\greenf.paa";
+        limited = "diwako_dui\UI\compass_styles\xeno\green.paa";
+    };
+
+    class xeno_blue
+    {
+        name = "Xeno - Blue";
+        full = "diwako_dui\UI\compass_styles\xeno\bluef.paa";
+        limited = "diwako_dui\UI\compass_styles\xeno\blue.paa";
+    };
 };

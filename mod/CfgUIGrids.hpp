@@ -6,8 +6,8 @@ class CfgUIGrids {
                     diwako_dui_namelist[] = {
                         {
                             "0.5 + (pixelW * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) / 2 + 10))",
-							"safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
-							"0.5 * safeZoneW - (pixelW * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) / 2 + 10))",
+                            "safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
+                            "0.5 * safeZoneW - (pixelW * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) / 2 + 10))",
                             "pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10)"
                         },
                         "0.5*(((safezoneW / safezoneH) min 1.2)/ 40)",
@@ -16,8 +16,8 @@ class CfgUIGrids {
                     diwako_dui_compass[] = {
                         {
                             "((0.5) * safezoneW + safezoneX) - (pixelW * 64 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))",
-							"safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
-							"pixelW * (128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))",
+                            "safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
+                            "pixelW * (128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))",
                             "pixelH * (128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))"
                         },
                         "0.5*(((safezoneW / safezoneH) min 1.2)/ 40)",

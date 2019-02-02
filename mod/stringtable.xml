@@ -542,5 +542,21 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
         </Key>
+        <Key ID="STR_dui_reset_ui_pos">
+            <English>Reset UI Position</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Positionen zurücksetzen</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
+        <Key ID="STR_dui_reset_ui_pos_desc">
+            <English>Resets the position of all DUI UI elements</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
     </Package>
 </Project>

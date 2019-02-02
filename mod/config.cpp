@@ -19,6 +19,7 @@ class CfgPatches {
 
 #include "script_component.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgUIGrids.hpp"
 #include "gui.hpp"
 #include "compass_style.hpp"
 #include "icon_style.hpp"

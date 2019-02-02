@@ -24,14 +24,9 @@ private _availableFonts = [
     "EtelkaMonospacePro",
     // "EtelkaMonospaceProBold",
     // "EtelkaNarrowMediumPro",
-    "LCD14",
-    "Bombardier"
+    "LCD14"
     // "TahomaB"
 ];
-
-if (isClass(configfile >> "CfgPatches" >> "ace_fonts")) then {
-    _availableFonts pushback "PixelSplitterBold";
-};
 
 [
     "diwako_dui_font"

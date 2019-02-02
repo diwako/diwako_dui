@@ -23,12 +23,13 @@ if (isNil "_player") then {
 private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
 private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
+private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
     private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
     private _lastSeen = _unit getVariable "diwako_dui_lastSeen";
-
-    if (_vis == 0) then {
+    private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
+    if (_vis == 0 || {diwako_dui_enable_occlusion_actual_cone < _cone}) then {
         // unit not visible anymore
         if (isNil "_lastSeen") then {
             _lastSeen = time;
@@ -68,7 +69,6 @@ if (isNull _ctrl) then {
 
 ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
 private _center = [_left + _width/2, _top + _height/2];
-private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
 private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];
 private _iconScale = diwako_dui_compass_icon_scale;
 private _newWidth = (44 * pixelW) /_divisor * _iconScale;

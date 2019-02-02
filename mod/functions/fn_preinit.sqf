@@ -187,6 +187,19 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    "diwako_dui_enable_occlusion_cone"
+    ,"SLIDER"
+    ,[localize "STR_dui_occlusion_cone", localize "STR_dui_occlusion_cone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 360, 360, 1]
+    ,false
+    ,{
+        params ["_value"];
+        diwako_dui_enable_occlusion_actual_cone = _value / 2;
+    }
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_compass_icon_scale"
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]

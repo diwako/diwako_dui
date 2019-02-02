@@ -526,5 +526,21 @@
             <!-- <Japanese></Japanese> -->
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
         </Key>
+        <Key ID="STR_dui_occlusion_cone">
+            <English>Occlusion Cone</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Okklusionskegel</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
+        <Key ID="STR_dui_occlusion_cone_desc">
+            <English>Sets the cone (in degrees) in which a unit is considered seen infront of the player. E.g. 90 means you can see the unit 45 degrees to your left and right</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
     </Package>
 </Project>

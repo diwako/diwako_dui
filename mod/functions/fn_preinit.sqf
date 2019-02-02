@@ -29,6 +29,10 @@ private _availableFonts = [
     // "TahomaB"
 ];
 
+if (isClass(configfile >> "CfgPatches" >> "ace_fonts")) then {
+    _availableFonts pushback "PixelSplitterBold";
+};
+
 [
     "diwako_dui_font"
     ,"LIST"

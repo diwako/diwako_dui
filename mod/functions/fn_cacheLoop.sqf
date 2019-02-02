@@ -61,6 +61,8 @@ if (diwako_dui_enable_compass) then {
         private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
+        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
+
         _compassCtrl ctrlSetPosition [
             profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
             profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
@@ -69,6 +71,13 @@ if (diwako_dui_enable_compass) then {
         ];
         _compassCtrl ctrlSetTextColor [1 ,1 , 1, diwako_dui_compass_opacity];
         _compassCtrl ctrlCommit 0;
+        _grpCtrl ctrlSetPosition [
+           profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
+           profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
+           _ctrlWidth,
+           _ctrlHeight
+        ];
+        _grpCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
             profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
             (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
@@ -79,15 +88,6 @@ if (diwako_dui_enable_compass) then {
         _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
         _dirCtrl ctrlSetFont diwako_dui_font;
         _dirCtrl ctrlCommit 0;
-        _grpCtrl ctrlSetPosition [
-           profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-           profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
-           _ctrlWidth,
-           _ctrlHeight
-        ];
-        _grpCtrl ctrlCommit 0;
-
-        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
     };
 };
 

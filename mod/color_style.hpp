@@ -34,6 +34,28 @@ class diwako_dui_colors
         yellow = "#D9D900";
     };
 
+    class wargame:standard
+    {
+        name = "Wargame";
+
+        white = "#FEFFFF";
+        red = "#EA6056";
+        green = "#8FD189";
+        blue = "#94EDD7";
+        yellow = "#DC9845";
+    };
+
+	  class wargame2:standard
+    {
+        name = "Wargame (Military Green)";
+
+        white = "#9CB595";
+        red = "#EA6056";
+        green = "#8FD189";
+        blue = "#94EDD7";
+        yellow = "#DC9845";
+    };
+
     class protanopia:standard
     {
         name = "Protanopia";
@@ -120,27 +142,5 @@ class diwako_dui_colors
         green = "#419E41";
         blue = "#40409C";
         yellow = "#CBCB69";
-    };
-
-  	class wargame:standard
-    {
-        name = "Wargame";
-
-        white = "#FEFFFF";
-        red = "#EA6056";
-        green = "#8FD189";
-        blue = "#94EDD7";
-        yellow = "#DC9845";
-    };
-
-	  class wargame2:standard
-    {
-        name = "Wargame (Military Green)";
-
-        white = "#9CB595";
-        red = "#EA6056";
-        green = "#8FD189";
-        blue = "#94EDD7";
-        yellow = "#DC9845";
     };
 };

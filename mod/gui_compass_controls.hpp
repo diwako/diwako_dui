@@ -30,7 +30,7 @@ class ControlsBackground
         colorBackground[] = {0,0,0,0};
         colorText[] = {1,1,1,1};
         text = "";
-        lineSpacing = 1;
+        //lineSpacing = 1;
         shadow = 2;
     };
 };

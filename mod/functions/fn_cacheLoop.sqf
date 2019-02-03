@@ -186,7 +186,20 @@ private _shadow = diwako_dui_namelist_text_shadow;
         _listIndex = _listIndex + 1;
     };
     private _unit = _x;
-    private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
+    private _selected = "";
+    if (_selectedUnits findIf {_x == _unit} > -1) then {
+        private _curName = vehicleVarName _unit;
+        _unit setVehicleVarName "";
+        private _defaultIdent = str _unit;
+        _unit setVehicleVarName _curName;
+        private _arr = [_defaultIdent, ":"] call CBA_fnc_split;
+        private _num = if ((count _arr) > 1) then {
+            (_arr select 1) select [0, 2]
+        } else {
+            ""
+        };
+        _selected = format [">> %1",_num];
+    };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
     _text = format ["%1<t color='%4' size='%6' shadow='%8' shadowColor='#000000' valign='middle' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",

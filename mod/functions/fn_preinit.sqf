@@ -90,6 +90,22 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
 };
 
 [
+    "diwako_dui_show_squadbar"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+    ,{
+        params ["_value"];
+        // disable/enable vanilla squadbar
+        private _showHud = shownHUD;
+        _showHud set [6, _value];
+        showHud (_showHud select [0, 8]);
+    }
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_reset_ui_pos"
     ,"CHECKBOX"
     ,[localize "STR_dui_reset_ui_pos", localize "STR_dui_reset_ui_pos_desc"]

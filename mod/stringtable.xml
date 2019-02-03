@@ -555,6 +555,20 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
+        </Key>
+        <Key ID="STR_dui_show_squadbar">
+            <English>Show Vanilla Squad Bar</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Vanilla Squad Bar anzeigen</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
+        <Key ID="STR_dui_show_squadbar_desc">
+            <English>Shows the vanilla Arma3 Squad Bar when being in a squad leader position</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
         </Key>

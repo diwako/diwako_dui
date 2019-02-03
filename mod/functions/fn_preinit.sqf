@@ -96,6 +96,13 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
+    ,{
+        params ["_value"];
+        // disable/enable vanilla squadbar
+        private _showHud = shownHUD;
+        _showHud set [6, _value];
+        showHud (_showHud select [0, 8]);
+    }
 ] call CBA_Settings_fnc_init;
 
 private _curCat = localize "STR_dui_cat_compass";

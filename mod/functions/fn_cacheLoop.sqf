@@ -3,11 +3,6 @@
 // loop
 [diwako_dui_fnc_cacheLoop,[],0.5] call CBA_fnc_waitAndExecute;
 
-// disable/enable vanilla squadbar
-private _showHud = shownHUD;
-_showHud set [6, diwako_dui_show_squadbar];
-showHud (_showHud select [0, 8]);
-
 // if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     for "_i" from 0 to (count diwako_dui_namebox_lists) do {

@@ -492,7 +492,6 @@
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
             <!-- <Japanese></Japanese> -->
             <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
-            
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone">
             <English>Hide Whole Compass When Alone</English>

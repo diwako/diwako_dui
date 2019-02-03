@@ -89,6 +89,14 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     diwako_dui_ace_hide_interaction = false;
 };
 
+[
+    "diwako_dui_show_squadbar"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_Settings_fnc_init;
 
 private _curCat = localize "STR_dui_cat_compass";
 

@@ -1,5 +1,5 @@
 #define REQUIRED_VERSION 1.88
-#define VERSION "1.0.0"
+#define VERSION "1.3.0"
 
 class CfgPatches {
     class diwako_dui {

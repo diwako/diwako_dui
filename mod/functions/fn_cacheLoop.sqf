@@ -187,7 +187,7 @@ private _shadow = diwako_dui_namelist_text_shadow;
     };
     private _unit = _x;
     private _selected = "";
-    if (_selectedUnits findIf {_x == _unit} > -1) then {
+    if ((count _selectedUnits) > 0 && {_unit != _player}) then {
         private _curName = vehicleVarName _unit;
         _unit setVehicleVarName "";
         private _defaultIdent = str _unit;
@@ -198,7 +198,7 @@ private _shadow = diwako_dui_namelist_text_shadow;
         } else {
             ""
         };
-        _selected = format [">> %1",_num];
+        _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
     private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});

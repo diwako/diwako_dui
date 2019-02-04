@@ -54,7 +54,6 @@ diwako_dui_compass_pfHandle = [{
             _dirCtrl ctrlSetText "";
         };
 
-
         private _usedCtrls = [];
         private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
         private _playerDir = getDir _player;
@@ -63,12 +62,11 @@ diwako_dui_compass_pfHandle = [{
             _usedCtrls pushBack ([_x, _display, _dir, _playerDir, _player, _ctrlGrp] call diwako_dui_fnc_displayUnitOnCompass);
         } forEach _grp;
 
-        private _unusedCtrls = _ctrls - _usedCtrls;
         {
             ctrlDelete _x;
-        } forEach _unusedCtrls;
+        } forEach (_ctrls - _usedCtrls);
 
-        (_display displayCtrl IDC_COMPASS_CTRLGRP) setVariable ["diwako_dui_ctrlArr",_usedCtrls];
+        _ctrlGrp setVariable ["diwako_dui_ctrlArr",_usedCtrls];
 
         if !(isNil "diwako_dui_custom_code") then {
             /*

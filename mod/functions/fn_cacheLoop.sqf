@@ -64,23 +64,23 @@ if (diwako_dui_enable_compass) then {
         diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
 
         _compassCtrl ctrlSetPosition [
-            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-            profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
+            profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
+            profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY],
             _ctrlWidth,
             _ctrlHeight
         ];
         _compassCtrl ctrlSetTextColor [1 ,1 , 1, diwako_dui_compass_opacity];
         _compassCtrl ctrlCommit 0;
         _grpCtrl ctrlSetPosition [
-           profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-           profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
+           profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
+           profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY],
            _ctrlWidth,
            _ctrlHeight
         ];
         _grpCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
-            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-            (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
+            profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
+            (profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
             // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
@@ -121,9 +121,9 @@ if (diwako_dui_setNamelist) then {
     diwako_dui_setNamelist = false;
     private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
-        profileNamespace getVariable ["diwako_dui_namelist_x", 0.5 + (pixelW * (_uiPixels / 2 + 10))],
-        profileNamespace getVariable ["diwako_dui_namelist_y",safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10))],
-        (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
+        profileNamespace getVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (_uiPixels / 2 + 10))],
+        profileNamespace getVariable ["igui_diwako_dui_namelist_y",safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10))],
+        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10)),
         pixelH * (_uiPixels + 10)
     ];
     _grpCtrl ctrlSetPosition _nameListPos;

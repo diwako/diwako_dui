@@ -105,6 +105,40 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     }
 ] call CBA_Settings_fnc_init;
 
+[
+    "diwako_dui_reset_ui_pos"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_reset_ui_pos", localize "STR_dui_reset_ui_pos_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+    ,{
+        params ["_value"];
+        diwako_debug = _this;
+        if (_value) then {
+            ["diwako_dui_reset_ui_pos", false, 0, "server", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "client", true] call CBA_settings_fnc_set;
+            profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (diwako_dui_uiPixels / 2))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (diwako_dui_uiPixels / 2 + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
+            saveProfileNamespace;
+
+            diwako_dui_setCompass = true;
+            diwako_dui_setNamelist = true;
+
+            for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+                ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+            };
+        };
+    }
+] call CBA_Settings_fnc_init;
+
 private _curCat = localize "STR_dui_cat_compass";
 
 [
@@ -369,6 +403,12 @@ private _curCat = localize "STR_dui_cat_namelist";
         for "_i" from 0 to (count diwako_dui_namebox_lists) do {
             ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
         };
+
+        // reset size for arma ui editor
+        profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
+        profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
+        profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
+        profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
     }
 ] call CBA_Settings_fnc_init;
 

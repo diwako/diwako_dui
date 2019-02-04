@@ -26,21 +26,29 @@ private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, 
 private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
-    private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
     private _lastSeen = _unit getVariable "diwako_dui_lastSeen";
-    private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
-    if (_vis == 0 || {diwako_dui_enable_occlusion_actual_cone < _cone}) then {
+    private _occlude = !isNil "_lastSeen";
+    if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
+        _unit setVariable ["diwako_dui_lastChecked", time + 1];
+        private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
+        private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
+        if (_vis == 0 || {diwako_dui_enable_occlusion_actual_cone < _cone}) then {
+            _occlude = true;
+        } else {
+            // unit visible
+            if !(isNil "_lastSeen") then {
+                _unit setVariable ["diwako_dui_lastSeen", nil];
+            };
+            _occlude = false;
+        };
+    };
+    if (_occlude) then {
         // unit not visible anymore
         if (isNil "_lastSeen") then {
             _lastSeen = time;
             _unit setVariable ["diwako_dui_lastSeen", _lastSeen];
         };
         _fade = linearConversion [0, 10, time - _lastSeen, 1, 0, true] min _fade;
-    } else {
-        // unit visible
-        if !(isNil "_lastSeen") then {
-            _unit setVariable ["diwako_dui_lastSeen", nil];
-        };
     };
 };
 

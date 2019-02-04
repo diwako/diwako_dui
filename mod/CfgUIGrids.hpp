@@ -30,14 +30,14 @@ class CfgUIGrids {
         class Variables {
             class diwako_dui_namelist {
                 displayName = "$STR_dui_cat_namelist";
-                description = "";
+                description = "$STR_dui_cat_namelist_desc";
                 preview = "#(argb,8,8,3)color(0,0,0,0.75)";
                 saveToProfile[] = {0,1};
                 canResize = 0;
             };
             class diwako_dui_compass {
                 displayName = "$STR_dui_cat_compass";
-                description = "";
+                description = "$STR_dui_cat_compass_desc";
                 preview = "diwako_dui\UI\compass_styles\standard\compass.paa";
                 saveToProfile[] = {0,1};
                 canResize = 0;

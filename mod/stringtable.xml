@@ -273,6 +273,14 @@
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
         </Key>
+        <Key ID="STR_dui_cat_compass_desc">
+            <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
         <Key ID="STR_dui_cat_namelist">
             <English>Name List</English>
             <Czech>Seznam jmen</Czech>
@@ -280,6 +288,14 @@
             <German>Namesliste</German>
             <Japanese>名前リスト</Japanese>
             <Polish>Lista imion</Polish>
+        </Key>
+        <Key ID="STR_dui_cat_namelist_desc">
+            <English>Name List UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_cat_general">
             <English>General Settings</English>

@@ -154,6 +154,9 @@ private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 private _shadow = diwako_dui_namelist_text_shadow;
+private _bgOpacity = diwako_dui_namelist_bg;
+private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
+private _heightMod = diwako_dui_windowHeightMod;
 {
     if (_forEachIndex mod round(5/_textSize*_uiScale) == 0) then {
         if !(isNull _curList) then {
@@ -179,7 +182,7 @@ private _shadow = diwako_dui_namelist_text_shadow;
 
             _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
             _curList ctrlSetFont diwako_dui_font;
-            _curList ctrlSetBackgroundColor [0,0,0,diwako_dui_namelist_bg];
+            _curList ctrlSetBackgroundColor [0,0,0,_bgOpacity];
             _lists pushBack _curList;
             _curList ctrlCommit 0;
         };
@@ -201,14 +204,14 @@ private _shadow = diwako_dui_namelist_text_shadow;
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
-    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
+    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["%1<t color='%4' size='%6' shadow='%8' shadowColor='#000000' valign='middle' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
         _icon, // 2
         _unit getVariable ["ACE_Name", name _unit], // 3
         _unit getVariable ["diwako_dui_color","#FFFFFF"], // 4
         _selected, // 5
-        (_textSize * diwako_dui_windowHeightMod), // 6
+        (_textSize * _heightMod), // 6
         _buddy, // 7
         _shadow]; // 8
 } forEach _group;

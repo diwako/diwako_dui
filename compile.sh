@@ -1,1 +1,1 @@
-armake build -x "gui.hpp" -x "CfgFunctions.hpp" -x "RscCommon.hpp" -x "*_style.hpp" -x "*_controls.hpp" -x "*.tga" -x "*.psd" -x "*.png" -x "*.biprivatekey" -k "diwako_dui.biprivatekey" -z -f mod/ /mnt/d/SteamLibrary/steamapps/common/Arma\ 3/@diwako_dui/addons/diwako_dui.pbo
+armake build -x "gui.hpp" -x "CfgFunctions.hpp" -x "CfgUIGrids.hpp" -x "RscCommon.hpp" -x "*_style.hpp" -x "*_controls.hpp" -x "*.tga" -x "*.psd" -x "*.png" -x "*.biprivatekey" -k "diwako_dui.biprivatekey" -z -f mod/ /mnt/d/SteamLibrary/steamapps/common/Arma\ 3/@diwako_dui/addons/diwako_dui.pbo

@@ -223,7 +223,7 @@
             <French>Taille du texte</French>
             <German>Textgröße</German>
             <Japanese>テキストの大きさ</Japanese>
-            <Polish>Rozmiar Tekstu<Polish>
+            <Polish>Rozmiar Tekstu</Polish>
         </Key>
         <Key ID="STR_dui_namelist_size_desc">
             <English>Size of the names, smaller means more in one column</English>

@@ -114,7 +114,6 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     ,false
     ,{
         params ["_value"];
-        diwako_debug = _this;
         if (_value) then {
             ["diwako_dui_reset_ui_pos", false, 0, "server", true] call CBA_settings_fnc_set;
             ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;

@@ -588,5 +588,27 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
         </Key>
+        <Key ID="STR_dui_cat_layout">
+            <English>Layout</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Layout</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
+        <Key ID="STR_dui_layout">
+            <English>Use A3 Layout Editor Position</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>A3 Layout Editor Position nutzen</German>
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+        </Key>
+        <Key ID="STR_dui_layout_desc">
+            <English>Uses the layout editor defined position and not the default position</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
+        </Key>
     </Package>
 </Project>

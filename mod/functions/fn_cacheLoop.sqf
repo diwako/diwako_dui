@@ -61,26 +61,31 @@ if (diwako_dui_enable_compass) then {
         private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
+        if (diwako_dui_use_layout_editor) then {
+            _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
+            _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
+        };
+
         diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
 
         _compassCtrl ctrlSetPosition [
-            profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
-            profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY],
+            _ctrlMiddleX,
+            _compassY,
             _ctrlWidth,
             _ctrlHeight
         ];
         _compassCtrl ctrlSetTextColor [1 ,1 , 1, diwako_dui_compass_opacity];
         _compassCtrl ctrlCommit 0;
         _grpCtrl ctrlSetPosition [
-           profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
-           profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY],
+           _ctrlMiddleX,
+           _compassY,
            _ctrlWidth,
            _ctrlHeight
         ];
         _grpCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
-            profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX],
-            (profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
+            _ctrlMiddleX,
+            _compassY - (pixelH * 25 * _uiScale),
             // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
@@ -119,10 +124,16 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
 
 if (diwako_dui_setNamelist) then {
     diwako_dui_setNamelist = false;
+    private _xPos = 0.5 + (pixelW * (_uiPixels / 2 + 10));
+    private _yPos = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
+    if (diwako_dui_use_layout_editor) then {
+        _xPos = profileNamespace getVariable ["igui_diwako_dui_namelist_x", _xPos];
+        _yPos = profileNamespace getVariable ["igui_diwako_dui_namelist_y", _yPos];
+    };
     private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
-        profileNamespace getVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (_uiPixels / 2 + 10))],
-        profileNamespace getVariable ["igui_diwako_dui_namelist_y",safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10))],
+        _xPos,
+        _yPos,
         0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10)),
         pixelH * (_uiPixels + 10)
     ];

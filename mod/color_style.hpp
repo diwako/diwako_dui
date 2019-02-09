@@ -45,7 +45,7 @@ class diwako_dui_colors
         yellow = "#DC9845";
     };
 
-	  class wargame2:standard
+    class wargame2:standard
     {
         name = "Wargame (Military Green)";
 

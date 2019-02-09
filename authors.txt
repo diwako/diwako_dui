@@ -4,10 +4,15 @@ diwako
 Contributors:
 Nigel (Code, UI config)
 Terry (Icons [Just The Tip])
-Gordon Weedman (Compass [Pizza Time])
+Gordon Weedman (Compass [Pizza Time], Xeno)
 cyruz (Compass [BI])
-G4rrus Vakarian (NATO icons)
+G4rrus Vakarian (NATO icons, colorblind color schemes, help with translations)
 Pilotguy (Ye Olde Times, Clock compass)
+Engee (Classic Compass)
+classicarma (Added Japanese translation)
+Psychodewon (Added French translation)
+phreaky (Added Czech translation)
+Sheepaay (Added Polish translation)
 
 Special thanks:
 alganthe (General Arma modding support)

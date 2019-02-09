@@ -89,6 +89,21 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     diwako_dui_ace_hide_interaction = false;
 };
 
+[
+    "diwako_dui_show_squadbar"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+    ,{
+        params ["_value"];
+        // disable/enable vanilla squadbar
+        private _showHud = shownHUD;
+        _showHud set [6, _value];
+        showHud (_showHud select [0, 8]);
+    }
+] call CBA_Settings_fnc_init;
 
 private _curCat = localize "STR_dui_cat_compass";
 
@@ -187,6 +202,19 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    "diwako_dui_enable_occlusion_cone"
+    ,"SLIDER"
+    ,[localize "STR_dui_occlusion_cone", localize "STR_dui_occlusion_cone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 360, 360, 1]
+    ,false
+    ,{
+        params ["_value"];
+        diwako_dui_enable_occlusion_actual_cone = _value / 2;
+    }
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_compass_icon_scale"
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
@@ -205,6 +233,33 @@ private _curCat = localize "STR_dui_cat_compass";
     ,{
         diwako_dui_setCompass = true;
     }
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_distanceWarning"
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_warning", localize "STR_dui_compass_warning_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 50, 3, 1]
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_compass_hide_alone_group"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_compass_hide_when_alone", localize "STR_dui_compass_hide_when_alone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_compass_hide_blip_alone_group"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_compass_hide_blip_when_alone", localize "STR_dui_compass_hide_blip_when_alone_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
 ] call CBA_Settings_fnc_init;
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
@@ -314,9 +369,66 @@ private _curCat = localize "STR_dui_cat_namelist";
         for "_i" from 0 to (count diwako_dui_namebox_lists) do {
             ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
         };
+
+        // reset size for arma ui editor
+        profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
+        profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
+        profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
+        profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
     }
 ] call CBA_Settings_fnc_init;
 
+private _curCat = localize "STR_dui_cat_layout";
+
+[
+    "diwako_dui_use_layout_editor"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_layout", localize "STR_dui_layout_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+    ,{
+        diwako_dui_setCompass = true;
+        diwako_dui_setNamelist = true;
+
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    }
+] call CBA_Settings_fnc_init;
+
+[
+    "diwako_dui_reset_ui_pos"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_reset_ui_pos", localize "STR_dui_reset_ui_pos_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+    ,{
+        params ["_value"];
+        if (_value) then {
+            ["diwako_dui_reset_ui_pos", false, 0, "server", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "client", true] call CBA_settings_fnc_set;
+            profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (diwako_dui_uiPixels / 2))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (diwako_dui_uiPixels / 2 + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
+            saveProfileNamespace;
+
+            diwako_dui_setCompass = true;
+            diwako_dui_setNamelist = true;
+
+            for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+                ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+            };
+        };
+    }
+] call CBA_Settings_fnc_init;
 
 // keybind to toggle whole UI
 [CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", localize "STR_dui_key_toggle", {

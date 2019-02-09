@@ -1,5 +1,5 @@
 #define REQUIRED_VERSION 1.88
-#define VERSION "1.0.0"
+#define VERSION "1.3.1"
 
 class CfgPatches {
     class diwako_dui {
@@ -19,6 +19,7 @@ class CfgPatches {
 
 #include "script_component.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgUIGrids.hpp"
 #include "gui.hpp"
 #include "compass_style.hpp"
 #include "icon_style.hpp"

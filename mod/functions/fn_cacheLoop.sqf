@@ -13,7 +13,11 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 
 private _player = [] call CBA_fnc_currentUnit;
 _group = units group _player;
+if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
+    _group = [];
+};
 diwako_dui_group = _group;
+
 private _uiScale = diwako_dui_hudScaling;
 private _uiPixels = diwako_dui_uiPixels;
 
@@ -57,17 +61,31 @@ if (diwako_dui_enable_compass) then {
         private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
+        if (diwako_dui_use_layout_editor) then {
+            _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
+            _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
+        };
+
+        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
+
         _compassCtrl ctrlSetPosition [
-            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-            profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
+            _ctrlMiddleX,
+            _compassY,
             _ctrlWidth,
             _ctrlHeight
         ];
         _compassCtrl ctrlSetTextColor [1 ,1 , 1, diwako_dui_compass_opacity];
         _compassCtrl ctrlCommit 0;
+        _grpCtrl ctrlSetPosition [
+           _ctrlMiddleX,
+           _compassY,
+           _ctrlWidth,
+           _ctrlHeight
+        ];
+        _grpCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
-            profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-            (profileNamespace getVariable ["diwako_dui_compass_y", _compassY]) - (pixelH * 25 * _uiScale),
+            _ctrlMiddleX,
+            _compassY - (pixelH * 25 * _uiScale),
             // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale
@@ -75,15 +93,6 @@ if (diwako_dui_enable_compass) then {
         _dirCtrl ctrlSetTextColor [1, 1, 1, 1];
         _dirCtrl ctrlSetFont diwako_dui_font;
         _dirCtrl ctrlCommit 0;
-        _grpCtrl ctrlSetPosition [
-           profileNamespace getVariable ["diwako_dui_compass_x", _ctrlMiddleX],
-           profileNamespace getVariable ["diwako_dui_compass_y", _compassY],
-           _ctrlWidth,
-           _ctrlHeight
-        ];
-        _grpCtrl ctrlCommit 0;
-
-        diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling;
     };
 };
 
@@ -115,11 +124,17 @@ if !([_player] call diwako_dui_fnc_canHudBeShown) exitWith {
 
 if (diwako_dui_setNamelist) then {
     diwako_dui_setNamelist = false;
+    private _xPos = 0.5 + (pixelW * (_uiPixels / 2 + 10));
+    private _yPos = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
+    if (diwako_dui_use_layout_editor) then {
+        _xPos = profileNamespace getVariable ["igui_diwako_dui_namelist_x", _xPos];
+        _yPos = profileNamespace getVariable ["igui_diwako_dui_namelist_y", _yPos];
+    };
     private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
-        profileNamespace getVariable ["diwako_dui_namelist_x", 0.5 + (pixelW * (_uiPixels / 2 + 10))],
-        profileNamespace getVariable ["diwako_dui_namelist_y",safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10))],
-        (0.5 - (pixelW * (_uiPixels / 2 + 10))) + safeZoneW,
+        _xPos,
+        _yPos,
+        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10)),
         pixelH * (_uiPixels + 10)
     ];
     _grpCtrl ctrlSetPosition _nameListPos;
@@ -130,7 +145,7 @@ if (diwako_dui_setNamelist) then {
 
 
 // no need to show any names if you are alone in the group
-if (count _group == 1) exitWith {
+if (count _group <= 1) exitWith {
     if ((count _lists) > 0) then {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
@@ -150,6 +165,9 @@ private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
 private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
 private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 private _shadow = diwako_dui_namelist_text_shadow;
+private _bgOpacity = diwako_dui_namelist_bg;
+private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
+private _heightMod = diwako_dui_windowHeightMod;
 {
     if (_forEachIndex mod round(5/_textSize*_uiScale) == 0) then {
         if !(isNull _curList) then {
@@ -175,23 +193,36 @@ private _shadow = diwako_dui_namelist_text_shadow;
 
             _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
             _curList ctrlSetFont diwako_dui_font;
-            _curList ctrlSetBackgroundColor [0,0,0,diwako_dui_namelist_bg];
+            _curList ctrlSetBackgroundColor [0,0,0,_bgOpacity];
             _lists pushBack _curList;
             _curList ctrlCommit 0;
         };
         _listIndex = _listIndex + 1;
     };
     private _unit = _x;
-    private _selected = ["", ">>"] select (_selectedUnits findIf {_x == _unit} > -1);
+    private _selected = "";
+    if ((count _selectedUnits) > 0 && {_unit != _player}) then {
+        private _curName = vehicleVarName _unit;
+        _unit setVehicleVarName "";
+        private _defaultIdent = str _unit;
+        _unit setVehicleVarName _curName;
+        private _arr = [_defaultIdent, ":"] call CBA_fnc_split;
+        private _num = if ((count _arr) > 1) then {
+            (_arr select 1) select [0, 2]
+        } else {
+            ""
+        };
+        _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
+    };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable ["diwako_dui_buddy", objNull]));
-    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {diwako_dui_namelist_only_buddy_icon});
+    private _icon = [_unit getVariable ["diwako_dui_icon", DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["%1<t color='%4' size='%6' shadow='%8' shadowColor='#000000' valign='middle' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
         _text, // 1
         _icon, // 2
         _unit getVariable ["ACE_Name", name _unit], // 3
         _unit getVariable ["diwako_dui_color","#FFFFFF"], // 4
         _selected, // 5
-        _textSize, // 6
+        (_textSize * _heightMod), // 6
         _buddy, // 7
         _shadow]; // 8
 } forEach _group;

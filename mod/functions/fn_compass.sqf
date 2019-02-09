@@ -23,6 +23,14 @@ diwako_dui_compass_pfHandle = [{
     };
 
     private _player = [] call CBA_fnc_currentUnit;
+    private _grp = diwako_dui_group;
+
+    if (diwako_dui_compass_hide_alone_group && {count _grp <= 1}) exitWith {
+        _compassCtrl ctrlShow false;
+        _dirCtrl ctrlShow false;
+        _ctrlGrp ctrlShow false;
+    };
+
     if ([_player] call diwako_dui_fnc_canHudBeShown) then {
         if !(ctrlShown _ctrlGrp) then {
             _ctrlGrp ctrlShow true;
@@ -46,21 +54,19 @@ diwako_dui_compass_pfHandle = [{
             _dirCtrl ctrlSetText "";
         };
 
-
         private _usedCtrls = [];
         private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
         private _playerDir = getDir _player;
 
         {
             _usedCtrls pushBack ([_x, _display, _dir, _playerDir, _player, _ctrlGrp] call diwako_dui_fnc_displayUnitOnCompass);
-        } forEach diwako_dui_group;
+        } forEach _grp;
 
-        private _unusedCtrls = _ctrls - _usedCtrls;
         {
             ctrlDelete _x;
-        } forEach _unusedCtrls;
+        } forEach (_ctrls - _usedCtrls);
 
-        (_display displayCtrl IDC_COMPASS_CTRLGRP) setVariable ["diwako_dui_ctrlArr",_usedCtrls];
+        _ctrlGrp setVariable ["diwako_dui_ctrlArr",_usedCtrls];
 
         if !(isNil "diwako_dui_custom_code") then {
             /*
@@ -71,7 +77,7 @@ diwako_dui_compass_pfHandle = [{
                 4. Control group of the units displayed on the compass
                 5. All currently shown unit icons on the compass
             */
-            [_display, _compass, _dirCtrl, _ctrlGrp, _usedCtrls] call diwako_dui_custom_code;
+            [_display, _compassCtrl, _dirCtrl, _ctrlGrp, _usedCtrls] call diwako_dui_custom_code;
         };
     } else {
         _compassCtrl ctrlShow false;

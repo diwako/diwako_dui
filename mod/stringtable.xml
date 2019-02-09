@@ -278,7 +278,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_cat_namelist">
@@ -294,7 +294,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_cat_general">
@@ -498,7 +498,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Abstandswarnung</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>距離警告</Japanese>
             <Polish>Ostrzeżenie o odległości</Polish>
         </Key>
         <Key ID="STR_dui_compass_warning_desc">
@@ -506,7 +506,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>他のプレイヤーと近すぎる際に起きるユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
             
         </Key>
@@ -515,7 +515,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Kompass wenn man alleine ist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>単独時はコンパスを非表示</Japanese>
             <Polish>Ukryj cały kompas, gdy jest sam</Polish>
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone_desc">
@@ -523,7 +523,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>グループに独りだけの際はコンパスを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, ukryje to element interfejsu użytkownika kompasu</Polish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone">
@@ -531,7 +531,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Spieler Marker wenn man alleine ist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
             <Polish>Ukrywaj znacznik gracza, kiedy jest sam</Polish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
@@ -539,7 +539,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>グループに独りだけの際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
         </Key>
         <Key ID="STR_dui_occlusion_cone">
@@ -547,7 +547,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Okklusionskegel</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>オクルージョン コーン</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_occlusion_cone_desc">
@@ -555,7 +555,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_reset_ui_pos">
@@ -563,7 +563,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Positionen zurücksetzen</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>UI 位置をリセット</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_reset_ui_pos_desc">
@@ -571,13 +571,14 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
+            <Japanese>DUI で追加された全ての UI の位置をリセットします。</Japanese>
         </Key>
         <Key ID="STR_dui_show_squadbar">
             <English>Show Vanilla Squad Bar</English>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Vanilla Squad Bar anzeigen</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ゲーム標準の分隊バーを表示</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_show_squadbar_desc">
@@ -585,7 +586,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_cat_layout">
@@ -593,7 +594,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Layout</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>レイアウト</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_layout">
@@ -601,7 +602,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>A3 Layout Editor Position nutzen</German>
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
             <!-- <Polish></Polish> -->
         </Key>
         <Key ID="STR_dui_layout_desc">
@@ -609,6 +610,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
+            <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
         </Key>
     </Package>
 </Project>

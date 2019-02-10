@@ -55,6 +55,11 @@ SQL just died? No problem, Keybind included to see who is the next in rank
 ####  Make your own styles
 Color, icon and compass styles on mission level are supported!
 
+## Special Variables
+DUI has a special variable mission makers can use.
+### diwako_dui_special_track
+Array of objects in `missionNamepace`. Every unit or vehicle in this array will be tracked on compass. Be aware that this might be a performance issue if too many objects are added. Be also aware that you do not add a unit that is already in your squad, or else you have 2 icons for that unit.
+
 # Reporting bugs
 Create a fitting title beginning with the tag word "BUG".
 In general, be as specific as possible when reporting bugs, it is good to tell how to reproduce it, so it gets fixed faster.

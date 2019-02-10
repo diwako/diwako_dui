@@ -16,7 +16,7 @@ _group = units group _player;
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };
-diwako_dui_group = _group;
+diwako_dui_group = + _group;
 
 private _uiScale = diwako_dui_hudScaling;
 private _uiPixels = diwako_dui_uiPixels;
@@ -38,6 +38,32 @@ private _iconNamespace = missionNamespace getVariable format["diwako_dui_icon_%1
         _x setVariable ["diwako_dui_compass_color", _compassColor];
     };
 } forEach _group;
+
+private _specialTrack = missionNamespace getVariable ["diwako_dui_special_track", []];
+if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
+    private _toTrack = [];
+    private _vehNamespace = diwako_dui_vehicleNamespace;
+    {
+        if !(isNull _x) then {
+            _x setVariable ["diwako_dui_compass_color", (_colorNameSpace getVariable ["tracked_compass", [1,1,1]])];
+            if (_x isKindOf "CAManBase") then {
+                _x setVariable ["diwako_dui_compass_icon", [_x, _iconNamespace, _player, true] call diwako_dui_fnc_getIcon];
+            };
+            if (_x isKindOf "LandVehicle" || _x isKindOf "Air") then {
+                private _type = (typeOf _x);
+                private _picture = _vehNamespace getVariable _type;
+                if (isNil "_picture") then {
+                    _picture = getText (configfile >> "CfgVehicles" >> _type >> "icon");
+                    _vehNamespace setVariable [_type, _picture];
+                };
+                _x setVariable ["diwako_dui_compass_icon", _picture];
+                _x setVariable ["diwako_dui_icon_size", 2];
+            };
+            _toTrack pushBackUnique _x;
+        };
+    } forEach _specialTrack;
+    diwako_dui_group = _toTrack + diwako_dui_group - [objNull];
+};
 
 // start compass if enabeld but not running yet
 if (diwako_dui_enable_compass) then {

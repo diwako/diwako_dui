@@ -36,6 +36,8 @@ private _getColorFromHex = {
 	["blue", _namespace getVariable "blue"] call _getColorFromHex;
 	_namespace setVariable ["yellow", getText (_x >> "yellow")];
 	["yellow", _namespace getVariable "yellow"] call _getColorFromHex;
+	_namespace setVariable ["tracked", getText (_x >> "tracked")];
+	["tracked", _namespace getVariable "tracked"] call _getColorFromHex;
 
 	missionNamespace setVariable [format["diwako_dui_colors_%1", _configName], _namespace]
 } forEach (_configs + _missionConfigs);

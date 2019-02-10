@@ -114,7 +114,7 @@
             <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
             <Polish>Pokazuje azymut nad kompasem, sam kompas musi być włączony</Polish>
-            <Portuguese>Mostra a orientação acima da bússola, bússola precisa estar ativada!</Portuguese>
+            <Portuguese>Mostra a orientação acima da bússola, esta precisa estar ativada!</Portuguese>
         </Key>
         <Key ID="STR_dui_show_milrad">
             <English>Show bearing also in milradians</English>
@@ -123,7 +123,7 @@
             <German>Richtung auch in Milradians anzeigen</German>
             <Japanese>方位をミル ラジアンで表示</Japanese>
             <Polish>Pokaż azymut również z milradów</Polish>
-            <Portuguese>Mostrar a direção também em mil angular</Portuguese>
+            <Portuguese>Mostrar a orientação também em mil angular</Portuguese>
         </Key>
         <Key ID="STR_dui_show_milrad_desc">
             <English>Shows milradians next to the regular bearing</English>
@@ -195,7 +195,7 @@
             <German>Okklusion anschalten</German>
             <Japanese>オクルージョンを有効化</Japanese>
             <Polish>Włączyć okluzje?</Polish>
-            <Portuguese>Habilitar occlusão?</Portuguese>
+            <Portuguese>Habilitar oclusão</Portuguese>
         </Key>
         <Key ID="STR_dui_occlusion_desc">
             <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
@@ -204,7 +204,7 @@
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie z kompasu, dopóki nie pojawi się ponownie</Polish>
-            <Portuguese>Se um jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
+            <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist">
             <English>Show Names</English>
@@ -463,7 +463,7 @@
             <German>Während ACE Interaktionen verstecken</German>
             <Japanese>インタラクション中は非表示</Japanese>
             <Polish>Ukrycie podczas interakcji ACE</Polish>
-            <Portuguese>Esconder enquanto usar interação ACE</Portuguese>
+            <Portuguese>Esconder durante interação ACE</Portuguese>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction_desc">
             <English>When interacting with things via ACE interaction should the UI be hidden?</English>
@@ -513,7 +513,7 @@
             <German>Text Umrandung</German>
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
-            <Portuguese>Contorno de Texto</Portuguese>
+            <Portuguese>Contorno do Texto</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_desc">
             <English></English>
@@ -601,6 +601,7 @@
             <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
             <Japanese>グループに独りだけの際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
+            <Portuguese>Quando estiver sozinho no grupo, isso ira esconder apenas o ícone do jogador na bússola</Portuguese>
         </Key>
         <Key ID="STR_dui_occlusion_cone">
             <English>Occlusion Cone</English>
@@ -618,7 +619,7 @@
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
             <!-- <Polish></Polish> -->
-            <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° a sua esquerda e a sua direita.</Portuguese>
+            <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° à sua esquerda e à sua direita.</Portuguese>
         </Key>
         <Key ID="STR_dui_reset_ui_pos">
             <English>Reset UI Position</English>
@@ -679,6 +680,7 @@
             <!-- <French></French> -->
             <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
+            <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
         </Key>
     </Package>
 </Project>

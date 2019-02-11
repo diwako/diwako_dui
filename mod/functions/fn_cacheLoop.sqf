@@ -195,7 +195,7 @@ private _bgOpacity = diwako_dui_namelist_bg;
 private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
 private _heightMod = diwako_dui_windowHeightMod;
 {
-    if (_forEachIndex mod round(5/_textSize*_uiScale) == 0) then {
+    if (_forEachIndex mod floor(5/(_textSize*_uiScale)) == 0) then {
         if !(isNull _curList) then {
             _curList ctrlSetStructuredText parseText _text;
             _curList ctrlSetPosition _ctrlPosList;

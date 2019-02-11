@@ -287,7 +287,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,"SLIDER"
     ,[localize "STR_dui_namelist_size", localize "STR_dui_namelist_size_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.5, 3, 1, 2]
+    ,[0.5, 3, 1, 3]
     ,false
 ] call CBA_Settings_fnc_init;
 

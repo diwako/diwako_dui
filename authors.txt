@@ -14,6 +14,7 @@ Psychodewon (Added French translation)
 phreaky (Added Czech translation)
 Sheepaay (Added Polish translation)
 Aradiel (Added Brazillian Portuguese translation)
+Patch (Added Korean translation)
 
 Special thanks:
 alganthe (General Arma modding support)

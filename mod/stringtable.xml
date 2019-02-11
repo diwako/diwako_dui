@@ -22,6 +22,7 @@
             <French>DUI - Squad Radar</French>
             <Czech>DUI - Squad Radar</Czech>
             <German>DUI - Squad Radar</German>
+            <Korean>DUI - Squad Radar</Korean>
             <Japanese>DUI - スクワッド レーダー</Japanese>
             <Polish>DUI - Radar drużyny</Polish>
             <Portuguese>DUI - Radar do Esquadrão</Portuguese>
@@ -31,6 +32,7 @@
             <Czech>Font</Czech>
             <French>Police de charactère</French>
             <German>Schriftart</German>
+            <Korean>폰트</Korean>
             <Japanese>フォント</Japanese>
             <Polish>Font</Polish>
             <Portuguese>Fonte</Portuguese>
@@ -40,6 +42,7 @@
             <Czech>Který font by se měl použít.</Czech>
             <French>Quel police de charactère doit être utilisé?</French>
             <German>Welche Schriftart soll verwendet werden?</German>
+            <Korean>사용하는 폰트를 설정합니다.</Korean>
             <Japanese>使用するフォントを設定します。</Japanese>
             <Polish>Który font użyć?</Polish>
             <Portuguese>Qual fonte será usada?</Portuguese>
@@ -49,6 +52,7 @@
             <Czech>Styl ikon</Czech>
             <French>Style d'icône</French>
             <German>Icon Style</German>
+            <Korean>아이콘 스타일</Korean>
             <Japanese>アイコンのスタイル</Japanese>
             <Polish>Styl ikony</Polish>
             <Portuguese>Estilo de Ícones</Portuguese>
@@ -58,6 +62,7 @@
             <Czech>Který styl ikon by se měl použít.</Czech>
             <French>Quel style d'icône doit être utilisé?</French>
             <German>Welcher Icon Style soll genutzt werden?</German>
+            <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
             <Japanese>使用するアイコン スタイルを設定します。</Japanese>
             <Polish>Jaki styl ikony powinien być użyty?</Polish>
             <Portuguese>Qual estilo de ícones será usado?</Portuguese>
@@ -67,6 +72,7 @@
             <Czech>Barevné schéma</Czech>
             <French>Schéma de couleur</French>
             <German>Farbschema</German>
+            <Korean>색상 테마</Korean>
             <Japanese>カラー テーマ</Japanese>
             <Polish>Schemat kolorów</Polish>
             <Portuguese>Esquema de cores</Portuguese>
@@ -76,6 +82,7 @@
             <Czech>Které barevné schéma by se mělo použít.</Czech>
             <French>Quel schéma de couleur doit être utilisé?</French>
             <German>Welches Farbschema soll verwendet werden?</German>
+            <Korean>사용하는 색상 테마를 설정합니다.</Korean>
             <Japanese>使用するカラー テーマを設定します。</Japanese>
             <Polish>Jaki schematu kolorów powinien być użyty?</Polish>
             <Portuguese>Qual esquema de cores será usado?</Portuguese>
@@ -85,6 +92,7 @@
             <Czech>Ukázat kompas</Czech>
             <French>Afficher la boussole</French>
             <German>Kompass anzeigen</German>
+            <Korean>나침반 표시</Korean>
             <Japanese>コンパスを表示</Japanese>
             <Polish>Pokaż kompas</Polish>
             <Portuguese>Mostrar Bússola</Portuguese>
@@ -94,6 +102,7 @@
             <Czech>Ukáže kompas a značky jednotek</Czech>
             <French>Afficher la boussole et marqueurs d'unité dessus</French>
             <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
+            <Korean>나침반과 유닛마커를 표시합니다.</Korean>
             <Japanese>コンパスとユニット マーカーを表示します。</Japanese>
             <Polish>Pokaż na kompasie znaczniki i jednostki</Polish>
             <Portuguese>Mostra a bússola e os ícones de unidades nela</Portuguese>
@@ -103,6 +112,7 @@
             <Czech>Ukázat azimut</Czech>
             <French>Afficher la direction</French>
             <German>Richtung anzeigen</German>
+            <Korean>방위각 표시</Korean>
             <Japanese>方位を表示</Japanese>
             <Polish>Pokaż azymut</Polish>
             <Portuguese>Mostrar Orientação</Portuguese>
@@ -112,6 +122,7 @@
             <Czech>Ukáže azimut nad kompasem. (Kompas sám musí být zapnutý)</Czech>
             <French>Afficher la direction au-dessus de la boussole (la boussole doit ètre activé!) (</French>
             <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
+            <Korean>나침반 위에 방위각을 표시합니다. 사용하려면 나침반을 가지고 있어야 합니다! </Korean>
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
             <Polish>Pokazuje azymut nad kompasem, sam kompas musi być włączony</Polish>
             <Portuguese>Mostra a orientação acima da bússola, esta precisa estar ativada!</Portuguese>
@@ -121,6 +132,7 @@
             <Czech>Ukázat azimut i v miliradiánech</Czech>
             <French>Afficher la direction aussi en milliradiens</French>
             <German>Richtung auch in Milradians anzeigen</German>
+            <Korean>방위각을 밀라디안으로 표시</Korean>
             <Japanese>方位をミル ラジアンで表示</Japanese>
             <Polish>Pokaż azymut również z milradów</Polish>
             <Portuguese>Mostrar a orientação também em mil angular</Portuguese>
@@ -139,6 +151,7 @@
             <Czech>Styl kompasu</Czech>
             <French>Style de boussole</French>
             <German>Kompassstyle</German>
+            <Korean>나침반 스타일</Korean>
             <Japanese>コンパスのスタイル</Japanese>
             <Polish>Styl kompasu</Polish>
             <Portuguese>Estilo de Bússola</Portuguese>
@@ -148,6 +161,7 @@
             <Czech>Který styl kompasu by se měl použít.</Czech>
             <French>Quel style de boussole doit être utilisé?</French>
             <German>Welcher Kompassstyle soll verwendet werden?</German>
+            <Korean>사용하는 나침반 스타일을 설정합니다.</Korean>
             <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
             <Polish>Jaki styl kompasu powinien byc uzyty?</Polish>
             <Portuguese>Qual estilo de bússola será usado?</Portuguese>
@@ -157,6 +171,7 @@
             <Czech>Dosah kompasu</Czech>
             <French>Portée de la Boussole</French>
             <German>Kompassreichweite</German>
+            <Korean>나침반 범위</Korean>
             <Japanese>コンパスの範囲</Japanese>
             <Polish>Zasięg kompasu</Polish>
             <Portuguese>Distância da Bússola</Portuguese>
@@ -166,6 +181,7 @@
             <Czech>Na jak daleko by se měly zobrazovat jednotky ve stejné skupině? (v metrech)</Czech>
             <French>Jusqu'où les joueurs doivent voir les unités du même groupe en mètres?</French>
             <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
+            <Korean>같은 그룹내에 유닛이 보이는 거리를 미터 단위로 설정합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
             <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie w metrach?</Polish>
             <Portuguese>Qual distância em metros os jogadores verão unidades do mesmo grupo?</Portuguese>
@@ -175,6 +191,7 @@
             <Czech>Obnovovací frekvence</Czech>
             <French>Taux de rafraichissement</French>
             <German>Aktualisierungsrate</German>
+            <Korean>새로고침 빈도</Korean>
             <Japanese>リフレッシュ レート</Japanese>
             <Polish>Częstotliwość odświeżania kompasu</Polish>
             <Portuguese>Taxa de atualização</Portuguese>
@@ -184,6 +201,7 @@
             <Czech>Jak často by se měl kompas renderovat? Hodnota 0 znamená každý frame - nastavte na vlastní nebezpečí.</Czech>
             <French>À quelle vitesse doit être le rendu de la boussole, Valeur en seconds, 0 veut dire chaque frame! Définisé à votre péril!</French>
             <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
+            <Korean>나침반의 새로고침 빈도를 설정합니다. 값은 초 단위이며, 0은 각 프레임을 의미합니다! 위험 감수!</Korean>
             <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
             <Polish>Jak szybko powinien się wyświetlać kompas? Wartość w sekundach, 0 oznacza każdą klatkę! Ustaw na własne ryzyko!</Polish>
             <Portuguese>O quão rápido a bússola será atualizada? Valor em segundos, 0 significa a cada quadro! Mude a seu próprio risco!</Portuguese>
@@ -193,6 +211,7 @@
             <Czech>Zapnout okluzi</Czech>
             <French>Activé l'Occlusion</French>
             <German>Okklusion anschalten</German>
+            <Korean>오클루전 사용</Korean>
             <Japanese>オクルージョンを有効化</Japanese>
             <Polish>Włączyć okluzje?</Polish>
             <Portuguese>Habilitar oclusão</Portuguese>
@@ -202,6 +221,7 @@
             <Czech>Pokud jednotka není vidět, postupně zmizí z kompasu.</Czech>
             <French>Si un joueur ne peut pas voir une unité, elle disparaîtra lentement de la boussole jusqu'à qu'elle soit vue de nouveau</French>
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
+            <Korean>만약 플레이어가 유닛을 발견하지 않으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie z kompasu, dopóki nie pojawi się ponownie</Polish>
             <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
@@ -211,6 +231,7 @@
             <Czech>Ukázat jména</Czech>
             <French>Afficher les noms</French>
             <German>Namen anzeigen</German>
+            <Korean>이름 표시</Korean>
             <Japanese>名前を表示</Japanese>
             <Polish>Pokaż imiona</Polish>
             <Portuguese>Mostrar Nomes</Portuguese>
@@ -220,6 +241,7 @@
             <Czech>Ukáže seznam jmen jednotek ve stejné skupině.</Czech>
             <French>Afficher une liste des noms des unités actuellement dans le même groupe</French>
             <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
+            <Korean>같은 그룹내에 있는 유닛의 이름을 목록 형식으로 표시합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
             <Polish>Wyświetla listę imienia jednostek znajdujących się obecnie w tej samej grupie</Polish>
             <Portuguese>Mostra uma lista de nomes das unidades presentes no seu grupo</Portuguese>
@@ -229,6 +251,7 @@
             <Czech>Ukázat pouze buddy ikonu</Czech>
             <French>Afficher seulement l'icone du buddy</French>
             <German>Nur Buddy Icon anzeigen</German>
+            <Korean>친구 아이콘만 표시</Korean>
             <Japanese>バディ アイコンのみ表示</Japanese>
             <Polish>Pokaż tylko ikonę znajomego</Polish>
             <Portuguese>Mostrar apenas ícone de Parceiro</Portuguese>
@@ -238,6 +261,7 @@
             <Czech>Ukáže v seznamu jmen pouze buddy ikonu.</Czech>
             <French>Afficher seulement l'icone du buddy dans la liste de nom que les deux (buddy et classe d'unité)</French>
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
+            <Korean>이름 목록에서 친구 아이콘만 표시합니다. </Korean>
             <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
             <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klas jednostek</Polish>
             <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
@@ -247,6 +271,7 @@
             <Czech>Velikost textu</Czech>
             <French>Taille du texte</French>
             <German>Textgröße</German>
+            <Korean>이름 크기</Korean>
             <Japanese>テキストの大きさ</Japanese>
             <Polish>Rozmiar Tekstu</Polish>
             <Portuguese>Tamanho de Texto</Portuguese>
@@ -256,6 +281,7 @@
             <Czech>Velikost textu jmen.</Czech>
             <French>Taille des noms (plus dans une colonne si plus petit)</French>
             <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
+            <Korean>이름 크기를 설정합니다. 작을수록 한 폭에 많은 이름이 들어가게 됩니다.</Korean>
             <Japanese>名前の大きさを設定します。小さければ一つの幅にたくさんの名前が収まります。</Japanese>
             <Polish>Rozmiar imion, mniejszy rozmiar oznacza więcej w jednej kolumnie</Polish>
             <Portuguese>Tamanho dos nomes, menor significa mais nomes em uma coluna</Portuguese>
@@ -265,6 +291,7 @@
             <Czech>Zapnout/vypnout UI</Czech>
             <French>Activé/désactivé l'IU</French>
             <German>UI an- und ausschalten</German>
+            <Korean>UI 전환 켜기/끄기</Korean>
             <Japanese>UI 切り替えのオン/オフ</Japanese>
             <Polish>Włącz lub wyłącz interfejs użytkownika</Polish>
             <Portuguese>Ativa ou desativa a Interface</Portuguese>
@@ -274,6 +301,7 @@
             <Czech>Zvýšit dosah kompasu</Czech>
             <French>Augmenter la porté de la boussole</French>
             <German>Kompassreichweite erhöhen</German>
+            <Korean>나침반 범위 증가</Korean>
             <Japanese>コンパスの範囲を増加</Japanese>
             <Polish>Zwiększ zasięg kompasu</Polish>
             <Portuguese>Aumenta Distância da bússola</Portuguese>
@@ -283,6 +311,7 @@
             <Czech>Snížit dosah kompasu</Czech>
             <French>Diminuer la porté de la boussole</French>
             <German>Kompassreichweite verkleinern</German>
+            <Korean>나침반 범위 감소</Korean>
             <Japanese>コンパスの範囲を減少</Japanese>
             <Polish>Zmniejsz zasięg kompasu</Polish>
             <Portuguese>Diminui Distância da Bússola</Portuguese>
@@ -292,6 +321,7 @@
             <Czech>Podržet pro ukázání hodnosti</Czech>
             <French>Maintener pour Afficher les grades</French>
             <German>Taste halten um Ränge anzuzeigen</German>
+            <Korean>누른상태로 계급 표시</Korean>
             <Japanese>長押しで階級を表示</Japanese>
             <Polish>Przytrzymaj, aby pokazać stopnie</Polish>
             <Portuguese>Segure para mostrar patentes</Portuguese>
@@ -301,6 +331,7 @@
             <Czech>Kompas</Czech>
             <French>Boussole</French>
             <German>Kompass</German>
+            <Korean>나침반 설정</Korean>
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
             <Portuguese>Bússola</Portuguese>
@@ -310,6 +341,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <Korean>나침반을 드래그 앤 드롭하여 위치를 변경할 수 있습니다. 또 CBA설정으로 위치를 초기화할 수 있습니다!</Korean>
             <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Elemento de Interface da Bússola. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de extensão se algo der errado!</Portuguese>
@@ -319,6 +351,7 @@
             <Czech>Seznam jmen</Czech>
             <French>Liste des noms</French>
             <German>Namesliste</German>
+            <Korean>이름 설정</Korean>
             <Japanese>名前リスト</Japanese>
             <Polish>Lista imion</Polish>
             <Portuguese>Lista de Nomes</Portuguese>
@@ -328,6 +361,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <Korean>이름 목록을 드래그 앤 드롭하여 위치를 변경 할 수 있습니다. 또 CBA설정으로 위치를 리셋할 수 있습니다!</Korean>
             <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Elemento de Interface da Lista de Nomes. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de estensão se algo der errado!</Portuguese>
@@ -337,6 +371,7 @@
             <Czech>Obecná nastavení</Czech>
             <French>Paramètres Généraux</French>
             <German>Allgmeine Einstellungen</German>
+            <Korean>일반 설정</Korean>
             <Japanese>全般設定</Japanese>
             <Polish>Ustawienia główne</Polish>
             <Portuguese>Configurações Gerais</Portuguese>
@@ -346,6 +381,7 @@
             <Czech>Přiřadit buddyho [HUD]</Czech>
             <French>Assigner Buddy [HUD]</French>
             <German>Als Buddy markieren [HUD]</German>
+            <Korean>친구로 등록 [HUD]</Korean>
             <Japanese>バディに登録 [HUD]</Japanese>
             <Polish>Przjdiel znajomego [HUD]</Polish>
             <Portuguese>Marcar Parceiro</Portuguese>
@@ -355,6 +391,7 @@
             <Czech>Zrušit přiřazení buddyho [HUD]</Czech>
             <French>Désassigner Buddy [HUD]</French>
             <German>Buddymarkierung aufheben [HUD]</German>
+            <Korean>친구 해제 [HUD]</Korean>
             <Japanese>バディを解除 [HUD]</Japanese>
             <Polish>Usun znajomego [HUD]</Polish>
             <Portuguese>Desmarcar Parceiro</Portuguese>
@@ -364,6 +401,7 @@
             <Czech>Nikdy</Czech>
             <French>Jamais</French>
             <German>Niemals</German>
+            <Korean>사용안함</Korean>
             <Japanese>行わない</Japanese>
             <Polish>Nigdy</Polish>
             <Portuguese>Nunca</Portuguese>
@@ -373,6 +411,7 @@
             <Czech>Vždy</Czech>
             <French>Toujours</French>
             <German>Immer</German>
+            <Korean>언제든지</Korean>
             <Japanese>常に</Japanese>
             <Polish>Zawsze</Polish>
             <Portuguese>Sempre</Portuguese>
@@ -382,6 +421,7 @@
             <Czech>Pouze ve vozidlech</Czech>
             <French>Seulement En Vehicules</French>
             <German>Nur In Fahrzeugen</German>
+            <Korean>차량내에서만</Korean>
             <Japanese>車両内のみ</Japanese>
             <Polish>Tylko w pojazdach</Polish>
             <Portuguese>Apenas em veículos</Portuguese>
@@ -391,6 +431,7 @@
             <Czech>Velikost UI</Czech>
             <French>Mise a l'échelle de l'IU</French>
             <German>UI Größe</German>
+            <Korean>UI 크기</Korean>
             <Japanese>UI スケール</Japanese>
             <Polish>Skalowanie interfejsu użytkownika</Polish>
             <Portuguese>Escala de Interface</Portuguese>
@@ -400,6 +441,7 @@
             <Czech></Czech>
             <French></French>
             <German></German>
+            <Korean></Korean>
             <Japanese></Japanese>
         </Key>
         <Key ID="STR_dui_namelist_bg">
@@ -407,6 +449,7 @@
             <Czech>Viditelnost pozadí</Czech>
             <French>Opacité du fond</French>
             <German>Hintergrund Sichtbarkeit</German>
+            <Korean>배경 투명도</Korean>
             <Japanese>背景の透明度</Japanese>
             <Polish>Przeźroczystość tła</Polish>
             <Portuguese>Opacidade do Fundo</Portuguese>
@@ -416,6 +459,7 @@
             <Czech>Jak moc by mělo být černé pozadí viditelné</Czech>
             <French>Combien le fond doit être visible?</French>
             <German>Wie stark soll der Hintergrund sichtbar sein</German>
+            <Korean>배경의 투명도를 설정합니다.</Korean>
             <Japanese>背景の透明度を設定します。</Japanese>
             <Polish>Jak mocne powinno być widoczne czarne tło</Polish>
             <Portuguese>O quão visível será o fundo preto?</Portuguese>
@@ -425,6 +469,7 @@
             <Czech>Šířka sloupku</Czech>
             <French>Largeur des Colonnes</French>
             <German>Spaltenbreite</German>
+            <Korean>열 너비</Korean>
             <Japanese>カラムの幅</Japanese>
             <Polish>Szerokość kolumny</Polish>
             <Portuguese>Largura de Coluna</Portuguese>
@@ -434,6 +479,7 @@
             <Czech>Jaká šířka v pixelech by se měla použít pro sloupky? (je ovlivněno velikostí UI)</Czech>
             <French>Quelle largeur en pixels doit être utilisée pour celle des colonnes? la mise à l'échelle est affecté par ceci!</French>
             <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
+            <Korean>열 너비를 픽셀로 설정합니다. UI크기는 이 설정에 영향을 끼칩니다!</Korean>
             <Japanese>カラムの幅をピクセルで設定します。UI スケールはこの設定に影響を及ぼします!</Japanese>
             <Polish>Jaką szerokość w pikselach należy zastosować dla szerokości kolumn? Należy pamiętać, że skalowanie interfejsu użytkownika będzie miało wpływ na to</Polish>
             <Portuguese>Qual será a largura em pixels de cada coluna? Lembre-se que a escala de interface afetará isso!</Portuguese>
@@ -443,6 +489,7 @@
             <Czech>Velikost ikon</Czech>
             <French>mise a l'échelle de l'icone</French>
             <German>Icon Größe</German>
+            <Korean>아이콘 크기</Korean>
             <Japanese>アイコンのスケール</Japanese>
             <Polish>Skalowanie ikon</Polish>
             <Portuguese>Escala de Ícones</Portuguese>
@@ -452,6 +499,7 @@
             <Czech>Nastaví velikost ikon jednotek na kompasu.</Czech>
             <French>Définiser l'échelle de l'icône des unités sur votre boussole</French>
             <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
+            <Korean>나침반 위에 표시되는 유닛 아이콘의 크기를 설정합니다.</Korean>
             <Japanese>コンパス上に表示されるユニット アイコンのスケールを設定します。</Japanese>
             <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
             <Portuguese>Defina a escala dos ícones na bússola</Portuguese>
@@ -461,6 +509,7 @@
             <Czech>Schovat při ACE interakcích</Czech>
             <French>Cacher pendant ACE Interaction</French>
             <German>Während ACE Interaktionen verstecken</German>
+            <Korean>ACE 상호작용 일때 숨기기</Korean>
             <Japanese>インタラクション中は非表示</Japanese>
             <Polish>Ukrycie podczas interakcji ACE</Polish>
             <Portuguese>Esconder durante interação ACE</Portuguese>
@@ -470,6 +519,7 @@
             <Czech>Má se UI schovat při ACE interakcích?</Czech>
             <French>L'UI doit-il être cacher pendant l'interaction avec objets via ACE Interaction?</French>
             <German>Wenn man durch ACE mit Dingen interagiert, soll die UI versteckt werden?</German>
+            <Korean>ACE 인터렉션중에는 UI를 숨기겠습니까?</Korean>
             <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
             <Polish>Czy podczas interakcji z rzeczami z ACE należy ukryć interfejs użytkownika?</Polish>
             <Portuguese>Esconder a interface enquanto estiver interagindo atráves do ACE?</Portuguese>
@@ -479,6 +529,7 @@
             <Czech>Viditelnost</Czech>
             <French>Opacité</French>
             <German>Opazität</German>
+            <Korean>투명도</Korean>
             <Japanese>透明度</Japanese>
             <Polish>Nieprzejrzystość</Polish>
             <Portuguese>Opacidade</Portuguese>
@@ -488,6 +539,7 @@
             <Czech></Czech>
             <French></French>
             <German></German>
+            <Korean></Korean>
             <Japanese></Japanese>
         </Key>
         <Key ID="STR_dui_dir_size">
@@ -495,6 +547,7 @@
             <Czech>Velikost azimutu</Czech>
             <French>Taille de la direction</French>
             <German>Größe der Richtungsanzeige</German>
+            <Korean>방위각 크기</Korean>
             <Japanese>方位の大きさ</Japanese>
             <Polish>Wielkość azymutu</Polish>
             <Portuguese>Tamanho da Orientação</Portuguese>
@@ -504,6 +557,7 @@
             <Czech></Czech>
             <French></French>
             <German></German>
+            <Korean></Korean>
             <Japanese></Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
@@ -511,6 +565,7 @@
             <Czech>Obrys textu</Czech>
             <French>Contour du texte</French>
             <German>Text Umrandung</German>
+            <Korean>텍스트 외형</Korean>
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
@@ -520,6 +575,7 @@
             <Czech></Czech>
             <French></French>
             <German></German>
+            <Korean></Korean>
             <Japanese></Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
@@ -527,6 +583,7 @@
             <Czech>Žádný</Czech>
             <French>Aucun</French>
             <German>Nichts</German>
+            <Korean>없음</Korean>
             <Japanese>無し</Japanese>
             <Polish>Nic</Polish>
             <Portuguese>Nenhum</Portuguese>
@@ -536,6 +593,7 @@
             <Czech>Stín</Czech>
             <French>Ombre</French>
             <German>Schatten</German>
+            <Korean>그림자</Korean>
             <Japanese>影付き</Japanese>
             <Polish>Cień</Polish>
             <Portuguese>Sombra</Portuguese>
@@ -545,6 +603,7 @@
             <Czech>Obrys</Czech>
             <French>Contour</French>
             <German>Umrandung</German>
+            <Korean>테두리</Korean>
             <Japanese>アウトライン</Japanese>
             <Polish>Zarys</Polish>
             <Portuguese>Contorno</Portuguese>
@@ -554,6 +613,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Abstandswarnung</German>
+            <Korean>거리 경고</Korean>
             <Japanese>距離警告</Japanese>
             <Polish>Ostrzeżenie o odległości</Polish>
             <Portuguese>Alerta de distância</Portuguese>
@@ -563,6 +623,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
+            <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
             <Japanese>他のプレイヤーと近すぎる際に起きるユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
             <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
@@ -572,6 +633,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Kompass wenn man alleine ist</German>
+            <Korean>혼자일때 나침반 숨기기</Korean>
             <Japanese>単独時はコンパスを非表示</Japanese>
             <Polish>Ukryj cały kompas, gdy jest sam</Polish>
             <Portuguese>Esconder toda a Bússola quando sozinho</Portuguese>
@@ -581,6 +643,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
+            <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
             <Japanese>グループに独りだけの際はコンパスを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, ukryje to element interfejsu użytkownika kompasu</Polish>
             <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
@@ -590,6 +653,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Spieler Marker wenn man alleine ist</German>
+            <Korean>혼자일때 플레이어 마커 숨기기</Korean>
             <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
             <Polish>Ukrywaj znacznik gracza, kiedy jest sam</Polish>
             <Portuguese>Esconder Ícone do Jogador quando sozinho</Portuguese>
@@ -599,6 +663,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
+            <Korean>그룹내에 혼자만 있을때 플레이어 마커를 숨깁니다.</Korean>
             <Japanese>グループに独りだけの際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
             <Portuguese>Quando estiver sozinho no grupo, isso ira esconder apenas o ícone do jogador na bússola</Portuguese>
@@ -608,6 +673,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Okklusionskegel</German>
+            <Korean>오클루전 원뿔</Korean>
             <Japanese>オクルージョン コーン</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Cone de oclusão</Portuguese>
@@ -617,6 +683,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
+            <Korean>플레이어의 정면으로 부터 설정되는 가시범위를 '도'단위로 설정합니다. 예를들어 90도로 설정되면 좌우 45도가 가시범위가 됩니다.</Korean>
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° à sua esquerda e à sua direita.</Portuguese>
@@ -626,6 +693,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Positionen zurücksetzen</German>
+            <Korean>UI 위치 초기화</Korean>
             <Japanese>UI 位置をリセット</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Restaurar a posição da Interface</Portuguese>
@@ -635,6 +703,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
+            <Korean>DUI에서 추가된 모든 UI의 위치를 초기화 합니다.</Korean>
             <Japanese>DUI で追加された全ての UI の位置をリセットします。</Japanese>
             <Portuguese>Restaura a posição original de toda a interface DUI UI</Portuguese>
         </Key>
@@ -643,6 +712,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Vanilla Squad Bar anzeigen</German>
+            <Korean>바닐라 분대바 표시</Korean>
             <Japanese>ゲーム標準の分隊バーを表示</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Mostrar Barra de grupo padrão</Portuguese>
@@ -652,6 +722,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
+            <Korean>분대장일때 아르마3 바닐라 분대바를 표시합니다.</Korean>
             <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Mostra a barra de grupo do Arma 3 quando for o líder do esquadrão</Portuguese>
@@ -661,6 +732,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Layout</German>
+            <Korean>레이아웃</Korean>
             <Japanese>レイアウト</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Layout</Portuguese>
@@ -670,6 +742,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>A3 Layout Editor Position nutzen</German>
+            <Korean>A3 레이아웃 편집기 위치 사용</Korean>
             <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Usar a posição do editor de Layout do A3</Portuguese>
@@ -679,6 +752,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
+            <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
             <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
         </Key>

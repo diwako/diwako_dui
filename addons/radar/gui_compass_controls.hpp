@@ -1,7 +1,5 @@
-class ControlsBackground
-{
-    class compass
-    {
+class ControlsBackground {
+    class compass {
         idc = IDC_COMPASS;
         moving = 1;
         type = 0;
@@ -18,8 +16,7 @@ class ControlsBackground
         lineSpacing = 1;
     };
 
-    class direction:ctrlStructuredText
-    {
+    class direction:ctrlStructuredText {
         idc = IDC_DIRECTION;
         moving = 1;
         x = "0.5 - (pixelW * 64)";
@@ -35,10 +32,8 @@ class ControlsBackground
     };
 };
 
-class controls
-{
-    class group:RscControlsGroupNoScrollbars
-    {
+class controls {
+    class group:RscControlsGroupNoScrollbars {
         idc = IDC_COMPASS_CTRLGRP;
         x = "0.5 - (pixelW * 64)"; //64
         y = "safeZoneY + safeZoneH - (pixelH * 138)";

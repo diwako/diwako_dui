@@ -3,7 +3,7 @@ class CfgUIGrids {
         class Presets {
             class Arma3 {
                 class Variables {
-                    dui_namelist[] = {
+                    diwako_dui_namelist[] = {
                         {
                             "0.5 + (pixelW * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) / 2 + 10))",
                             "safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
@@ -13,7 +13,7 @@ class CfgUIGrids {
                         "0.5*(((safezoneW / safezoneH) min 1.2)/ 40)",
                         "0.5*((((safezoneW / safezoneH) min 1.2)/ 1.2)/ 25)"
                     };
-                    dui_compass[] = {
+                    diwako_dui_compass[] = {
                         {
                             "((0.5) * safezoneW + safezoneX) - (pixelW * 64 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))",
                             "safeZoneY + safeZoneH - (pixelH * ((128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1])) + 10))",
@@ -28,14 +28,14 @@ class CfgUIGrids {
         };
 
         class Variables {
-            class dui_namelist {
+            class diwako_dui_namelist {
                 displayName = "$STR_dui_cat_namelist";
                 description = "$STR_dui_cat_namelist_desc";
                 preview = "#(argb,8,8,3)color(0,0,0,0.75)";
                 saveToProfile[] = {0,1};
                 canResize = 0;
             };
-            class dui_compass {
+            class diwako_dui_compass {
                 displayName = "$STR_dui_cat_compass";
                 description = "$STR_dui_cat_compass_desc";
                 preview = "\z\diwako_dui\addons\main\UI\compass_styles\standard\compass.paa";

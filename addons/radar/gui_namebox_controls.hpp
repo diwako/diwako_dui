@@ -1,7 +1,5 @@
-class ControlsBackground
-{
-    class box:RscObject
-    {
+class ControlsBackground {
+    class box:RscObject {
         idc = IDC_NAMEBOX;
         moving = 1;
         x = "0.5 + (pixelW * 74)";
@@ -12,10 +10,8 @@ class ControlsBackground
     };
 };
 
-class controls
-{
-    class names:RscControlsGroupNoScrollbars
-    {
+class controls {
+    class names:RscControlsGroupNoScrollbars {
         idc = IDC_NAMEBOX_CTRLGRP;
         x = "0.5 + (pixelW * 74)";
         y = "safeZoneY + safeZoneH - (pixelH * 138)";
@@ -23,22 +19,16 @@ class controls
         h = "pixelH * 138";
         shadow=0;
 
-        class VScrollbar
-        {
+        class VScrollbar {
 
         };
-
-        class HScrollbar
-        {
+        class HScrollbar {
 
         };
-
-        class ScrollBar
-        {
+        class ScrollBar {
 
         };
-        class Controls
-        {
+        class Controls {
 
         };
     };

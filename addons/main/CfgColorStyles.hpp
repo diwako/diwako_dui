@@ -7,7 +7,7 @@ class diwako_dui_colors {
         green = "#00E600";
         blue = "#005CFF";
         yellow = "#E6E600";
-        buddy = "#EE42F4";
+        tracked = "#EE42F4";
     };
 
     class ace:standard {
@@ -40,7 +40,7 @@ class diwako_dui_colors {
         yellow = "#DC9845";
     };
 
-	  class wargame2:standard {
+    class wargame2:standard {
         name = "Wargame (Military Green)";
 
         white = "#9CB595";

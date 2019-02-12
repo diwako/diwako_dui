@@ -6,6 +6,7 @@ diwako_dui_uiPixels = DUI_128PX;
 diwako_dui_a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
 diwako_dui_windowHeightMod = linearConversion [1080,1440,getResolution # 1,1,0.75,false];
 diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
+diwako_dui_vehicleNamespace = [] call CBA_fnc_createNamespace;
 
 // start the loop
 [] call FUNC(cacheLoop);

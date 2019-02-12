@@ -22,8 +22,12 @@ if (isNil "_player") then {
 
 private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
-private _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
-private _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
+private _fade = 0;
+private _relDir = 0;
+if (_distance <= _circleRange) then {
+    _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
+    _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
+};
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
     private _lastSeen = _unit getVariable "diwako_dui_lastSeen";
@@ -77,7 +81,7 @@ if (isNull _ctrl) then {
 
 ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
 private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];
-private _iconScale = diwako_dui_compass_icon_scale;
+private _iconScale = diwako_dui_compass_icon_scale * (_unit getVariable ["diwako_dui_icon_size", 1]);
 private _newWidth = (44 * pixelW) /_divisor * _iconScale;
 private _newHeight = (44 * pixelH) /_divisor * _iconScale;
 

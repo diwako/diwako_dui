@@ -1,0 +1,8 @@
+{
+  "name": "DUI Squad Radar",
+  "prefix": "diwako_dui",
+  "author": "Diwako",
+  "files": [
+    "mod.cpp"
+  ]
+}

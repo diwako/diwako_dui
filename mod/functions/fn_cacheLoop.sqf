@@ -8,7 +8,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     for "_i" from 0 to (count diwako_dui_namebox_lists) do {
         ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
     };
-    ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
+    "diwako_dui_compass" cutRsc ["diwako_dui_RscCompass","PLAIN", 0, false];
 };
 
 private _player = [] call CBA_fnc_currentUnit;
@@ -70,7 +70,7 @@ if (diwako_dui_enable_compass) then {
     private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
     if (diwako_dui_compass_pfHandle <= -1 || {isNull _compassDisplay}) then {
         [diwako_dui_compass_pfHandle] call CBA_fnc_removePerFrameHandler;
-        ("diwako_dui_compass" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscCompass","PLAIN", 0, true];
+        "diwako_dui_compass" cutRsc ["diwako_dui_RscCompass","PLAIN", 0, false];
         [] call diwako_dui_fnc_compass;
     };
 
@@ -126,7 +126,7 @@ if (diwako_dui_enable_compass) then {
 private _display = uiNamespace getVariable ["diwako_dui_RscNameBox", displayNull];
 if (isNull _display) exitWith {
     if (diwako_dui_namelist) then {
-        ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
+        "diwako_dui_namebox" cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, false];
         _display = uiNamespace getVariable ["diwako_dui_RscNameBox", displayNull];
     };
 };
@@ -140,7 +140,7 @@ if !(diwako_dui_namelist) exitWith {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
         };
-        ("diwako_dui_namebox" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
+        "diwako_dui_namebox" cutText ["","PLAIN"];
     };
 };
 

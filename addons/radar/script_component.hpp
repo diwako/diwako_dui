@@ -11,10 +11,6 @@
   #define DEBUG_SETTINGS DEBUG_SETTINGS_RADAR
 #endif
 
-// DEV stuff
-#define DUI_RECOMPILE             0
-#define DUI_DEBUG                 0
-
 // UI values
 #define IDC_COMPASS               1337001
 #define IDC_DIRECTION             1337002

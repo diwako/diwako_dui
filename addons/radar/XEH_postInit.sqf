@@ -22,41 +22,46 @@ private _labelAdd = localize "STR_dui_buddy_action";
 private _labelRemove = localize "STR_dui_buddy_action_remove";
 private _range = 10;
 if (isNil "ace_interact_menu_fnc_createAction") then {
-	[[_labelAdd, {
-		[player, cursorObject] call FUNC(pairBuddies);
-	}, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable [""diwako_dui_buddy"", objNull]) != cursorObject}}", _range]]] call CBA_fnc_addPlayerAction;
+    [[_labelAdd, {
+        [player, cursorObject] call FUNC(pairBuddies);
+    }, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable [""diwako_dui_buddy"", objNull]) != cursorObject}}", _range]]] call CBA_fnc_addPlayerAction;
 
-	[[_labelRemove, {
-		[player, cursorObject, false] call FUNC(pairBuddies);
-	}, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable [""diwako_dui_buddy"", objNull]) == cursorObject}}", _range]]] call CBA_fnc_addPlayerAction;
+    [[_labelRemove, {
+        [player, cursorObject, false] call FUNC(pairBuddies);
+    }, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable [""diwako_dui_buddy"", objNull]) == cursorObject}}", _range]]] call CBA_fnc_addPlayerAction;
 } else {
-	private _action = ["diwako_dui_buddy_action", _labelAdd, "", {
-		[ace_player, _target] call FUNC(pairBuddies);
-	},{_target in (units group ace_player) && {(ace_player getVariable ["diwako_dui_buddy", objNull]) != _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    private _action = ["diwako_dui_buddy_action", _labelAdd, "", {
+        [ace_player, _target] call FUNC(pairBuddies);
+    },{_target in (units group ace_player) && {(ace_player getVariable ["diwako_dui_buddy", objNull]) != _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
-	["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+    ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
-	private _action = ["diwako_dui_buddy_action", _labelRemove, "", {
-		[ace_player, _target, false] call FUNC(pairBuddies);
-	},{_target in (units group ace_player) && {(ace_player getVariable ["diwako_dui_buddy", objNull]) == _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    private _action = ["diwako_dui_buddy_action", _labelRemove, "", {
+        [ace_player, _target, false] call FUNC(pairBuddies);
+    },{_target in (units group ace_player) && {(ace_player getVariable ["diwako_dui_buddy", objNull]) == _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
-	["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+    ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 };
-
-// cba eh for hiding the hud when in certain camera modes
-["featureCamera", {
-    params ["_player", "_featureCamera"];
-    diwako_dui_inFeatureCamera = !(_featureCamera isEqualTo "");
-}, true] call CBA_fnc_addPlayerEventHandler;
 
 // player remote controls another unit or changes avatar
 // mainly used for the change in avatar / switch unit part as displays will be closed
 ["unit", {
-	params ["_newPlayerUnit", "_oldPlayerUnit"];
-	diwako_dui_setCompass = true;
-	diwako_dui_setNamelist = true;
-	for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-		ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-	};
+    params ["_newPlayerUnit", "_oldPlayerUnit"];
+    diwako_dui_setCompass = true;
+    diwako_dui_setNamelist = true;
+    for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+        ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+    };
 }, true] call CBA_fnc_addPlayerEventHandler;
 
+["diwako_dui_hudToggled", {
+    params ["_toggledOff"];
+    if (_toggledOff) then {
+        // set position and size for namelist and compassa gain
+        diwako_dui_setCompass = true;
+        diwako_dui_setNamelist = true;
+        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
+            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
+        };
+    };
+}] call CBA_fnc_addEventHandler;

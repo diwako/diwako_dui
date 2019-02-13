@@ -85,8 +85,8 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
 
 // keybind to toggle whole UI
 [CBA_SETTINGS_CAT, "diwako_dui_button_toggle_ui", localize "STR_dui_key_toggle", {
-    diwako_dui_toggled_off = !diwako_dui_toggled_off;
-    ["diwako_dui_hudToggled", [diwako_dui_toggled_off]] call CBA_fnc_localEvent;
+    GVAR(toggled_off) = !GVAR(toggled_off);
+    [QGVAR(hudToggled), [GVAR(toggled_off)]] call CBA_fnc_localEvent;
     true
 },
 {false},

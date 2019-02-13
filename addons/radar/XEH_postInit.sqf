@@ -54,7 +54,7 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
     };
 }, true] call CBA_fnc_addPlayerEventHandler;
 
-["diwako_dui_hudToggled", {
+[QGVAR(main,hudToggled), {
     params ["_toggledOff"];
     if (_toggledOff) then {
         // set position and size for namelist and compassa gain

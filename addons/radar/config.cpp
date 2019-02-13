@@ -6,7 +6,7 @@ class CfgPatches {
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {"diwako_dui_main"};
-    author = "Diwako";
+    author[] = {"diwako"};
     VERSION_CONFIG;
     license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
   };

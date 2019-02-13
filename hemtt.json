@@ -4,5 +4,10 @@
   "author": "Diwako",
   "files": [
     "mod.cpp"
+  ],
+  "exclude": [
+    "*.psd",
+    "*.png",
+    "*.tga"
   ]
 }

@@ -18,7 +18,7 @@ diwako_dui_compass_pfHandle = [{
 
     if !(diwako_dui_enable_compass) exitWith {
         [_pfhHandle] call CBA_fnc_removePerFrameHandler;
-        ("diwako_dui_compass" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
+        "diwako_dui_compass" cutText ["","PLAIN"];
         diwako_dui_compass_pfHandle = -1;
     };
 

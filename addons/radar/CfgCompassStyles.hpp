@@ -1,61 +1,61 @@
 class diwako_dui_compass_style {
     class standard {
         name = "Standard";
-        full = QPATHTOEF(UI\compass_styles\standard\compass.paa);
-        limited = QPATHTOEF(UI\compass_styles\standard\compass_limited.paa);
+        full = QPATHTO_T(UI\compass_styles\standard\compass.paa);
+        limited = QPATHTO_T(UI\compass_styles\standard\compass_limited.paa);
     };
 
     class bohemia {
         name = "Bohemia Interactive";
-        full = QPATHTOEF(UI\compass_styles\bi\compass.paa);
-        limited = QPATHTOEF(UI\compass_styles\bi\compass_limited.paa);
+        full = QPATHTO_T(UI\compass_styles\bi\compass.paa);
+        limited = QPATHTO_T(UI\compass_styles\bi\compass_limited.paa);
     };
 
     class pizza {
         name = "Pizza Time";
-        full = QPATHTOEF(UI\compass_styles\pizza\compass.paa);
-        limited = QPATHTOEF(UI\compass_styles\pizza\compass_limited.paa);
+        full = QPATHTO_T(UI\compass_styles\pizza\compass.paa);
+        limited = QPATHTO_T(UI\compass_styles\pizza\compass_limited.paa);
     };
 
     class olde {
         name = "Ye Olde Times";
-        full = QPATHTOEF(UI\compass_styles\olde\full.paa);
-        limited = QPATHTOEF(UI\compass_styles\olde\limited.paa);
+        full = QPATHTO_T(UI\compass_styles\olde\full.paa);
+        limited = QPATHTO_T(UI\compass_styles\olde\limited.paa);
     };
 
     class clock {
         name = "Clock";
-        full = QPATHTOEF(UI\compass_styles\clock\full.paa);
-        limited = QPATHTOEF(UI\compass_styles\clock\limited.paa);
+        full = QPATHTO_T(UI\compass_styles\clock\full.paa);
+        limited = QPATHTO_T(UI\compass_styles\clock\limited.paa);
     };
 
     class classic {
         name = "Classic";
-        full = QPATHTOEF(UI\compass_styles\classic\full.paa);
-        limited = QPATHTOEF(UI\compass_styles\classic\limited.paa);
+        full = QPATHTO_T(UI\compass_styles\classic\full.paa);
+        limited = QPATHTO_T(UI\compass_styles\classic\limited.paa);
     };
 
     class xeno_red {
         name = "Xeno - Red";
-        full = QPATHTOEF(UI\compass_styles\xeno\redf.paa);
-        limited = QPATHTOEF(UI\compass_styles\xeno\red.paa);
+        full = QPATHTO_T(UI\compass_styles\xeno\redf.paa);
+        limited = QPATHTO_T(UI\compass_styles\xeno\red.paa);
     };
 
     class xeno_green {
         name = "Xeno - Green";
-        full = QPATHTOEF(UI\compass_styles\xeno\greenf.paa);
-        limited = QPATHTOEF(UI\compass_styles\xeno\green.paa);
+        full = QPATHTO_T(UI\compass_styles\xeno\greenf.paa);
+        limited = QPATHTO_T(UI\compass_styles\xeno\green.paa);
     };
 
     class xeno_blue {
         name = "Xeno - Blue";
-        full = QPATHTOEF(UI\compass_styles\xeno\bluef.paa);
-        limited = QPATHTOEF(UI\compass_styles\xeno\blue.paa);
+        full = QPATHTO_T(UI\compass_styles\xeno\bluef.paa);
+        limited = QPATHTO_T(UI\compass_styles\xeno\blue.paa);
     };
 
     class milint {
         name = "Military Interface";
-        full = QPATHTOEF(UI\compass_styles\milint\full.paa);
-        limited = QPATHTOEF(UI\compass_styles\milint\limited.paa);
+        full = QPATHTO_T(UI\compass_styles\milint\full.paa);
+        limited = QPATHTO_T(UI\compass_styles\milint\limited.paa);
     };
 };

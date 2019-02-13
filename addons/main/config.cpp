@@ -1,16 +1,16 @@
 #include "script_component.hpp"
 class CfgPatches {
-  class ADDON {
-    name = COMPONENT;
-    units[] = {};
-    weapons[] = {};
-    requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"cba_common"};
-    author = {"diwako"};
-    authorUrl = "https://github.com/diwako/diwako_dui";
-    license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
-    VERSION_CONFIG;
-  };
+    class ADDON {
+        name = COMPONENT;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"cba_common"};
+        author = {"diwako"};
+        authorUrl = "https://github.com/diwako/diwako_dui";
+        license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
+        VERSION_CONFIG;
+    };
 };
 
 #include "CfgColorStyles.hpp"

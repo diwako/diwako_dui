@@ -54,10 +54,18 @@ if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
                 private _picture = _vehNamespace getVariable _type;
                 if (isNil "_picture") then {
                     _picture = getText (configfile >> "CfgVehicles" >> _type >> "icon");
+                    if (isText (configfile >> "CfgVehicleIcons" >> _picture)) then {
+                        _picture = getText (configfile >> "CfgVehicleIcons" >> _picture);
+                    } else {
+                        private _found = (toLower _picture) find ".paa";
+                        if (_found isEqualTo -1 || {!(((count _picture) - 4) isEqualTo _found)}) then {
+                            _picture = "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa";
+                        };
+                    };
                     _vehNamespace setVariable [_type, _picture];
                 };
+                _x setVariable ["diwako_dui_icon_size", [2,1] select (_picture isEqualTo "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa")];
                 _x setVariable ["diwako_dui_compass_icon", _picture];
-                _x setVariable ["diwako_dui_icon_size", 2];
             };
             _toTrack pushBackUnique _x;
         };

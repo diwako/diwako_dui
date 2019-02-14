@@ -43,9 +43,10 @@ private _specialTrack = missionNamespace getVariable ["diwako_dui_special_track"
 if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
     private _toTrack = [];
     private _vehNamespace = GVAR(vehicleNamespace);
+    private _trackingcolor = GVAR(trackingColor) select [0, 3];
     {
         if !(isNull _x) then {
-            _x setVariable [QGVAR(compass_color), (_colorNameSpace getVariable ["tracked_compass", [1,1,1]])];
+            _x setVariable [QGVAR(compass_color), _trackingcolor];
             if (_x isKindOf "CAManBase") then {
                 _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
             };

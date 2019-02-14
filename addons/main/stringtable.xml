@@ -776,5 +776,25 @@
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
         </Key>
+        <Key ID="STR_dui_trackingColor_time">
+            <English>Tracking Color</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Tracking-Farbe</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
+        <Key ID="STR_dui_trackingColor_desc">
+            <English>Special tracked objects appear in this color on the radar. Be warned the alpha value will do nothing!</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
     </Package>
 </Project>

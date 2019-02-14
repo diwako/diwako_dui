@@ -7,7 +7,6 @@ class diwako_dui_colors {
         green = "#00E600";
         blue = "#005CFF";
         yellow = "#E6E600";
-        tracked = "#EE42F4";
     };
 
     class ace:standard {

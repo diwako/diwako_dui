@@ -196,6 +196,15 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(trackingColor)
+    ,"COLOR"
+    ,[localize "STR_dui_trackingColor_time", localize "STR_dui_trackingColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0.93, 0.26, 0.93, 1]
+    ,false
+] call CBA_settings_fnc_init;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

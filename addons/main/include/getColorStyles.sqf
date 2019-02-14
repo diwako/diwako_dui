@@ -39,5 +39,5 @@ private _getColorFromHex = {
     _namespace setVariable ["tracked", getText (_x >> "tracked")];
     ["tracked", _namespace getVariable "tracked"] call _getColorFromHex;
 
-    missionNamespace setVariable [format["diwako_dui_colors_%1", _configName], _namespace]
+    missionNamespace setVariable [format[QGVAR(colors_%1), _configName], _namespace]
 } forEach (_configs + _missionConfigs);

@@ -13,5 +13,6 @@ class CfgPatches {
     };
 };
 
+#include "CfgEventHandlers.hpp"
 #include "CfgColorStyles.hpp"
 #include "CfgIconStyles.hpp"

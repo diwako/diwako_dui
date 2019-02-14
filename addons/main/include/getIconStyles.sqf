@@ -35,5 +35,5 @@ private _iconIdent = [];
     _namespace setVariable ["buddy", getText (_x >> "buddy")];
     _namespace setVariable ["buddy_compass", getText (_x >> "buddy_compass")];
 
-    missionNamespace setVariable [format["diwako_dui_icon_%1", _configName], _namespace]
+    missionNamespace setVariable [format[QGVAR(icon_%1), _configName], _namespace]
 } forEach (_configs + _missionConfigs);

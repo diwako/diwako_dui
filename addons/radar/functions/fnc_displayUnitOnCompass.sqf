@@ -36,7 +36,7 @@ if (diwako_dui_enable_occlusion && {_fade > 0}) then {
         _unit setVariable ["diwako_dui_lastChecked", time + 1];
         private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
         private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
-        if (_vis == 0 || {diwako_dui_enable_occlusion_actual_cone < _cone}) then {
+        if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
             _occlude = true;
         } else {
             // unit visible
@@ -81,7 +81,7 @@ if (isNull _ctrl) then {
 
 ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
 private _dist = _distance / linearConversion [15,50,_circleRange,40,145,false];
-private _iconScale = diwako_dui_compass_icon_scale * (_unit getVariable ["diwako_dui_icon_size", 1]);
+private _iconScale = diwako_dui_compass_icon_scale * (_unit getVariable [QGVAR(icon_size), 1]);
 private _newWidth = (44 * pixelW) /_divisor * _iconScale;
 private _newHeight = (44 * pixelH) /_divisor * _iconScale;
 
@@ -96,10 +96,10 @@ _ctrl ctrlCommit 0;
 
 private _color = [0.85, 0.4, 0];
 if (_distance > diwako_dui_distanceWarning || {!(isNull objectParent _unit) || {_unit == _player}}) then {
-    _color = + (_unit getVariable ["diwako_dui_compass_color", [1,1,1]]);
+    _color = + (_unit getVariable [QGVAR(compass_color), [1,1,1]]);
 };
 _color pushBack _fade;
 _ctrl ctrlSetTextColor _color;
-_ctrl ctrlSetText (_unit getVariable ["diwako_dui_compass_icon", DUI_RIFLEMAN]);
+_ctrl ctrlSetText (_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN]);
 
 _ctrl

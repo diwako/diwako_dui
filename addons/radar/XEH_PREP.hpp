@@ -1,5 +1,4 @@
 PREP(cacheLoop);
-PREP(canHudBeShown);
 PREP(compass);
 PREP(displayUnitOnCompass);
 PREP(getIcon);

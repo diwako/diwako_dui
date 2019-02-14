@@ -5,12 +5,12 @@ ADDON = false;
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define CBA_SETTINGS_CAT localize "STR_dui_mod"
 
-diwako_dui_group = [];
-diwako_dui_compass_pfHandle = -1;
-diwako_dui_namebox_lists = [];
-diwako_dui_showRank = false;
-diwako_dui_setCompass = true;
-diwako_dui_setNamelist = true;
+GVAR(group) = [];
+GVAR(compass_pfHandle) = -1;
+GVAR(namebox_lists) = [];
+GVAR(showRank) = false;
+GVAR(setCompass) = true;
+GVAR(setNamelist) = true;
 
 private _curCat = localize "STR_dui_cat_general";
 
@@ -71,7 +71,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[0, 3, 1.25, 2]
     ,false
     ,{
-        diwako_dui_setCompass = true;
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -88,7 +88,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ]
     ,false
     ,{
-        diwako_dui_setCompass = true;
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -110,8 +110,8 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
     ,{
         params ["_value"];
-        if (diwako_dui_compass_pfHandle > -1) then {
-            private _index = CBA_common_PFHhandles param [diwako_dui_compass_pfHandle];
+        if (GVAR(compass_pfHandle) > -1) then {
+            private _index = CBA_common_PFHhandles param [GVAR(compass_pfHandle)];
             (CBA_common_perFrameHandlerArray select _index) set [1, _value];
         };
     }
@@ -135,7 +135,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
     ,{
         params ["_value"];
-        diwako_dui_enable_occlusion_actual_cone = _value / 2;
+        GVAR(enable_occlusion_actual_cone) = _value / 2;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -156,7 +156,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[0, 1, 1, 2]
     ,false
     ,{
-        diwako_dui_setCompass = true;
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -203,7 +203,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,true
     ,false
     ,{
-        diwako_dui_setNamelist = true;
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -224,9 +224,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,[0, 1, 0, 2]
     ,false
     ,{
-        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-        };
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -248,12 +246,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,[100, 500, 215, 0]
     ,false
     ,{
-        params ["_value"];
-        diwako_dui_setNamelist = true;
-
-        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-        };
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -273,7 +266,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ]
     ,false
     ,{
-        diwako_dui_setCompass = true;
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -287,13 +280,9 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,false
     ,{
         params ["_value"];
-        diwako_dui_setCompass = true;
-        diwako_dui_setNamelist = true;
-        diwako_dui_uiPixels = 128 * _value;
+        GVAR(uiPixels) = 128 * _value;
 
-        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-        };
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
 
         // reset size for arma ui editor
         profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
@@ -313,12 +302,7 @@ private _curCat = localize "STR_dui_cat_layout";
     ,false
     ,false
     ,{
-        diwako_dui_setCompass = true;
-        diwako_dui_setNamelist = true;
-
-        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-        };
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 
@@ -336,21 +320,16 @@ private _curCat = localize "STR_dui_cat_layout";
             ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;
             ["diwako_dui_reset_ui_pos", false, 0, "client", true] call CBA_settings_fnc_set;
             profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
-            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (diwako_dui_uiPixels / 2))];
-            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (GVAR(uiPixels) / 2))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (GVAR(uiPixels) + 10))];
             profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
             profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
-            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (diwako_dui_uiPixels / 2 + 10))];
-            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (GVAR(uiPixels) / 2 + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (GVAR(uiPixels) + 10))];
             profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
             saveProfileNamespace;
 
-            diwako_dui_setCompass = true;
-            diwako_dui_setNamelist = true;
-
-            for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-                ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-            };
+            [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
         };
     }
 ] call CBA_Settings_fnc_init;
@@ -371,11 +350,11 @@ private _curCat = localize "STR_dui_cat_layout";
 [DIK_NUMPADMINUS, [false, true, false]], false] call CBA_fnc_addKeybind;
 
 [CBA_SETTINGS_CAT, "diwako_dui_button_showRank", localize "STR_dui_key_rank", {
-    diwako_dui_showRank = true;
+    GVAR(showRank) = true;
     true
 },
 {
-    diwako_dui_showRank = false;
+    GVAR(showRank) = false;
     true
 }] call CBA_fnc_addKeybind;
 

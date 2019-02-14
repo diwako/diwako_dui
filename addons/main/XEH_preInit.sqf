@@ -1,10 +1,12 @@
+#include "script_component.hpp"
 ADDON = false;
+#include "XEH_PREP.hpp"
 
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define CBA_SETTINGS_CAT localize "STR_dui_mod"
 
-diwako_dui_toggled_off = false;
-diwako_dui_inFeatureCamera = false;
+GVAR(toggled_off) = false;
+GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
 
@@ -35,10 +37,7 @@ private _availableFonts = [
     ]
     ,false
     ,{
-        diwako_dui_setCompass = true;
-        for "_i" from 0 to (count diwako_dui_namebox_lists) do {
-            ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
-        };
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
 ] call CBA_Settings_fnc_init;
 

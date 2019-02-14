@@ -1,9 +1,9 @@
 #include "script_component.hpp"
-params [["_unit", objNull, [objNull]], ["_namespace", (missionNamespace getVariable format["diwako_dui_icon_%1", diwako_dui_icon_style])], ["_player", objNull, [objNull]], ["_forCompass", false]];
+params [["_unit", objNull, [objNull]], "_namespace", ["_player", objNull, [objNull]], ["_forCompass", false]];
 
 if (isNull _unit) exitWith {_namespace getVariable ["rifleman", DUI_RIFLEMAN];};
 
-if (!_forCompass && {diwako_dui_showRank}) exitWith {
+if (!_forCompass && {GVAR(showRank)}) exitWith {
     _namespace getVariable [rank _unit, DUI_RANK_PRIVATE];
 };
 
@@ -38,7 +38,7 @@ if !(isNull objectParent _unit || {_forCompass}) exitWith {
 };
 
 // Buddy
-if (_player == (_unit getVariable ["diwako_dui_buddy", objNull])) exitWith {
+if (_player == (_unit getVariable [QGVAR(buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
 };
 

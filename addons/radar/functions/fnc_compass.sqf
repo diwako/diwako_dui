@@ -12,26 +12,26 @@ if (isNull _display) exitWith {systemChat "No Display"};
 private _ctrlGrp = _display displayCtrl IDC_COMPASS_CTRLGRP;
 private _compass = _display displayCtrl IDC_COMPASS;
 private _dirCtrl = _display displayCtrl IDC_DIRECTION;
-diwako_dui_compass_pfHandle = [{
+GVAR(compass_pfHandle) = [{
     params ["_args", "_pfhHandle"];
     _args params ["_display", "_compassCtrl", "_dirCtrl", "_ctrlGrp"];
 
     if !(diwako_dui_enable_compass) exitWith {
         [_pfhHandle] call CBA_fnc_removePerFrameHandler;
         "diwako_dui_compass" cutText ["","PLAIN"];
-        diwako_dui_compass_pfHandle = -1;
+        GVAR(compass_pfHandle) = -1;
     };
 
     private _player = [] call CBA_fnc_currentUnit;
-    private _grp = diwako_dui_group;
+    private _grp = GVAR(group);
 
-    if (diwako_dui_compass_hide_alone_group && {count _grp <= 1}) exitWith {
+    if (diwako_dui_compass_hide_alone_group && {count (units group _player) <= 1}) exitWith {
         _compassCtrl ctrlShow false;
         _dirCtrl ctrlShow false;
         _ctrlGrp ctrlShow false;
     };
 
-    if ([_player] call FUNC(canHudBeShown)) then {
+    if ([_player] call EFUNC(main,canHudBeShown)) then {
         if !(ctrlShown _ctrlGrp) then {
             _ctrlGrp ctrlShow true;
             _compassCtrl ctrlShow true;

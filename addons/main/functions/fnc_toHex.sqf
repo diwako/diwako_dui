@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /**
- * Function written original by commy2 and used in ACE
+ * Function written original by commy2 and PabstMirror, used in ACE
  * Donated to DUI by commmy2, thanks!
  */
 params [["_red",0,[0]],["_green",0,[0]],["_blue",0,[0]]];

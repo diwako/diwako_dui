@@ -756,5 +756,25 @@
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
             <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
         </Key>
+        <Key ID="STR_dui_occlusion_fade_time">
+            <English>Occlusion Fade Time</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Okklusionsüberblendzeit</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_time_desc">
+            <English>Sets the time it takes for icons to fade away on the radar</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
     </Package>
 </Project>

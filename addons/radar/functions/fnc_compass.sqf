@@ -46,9 +46,9 @@ GVAR(compass_pfHandle) = [{
 
         if (_hasCompass && {diwako_dui_enable_compass_dir == 2 || {diwako_dui_enable_compass_dir == 1 && {!(isNull objectParent _player)}}}) then {
             if (diwako_dui_dir_showMildot) then {
-                _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%3' shadow='2' shadowColor='#000000'>%1 | %2</t>", (round _dir) mod 360, round (_dir / 0.056250), diwako_dui_bearing_size_calc];
+                _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%3' shadow='2' shadowColor='#000000'>%1 | %2</t>", (round _dir) mod 360, round (_dir / 0.056250), GVAR(bearing_size_calc)];
             } else {
-                _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%2' shadow='2' shadowColor='#000000'>%1</t>", (round _dir) mod 360, diwako_dui_bearing_size_calc];
+                _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%2' shadow='2' shadowColor='#000000'>%1</t>", (round _dir) mod 360, GVAR(bearing_size_calc)];
             };
         } else {
             _dirCtrl ctrlSetText "";

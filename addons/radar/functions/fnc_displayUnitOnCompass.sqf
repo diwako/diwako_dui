@@ -30,7 +30,7 @@ if (_distance <= _circleRange) then {
 };
 
 if (diwako_dui_enable_occlusion && {_fade > 0}) then {
-    private _lastSeen = _unit getVariable "diwako_dui_lastSeen";
+    private _lastSeen = _unit getVariable QGVAR(lastSeen);
     private _occlude = !isNil "_lastSeen";
     if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
         _unit setVariable ["diwako_dui_lastChecked", time + 1];
@@ -41,7 +41,7 @@ if (diwako_dui_enable_occlusion && {_fade > 0}) then {
         } else {
             // unit visible
             if !(isNil "_lastSeen") then {
-                _unit setVariable ["diwako_dui_lastSeen", nil];
+                _unit setVariable [QGVAR(lastSeen), nil];
             };
             _occlude = false;
         };
@@ -50,10 +50,11 @@ if (diwako_dui_enable_occlusion && {_fade > 0}) then {
         // unit not visible anymore
         if (isNil "_lastSeen") then {
             _lastSeen = time;
-            _unit setVariable ["diwako_dui_lastSeen", _lastSeen];
+            _unit setVariable [QGVAR(lastSeen), _lastSeen];
         };
-        _fade = linearConversion [0, 10, time - _lastSeen, 1, 0, true] min _fade;
+        _fade = linearConversion [0, GVAR(occlusion_fade_time), time - _lastSeen, 1, 0, true] min _fade;
     };
+    _unit setVariable [QGVAR(occlusion_fade), _fade];
 };
 
 private _ctrl = _ctrlGrp getVariable [format ["diwako_dui_ctrl_unit_%1", _unitID], controlNull];

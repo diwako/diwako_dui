@@ -100,7 +100,7 @@ if (diwako_dui_enable_compass) then {
             _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
         };
 
-        diwako_dui_bearing_size_calc = diwako_dui_dir_size * GVAR(a3UiScale) * diwako_dui_hudScaling * GVAR(windowHeightMod);
+        GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * diwako_dui_hudScaling * GVAR(windowHeightMod);
 
         _compassCtrl ctrlSetPosition [
             _ctrlMiddleX,

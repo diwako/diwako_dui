@@ -140,6 +140,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(occlusion_fade_time)
+    ,"SLIDER"
+    ,[localize "STR_dui_occlusion_fade_time", localize "STR_dui_occlusion_fade_time_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[2, 60, 10, 1]
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_compass_icon_scale"
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]

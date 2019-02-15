@@ -101,7 +101,7 @@ if (diwako_dui_enable_compass) then {
             _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
         };
 
-        GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * diwako_dui_hudScaling * GVAR(windowHeightMod);
+        GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * _uiScale * GVAR(windowHeightMod);
 
         _compassCtrl ctrlSetPosition [
             _ctrlMiddleX,
@@ -157,6 +157,7 @@ if !([_player] call EFUNC(main,canHudBeShown)) exitWith {
     _grpCtrl ctrlShow false;
 };
 
+private _nameList = _display displayCtrl IDC_NAMEBOX;
 if (GVAR(setNamelist)) then {
     GVAR(setNamelist) = false;
     private _xPos = 0.5 + (pixelW * (_uiPixels / 2 + 10));
@@ -165,11 +166,10 @@ if (GVAR(setNamelist)) then {
         _xPos = profileNamespace getVariable ["igui_diwako_dui_namelist_x", _xPos];
         _yPos = profileNamespace getVariable ["igui_diwako_dui_namelist_y", _yPos];
     };
-    private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
         _xPos,
         _yPos,
-        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10)),
+        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 12)),
         pixelH * (_uiPixels + 10)
     ];
     _grpCtrl ctrlSetPosition _nameListPos;
@@ -177,7 +177,8 @@ if (GVAR(setNamelist)) then {
     _nameList ctrlSetPosition _nameListPos;
     _nameList ctrlCommit 0;
 };
-
+ctrlPosition _grpCtrl params ["", "", "", "_height"];
+private _curNameListHeight = (_height / pixelH) - 15;
 
 // no need to show any names if you are alone in the group
 if (count _group <= 1) exitWith {
@@ -199,10 +200,8 @@ private _shadow = diwako_dui_namelist_text_shadow;
 private _bgOpacity = diwako_dui_namelist_bg;
 private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
 private _heightMod = GVAR(windowHeightMod);
-private _hudScaling = diwako_dui_hudScaling;
-private _listWidth = diwako_dui_namelist_width * pixelW * _hudScaling;
-private _curNameListHeight = 128 * _hudScaling;
-private _itemHeight = (128 / 5) * _hudScaling * diwako_dui_namelist_size;
+private _listWidth = diwako_dui_namelist_width * pixelW * _uiScale;
+private _itemHeight = (128 / 5) * diwako_dui_namelist_size;
 private _columnNo = 0;
 private _curColumnHeight = 0;
 private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];

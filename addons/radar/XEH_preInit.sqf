@@ -272,6 +272,18 @@ private _curCat = localize "STR_dui_cat_namelist";
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(namelist_vertical_spacing)
+    ,"SLIDER"
+    ,[localize "STR_dui_namelist_vertical_spacing", localize "STR_dui_namelist_vertical_spacing_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 5, 1, 3]
+    ,false
+    ,{
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+    }
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_namelist_text_shadow"
     ,"LIST"
     ,[localize "STR_dui_namelist_text_shadow", localize "STR_dui_namelist_text_shadow_desc"]

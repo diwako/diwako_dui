@@ -796,5 +796,25 @@
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
         </Key>
+        <Key ID="STR_dui_namelist_vertical_spacing">
+            <English>Vertical Padding Modifier</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Vertikaler Padding Modifikator</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
+        <Key ID="STR_dui_namelist_vertical_spacing_desc">
+            <English>Sets the vertical padding of single unit entries in the namelist</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
     </Package>
 </Project>

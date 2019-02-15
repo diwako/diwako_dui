@@ -178,7 +178,7 @@ if (GVAR(setNamelist)) then {
     _nameList ctrlCommit 0;
 };
 ctrlPosition _grpCtrl params ["", "", "", "_height"];
-private _curNameListHeight = (_height / pixelH) - 15;
+private _curNameListHeight = (_height / pixelH) - ((15 * _uiScale) max 15);
 
 // no need to show any names if you are alone in the group
 if (count _group <= 1) exitWith {
@@ -201,7 +201,7 @@ private _bgOpacity = diwako_dui_namelist_bg;
 private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
 private _heightMod = GVAR(windowHeightMod);
 private _listWidth = diwako_dui_namelist_width * pixelW * _uiScale;
-private _itemHeight = (128 / 5) * diwako_dui_namelist_size;
+private _itemHeight = (128 / 5) * diwako_dui_namelist_size * _heightMod;
 private _columnNo = 0;
 private _curColumnHeight = 0;
 private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];

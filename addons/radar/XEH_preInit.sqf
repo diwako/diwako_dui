@@ -232,6 +232,9 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.5, 3, 1, 3]
     ,false
+    ,{
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+    }
 ] call CBA_Settings_fnc_init;
 
 [

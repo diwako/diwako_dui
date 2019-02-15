@@ -192,48 +192,44 @@ if !(ctrlShown _grpCtrl) then {
 };
 private _text = "";
 private _curList = controlNull;
-private _listIndex = 0;
+
 private _selectedUnits = groupSelectedUnits _player;
-private _a3UiScale = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
 private _textSize = diwako_dui_namelist_size * GVAR(a3UiScale);
-private _listWidth = diwako_dui_namelist_width * pixelW * diwako_dui_hudScaling;
-private _listHeight = 128 * pixelH * diwako_dui_hudScaling;
-private _ctrlPosList = [0, 0, _listWidth*10, _listHeight];
 private _shadow = diwako_dui_namelist_text_shadow;
 private _bgOpacity = diwako_dui_namelist_bg;
 private _onlyBuddyIcon = diwako_dui_namelist_only_buddy_icon;
 private _heightMod = GVAR(windowHeightMod);
+private _hudScaling = diwako_dui_hudScaling;
+private _listWidth = diwako_dui_namelist_width * pixelW * _hudScaling;
+private _curNameListHeight = 128 * _hudScaling;
+private _itemHeight = (128 / 5) * _hudScaling * diwako_dui_namelist_size;
+private _columnNo = 0;
+private _curColumnHeight = 0;
+private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
 {
-    if (_forEachIndex mod floor(5/(_textSize*_uiScale)) == 0) then {
-        if !(isNull _curList) then {
-            _curList ctrlSetStructuredText parseText _text;
-            _curList ctrlSetPosition _ctrlPosList;
-            _curList ctrlCommit 0;
-            _text = "";
-        };
-        if (count _lists >= (_listIndex + 1)) then {
-            _curList = _lists # _listIndex;
-        } else {
-            ctrlPosition _grpCtrl params ["_left", "_top", "_width", "_height"];
-            // create group
-            private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];
-            private _ctrlPos = [
-                (0 * pixelW) * _listIndex + _listWidth * _listIndex,
-                0,
-                _listWidth,
-                _listHeight
-            ];
-            _curGrp ctrlSetPosition _ctrlPos;
-            _curGrp ctrlCommit 0;
+    if ((count _lists) < (_forEachIndex + 1)) then {
+        private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];
+        _curGrp ctrlSetPosition [
+            (0 * pixelW) * _columnNo + _listWidth * _columnNo,
+            _curColumnHeight * pixelH,
+            _listWidth,
+            _itemHeight * pixelH
+        ];
+        _curGrp ctrlCommit 0;
+        _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
+        _curList ctrlSetFont diwako_dui_font;
+        _curList ctrlSetBackgroundColor [0,0,0,_bgOpacity];
+        _lists pushBack _curList;
 
-            _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
-            _curList ctrlSetFont diwako_dui_font;
-            _curList ctrlSetBackgroundColor [0,0,0,_bgOpacity];
-            _lists pushBack _curList;
-            _curList ctrlCommit 0;
-        };
-        _listIndex = _listIndex + 1;
+        _curColumnHeight = _curColumnHeight + _itemHeight;
+        if (_curColumnHeight >= _curNameListHeight) then {
+            _curColumnHeight = 0;
+            _columnNo = _columnNo + 1;
+        }
+    } else {
+        _curList = _lists select _forEachIndex;
     };
+
     private _unit = _x;
     private _selected = "";
     if ((count _selectedUnits) > 0 && {_unit != _player}) then {
@@ -251,22 +247,20 @@ private _heightMod = GVAR(windowHeightMod);
     };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QGVAR(buddy), objNull]));
     private _icon = [_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
-    _text = format ["%1<t color='%4' size='%6' shadow='%8' shadowColor='#000000' valign='middle' align='left'>%5<img image='%7'valign='bottom'/><img image='%2'valign='bottom'/> %3</t><br/>",
-        _text, // 1
-        _icon, // 2
-        _unit getVariable ["ACE_Name", name _unit], // 3
-        _unit getVariable [QGVAR(color),"#FFFFFF"], // 4
-        _selected, // 5
-        (_textSize * _heightMod), // 6
-        _buddy, // 7
-        _shadow]; // 8
-} forEach _group;
-
-if !(isNull _curList) then {
+    _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
+        _icon, // 1
+        _unit getVariable ["ACE_Name", name _unit], // 2
+        _unit getVariable [QGVAR(color),"#FFFFFF"], // 3
+        _selected, // 4
+        (_textSize * _heightMod), // 5
+        _buddy, // 6
+        _shadow]; // 7
     _curList ctrlSetStructuredText parseText _text;
+    diwako_debug = _text;
     _curList ctrlSetPosition _ctrlPosList;
     _curList ctrlCommit 0;
-};
-for "_i" from (count _lists) -1 to _listIndex step -1 do {
-    ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
+} forEach _group;
+
+for "_i" from (count _group) to (count _lists) do {
+    ctrlDelete ctrlParentControlsGroup (_lists deleteAt (count _group));
 };

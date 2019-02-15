@@ -42,9 +42,13 @@ private _getColorFromHex = {
 
 if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
     // ace nametags is also loaded, provide ace nametag colors as well
-    _namespace = [] call CBA_fnc_createNamespace;
-    _colorIdent pushBack "ace_nametags";
-    _colorNames pushBack "ACE3 Nametags";
+    _namespace = missionNamespace getVariable QGVAR(colors_ace);
+    if (isNil "_namespace") then {
+        _namespace = [] call CBA_fnc_createNamespace;
+        _colorIdent pushBack "ace";
+        _colorNames pushBack "ACE 3";
+        missionNamespace setVariable [QGVAR(colors_ace), _namespace];
+    };
     private _main = ["ace_nametags_nametagColorMain"] call CBA_settings_fnc_get;
     private _red = ["ace_nametags_nametagColorRed"] call CBA_settings_fnc_get;
     private _green = ["ace_nametags_nametagColorGreen"] call CBA_settings_fnc_get;
@@ -61,5 +65,4 @@ if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
     _namespace setVariable ["green", [(_green select 0) * 255,(_green select 1) * 255,(_green select 2) * 255] call EFUNC(main,toHex)];
     _namespace setVariable ["blue", [(_blue select 0) * 255,(_blue select 1) * 255,(_blue select 2) * 255] call EFUNC(main,toHex)];
     _namespace setVariable ["yellow", [(_yellow select 0) * 255,(_yellow select 1) * 255,(_yellow select 2) * 255] call EFUNC(main,toHex)];
-    missionNamespace setVariable [QGVAR(colors_ace_nametags), _namespace]
 };

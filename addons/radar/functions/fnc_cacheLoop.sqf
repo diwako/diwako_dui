@@ -218,15 +218,15 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         _curList = _display ctrlCreate ["RscStructuredText", -1, _curGrp];
         _curList ctrlSetFont diwako_dui_font;
         _curList ctrlSetBackgroundColor [0,0,0,_bgOpacity];
+        _curList ctrlSetPosition _ctrlPosList;
         _lists pushBack _curList;
-
-        _curColumnHeight = _curColumnHeight + _itemHeight;
-        if (_curColumnHeight >= _curNameListHeight) then {
-            _curColumnHeight = 0;
-            _columnNo = _columnNo + 1;
-        }
     } else {
         _curList = _lists select _forEachIndex;
+    };
+    _curColumnHeight = _curColumnHeight + _itemHeight;
+    if (_curColumnHeight >= _curNameListHeight) then {
+        _curColumnHeight = 0;
+        _columnNo = _columnNo + 1;
     };
 
     private _unit = _x;
@@ -256,7 +256,6 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         _shadow]; // 7
     _curList ctrlSetStructuredText parseText _text;
     diwako_debug = _text;
-    _curList ctrlSetPosition _ctrlPosList;
     _curList ctrlCommit 0;
 } forEach _group;
 

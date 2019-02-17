@@ -46,29 +46,31 @@ if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
     private _trackingcolor = GVAR(trackingColor) select [0, 3];
     {
         if !(isNull _x) then {
-            _x setVariable [QGVAR(compass_color), _trackingcolor];
-            if (_x isKindOf "CAManBase") then {
-                _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
-            };
-            if (_x isKindOf "LandVehicle" || _x isKindOf "Air") then {
-                private _type = (typeOf _x);
-                private _picture = _vehNamespace getVariable _type;
-                if (isNil "_picture") then {
-                    _picture = getText (configfile >> "CfgVehicles" >> _type >> "icon");
-                    if (isText (configfile >> "CfgVehicleIcons" >> _picture)) then {
-                        _picture = getText (configfile >> "CfgVehicleIcons" >> _picture);
-                    } else {
-                        private _found = (toLower _picture) find ".paa";
-                        if (_found isEqualTo -1 || {!(((count _picture) - 4) isEqualTo _found)}) then {
-                            _picture = "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa";
-                        };
-                    };
-                    _vehNamespace setVariable [_type, _picture];
+            private _index = _toTrack pushBackUnique _x;
+            if (_index > -1) then {
+                _x setVariable [QGVAR(compass_color), _trackingcolor];
+                if (_x isKindOf "CAManBase") then {
+                    _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
                 };
-                _x setVariable [QGVAR(icon_size), [2,1] select (_picture isEqualTo "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa")];
-                _x setVariable [QGVAR(compass_icon), _picture];
+                if (_x isKindOf "LandVehicle" || _x isKindOf "Air") then {
+                    private _type = (typeOf _x);
+                    private _picture = _vehNamespace getVariable _type;
+                    if (isNil "_picture") then {
+                        _picture = getText (configfile >> "CfgVehicles" >> _type >> "icon");
+                        if (isText (configfile >> "CfgVehicleIcons" >> _picture)) then {
+                            _picture = getText (configfile >> "CfgVehicleIcons" >> _picture);
+                        } else {
+                            private _found = (toLower _picture) find ".paa";
+                            if (_found isEqualTo -1 || {!(((count _picture) - 4) isEqualTo _found)}) then {
+                                _picture = "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa";
+                            };
+                        };
+                        _vehNamespace setVariable [_type, _picture];
+                    };
+                    _x setVariable [QGVAR(icon_size), [2,1] select (_picture isEqualTo "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa")];
+                    _x setVariable [QGVAR(compass_icon), _picture];
+                };
             };
-            _toTrack pushBackUnique _x;
         };
     } forEach _specialTrack;
     GVAR(group) = _toTrack + GVAR(group) - [objNull];

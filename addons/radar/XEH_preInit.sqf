@@ -367,6 +367,13 @@ private _curCat = localize "STR_dui_cat_layout";
     }
 ] call CBA_Settings_fnc_init;
 
+if !(hasInterface) exitWith {};
+
+// Reposition the actual ui elements when layout editor save button was pressed (CBA 3.10)
+["CBA_layoutEditorSaved", {
+    [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+}, true] call CBA_fnc_addEventHandler;
+
 // keybinds for zooming
 [CBA_SETTINGS_CAT, "diwako_dui_button_increase_range", localize "STR_dui_key_increase_range", {
     [true] call FUNC(rangeButton);

@@ -5,7 +5,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_common"};
+        requiredAddons[] = {"cba_main"};
         author[] = {"diwako"};
         authorUrl = "https://github.com/diwako/diwako_dui";
         license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";

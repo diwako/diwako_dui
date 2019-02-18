@@ -1,0 +1,2 @@
+PREP(canHudBeShown);
+PREP(toHex);

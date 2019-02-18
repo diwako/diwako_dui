@@ -1,2 +1,8 @@
 
 *.biprivatekey
+
+hemtt\.exe
+keys/
+releases/
+tools/
+*.pbo

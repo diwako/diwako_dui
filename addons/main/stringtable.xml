@@ -794,7 +794,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor alpha não é utilizado</Portuguese>
+            <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">
             <English>Vertical Padding Modifier</English>

@@ -764,7 +764,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Tempo de Oclusão</Portuguese>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -774,7 +774,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
@@ -784,7 +784,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Cor de objetos rastreados</Portuguese>
         </Key>
         <Key ID="STR_dui_trackingColor_desc">
             <English>Special tracked objects appear in this color on the radar. Be warned the alpha value will do nothing!</English>
@@ -794,7 +794,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">
             <English>Vertical Padding Modifier</English>
@@ -804,7 +804,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Modificador de espaçamento vertical</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing_desc">
             <English>Sets the vertical padding of single unit entries in the namelist</English>
@@ -814,7 +814,7 @@
             <!-- <Korean></Korean> -->
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
         </Key>
     </Package>
 </Project>

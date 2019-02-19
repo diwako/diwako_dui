@@ -816,5 +816,35 @@
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
         </Key>
+        <Key ID="STR_dui_hide_ui_by_default">
+            <English>Hide UI By Default</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI von Anfang an verbergen</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
+        <Key ID="STR_dui_hide_ui_by_default_desc">
+            <English>Sets the toggle to show the UI to off by default</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
+        <Key ID="STR_dui_button_hold_ui">
+            <English>Hold to show/hide UI</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Halten um UI an oder auszuschalten</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+        </Key>
     </Package>
 </Project>

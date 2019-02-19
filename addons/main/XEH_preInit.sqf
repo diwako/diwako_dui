@@ -5,7 +5,6 @@ ADDON = false;
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define CBA_SETTINGS_CAT localize "STR_dui_mod" + " - Main"
 
-GVAR(toggled_off) = false;
 GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
@@ -67,6 +66,19 @@ private _availableFonts = [
         0
     ]
     ,false
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(hide_ui_by_default)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_hide_ui_by_default", localize "STR_dui_hide_ui_by_default_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+    ,{
+        params ["_value"];
+        GVAR(toggled_off) = _value;
+    }
 ] call CBA_Settings_fnc_init;
 
 if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
@@ -134,5 +146,21 @@ if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
 },
 {false},
 [DIK_MULTIPLY, [false, true, false]], false] call CBA_fnc_addKeybind;
+
+// hold to show/hide UI
+[CBA_SETTINGS_CAT, QGVAR(button_hold_ui), localize "STR_dui_button_hold_ui", {
+    GVAR(toggled_off) = !GVAR(toggled_off);
+    if (GVAR(toggled_off)) then {
+        [QGVAR(hudToggled), [GVAR(toggled_off)]] call CBA_fnc_localEvent;
+    };
+    true
+},
+{
+    GVAR(toggled_off) = !GVAR(toggled_off);
+    if (GVAR(toggled_off)) then {
+        [QGVAR(hudToggled), [GVAR(toggled_off)]] call CBA_fnc_localEvent;
+    };
+    true
+}] call CBA_fnc_addKeybind;
 
 ADDON = true;

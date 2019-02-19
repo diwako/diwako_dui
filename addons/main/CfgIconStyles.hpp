@@ -55,4 +55,17 @@ class diwako_dui_icon_style
         engineer = QPATHTO_T(UI\icon_styles\nato\GAR_iconManEngineer_ca.paa);
         explosive_specialist = QPATHTO_T(UI\icon_styles\nato\GAR_iconManExplosive_ca.paa);
     };
+
+    class clones:standard
+    {
+        name = "Clones";
+
+        sql = QPATHTO_T(UI\icon_styles\clones\icon_leader.paa);
+        medic = QPATHTO_T(UI\icon_styles\clones\icon_medic.paa);
+        auto_rifleman = QPATHTO_T(UI\icon_styles\clones\icon_mg.paa);
+        at_gunner = QPATHTO_T(UI\icon_styles\clones\icon_at.paa);
+        engineer = QPATHTO_T(UI\icon_styles\clones\icon_engineer.paa);
+        explosive_specialist = QPATHTO_T(UI\icon_styles\clones\icon_grenadier.paa);
+        rifleman = QPATHTO_T(UI\icon_styles\clones\icon_rifleman.paa);
+    };
 };

@@ -15,6 +15,7 @@ phreaky (Added Czech translation)
 Sheepaay (Added Polish translation)
 Aradiel (Added Brazillian Portuguese translation)
 Patch (Added Korean translation)
+kripto202 (Clones icons)
 
 Special thanks:
 alganthe (General Arma modding support)

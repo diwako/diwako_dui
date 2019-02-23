@@ -96,6 +96,12 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
 
 if !(hasInterface) exitWith {};
 
+GVAR(radioModSpectator) = configFile call {
+    if (isClass (_this >> "tfar_core")) exitWith { {_player getVariable ["TFAR_forceSpectator", false]} };
+    if (isClass (_this >> "CfgPatches" >> "acre_main")) exitWith { {ACRE_IS_SPECTATOR} };
+    {false};
+};
+
 // cba eh for hiding the hud when in certain camera modes
 ["featureCamera", {
     params ["_player", "_featureCamera"];

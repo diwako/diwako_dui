@@ -3,7 +3,7 @@ diwako
 
 Contributors:
 Nigel (Code, UI config)
-Terry (Icons [Just The Tip])
+Terry (Icons [Just The Tip], spanish translations)
 Gordon Weedman (Compass [Pizza Time], Xeno)
 cyruz (Compass [BI])
 G4rrus Vakarian (NATO icons, colorblind color schemes, help with translations)

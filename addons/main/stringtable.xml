@@ -26,6 +26,7 @@
             <Japanese>DUI - スクワッド レーダー</Japanese>
             <Polish>DUI - Radar drużyny</Polish>
             <Portuguese>DUI - Radar do Esquadrão</Portuguese>
+            <Spanish>DUI - Radar De Escuadron</Spanish>
         </Key>
         <Key ID="STR_dui_font">
             <English>Font</English>
@@ -36,6 +37,7 @@
             <Japanese>フォント</Japanese>
             <Polish>Font</Polish>
             <Portuguese>Fonte</Portuguese>
+            <Spanish>Fuente</Spanish>
         </Key>
         <Key ID="STR_dui_font_desc">
             <English>Which font should be used?</English>
@@ -46,6 +48,7 @@
             <Japanese>使用するフォントを設定します。</Japanese>
             <Polish>Który font użyć?</Polish>
             <Portuguese>Qual fonte será usada?</Portuguese>
+            <Spanish>¿Que fuente debe ser usada?</Spanish>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
@@ -56,6 +59,7 @@
             <Japanese>アイコンのスタイル</Japanese>
             <Polish>Styl ikony</Polish>
             <Portuguese>Estilo de Ícones</Portuguese>
+            <Spanish>Estilo de Icono</Spanish>
         </Key>
         <Key ID="STR_dui_icon_desc">
             <English>Which icon style should be used?</English>
@@ -66,6 +70,7 @@
             <Japanese>使用するアイコン スタイルを設定します。</Japanese>
             <Polish>Jaki styl ikony powinien być użyty?</Polish>
             <Portuguese>Qual estilo de ícones será usado?</Portuguese>
+            <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
         </Key>
         <Key ID="STR_dui_color">
             <English>Color Scheme</English>
@@ -76,6 +81,7 @@
             <Japanese>カラー テーマ</Japanese>
             <Polish>Schemat kolorów</Polish>
             <Portuguese>Esquema de cores</Portuguese>
+            <Spanish>Esquema de colores</Spanish>
         </Key>
         <Key ID="STR_dui_color_desc">
             <English>Which color scheme should be used?</English>
@@ -86,6 +92,7 @@
             <Japanese>使用するカラー テーマを設定します。</Japanese>
             <Polish>Jaki schematu kolorów powinien być użyty?</Polish>
             <Portuguese>Qual esquema de cores será usado?</Portuguese>
+            <Spanish>¿Que esquema de colores debe ser usado?</Spanish>
         </Key>
         <Key ID="STR_dui_show_compass">
             <English>Show Compass</English>
@@ -96,6 +103,7 @@
             <Japanese>コンパスを表示</Japanese>
             <Polish>Pokaż kompas</Polish>
             <Portuguese>Mostrar Bússola</Portuguese>
+            <Spanish>Mostrar Brújula</Spanish>
         </Key>
         <Key ID="STR_dui_show_compass_desc">
             <English>Shows compass and unit markers on it</English>
@@ -106,6 +114,7 @@
             <Japanese>コンパスとユニット マーカーを表示します。</Japanese>
             <Polish>Pokaż na kompasie znaczniki i jednostki</Polish>
             <Portuguese>Mostra a bússola e os ícones de unidades nela</Portuguese>
+            <Spanish>Mostrar la brújula y los iconos de unidades en ella </Spanish>
         </Key>
         <Key ID="STR_dui_show_dir">
             <English>Show Bearing</English>
@@ -116,6 +125,7 @@
             <Japanese>方位を表示</Japanese>
             <Polish>Pokaż azymut</Polish>
             <Portuguese>Mostrar Orientação</Portuguese>
+            <Spanish>Mostrar Dirección</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_desc">
             <English>Shows bearing above the compass, compass itself needs to be enabled!</English>
@@ -126,6 +136,7 @@
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
             <Polish>Pokazuje azymut nad kompasem, sam kompas musi być włączony</Polish>
             <Portuguese>Mostra a orientação acima da bússola, esta precisa estar ativada!</Portuguese>
+            <Spanish>Mostrar la dirección encima de la brújula, la brújula necesita estar activada!</Spanish>
         </Key>
         <Key ID="STR_dui_show_milrad">
             <English>Show bearing also in milradians</English>
@@ -136,6 +147,7 @@
             <Japanese>方位をミル ラジアンで表示</Japanese>
             <Polish>Pokaż azymut również z milradów</Polish>
             <Portuguese>Mostrar a orientação também em mil angular</Portuguese>
+            <Spanish>Mostrar la dirección tambien en milradianos</Spanish>
         </Key>
         <Key ID="STR_dui_show_milrad_desc">
             <English>Shows milradians next to the regular bearing</English>
@@ -145,6 +157,7 @@
             <Japanese>方位の隣にミル ラジアンを表示します。</Japanese>
             <Polish>Pokaż milradów obok regularnego azymutu</Polish>
             <Portuguese>Mostrar mil angular próximo à orientação normal</Portuguese>
+            <Spanish>Mostrar milradianos alado de la dirección normal</Spanish>
         </Key>
         <Key ID="STR_dui_compass_style">
             <English>Compass Style</English>
@@ -155,6 +168,7 @@
             <Japanese>コンパスのスタイル</Japanese>
             <Polish>Styl kompasu</Polish>
             <Portuguese>Estilo de Bússola</Portuguese>
+            <Spanish>Estilo de Brújula</Spanish>
         </Key>
         <Key ID="STR_dui_compass_style_desc">
             <English>Which compass style should be used?</English>
@@ -165,6 +179,7 @@
             <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
             <Polish>Jaki styl kompasu powinien byc uzyty?</Polish>
             <Portuguese>Qual estilo de bússola será usado?</Portuguese>
+            <Spanish>¿Que estilo de brújula debe ser usada?</Spanish>
         </Key>
         <Key ID="STR_dui_compass_range">
             <English>Compass Range</English>
@@ -175,6 +190,7 @@
             <Japanese>コンパスの範囲</Japanese>
             <Polish>Zasięg kompasu</Polish>
             <Portuguese>Distância da Bússola</Portuguese>
+            <Spanish>Distancia de la Brújula</Spanish>
         </Key>
         <Key ID="STR_dui_compass_range_desc">
             <English>How far should players see units in the same group in meters?</English>
@@ -185,6 +201,7 @@
             <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
             <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie w metrach?</Polish>
             <Portuguese>Qual distância em metros os jogadores verão unidades do mesmo grupo?</Portuguese>
+            <Spanish>¿Qué tan lejos deben los jugadores ver unidades en el mismo grupo en metros?</Spanish>
         </Key>
         <Key ID="STR_dui_compass_refresh">
             <English>Refresh Rate</English>
@@ -195,6 +212,7 @@
             <Japanese>リフレッシュ レート</Japanese>
             <Polish>Częstotliwość odświeżania kompasu</Polish>
             <Portuguese>Taxa de atualização</Portuguese>
+            <Spanish>Frecuencia de actualización</Spanish>
         </Key>
         <Key ID="STR_dui_compass_refresh_desc">
             <English>How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!</English>
@@ -205,6 +223,7 @@
             <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
             <Polish>Jak szybko powinien się wyświetlać kompas? Wartość w sekundach, 0 oznacza każdą klatkę! Ustaw na własne ryzyko!</Polish>
             <Portuguese>O quão rápido a bússola será atualizada? Valor em segundos, 0 significa a cada quadro! Mude a seu próprio risco!</Portuguese>
+            <Spanish>¿Qué tan rápido debe refrescarse la brújula? Valor en segundos, 0 significa cada cuadro! Establecer a su propio riesgo!</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion">
             <English>Enable Occlusion</English>
@@ -215,6 +234,7 @@
             <Japanese>オクルージョンを有効化</Japanese>
             <Polish>Włączyć okluzje?</Polish>
             <Portuguese>Habilitar oclusão</Portuguese>
+            <Spanish>Habilitar la oclusión</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_desc">
             <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
@@ -225,6 +245,7 @@
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie z kompasu, dopóki nie pojawi się ponownie</Polish>
             <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
+            <Spanish>Si un jugador no puede ver una unidad, desaparecerá lentamente de la brújula hasta que se vuelva a ver.</Spanish>
         </Key>
         <Key ID="STR_dui_namelist">
             <English>Show Names</English>
@@ -235,6 +256,7 @@
             <Japanese>名前を表示</Japanese>
             <Polish>Pokaż imiona</Polish>
             <Portuguese>Mostrar Nomes</Portuguese>
+            <Spanish>Mostrar Nombres</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_desc">
             <English>Shows a list of names of units currently in the same group</English>
@@ -245,6 +267,7 @@
             <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
             <Polish>Wyświetla listę imienia jednostek znajdujących się obecnie w tej samej grupie</Polish>
             <Portuguese>Mostra uma lista de nomes das unidades presentes no seu grupo</Portuguese>
+            <Spanish>Muestra una lista de nombres de unidades actualmente en el mismo grupo.</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_buddy">
             <English>Show Only Buddy Icon</English>
@@ -255,6 +278,7 @@
             <Japanese>バディ アイコンのみ表示</Japanese>
             <Polish>Pokaż tylko ikonę znajomego</Polish>
             <Portuguese>Mostrar apenas ícone de Parceiro</Portuguese>
+            <Spanish>Mostrar solo el icono de amigo</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_buddy_desc">
             <English>Shows only the buddy icon in the name list instead of both, buddy and unit class</English>
@@ -265,6 +289,7 @@
             <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
             <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klas jednostek</Polish>
             <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
+            <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -275,6 +300,7 @@
             <Japanese>テキストの大きさ</Japanese>
             <Polish>Rozmiar Tekstu</Polish>
             <Portuguese>Tamanho de Texto</Portuguese>
+            <Spanish>Tamaño del Texto</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_size_desc">
             <English>Size of the names, smaller means more in one column</English>
@@ -285,6 +311,7 @@
             <Japanese>名前の大きさを設定します。小さければ一つの幅にたくさんの名前が収まります。</Japanese>
             <Polish>Rozmiar imion, mniejszy rozmiar oznacza więcej w jednej kolumnie</Polish>
             <Portuguese>Tamanho dos nomes, menor significa mais nomes em uma coluna</Portuguese>
+            <Spanish>Tamaño de los nombres, menor significa más nombres en una columna.</Spanish>
         </Key>
         <Key ID="STR_dui_key_toggle">
             <English>Toggle UI on and off</English>
@@ -295,6 +322,7 @@
             <Japanese>UI 切り替えのオン/オフ</Japanese>
             <Polish>Włącz lub wyłącz interfejs użytkownika</Polish>
             <Portuguese>Ativa ou desativa a Interface</Portuguese>
+            <Spanish>Activar o desactivar la interfaz de usuario</Spanish>
         </Key>
         <Key ID="STR_dui_key_increase_range">
             <English>Increase Compass Range</English>
@@ -305,6 +333,7 @@
             <Japanese>コンパスの範囲を増加</Japanese>
             <Polish>Zwiększ zasięg kompasu</Polish>
             <Portuguese>Aumenta Distância da bússola</Portuguese>
+            <Spanish>Aumentar el alcance de la brújula</Spanish>
         </Key>
         <Key ID="STR_dui_key_decrease_range">
             <English>Decrease Compass Range</English>
@@ -315,6 +344,7 @@
             <Japanese>コンパスの範囲を減少</Japanese>
             <Polish>Zmniejsz zasięg kompasu</Polish>
             <Portuguese>Diminui Distância da Bússola</Portuguese>
+            <Spanish>Disminuir el alcance de la brújula</Spanish>
         </Key>
         <Key ID="STR_dui_key_rank">
             <English>Hold to show ranks</English>
@@ -325,6 +355,7 @@
             <Japanese>長押しで階級を表示</Japanese>
             <Polish>Przytrzymaj, aby pokazać stopnie</Polish>
             <Portuguese>Segure para mostrar patentes</Portuguese>
+            <Spanish>Mantener para mostrar los rangos</Spanish>
         </Key>
         <Key ID="STR_dui_cat_compass">
             <English>Compass</English>
@@ -335,6 +366,7 @@
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
             <Portuguese>Bússola</Portuguese>
+           <Spanish>Brújula</Spanish>
         </Key>
         <Key ID="STR_dui_cat_compass_desc">
             <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -345,6 +377,7 @@
             <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Elemento de Interface da Bússola. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de extensão se algo der errado!</Portuguese>
+            <Spanish>Elemento de la interfaz de usuario de la brújula, arrástrelo y suéltelo para reposicionarlo.  ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
         </Key>
         <Key ID="STR_dui_cat_namelist">
             <English>Name List</English>
@@ -355,6 +388,7 @@
             <Japanese>名前リスト</Japanese>
             <Polish>Lista imion</Polish>
             <Portuguese>Lista de Nomes</Portuguese>
+            <Spanish>Lista de Nombres</Spanish>
         </Key>
         <Key ID="STR_dui_cat_namelist_desc">
             <English>Name List UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -365,6 +399,7 @@
             <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Elemento de Interface da Lista de Nomes. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de estensão se algo der errado!</Portuguese>
+            <Spanish>Nombre de la lista de elementos de la interfaz de usuario, arrástrelo y suéltelo para reposicionarlo. ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
         </Key>
         <Key ID="STR_dui_cat_general">
             <English>General Settings</English>
@@ -375,6 +410,7 @@
             <Japanese>全般設定</Japanese>
             <Polish>Ustawienia główne</Polish>
             <Portuguese>Configurações Gerais</Portuguese>
+            <Spanish>Configuración General</Spanish>
         </Key>
         <Key ID="STR_dui_buddy_action">
             <English>Assign Buddy [HUD]</English>
@@ -385,6 +421,7 @@
             <Japanese>バディに登録 [HUD]</Japanese>
             <Polish>Przjdiel znajomego [HUD]</Polish>
             <Portuguese>Marcar Parceiro</Portuguese>
+            <Spanish>Marcar Amigo</Spanish>
         </Key>
         <Key ID="STR_dui_buddy_action_remove">
             <English>Unassign Buddy [HUD]</English>
@@ -395,6 +432,7 @@
             <Japanese>バディを解除 [HUD]</Japanese>
             <Polish>Usun znajomego [HUD]</Polish>
             <Portuguese>Desmarcar Parceiro</Portuguese>
+            <Spanish>Desmarcar Amigo</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -405,6 +443,7 @@
             <Japanese>行わない</Japanese>
             <Polish>Nigdy</Polish>
             <Portuguese>Nunca</Portuguese>
+        <Spanish>Nunca</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt3">
             <English>Always</English>
@@ -415,6 +454,7 @@
             <Japanese>常に</Japanese>
             <Polish>Zawsze</Polish>
             <Portuguese>Sempre</Portuguese>
+            <Spanish>Siempre</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt2">
             <English>Only In Vehicles</English>
@@ -425,6 +465,7 @@
             <Japanese>車両内のみ</Japanese>
             <Polish>Tylko w pojazdach</Polish>
             <Portuguese>Apenas em veículos</Portuguese>
+            <Spanish>Solo en vehiculos</Spanish>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
@@ -435,6 +476,7 @@
             <Japanese>UI スケール</Japanese>
             <Polish>Skalowanie interfejsu użytkownika</Polish>
             <Portuguese>Escala de Interface</Portuguese>
+            <Spanish>Escala de interfaz de usuario</Spanish>
         </Key>
         <Key ID="STR_dui_ui_scale_desc">
             <English></English>
@@ -453,6 +495,7 @@
             <Japanese>背景の透明度</Japanese>
             <Polish>Przeźroczystość tła</Polish>
             <Portuguese>Opacidade do Fundo</Portuguese>
+            <Spanish>Opacidad de Fondo</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_bg_desc">
             <English>How much should the black background be visible</English>
@@ -463,6 +506,7 @@
             <Japanese>背景の透明度を設定します。</Japanese>
             <Polish>Jak mocne powinno być widoczne czarne tło</Polish>
             <Portuguese>O quão visível será o fundo preto?</Portuguese>
+            <Spanish>¿Cuánto debería ser visible el fondo negro?</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_width">
             <English>Column Width</English>
@@ -473,6 +517,7 @@
             <Japanese>カラムの幅</Japanese>
             <Polish>Szerokość kolumny</Polish>
             <Portuguese>Largura de Coluna</Portuguese>
+            <Spanish>Ancho de columna</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_width_desc">
             <English>Which width in pixels should be used for the column widths? Be aware that UI scaling will affect this!</English>
@@ -483,6 +528,7 @@
             <Japanese>カラムの幅をピクセルで設定します。UI スケールはこの設定に影響を及ぼします!</Japanese>
             <Polish>Jaką szerokość w pikselach należy zastosować dla szerokości kolumn? Należy pamiętać, że skalowanie interfejsu użytkownika będzie miało wpływ na to</Polish>
             <Portuguese>Qual será a largura em pixels de cada coluna? Lembre-se que a escala de interface afetará isso!</Portuguese>
+            <Spanish>¿Qué ancho en píxeles se debe usar para los anchos de las columnas? Tenga en cuenta que la escala de la interfaz de usuario afectará esto!</Spanish>
         </Key>
         <Key ID="STR_dui_compass_icon_scale">
             <English>Icon Scaling</English>
@@ -493,6 +539,7 @@
             <Japanese>アイコンのスケール</Japanese>
             <Polish>Skalowanie ikon</Polish>
             <Portuguese>Escala de Ícones</Portuguese>
+            <Spanish>Escala de Iconos</Spanish>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_desc">
             <English>Set the icon scale for units on your compass</English>
@@ -503,6 +550,7 @@
             <Japanese>コンパス上に表示されるユニット アイコンのスケールを設定します。</Japanese>
             <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
             <Portuguese>Defina a escala dos ícones na bússola</Portuguese>
+            <Spanish>Establece la escala de iconos para las unidades en tu brújula</Spanish>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
             <English>Hide while ACE Interacting</English>
@@ -513,6 +561,7 @@
             <Japanese>インタラクション中は非表示</Japanese>
             <Polish>Ukrycie podczas interakcji ACE</Polish>
             <Portuguese>Esconder durante interação ACE</Portuguese>
+            <Spanish>Ocultar mientras interacción ACE</Spanish>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction_desc">
             <English>When interacting with things via ACE interaction should the UI be hidden?</English>
@@ -523,6 +572,7 @@
             <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
             <Polish>Czy podczas interakcji z rzeczami z ACE należy ukryć interfejs użytkownika?</Polish>
             <Portuguese>Esconder a interface enquanto estiver interagindo atráves do ACE?</Portuguese>
+            <Spanish>Al interactuar con las cosas a través de la interacción ACE, ¿debería ocultarse la interfaz de usuario?</Spanish>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Opacity</English>
@@ -533,6 +583,7 @@
             <Japanese>透明度</Japanese>
             <Polish>Nieprzejrzystość</Polish>
             <Portuguese>Opacidade</Portuguese>
+            <Spanish>Opacidad</Spanish>
         </Key>
         <Key ID="STR_dui_compass_opacity_desc">
             <English></English>
@@ -551,6 +602,7 @@
             <Japanese>方位の大きさ</Japanese>
             <Polish>Wielkość azymutu</Polish>
             <Portuguese>Tamanho da Orientação</Portuguese>
+            <Spanish>Tamaño del texto del dirección</Spanish>
         </Key>
         <Key ID="STR_dui_dir_size_desc">
             <English></English>
@@ -569,6 +621,7 @@
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
+           <Spanish>Contorno de Texto</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_desc">
             <English></English>
@@ -587,6 +640,7 @@
             <Japanese>無し</Japanese>
             <Polish>Nic</Polish>
             <Portuguese>Nenhum</Portuguese>
+            <Spanish>Ninguno</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_1">
             <English>Shadow</English>
@@ -597,6 +651,7 @@
             <Japanese>影付き</Japanese>
             <Polish>Cień</Polish>
             <Portuguese>Sombra</Portuguese>
+            <Spanish>Sombra</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_2">
             <English>Outline</English>
@@ -607,6 +662,7 @@
             <Japanese>アウトライン</Japanese>
             <Polish>Zarys</Polish>
             <Portuguese>Contorno</Portuguese>
+            <Spanish>Contorno</Spanish>
         </Key>
         <Key ID="STR_dui_compass_warning">
             <English>Distance Warning</English>
@@ -617,6 +673,7 @@
             <Japanese>距離警告</Japanese>
             <Polish>Ostrzeżenie o odległości</Polish>
             <Portuguese>Alerta de distância</Portuguese>
+            <Spanish>Distancia de advertencia</Spanish>
         </Key>
         <Key ID="STR_dui_compass_warning_desc">
             <English>Sets the distance in meters which will turn a unit icon orange when being too close to you</English>
@@ -627,6 +684,7 @@
             <Japanese>他のプレイヤーと近すぎる際に起きるユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
             <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
+            <Spanish>Establece la distancia en metros que hará que el icono de una unidad se vuelva naranja cuando esté demasiado cerca de usted</Spanish>
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone">
             <English>Hide Whole Compass When Alone</English>
@@ -637,6 +695,7 @@
             <Japanese>単独時はコンパスを非表示</Japanese>
             <Polish>Ukryj cały kompas, gdy jest sam</Polish>
             <Portuguese>Esconder toda a Bússola quando sozinho</Portuguese>
+            <Spanish>Ocultar todo la brújula cuando estás solo</Spanish>
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone_desc">
             <English>When you are alone in a group, this will hide the compass UI element from your screen</English>
@@ -647,6 +706,7 @@
             <Japanese>グループに独りだけの際はコンパスを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, ukryje to element interfejsu użytkownika kompasu</Polish>
             <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
+            <Spanish>Cuando esté solo en un grupo, esto ocultará el elemento de la interfaz de usuario de la brújula de su pantalla</Spanish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone">
             <English>Hide Player Marker when alone</English>
@@ -657,6 +717,7 @@
             <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
             <Polish>Ukrywaj znacznik gracza, kiedy jest sam</Polish>
             <Portuguese>Esconder Ícone do Jogador quando sozinho</Portuguese>
+            <Spanish>Ocultar el marcador del jugador cuando estás solo</Spanish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
             <English>When you are alone in a group, this will only hide the player marker on the compass</English>
@@ -667,6 +728,7 @@
             <Japanese>グループに独りだけの際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
             <Portuguese>Quando estiver sozinho no grupo, isso ira esconder apenas o ícone do jogador na bússola</Portuguese>
+            <Spanish>Cuando estés solo en un grupo, esto solo ocultará el marcador del jugador en la brújula</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_cone">
             <English>Occlusion Cone</English>
@@ -677,6 +739,7 @@
             <Japanese>オクルージョン コーン</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Cone de oclusão</Portuguese>
+            <Spanish>Cono de oclusión</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_cone_desc">
             <English>Sets the cone (in degrees) in which a unit is considered seen infront of the player. E.g. 90 means you can see the unit 45 degrees to your left and right</English>
@@ -687,6 +750,7 @@
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° à sua esquerda e à sua direita.</Portuguese>
+            <Spanish>Establece el cono (en grados) en el que una unidad se considera vista frente al jugador. Ejemplo: 90 significa que puede ver la unidad 45 grados a su izquierda y derecha.</Spanish>
         </Key>
         <Key ID="STR_dui_reset_ui_pos">
             <English>Reset UI Position</English>
@@ -697,6 +761,7 @@
             <Japanese>UI 位置をリセット</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Restaurar a posição da Interface</Portuguese>
+            <Spanish>Restablecer la posición de la interfaz de usuario</Spanish>
         </Key>
         <Key ID="STR_dui_reset_ui_pos_desc">
             <English>Resets the position of all DUI UI elements</English>
@@ -706,6 +771,7 @@
             <Korean>DUI에서 추가된 모든 UI의 위치를 초기화 합니다.</Korean>
             <Japanese>DUI で追加された全ての UI の位置をリセットします。</Japanese>
             <Portuguese>Restaura a posição original de toda a interface DUI UI</Portuguese>
+            <Spanish>Restablece la posición de todos los elementos de la interfaz de usuario de DUI.</Spanish>
         </Key>
         <Key ID="STR_dui_show_squadbar">
             <English>Show Vanilla Squad Bar</English>
@@ -716,6 +782,7 @@
             <Japanese>ゲーム標準の分隊バーを表示</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Mostrar Barra de grupo padrão</Portuguese>
+            <Spanish>Mostrar Barra de escuadrilla</Spanish>
         </Key>
         <Key ID="STR_dui_show_squadbar_desc">
             <English>Shows the vanilla Arma3 Squad Bar when being in a squad leader position</English>
@@ -726,6 +793,7 @@
             <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Mostra a barra de grupo do Arma 3 quando for o líder do esquadrão</Portuguese>
+            <Spanish>Muestra la barra de escuadrilla de vainilla Arma 3 cuando se encuentra en la posición de líder de escuadrón.</Spanish>
         </Key>
         <Key ID="STR_dui_cat_layout">
             <English>Layout</English>
@@ -736,6 +804,7 @@
             <Japanese>レイアウト</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Layout</Portuguese>
+            <Spanish>Diseño</Spanish>
         </Key>
         <Key ID="STR_dui_layout">
             <English>Use A3 Layout Editor Position</English>
@@ -746,6 +815,7 @@
             <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Usar a posição do editor de Layout do A3</Portuguese>
+            <Spanish>Utilice la posición del editor de A3</Spanish>
         </Key>
         <Key ID="STR_dui_layout_desc">
             <English>Uses the layout editor defined position and not the default position</English>
@@ -755,6 +825,7 @@
             <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
             <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
+            <Spanish>Utiliza la posición definida por el editor de diseño y no la posición predeterminada</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time">
             <English>Occlusion Fade Time</English>
@@ -765,6 +836,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Tempo de Oclusão</Portuguese>
+            <Spanish>Tiempo de oclusión para desvanecerse</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -775,6 +847,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
+            <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
@@ -785,6 +858,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Cor de objetos rastreados</Portuguese>
+            <Spanish>Color de objectos rastreados</Spanish>
         </Key>
         <Key ID="STR_dui_trackingColor_desc">
             <English>Special tracked objects appear in this color on the radar. Be warned the alpha value will do nothing!</English>
@@ -795,6 +869,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
+            <Spanish>Objetos especiales rastreados aparecen en este color en el radar. Tenga en cuenta que el valor alfa no hará nada!</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">
             <English>Vertical Padding Modifier</English>
@@ -805,6 +880,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Modificador de espaçamento vertical</Portuguese>
+            <Spanish>Modificador de relleno vertical</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing_desc">
             <English>Sets the vertical padding of single unit entries in the namelist</English>
@@ -815,6 +891,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
+            <Spanish>Establece el relleno vertical de las entradas de una sola unidad en la lista de nombres.</Spanish>
         </Key>
         <Key ID="STR_dui_hide_ui_by_default">
             <English>Hide UI By Default</English>
@@ -825,6 +902,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
+            <Spanish>Ocultar la interfaz de usuario por forma predeterminada</Spanish>
         </Key>
         <Key ID="STR_dui_hide_ui_by_default_desc">
             <English>Sets the toggle to show the UI to off by default</English>
@@ -835,6 +913,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
+            <Spanish>Establece el conmutador para mostrar la interfaz de usuario como desactivada de forma predeterminada</Spanish>
         </Key>
         <Key ID="STR_dui_button_hold_ui">
             <English>Hold to show/hide UI</English>
@@ -845,6 +924,7 @@
             <!-- <Japanese></Japanese> -->
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
+            <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
         </Key>
     </Package>
 </Project>

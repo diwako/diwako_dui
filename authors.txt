@@ -3,7 +3,7 @@ diwako
 
 Contributors:
 Nigel (Code, UI config)
-Terry (Icons [Just The Tip])
+Terry (Icons [Just The Tip], spanish translations)
 Gordon Weedman (Compass [Pizza Time], Xeno)
 cyruz (Compass [BI])
 G4rrus Vakarian (NATO icons, colorblind color schemes, help with translations)
@@ -13,6 +13,9 @@ classicarma (Added Japanese translation)
 Psychodewon (Added French translation)
 phreaky (Added Czech translation)
 Sheepaay (Added Polish translation)
+Aradiel (Added Brazillian Portuguese translation)
+Patch (Added Korean translation)
+kripto202 (Clones icons)
 
 Special thanks:
 alganthe (General Arma modding support)

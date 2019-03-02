@@ -681,7 +681,7 @@
             <!-- <French></French> -->
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
             <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
-            <Japanese>他のプレイヤーと近すぎる際に起きるユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
+            <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
             <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
             <Spanish>Establece la distancia en metros que hará que el icono de una unidad se vuelva naranja cuando esté demasiado cerca de usted</Spanish>
@@ -703,7 +703,7 @@
             <!-- <French></French> -->
             <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
             <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
-            <Japanese>グループに独りだけの際はコンパスを非表示にします。</Japanese>
+            <Japanese>グループに単独の際はコンパスを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, ukryje to element interfejsu użytkownika kompasu</Polish>
             <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
             <Spanish>Cuando esté solo en un grupo, esto ocultará el elemento de la interfaz de usuario de la brújula de su pantalla</Spanish>
@@ -725,7 +725,7 @@
             <!-- <French></French> -->
             <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
             <Korean>그룹내에 혼자만 있을때 플레이어 마커를 숨깁니다.</Korean>
-            <Japanese>グループに独りだけの際はプレイヤー マーカーを非表示にします。</Japanese>
+            <Japanese>グループに単独の際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
             <Portuguese>Quando estiver sozinho no grupo, isso ira esconder apenas o ícone do jogador na bússola</Portuguese>
             <Spanish>Cuando estés solo en un grupo, esto solo ocultará el marcador del jugador en la brújula</Spanish>
@@ -736,7 +736,7 @@
             <!-- <French></French> -->
             <German>Okklusionskegel</German>
             <Korean>오클루전 원뿔</Korean>
-            <Japanese>オクルージョン コーン</Japanese>
+            <Japanese>オクルージョン対象範囲</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Cone de oclusão</Portuguese>
             <Spanish>Cono de oclusión</Spanish>
@@ -833,7 +833,7 @@
             <!-- <French></French> -->
             <German>Okklusionsüberblendzeit</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>オクルージョン消失時間</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Tempo de Oclusão</Portuguese>
             <Spanish>Tiempo de oclusión para desvanecerse</Spanish>
@@ -844,7 +844,7 @@
             <!-- <French></French> -->
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
             <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
@@ -855,7 +855,7 @@
             <!-- <French></French> -->
             <German>Tracking-Farbe</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>追跡カラー</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Cor de objetos rastreados</Portuguese>
             <Spanish>Color de objectos rastreados</Spanish>
@@ -866,7 +866,7 @@
             <!-- <French></French> -->
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Objetos especiales rastreados aparecen en este color en el radar. Tenga en cuenta que el valor alfa no hará nada!</Spanish>
@@ -877,7 +877,7 @@
             <!-- <French></French> -->
             <German>Vertikaler Padding Modifikator</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>行間の余白</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Modificador de espaçamento vertical</Portuguese>
             <Spanish>Modificador de relleno vertical</Spanish>
@@ -888,7 +888,7 @@
             <!-- <French></French> -->
             <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
             <!-- <Polish></Polish> -->
             <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
             <Spanish>Establece el relleno vertical de las entradas de una sola unidad en la lista de nombres.</Spanish>
@@ -899,7 +899,7 @@
             <!-- <French></French> -->
             <German>UI von Anfang an verbergen</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>標準で UI を非表示</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <Spanish>Ocultar la interfaz de usuario por forma predeterminada</Spanish>
@@ -910,7 +910,7 @@
             <!-- <French></French> -->
             <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <Spanish>Establece el conmutador para mostrar la interfaz de usuario como desactivada de forma predeterminada</Spanish>
@@ -921,7 +921,7 @@
             <!-- <French></French> -->
             <German>Halten um UI an oder auszuschalten</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>長押しで UI の表示/非表示</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>

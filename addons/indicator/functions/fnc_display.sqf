@@ -28,6 +28,6 @@ private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
         _color = + (_x getVariable [QEGVAR(radar,compass_color), [1,1,1]]);
     };
     private _alpha = _x getVariable [QEGVAR(radar,occlusion_fade), 1];
-    _color pushBack (linearConversion [0, 1, _alpha, _clamp, 1, true]);
+    _color pushBack (linearConversion [10, 20, _distance * _alpha, _clamp, 0, true]);
     drawIcon3D [_icon, _color, _icon_pos, 1, 1, 0];
 } forEach ((units (group _player)) - [_player]);

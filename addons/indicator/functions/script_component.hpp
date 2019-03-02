@@ -1,0 +1,1 @@
+#include "\z\diwako_dui\addons\indicator\script_component.hpp"

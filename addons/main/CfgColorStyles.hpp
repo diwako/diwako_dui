@@ -1,6 +1,6 @@
 class diwako_dui_colors {
     class standard {
-        name = "Standard";
+        name = "$STR_dui_color_standard";
 
         white = "#FFFFFF";
         red = "#E60000";
@@ -10,7 +10,7 @@ class diwako_dui_colors {
     };
 
     class ace:standard {
-        name = "ACE 3";
+        name = "$STR_dui_color_ace";
 
         white = "#FFFFFF";
         red = "#FFABAB";
@@ -20,7 +20,7 @@ class diwako_dui_colors {
     };
 
     class sthud:standard {
-        name = "STUI";
+        name = "$STR_dui_color_sthud";
 
         white = "#FFFFFF";
         red = "#E60000";
@@ -30,7 +30,7 @@ class diwako_dui_colors {
     };
 
     class wargame:standard {
-        name = "Wargame";
+        name = "$STR_dui_color_wargame";
 
         white = "#FEFFFF";
         red = "#EA6056";
@@ -40,7 +40,7 @@ class diwako_dui_colors {
     };
 
     class wargame2:standard {
-        name = "Wargame (Military Green)";
+        name = "$STR_dui_color_wargame2";
 
         white = "#9CB595";
         red = "#EA6056";
@@ -50,7 +50,7 @@ class diwako_dui_colors {
     };
 
     class protanopia:standard {
-        name = "Protanopia";
+        name = "$STR_dui_color_protanopia";
 
         white = "#FFFFFF";
         red = "#828000";
@@ -60,7 +60,7 @@ class diwako_dui_colors {
     };
 
     class protanomaly:standard {
-        name = "Protanomaly";
+        name = "$STR_dui_color_protanomaly";
 
         white = "#FFFFFF";
         red = "#BC4C00";
@@ -70,7 +70,7 @@ class diwako_dui_colors {
     };
 
     class deuteranopia:standard {
-        name = "Deuteranopia";
+        name = "$STR_dui_color_deuteranopia";
 
         white = "#FFFFFF";
         red = "#8FA100";
@@ -80,7 +80,7 @@ class diwako_dui_colors {
     };
 
     class deuteranomaly:standard {
-        name = "Deuteranomaly";
+        name = "$STR_dui_color_deuteranomaly";
 
         white = "#FFFFFF";
         red = "#B83B00";
@@ -90,7 +90,7 @@ class diwako_dui_colors {
     };
 
     class tritanopia:standard {
-        name = "Tritanopia";
+        name = "$STR_dui_color_tritanopia";
 
         white = "#FFFFFF";
         red = "#DA0000";
@@ -100,7 +100,7 @@ class diwako_dui_colors {
     };
 
     class tritanomaly:standard {
-        name = "Tritanomaly";
+        name = "$STR_dui_color_tritanomaly";
 
         white = "#FFFFFF";
         red = "#DE0000";
@@ -110,7 +110,7 @@ class diwako_dui_colors {
     };
 
     class achromatopsia:standard {
-        name = "Achromatopsia";
+        name = "$STR_dui_color_achromatopsia";
 
         white = "#FFFFFF";
         red = "#454545";
@@ -120,7 +120,7 @@ class diwako_dui_colors {
     };
 
     class achromatomaly:standard {
-        name = "Achromatomaly";
+        name = "$STR_dui_color_achromatomaly";
 
         white = "#FFFFFF";
         red = "#8E2525";

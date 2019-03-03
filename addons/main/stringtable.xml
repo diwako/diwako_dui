@@ -1010,5 +1010,360 @@
             <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
             <Russian>Держать чтобы вкл или выкл пользовательский интерфейс</Russian>
         </Key>
+        <!-- Addon module names -->
+        <Key ID="STR_dui_addon_main">
+            <English>Main</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Main</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_addon_radar">
+            <English>Radar</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Radar</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <!-- Color style names -->
+        <Key ID="STR_dui_color_standard">
+            <English>Standard</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Standart</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_ace">
+            <English>ACE 3</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>ACE 3</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_sthud">
+            <English>STUI</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>STUI</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <!-- note:  wargame as the video game -->
+        <Key ID="STR_dui_color_wargame">
+            <English>Wargame</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wargame</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_wargame2">
+            <English>Wargame (Military Green)</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wargame (Militär Grün)</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_wargame2">
+            <English>Wargame (Military Green)</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wargame (Militär Grün)</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_protanopia">
+            <English>Protanopia</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Protanopie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_protanomaly">
+            <English>Protanomaly</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Protanomalie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_deuteranopia">
+            <English>Deuteranopia</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Deuteranopie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_deuteranomaly">
+            <English>Deuteranomaly</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Deuteranomalie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_tritanopia">
+            <English>Tritanopia</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Tritanopie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_tritanomaly">
+            <English>Ttritanomaly</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Ttritanomalie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_achromatopsia">
+            <English>Achromatopsia</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Achromatopsia</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_achromatomaly">
+            <English>Achromatomaly</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Achromatomalie</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <!-- Icon styles -->
+        <!-- Standard string will be just reused from color -->
+        <Key ID="STR_dui_icon_terry">
+            <English>Just The Tip</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Nur die Spitze</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_icon_nato">
+            <English>NATO JMS</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>NATO JMS</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_icon_clones">
+            <English>Clones</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Klone</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <!-- Compass styles -->
+        <Key ID="STR_dui_compass_bohemia">
+            <English>Bohemia Interactive</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Bohemia Interactive</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_bohemia">
+            <English>Bohemia Interactive</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Bohemia Interactive</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_pizza">
+            <English>Pizza Time</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Zeit für Pizza</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_olde">
+            <English>Ye Olde Times</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wie alte Zeiten</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_clock">
+            <English>Clock</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Uhr</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_classic">
+            <English>Classic</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Klassisch</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <!-- Note: xeno as in Aliens franchise -->
+        <Key ID="STR_dui_compass_xeno_red">
+            <English>Xeno - Red</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Rot</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_xeno_green">
+            <English>Xeno - Green</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Grün</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_xeno_blue">
+            <English>Xeno - Blue</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Blau</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_compass_milint">
+            <English>Military Interface</English>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Militär Interface</German>
+            <!-- <Korean></Korean> -->
+            <!-- <Japanese></Japanese> -->
+            <!-- <Polish></Polish> -->
+            <!-- <Portuguese></Portuguese> -->
+            <!-- <Spanish></Spanish> -->
+            <!-- <Russian></Russian> -->
+        </Key>
     </Package>
 </Project>

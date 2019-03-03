@@ -2,7 +2,7 @@ class diwako_dui_icon_style
 {
     class standard
     {
-        name = "Standard";
+        name = "$STR_dui_color_standard";
 
         sql = "\A3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";
         medic = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";
@@ -31,7 +31,7 @@ class diwako_dui_icon_style
 
     class terry:standard
     {
-        name = "Just The Tip";
+        name = "$STR_dui_icon_terry";
 
         sql = QPATHTO_T(UI\icon_styles\terry\iconManLeader_ca.paa);
         medic = QPATHTO_T(UI\icon_styles\terry\iconManMedic_ca.paa);
@@ -46,7 +46,7 @@ class diwako_dui_icon_style
 
     class nato:standard
     {
-        name = "NATO JMS";
+        name = "$STR_dui_icon_nato";
 
         sql = QPATHTO_T(UI\icon_styles\nato\GAR_iconManLeader_ca.paa);
         medic = QPATHTO_T(UI\icon_styles\nato\GAR_iconManMedic_ca.paa);
@@ -58,7 +58,7 @@ class diwako_dui_icon_style
 
     class clones:standard
     {
-        name = "Clones";
+        name = "$STR_dui_icon_clones";
 
         sql = QPATHTO_T(UI\icon_styles\clones\icon_leader.paa);
         medic = QPATHTO_T(UI\icon_styles\clones\icon_medic.paa);

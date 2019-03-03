@@ -3,7 +3,7 @@ ADDON = false;
 #include "XEH_PREP.hpp"
 
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
-#define CBA_SETTINGS_CAT localize "STR_dui_mod" + " - Radar"
+#define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_radar"])
 
 GVAR(group) = [];
 GVAR(compass_pfHandle) = -1;

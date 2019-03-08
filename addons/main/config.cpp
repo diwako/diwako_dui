@@ -7,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
         author[] = {"diwako"};
+        url = "https://github.com/diwako/diwako_dui";
         authorUrl = "https://github.com/diwako/diwako_dui";
         license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
         VERSION_CONFIG;

@@ -1256,18 +1256,6 @@
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
-        <Key ID="STR_dui_compass_bohemia">
-            <English>Bohemia Interactive</English>
-            <!-- <Czech></Czech> -->
-            <!-- <French></French> -->
-            <German>Bohemia Interactive</German>
-            <!-- <Korean></Korean> -->
-            <Japanese>ボヘミア インタラクティブ</Japanese>
-            <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
-            <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
-        </Key>
         <Key ID="STR_dui_compass_pizza">
             <English>Pizza Time</English>
             <!-- <Czech></Czech> -->

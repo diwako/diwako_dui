@@ -1017,7 +1017,7 @@
             <!-- <French></French> -->
             <German>Main</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>メイン</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1029,7 +1029,7 @@
             <!-- <French></French> -->
             <German>Radar</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>レーダー</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1042,7 +1042,7 @@
             <!-- <French></French> -->
             <German>Standart</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>通常</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1054,7 +1054,7 @@
             <!-- <French></French> -->
             <German>ACE 3</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ACE 3</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1066,7 +1066,7 @@
             <!-- <French></French> -->
             <German>STUI</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>STUI</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1079,7 +1079,7 @@
             <!-- <French></French> -->
             <German>Wargame</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>Wargame</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1091,7 +1091,7 @@
             <!-- <French></French> -->
             <German>Wargame (Militär Grün)</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>Wargame (ミリタリー グリーン)</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1103,7 +1103,7 @@
             <!-- <French></French> -->
             <German>Wargame (Militär Grün)</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>Wargame (ミリタリー グリーン)</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1115,7 +1115,7 @@
             <!-- <French></French> -->
             <German>Protanopie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>1 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1127,7 +1127,7 @@
             <!-- <French></French> -->
             <German>Protanomalie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>1 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1139,7 +1139,7 @@
             <!-- <French></French> -->
             <German>Deuteranopie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>2 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1151,7 +1151,7 @@
             <!-- <French></French> -->
             <German>Deuteranomalie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>2 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1163,7 +1163,7 @@
             <!-- <French></French> -->
             <German>Tritanopie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>3 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1175,7 +1175,7 @@
             <!-- <French></French> -->
             <German>Ttritanomalie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>3 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1187,7 +1187,7 @@
             <!-- <French></French> -->
             <German>Achromatopsia</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>1 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1199,7 +1199,7 @@
             <!-- <French></French> -->
             <German>Achromatomalie</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>異常 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1213,7 +1213,7 @@
             <!-- <French></French> -->
             <German>Nur die Spitze</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>先端のみ</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1225,7 +1225,7 @@
             <!-- <French></French> -->
             <German>NATO JMS</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>NATO JMS</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1237,7 +1237,7 @@
             <!-- <French></French> -->
             <German>Klone</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>クローン</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1250,7 +1250,7 @@
             <!-- <French></French> -->
             <German>Bohemia Interactive</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ボヘミア インタラクティブ</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1262,7 +1262,7 @@
             <!-- <French></French> -->
             <German>Bohemia Interactive</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ボヘミア インタラクティブ</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1274,7 +1274,7 @@
             <!-- <French></French> -->
             <German>Zeit für Pizza</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ピザ タイム</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1286,7 +1286,7 @@
             <!-- <French></French> -->
             <German>Wie alte Zeiten</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>いにしえ</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1298,7 +1298,7 @@
             <!-- <French></French> -->
             <German>Uhr</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>時計</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1310,7 +1310,7 @@
             <!-- <French></French> -->
             <German>Klassisch</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>クラシック</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1323,7 +1323,7 @@
             <!-- <French></French> -->
             <German>Xeno - Rot</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ゼノ - レッド</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1335,7 +1335,7 @@
             <!-- <French></French> -->
             <German>Xeno - Grün</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ゼノ - グリーン</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1347,7 +1347,7 @@
             <!-- <French></French> -->
             <German>Xeno - Blau</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ゼノ - ブルー</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->
@@ -1359,7 +1359,7 @@
             <!-- <French></French> -->
             <German>Militär Interface</German>
             <!-- <Korean></Korean> -->
-            <!-- <Japanese></Japanese> -->
+            <Japanese>ミリタリー風</Japanese>
             <!-- <Polish></Polish> -->
             <!-- <Portuguese></Portuguese> -->
             <!-- <Spanish></Spanish> -->

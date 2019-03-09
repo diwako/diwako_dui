@@ -5,9 +5,9 @@ ADDON = false;
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_radar"])
 
-private _res = getResolution;
-private _height = _res select 1;
-private _saneScale = _height / 1080; // diwako calibrates for 1080p so let's do the same
+// Scale by the height of the monitor as that's a better indicator of DPI than width.
+// We use 1080p as our reference as that's what diwako calibrated everything on.
+private _saneScale = (getResolution select 1) / 1080; 
 
 GVAR(group) = [];
 GVAR(compass_pfHandle) = -1;

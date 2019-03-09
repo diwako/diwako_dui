@@ -2,7 +2,7 @@
 ADDON = false;
 #include "XEH_PREP.hpp"
 
-#define CBA_SETTINGS_CAT localize "STR_dui_mod" + " - Indicators"
+#define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
 
 [
     QGVAR(show)

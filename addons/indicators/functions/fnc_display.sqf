@@ -18,10 +18,19 @@ private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
     private _distance = _icon_pos distance (vehicle _player);
 
     private _icon = "\A3\ui_f\data\igui\cfg\cursors\select_ca.paa";
-    if (_x isEqualTo (leader group _player)) then {
-        _icon = "\A3\ui_f\data\igui\cfg\cursors\leader_ca.paa";
+    private _secondIcon = "";
+    if (_x isEqualTo (_player getVariable [QEGVAR(radar,buddy), objNull])) then {
+        _secondIcon = "\A3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa";
+    } else {
+        if (_x isEqualTo (leader group _player)) then {
+            _secondIcon = "\A3\ui_f\data\igui\cfg\cursors\leader_ca.paa";
+        } else {
+            if (_x getUnitTrait "Medic") then {
+                _secondIcon = "\A3\ui_f\data\igui\cfg\cursors\unitHealer_ca.paa";
+            };
+        };
     };
-    _icon = _player getVariable [QGVAR(icon), _icon];
+    _secondIcon = _x getVariable [QGVAR(icon), _secondIcon];
 
     private _color = [0.85, 0.4, 0];
     if (_distance > diwako_dui_distanceWarning || {!(isNull objectParent _x) || {_x == _player}}) then {
@@ -32,5 +41,8 @@ private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
     _color pushBack _alpha;
     if (_alpha > 0) then {
         drawIcon3D [_icon, _color, _icon_pos, 1, 1, 0];
+        if (_secondIcon != "") then {
+            drawIcon3D [_secondIcon, _color, _icon_pos, 1, 1, 0];
+        };
     };
 } forEach ((units (group _player)) - [_player]);

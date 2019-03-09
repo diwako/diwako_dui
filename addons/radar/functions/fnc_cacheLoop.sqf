@@ -1,7 +1,11 @@
 #include "script_component.hpp"
 
 // loop
-[FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
+if (missionNamespace getVariable[QEGVAR(indicators,show), false]) then {
+    [FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
+} else {
+    [FUNC(cacheLoop),[],0.2] call CBA_fnc_waitAndExecute;
+};
 
 // if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {

@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 
 // loop
-if (missionNamespace getVariable[QEGVAR(indicators,show), false]) then {
-    [FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
-} else {
+if (missionNamespace getVariable[QEGVAR(indicators,show), true]) then {
     [FUNC(cacheLoop),[],0.2] call CBA_fnc_waitAndExecute;
+} else {
+    [FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
 };
 
 // if both compass and namelist are not enabled, just remove the controls if there are any

@@ -1,1 +1,1 @@
-#include "\z\diwako_dui\addons\indicator\script_component.hpp"
+#include "\z\diwako_dui\addons\indicators\script_component.hpp"

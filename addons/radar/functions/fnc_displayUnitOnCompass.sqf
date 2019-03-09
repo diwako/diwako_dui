@@ -33,7 +33,11 @@ if (diwako_dui_enable_occlusion && {_alpha > 0}) then {
     private _lastSeen = _unit getVariable QGVAR(lastSeen);
     private _occlude = !isNil "_lastSeen";
     if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
-        _unit setVariable ["diwako_dui_lastChecked", time + 1];
+        private _delay = 1;
+        if (missionNamespace getVariable[QEGVAR(indicators,show), true]) then {
+            _delay = 0.2;
+        };
+        _unit setVariable ["diwako_dui_lastChecked", time + _delay];
         private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
         private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
         if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {

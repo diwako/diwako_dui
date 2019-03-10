@@ -13,7 +13,7 @@ ADDON = false;
 ] call CBA_Settings_fnc_init;
 
 #define DUI_INDICATORS_MIN_RANGE 15
-#define DUI_INDICATORS_MAX_RANGE 50
+#define DUI_INDICATORS_MAX_RANGE 100
 [
     QGVAR(range)
     ,"SLIDER"
@@ -34,6 +34,15 @@ ADDON = false;
         _indicatorPaths,
         0
     ]
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(size)
+    ,"SLIDER"
+    ,[localize "STR_dui_indicators_size", localize "STR_dui_indicators_size_desc"]
+    ,CBA_SETTINGS_CAT
+    ,[0.1, 4, 1, 2]
     ,false
 ] call CBA_Settings_fnc_init;
 

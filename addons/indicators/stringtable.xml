@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="diwako_dui">
+    <Package name="indicators">
+        <Container name="cba_settings">
+        <Key ID="STR_dui_addon_indicators">
+            <Original>Indicators</Original>
+            <English>Indicators</English>
+        </Key>
+        <Key ID="STR_dui_indicators_show">
+            <Original>Show Indicators</Original>
+            <English>Show indicators</English>
+        </Key>
+        <Key ID="STR_dui_indicators_show_desc">
+            <Original>Hexagon Proximity Indicators</Original>
+            <English>Hexagon Proximity Indicators</Original>
+        </Key>
+        <Key ID="STR_dui_indicators_range">
+            <Original>Range</Original>
+            <English>Range</English>
+        </Key>
+        <Key ID="STR_dui_indicators_range_desc">
+            <Original>Maximum Range</Original>
+            <English>Maximum Range</Original>
+        </Key>
+        <Key ID="STR_dui_indicators_style">
+            <Original>Icon Style</Original>
+            <English>Icon Style</English>
+            <Czech>Styl ikon</Czech>
+            <French>Style d'icône</French>
+            <German>Icon Style</German>
+            <Korean>아이콘 스타일</Korean>
+            <Japanese>アイコンのスタイル</Japanese>
+            <Polish>Styl ikony</Polish>
+            <Portuguese>Estilo de Ícones</Portuguese>
+            <Spanish>Estilo de Icono</Spanish>
+        </Key>
+        <Key ID="STR_dui_indicators_style_desc">
+            <Original>Which icon style should be used?</Original>
+            <English>Which icon style should be used?</English>
+            <Czech>Který styl ikon by se měl použít.</Czech>
+            <French>Quel style d'icône doit être utilisé?</French>
+            <German>Welcher Icon Style soll genutzt werden?</German>
+            <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
+            <Japanese>使用するアイコン スタイルを設定します。</Japanese>
+            <Polish>Jaki styl ikony powinien być użyty?</Polish>
+            <Portuguese>Qual estilo de ícones será usado?</Portuguese>
+            <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
+        </Key>
+        </Container>
+    </Package>
+</Project>

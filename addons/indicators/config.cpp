@@ -26,3 +26,4 @@ class CfgInGameUI {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgIndicatorStyles.hpp"

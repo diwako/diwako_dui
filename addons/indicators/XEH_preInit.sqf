@@ -23,4 +23,18 @@ ADDON = false;
     ,false
 ] call CBA_Settings_fnc_init;
 
+#include "include\getIndicatorStyles.sqf"
+[
+    QGVAR(style)
+    ,"LIST"
+    ,[localize "STR_dui_indicators_style", localize "STR_dui_indicators_style_desc"]
+    ,CBA_SETTINGS_CAT
+    ,[
+        _indicatorNames,
+        _indicatorPaths,
+        0
+    ]
+    ,false
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

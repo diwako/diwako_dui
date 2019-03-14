@@ -2,6 +2,8 @@
 ADDON = false;
 #include "XEH_PREP.hpp"
 
+GVAR(drawEh) = -1;
+
 #define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
 
 [

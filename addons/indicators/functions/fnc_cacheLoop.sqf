@@ -4,6 +4,12 @@
 [FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
 
 if (GVAR(show)) then {
+    if (GVAR(drawEh) < 0) then {
+        GVAR(drawEh) = addMissionEventHandler ["Draw3D", {
+            call FUNC(display);
+        }];
+    };
+
     private _player = [] call CBA_fnc_currentUnit;
     private _indicatorNamespace = missionNamespace getVariable format[QGVAR(indicator_%1), GVAR(style)];
 
@@ -26,4 +32,9 @@ if (GVAR(show)) then {
         _x setVariable [QGVAR(outerIcon), _indicatorNamespace getVariable ["indicator", ""]];
         _x setVariable [QGVAR(innerIcon), _innerIcon];
     } forEach ((units (group _player)) - [_player]);
+} else {
+    if (GVAR(drawEh) >= 0) then {
+        removeMissionEventHandler ["Draw3D", GVAR(drawEh)];
+        GVAR(drawEh) = -1;
+    };
 };

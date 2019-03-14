@@ -157,7 +157,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.01, 4, 1, 2]
+    ,[0.01, 6, 1, 2]
     ,false
 ] call CBA_Settings_fnc_init;
 
@@ -320,12 +320,6 @@ private _curCat = localize "STR_dui_cat_namelist";
         GVAR(uiPixels) = 128 * _value;
 
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-
-        // reset size for arma ui editor
-        profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
     }
 ] call CBA_Settings_fnc_init;
 

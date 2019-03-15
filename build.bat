@@ -1,3 +1,4 @@
+@echo off
 hemtt build
 MOVE addons\diwako_dui_main.pbo "D:\SteamLibrary\steamapps\common\Arma 3\@diwako_dui\addons\"
 MOVE addons\diwako_dui_radar.pbo "D:\SteamLibrary\steamapps\common\Arma 3\@diwako_dui\addons\"

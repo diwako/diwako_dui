@@ -68,7 +68,7 @@ GVAR(compass_pfHandle) = [{
             ctrlDelete _x;
         } forEach (_ctrls - _usedCtrls);
 
-        if (diwako_dui_compass_hide_blip_alone_group && {(count _usedCtrls) > 0}) then {
+        if (diwako_dui_compass_hide_blip_alone_group && { _grp isEqualTo (missionNamespace getVariable ["diwako_dui_special_track", []]) && {(count _usedCtrls) > 0}}) then {
             _usedCtrls pushBack ([_player, _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass));
         };
         _ctrlGrp setVariable ["diwako_dui_ctrlArr", _usedCtrls];

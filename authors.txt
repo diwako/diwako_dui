@@ -18,6 +18,7 @@ Patch (Added Korean translation)
 kripto202 (Clones icons)
 synixebrett (CBA restructure, Indicators addon
 bovine3dom (Radar auto scaling)
+3Mydlo3 (Polish translations)
 
 Special thanks:
 alganthe (General Arma modding support)

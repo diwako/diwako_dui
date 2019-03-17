@@ -156,7 +156,7 @@
             <German>Richtung auch in Milradians anzeigen</German>
             <Korean>방위각을 밀라디안으로 표시</Korean>
             <Japanese>方位をミル ラジアンで表示</Japanese>
-            <Polish>Pokaż azymut również z milradów</Polish>
+            <Polish>Pokaż azymut również w miliradianach</Polish>
             <Portuguese>Mostrar a orientação também em mil angular</Portuguese>
             <Spanish>Mostrar la dirección tambien en milradianos</Spanish>
             <Russian>Показывать азимут еще и в миллирадианах</Russian>
@@ -167,7 +167,7 @@
             <French>Afficher les milliradiens à côté de la direction régulière</French>
             <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
             <Japanese>方位の隣にミル ラジアンを表示します。</Japanese>
-            <Polish>Pokaż milradów obok regularnego azymutu</Polish>
+            <Polish>Pokaż miliradiany obok regularnego azymutu</Polish>
             <Portuguese>Mostrar mil angular próximo à orientação normal</Portuguese>
             <Spanish>Mostrar milradianos alado de la dirección normal</Spanish>
             <Russian>Показывает миллирадианы рядом с обычным азимутом</Russian>
@@ -191,7 +191,7 @@
             <German>Welcher Kompassstyle soll verwendet werden?</German>
             <Korean>사용하는 나침반 스타일을 설정합니다.</Korean>
             <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
-            <Polish>Jaki styl kompasu powinien byc uzyty?</Polish>
+            <Polish>Jaki styl kompasu powinien byc użyty?</Polish>
             <Portuguese>Qual estilo de bússola será usado?</Portuguese>
             <Spanish>¿Que estilo de brújula debe ser usada?</Spanish>
             <Russian>Какой компас следует использовать?</Russian>
@@ -215,7 +215,7 @@
             <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
             <Korean>같은 그룹내에 유닛이 보이는 거리를 미터 단위로 설정합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
-            <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie w metrach?</Polish>
+            <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie? (w metrach)</Polish>
             <Portuguese>Qual distância em metros os jogadores verão unidades do mesmo grupo?</Portuguese>
             <Spanish>¿Qué tan lejos deben los jugadores ver unidades en el mismo grupo en metros?</Spanish>
             <Russian>Как далеко игроки должны видеть юниты в одной группе в метрах?</Russian>
@@ -263,7 +263,7 @@
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
             <Korean>만약 플레이어가 유닛을 발견하지 않으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
-            <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie z kompasu, dopóki nie pojawi się ponownie</Polish>
+            <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie ona z kompasu, dopóki nie będzie widziana ponownie.</Polish>
             <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
             <Spanish>Si un jugador no puede ver una unidad, desaparecerá lentamente de la brújula hasta que se vuelva a ver.</Spanish>
             <Russian>Если игрок не видит юнит, он медленно исчезает с компаса, пока его не увидят снова.</Russian>
@@ -287,7 +287,7 @@
             <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
             <Korean>같은 그룹내에 있는 유닛의 이름을 목록 형식으로 표시합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
-            <Polish>Wyświetla listę imienia jednostek znajdujących się obecnie w tej samej grupie</Polish>
+            <Polish>Wyświetla listę imion jednostek znajdujących się obecnie w tej samej grupie.</Polish>
             <Portuguese>Mostra uma lista de nomes das unidades presentes no seu grupo</Portuguese>
             <Spanish>Muestra una lista de nombres de unidades actualmente en el mismo grupo.</Spanish>
             <Russian>Показывает список имен юнитов, которые в настоящее время находятся в одной группе</Russian>
@@ -311,7 +311,7 @@
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
             <Korean>이름 목록에서 친구 아이콘만 표시합니다. </Korean>
             <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
-            <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klas jednostek</Polish>
+            <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klasy jednostki</Polish>
             <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
             <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
             <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian
@@ -383,7 +383,7 @@
             <German>Taste halten um Ränge anzuzeigen</German>
             <Korean>누른상태로 계급 표시</Korean>
             <Japanese>長押しで階級を表示</Japanese>
-            <Polish>Przytrzymaj, aby pokazać stopnie</Polish>
+            <Polish>Przytrzymaj, aby pokazać stopnie wojskowe.</Polish>
             <Portuguese>Segure para mostrar patentes</Portuguese>
             <Spanish>Mantener para mostrar los rangos</Spanish>
             <Russian>Держать, чтобы увидеть звания</Russian>
@@ -407,7 +407,7 @@
             <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
             <Korean>나침반을 드래그 앤 드롭하여 위치를 변경할 수 있습니다. 또 CBA설정으로 위치를 초기화할 수 있습니다!</Korean>
             <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Kompas, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
             <Portuguese>Elemento de Interface da Bússola. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de extensão se algo der errado!</Portuguese>
             <Spanish>Elemento de la interfaz de usuario de la brújula, arrástrelo y suéltelo para reposicionarlo.  ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
             <Russian>UI элемент компаса, перетащите его, чтобы изменить положение. Вы можете сбросить позицию в настройках CBA, если что-то пойдет не так!</Russian>
@@ -431,7 +431,7 @@
             <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
             <Korean>이름 목록을 드래그 앤 드롭하여 위치를 변경 할 수 있습니다. 또 CBA설정으로 위치를 리셋할 수 있습니다!</Korean>
             <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Lista imion, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
             <Portuguese>Elemento de Interface da Lista de Nomes. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de estensão se algo der errado!</Portuguese>
             <Spanish>Nombre de la lista de elementos de la interfaz de usuario, arrástrelo y suéltelo para reposicionarlo. ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
             <Russian>UI элемент списка имен, перетащите его, чтобы изменить положение. Вы можете сбросить позицию в настройках CBA, если что-то пойдет не так!</Russian>
@@ -455,7 +455,7 @@
             <German>Als Buddy markieren [HUD]</German>
             <Korean>친구로 등록 [HUD]</Korean>
             <Japanese>バディに登録 [HUD]</Japanese>
-            <Polish>Przjdiel znajomego [HUD]</Polish>
+            <Polish>Przydziel znajomego [HUD]</Polish>
             <Portuguese>Marcar Parceiro</Portuguese>
             <Spanish>Marcar Amigo</Spanish>
             <Russian>Назначить напарников [HUD]</Russian>
@@ -527,6 +527,7 @@
             <German></German>
             <Korean></Korean>
             <Japanese></Japanese>
+            <Polish></Polish>
             <Russian></Russian>
         </Key>
         <Key ID="STR_dui_namelist_bg">
@@ -608,7 +609,7 @@
             <German>Während ACE Interaktionen verstecken</German>
             <Korean>ACE 상호작용 일때 숨기기</Korean>
             <Japanese>インタラクション中は非表示</Japanese>
-            <Polish>Ukrycie podczas interakcji ACE</Polish>
+            <Polish>Ukrycie podczas używania interakcji ACE</Polish>
             <Portuguese>Esconder durante interação ACE</Portuguese>
             <Spanish>Ocultar mientras interacción ACE</Spanish>
             <Russian>Скрывать, если есть АСЕ меню</Russian>
@@ -620,7 +621,7 @@
             <German>Wenn man durch ACE mit Dingen interagiert, soll die UI versteckt werden?</German>
             <Korean>ACE 인터렉션중에는 UI를 숨기겠습니까?</Korean>
             <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
-            <Polish>Czy podczas interakcji z rzeczami z ACE należy ukryć interfejs użytkownika?</Polish>
+            <Polish>Czy podczas używania interakcji ACE należy ukryć interfejs użytkownika?</Polish>
             <Portuguese>Esconder a interface enquanto estiver interagindo atráves do ACE?</Portuguese>
             <Spanish>Al interactuar con las cosas a través de la interacción ACE, ¿debería ocultarse la interfaz de usuario?</Spanish>
             <Russian>При взаимодействии с вещами через ACE меню должен ли пользовательский интерфейс быть скрытым?</Russian>
@@ -644,6 +645,7 @@
             <German></German>
             <Korean></Korean>
             <Japanese></Japanese>
+            <Polish></Polish>
             <Russian></Russian>
         </Key>
         <Key ID="STR_dui_dir_size">
@@ -665,6 +667,7 @@
             <German></German>
             <Korean></Korean>
             <Japanese></Japanese>
+            <Polish></Polish>
             <Russian></Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
@@ -686,6 +689,7 @@
             <German></German>
             <Korean></Korean>
             <Japanese></Japanese>
+            <Polish></Polish>
             <Russian></Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
@@ -743,7 +747,7 @@
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
             <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
             <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
-            <Polish>Ustawia odległość w metrach, która zmieni kolor ikony urządzenia na pomarańczowy, gdy znajduje się zbyt blisko użytkownika</Polish>
+            <Polish>Ustawia odległość w metrach, która spowoduje zmianę koloru ikony jednostki na pomarańczowy, gdy znajduje się ona zbyt blisko użytkownika.</Polish>
             <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
             <Spanish>Establece la distancia en metros que hará que el icono de una unidad se vuelva naranja cuando esté demasiado cerca de usted</Spanish>
             <Russian>Устанавливает расстояние в метрах, при котором значок устройства становится оранжевым, если он находится слишком близко к вам</Russian>
@@ -767,7 +771,7 @@
             <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
             <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
             <Japanese>グループに単独の際はコンパスを非表示にします。</Japanese>
-            <Polish>Gdy jesteś sam w grupie, ukryje to element interfejsu użytkownika kompasu</Polish>
+            <Polish>Nie pokazuj kompasu, gdy jesteś sam w grupie.</Polish>
             <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
             <Spanish>Cuando esté solo en un grupo, esto ocultará el elemento de la interfaz de usuario de la brújula de su pantalla</Spanish>
             <Russian>Когда вы один в группе, это скрывает элемент компаса UI с вашего экрана</Russian>
@@ -803,7 +807,7 @@
             <German>Okklusionskegel</German>
             <Korean>오클루전 원뿔</Korean>
             <Japanese>オクルージョン対象範囲</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Stożek okluzji</Polish>
             <Portuguese>Cone de oclusão</Portuguese>
             <Spanish>Cono de oclusión</Spanish>
             <Russian>Угол оклюзии</Russian>
@@ -815,7 +819,7 @@
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
             <Korean>플레이어의 정면으로 부터 설정되는 가시범위를 '도'단위로 설정합니다. 예를들어 90도로 설정되면 좌우 45도가 가시범위가 됩니다.</Korean>
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Stożek (w stopniach), w którym znajdująca się jednostka znajduje się przed graczem. Np. 90 stopni oznacza, że możesz widzieć jednostki 45 stopni z lewej i prawej.</Polish>
             <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° à sua esquerda e à sua direita.</Portuguese>
             <Spanish>Establece el cono (en grados) en el que una unidad se considera vista frente al jugador. Ejemplo: 90 significa que puede ver la unidad 45 grados a su izquierda y derecha.</Spanish>
             <Russian>Устанавливает угол (в градусах), в котором юнит считается видимым перед игроком. Т.е. 90 означает, что вы можете видеть устройство на 45 градусов влево и вправо</Russian>
@@ -827,7 +831,7 @@
             <German>UI Positionen zurücksetzen</German>
             <Korean>UI 위치 초기화</Korean>
             <Japanese>UI 位置をリセット</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Zresetuj pozycję interfejsu użytkownika</Polish>
             <Portuguese>Restaurar a posição da Interface</Portuguese>
             <Spanish>Restablecer la posición de la interfaz de usuario</Spanish>
             <Russian>Сбросить UI позицию</Russian>
@@ -850,7 +854,7 @@
             <German>Vanilla Squad Bar anzeigen</German>
             <Korean>바닐라 분대바 표시</Korean>
             <Japanese>ゲーム標準の分隊バーを表示</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Pokazuj domyślny pasek drużyny.</Polish>
             <Portuguese>Mostrar Barra de grupo padrão</Portuguese>
             <Spanish>Mostrar Barra de escuadrilla</Spanish>
             <Russian>Показать ванильный сквад-бар</Russian>
@@ -862,7 +866,7 @@
             <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
             <Korean>분대장일때 아르마3 바닐라 분대바를 표시합니다.</Korean>
             <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Pokazuj domyślny pasek drużyny jeśli jesteś dowódcą drużyny.</Polish>
             <Portuguese>Mostra a barra de grupo do Arma 3 quando for o líder do esquadrão</Portuguese>
             <Spanish>Muestra la barra de escuadrilla de vainilla Arma 3 cuando se encuentra en la posición de líder de escuadrón.</Spanish>
             <Russian>Показывает ванильный сквад-бар Arma3, находясь в позиции лидера отряда</Russian>
@@ -874,7 +878,7 @@
             <German>Layout</German>
             <Korean>레이아웃</Korean>
             <Japanese>レイアウト</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Układ</Polish>
             <Portuguese>Layout</Portuguese>
             <Spanish>Diseño</Spanish>
             <Russian>Раскладка</Russian>
@@ -886,7 +890,7 @@
             <German>A3 Layout Editor Position nutzen</German>
             <Korean>A3 레이아웃 편집기 위치 사용</Korean>
             <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Użyj pozycji Edytora Układu A3</Polish>
             <Portuguese>Usar a posição do editor de Layout do A3</Portuguese>
             <Spanish>Utilice la posición del editor de A3</Spanish>
             <Russian>Использовать A3 Layout Editor Position</Russian>
@@ -898,6 +902,7 @@
             <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
             <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
+            <Polish>Użyj pozycji z Edytora Układu, nie domyślnej pozycji.</Polish>
             <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
             <Spanish>Utiliza la posición definida por el editor de diseño y no la posición predeterminada</Spanish>
             <Russian>Использует заданную редактором макета позицию, а не позицию по умолчанию</Russian>
@@ -909,7 +914,7 @@
             <German>Okklusionsüberblendzeit</German>
             <!-- <Korean></Korean> -->
             <Japanese>オクルージョン消失時間</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Czas wygaśnięcia okluzji</Polish>
             <Portuguese>Tempo de Oclusão</Portuguese>
             <Spanish>Tiempo de oclusión para desvanecerse</Spanish>
             <Russian>Время исчезания оклюзии</Russian>
@@ -921,7 +926,7 @@
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
             <!-- <Korean></Korean> -->
             <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Ustala czas jaki ikona na radarze potrzebuje by zniknąć całkowicie.</Polish>
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
             <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
             <Russian>Устанавливает время исчезновения значков на радаре.</Russian>
@@ -933,7 +938,7 @@
             <German>Tracking-Farbe</German>
             <!-- <Korean></Korean> -->
             <Japanese>追跡カラー</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Kolor śledzenia</Polish>
             <Portuguese>Cor de objetos rastreados</Portuguese>
             <Spanish>Color de objectos rastreados</Spanish>
             <Russian>Цвет трекера</Russian>
@@ -945,7 +950,7 @@
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <!-- <Korean></Korean> -->
             <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Kolor śledzenia specjalnego obiektu. Przeźroczystość nie wpływa na kolor!</Polish>
             <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Objetos especiales rastreados aparecen en este color en el radar. Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Специальные отслеживаемые объекты отображаются на радаре этого цвета. Имейте в виду, что альфа-значение ничего не изменит!</Russian>
@@ -957,7 +962,7 @@
             <German>Vertikaler Padding Modifikator</German>
             <!-- <Korean></Korean> -->
             <Japanese>行間の余白</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Współczynnik odstępu w pionie</Polish>
             <Portuguese>Modificador de espaçamento vertical</Portuguese>
             <Spanish>Modificador de relleno vertical</Spanish>
             <Russian>Модификатор вертикального заполнения</Russian>
@@ -969,7 +974,7 @@
             <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
             <!-- <Korean></Korean> -->
             <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Ustawia odstęp w pionie pomiędzy kolejnymi wpisami na liście graczy w drużynie.</Polish>
             <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
             <Spanish>Establece el relleno vertical de las entradas de una sola unidad en la lista de nombres.</Spanish>
             <Russian>Устанавливает вертикальное заполнение отдельных записей единиц в списке имен</Russian>
@@ -981,7 +986,7 @@
             <German>UI von Anfang an verbergen</German>
             <!-- <Korean></Korean> -->
             <Japanese>標準で UI を非表示</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Domyślne ukrywanie interfejsu.</Polish>
             <Portuguese>Ocultar a interface por padrão</Portuguese>
             <Spanish>Ocultar la interfaz de usuario por forma predeterminada</Spanish>
             <Russian>Скрыть пользовательский интерфейс по умолчанию</Russian>
@@ -993,7 +998,7 @@
             <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
             <!-- <Korean></Korean> -->
             <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Włącza domyślne ukrywanie interfejsu.</Polish>
             <Portuguese>Define que a interface estará oculta por padrão, esperando o apertar da tecla para ser revelada</Portuguese>
             <Spanish>Establece el conmutador para mostrar la interfaz de usuario como desactivada de forma predeterminada</Spanish>
             <Russian>Устанавливает переключатель для показа пользовательского интерфейса по умолчанию выключенным</Russian>
@@ -1005,7 +1010,7 @@
             <German>Halten um UI an oder auszuschalten</German>
             <!-- <Korean></Korean> -->
             <Japanese>長押しで UI の表示/非表示</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Przytrzymaj by pokazać/ukryć interfejs.</Polish>
             <Portuguese>Segurar para mostrar/ocultar a interface</Portuguese>
             <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
             <Russian>Держать чтобы вкл или выкл пользовательский интерфейс</Russian>
@@ -1018,7 +1023,7 @@
             <German>Main</German>
             <!-- <Korean></Korean> -->
             <Japanese>メイン</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Główny</Polish>
             <Portuguese>Principal</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1030,7 +1035,7 @@
             <German>Radar</German>
             <!-- <Korean></Korean> -->
             <Japanese>レーダー</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Radar</Polish>
             <Portuguese>Radar</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1043,7 +1048,7 @@
             <German>Standart</German>
             <!-- <Korean></Korean> -->
             <Japanese>通常</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Standardowy</Polish>
             <Portuguese>Padrão</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1055,7 +1060,7 @@
             <German>ACE 3</German>
             <!-- <Korean></Korean> -->
             <Japanese>ACE 3</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>ACE 3</Polish>
             <Portuguese>ACE3</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1067,7 +1072,7 @@
             <German>STUI</German>
             <!-- <Korean></Korean> -->
             <Japanese>STUI</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>STUI</Polish>
             <Portuguese>STUI</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1080,7 +1085,7 @@
             <German>Wargame</German>
             <!-- <Korean></Korean> -->
             <Japanese>Wargame</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Wargame</Polish>
             <Portuguese>Wargame</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1092,7 +1097,7 @@
             <German>Wargame (Militär Grün)</German>
             <!-- <Korean></Korean> -->
             <Japanese>Wargame (ミリタリー グリーン)</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Wargame (wojskowy zielony)</Polish>
             <Portuguese>Wargame (Verde Militar)</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1104,7 +1109,7 @@
             <German>Protanopie</German>
             <!-- <Korean></Korean> -->
             <Japanese>1 型 2 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Protanopia</Polish>
             <Portuguese>Protanopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1116,7 +1121,7 @@
             <German>Protanomalie</German>
             <!-- <Korean></Korean> -->
             <Japanese>1 型 3 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Protanomalia</Polish>
             <Portuguese>Protanomalia<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1128,7 +1133,7 @@
             <German>Deuteranopie</German>
             <!-- <Korean></Korean> -->
             <Japanese>2 型 2 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Deuteranopia</Polish>
             <Portuguese>Deuteranopia<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1140,7 +1145,7 @@
             <German>Deuteranomalie</German>
             <!-- <Korean></Korean> -->
             <Japanese>2 型 3 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Deuteranomalia</Polish>
             <Portuguese>Deuteranomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1152,7 +1157,7 @@
             <German>Tritanopie</German>
             <!-- <Korean></Korean> -->
             <Japanese>3 型 2 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Tritanopia</Polish>
             <Portuguese>Trinatopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1164,7 +1169,7 @@
             <German>Ttritanomalie</German>
             <!-- <Korean></Korean> -->
             <Japanese>3 型 3 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Tritanomalia</Polish>
             <Portuguese>Tritanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1176,7 +1181,7 @@
             <German>Achromatopsia</German>
             <!-- <Korean></Korean> -->
             <Japanese>1 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Achromatopsja</Polish>
             <Portuguese>Acromatopsia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1188,7 +1193,7 @@
             <German>Achromatomalie</German>
             <!-- <Korean></Korean> -->
             <Japanese>異常 3 色覚</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Achromatomalia</Polish>
             <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1202,7 +1207,7 @@
             <German>Nur die Spitze</German>
             <!-- <Korean></Korean> -->
             <Japanese>先端のみ</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Tylko wierzchołek</Polish>
             <Portuguese>Só a pontinha</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1214,7 +1219,7 @@
             <German>NATO JMS</German>
             <!-- <Korean></Korean> -->
             <Japanese>NATO JMS</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>NATO JMS</Polish>
             <Portuguese>NATO JMS</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1226,7 +1231,7 @@
             <German>Klone</German>
             <!-- <Korean></Korean> -->
             <Japanese>クローン</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Klony</Polish>
             <Portuguese>Clones</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1239,7 +1244,7 @@
             <German>Bohemia Interactive</German>
             <!-- <Korean></Korean> -->
             <Japanese>ボヘミア インタラクティブ</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Bohemia Interactive</Polish>
             <Portuguese>Bohemia Interactive</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1251,7 +1256,7 @@
             <German>Zeit für Pizza</German>
             <!-- <Korean></Korean> -->
             <Japanese>ピザ タイム</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Czas na pizzę</Polish>
             <Portuguese>Hora da Pizza</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1263,7 +1268,7 @@
             <German>Wie alte Zeiten</German>
             <!-- <Korean></Korean> -->
             <Japanese>いにしえ</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Stare dobre czasy</Polish>
             <Portuguese>Tempos antigos</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1275,7 +1280,7 @@
             <German>Uhr</German>
             <!-- <Korean></Korean> -->
             <Japanese>時計</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Zegar</Polish>
             <Portuguese>Relógio<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1287,7 +1292,7 @@
             <German>Klassisch</German>
             <!-- <Korean></Korean> -->
             <Japanese>クラシック</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Klasyczny</Polish>
             <Portuguese>Clássico</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1300,7 +1305,7 @@
             <German>Xeno - Rot</German>
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - レッド</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Xeno - Czerwony</Polish>
             <Portuguese>Xeno - Vermelho</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1312,7 +1317,7 @@
             <German>Xeno - Grün</German>
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - グリーン</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Xeno - Zielony</Polish>
             <Portuguese>Xeno - Verde</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1324,7 +1329,7 @@
             <German>Xeno - Blau</German>
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - ブルー</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Xeno - Niebieski</Polish>
             <Portuguese>Xeno - Azul</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
@@ -1336,7 +1341,7 @@
             <German>Militär Interface</German>
             <!-- <Korean></Korean> -->
             <Japanese>ミリタリー風</Japanese>
-            <!-- <Polish></Polish> -->
+            <Polish>Wojskowy Interfejs</Polish>
             <Portuguese>Interface Militar</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->

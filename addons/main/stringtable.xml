@@ -982,7 +982,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>標準で UI を非表示</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Ocultar a interface por padrão</Portuguese>
             <Spanish>Ocultar la interfaz de usuario por forma predeterminada</Spanish>
             <Russian>Скрыть пользовательский интерфейс по умолчанию</Russian>
         </Key>
@@ -994,7 +994,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Define que a interface estará oculta por padrão, esperando o apertar da tecla para ser revelada</Portuguese>
             <Spanish>Establece el conmutador para mostrar la interfaz de usuario como desactivada de forma predeterminada</Spanish>
             <Russian>Устанавливает переключатель для показа пользовательского интерфейса по умолчанию выключенным</Russian>
         </Key>
@@ -1006,7 +1006,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>長押しで UI の表示/非表示</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Segurar para mostrar/ocultar a interface</Portuguese>
             <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
             <Russian>Держать чтобы вкл или выкл пользовательский интерфейс</Russian>
         </Key>
@@ -1019,7 +1019,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>メイン</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Principal</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1031,7 +1031,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>レーダー</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Radar</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1044,7 +1044,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>通常</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Padrão</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1056,7 +1056,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ACE 3</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>ACE3</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1068,7 +1068,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>STUI</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>STUI</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1081,7 +1081,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>Wargame</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Wargame</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1093,19 +1093,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>Wargame (ミリタリー グリーン)</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
-            <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
-        </Key>
-        <Key ID="STR_dui_color_wargame2">
-            <English>Wargame (Military Green)</English>
-            <!-- <Czech></Czech> -->
-            <!-- <French></French> -->
-            <German>Wargame (Militär Grün)</German>
-            <!-- <Korean></Korean> -->
-            <Japanese>Wargame (ミリタリー グリーン)</Japanese>
-            <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Wargame (Verde Militar)</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1117,7 +1105,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Protanopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1129,7 +1117,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Protanomalia<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1141,7 +1129,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>2 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Deuteranopia<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1153,7 +1141,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>2 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Deuteranomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1165,19 +1153,19 @@
             <!-- <Korean></Korean> -->
             <Japanese>3 型 2 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Trinatopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
         <Key ID="STR_dui_color_tritanomaly">
-            <English>Ttritanomaly</English>
+            <English>Tritanomaly</English>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Ttritanomalie</German>
             <!-- <Korean></Korean> -->
             <Japanese>3 型 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Tritanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1189,7 +1177,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Acromatopsia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1201,7 +1189,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>異常 3 色覚</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1215,7 +1203,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>先端のみ</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Só a pontinha</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1227,7 +1215,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>NATO JMS</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>NATO JMS</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1239,7 +1227,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>クローン</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Clones</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1252,7 +1240,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ボヘミア インタラクティブ</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Bohemia Interactive</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1264,7 +1252,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ピザ タイム</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Hora da Pizza</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1276,7 +1264,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>いにしえ</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Tempos antigos</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1288,7 +1276,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>時計</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Relógio<Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1300,7 +1288,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>クラシック</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Clássico</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1313,7 +1301,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - レッド</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Xeno - Vermelho</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1325,7 +1313,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - グリーン</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Xeno - Verde</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1337,7 +1325,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ゼノ - ブルー</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Xeno - Azul</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1349,7 +1337,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>ミリタリー風</Japanese>
             <!-- <Polish></Polish> -->
-            <!-- <Portuguese></Portuguese> -->
+            <Portuguese>Interface Militar</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>

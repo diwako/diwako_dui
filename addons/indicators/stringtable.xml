@@ -5,6 +5,7 @@
             <Key ID="STR_dui_addon_indicators">
                 <English>Indicators</English>
                 <German>Indikatoren</German>
+                <Portuguese>Indicadores</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
@@ -13,14 +14,17 @@
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
                 <German>Näherungsindikatoren</German>
+                <Portuguese>Indicadores de Proximidade</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
                 <German>Maximale Reichweite</German>
+                <Portuguese>Distância Máxima</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
                 <German>Maximale Reichweite wie weit die Indikatoren angezeigt werden dürfen</German>
+                <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -47,28 +51,34 @@
             <Key ID="STR_dui_indicators_size">
                 <English>Size</English>
                 <German>Größe</German>
+                <Portuguese>Tamanho</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
                 <German>Setzt die Größe der Indikatoren</German>
+                <Portuguese>Define o tamanho dos indicadores</Portuguese>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
                 <English>Standard</English>
                 <German>Standart</German>
                 <Japanese>通常</Japanese>
+                <Portuguese>Padrão</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
                 <German>Rechteck</German>
+                <Portuguese>Quadrado</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
                 <German>Diamant</German>
+                <Portuguese>Diamante</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
                 <German>Kreis</German>
+                <Portuguese>Círculo</Portuguese>
             </Key>
         </Container>
     </Package>

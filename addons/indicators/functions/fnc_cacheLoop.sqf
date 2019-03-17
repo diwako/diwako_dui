@@ -23,7 +23,7 @@ if (GVAR(show)) then {
                 if (_x isEqualTo (leader group _player)) then {
                     _innerIcon = _indicatorNamespace getVariable ["leader", ""];
                 } else {
-                    if (_x getVariable ["ace_medical_medicClass", _x getUnitTrait "Medic"]) then {
+                    if (_x getVariable ["ace_medical_medicClass", getNumber (configFile >> "CfgVehicles" >> typeOf _x >> "attendant")] > 0) then {
                         _innerIcon = _indicatorNamespace getVariable ["medic", ""];
                     };
                 };

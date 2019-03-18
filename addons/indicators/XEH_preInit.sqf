@@ -48,4 +48,16 @@ GVAR(drawEh) = -1;
     ,false
 ] call CBA_Settings_fnc_init;
 
+if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+    [
+        QGVAR(useACENametagsRange)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_indicators_useACENametagsRange", localize "STR_dui_indicators_useACENametagsRange_desc"]
+        ,CBA_SETTINGS_CAT
+        ,true
+    ] call CBA_settings_fnc_init;
+} else {
+    GVAR(useACENametagsRange) = false;
+};
+
 ADDON = true;

@@ -35,7 +35,11 @@ private _size = GVAR(size);
             if (_distance > _disanceWarning || {!(isNull objectParent _x)}) then {
                 _color = + (_x getVariable [QEGVAR(radar,compass_color), [1,1,1]]);
             };
-            _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);
+            if (GVAR(useACENametagsRange)) then {
+                _alpha = (_x getVariable "ace_nametags_drawParameters") select 1 select 1 select 3;
+            } else {
+                _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);
+            };
             _color pushBack _alpha;
             if (_alpha > 0) then {
                 drawIcon3D [_x getVariable[QGVAR(outerIcon), ""], _color, _icon_pos, _size, _size, 0];

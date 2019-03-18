@@ -34,13 +34,13 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
         [ace_player, _target] call FUNC(pairBuddies);
     },{_target in (units group ace_player) && {(ace_player getVariable [QGVAR(buddy), objNull]) != _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
-    ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+    ["CAManBase", 0, ["ACE_MainActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
     private _action = [QGVAR(buddy_action_remove), _labelRemove, "", {
         [ace_player, _target, false] call FUNC(pairBuddies);
     },{_target in (units group ace_player) && {(ace_player getVariable [QGVAR(buddy), objNull]) == _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
-    ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+    ["CAManBase", 0, ["ACE_MainActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 };
 
 [QEGVAR(main,hudToggled), {

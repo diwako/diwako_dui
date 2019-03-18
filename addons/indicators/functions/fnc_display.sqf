@@ -16,6 +16,7 @@ private _disanceWarning = diwako_dui_distanceWarning;
 private _range = GVAR(range);
 private _vehCurUnit = objNull;
 private _size = GVAR(size);
+private _useACE = GVAR(useACENametagsRange);
 
 {
     _alpha = _x getVariable [QEGVAR(radar,occlusion_alpha), 1];
@@ -35,7 +36,7 @@ private _size = GVAR(size);
             if (_distance > _disanceWarning || {!(isNull objectParent _x)}) then {
                 _color = + (_x getVariable [QEGVAR(radar,compass_color), [1,1,1]]);
             };
-            if (GVAR(useACENametagsRange)) then {
+            if (_useACE) then {
                 _alpha = (_x getVariable "ace_nametags_drawParameters") select 1 select 1 select 3;
             } else {
                 _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);

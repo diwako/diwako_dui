@@ -4,7 +4,7 @@ ADDON = false;
 
 GVAR(drawEh) = -1;
 
-#define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
+#define CBA_SETTINGS_CAT (format ["%1 - %2", localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
 
 [
     QGVAR(show)
@@ -56,7 +56,6 @@ if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
         ,CBA_SETTINGS_CAT
         ,true
     ] call CBA_settings_fnc_init;
-    [QGVAR(range), DUI_INDICATORS_MAX_RANGE, 2, "server"] call CBA_settings_fnc_set;
 } else {
     GVAR(useACENametagsRange) = false;
 };

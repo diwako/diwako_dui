@@ -37,6 +37,9 @@ private _useACE = GVAR(useACENametagsRange);
                 _color = + (_x getVariable [QEGVAR(radar,compass_color), [1,1,1]]);
             };
             if (_useACE) then {
+                // ace_nametags_drawParameters is the parameters of a ACE cachedCall
+                // We do select 1 to get it's parameters, which are the parameters for a `drawIcon3D` call
+                // We then do select 1 to get the color for that call, select 3 is to get the alpha of that color
                 _alpha = (_x getVariable "ace_nametags_drawParameters") select 1 select 1 select 3;
             } else {
                 _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);

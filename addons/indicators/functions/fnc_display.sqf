@@ -3,7 +3,7 @@
 private _player = [] call CBA_fnc_currentUnit;
 if !([_player] call EFUNC(main,canHudBeShown)) exitWith {};
 
-private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
+private _clamp = call EFUNC(main,ambientBrightness);
 
 private _icon_pos = [];
 private _height_adjust = 0.2;

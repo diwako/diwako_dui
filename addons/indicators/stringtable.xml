@@ -69,7 +69,7 @@
                 <English>Use ACE Nametags Range</English>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
-                <English>Matches indicator transparency to ACE Nametags transparency</English>
+                <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range!</English>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">

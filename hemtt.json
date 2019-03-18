@@ -9,5 +9,14 @@
     "*.psd",
     "*.png",
     "*.tga"
-  ]
+  ],
+  "postbuild": ["!copy"],
+  "scripts": {
+    "copy": {
+      "foreach": true,
+      "steps": [
+        "MOVE {{target}} \"D:\\SteamLibrary\\steamapps\\common\\Arma 3\\@diwako_dui\\addons\\\""
+      ]
+    }
+  }
 }

@@ -91,6 +91,19 @@
                 <Polish>Kółko</Polish>
                 <Portuguese>Círculo</Portuguese>
             </Key>
+            <!-- Icon Toggle -->
+            <Key ID="STR_dui_cat_icons">
+                <English>Icons</English>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_leader">
+                <English>Show Leader icon</English>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_buddy">
+                <English>Show Buddy icon</English>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_medic">
+                <English>Show Medic icon</English>
+            </Key>
         </Container>
     </Package>
 </Project>

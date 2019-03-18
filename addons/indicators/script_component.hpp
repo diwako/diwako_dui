@@ -11,7 +11,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_INDICATORS
 #endif
 
-#define NIGHT_ALPHA 0.15
-#define DAY_ALPHA 0.45
-
 #include "\z\diwako_dui\addons\main\script_macros.hpp"

@@ -56,6 +56,7 @@ if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
         ,CBA_SETTINGS_CAT
         ,true
     ] call CBA_settings_fnc_init;
+    [QGVAR(range), DUI_INDICATORS_MAX_RANGE, 2, "server"] call CBA_settings_fnc_set;
 } else {
     GVAR(useACENametagsRange) = false;
 };

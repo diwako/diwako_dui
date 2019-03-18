@@ -10,7 +10,7 @@ private _distanceWarning = diwako_dui_distanceWarning;
 private _range = GVAR(range);
 private _size = GVAR(size);
 private _useACE = GVAR(useACENametagsRange);
-private _camPosASL = AGLtoASL _camPosAGL;
+private _camPosASL = AGLtoASL positionCameraToWorld [0, 0, 0];
 
 // Variables that change for each unit
 private _iconPos = [];
@@ -19,6 +19,7 @@ private _color = [];
 private _alpha = 0;
 private _secondIcon = "";
 private _vehTarget = objNull;
+private _hasLineOfSight = false;
 
 {
     _alpha = _x getVariable [QEGVAR(radar,occlusion_alpha), 1];
@@ -34,8 +35,15 @@ private _vehTarget = objNull;
         if (_distance <= _range) then {
             _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);
             if (_useACE) then {
+                // Using cachedCall with the same frequency as nametags keeps them better synchronized
+                _hasLineOfSight = [
+                    [_camPosASL, eyePos _x, _player, _x],
+                    {lineIntersectsSurfaces _this isEqualTo []},
+                    _x, QGVAR(drawParameters), 0.1
+                ] call ace_common_fnc_cachedCall;
+
                 // ACE Nametags are only shown if player has lines of sight to target
-                _alpha = if (lineIntersectsSurfaces [_camPosASL, eyePos _x, ACE_player, _x] isEqualTo []) then {
+                _alpha = if (_hasLineOfSight) then {
                     // ace_nametags_drawParameters is the parameters of a ACE cachedCall
                     // We do select 1 to get it's parameters, which are the parameters for a `drawIcon3D` call
                     // We then do select 1 to get the color for that call, select 3 is to get the alpha of that color
@@ -46,11 +54,11 @@ private _vehTarget = objNull;
             };
 
             if (_alpha > 0) then {
-                _color = if (_distance > _distanceWarning || {!(isNull objectParent _x)}) then {
+                _color = +(if (_distance > _distanceWarning || {!(isNull objectParent _x)}) then {
                     _x getVariable [QEGVAR(radar,compass_color), [1, 1, 1]]
                 } else {
                     [0.85, 0.4, 0]
-                };
+                });
                 _color pushBack _alpha;
 
                 drawIcon3D [_x getVariable[QGVAR(outerIcon), ""], _color, _iconPos, _size, _size, 0];

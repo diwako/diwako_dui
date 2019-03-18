@@ -15,7 +15,7 @@
     "copy": {
       "foreach": true,
       "steps": [
-        "MOVE addons\\{{target}} \"D:\\SteamLibrary\\steamapps\\common\\Arma 3\\@diwako_dui\\addons\\\""
+        "MOVE {{target}} \"D:\\SteamLibrary\\steamapps\\common\\Arma 3\\@diwako_dui\\addons\\\""
       ]
     }
   }

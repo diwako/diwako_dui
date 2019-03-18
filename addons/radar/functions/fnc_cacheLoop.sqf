@@ -148,7 +148,7 @@ private _grpCtrl = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
 private _lists = GVAR(namebox_lists);
 
 // delete all name list controls if not active
-if !(diwako_dui_namelist) exitWith {
+if (!diwako_dui_namelist || {GVAR(namelist_hideWhenLeader) && (leader _player) isEqualTo _player}) exitWith {
     if ((count _lists) > 0) then {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);

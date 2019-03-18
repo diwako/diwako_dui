@@ -314,7 +314,7 @@
             <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klasy jednostki</Polish>
             <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
             <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
-            <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian
+            <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -1014,6 +1014,14 @@
             <Portuguese>Segurar para mostrar/ocultar a interface</Portuguese>
             <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
             <Russian>Держать чтобы вкл или выкл пользовательский интерфейс</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_hideWhenLeader">
+            <English>Hide When Group Leader</English>
+            <German>Vestecke wenn Gruppenführer</German>
+        </Key>
+        <Key ID="STR_dui_namelist_hideWhenLeader_desc">
+            <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
+            <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">

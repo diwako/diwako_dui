@@ -234,7 +234,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,"SLIDER"
     ,[localize "STR_dui_namelist_size", localize "STR_dui_namelist_size_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.5, 3, _saneScale^1.5, 8]
+    ,[0.5, 3, (_saneScale^1.5), 8]
     ,false
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
@@ -261,7 +261,6 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,false
     ,false
 ] call CBA_Settings_fnc_init;
-
 
 [
     "diwako_dui_namelist_width"
@@ -307,6 +306,14 @@ private _curCat = localize "STR_dui_cat_namelist";
     }
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(namelist_hideWhenLeader)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_namelist_hideWhenLeader", localize "STR_dui_namelist_hideWhenLeader_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
 
 [
     "diwako_dui_hudScaling"

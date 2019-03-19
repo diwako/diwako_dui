@@ -25,6 +25,15 @@ GVAR(drawEh) = -1;
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(size)
+    ,"SLIDER"
+    ,[localize "STR_dui_indicators_size", localize "STR_dui_indicators_size_desc"]
+    ,CBA_SETTINGS_CAT
+    ,[0.1, 4, 1, 2]
+    ,false
+] call CBA_Settings_fnc_init;
+
 #include "include\getIndicatorStyles.sqf"
 [
     QGVAR(style)
@@ -39,13 +48,30 @@ GVAR(drawEh) = -1;
     ,false
 ] call CBA_Settings_fnc_init;
 
+private _curCat = localize "STR_dui_cat_icons";
+
 [
-    QGVAR(size)
-    ,"SLIDER"
-    ,[localize "STR_dui_indicators_size", localize "STR_dui_indicators_size_desc"]
-    ,CBA_SETTINGS_CAT
-    ,[0.1, 4, 1, 2]
-    ,false
+    QGVAR(icon_leader)
+    ,"CHECKBOX"
+    ,localize "STR_dui_indicators_icon_leader"
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(icon_buddy)
+    ,"CHECKBOX"
+    ,localize "STR_dui_indicators_icon_buddy"
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(icon_medic)
+    ,"CHECKBOX"
+    ,localize "STR_dui_indicators_icon_medic"
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

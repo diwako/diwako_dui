@@ -15,8 +15,8 @@
     "copy": {
       "foreach": true,
       "steps": [
-        "MOVE {{target}} D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\",
-        "MOVE {{target}}.diwako_dui.bisign D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\"
+        "COPY {{target}} D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\",
+        "COPY {{target}}.diwako_dui.bisign D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\"
       ]
     },
     "sign": {

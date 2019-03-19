@@ -94,15 +94,19 @@
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
                 <English>Icons</English>
+                <German>Icons</German>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
+                <German>Gruppenführer anzeigen</German>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
+                <German>Buddy anzeigen</German>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
+                <German>Medic anzeigen</German>
             </Key>
         </Container>
     </Package>

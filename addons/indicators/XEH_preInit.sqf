@@ -58,13 +58,17 @@ private _curCat = localize "STR_dui_cat_icons";
     ,true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(icon_buddy)
-    ,"CHECKBOX"
-    ,localize "STR_dui_indicators_icon_buddy"
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
-] call CBA_Settings_fnc_init;
+if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
+    [
+        QGVAR(icon_buddy)
+        ,"CHECKBOX"
+        ,localize "STR_dui_indicators_icon_buddy"
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+    ] call CBA_Settings_fnc_init;
+} else {
+    GVAR(icon_buddy) = false;
+};
 
 [
     QGVAR(icon_medic)

@@ -38,7 +38,7 @@ if !(isNull objectParent _unit || {_forCompass}) exitWith {
 };
 
 // Buddy
-if (_player == (_unit getVariable [QGVAR(buddy), objNull])) exitWith {
+if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
 };
 

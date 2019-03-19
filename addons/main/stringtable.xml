@@ -448,30 +448,6 @@
             <Spanish>Configuración General</Spanish>
             <Russian>Основные настройки</Russian>
         </Key>
-        <Key ID="STR_dui_buddy_action">
-            <English>Assign Buddy [HUD]</English>
-            <Czech>Přiřadit buddyho [HUD]</Czech>
-            <French>Assigner Buddy [HUD]</French>
-            <German>Als Buddy markieren [HUD]</German>
-            <Korean>친구로 등록 [HUD]</Korean>
-            <Japanese>バディに登録 [HUD]</Japanese>
-            <Polish>Przydziel znajomego [HUD]</Polish>
-            <Portuguese>Marcar Parceiro</Portuguese>
-            <Spanish>Marcar Amigo</Spanish>
-            <Russian>Назначить напарников [HUD]</Russian>
-        </Key>
-        <Key ID="STR_dui_buddy_action_remove">
-            <English>Unassign Buddy [HUD]</English>
-            <Czech>Zrušit přiřazení buddyho [HUD]</Czech>
-            <French>Désassigner Buddy [HUD]</French>
-            <German>Buddymarkierung aufheben [HUD]</German>
-            <Korean>친구 해제 [HUD]</Korean>
-            <Japanese>バディを解除 [HUD]</Japanese>
-            <Polish>Usun znajomego [HUD]</Polish>
-            <Portuguese>Desmarcar Parceiro</Portuguese>
-            <Spanish>Desmarcar Amigo</Spanish>
-            <Russian>Распустить напарников [HUD]</Russian>
-        </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
             <Czech>Nikdy</Czech>

@@ -252,7 +252,7 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         };
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
-    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QGVAR(buddy), objNull]));
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
     private _icon = [_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
         _icon, // 1

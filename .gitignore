@@ -6,3 +6,5 @@ keys/
 releases/
 tools/
 *.pbo
+
+*.bisign

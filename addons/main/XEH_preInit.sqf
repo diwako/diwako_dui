@@ -94,10 +94,78 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     diwako_dui_ace_hide_interaction = false;
 };
 
+_curCat = localize "STR_dui_cat_custom_color";
+
+[
+    QGVAR(squadMain)
+    ,"COLOR"
+    ,[localize "STR_dui_main_squadMain", localize "STR_dui_main_squadColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[1, 1, 1, 1]
+    ,false
+    ,{
+        GVAR(colors_custom) setVariable ["main_compass", _this select [0, 3]];
+        GVAR(colors_custom) setVariable ["main", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+    }
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(squadRed)
+    ,"COLOR"
+    ,[localize "STR_dui_main_squadRed", localize "STR_dui_main_squadColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[1, 0, 0, 1]
+    ,false
+    ,{
+        params ["_value"];
+        GVAR(colors_custom) setVariable ["red_compass", _this select [0, 3]];
+        GVAR(colors_custom) setVariable ["red", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+    }
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(squadGreen)
+    ,"COLOR"
+    ,[localize "STR_dui_main_squadGreen", localize "STR_dui_main_squadColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 1, 0, 1]
+    ,false
+    ,{
+        GVAR(colors_custom) setVariable ["green_compass", _this select [0, 3]];
+        GVAR(colors_custom) setVariable ["green", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+    }
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(squadBlue)
+    ,"COLOR"
+    ,[localize "STR_dui_main_squadBlue", localize "STR_dui_main_squadColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 0, 1, 1]
+    ,false
+    ,{
+        GVAR(colors_custom) setVariable ["blue_compass", _this select [0, 3]];
+        GVAR(colors_custom) setVariable ["blue", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+    }
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(squadYellow)
+    ,"COLOR"
+    ,[localize "STR_dui_main_squadYellow", localize "STR_dui_main_squadColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[1, 1, 0, 1]
+    ,false
+    ,{
+        GVAR(colors_custom) setVariable ["yellow_compass", _this select [0, 3]];
+        GVAR(colors_custom) setVariable ["yellow", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+    }
+] call CBA_settings_fnc_init;
+
 if !(hasInterface) exitWith {};
 
 GVAR(radioModSpectator) = configFile call {
-    if (isClass (_this >> "tfar_core")) exitWith { {_player getVariable ["TFAR_forceSpectator", false]} };
+    if (isClass (_this >> "CfgPatches" >> "tfar_core")) exitWith { {_player getVariable ["TFAR_forceSpectator", false]} };
     if (isClass (_this >> "CfgPatches" >> "acre_main")) exitWith { {ACRE_IS_SPECTATOR} };
     {false};
 };
@@ -120,24 +188,24 @@ if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
         params ["_setting", "_value"];
         switch (_setting) do {
             case "ace_nametags_nametagColorMain": {
-                EGVAR(main,colors_ace) setVariable ["main_compass", _value select [0, 3]];
-                EGVAR(main,colors_ace) setVariable ["main", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call EFUNC(main,toHex)];
+                GVAR(colors_ace) setVariable ["main_compass", _value select [0, 3]];
+                GVAR(colors_ace) setVariable ["main", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
             };
             case "ace_nametags_nametagColorRed": {
-                EGVAR(main,colors_ace) setVariable ["red_compass", _value select [0, 3]];
-                EGVAR(main,colors_ace) setVariable ["red", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call EFUNC(main,toHex)];
+                GVAR(colors_ace) setVariable ["red_compass", _value select [0, 3]];
+                GVAR(colors_ace) setVariable ["red", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
             };
             case "ace_nametags_nametagColorGreen": {
-                EGVAR(main,colors_ace) setVariable ["green_compass", _value select [0, 3]];
-                EGVAR(main,colors_ace) setVariable ["green", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call EFUNC(main,toHex)];
+                GVAR(colors_ace) setVariable ["green_compass", _value select [0, 3]];
+                GVAR(colors_ace) setVariable ["green", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
             };
             case "ace_nametags_nametagColorBlue": {
-                EGVAR(main,colors_ace) setVariable ["blue_compass", _value select [0, 3]];
-                EGVAR(main,colors_ace) setVariable ["blue", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call EFUNC(main,toHex)];
+                GVAR(colors_ace) setVariable ["blue_compass", _value select [0, 3]];
+                GVAR(colors_ace) setVariable ["blue", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
             };
             case "ace_nametags_nametagColorYellow": {
-                EGVAR(main,colors_ace) setVariable ["yellow_compass", _value select [0, 3]];
-                EGVAR(main,colors_ace) setVariable ["yellow", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call EFUNC(main,toHex)];
+                GVAR(colors_ace) setVariable ["yellow_compass", _value select [0, 3]];
+                GVAR(colors_ace) setVariable ["yellow", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
             };
             default { };
         };

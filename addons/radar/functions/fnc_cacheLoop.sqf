@@ -263,7 +263,6 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         _buddy, // 6
         _shadow]; // 7
     _curList ctrlSetStructuredText parseText _text;
-    diwako_debug = _text;
     _curList ctrlCommit 0;
 } forEach _group;
 

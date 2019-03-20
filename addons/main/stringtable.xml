@@ -448,6 +448,10 @@
             <Spanish>Configuración General</Spanish>
             <Russian>Основные настройки</Russian>
         </Key>
+        <Key ID="STR_dui_cat_custom_color">
+            <English>Custom Colors</English>
+            <German>Benutzerdefinierte Farben</German>
+        </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
             <Czech>Nikdy</Czech>
@@ -999,6 +1003,35 @@
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
         </Key>
+        <Key ID="STR_dui_main_squadMain">
+            <English>No Squad Color</English>
+            <German>Keine Squad Farbe</German>
+        </Key>
+        <Key ID="STR_dui_main_squadRed">
+            <English>Red Squad Color</English>
+            <German>Rote Squad Farbe</German>
+        </Key>
+        <Key ID="STR_dui_main_squadGreen">
+            <English>Green Squad Color</English>
+            <German>Grüne Squad Farbe</German>
+        </Key>
+        <Key ID="STR_dui_main_squadBlue">
+            <English>Blue Squad Color</English>
+            <German>Blaue Squad Farbe</German>
+        </Key>
+        <Key ID="STR_dui_main_squadYellow">
+            <English>Yellow Squad Color</English>
+            <German>Gelbe Squad Farbe</German>
+        </Key>
+        <Key ID="STR_dui_main_squadColor_desc">
+            <English> Be warned the alpha value will do nothing!</English>
+            <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <Japanese>なおアルファ値は影響を及ぼしません！</Japanese>
+            <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
+            <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
+            <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
+            <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+        </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
             <English>Main</English>
@@ -1181,6 +1214,10 @@
             <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_custom">
+            <English>Custom</English>
+            <German>Benutzerdefiniert</German>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->

@@ -4,7 +4,7 @@ private _player = call CBA_fnc_currentUnit;
 if !([_player] call EFUNC(main,canHudBeShown)) exitWith {};
 
 // Constants
-private _clamp = call EFUNC(main,ambientBrightness);
+private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
 private _vehPlayer = vehicle _player;
 private _distanceWarning = diwako_dui_distanceWarning;
 private _range = GVAR(range);
@@ -33,7 +33,6 @@ private _hasLineOfSight = false;
         _distance = _iconPos distance _vehPlayer;
 
         if (_distance <= _range) then {
-            _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);
             if (_useACE) then {
                 // Using cachedCall with the same frequency as nametags keeps them better synchronized
                 _hasLineOfSight = [
@@ -47,10 +46,14 @@ private _hasLineOfSight = false;
                     // ace_nametags_drawParameters is the parameters of a ACE cachedCall
                     // We do select 1 to get it's parameters, which are the parameters for a `drawIcon3D` call
                     // We then do select 1 to get the color for that call, select 3 is to get the alpha of that color
-                    ((_x getVariable "ace_nametags_drawParameters") select 1 select 1 select 3) min _alpha
+                    ((_x getVariable "ace_nametags_drawParameters") select 1 select 1 select 3)
+                    min
+                    (_alpha * (linearConversion [10, _range, _distance, call ace_common_fnc_ambientBrightness, 0, true]))
                 } else {
                     0
                 };
+            } else {
+                _alpha = _alpha * (linearConversion [10, _range, _distance, _clamp, 0, true]);
             };
 
             if (_alpha > 0) then {

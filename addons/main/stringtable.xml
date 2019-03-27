@@ -397,8 +397,8 @@
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
             <Portuguese>Bússola</Portuguese>
-           <Spanish>Brújula</Spanish>
-           <Russian>Компас</Russian>
+            <Spanish>Brújula</Spanish>
+            <Russian>Компас</Russian>
         </Key>
         <Key ID="STR_dui_cat_compass_desc">
             <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -451,6 +451,7 @@
         <Key ID="STR_dui_cat_custom_color">
             <English>Custom Colors</English>
             <German>Benutzerdefinierte Farben</German>
+            <Japanese>カスタム カラー</Japanese>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -659,8 +660,8 @@
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
-           <Spanish>Contorno de Texto</Spanish>
-           <Russian>Текст контура</Russian>
+            <Spanish>Contorno de Texto</Spanish>
+            <Russian>Текст контура</Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_desc">
             <English></English>
@@ -998,30 +999,37 @@
         <Key ID="STR_dui_namelist_hideWhenLeader">
             <English>Hide When Group Leader</English>
             <German>Vestecke wenn Gruppenführer</German>
+            <Japanese>グループ リーダー時は非表示</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
             <German>Keine Squad Farbe</German>
+            <Japanese>分隊カラー無し</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
             <German>Rote Squad Farbe</German>
+            <Japanese>レッド分隊カラー</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
             <German>Grüne Squad Farbe</German>
+            <Japanese>グリーン分隊カラー</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
             <German>Blaue Squad Farbe</German>
+            <Japanese>ブルー分隊カラー</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
             <German>Gelbe Squad Farbe</German>
+            <Japanese>イエロー分隊カラー</Japanese>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
             <English> Be warned the alpha value will do nothing!</English>
@@ -1139,7 +1147,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 型 3 色覚</Japanese>
             <Polish>Protanomalia</Polish>
-            <Portuguese>Protanomalia<Portuguese>
+            <Portuguese>Protanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1151,7 +1159,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>2 型 2 色覚</Japanese>
             <Polish>Deuteranopia</Polish>
-            <Portuguese>Deuteranopia<Portuguese>
+            <Portuguese>Deuteranopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1218,6 +1226,7 @@
         <Key ID="STR_dui_color_custom">
             <English>Custom</English>
             <German>Benutzerdefiniert</German>
+            <Japanese>カスタム</Japanese>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->
@@ -1302,7 +1311,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>時計</Japanese>
             <Polish>Zegar</Polish>
-            <Portuguese>Relógio<Portuguese>
+            <Portuguese>Relógio</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>

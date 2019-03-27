@@ -101,6 +101,8 @@ if (diwako_dui_enable_compass) then {
         if (diwako_dui_use_layout_editor) then {
             _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
             _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
+            _ctrlWidth = profileNamespace getVariable ["igui_diwako_dui_compass_w", _ctrlWidth];
+            _ctrlHeight = profileNamespace getVariable ["igui_diwako_dui_compass_h", _ctrlHeight];
         };
 
         GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * _uiScale * GVAR(windowHeightMod);
@@ -146,7 +148,7 @@ private _grpCtrl = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
 private _lists = GVAR(namebox_lists);
 
 // delete all name list controls if not active
-if !(diwako_dui_namelist) exitWith {
+if (!diwako_dui_namelist || {GVAR(namelist_hideWhenLeader) && (leader _player) isEqualTo _player}) exitWith {
     if ((count _lists) > 0) then {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
@@ -164,15 +166,19 @@ if (GVAR(setNamelist)) then {
     GVAR(setNamelist) = false;
     private _xPos = 0.5 + (pixelW * (_uiPixels / 2 + 10));
     private _yPos = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
+    private _wPos = 0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10));
+    private _hPos = pixelH * (_uiPixels + 10);
     if (diwako_dui_use_layout_editor) then {
         _xPos = profileNamespace getVariable ["igui_diwako_dui_namelist_x", _xPos];
         _yPos = profileNamespace getVariable ["igui_diwako_dui_namelist_y", _yPos];
+        _hPos = profileNamespace getVariable ["igui_diwako_dui_namelist_h", _hPos];
+        _wPos = profileNamespace getVariable ["igui_diwako_dui_namelist_w", _wPos];
     };
     private _nameListPos = [
         _xPos,
         _yPos,
-        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 12)),
-        pixelH * (_uiPixels + 10)
+        _wPos,
+        _hPos
     ];
     _grpCtrl ctrlSetPosition _nameListPos;
     _grpCtrl ctrlCommit 0;
@@ -246,7 +252,7 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         };
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
-    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QGVAR(buddy), objNull]));
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
     private _icon = [_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
         _icon, // 1
@@ -257,7 +263,6 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         _buddy, // 6
         _shadow]; // 7
     _curList ctrlSetStructuredText parseText _text;
-    diwako_debug = _text;
     _curList ctrlCommit 0;
 } forEach _group;
 

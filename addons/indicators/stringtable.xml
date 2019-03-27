@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="diwako_dui">
+    <Package name="indicators">
+        <Container name="cba_settings">
+            <Key ID="STR_dui_addon_indicators">
+                <English>Indicators</English>
+                <German>Indikatoren</German>
+                <Polish>Znaczniki</Polish>
+                <Portuguese>Indicadores</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_show">
+                <English>Show indicators</English>
+                <German>Indikatoren anzeigen</German>
+                <Polish>Pokazuj znaczniki</Polish>
+            </Key>
+            <Key ID="STR_dui_indicators_show_desc">
+                <English>Proximity Indicators</English>
+                <German>Näherungsindikatoren</German>
+                <Polish>Znaczniki pobliskich graczy</Polish>
+                <Portuguese>Indicadores de Proximidade</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_range">
+                <English>Max Range</English>
+                <German>Maximale Reichweite</German>
+                <Polish>Maksymalny zasięg</Polish>
+                <Portuguese>Distância Máxima</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_range_desc">
+                <English>Maximum allowed range to show indicators</English>
+                <German>Maximale Reichweite wie weit die Indikatoren angezeigt werden dürfen</German>
+                <Polish>Maksymalny zasięg pokazywania znaczników.</Polish>
+                <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_style">
+                <English>Icon Style</English>
+                <Czech>Styl ikon</Czech>
+                <French>Style d'icône</French>
+                <German>Icon Style</German>
+                <Korean>아이콘 스타일</Korean>
+                <Japanese>アイコンのスタイル</Japanese>
+                <Polish>Styl ikony</Polish>
+                <Portuguese>Estilo de Ícones</Portuguese>
+                <Spanish>Estilo de Icono</Spanish>
+            </Key>
+            <Key ID="STR_dui_indicators_style_desc">
+                <English>Which icon style should be used?</English>
+                <Czech>Který styl ikon by se měl použít.</Czech>
+                <French>Quel style d'icône doit être utilisé?</French>
+                <German>Welcher Icon Style soll genutzt werden?</German>
+                <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
+                <Japanese>使用するアイコン スタイルを設定します。</Japanese>
+                <Polish>Jaki styl ikony powinien być użyty?</Polish>
+                <Portuguese>Qual estilo de ícones será usado?</Portuguese>
+                <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
+            </Key>
+            <Key ID="STR_dui_indicators_size">
+                <English>Size</English>
+                <German>Größe</German>
+                <Polish>Rozmiar</Polish>
+                <Portuguese>Tamanho</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_size_desc">
+                <English>Sets the size of the indicator icons</English>
+                <German>Setzt die Größe der Indikatoren</German>
+                <Polish>Ustawia rozmiar znaczników.</Polish>
+                <Portuguese>Define o tamanho dos indicadores</Portuguese>
+            </Key>
+            <!-- Indicator styles -->
+            <Key ID="STR_dui_indicators_indicator_standard">
+                <English>Standard</English>
+                <German>Standart</German>
+                <Japanese>通常</Japanese>
+                <Polish>Standard</Polish>
+                <Portuguese>Padrão</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_indicator_square">
+                <English>Square</English>
+                <German>Rechteck</German>
+                <Polish>Kwadrat</Polish>
+                <Portuguese>Quadrado</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_indicator_diamond">
+                <English>Diamond</English>
+                <German>Diamant</German>
+                <Polish>Diament</Polish>
+                <Portuguese>Diamante</Portuguese>
+            </Key>
+            <Key ID="STR_dui_indicators_indicator_circle">
+                <English>Circle</English>
+                <German>Kreis</German>
+                <Polish>Kółko</Polish>
+                <Portuguese>Círculo</Portuguese>
+            </Key>
+            <!-- Icon Toggle -->
+            <Key ID="STR_dui_cat_icons">
+                <English>Icons</English>
+                <German>Icons</German>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_leader">
+                <English>Show Leader icon</English>
+                <German>Gruppenführer anzeigen</German>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_buddy">
+                <English>Show Buddy icon</English>
+                <German>Buddy anzeigen</German>
+            </Key>
+            <Key ID="STR_dui_indicators_icon_medic">
+                <English>Show Medic icon</English>
+                <German>Medic anzeigen</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

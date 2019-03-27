@@ -5,6 +5,10 @@ ADDON = false;
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_radar"])
 
+// Scale by the height of the monitor as that's a better indicator of DPI than width.
+// We use 1080p as our reference as that's what diwako calibrated everything on.
+private _saneScale = (getResolution select 1) / 1080; 
+
 GVAR(group) = [];
 GVAR(compass_pfHandle) = -1;
 GVAR(namebox_lists) = [];
@@ -153,7 +157,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.01, 4, 1, 2]
+    ,[0.01, 6, 1, 2]
     ,false
 ] call CBA_Settings_fnc_init;
 
@@ -230,7 +234,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,"SLIDER"
     ,[localize "STR_dui_namelist_size", localize "STR_dui_namelist_size_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.5, 3, 1, 3]
+    ,[0.5, 3, (_saneScale^1.5), 8]
     ,false
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
@@ -249,15 +253,18 @@ private _curCat = localize "STR_dui_cat_namelist";
     }
 ] call CBA_Settings_fnc_init;
 
-[
-    "diwako_dui_namelist_only_buddy_icon"
-    ,"CHECKBOX"
-    ,[localize "STR_dui_namelist_buddy", localize "STR_dui_namelist_buddy_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,false
-    ,false
-] call CBA_Settings_fnc_init;
-
+if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
+    [
+        "diwako_dui_namelist_only_buddy_icon"
+        ,"CHECKBOX"
+        ,[localize "STR_dui_namelist_buddy", localize "STR_dui_namelist_buddy_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,false
+        ,false
+    ] call CBA_Settings_fnc_init;
+} else {
+    diwako_dui_namelist_only_buddy_icon = false;
+};
 
 [
     "diwako_dui_namelist_width"
@@ -276,7 +283,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,"SLIDER"
     ,[localize "STR_dui_namelist_vertical_spacing", localize "STR_dui_namelist_vertical_spacing_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0, 5, 1, 3]
+    ,[0, 5, 1/_saneScale, 3]
     ,false
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
@@ -303,25 +310,27 @@ private _curCat = localize "STR_dui_cat_namelist";
     }
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(namelist_hideWhenLeader)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_namelist_hideWhenLeader", localize "STR_dui_namelist_hideWhenLeader_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
 
 [
     "diwako_dui_hudScaling"
     ,"SLIDER"
     ,[localize "STR_dui_ui_scale", ""]
     ,[CBA_SETTINGS_CAT, localize "STR_dui_cat_general"]
-    ,[0.5, 3, 1, 2]
+    ,[0.5, 3, _saneScale, 2]
     ,false
     ,{
         params ["_value"];
         GVAR(uiPixels) = 128 * _value;
 
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-
-        // reset size for arma ui editor
-        profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
     }
 ] call CBA_Settings_fnc_init;
 

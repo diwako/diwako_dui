@@ -9,10 +9,11 @@ params [
 ];
 if (isNull _unit) exitWith {};
 
+private _namespace = missionNamespace;
 private _unitID = _unit getVariable ["diwako_dui_unit_id",nil];
 if (isNil "_unitID") then {
-    _unitID = (missionNamespace getVariable ["diwako_dui_lastID", 0])+1;
-    missionNamespace setVariable ["diwako_dui_lastID", _unitID];
+    _unitID = (_namespace getVariable ["diwako_dui_lastID", 0])+1;
+    _namespace setVariable ["diwako_dui_lastID", _unitID];
     _unit setVariable ["diwako_dui_unit_id", _unitID];
 };
 
@@ -22,18 +23,21 @@ if (isNil "_player") then {
 
 private _circleRange = diwako_dui_compassRange;
 private _distance = _player distance2d _unit;
-private _fade = 0;
+private _alpha = 0;
 private _relDir = 0;
 if (_distance <= _circleRange) then {
-    _fade = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
+    _alpha = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
     _relDir = ((_player getRelDir _unit) - (_viewDir - _playerDir) ) mod 360;
 };
 
-if (diwako_dui_enable_occlusion && {_fade > 0}) then {
+if (diwako_dui_enable_occlusion && {_alpha > 0}) then {
     private _lastSeen = _unit getVariable QGVAR(lastSeen);
+    private _occlusionAlpha = _alpha;
     private _occlude = !isNil "_lastSeen";
     if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
-        _unit setVariable ["diwako_dui_lastChecked", time + 1];
+        private _delay = [1,0.2] select (_namespace getVariable[QEGVAR(indicators,show), true]);
+
+        _unit setVariable ["diwako_dui_lastChecked", time + _delay];
         private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
         private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
         if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
@@ -52,14 +56,17 @@ if (diwako_dui_enable_occlusion && {_fade > 0}) then {
             _lastSeen = time;
             _unit setVariable [QGVAR(lastSeen), _lastSeen];
         };
-        _fade = linearConversion [0, GVAR(occlusion_fade_time), time - _lastSeen, 1, 0, true] min _fade;
+        _alpha = linearConversion [0, GVAR(occlusion_fade_time), time - _lastSeen, 1, 0, true] min _alpha;
+        _occlusionAlpha = _alpha;
+    } else {
+        _occlusionAlpha = 1;
     };
-    _unit setVariable [QGVAR(occlusion_fade), _fade];
+    _unit setVariable [QGVAR(occlusion_alpha), _occlusionAlpha];
 };
 
 private _ctrl = _ctrlGrp getVariable [format ["diwako_dui_ctrl_unit_%1", _unitID], controlNull];
 
-if (_fade <= 0) exitWith {
+if (_alpha <= 0) exitWith {
     if (isNull _ctrl) exitWith {controlNull};
     ctrlDelete _ctrl;
     controlNull
@@ -99,7 +106,7 @@ private _color = [0.85, 0.4, 0];
 if (_distance > diwako_dui_distanceWarning || {!(isNull objectParent _unit) || {_unit == _player}}) then {
     _color = + (_unit getVariable [QGVAR(compass_color), [1,1,1]]);
 };
-_color pushBack _fade;
+_color pushBack _alpha;
 _ctrl ctrlSetTextColor _color;
 _ctrl ctrlSetText (_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN]);
 

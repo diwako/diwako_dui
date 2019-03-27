@@ -1,3 +1,4 @@
+//diwako_dui script macros
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #ifdef DISABLE_COMPILE_CACHE

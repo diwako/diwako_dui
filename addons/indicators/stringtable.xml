@@ -7,29 +7,34 @@
                 <German>Indikatoren</German>
                 <Polish>Znaczniki</Polish>
                 <Portuguese>Indicadores</Portuguese>
+                <Japanese>インジケータ</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
                 <German>Indikatoren anzeigen</German>
                 <Polish>Pokazuj znaczniki</Polish>
+                <Japanese>インジケータ表示</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
                 <German>Näherungsindikatoren</German>
                 <Polish>Znaczniki pobliskich graczy</Polish>
                 <Portuguese>Indicadores de Proximidade</Portuguese>
+                <Japanese>近くにインジケータを表示します</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
                 <German>Maximale Reichweite</German>
                 <Polish>Maksymalny zasięg</Polish>
                 <Portuguese>Distância Máxima</Portuguese>
+                <Japanese>最大距離</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
                 <German>Maximale Reichweite wie weit die Indikatoren angezeigt werden dürfen</German>
                 <Polish>Maksymalny zasięg pokazywania znaczników.</Polish>
                 <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
+                <Japanese>インジケータの最大表示距離を決定します</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -58,12 +63,14 @@
                 <German>Größe</German>
                 <Polish>Rozmiar</Polish>
                 <Portuguese>Tamanho</Portuguese>
+                <Japanese>大きさ</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
                 <German>Setzt die Größe der Indikatoren</German>
                 <Polish>Ustawia rozmiar znaczników.</Polish>
                 <Portuguese>Define o tamanho dos indicadores</Portuguese>
+                <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -78,35 +85,42 @@
                 <German>Rechteck</German>
                 <Polish>Kwadrat</Polish>
                 <Portuguese>Quadrado</Portuguese>
+                <Japanese>四角</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
                 <German>Diamant</German>
                 <Polish>Diament</Polish>
                 <Portuguese>Diamante</Portuguese>
+                <Japanese>ダイアモンド</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
                 <German>Kreis</German>
                 <Polish>Kółko</Polish>
                 <Portuguese>Círculo</Portuguese>
+                <Japanese>円型</Japanese>
             </Key>
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
                 <English>Icons</English>
                 <German>Icons</German>
+                <Japanese>アイコン</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
                 <German>Gruppenführer anzeigen</German>
+                <Japanese>リーダー アイコンを表示</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
                 <German>Buddy anzeigen</German>
+                <Japanese>バディ アイコンを表示</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
                 <German>Medic anzeigen</German>
+                <Japanese>衛生兵アイコンを表示</Japanese>
             </Key>
         </Container>
     </Package>

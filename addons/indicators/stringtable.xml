@@ -106,21 +106,25 @@
                 <English>Icons</English>
                 <German>Icons</German>
                 <Japanese>アイコン</Japanese>
+                <Portuguese>Ícones</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
                 <German>Gruppenführer anzeigen</German>
                 <Japanese>リーダー アイコンを表示</Japanese>
+                <Portuguese>Mostrar ícone de Líder</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
                 <German>Buddy anzeigen</German>
                 <Japanese>バディ アイコンを表示</Japanese>
+                <Portuguese>Mostrar ícone de Parceiro</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
                 <German>Medic anzeigen</German>
                 <Japanese>衛生兵アイコンを表示</Japanese>
+                <Portuguese>Mostrar ícone de Médico</Portuguese>
             </Key>
         </Container>
     </Package>

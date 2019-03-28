@@ -1047,7 +1047,6 @@
             <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
-            <Portuguese>Esteja avisado de que o valor alpha não é utilizado!</Portuguese>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">

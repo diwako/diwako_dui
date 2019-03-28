@@ -452,6 +452,7 @@
             <English>Custom Colors</English>
             <German>Benutzerdefinierte Farben</German>
             <Japanese>カスタム カラー</Japanese>
+            <Portuguese>Cores Customizadas</Portuguese>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -1000,36 +1001,43 @@
             <English>Hide When Group Leader</English>
             <German>Vestecke wenn Gruppenführer</German>
             <Japanese>グループ リーダー時は非表示</Japanese>
+            <Portuguese>Esconder quando Líder do Grupo</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
+            <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
             <German>Keine Squad Farbe</German>
             <Japanese>分隊カラー無し</Japanese>
+            <Portuguese>Sem Cor de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
             <German>Rote Squad Farbe</German>
             <Japanese>レッド分隊カラー</Japanese>
+            <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
             <German>Grüne Squad Farbe</German>
             <Japanese>グリーン分隊カラー</Japanese>
+            <Portuguese>Cor Verde de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
             <German>Blaue Squad Farbe</German>
             <Japanese>ブルー分隊カラー</Japanese>
+            <Portuguese>Cor Azul de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
             <German>Gelbe Squad Farbe</German>
             <Japanese>イエロー分隊カラー</Japanese>
+            <Portuguese>Cor Amarela de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
             <English> Be warned the alpha value will do nothing!</English>
@@ -1039,6 +1047,7 @@
             <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+            <Portuguese>Esteja avisado de que o valor alpha não é utilizado!</Portuguese>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1227,6 +1236,7 @@
             <English>Custom</English>
             <German>Benutzerdefiniert</German>
             <Japanese>カスタム</Japanese>
+            <Portuguese>Customizado</Portuguese>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->

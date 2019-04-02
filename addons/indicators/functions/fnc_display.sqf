@@ -64,8 +64,8 @@ private _hasLineOfSight = false;
                 });
                 _color pushBack _alpha;
 
-                drawIcon3D [_x getVariable[QGVAR(outerIcon), ""], _color, _iconPos, _size, _size, 0];
-                _secondIcon = _x getVariable[QGVAR(innerIcon), ""];
+                drawIcon3D [_x getVariable [QGVAR(outerIcon), ""], _color, _iconPos, _size, _size, 0];
+                _secondIcon = _x getVariable [QGVAR(innerIcon), ""];
                 if (_secondIcon != "" && {_vehTarget isEqualTo _x}) then {
                     drawIcon3D [_secondIcon, _color, _iconPos, _size, _size, 0];
                 };

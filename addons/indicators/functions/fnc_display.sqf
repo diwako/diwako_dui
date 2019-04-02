@@ -37,7 +37,7 @@ private _hasLineOfSight = false;
                 // Using cachedCall with the same frequency as nametags keeps them better synchronized
                 _hasLineOfSight = [
                     [_camPosASL, eyePos _x, _player, _x],
-                    {lineIntersectsSurfaces _this isEqualTo []},
+                    {lineIntersects _this},
                     _x, QGVAR(drawParameters), 0.1
                 ] call ace_common_fnc_cachedCall;
 

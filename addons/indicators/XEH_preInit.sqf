@@ -4,7 +4,7 @@ ADDON = false;
 
 GVAR(drawEh) = -1;
 
-#define CBA_SETTINGS_CAT (format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
+#define CBA_SETTINGS_CAT (format ["%1 - %2", localize "STR_dui_mod", localize "STR_dui_addon_indicators"])
 
 [
     QGVAR(show)
@@ -77,5 +77,17 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
 ] call CBA_Settings_fnc_init;
+
+if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+    [
+        QGVAR(useACENametagsRange)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_indicators_useACENametagsRange", localize "STR_dui_indicators_useACENametagsRange_desc"]
+        ,CBA_SETTINGS_CAT
+        ,true
+    ] call CBA_settings_fnc_init;
+} else {
+    GVAR(useACENametagsRange) = false;
+};
 
 ADDON = true;

@@ -72,6 +72,12 @@
                 <Portuguese>Define o tamanho dos indicadores</Portuguese>
                 <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
             </Key>
+            <Key ID="STR_dui_indicators_useACENametagsRange">
+                <English>Use ACE Nametags Range</English>
+            </Key>
+            <Key ID="STR_dui_indicators_useACENametagsRange_desc">
+                <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range!</English>
+            </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
                 <English>Standard</English>

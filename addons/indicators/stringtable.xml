@@ -134,6 +134,22 @@
                 <Japanese>衛生兵アイコンを表示</Japanese>
                 <Portuguese>Mostrar ícone de Médico</Portuguese>
             </Key>
+            <Key ID="STR_dui_indicators_range_scale">
+                <English>Resize With Range</English>
+                <German>Mit Entfernung Skalieren</German>
+            </Key>
+            <Key ID="STR_dui_indicators_range_scale_desc">
+                <English>Scale indicators according with distance to unit</English>
+                <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
+            </Key>
+            <Key ID="STR_dui_indicators_fov_scale">
+                <English>Resize With FOV</English>
+                <German>Mit Blickwinkelgröße skalieren</German>
+            </Key>
+            <Key ID="STR_dui_indicators_fov_scale_desc">
+                <English>Scale indicators according with current field of view</English>
+                <German>Indikatoren werden anhand der zurzeitigen Blinkwinkelgröße skaliert</German>
+            </Key>
         </Container>
     </Package>
 </Project>

@@ -11,6 +11,10 @@ private _range = GVAR(range);
 private _size = GVAR(size);
 private _useACE = GVAR(useACENametagsRange);
 private _camPosASL = AGLtoASL positionCameraToWorld [0, 0, 0];
+private _scaleWithRange = GVAR(range_scale);
+if (GVAR(fov_scale)) then {
+    _size =  _size * ((call CBA_fnc_getFov) select 1);
+};
 
 // Variables that change for each unit
 private _iconPos = [];
@@ -20,6 +24,7 @@ private _alpha = 0;
 private _secondIcon = "";
 private _vehTarget = objNull;
 private _hasLineOfSight = false;
+private _sizeFinal = 0;
 
 {
     _alpha = _x getVariable [QEGVAR(radar,occlusion_alpha), 1];
@@ -64,10 +69,15 @@ private _hasLineOfSight = false;
                 });
                 _color pushBack _alpha;
 
-                drawIcon3D [_x getVariable [QGVAR(outerIcon), ""], _color, _iconPos, _size, _size, 0];
+                _sizeFinal = _size;
+                if (_scaleWithRange) then {
+                    _sizeFinal = _sizeFinal *  3 * (_distance^-0.6);
+                };
+
+                drawIcon3D [_x getVariable [QGVAR(outerIcon), ""], _color, _iconPos, _sizeFinal, _sizeFinal, 0];
                 _secondIcon = _x getVariable [QGVAR(innerIcon), ""];
                 if (_secondIcon != "" && {_vehTarget isEqualTo _x}) then {
-                    drawIcon3D [_secondIcon, _color, _iconPos, _size, _size, 0];
+                    drawIcon3D [_secondIcon, _color, _iconPos, _sizeFinal, _sizeFinal, 0];
                 };
             };
         };

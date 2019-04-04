@@ -48,6 +48,34 @@ GVAR(drawEh) = -1;
     ,false
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(range_scale)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_indicators_range_scale", localize "STR_dui_indicators_range_scale_desc"]
+    ,CBA_SETTINGS_CAT
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(fov_scale)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_indicators_fov_scale", localize "STR_dui_indicators_fov_scale_desc"]
+    ,CBA_SETTINGS_CAT
+    ,false
+] call CBA_Settings_fnc_init;
+
+if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+    [
+        QGVAR(useACENametagsRange)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_indicators_useACENametagsRange", localize "STR_dui_indicators_useACENametagsRange_desc"]
+        ,CBA_SETTINGS_CAT
+        ,true
+    ] call CBA_settings_fnc_init;
+} else {
+    GVAR(useACENametagsRange) = false;
+};
+
 private _curCat = localize "STR_dui_cat_icons";
 
 [
@@ -77,17 +105,5 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
 ] call CBA_Settings_fnc_init;
-
-if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
-    [
-        QGVAR(useACENametagsRange)
-        ,"CHECKBOX"
-        ,[localize "STR_dui_indicators_useACENametagsRange", localize "STR_dui_indicators_useACENametagsRange_desc"]
-        ,CBA_SETTINGS_CAT
-        ,true
-    ] call CBA_settings_fnc_init;
-} else {
-    GVAR(useACENametagsRange) = false;
-};
 
 ADDON = true;

@@ -1,6 +1,6 @@
 # DUI - Squad Radar for ARMA 3
 
-## A HUD showing unit positions and names of units in your squad
+## A UI showing unit positions and names of units in your squad
 
 ## Summary
 This mod shows a compass in the bottom middle of your screen and a list of people in your current squad. It is made with SQF commands which recently have been added to Arma3 and were not available back in the days of Arma2 or early Arma3. Meaning no weird workarounds with map elements are needed anymore which just eat more frames.

@@ -253,14 +253,18 @@ private _curCat = localize "STR_dui_cat_namelist";
     }
 ] call CBA_Settings_fnc_init;
 
-[
-    "diwako_dui_namelist_only_buddy_icon"
-    ,"CHECKBOX"
-    ,[localize "STR_dui_namelist_buddy", localize "STR_dui_namelist_buddy_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,false
-    ,false
-] call CBA_Settings_fnc_init;
+if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
+    [
+        "diwako_dui_namelist_only_buddy_icon"
+        ,"CHECKBOX"
+        ,[localize "STR_dui_namelist_buddy", localize "STR_dui_namelist_buddy_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,false
+        ,false
+    ] call CBA_Settings_fnc_init;
+} else {
+    diwako_dui_namelist_only_buddy_icon = false;
+};
 
 [
     "diwako_dui_namelist_width"

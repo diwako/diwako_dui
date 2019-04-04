@@ -19,6 +19,7 @@ kripto202 (Clones icons)
 synixebrett (CBA restructure, Indicators addon)
 bovine3dom (Radar auto scaling)
 3Mydlo3 (Polish translations)
+dystopian (medic trait detection)
 654wak654 (Syncing indicators with ACE nametags)
 
 Special thanks:

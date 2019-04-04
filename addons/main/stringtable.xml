@@ -397,8 +397,8 @@
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
             <Portuguese>Bússola</Portuguese>
-           <Spanish>Brújula</Spanish>
-           <Russian>Компас</Russian>
+            <Spanish>Brújula</Spanish>
+            <Russian>Компас</Russian>
         </Key>
         <Key ID="STR_dui_cat_compass_desc">
             <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -448,29 +448,11 @@
             <Spanish>Configuración General</Spanish>
             <Russian>Основные настройки</Russian>
         </Key>
-        <Key ID="STR_dui_buddy_action">
-            <English>Assign Buddy [HUD]</English>
-            <Czech>Přiřadit buddyho [HUD]</Czech>
-            <French>Assigner Buddy [HUD]</French>
-            <German>Als Buddy markieren [HUD]</German>
-            <Korean>친구로 등록 [HUD]</Korean>
-            <Japanese>バディに登録 [HUD]</Japanese>
-            <Polish>Przydziel znajomego [HUD]</Polish>
-            <Portuguese>Marcar Parceiro</Portuguese>
-            <Spanish>Marcar Amigo</Spanish>
-            <Russian>Назначить напарников [HUD]</Russian>
-        </Key>
-        <Key ID="STR_dui_buddy_action_remove">
-            <English>Unassign Buddy [HUD]</English>
-            <Czech>Zrušit přiřazení buddyho [HUD]</Czech>
-            <French>Désassigner Buddy [HUD]</French>
-            <German>Buddymarkierung aufheben [HUD]</German>
-            <Korean>친구 해제 [HUD]</Korean>
-            <Japanese>バディを解除 [HUD]</Japanese>
-            <Polish>Usun znajomego [HUD]</Polish>
-            <Portuguese>Desmarcar Parceiro</Portuguese>
-            <Spanish>Desmarcar Amigo</Spanish>
-            <Russian>Распустить напарников [HUD]</Russian>
+        <Key ID="STR_dui_cat_custom_color">
+            <English>Custom Colors</English>
+            <German>Benutzerdefinierte Farben</German>
+            <Japanese>カスタム カラー</Japanese>
+            <Portuguese>Cores Customizadas</Portuguese>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -679,8 +661,8 @@
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
-           <Spanish>Contorno de Texto</Spanish>
-           <Russian>Текст контура</Russian>
+            <Spanish>Contorno de Texto</Spanish>
+            <Russian>Текст контура</Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_desc">
             <English></English>
@@ -1018,10 +1000,53 @@
         <Key ID="STR_dui_namelist_hideWhenLeader">
             <English>Hide When Group Leader</English>
             <German>Vestecke wenn Gruppenführer</German>
+            <Japanese>グループ リーダー時は非表示</Japanese>
+            <Portuguese>Esconder quando Líder do Grupo</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
+            <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadMain">
+            <English>No Squad Color</English>
+            <German>Keine Squad Farbe</German>
+            <Japanese>分隊カラー無し</Japanese>
+            <Portuguese>Sem Cor de Esquadrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadRed">
+            <English>Red Squad Color</English>
+            <German>Rote Squad Farbe</German>
+            <Japanese>レッド分隊カラー</Japanese>
+            <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadGreen">
+            <English>Green Squad Color</English>
+            <German>Grüne Squad Farbe</German>
+            <Japanese>グリーン分隊カラー</Japanese>
+            <Portuguese>Cor Verde de Esquadrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadBlue">
+            <English>Blue Squad Color</English>
+            <German>Blaue Squad Farbe</German>
+            <Japanese>ブルー分隊カラー</Japanese>
+            <Portuguese>Cor Azul de Esquadrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadYellow">
+            <English>Yellow Squad Color</English>
+            <German>Gelbe Squad Farbe</German>
+            <Japanese>イエロー分隊カラー</Japanese>
+            <Portuguese>Cor Amarela de Esquadrão</Portuguese>
+        </Key>
+        <Key ID="STR_dui_main_squadColor_desc">
+            <English> Be warned the alpha value will do nothing!</English>
+            <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <Japanese>なおアルファ値は影響を及ぼしません！</Japanese>
+            <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
+            <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
+            <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
+            <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1130,7 +1155,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 型 3 色覚</Japanese>
             <Polish>Protanomalia</Polish>
-            <Portuguese>Protanomalia<Portuguese>
+            <Portuguese>Protanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1142,7 +1167,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>2 型 2 色覚</Japanese>
             <Polish>Deuteranopia</Polish>
-            <Portuguese>Deuteranopia<Portuguese>
+            <Portuguese>Deuteranopia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>
@@ -1205,6 +1230,12 @@
             <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
+        </Key>
+        <Key ID="STR_dui_color_custom">
+            <English>Custom</English>
+            <German>Benutzerdefiniert</German>
+            <Japanese>カスタム</Japanese>
+            <Portuguese>Customizado</Portuguese>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->
@@ -1289,7 +1320,7 @@
             <!-- <Korean></Korean> -->
             <Japanese>時計</Japanese>
             <Polish>Zegar</Polish>
-            <Portuguese>Relógio<Portuguese>
+            <Portuguese>Relógio</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
         </Key>

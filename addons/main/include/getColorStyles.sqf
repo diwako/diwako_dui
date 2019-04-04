@@ -40,13 +40,30 @@ private _getColorFromHex = {
     missionNamespace setVariable [format[QGVAR(colors_%1), _configName], _namespace]
 } forEach (_configs + _missionConfigs);
 
+// custom colors
+private _namespace = [] call CBA_fnc_createNamespace;
+_colorIdent pushBack "custom";
+_colorNames pushBack (localize "STR_dui_color_custom");
+_namespace setVariable ["main_compass", [1,1,1]];
+_namespace setVariable ["main", "#FFFFFF"];
+_namespace setVariable ["red_compass", [1,0,0]];
+_namespace setVariable ["red", "#FF0000"];
+_namespace setVariable ["green_compass", [0,1,0]];
+_namespace setVariable ["green", "#00FF00"];
+_namespace setVariable ["blue_compass", [0,0,1]];
+_namespace setVariable ["blue", "#0000FF"];
+_namespace setVariable ["yellow_compass", [1,1,0]];
+_namespace setVariable ["yellow", "#FFFF00"];
+GVAR(colors_custom) = _namespace;
+
+// ACE name tags support
 if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
     // ace nametags is also loaded, provide ace nametag colors as well
     _namespace = missionNamespace getVariable QGVAR(colors_ace);
     if (isNil "_namespace") then {
         _namespace = [] call CBA_fnc_createNamespace;
         _colorIdent pushBack "ace";
-        _colorNames pushBack "ACE 3";
+        _colorNames pushBack (localize "STR_dui_color_ace");
         missionNamespace setVariable [QGVAR(colors_ace), _namespace];
     };
     private _main = ["ace_nametags_nametagColorMain"] call CBA_settings_fnc_get;

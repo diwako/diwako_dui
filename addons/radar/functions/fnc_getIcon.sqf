@@ -38,7 +38,7 @@ if !(isNull objectParent _unit || {_forCompass}) exitWith {
 };
 
 // Buddy
-if (_player == (_unit getVariable [QGVAR(buddy), objNull])) exitWith {
+if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
 };
 
@@ -58,7 +58,7 @@ if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPictur
 };
 
 // Medic
-if (_unit getVariable ["ace_medical_medicClass", getNumber (configFile >> "CfgVehicles" >> typeOf _unit >> "attendant")] > 0) exitWith {
+if (_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0) exitWith {
     _namespace getVariable ["medic", DUI_MEDIC];
 };
 

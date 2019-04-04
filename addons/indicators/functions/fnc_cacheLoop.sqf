@@ -17,13 +17,13 @@ if (GVAR(show)) then {
     {
         _innerIcon = _x getVariable [QGVAR(icon), ""];
         if (_innerIcon isEqualTo "") then {
-            if (_x isEqualTo (_player getVariable [QEGVAR(radar,buddy), objNull])) then {
+            if (GVAR(icon_buddy) && {_x isEqualTo (_player getVariable [QEGVAR(buddy,buddy), objNull])}) then {
                 _innerIcon = _indicatorNamespace getVariable ["buddy", ""];
             } else {
-                if (_x isEqualTo (leader group _player)) then {
+                if (GVAR(icon_leader) && {_x isEqualTo (leader group _player)}) then {
                     _innerIcon = _indicatorNamespace getVariable ["leader", ""];
                 } else {
-                    if (_x getVariable ["ace_medical_medicClass", getNumber (configFile >> "CfgVehicles" >> typeOf _x >> "attendant")] > 0) then {
+                    if (GVAR(icon_medic) && {_x getVariable ["ace_medical_medicClass", [0, 1] select (_x getUnitTrait "medic")] > 0}) then {
                         _innerIcon = _indicatorNamespace getVariable ["medic", ""];
                     };
                 };

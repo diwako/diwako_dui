@@ -68,6 +68,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(leadingZeroes)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_leading_zeroes", localize "STR_dui_radar_leading_zeroes_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_dir_size"
     ,"SLIDER"
     ,[localize "STR_dui_dir_size", localize "STR_dui_dir_size_desc"]

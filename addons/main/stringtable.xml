@@ -1040,13 +1040,21 @@
             <Portuguese>Cor Amarela de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
-            <English> Be warned the alpha value will do nothing!</English>
+            <English>Be warned the alpha value will do nothing!</English>
             <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <Japanese>なおアルファ値は影響を及ぼしません！</Japanese>
             <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
             <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroes">
+            <English>Leading Zeroes</English>
+            <German>Führende Nullen</German>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroesr_desc">
+            <English>The bearing number will be filled with leading zeroes</English>
+            <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">

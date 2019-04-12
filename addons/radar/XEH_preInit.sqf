@@ -18,21 +18,23 @@ GVAR(setNamelist) = true;
 
 private _curCat = localize "STR_dui_cat_general";
 
-[
-    "diwako_dui_show_squadbar"
-    ,"CHECKBOX"
-    ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
-    ,false
-    ,{
-        params ["_value"];
-        // disable/enable vanilla squadbar
-        private _showHud = shownHUD;
-        _showHud set [6, _value];
-        showHud (_showHud select [0, 8]);
-    }
-] call CBA_Settings_fnc_init;
+if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
+    [
+        "diwako_dui_show_squadbar"
+        ,"CHECKBOX"
+        ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+        ,{
+            params ["_value"];
+            // disable/enable vanilla squadbar
+            private _showHud = shownHUD;
+            _showHud set [6, _value];
+            showHud (_showHud select [0, 8]);
+        }
+    ] call CBA_Settings_fnc_init;
+};
 
 private _curCat = localize "STR_dui_cat_compass";
 

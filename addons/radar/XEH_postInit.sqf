@@ -2,15 +2,16 @@
 if (is3DEN) exitWith {};
 
 if (isMultiplayer) then {
+    call FUNC(syncGroups);
     if (isServer) then {
-        call FUNC(syncGroups);
+        call GVAR(syncGroupVar);
     } else {
         // tell server to run the sync script
         // only useful if the server itself is not running DUI and is not using battle eye
-        publicVariableServer QFUNC(syncGroups);
+        publicVariable QGVAR(syncGroupVar);
         [0,{
-            waitUntil { !isNil QFUNC(syncGroups) };
-            call FUNC(syncGroups);
+            waitUntil { !isNil QGVAR(syncGroupVar) };
+            call GVAR(syncGroupVar);
         }] remoteExec ["spawn", 2];
     };
 };

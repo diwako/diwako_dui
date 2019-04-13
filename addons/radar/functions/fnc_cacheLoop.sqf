@@ -12,7 +12,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 };
 
 private _player = [] call CBA_fnc_currentUnit;
-private _group = units group _player;
+private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };

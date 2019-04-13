@@ -1,5 +1,21 @@
 #include "script_component.hpp"
-if (is3DEN || !hasInterface) exitWith {};
+if (is3DEN) exitWith {};
+
+if (isMultiplayer) then {
+    if (isServer) then {
+        call FUNC(syncGroups);
+    } else {
+        // tell server to run the sync script
+        // only useful if the server itself is not running DUI and is not using battle eye
+        publicVariableServer QFUNC(syncGroups);
+        [0,{
+            waitUntil { !isNil QFUNC(syncGroups) };
+            call FUNC(syncGroups);
+        }] remoteExec ["spawn", 2];
+    };
+};
+
+if !(hasInterface) exitWith {};
 
 GVAR(uiPixels) = DUI_128PX;
 

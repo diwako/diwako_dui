@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 if (is3DEN) exitWith {};
 
-if (isMultiplayer && {GVAR(syncGroups)}) then {
+if (isMultiplayer && {GVAR(sortType) == "none"}) then {
     call FUNC(syncGroups);
 };
 

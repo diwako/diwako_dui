@@ -199,6 +199,9 @@ if (count _group <= 1) exitWith {
 if !(ctrlShown _grpCtrl) then {
     _grpCtrl ctrlShow true;
 };
+
+_group = [_group, _player] call FUNC(sortNameList);
+
 private _text = "";
 private _curList = controlNull;
 

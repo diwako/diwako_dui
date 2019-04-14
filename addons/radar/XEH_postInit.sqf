@@ -1,19 +1,8 @@
 #include "script_component.hpp"
 if (is3DEN) exitWith {};
 
-if (isMultiplayer) then {
+if (isMultiplayer && {GVAR(syncGroups)}) then {
     call FUNC(syncGroups);
-    if (isServer) then {
-        call GVAR(syncGroupVar);
-    } else {
-        // tell server to run the sync script
-        // only useful if the server itself is not running DUI and is not using battle eye
-        publicVariable QGVAR(syncGroupVar);
-        [0,{
-            waitUntil { !isNil QGVAR(syncGroupVar) };
-            call GVAR(syncGroupVar);
-        }] remoteExec ["spawn", 2];
-    };
 };
 
 if !(hasInterface) exitWith {};

@@ -1056,6 +1056,14 @@
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
         </Key>
+        <Key ID="STR_dui_radar_sync_groups">
+            <English>Synchronize Groups</English>
+            <German>Gruppen synchronisieren</German>
+        </Key>
+        <Key ID="STR_dui_radar_sync_groups_desc">
+            <English>Server and multiplayer only setting! During multiplayer game play the order of people in the namelist can become asynchronous. This option will synchronize the order of appearance as the server sees them</English>
+            <German>Nur für Server und multiplayer! Während online Partien kann die Reihenfolge der Einheiten in der Namensliste asynchron werden. Mit dieser Option synchronisiert der Server die Reihenfolge der Einheiten, wie dieser diese sieht</German>
+        </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
             <English>Main</English>

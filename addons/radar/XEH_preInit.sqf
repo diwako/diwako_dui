@@ -36,6 +36,15 @@ if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
     ] call CBA_Settings_fnc_init;
 };
 
+[
+    QGVAR(syncGroups)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_sync_groups", localize "STR_dui_radar_sync_groups_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,true
+] call CBA_Settings_fnc_init;
+
 private _curCat = localize "STR_dui_cat_compass";
 
 [

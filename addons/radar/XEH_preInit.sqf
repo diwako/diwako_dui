@@ -359,13 +359,14 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
     ,[localize "STR_dui_radar_sort", localize "STR_dui_radar_sort_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        ["none", "name", "fireteam", "fireteam2", "rank"],
+        ["none", "name", "fireteam", "fireteam2", "rank", "custom"],
         [
             localize "STR_dui_radar_sort_none",
             localize "STR_dui_radar_sort_name",
             localize "STR_dui_radar_sort_fireteam",
             localize "STR_dui_radar_sort_fireteam2",
-            localize "STR_dui_radar_sort_rank"
+            localize "STR_dui_radar_sort_rank",
+            localize "STR_dui_color_custom"
         ],
         0
     ]

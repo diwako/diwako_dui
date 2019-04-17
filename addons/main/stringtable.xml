@@ -1056,6 +1056,22 @@
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
         </Key>
+        <Key ID="STR_dui_radar_sqlFirst">
+            <English>Show SQL Always First</English>
+            <German>Gruppenführer immer als erster</German>
+        </Key>
+        <Key ID="STR_dui_radar_sqlFirst_desc">
+            <English>Shows the squad leader always as first unit</English>
+            <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort">
+            <English>Sort</English>
+            <German>Sortieren</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort_desc">
+            <English>Server needs to run DUI in order to have synchronicity!</English>
+            <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+        </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
             <English>Main</English>
@@ -1392,6 +1408,27 @@
             <Portuguese>Interface Militar</Portuguese>
             <!-- <Spanish></Spanish> -->
             <!-- <Russian></Russian> -->
+        </Key>
+        <!-- Sort options -->
+        <Key ID="STR_dui_radar_sort_none">
+            <English>None</English>
+            <German>Kein</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort_name">
+            <English>Names</English>
+            <German>Namen</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam">
+            <English>Fire Team, Names</English>
+            <German>Fireteam, Namen</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam2">
+            <English>Fire Team, Rank, Names</English>
+            <German>Fireteam, Rang, Namen</German>
+        </Key>
+        <Key ID="STR_dui_radar_sort_rank">
+            <English>Rank, Names</English>
+            <German>Rang, Namen</German>
         </Key>
     </Package>
 </Project>

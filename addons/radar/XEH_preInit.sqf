@@ -330,6 +330,49 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,false
 ] call CBA_Settings_fnc_init;
 
+GVAR(sortNamespace) = [] call CBA_fnc_createNamespace;
+GVAR(sortNamespace) setVariable ["main", 4];
+GVAR(sortNamespace) setVariable ["red", 0];
+GVAR(sortNamespace) setVariable ["green", 1];
+GVAR(sortNamespace) setVariable ["blue", 2];
+GVAR(sortNamespace) setVariable ["yellow", 3];
+GVAR(sortNamespace) setVariable ["PRIVATE", 6];
+GVAR(sortNamespace) setVariable ["CORPORAL", 5];
+GVAR(sortNamespace) setVariable ["SERGEANT", 4];
+GVAR(sortNamespace) setVariable ["LIEUTENANT", 3];
+GVAR(sortNamespace) setVariable ["CAPTAIN", 2];
+GVAR(sortNamespace) setVariable ["MAJOR", 1];
+GVAR(sortNamespace) setVariable ["COLONEL", 0];
+
+[
+    QGVAR(sqlFirst)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_sqlFirst", localize "STR_dui_radar_sqlFirst_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(sortType)
+    ,"LIST"
+    ,[localize "STR_dui_radar_sort", localize "STR_dui_radar_sort_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[
+        ["none", "name", "fireteam", "fireteam2", "rank", "custom"],
+        [
+            localize "STR_dui_radar_sort_none",
+            localize "STR_dui_radar_sort_name",
+            localize "STR_dui_radar_sort_fireteam",
+            localize "STR_dui_radar_sort_fireteam2",
+            localize "STR_dui_radar_sort_rank",
+            localize "STR_dui_color_custom"
+        ],
+        0
+    ]
+    ,true
+] call CBA_Settings_fnc_init;
+
 [
     "diwako_dui_hudScaling"
     ,"SLIDER"

@@ -80,7 +80,7 @@
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
                 <German>Setzt die Transparenz der Indikatoren gleich wie die Nametags von ACE. Überschreibt die normale Reichweite und Verhalten!</German>
-                </Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
+                <Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">

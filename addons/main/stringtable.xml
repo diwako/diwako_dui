@@ -1056,7 +1056,7 @@
         <Key ID="STR_dui_radar_leading_zeroesr_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
-            <Portuguese>O número de orientação mostrará todos os dígitos, incluind zeros à esquerda</Portuguese>
+            <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
@@ -1066,7 +1066,7 @@
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
-            <Portuguese>Mostra o líder de esquadrão como primeira unidade sempre.</Portuguese>
+            <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>

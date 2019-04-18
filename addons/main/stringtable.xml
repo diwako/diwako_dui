@@ -1051,26 +1051,32 @@
         <Key ID="STR_dui_radar_leading_zeroes">
             <English>Leading Zeroes</English>
             <German>Führende Nullen</German>
+            <Portuguese>Zero à esquerda</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroesr_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
+            <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
             <German>Gruppenführer immer als erster</German>
+            <Portuguese>Sempre mostrar líder primeiro</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+            <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>
             <German>Sortieren</German>
+            <Portuguese>Ordernar</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
             <English>Server needs to run DUI in order to have synchronicity!</English>
             <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+            <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1413,22 +1419,27 @@
         <Key ID="STR_dui_radar_sort_none">
             <English>None</English>
             <German>Kein</German>
+            <Portuguese>Nenhum</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
             <German>Namen</German>
+            <Portuguese>Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
             <German>Fireteam, Namen</German>
+            <Portuguese>Time, Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
             <German>Fireteam, Rang, Namen</German>
+            <Portuguese>Time, Patente, Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
             <German>Rang, Namen</German>
+            <Portuguese>Patente, Nomes</Portuguese>
         </Key>
     </Package>
 </Project>

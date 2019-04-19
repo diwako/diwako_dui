@@ -12,7 +12,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 };
 
 private _player = [] call CBA_fnc_currentUnit;
-private _group = units group _player;
+private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };
@@ -148,7 +148,7 @@ private _grpCtrl = _display displayCtrl IDC_NAMEBOX_CTRLGRP;
 private _lists = GVAR(namebox_lists);
 
 // delete all name list controls if not active
-if !(diwako_dui_namelist) exitWith {
+if (!diwako_dui_namelist || {GVAR(namelist_hideWhenLeader) && (leader _player) isEqualTo _player}) exitWith {
     if ((count _lists) > 0) then {
         for "_i" from (count _lists) -1 to 0 step -1 do {
             ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
@@ -199,6 +199,9 @@ if (count _group <= 1) exitWith {
 if !(ctrlShown _grpCtrl) then {
     _grpCtrl ctrlShow true;
 };
+
+_group = [_group, _player] call FUNC(sortNameList);
+
 private _text = "";
 private _curList = controlNull;
 
@@ -252,7 +255,7 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         };
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
-    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QGVAR(buddy), objNull]));
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
     private _icon = [_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
         _icon, // 1
@@ -263,7 +266,6 @@ private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
         _buddy, // 6
         _shadow]; // 7
     _curList ctrlSetStructuredText parseText _text;
-    diwako_debug = _text;
     _curList ctrlCommit 0;
 } forEach _group;
 

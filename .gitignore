@@ -2,7 +2,10 @@
 *.biprivatekey
 
 hemtt\.exe
+armake2\.exe
 keys/
 releases/
 tools/
 *.pbo
+
+*.bisign

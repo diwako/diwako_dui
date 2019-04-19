@@ -1001,42 +1001,49 @@
             <English>Hide When Group Leader</English>
             <German>Vestecke wenn Gruppenführer</German>
             <Japanese>グループ リーダー時は非表示</Japanese>
+            <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
             <Portuguese>Esconder quando Líder do Grupo</Portuguese>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
+            <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
             <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
             <German>Keine Squad Farbe</German>
             <Japanese>分隊カラー無し</Japanese>
+            <Polish>Brak koloru drużyny</Polish>
             <Portuguese>Sem Cor de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
             <German>Rote Squad Farbe</German>
             <Japanese>レッド分隊カラー</Japanese>
+            <Polish>Czerwony kolor drużyny</Polish>
             <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
             <German>Grüne Squad Farbe</German>
             <Japanese>グリーン分隊カラー</Japanese>
+            <Polish>Zielony kolor drużyny</Polish>
             <Portuguese>Cor Verde de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
             <German>Blaue Squad Farbe</German>
             <Japanese>ブルー分隊カラー</Japanese>
+            <Polish>Niebieski kolor drużyny</Polish>
             <Portuguese>Cor Azul de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
             <German>Gelbe Squad Farbe</German>
             <Japanese>イエロー分隊カラー</Japanese>
+            <Polish>Żółty kolor drużyny</Polish>
             <Portuguese>Cor Amarela de Esquadrão</Portuguese>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
@@ -1051,31 +1058,37 @@
         <Key ID="STR_dui_radar_leading_zeroes">
             <English>Leading Zeroes</English>
             <German>Führende Nullen</German>
+            <Polish>Zera wiodące</Polish>
             <Portuguese>Zero à esquerda</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroesr_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
+            <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
             <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
             <German>Gruppenführer immer als erster</German>
+            <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
             <Portuguese>Sempre mostrar líder primeiro</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+            <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
             <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>
             <German>Sortieren</German>
+            <Polish>Sortowanie</Polish>
             <Portuguese>Ordernar</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
             <English>Server needs to run DUI in order to have synchronicity!</English>
             <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+            <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
             <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
         </Key>
         <!-- Addon module names -->
@@ -1419,26 +1432,31 @@
         <Key ID="STR_dui_radar_sort_none">
             <English>None</English>
             <German>Kein</German>
+            <Polish>Brak</Polish>
             <Portuguese>Nenhum</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
             <German>Namen</German>
+            <Polish>Imiona</Polish>
             <Portuguese>Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
             <German>Fireteam, Namen</German>
+            <Polish>Sekcja, Imiona</Polish>
             <Portuguese>Time, Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
             <German>Fireteam, Rang, Namen</German>
+            <Polish>Sekcja, Ranga, Imiona</Polish>
             <Portuguese>Time, Patente, Nomes</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
             <German>Rang, Namen</German>
+            <Polish>Ranga, Imiona</Polish>
             <Portuguese>Patente, Nomes</Portuguese>
         </Key>
     </Package>

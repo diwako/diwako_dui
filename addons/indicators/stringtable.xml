@@ -116,44 +116,52 @@
                 <English>Icons</English>
                 <German>Icons</German>
                 <Japanese>アイコン</Japanese>
+                <Polish>Ikony</Polish>
                 <Portuguese>Ícones</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
                 <German>Gruppenführer anzeigen</German>
                 <Japanese>リーダー アイコンを表示</Japanese>
+                <Polish>Pokazuj ikonę dowódcy.</Polish>
                 <Portuguese>Mostrar ícone de Líder</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
                 <German>Buddy anzeigen</German>
                 <Japanese>バディ アイコンを表示</Japanese>
+                <Polish>Pokazuj ikonę dwójki.</Polish>
                 <Portuguese>Mostrar ícone de Parceiro</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
                 <German>Medic anzeigen</German>
                 <Japanese>衛生兵アイコンを表示</Japanese>
+                <Polish>Pokazuj ikonę medyka.</Polish>
                 <Portuguese>Mostrar ícone de Médico</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
                 <German>Mit Entfernung Skalieren</German>
+                <Polish>Zmieniaj rozmiar w zależności od rangi.</Polish>
                 <Portuguese>Distância altera tamanho</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according with distance to unit</English>
                 <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
+                <Polish>Zmieniaj rozmiar znaczników w zależności od odległości do jednostki.</Polish>
                 <Portuguese>Escala o tamanho dos indicadores de acordo com a distância das unidades</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
                 <German>Mit Blickwinkelgröße skalieren</German>
+                <Polish>Zmieniaj rozmiar w zależności od pola widzenia.</Polish>
                 <Portuguese>FOV altera tamanho</Portuguese>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according with current field of view</English>
                 <German>Indikatoren werden anhand der zurzeitigen Blinkwinkelgröße skaliert</German>
+                <Polish>Zmieniaj rozmiar znaczników w zależności od aktualnego pola widzenia.</Polish>
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>
             </Key>
         </Container>

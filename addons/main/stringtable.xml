@@ -1061,7 +1061,7 @@
             <Polish>Zera wiodące</Polish>
             <Portuguese>Zero à esquerda</Portuguese>
         </Key>
-        <Key ID="STR_dui_radar_leading_zeroesr_desc">
+        <Key ID="STR_dui_radar_leading_zeroes_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
             <Polish>Kierunek będzie zawierał zera wiodące.</Polish>

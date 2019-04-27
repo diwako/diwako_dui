@@ -2,20 +2,16 @@
 <Project name="diwako_dui">
     <Package name="dui">
         <Key ID="STR_dui_empty">
-            <Original></Original>
             <English></English>
             <Czech></Czech>
             <French></French>
             <German></German>
-            <Italian></Italian>
             <Polish></Polish>
             <Portuguese></Portuguese>
             <Russian></Russian>
             <Spanish></Spanish>
             <Korean></Korean>
             <Japanese></Japanese>
-            <Chinesesimp></Chinesesimp>
-            <Chinese></Chinese>
         </Key>
         <Key ID="STR_dui_mod">
             <English>DUI - Squad Radar</English>
@@ -503,16 +499,6 @@
             <Spanish>Escala de interfaz de usuario</Spanish>
             <Russian>UI шкала</Russian>
         </Key>
-        <Key ID="STR_dui_ui_scale_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
-        </Key>
         <Key ID="STR_dui_namelist_bg">
             <English>Background Opacity</English>
             <Czech>Viditelnost pozadí</Czech>
@@ -621,16 +607,6 @@
             <Spanish>Opacidad</Spanish>
             <Russian>Затемнение</Russian>
         </Key>
-        <Key ID="STR_dui_compass_opacity_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
-        </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
             <Czech>Velikost azimutu</Czech>
@@ -643,16 +619,6 @@
             <Spanish>Tamaño del texto del dirección</Spanish>
             <Russian>Размр окна со списком юнитов</Russian>
         </Key>
-        <Key ID="STR_dui_dir_size_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
-        </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
             <Czech>Obrys textu</Czech>
@@ -664,16 +630,6 @@
             <Portuguese>Contorno do Texto</Portuguese>
             <Spanish>Contorno de Texto</Spanish>
             <Russian>Текст контура</Russian>
-        </Key>
-        <Key ID="STR_dui_namelist_text_shadow_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>

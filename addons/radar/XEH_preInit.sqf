@@ -81,7 +81,7 @@ private _curCat = localize "STR_dui_cat_compass";
 [
     "diwako_dui_dir_size"
     ,"SLIDER"
-    ,[localize "STR_dui_dir_size", localize "STR_dui_dir_size_desc"]
+    ,[localize "STR_dui_dir_size", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 3, 1.25, 2]
     ,false
@@ -175,7 +175,7 @@ private _curCat = localize "STR_dui_cat_compass";
 [
     "diwako_dui_compass_opacity"
     ,"SLIDER"
-    ,[localize "STR_dui_compass_opacity", localize "STR_dui_compass_opacity_desc"]
+    ,[localize "STR_dui_compass_opacity", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 1, 1, 2]
     ,false
@@ -304,7 +304,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
 [
     "diwako_dui_namelist_text_shadow"
     ,"LIST"
-    ,[localize "STR_dui_namelist_text_shadow", localize "STR_dui_namelist_text_shadow_desc"]
+    ,[localize "STR_dui_namelist_text_shadow", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         [0, 1, 2],

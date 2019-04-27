@@ -1073,7 +1073,6 @@
         <Key ID="STR_dui_radar_leading_zeroes_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
-            <Russian>The bearing number will be filled with leading zeroes</Russian>
             <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
             <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
         </Key>

@@ -8,12 +8,14 @@
                 <Polish>Znaczniki</Polish>
                 <Portuguese>Indicadores</Portuguese>
                 <Japanese>インジケータ</Japanese>
+                <Russian>Индикаторы</Russian>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
                 <German>Indikatoren anzeigen</German>
                 <Polish>Pokazuj znaczniki</Polish>
                 <Japanese>インジケータ表示</Japanese>
+                <Russian>Показать индикаторы</Russian>
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
@@ -21,6 +23,7 @@
                 <Polish>Znaczniki pobliskich graczy</Polish>
                 <Portuguese>Indicadores de Proximidade</Portuguese>
                 <Japanese>近くにインジケータを表示します</Japanese>
+                <Russian>Индикаторы приближения</Russian>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
@@ -28,6 +31,7 @@
                 <Polish>Maksymalny zasięg</Polish>
                 <Portuguese>Distância Máxima</Portuguese>
                 <Japanese>最大距離</Japanese>
+                <Russian>Максимальная расстояние</Russian>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
@@ -35,6 +39,7 @@
                 <Polish>Maksymalny zasięg pokazywania znaczników.</Polish>
                 <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
                 <Japanese>インジケータの最大表示距離を決定します</Japanese>
+                <Russian>Максимально допустимое расстояние для отображения индикаторов</Russian>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -46,6 +51,7 @@
                 <Polish>Styl ikony</Polish>
                 <Portuguese>Estilo de Ícones</Portuguese>
                 <Spanish>Estilo de Icono</Spanish>
+                <Russian>Вид иконок</Russian>
             </Key>
             <Key ID="STR_dui_indicators_style_desc">
                 <English>Which icon style should be used?</English>
@@ -57,6 +63,7 @@
                 <Polish>Jaki styl ikony powinien być użyty?</Polish>
                 <Portuguese>Qual estilo de ícones será usado?</Portuguese>
                 <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
+                <Russian>Какой вид иконок использовать?</Russian>
             </Key>
             <Key ID="STR_dui_indicators_size">
                 <English>Size</English>
@@ -64,6 +71,7 @@
                 <Polish>Rozmiar</Polish>
                 <Portuguese>Tamanho</Portuguese>
                 <Japanese>大きさ</Japanese>
+                <Russian>Размер</Russian>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
@@ -71,16 +79,19 @@
                 <Polish>Ustawia rozmiar znaczników.</Polish>
                 <Portuguese>Define o tamanho dos indicadores</Portuguese>
                 <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
+                <Russian>Установить размер иконок индикатора</Russian>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange">
                 <English>Use ACE Nametags Logic</English>
                 <German>ACE Nametags Logik verwenden</German>
                 <Portuguese>Usar lógica do ACE Etiquetas de Nome</Portuguese>
+                <Russian>Использовать ACE Nametags Logic</Russian>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
                 <German>Setzt die Transparenz der Indikatoren gleich wie die Nametags von ACE. Überschreibt die normale Reichweite und Verhalten!</German>
                 <Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
+                 <Russian>Сопоставляет прозрачность индикатора с прозрачностью именных меток ACE.</Russian>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -89,6 +100,7 @@
                 <Japanese>通常</Japanese>
                 <Polish>Standard</Polish>
                 <Portuguese>Padrão</Portuguese>
+                <Russian>Стандарт</Russian>
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
@@ -96,6 +108,7 @@
                 <Polish>Kwadrat</Polish>
                 <Portuguese>Quadrado</Portuguese>
                 <Japanese>四角</Japanese>
+                <Russian>Квадрат</Russian>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
@@ -103,6 +116,7 @@
                 <Polish>Diament</Polish>
                 <Portuguese>Diamante</Portuguese>
                 <Japanese>ダイアモンド</Japanese>
+                <Russian>Ромб</Russian>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
@@ -110,6 +124,7 @@
                 <Polish>Kółko</Polish>
                 <Portuguese>Círculo</Portuguese>
                 <Japanese>円型</Japanese>
+                <Russian>Круг</Russian>
             </Key>
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
@@ -118,6 +133,7 @@
                 <Japanese>アイコン</Japanese>
                 <Polish>Ikony</Polish>
                 <Portuguese>Ícones</Portuguese>
+                <Russian>Иконки</Russian>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
@@ -125,6 +141,7 @@
                 <Japanese>リーダー アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę dowódcy.</Polish>
                 <Portuguese>Mostrar ícone de Líder</Portuguese>
+                <Russian>Показать иконку командира</Russian>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
@@ -132,6 +149,7 @@
                 <Japanese>バディ アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę dwójki.</Polish>
                 <Portuguese>Mostrar ícone de Parceiro</Portuguese>
+                <Russian>Показать Buggy иконку</Russian>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
@@ -139,30 +157,35 @@
                 <Japanese>衛生兵アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę medyka.</Polish>
                 <Portuguese>Mostrar ícone de Médico</Portuguese>
+                <Russian>Показать иконку медика</Russian>
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
                 <German>Mit Entfernung Skalieren</German>
                 <Polish>Zmieniaj rozmiar w zależności od rangi.</Polish>
                 <Portuguese>Distância altera tamanho</Portuguese>
+                <Russian>Менять размер на расстоянии</Russian>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according with distance to unit</English>
                 <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
                 <Polish>Zmieniaj rozmiar znaczników w zależności od odległości do jednostki.</Polish>
                 <Portuguese>Escala o tamanho dos indicadores de acordo com a distância das unidades</Portuguese>
+                <Russian>Шкала индикаторов в зависимости от расстояния до юнита</Russian>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
                 <German>Mit Blickwinkelgröße skalieren</German>
                 <Polish>Zmieniaj rozmiar w zależności od pola widzenia.</Polish>
                 <Portuguese>FOV altera tamanho</Portuguese>
+                <Russian>Менять размер при FOV</Russian>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according with current field of view</English>
                 <German>Indikatoren werden anhand der zurzeitigen Blinkwinkelgröße skaliert</German>
                 <Polish>Zmieniaj rozmiar znaczników w zależności od aktualnego pola widzenia.</Polish>
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>
+                <Russian>Шкала индикаторов в зависимости от дальности обзора</Russian>
             </Key>
         </Container>
     </Package>

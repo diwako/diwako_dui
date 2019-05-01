@@ -86,7 +86,12 @@ if (diwako_dui_enable_compass) then {
     };
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
-    _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
+    private _compass = [_player] call FUNC(getCompass);
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select !(_compass isEqualTo ""));
+
+    if !(_compass isEqualTo "") then {
+        GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];
+    };
 
     if (GVAR(setCompass)) then {
         GVAR(setCompass) = false;

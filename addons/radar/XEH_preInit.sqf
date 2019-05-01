@@ -16,6 +16,22 @@ GVAR(showRank) = false;
 GVAR(setCompass) = true;
 GVAR(setNamelist) = true;
 
+// compass whitelist, these need to be lowercase!!
+GVAR(compassWhitelist) = [
+    // a3
+    "itemcompass",
+
+    // global mobilisation
+    "gm_ge_army_conat2",
+    "gm_gc_compass_f73"
+];
+
+// some compasses have less then 360 degrees
+GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;
+GVAR(oddDirectionCompasses) setVariable ["gm_ge_army_conat2", 64];
+GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 60];
+GVAR(maxDegrees) = 360;
+
 private _curCat = localize "STR_dui_cat_general";
 
 if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {

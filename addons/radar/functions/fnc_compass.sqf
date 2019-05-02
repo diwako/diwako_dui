@@ -48,7 +48,7 @@ GVAR(compass_pfHandle) = [{
             private _dirCalc = (round _dir) mod 360;
             private _maxDegrees = GVAR(maxDegrees);
             if (_maxDegrees != 360) then {
-                _dirCalc = (round (linearConversion [0, 360, _dirCalc, 0, _maxDegrees, true])) mod _maxDegrees;
+                _dirCalc = (round (linearConversion [0, 360, _dir, 0, _maxDegrees, true])) mod _maxDegrees;
             };
             if (diwako_dui_dir_showMildot) then {
                 _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%3' shadow='2' shadowColor='#000000'>%1 | %2</t>", [_dirCalc, [1,3] select GVAR(leadingZeroes)] call CBA_fnc_formatNumber, [round (_dir / 0.056250), [1,4] select GVAR(leadingZeroes)] call CBA_fnc_formatNumber, GVAR(bearing_size_calc)];

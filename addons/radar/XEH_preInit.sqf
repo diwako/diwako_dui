@@ -28,8 +28,8 @@ GVAR(compassWhitelist) = [
 
 // some compasses have less then 360 degrees
 GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;
-GVAR(oddDirectionCompasses) setVariable ["gm_ge_army_conat2", 64];
-GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 60];
+GVAR(oddDirectionCompasses) setVariable ["gm_ge_army_conat2", 6400];
+GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 6000];
 GVAR(maxDegrees) = 360;
 
 private _curCat = localize "STR_dui_cat_general";

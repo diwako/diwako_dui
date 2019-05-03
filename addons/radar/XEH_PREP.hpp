@@ -6,3 +6,4 @@ PREP(rangeButton);
 PREP(setCustomCode);
 PREP(syncGroups);
 PREP(sortNameList);
+PREP(getCompass);

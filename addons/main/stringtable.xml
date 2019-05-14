@@ -1400,30 +1400,35 @@
             <German>Kein</German>
             <Polish>Brak</Polish>
             <Portuguese>Nenhum</Portuguese>
+            <Japanese>行わない</Japanese>
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
             <German>Namen</German>
             <Polish>Imiona</Polish>
             <Portuguese>Nomes</Portuguese>
+            <Japanese>名前</Japanese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
             <German>Fireteam, Namen</German>
             <Polish>Sekcja, Imiona</Polish>
             <Portuguese>Time, Nomes</Portuguese>
+            <Japanese>班、名前</Japanese>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
             <German>Fireteam, Rang, Namen</German>
             <Polish>Sekcja, Ranga, Imiona</Polish>
             <Portuguese>Time, Patente, Nomes</Portuguese>
+            <Japanese>班、階級、名前</Japanese>
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
             <German>Rang, Namen</German>
             <Polish>Ranga, Imiona</Polish>
             <Portuguese>Patente, Nomes</Portuguese>
+            <Japanese>階級、名前</Japanese>
         </Key>
     </Package>
 </Project>

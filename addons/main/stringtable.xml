@@ -2,20 +2,16 @@
 <Project name="diwako_dui">
     <Package name="dui">
         <Key ID="STR_dui_empty">
-            <Original></Original>
             <English></English>
             <Czech></Czech>
             <French></French>
             <German></German>
-            <Italian></Italian>
             <Polish></Polish>
             <Portuguese></Portuguese>
             <Russian></Russian>
             <Spanish></Spanish>
             <Korean></Korean>
             <Japanese></Japanese>
-            <Chinesesimp></Chinesesimp>
-            <Chinese></Chinese>
         </Key>
         <Key ID="STR_dui_mod">
             <English>DUI - Squad Radar</English>
@@ -299,7 +295,7 @@
             <German>Nur Buddy Icon anzeigen</German>
             <Korean>친구 아이콘만 표시</Korean>
             <Japanese>バディ アイコンのみ表示</Japanese>
-            <Polish>Pokaż tylko ikonę znajomego</Polish>
+            <Polish>Pokaż tylko ikonę dwójki</Polish>
             <Portuguese>Mostrar apenas ícone de Parceiro</Portuguese>
             <Spanish>Mostrar solo el icono de amigo</Spanish>
             <Russian>Показать только иконки друзей</Russian>
@@ -311,7 +307,7 @@
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
             <Korean>이름 목록에서 친구 아이콘만 표시합니다. </Korean>
             <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
-            <Polish>Wyświetla tylko ikonę znajomego na liście imion zamiast obu, znajomego i klasy jednostki</Polish>
+            <Polish>Wyświetla tylko ikonę dwójki na liście imion zamiast obu, dwójki i klasy jednostki</Polish>
             <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
             <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
             <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian>
@@ -397,8 +393,8 @@
             <Japanese>コンパス</Japanese>
             <Polish>Kompas</Polish>
             <Portuguese>Bússola</Portuguese>
-           <Spanish>Brújula</Spanish>
-           <Russian>Компас</Russian>
+            <Spanish>Brújula</Spanish>
+            <Russian>Компас</Russian>
         </Key>
         <Key ID="STR_dui_cat_compass_desc">
             <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -451,6 +447,9 @@
         <Key ID="STR_dui_cat_custom_color">
             <English>Custom Colors</English>
             <German>Benutzerdefinierte Farben</German>
+            <Japanese>カスタム カラー</Japanese>
+            <Portuguese>Cores Customizadas</Portuguese>
+            <Russian>Пользовательские цвета</Russian>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -499,16 +498,6 @@
             <Portuguese>Escala de Interface</Portuguese>
             <Spanish>Escala de interfaz de usuario</Spanish>
             <Russian>UI шкала</Russian>
-        </Key>
-        <Key ID="STR_dui_ui_scale_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
         </Key>
         <Key ID="STR_dui_namelist_bg">
             <English>Background Opacity</English>
@@ -618,16 +607,6 @@
             <Spanish>Opacidad</Spanish>
             <Russian>Затемнение</Russian>
         </Key>
-        <Key ID="STR_dui_compass_opacity_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
-        </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
             <Czech>Velikost azimutu</Czech>
@@ -640,16 +619,6 @@
             <Spanish>Tamaño del texto del dirección</Spanish>
             <Russian>Размр окна со списком юнитов</Russian>
         </Key>
-        <Key ID="STR_dui_dir_size_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
-        </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
             <Czech>Obrys textu</Czech>
@@ -659,18 +628,8 @@
             <Japanese>テキストのアウトライン</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
-           <Spanish>Contorno de Texto</Spanish>
-           <Russian>Текст контура</Russian>
-        </Key>
-        <Key ID="STR_dui_namelist_text_shadow_desc">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Korean></Korean>
-            <Japanese></Japanese>
-            <Polish></Polish>
-            <Russian></Russian>
+            <Spanish>Contorno de Texto</Spanish>
+            <Russian>Текст контура</Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
@@ -998,39 +957,104 @@
         <Key ID="STR_dui_namelist_hideWhenLeader">
             <English>Hide When Group Leader</English>
             <German>Vestecke wenn Gruppenführer</German>
+            <Japanese>グループ リーダー時は非表示</Japanese>
+            <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
+            <Portuguese>Esconder quando Líder do Grupo</Portuguese>
+            <Russian>Скрыть когда лидер группы</Russian>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
+            <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
+            <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
+            <Russian>Идентифицирует список имен, если вы являетесь текущим лидером группы. Используется для людей, которые предпочитают ванильный сквад-радар</Russian>
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
             <German>Keine Squad Farbe</German>
+            <Japanese>分隊カラー無し</Japanese>
+            <Polish>Brak koloru drużyny</Polish>
+            <Portuguese>Sem Cor de Esquadrão</Portuguese>
+            <Russian>Нет цвета команды</Russian>
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
             <German>Rote Squad Farbe</German>
+            <Japanese>レッド分隊カラー</Japanese>
+            <Polish>Czerwony kolor drużyny</Polish>
+            <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
+            <Russian>Красный цвет команды</Russian>
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
             <German>Grüne Squad Farbe</German>
+            <Japanese>グリーン分隊カラー</Japanese>
+            <Polish>Zielony kolor drużyny</Polish>
+            <Portuguese>Cor Verde de Esquadrão</Portuguese>
+            <Russian>Зеленый цвет команды</Russian>
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
             <German>Blaue Squad Farbe</German>
+            <Japanese>ブルー分隊カラー</Japanese>
+            <Polish>Niebieski kolor drużyny</Polish>
+            <Portuguese>Cor Azul de Esquadrão</Portuguese>
+            <Russian>Синий цвет команды</Russian>
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
             <German>Gelbe Squad Farbe</German>
+            <Japanese>イエロー分隊カラー</Japanese>
+            <Polish>Żółty kolor drużyny</Polish>
+            <Portuguese>Cor Amarela de Esquadrão</Portuguese>
+            <Russian>Желтый цвет команды</Russian>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
-            <English> Be warned the alpha value will do nothing!</English>
+            <English>Be warned the alpha value will do nothing!</English>
             <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <Japanese>なおアルファ値は影響を及ぼしません！</Japanese>
             <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
             <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroes">
+            <English>Leading Zeroes</English>
+            <German>Führende Nullen</German>
+            <Russian>Нули в азимутах</Russian>
+            <Polish>Zera wiodące</Polish>
+            <Portuguese>Zero à esquerda</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroes_desc">
+            <English>The bearing number will be filled with leading zeroes</English>
+            <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
+            <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
+            <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sqlFirst">
+            <English>Show SQL Always First</English>
+            <German>Gruppenführer immer als erster</German>
+            <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
+            <Portuguese>Sempre mostrar líder primeiro</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sqlFirst_desc">
+            <English>Shows the squad leader always as first unit</English>
+            <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+            <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
+            <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort">
+            <English>Sort</English>
+            <German>Sortieren</German>
+            <Polish>Sortowanie</Polish>
+            <Portuguese>Ordernar</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort_desc">
+            <English>Server needs to run DUI in order to have synchronicity!</English>
+            <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+            <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
+            <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1043,7 +1067,7 @@
             <Polish>Główny</Polish>
             <Portuguese>Principal</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Основное</Russian>
         </Key>
         <Key ID="STR_dui_addon_radar">
             <English>Radar</English>
@@ -1055,7 +1079,7 @@
             <Polish>Radar</Polish>
             <Portuguese>Radar</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Радар</Russian>
         </Key>
         <!-- Color style names -->
         <Key ID="STR_dui_color_standard">
@@ -1068,7 +1092,7 @@
             <Polish>Standardowy</Polish>
             <Portuguese>Padrão</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Стандартное</Russian>
         </Key>
         <Key ID="STR_dui_color_ace">
             <English>ACE 3</English>
@@ -1080,7 +1104,7 @@
             <Polish>ACE 3</Polish>
             <Portuguese>ACE3</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>АСЕ 3</Russian>
         </Key>
         <Key ID="STR_dui_color_sthud">
             <English>STUI</English>
@@ -1092,7 +1116,7 @@
             <Polish>STUI</Polish>
             <Portuguese>STUI</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>STUI</Russian>
         </Key>
         <!-- note:  wargame as the video game -->
         <Key ID="STR_dui_color_wargame">
@@ -1105,7 +1129,7 @@
             <Polish>Wargame</Polish>
             <Portuguese>Wargame</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Wargame</Russian>
         </Key>
         <Key ID="STR_dui_color_wargame2">
             <English>Wargame (Military Green)</English>
@@ -1117,7 +1141,7 @@
             <Polish>Wargame (wojskowy zielony)</Polish>
             <Portuguese>Wargame (Verde Militar)</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Wargame (Зеленый военный)</Russian>
         </Key>
         <Key ID="STR_dui_color_protanopia">
             <English>Protanopia</English>
@@ -1129,7 +1153,7 @@
             <Polish>Protanopia</Polish>
             <Portuguese>Protanopia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Protanopia</Russian>
         </Key>
         <Key ID="STR_dui_color_protanomaly">
             <English>Protanomaly</English>
@@ -1139,9 +1163,9 @@
             <!-- <Korean></Korean> -->
             <Japanese>1 型 3 色覚</Japanese>
             <Polish>Protanomalia</Polish>
-            <Portuguese>Protanomalia<Portuguese>
+            <Portuguese>Protanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Protanomalie</Russian>
         </Key>
         <Key ID="STR_dui_color_deuteranopia">
             <English>Deuteranopia</English>
@@ -1151,9 +1175,9 @@
             <!-- <Korean></Korean> -->
             <Japanese>2 型 2 色覚</Japanese>
             <Polish>Deuteranopia</Polish>
-            <Portuguese>Deuteranopia<Portuguese>
+            <Portuguese>Deuteranopia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Deuteranopia</Russian>
         </Key>
         <Key ID="STR_dui_color_deuteranomaly">
             <English>Deuteranomaly</English>
@@ -1165,7 +1189,7 @@
             <Polish>Deuteranomalia</Polish>
             <Portuguese>Deuteranomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Deuteranomaly</Russian>
         </Key>
         <Key ID="STR_dui_color_tritanopia">
             <English>Tritanopia</English>
@@ -1177,7 +1201,7 @@
             <Polish>Tritanopia</Polish>
             <Portuguese>Trinatopia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Tritanopia</Russian>
         </Key>
         <Key ID="STR_dui_color_tritanomaly">
             <English>Tritanomaly</English>
@@ -1189,7 +1213,7 @@
             <Polish>Tritanomalia</Polish>
             <Portuguese>Tritanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Tritanomaly</Russian>
         </Key>
         <Key ID="STR_dui_color_achromatopsia">
             <English>Achromatopsia</English>
@@ -1201,7 +1225,7 @@
             <Polish>Achromatopsja</Polish>
             <Portuguese>Acromatopsia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Achromatopsia</Russian>
         </Key>
         <Key ID="STR_dui_color_achromatomaly">
             <English>Achromatomaly</English>
@@ -1213,11 +1237,14 @@
             <Polish>Achromatomalia</Polish>
             <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Achromatomaly</Russian>
         </Key>
         <Key ID="STR_dui_color_custom">
             <English>Custom</English>
             <German>Benutzerdefiniert</German>
+            <Japanese>カスタム</Japanese>
+            <Portuguese>Customizado</Portuguese>
+            <Russian>Пользовательское</Russian>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->
@@ -1231,7 +1258,7 @@
             <Polish>Tylko wierzchołek</Polish>
             <Portuguese>Só a pontinha</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Просто совет</Russian>
         </Key>
         <Key ID="STR_dui_icon_nato">
             <English>NATO JMS</English>
@@ -1243,7 +1270,7 @@
             <Polish>NATO JMS</Polish>
             <Portuguese>NATO JMS</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>НАТО JMC</Russian>
         </Key>
         <Key ID="STR_dui_icon_clones">
             <English>Clones</English>
@@ -1255,7 +1282,7 @@
             <Polish>Klony</Polish>
             <Portuguese>Clones</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Копии</Russian>
         </Key>
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">
@@ -1268,7 +1295,7 @@
             <Polish>Bohemia Interactive</Polish>
             <Portuguese>Bohemia Interactive</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Бисовский</Russian>
         </Key>
         <Key ID="STR_dui_compass_pizza">
             <English>Pizza Time</English>
@@ -1280,7 +1307,7 @@
             <Polish>Czas na pizzę</Polish>
             <Portuguese>Hora da Pizza</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Пицца</Russian>
         </Key>
         <Key ID="STR_dui_compass_olde">
             <English>Ye Olde Times</English>
@@ -1292,7 +1319,7 @@
             <Polish>Stare dobre czasy</Polish>
             <Portuguese>Tempos antigos</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Древний</Russian>
         </Key>
         <Key ID="STR_dui_compass_clock">
             <English>Clock</English>
@@ -1302,9 +1329,9 @@
             <!-- <Korean></Korean> -->
             <Japanese>時計</Japanese>
             <Polish>Zegar</Polish>
-            <Portuguese>Relógio<Portuguese>
+            <Portuguese>Relógio</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Часы</Russian>
         </Key>
         <Key ID="STR_dui_compass_classic">
             <English>Classic</English>
@@ -1316,7 +1343,7 @@
             <Polish>Klasyczny</Polish>
             <Portuguese>Clássico</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Классический</Russian>
         </Key>
         <!-- Note: xeno as in Aliens franchise -->
         <Key ID="STR_dui_compass_xeno_red">
@@ -1329,7 +1356,7 @@
             <Polish>Xeno - Czerwony</Polish>
             <Portuguese>Xeno - Vermelho</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Ксено-красный</Russian>
         </Key>
         <Key ID="STR_dui_compass_xeno_green">
             <English>Xeno - Green</English>
@@ -1341,7 +1368,7 @@
             <Polish>Xeno - Zielony</Polish>
             <Portuguese>Xeno - Verde</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Ксено-зеленый</Russian>
         </Key>
         <Key ID="STR_dui_compass_xeno_blue">
             <English>Xeno - Blue</English>
@@ -1353,7 +1380,7 @@
             <Polish>Xeno - Niebieski</Polish>
             <Portuguese>Xeno - Azul</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Ксено-синий</Russian>
         </Key>
         <Key ID="STR_dui_compass_milint">
             <English>Military Interface</English>
@@ -1365,7 +1392,38 @@
             <Polish>Wojskowy Interfejs</Polish>
             <Portuguese>Interface Militar</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <!-- <Russian></Russian> -->
+            <Russian>Армейский интерфейс</Russian>
+        </Key>
+        <!-- Sort options -->
+        <Key ID="STR_dui_radar_sort_none">
+            <English>None</English>
+            <German>Kein</German>
+            <Polish>Brak</Polish>
+            <Portuguese>Nenhum</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort_name">
+            <English>Names</English>
+            <German>Namen</German>
+            <Polish>Imiona</Polish>
+            <Portuguese>Nomes</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam">
+            <English>Fire Team, Names</English>
+            <German>Fireteam, Namen</German>
+            <Polish>Sekcja, Imiona</Polish>
+            <Portuguese>Time, Nomes</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam2">
+            <English>Fire Team, Rank, Names</English>
+            <German>Fireteam, Rang, Namen</German>
+            <Polish>Sekcja, Ranga, Imiona</Polish>
+            <Portuguese>Time, Patente, Nomes</Portuguese>
+        </Key>
+        <Key ID="STR_dui_radar_sort_rank">
+            <English>Rank, Names</English>
+            <German>Rang, Namen</German>
+            <Polish>Ranga, Imiona</Polish>
+            <Portuguese>Patente, Nomes</Portuguese>
         </Key>
     </Package>
 </Project>

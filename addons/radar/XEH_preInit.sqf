@@ -16,23 +16,41 @@ GVAR(showRank) = false;
 GVAR(setCompass) = true;
 GVAR(setNamelist) = true;
 
+// compass whitelist, these need to be lowercase!!
+GVAR(compassWhitelist) = [
+    // a3
+    "itemcompass",
+
+    // global mobilisation
+    "gm_ge_army_conat2",
+    "gm_gc_compass_f73"
+];
+
+// some compasses have less then 360 degrees
+GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;
+GVAR(oddDirectionCompasses) setVariable ["gm_ge_army_conat2", 6400];
+GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 6000];
+GVAR(maxDegrees) = 360;
+
 private _curCat = localize "STR_dui_cat_general";
 
-[
-    "diwako_dui_show_squadbar"
-    ,"CHECKBOX"
-    ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
-    ,false
-    ,{
-        params ["_value"];
-        // disable/enable vanilla squadbar
-        private _showHud = shownHUD;
-        _showHud set [6, _value];
-        showHud (_showHud select [0, 8]);
-    }
-] call CBA_Settings_fnc_init;
+if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
+    [
+        "diwako_dui_show_squadbar"
+        ,"CHECKBOX"
+        ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+        ,{
+            params ["_value"];
+            // disable/enable vanilla squadbar
+            private _showHud = shownHUD;
+            _showHud set [6, _value];
+            showHud (_showHud select [0, 8]);
+        }
+    ] call CBA_Settings_fnc_init;
+};
 
 private _curCat = localize "STR_dui_cat_compass";
 
@@ -68,9 +86,18 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(leadingZeroes)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_leading_zeroes", localize "STR_dui_radar_leading_zeroes_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
     "diwako_dui_dir_size"
     ,"SLIDER"
-    ,[localize "STR_dui_dir_size", localize "STR_dui_dir_size_desc"]
+    ,[localize "STR_dui_dir_size", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 3, 1.25, 2]
     ,false
@@ -164,7 +191,7 @@ private _curCat = localize "STR_dui_cat_compass";
 [
     "diwako_dui_compass_opacity"
     ,"SLIDER"
-    ,[localize "STR_dui_compass_opacity", localize "STR_dui_compass_opacity_desc"]
+    ,[localize "STR_dui_compass_opacity", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 1, 1, 2]
     ,false
@@ -293,7 +320,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
 [
     "diwako_dui_namelist_text_shadow"
     ,"LIST"
-    ,[localize "STR_dui_namelist_text_shadow", localize "STR_dui_namelist_text_shadow_desc"]
+    ,[localize "STR_dui_namelist_text_shadow", ""]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
         [0, 1, 2],
@@ -317,6 +344,49 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
+] call CBA_Settings_fnc_init;
+
+GVAR(sortNamespace) = [] call CBA_fnc_createNamespace;
+GVAR(sortNamespace) setVariable ["main", 4];
+GVAR(sortNamespace) setVariable ["red", 0];
+GVAR(sortNamespace) setVariable ["green", 1];
+GVAR(sortNamespace) setVariable ["blue", 2];
+GVAR(sortNamespace) setVariable ["yellow", 3];
+GVAR(sortNamespace) setVariable ["PRIVATE", 6];
+GVAR(sortNamespace) setVariable ["CORPORAL", 5];
+GVAR(sortNamespace) setVariable ["SERGEANT", 4];
+GVAR(sortNamespace) setVariable ["LIEUTENANT", 3];
+GVAR(sortNamespace) setVariable ["CAPTAIN", 2];
+GVAR(sortNamespace) setVariable ["MAJOR", 1];
+GVAR(sortNamespace) setVariable ["COLONEL", 0];
+
+[
+    QGVAR(sqlFirst)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_sqlFirst", localize "STR_dui_radar_sqlFirst_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(sortType)
+    ,"LIST"
+    ,[localize "STR_dui_radar_sort", localize "STR_dui_radar_sort_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[
+        ["none", "name", "fireteam", "fireteam2", "rank", "custom"],
+        [
+            localize "STR_dui_radar_sort_none",
+            localize "STR_dui_radar_sort_name",
+            localize "STR_dui_radar_sort_fireteam",
+            localize "STR_dui_radar_sort_fireteam2",
+            localize "STR_dui_radar_sort_rank",
+            localize "STR_dui_color_custom"
+        ],
+        0
+    ]
+    ,true
 ] call CBA_Settings_fnc_init;
 
 [

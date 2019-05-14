@@ -43,8 +43,13 @@ if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
 };
 
 // Leader
-if ((leader _unit) == _unit) exitWith {
+if ((leader _unit) isEqualTo _unit) exitWith {
     _namespace getVariable ["sql", DUI_SQL];
+};
+
+// Custom icon
+if !(_unit getVariable [QGVAR(customIcon), ""] isEqualTo "") exitWith {
+    _unit getVariable QGVAR(customIcon);
 };
 
 // AR

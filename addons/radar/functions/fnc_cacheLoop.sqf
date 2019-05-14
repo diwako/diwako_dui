@@ -12,7 +12,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 };
 
 private _player = [] call CBA_fnc_currentUnit;
-private _group = units group _player;
+private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };
@@ -86,7 +86,12 @@ if (diwako_dui_enable_compass) then {
     };
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
-    _compassCtrl ctrlSetText (diwako_dui_compass_style select ("ItemCompass" in assignedItems _player));
+    private _compass = [_player] call FUNC(getCompass);
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select !(_compass isEqualTo ""));
+
+    if !(_compass isEqualTo "") then {
+        GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];
+    };
 
     if (GVAR(setCompass)) then {
         GVAR(setCompass) = false;
@@ -199,6 +204,9 @@ if (count _group <= 1) exitWith {
 if !(ctrlShown _grpCtrl) then {
     _grpCtrl ctrlShow true;
 };
+
+_group = [_group, _player] call FUNC(sortNameList);
+
 private _text = "";
 private _curList = controlNull;
 

@@ -87,12 +87,14 @@
                 <German>ACE Nametags Logik verwenden</German>
                 <Portuguese>Usar lógica do ACE Etiquetas de Nome</Portuguese>
                 <Russian>Использовать ACE Nametags Logic</Russian>
+                <Japanese>ACE 名札ロジックを使用</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
                 <German>Setzt die Transparenz der Indikatoren gleich wie die Nametags von ACE. Überschreibt die normale Reichweite und Verhalten!</German>
                 <Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
                 <Russian>Сопоставляет прозрачность индикатора с прозрачностью именных меток ACE.</Russian>
+                <Japanese>インジケータの透明度を ACE 名札の透明度と同じにします。これは通常の距離と挙動を上書きします!</Japanese>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -166,6 +168,7 @@
                 <Polish>Zmieniaj rozmiar w zależności od rangi.</Polish>
                 <Portuguese>Distância altera tamanho</Portuguese>
                 <Russian>Менять размер на расстоянии</Russian>
+                <Japanese>距離で大きさ変化</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according with distance to unit</English>
@@ -173,6 +176,7 @@
                 <Polish>Zmieniaj rozmiar znaczników w zależności od odległości do jednostki.</Polish>
                 <Portuguese>Escala o tamanho dos indicadores de acordo com a distância das unidades</Portuguese>
                 <Russian>Шкала индикаторов в зависимости от расстояния до юнита</Russian>
+                <Japanese>インジケータの大きさはユニットまでの距離に応じて変化します</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
@@ -180,6 +184,7 @@
                 <Polish>Zmieniaj rozmiar w zależności od pola widzenia.</Polish>
                 <Portuguese>FOV altera tamanho</Portuguese>
                 <Russian>Менять размер при FOV</Russian>
+                <Japanese>視野角で大きさ変化</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according with current field of view</English>
@@ -187,6 +192,7 @@
                 <Polish>Zmieniaj rozmiar znaczników w zależności od aktualnego pola widzenia.</Polish>
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>
                 <Russian>Шкала индикаторов в зависимости от дальности обзора</Russian>
+                <Japanese>インジケータの大きさは現在の視野角に応じて変化します</Japanese>
             </Key>
         </Container>
     </Package>

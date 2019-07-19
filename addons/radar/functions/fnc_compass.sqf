@@ -59,15 +59,10 @@ GVAR(compass_pfHandle) = [{
             _dirCtrl ctrlSetText "";
         };
 
-        private _usedCtrls = [];
         private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
         private _playerDir = getDir _player;
 
-        {
-            _usedCtrls pushBack ([_x, _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass));
-        } forEach _grp;
-
-        _usedCtrls = _usedCtrls - [controlNull];
+        private _usedCtrls = [_grp, _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass);
 
         {
             ctrlDelete _x;

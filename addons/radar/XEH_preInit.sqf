@@ -7,7 +7,7 @@ ADDON = false;
 
 // Scale by the height of the monitor as that's a better indicator of DPI than width.
 // We use 1080p as our reference as that's what diwako calibrated everything on.
-private _saneScale = (getResolution select 1) / 1080; 
+private _saneScale = (getResolution select 1) / 1080;
 
 GVAR(group) = [];
 GVAR(compass_pfHandle) = -1;
@@ -244,6 +244,34 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[0.93, 0.26, 0.93, 1]
     ,false
 ] call CBA_settings_fnc_init;
+
+GVAR(pointers) = [];
+if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
+    #include "include\getPointerStyles.sqf"
+    [
+        QGVAR(ace_finger)
+        ,"CHECKBOX"
+        ,["ACE " + (localize "STR_ACE_finger_indicatorColor_name"), localize "STR_ACE_finger_indicatorForSelf_description"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+        ,{
+            [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+        }
+    ] call CBA_Settings_fnc_init;
+    [
+        QGVAR(pointer_style)
+        ,"LIST"
+        ,[localize "STR_dui_compass_style", localize "STR_dui_compass_style_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,[
+            _pointerClasses,
+            _pointerNames,
+            0
+        ]
+        ,false
+    ] call CBA_Settings_fnc_init;
+};
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))

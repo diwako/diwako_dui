@@ -24,6 +24,7 @@ GVAR(compass_pfHandle) = [{
 
     private _player = [] call CBA_fnc_currentUnit;
     private _grp = GVAR(group);
+    private _pointers = GVAR(pointers);
 
     if (diwako_dui_compass_hide_alone_group && {count (units group _player) <= 1}) exitWith {
         _compassCtrl ctrlShow false;
@@ -69,9 +70,21 @@ GVAR(compass_pfHandle) = [{
         } forEach (_ctrls - _usedCtrls);
 
         if (diwako_dui_compass_hide_blip_alone_group && { _grp isEqualTo (missionNamespace getVariable ["diwako_dui_special_track", []]) && {(count _usedCtrls) > 0}}) then {
-            _usedCtrls pushBack ([_player, _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass));
+            _usedCtrls pushBack (([[_player], _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass)) select 0);
         };
         _ctrlGrp setVariable ["diwako_dui_ctrlArr", _usedCtrls];
+
+        if !(_pointers isEqualTo []) then {
+            for "_i" from (count _pointers) -1 to 0 step -1 do {
+                (_pointers#_i) params [["_pointer", controlNull], "_pointerPos"];
+                if (isNull _pointer) then {
+                    _pointers deleteAt _i;
+                } else {
+                    _pointer ctrlSetAngle [(((_player getRelDir (_pointerPos)) - (_dir - _playerDir) ) mod 360), 0.5, 0.5, false];
+                    _pointer ctrlCommit 0;
+                };
+            };
+        };
 
         if !(isNil "diwako_dui_custom_code") then {
             /*

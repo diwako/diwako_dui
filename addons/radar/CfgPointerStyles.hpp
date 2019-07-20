@@ -4,7 +4,7 @@ class GVAR(pointers) {
         file = QPATHTO_T(UI\pointing_styles\standard.paa);
     };
     class wedge {
-        name = "$STR_dui_radar_pointer_wedge";
+        name = "$STR_wedge";
         file = QPATHTO_T(UI\pointing_styles\wedge.paa);
     };
     // class radar {

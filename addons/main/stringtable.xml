@@ -1430,5 +1430,13 @@
             <Portuguese>Patente, Nomes</Portuguese>
             <Japanese>階級、名前</Japanese>
         </Key>
+        <Key ID="STR_dui_radar_group_by_vehicle">
+            <English>Group Icons by Vehicle</English>
+            <German>Icons nach Fahrzeug gruppieren</German>
+        </Key>
+        <Key ID="STR_dui_radar_group_by_vehicle_desc">
+            <English>Shows only one icon of your squad if multiple members are in the same car, usually the driver.</English>
+            <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
+        </Key>
     </Package>
 </Project>

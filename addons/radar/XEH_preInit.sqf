@@ -262,7 +262,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     [
         QGVAR(pointer_style)
         ,"LIST"
-        ,[localize "STR_dui_compass_style", localize "STR_dui_compass_style_desc"]
+        ,[localize "STR_dui_radar_pointer_style", localize "STR_dui_radar_pointer_style_desc"]
         ,[CBA_SETTINGS_CAT, _curCat]
         ,[
             _pointerClasses,

@@ -1438,5 +1438,13 @@
             <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
         </Key>
+        <Key ID="STR_dui_radar_pointer_style">
+            <English>Pointer style</English>
+            <German>Zeigerstil</German>
+        </Key>
+        <Key ID="STR_dui_radar_pointer_style_desc">
+            <English>Pointer style that should be used on the compass component</English>
+            <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
+        </Key>
     </Package>
 </Project>

@@ -1446,5 +1446,14 @@
             <English>Pointer style that should be used on the compass component</English>
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
         </Key>
+        <!-- ACE pointer styles -->
+        <Key ID="STR_dui_radar_pointer_arrow">
+            <English>Arrow</English>
+            <German>Pfeil</German>
+        </Key>
+        <Key ID="STR_dui_radar_pointer_arrowhead">
+            <English>Arrowhead</English>
+            <German>Pfeilspitze</German>
+        </Key>
     </Package>
 </Project>

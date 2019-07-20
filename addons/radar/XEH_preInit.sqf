@@ -255,9 +255,6 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
         ,false
-        ,{
-            [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-        }
     ] call CBA_Settings_fnc_init;
     [
         QGVAR(pointer_style)

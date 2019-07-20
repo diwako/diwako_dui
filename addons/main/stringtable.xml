@@ -1435,7 +1435,7 @@
             <German>Icons nach Fahrzeug gruppieren</German>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
-            <English>Shows only one icon of your squad if multiple members are in the same car, usually the driver.</English>
+            <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
         </Key>
     </Package>

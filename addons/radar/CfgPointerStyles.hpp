@@ -3,6 +3,10 @@ class GVAR(pointers) {
         name = "$STR_dui_color_standard";
         file = QPATHTO_T(UI\pointing_styles\standard.paa);
     };
+    class wedge {
+        name = "$STR_dui_radar_pointer_wedge";
+        file = QPATHTO_T(UI\pointing_styles\wedge.paa);
+    };
     // class radar {
     //     name = "$STR_dui_addon_radar";
     //     file = QPATHTO_T(UI\pointing_styles\radar.paa);

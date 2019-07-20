@@ -268,6 +268,14 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         ]
         ,false
     ] call CBA_Settings_fnc_init;
+    [
+        QGVAR(pointer_color)
+        ,"COLOR"
+        ,localize "STR_dui_radar_pointer_color"
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,[1, 0.5, 0, 1]
+        ,false
+    ] call CBA_settings_fnc_init;
 };
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)

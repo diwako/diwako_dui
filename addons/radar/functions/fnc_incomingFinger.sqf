@@ -32,7 +32,7 @@ _pointer ctrlSetPosition [
     _ctrlWidth,
     _ctrlHeight
 ];
-_pointer ctrlSetTextColor [1 ,1 , 1, 1];
+_pointer ctrlSetTextColor GVAR(pointer_color);
 _pointer ctrlSetText _texture;
 _pointer ctrlCommit 0;
 

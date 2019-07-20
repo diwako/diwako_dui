@@ -1446,7 +1446,15 @@
             <English>Pointer style that should be used on the compass component</English>
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
         </Key>
+        <Key ID="STR_dui_radar_pointer_color">
+            <English>Pointer color</English>
+            <German>Zeigerfarbe</German>
+        </Key>
         <!-- ACE pointer styles -->
+        <Key ID="STR_dui_radar_pointer_wedge">
+            <English>Wedge</English>
+            <German>Keil</German>
+        </Key>
         <Key ID="STR_dui_radar_pointer_arrow">
             <English>Arrow</English>
             <German>Pfeil</German>

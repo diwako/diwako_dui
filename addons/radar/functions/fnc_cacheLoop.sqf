@@ -16,7 +16,23 @@ private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };
-GVAR(group) = + _group;
+
+if (GVAR(group_by_vehicle)) then {
+    private _newGrp = _group apply { [objectParent _x, [1,0] select ((driver vehicle _x) isEqualTo _x), _x] };
+    _newGrp sort true;
+    _newGrp = _newGrp apply { _x select 2 };
+
+    private _dummyList = [];
+    private _filteredGrp = [];
+    {
+        if (_dummyList pushBackUnique (vehicle _x) != -1) then {
+            _filteredGrp pushBack _x;
+        };
+    } forEach _newGrp;
+    GVAR(group) = _filteredGrp;
+} else {
+    GVAR(group) = + _group;
+};
 
 private _uiScale = diwako_dui_hudScaling;
 private _uiPixels = GVAR(uiPixels);

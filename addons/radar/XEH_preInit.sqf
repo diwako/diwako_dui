@@ -228,6 +228,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(group_by_vehicle)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_group_by_vehicle", localize "STR_dui_radar_group_by_vehicle_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(trackingColor)
     ,"COLOR"
     ,[localize "STR_dui_trackingColor_time", localize "STR_dui_trackingColor_desc"]

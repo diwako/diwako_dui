@@ -15,4 +15,5 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgUIGrids.hpp"
 #include "CfgCompassStyles.hpp"
+#include "CfgPointerStyles.hpp"
 #include "gui.hpp"

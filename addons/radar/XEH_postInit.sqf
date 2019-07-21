@@ -43,3 +43,9 @@ if !(isNil "ace_nightvision") then {
         ctrlDelete ctrlParentControlsGroup (GVAR(namebox_lists) deleteAt 0);
     };
 }] call CBA_fnc_addEventHandler;
+
+if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
+    ["ace_finger_fingered", {
+        _this call FUNC(incomingFinger);
+    }]  call CBA_fnc_addEventHandler;
+};

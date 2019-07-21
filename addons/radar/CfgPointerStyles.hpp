@@ -8,7 +8,7 @@ class GVAR(pointers) {
         file = QPATHTO_T(UI\pointing_styles\wedge.paa);
     };
     class arrow {
-        name = "$STR_dui_radar_pointer_arrow";
+        name = "$STR_cfg_markers_arrow";
         file = QPATHTO_T(UI\pointing_styles\arrow.paa);
     };
     class arrowhead {

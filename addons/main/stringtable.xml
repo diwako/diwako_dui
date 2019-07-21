@@ -1451,10 +1451,6 @@
             <German>Zeigerfarbe</German>
         </Key>
         <!-- ACE pointer styles -->
-        <Key ID="STR_dui_radar_pointer_arrow">
-            <English>Arrow</English>
-            <German>Pfeil</German>
-        </Key>
         <Key ID="STR_dui_radar_pointer_arrowhead">
             <English>Arrowhead</English>
             <German>Pfeilspitze</German>

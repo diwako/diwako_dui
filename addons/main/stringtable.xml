@@ -1433,27 +1433,33 @@
         <Key ID="STR_dui_radar_group_by_vehicle">
             <English>Group Icons by Vehicle</English>
             <German>Icons nach Fahrzeug gruppieren</German>
+            <Portuguese>Agrupar Ícones por veículo</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
             <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
+            <Portuguese>Mostrar apenas um ícone do seu esquadrão se múltiplos membros estão no veículo, normalmente o do motorista</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
             <German>Zeigerstil</German>
+            <Portuguese>Estilo de ponteiro</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
             <English>Pointer style that should be used on the compass component</English>
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
+            <Portuguese>Estilo do ponteiro que será usado no radar</Portuguese>
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
             <English>Pointer color</English>
             <German>Zeigerfarbe</German>
+            <Portuguese>Cor do Ponteiro</Portuguese>
         </Key>
         <!-- ACE pointer styles -->
         <Key ID="STR_dui_radar_pointer_arrowhead">
             <English>Arrowhead</English>
             <German>Pfeilspitze</German>
+            <Portuguese>Ponta de flecha</Portuguese>
         </Key>
     </Package>
 </Project>

@@ -37,6 +37,11 @@ if !(isNull objectParent _unit || {_forCompass}) exitWith {
     };
 };
 
+// Custom icon
+if !(_unit getVariable [QGVAR(customIcon), ""] isEqualTo "") exitWith {
+    _unit getVariable QGVAR(customIcon);
+};
+
 // Buddy
 if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
@@ -45,11 +50,6 @@ if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
 // Leader
 if ((leader _unit) isEqualTo _unit) exitWith {
     _namespace getVariable ["sql", DUI_SQL];
-};
-
-// Custom icon
-if !(_unit getVariable [QGVAR(customIcon), ""] isEqualTo "") exitWith {
-    _unit getVariable QGVAR(customIcon);
 };
 
 // AR

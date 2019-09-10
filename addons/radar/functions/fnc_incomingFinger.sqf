@@ -1,7 +1,14 @@
 #include "script_component.hpp"
 
 params ["_sourceUnit", "_fingerPosPrecise", "_distance"];
-if !(GVAR(ace_finger) && {[call CBA_fnc_currentUnit] call EFUNC(main,canHudBeShown) && {diwako_dui_enable_compass}}) exitWith {};
+private _player = call CBA_fnc_currentUnit;
+if !(GVAR(ace_finger) &&                            // ace finger enabled
+    {[_player] call EFUNC(main,canHudBeShown) &&    // hud can be shown
+    {diwako_dui_enable_compass &&                   // compass is enabled
+    {!visibleMap &&                                 // map is not open
+    {                                               // hide compass when alone enabled and alone in group
+        !diwako_dui_compass_hide_blip_alone_group || {((units group _player) isEqualTo [_player] && {diwako_dui_compass_hide_blip_alone_group})}
+    }}}}) exitWith {};
 private _texture = GVAR(pointerPaths) getVariable GVAR(pointer_style);
 if (isNil "_texture") exitWith {
     [["DUI ACE Pointing", 2], ["No texture return for pointer style"], [GVAR(pointer_style)]] call CBA_fnc_notify;

@@ -1,4 +1,5 @@
 #define COMPONENT buddy
+#define COMPONENT_BEAUTIFIED Buddy
 #include "\z\diwako_dui\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

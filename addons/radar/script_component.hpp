@@ -1,4 +1,5 @@
 #define COMPONENT radar
+#define COMPONENT_BEAUTIFIED Radar
 #include "\z\diwako_dui\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -15,7 +15,7 @@ if (GVAR(show)) then {
 
     private _innerIcon = "";
     {
-        _innerIcon = _x getVariable [QEGVAR(radar,customIcon), ""];
+        _innerIcon = _x getVariable [QGVAR(customIcon), ""];
         if (_innerIcon isEqualTo "") then {
             if (GVAR(icon_buddy) && {_x isEqualTo (_player getVariable [QEGVAR(buddy,buddy), objNull])}) then {
                 _innerIcon = _indicatorNamespace getVariable ["buddy", ""];

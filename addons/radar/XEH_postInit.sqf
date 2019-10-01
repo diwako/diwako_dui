@@ -9,8 +9,8 @@ if !(hasInterface) exitWith {};
 
 GVAR(uiPixels) = DUI_128PX;
 
-GVAR(a3UiScale) = linearConversion [0.55,0.7,getResolution # 5,1,0.85,false];
-GVAR(windowHeightMod) = linearConversion [1080,1440,getResolution # 1,1,0.75,false];
+GVAR(a3UiScale) = linearConversion [0.55,0.7,getResolution select 5,1,0.85,false];
+GVAR(windowHeightMod) = linearConversion [1080,1440,getResolution select 1,1,0.75,false];
 GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * diwako_dui_hudScaling * GVAR(windowHeightMod);
 GVAR(vehicleNamespace) = [] call CBA_fnc_createNamespace;
 

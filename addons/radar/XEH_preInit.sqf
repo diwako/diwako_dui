@@ -49,7 +49,7 @@ if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
             _showHud set [6, _value];
             showHud (_showHud select [0, 8]);
         }
-    ] call CBA_Settings_fnc_init;
+    ] call CBA_fnc_addSetting;
 };
 
 private _curCat = localize "STR_dui_cat_compass";
@@ -61,7 +61,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_enable_compass_dir"
@@ -74,7 +74,7 @@ private _curCat = localize "STR_dui_cat_compass";
         1
     ]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_dir_showMildot"
@@ -83,7 +83,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(leadingZeroes)
@@ -92,7 +92,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_dir_size"
@@ -104,7 +104,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 #include "include\getCompassStyles.sqf"
 [
@@ -121,7 +121,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compassRange"
@@ -130,7 +130,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[DUI_MIN_RANGE, DUI_MAX_RANGE, 35, 0]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compassRefreshrate"
@@ -146,7 +146,7 @@ private _curCat = localize "STR_dui_cat_compass";
             (CBA_common_perFrameHandlerArray select _index) set [1, _value];
         };
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_enable_occlusion"
@@ -155,7 +155,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_enable_occlusion_cone"
@@ -168,7 +168,7 @@ private _curCat = localize "STR_dui_cat_compass";
         params ["_value"];
         GVAR(enable_occlusion_actual_cone) = _value / 2;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(occlusion_fade_time)
@@ -177,7 +177,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[2, 60, 10, 1]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compass_icon_scale"
@@ -186,7 +186,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.01, 6, 1, 2]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compass_opacity"
@@ -198,7 +198,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_distanceWarning"
@@ -207,7 +207,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0, 50, 3, 1]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compass_hide_alone_group"
@@ -216,7 +216,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_compass_hide_blip_alone_group"
@@ -225,7 +225,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(group_by_vehicle)
@@ -234,7 +234,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(trackingColor)
@@ -243,7 +243,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.93, 0.26, 0.93, 1]
     ,false
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 GVAR(pointers) = [];
 if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
@@ -255,7 +255,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
         ,false
-    ] call CBA_Settings_fnc_init;
+    ] call CBA_fnc_addSetting;
     [
         QGVAR(pointer_style)
         ,"LIST"
@@ -267,7 +267,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
             0
         ]
         ,false
-    ] call CBA_Settings_fnc_init;
+    ] call CBA_fnc_addSetting;
     [
         QGVAR(pointer_color)
         ,"COLOR"
@@ -275,7 +275,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         ,[CBA_SETTINGS_CAT, _curCat]
         ,[1, 0.5, 0, 1]
         ,false
-    ] call CBA_settings_fnc_init;
+    ] call CBA_fnc_addSetting;
 };
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
@@ -296,7 +296,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_namelist_size"
@@ -308,7 +308,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_namelist_bg"
@@ -320,7 +320,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     [
@@ -330,7 +330,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
         ,[CBA_SETTINGS_CAT, _curCat]
         ,false
         ,false
-    ] call CBA_Settings_fnc_init;
+    ] call CBA_fnc_addSetting;
 } else {
     diwako_dui_namelist_only_buddy_icon = false;
 };
@@ -345,7 +345,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(namelist_vertical_spacing)
@@ -357,7 +357,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_namelist_text_shadow"
@@ -377,7 +377,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(namelist_hideWhenLeader)
@@ -386,7 +386,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 GVAR(sortNamespace) = [] call CBA_fnc_createNamespace;
 GVAR(sortNamespace) setVariable ["main", 4];
@@ -409,7 +409,7 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(sortType)
@@ -429,7 +429,7 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
         0
     ]
     ,true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_hudScaling"
@@ -444,7 +444,7 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
 
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 private _curCat = localize "STR_dui_cat_layout";
 
@@ -458,7 +458,7 @@ private _curCat = localize "STR_dui_cat_layout";
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_reset_ui_pos"
@@ -486,7 +486,7 @@ private _curCat = localize "STR_dui_cat_layout";
             [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
         };
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 if !(hasInterface) exitWith {};
 

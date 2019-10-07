@@ -38,7 +38,7 @@ private _availableFonts = [
     ,{
         [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 #include "include\getIconStyles.sqf"
 [
@@ -52,7 +52,7 @@ private _availableFonts = [
         0
     ]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 #include "include\getColorStyles.sqf"
 [
@@ -66,7 +66,7 @@ private _availableFonts = [
         0
     ]
     ,false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(hide_ui_by_default)
@@ -79,7 +79,7 @@ private _availableFonts = [
         params ["_value"];
         GVAR(toggled_off) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     [
@@ -89,7 +89,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
         ,false
-    ] call CBA_Settings_fnc_init;
+    ] call CBA_fnc_addSetting;
 } else {
     diwako_dui_ace_hide_interaction = false;
 };
@@ -107,7 +107,7 @@ _curCat = localize "STR_dui_cat_custom_color";
         GVAR(colors_custom) setVariable ["main_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["main", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(squadRed)
@@ -121,7 +121,7 @@ _curCat = localize "STR_dui_cat_custom_color";
         GVAR(colors_custom) setVariable ["red_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["red", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(squadGreen)
@@ -134,7 +134,7 @@ _curCat = localize "STR_dui_cat_custom_color";
         GVAR(colors_custom) setVariable ["green_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["green", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(squadBlue)
@@ -147,7 +147,7 @@ _curCat = localize "STR_dui_cat_custom_color";
         GVAR(colors_custom) setVariable ["blue_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["blue", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(squadYellow)
@@ -160,7 +160,7 @@ _curCat = localize "STR_dui_cat_custom_color";
         GVAR(colors_custom) setVariable ["yellow_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["yellow", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 if !(hasInterface) exitWith {};
 

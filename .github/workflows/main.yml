@@ -13,7 +13,7 @@ jobs:
     - name: Validate Config
       run: python3 tools/config_style_checker.py
     - name: Check for BOM
-      uses: arma-actions/bom-check@master
+      uses: jokoho48/sqflint@master
   lint:
     runs-on: ubuntu-latest
     steps:

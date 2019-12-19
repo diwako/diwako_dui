@@ -18,6 +18,11 @@ if !(isNil "ace_nightvision") then {
    "ace_nightvision_display" cutFadeOut 0;
 };
 
+if !(isNil "ace_goggles") then {
+    "ace_goggles_GogglesEffectsLayer" cutFadeOut 0;
+    "ace_goggles_GogglesLayer" cutFadeOut 0;
+};
+
 "diwako_dui_compass" cutFadeOut 0;
 "diwako_dui_namebox" cutFadeOut 0;
 

@@ -21,6 +21,7 @@ bovine3dom (Radar auto scaling)
 3Mydlo3 (Polish translations)
 dystopian (medic trait detection)
 654wak654 (Syncing indicators with ACE nametags)
+veteran29 (IFA compass suport)
 
 Special thanks:
 alganthe (General Arma modding support)

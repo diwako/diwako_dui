@@ -16,6 +16,8 @@ GVAR(compass_pfHandle) = [{
     params ["_args", "_pfhHandle"];
     _args params ["_display", "_compassCtrl", "_dirCtrl", "_ctrlGrp"];
 
+    if (!isGameFocused || isGamePaused) exitWith {};
+
     if !(diwako_dui_enable_compass) exitWith {
         [_pfhHandle] call CBA_fnc_removePerFrameHandler;
         "diwako_dui_compass" cutText ["","PLAIN"];

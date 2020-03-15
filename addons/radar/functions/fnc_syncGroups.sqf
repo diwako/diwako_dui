@@ -7,6 +7,8 @@ GVAR(syncRunning) = true;
 GVAR(syncPFH) = [{
     params ["", "_pfhHandle"];
 
+    if (!isGameFocused || isGamePaused) exitWith {};
+
     if !(GVAR(syncRunning)) exitWith {
         // stop pfh and remove any synced group arrays
         [_pfhHandle] call CBA_fnc_removePerFrameHandler;

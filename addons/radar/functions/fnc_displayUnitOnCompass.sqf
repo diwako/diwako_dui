@@ -27,6 +27,15 @@ private _occlussionCone = GVAR(enable_occlusion_actual_cone);
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
 
+if (_player call FUNC(isInCrew)) then {
+    _circleRange = diwako_dui_compassRangeCrew;
+    _iconScale = diwako_dui_compass_icon_scale_crew;
+    _distanceWarning = linearConversion [
+        DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, diwako_dui_compassRangeCrew,
+        _distanceWarning, 100
+    ];
+};
+
 {
     _unit = _x;
     _unitID = _unit getVariable ["diwako_dui_unit_id", nil];

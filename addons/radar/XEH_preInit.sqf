@@ -138,6 +138,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
+    "diwako_dui_compassRangeCrew"
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_range_crew", localize "STR_dui_compass_range_crew_desc"]
+	,[CBA_SETTINGS_CAT, _curCat]
+    ,[DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, 500, 0]
+    ,false
+] call CBA_fnc_addSetting;
+
+[
     "diwako_dui_compassRefreshrate"
     ,"SLIDER"
     ,[localize "STR_dui_compass_refresh", localize "STR_dui_compass_refresh_desc"]
@@ -190,6 +199,15 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.01, 6, 1, 2]
+    ,false
+] call CBA_fnc_addSetting;
+
+[
+    "diwako_dui_compass_icon_scale_crew"
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_icon_scale_crew", localize "STR_dui_compass_icon_scale_crew_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0.01, 24, 6, 2]
     ,false
 ] call CBA_fnc_addSetting;
 

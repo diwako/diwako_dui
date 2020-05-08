@@ -23,6 +23,8 @@
 // Script values
 #define DUI_MAX_RANGE             50
 #define DUI_MIN_RANGE             15
+#define DUI_MAX_VEHICLE_RANGE     1000
+#define DUI_MIN_VEHICLE_RANGE     15
 
 #define DUI_SQL                   "a3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa"
 #define DUI_MEDIC                 "a3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa"

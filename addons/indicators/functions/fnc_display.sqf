@@ -6,9 +6,10 @@ if !([_player] call EFUNC(main,canHudBeShown)) exitWith {};
 // Constants
 private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
 private _vehPlayer = vehicle _player;
+private _isInCrew = _vehPlayer != player && { fullCrew [_vehPlayer, "cargo"] findIf {_player == _x # 0} == -1 };
 private _distanceWarning = diwako_dui_distanceWarning;
-private _range = [GVAR(range), GVAR(range_crew)] select (fullCrew [_vehPlayer, "cargo"] findIf {_player == _x # 0} == -1);
-private _size = GVAR(size);
+private _range = [GVAR(range), GVAR(range_crew)] select _isInCrew;
+private _size = [GVAR(size), GVAR(size) * 1.5] select _isInCrew;
 private _useACE = GVAR(useACENametagsRange);
 private _camPosASL = AGLtoASL positionCameraToWorld [0, 0, 0];
 private _scaleWithRange = GVAR(range_scale);

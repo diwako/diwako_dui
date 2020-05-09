@@ -1,10 +1,12 @@
 PREP(cacheLoop);
 PREP(compass);
+PREP(compassPFH);
 PREP(displayUnitOnCompass);
 PREP(getIcon);
 PREP(rangeButton);
 PREP(setCustomCode);
 PREP(syncGroups);
+PREP(syncGroupsPFH);
 PREP(sortNameList);
 PREP(getCompass);
 PREP(incomingFinger);

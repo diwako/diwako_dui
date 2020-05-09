@@ -24,7 +24,7 @@ GVAR(compassWhitelist) = [
     // global mobilisation
     "gm_ge_army_conat2",
     "gm_gc_compass_f73",
-    
+
     // ifa
     "lib_ger_itemcompass",
     "lib_ger_itemcompass_deg"
@@ -112,6 +112,10 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 #include "include\getCompassStyles.sqf"
+if (isNil "_compassPaths") then {
+    _compassPaths = [];
+    _compassNames = [];
+};
 [
     "diwako_dui_compass_style"
     ,"LIST"
@@ -253,6 +257,10 @@ private _curCat = localize "STR_dui_cat_compass";
 GVAR(pointers) = [];
 if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     #include "include\getPointerStyles.sqf"
+    if (isNil "_pointerClasses") then {
+        _pointerClasses = [];
+        _pointerNames = [];
+    };
     [
         QGVAR(ace_finger)
         ,"CHECKBOX"

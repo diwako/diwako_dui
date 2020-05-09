@@ -24,7 +24,7 @@ GVAR(compassWhitelist) = [
     // global mobilisation
     "gm_ge_army_conat2",
     "gm_gc_compass_f73",
-    
+
     // ifa
     "lib_ger_itemcompass",
     "lib_ger_itemcompass_deg"

@@ -63,7 +63,7 @@ if (_acre || _tfar) then {
     [
         QGVAR(showSpeaking)
         ,"CHECKBOX"
-        ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+        ,[localize "STR_dui_radar_show_speaking", localize "STR_dui_radar_show_speaking_desc"]
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
         ,false

@@ -44,6 +44,7 @@ private _iconNamespace = missionNamespace getVariable format[QEGVAR(main,icon_%1
     if (alive _x) then {
         _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
         _x setVariable [QGVAR(icon), [_x, _iconNamespace] call FUNC(getIcon)];
+        _x setVariable [QGVAR(speakingIcon), _iconNamespace getVariable ["speaking", "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"]];
         // when remote controling a an AI assign can return nil
         private _assignedTeam = [assignedTeam _x] param [0, "MAIN"];
 
@@ -278,7 +279,7 @@ private _showSpeaking = GVAR(showSpeaking);
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
-    private _icon = [[_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}), ""] select (_buddy != "" && {_onlyBuddyIcon});
+    private _icon = [[_unit getVariable [QGVAR(icon), DUI_RIFLEMAN], _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}), ""] select (_buddy != "" && {_onlyBuddyIcon});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
         _icon, // 1
         _unit getVariable ["ACE_Name", name _unit], // 2

@@ -41,10 +41,6 @@ private _availableFonts = [
 ] call CBA_fnc_addSetting;
 
 #include "include\getIconStyles.sqf"
-if (isNil "_iconIdent") then {
-    _iconIdent = [];
-    _iconNames = [];
-};
 [
     "diwako_dui_icon_style"
     ,"LIST"
@@ -59,10 +55,6 @@ if (isNil "_iconIdent") then {
 ] call CBA_fnc_addSetting;
 
 #include "include\getColorStyles.sqf"
-if (isNil "_colorIdent") then {
-    _colorIdent = [];
-    _colorNames = [];
-};
 [
     "diwako_dui_colors"
     ,"LIST"

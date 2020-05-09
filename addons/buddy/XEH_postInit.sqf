@@ -18,20 +18,20 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
     private _action = [QGVAR(buddy_action), _labelAdd, "", {
         params ["_target", "_player", "_params"];
         [_player, _target] call FUNC(pairBuddies);
-    },{!(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {_target in (units group _player) && {(_player getVariable [QGVAR(buddy), objNull]) != _target}}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; !(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {_target in (units group _player) && {(_player getVariable [QGVAR(buddy), objNull]) != _target}}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
     _action = [QGVAR(buddy_action_remove), _labelRemove, "", {
         params ["_target", "_player", "_params"];
         [_player, _target, false] call FUNC(pairBuddies);
-    },{!(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {_target in (units group _player) && {(_player getVariable [QGVAR(buddy), objNull]) == _target}}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; !(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {_target in (units group _player) && {(_player getVariable [QGVAR(buddy), objNull]) == _target}}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
     _action = [QGVAR(buddy_action_team_remove), _labelRemove, "", {
         [_player, _player getVariable [QGVAR(buddy), objNull], false] call FUNC(pairBuddies);
-    },{!ace_interaction_EnableTeamManagement && {!isNull (_player getVariable [QGVAR(buddy), objNull])}},{},[], [0,0,0]] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; !ace_interaction_EnableTeamManagement && {!isNull (_player getVariable [QGVAR(buddy), objNull])}},{},[], [0,0,0]] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 1, ["ACE_SelfActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
@@ -39,21 +39,21 @@ if (isNil "ace_interact_menu_fnc_createAction") then {
     _action = [QGVAR(buddy_action_team), _labelAdd, "", {
         params ["_target", "_player", "_params"];
         [_player, _target] call FUNC(pairBuddies);
-    },{(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {(_player getVariable [QGVAR(buddy), objNull]) != _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; (ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {(_player getVariable [QGVAR(buddy), objNull]) != _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 0, ["ACE_MainActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
     _action = [QGVAR(buddy_action_team_remove), _labelRemove, "", {
         params ["_target", "_player", "_params"];
         [_player, _target, false] call FUNC(pairBuddies);
-    },{(ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {(_player getVariable [QGVAR(buddy), objNull]) == _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; (ace_interaction_EnableTeamManagement && [_player, _target] call ace_interaction_fnc_canJoinTeam) && {(_player getVariable [QGVAR(buddy), objNull]) == _target}},{},[], [0,0,0], _range] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 0, ["ACE_MainActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
     _action = [QGVAR(buddy_action_team_remove), _labelRemove, "", {
         params ["_target", "_player", "_params"];
         [_player, _player getVariable [QGVAR(buddy), objNull], false] call FUNC(pairBuddies);
-    },{ace_interaction_EnableTeamManagement && {!isNull (_player getVariable [QGVAR(buddy), objNull])}},{},[], [0,0,0]] call ace_interact_menu_fnc_createAction;
+    },{params ["_target", "_player"]; ace_interaction_EnableTeamManagement && {!isNull (_player getVariable [QGVAR(buddy), objNull])}},{},[], [0,0,0]] call ace_interact_menu_fnc_createAction;
 
     ["CAManBase", 1, ["ACE_SelfActions", "ACE_TeamManagement"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 };

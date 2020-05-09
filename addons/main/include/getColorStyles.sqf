@@ -17,9 +17,6 @@ private _getColorFromHex = {
     private _g = (_nums find (_hex select 2)) * 16 + (_nums find (_hex select 3));
     private _b = (_nums find (_hex select 4)) * 16 + (_nums find (_hex select 5));
 
-    if (isNil "_namespace") then {
-        _namespace = objNull;
-    };
     _namespace setVariable [format ["%1_compass",_key], [(_r/255),(_g/255),(_b/255)]];
 };
 

@@ -112,10 +112,6 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 #include "include\getCompassStyles.sqf"
-if (isNil "_compassPaths") then {
-    _compassPaths = [];
-    _compassNames = [];
-};
 [
     "diwako_dui_compass_style"
     ,"LIST"
@@ -257,10 +253,6 @@ if (isNil "_compassPaths") then {
 GVAR(pointers) = [];
 if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     #include "include\getPointerStyles.sqf"
-    if (isNil "_pointerClasses") then {
-        _pointerClasses = [];
-        _pointerNames = [];
-    };
     [
         QGVAR(ace_finger)
         ,"CHECKBOX"

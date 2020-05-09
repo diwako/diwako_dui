@@ -26,6 +26,7 @@ private _hudScaling = diwako_dui_hudScaling;
 private _occlussionCone = GVAR(enable_occlusion_actual_cone);
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
+private _showSpeaking = GVAR(showSpeaking);
 
 {
     _unit = _x;
@@ -119,7 +120,7 @@ private _distanceWarning = diwako_dui_distanceWarning;
         };
         _color pushBack _alpha;
         _ctrl ctrlSetTextColor _color;
-        _ctrl ctrlSetText (_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN]);
+        _ctrl ctrlSetText ([_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN], "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}));
 
         _usedCtrls pushback _ctrl;
     };

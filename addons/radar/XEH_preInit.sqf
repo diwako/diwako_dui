@@ -37,6 +37,8 @@ GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 6000];
 GVAR(oddDirectionCompasses) setVariable ["lib_ger_itemcompass", 6400];
 GVAR(maxDegrees) = 360;
 
+private _tfar = isClass (configFile >> "CfgPatches" >> "tfar_core");
+private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 private _curCat = localize "STR_dui_cat_general";
 
 if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
@@ -55,6 +57,19 @@ if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
             showHud (_showHud select [0, 8]);
         }
     ] call CBA_fnc_addSetting;
+};
+
+if (_acre || _tfar) then {
+    [
+        QGVAR(showSpeaking)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_show_squadbar", localize "STR_dui_show_squadbar_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+    ] call CBA_fnc_addSetting;
+} else {
+    GVAR(showSpeaking) = false;
 };
 
 private _curCat = localize "STR_dui_cat_compass";
@@ -524,5 +539,37 @@ if !(hasInterface) exitWith {};
     true
 }] call CBA_fnc_addKeybind;
 
+if (_tfar) then {
+    ["TFAR_event_OnSpeak", {
+        if !(GVAR(showSpeaking)) exitWith {};
+        params ["_unit", "_isSpeaking"];
+        _unit setVariable [QGVAR(isSpeaking), _isSpeaking, true];
+    }] call CBA_fnc_addEventHandler;
+};
+if (_acre) then {
+    ["acre_remoteStoppedSpeaking ", {
+        if !(GVAR(showSpeaking)) exitWith {};
+        params ["_unit"];
+        _unit setVariable [QGVAR(isSpeaking), false];
+    }] call CBA_fnc_addEventHandler;
+
+    ["acre_remoteStartedSpeaking ", {
+        if !(GVAR(showSpeaking)) exitWith {};
+        params ["_unit"];
+        _unit setVariable [QGVAR(isSpeaking), true];
+    }] call CBA_fnc_addEventHandler;
+
+    ["acre_stoppedSpeaking", {
+        if !(GVAR(showSpeaking)) exitWith {};
+        params ["_unit"];
+        _unit setVariable [QGVAR(isSpeaking), false];
+    }] call CBA_fnc_addEventHandler;
+
+    ["acre_startedSpeaking", {
+        if !(GVAR(showSpeaking)) exitWith {};
+        params ["_unit"];
+        _unit setVariable [QGVAR(isSpeaking), true];
+    }] call CBA_fnc_addEventHandler;
+};
 
 ADDON = true;

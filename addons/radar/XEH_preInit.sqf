@@ -141,7 +141,7 @@ private _curCat = localize "STR_dui_cat_compass";
     "diwako_dui_compassRangeCrew"
     ,"SLIDER"
     ,[localize "STR_dui_compass_range_crew", localize "STR_dui_compass_range_crew_desc"]
-	,[CBA_SETTINGS_CAT, _curCat]
+    ,[CBA_SETTINGS_CAT, _curCat]
     ,[DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, 500, 0]
     ,false
 ] call CBA_fnc_addSetting;

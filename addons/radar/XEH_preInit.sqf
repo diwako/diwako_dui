@@ -17,18 +17,7 @@ GVAR(setCompass) = true;
 GVAR(setNamelist) = true;
 
 // compass whitelist, these need to be lowercase!!
-GVAR(compassWhitelist) = [
-    // a3
-    "itemcompass",
-
-    // global mobilisation
-    "gm_ge_army_conat2",
-    "gm_gc_compass_f73",
-
-    // ifa
-    "lib_ger_itemcompass",
-    "lib_ger_itemcompass_deg"
-];
+GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {toLower configName _x};
 
 // some compasses have less then 360 degrees
 GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;

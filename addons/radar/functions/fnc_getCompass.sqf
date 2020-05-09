@@ -11,7 +11,7 @@ private _count = count _items;
 if (_count > 1) then {
     _possibleCompasses = [toLower (_items select 1), toLower (_items select 0)];
 } else {
-    if (_count == 1) then {
+    if (_count isEqualTo 1) then {
         _possibleCompasses pushBack (toLower (_items select 0));
     };
 };

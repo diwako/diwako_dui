@@ -17,7 +17,7 @@ GVAR(setCompass) = true;
 GVAR(setNamelist) = true;
 
 // compass whitelist, these need to be lowercase!!
-GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {toLower configName _x};
+GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {configName _x};
 
 // some compasses have less then 360 degrees
 GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;

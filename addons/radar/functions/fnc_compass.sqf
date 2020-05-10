@@ -13,4 +13,4 @@ if (isNull _display) exitWith {systemChat "No Display"};
 private _ctrlGrp = _display displayCtrl IDC_COMPASS_CTRLGRP;
 private _compass = _display displayCtrl IDC_COMPASS;
 private _dirCtrl = _display displayCtrl IDC_DIRECTION;
-GVAR(compass_pfHandle) = [GVAR(fnc_compassPFH), diwako_dui_compassRefreshrate, [_display, _compass, _dirCtrl, _ctrlGrp] ] call CBA_fnc_addPerFrameHandler;
+GVAR(compass_pfHandle) = [FUNC(compassPFH), diwako_dui_compassRefreshrate, [_display, _compass, _dirCtrl, _ctrlGrp] ] call CBA_fnc_addPerFrameHandler;

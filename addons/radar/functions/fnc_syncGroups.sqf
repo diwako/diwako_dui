@@ -4,4 +4,4 @@ if (!isServer || {missionNamespace getVariable [QGVAR(syncRunning), false]}) exi
 
 GVAR(syncRunning) = true;
 // loop
-GVAR(syncPFH) = [GVAR(fnc_syncGroupsPFH), 2, [] ] call CBA_fnc_addPerFrameHandler;
+GVAR(syncPFH) = [FUNC(syncGroupsPFH), 2, [] ] call CBA_fnc_addPerFrameHandler;

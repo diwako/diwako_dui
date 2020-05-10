@@ -22,6 +22,7 @@ bovine3dom (Radar auto scaling)
 dystopian (medic trait detection)
 654wak654 (Syncing indicators with ACE nametags)
 veteran29 (IFA compass suport)
+Fusselwurm (Performance improvements while game is paused or minmized)
 
 Special thanks:
 alganthe (General Arma modding support)

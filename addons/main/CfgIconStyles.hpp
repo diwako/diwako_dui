@@ -27,6 +27,8 @@ class diwako_dui_icon_style
 
         buddy = "a3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa";
         buddy_compass = QPATHTO_T(UI\icon_styles\standard\buddy_compass);
+
+        speaking = "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa";
     };
 
     class terry:standard

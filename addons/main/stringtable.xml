@@ -1473,5 +1473,13 @@
             <Portuguese>Ponta de flecha</Portuguese>
             <Japanese>矢尻</Japanese>
         </Key>
+        <Key ID="STR_dui_radar_show_speaking">
+            <English>Show icon when units speak</English>
+            <German>Zeige Icon an wenn jemand spricht</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_desc">
+            <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
+            <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
+        </Key>
     </Package>
 </Project>

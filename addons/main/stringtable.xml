@@ -1025,35 +1025,39 @@
             <Russian>Нули в азимутах</Russian>
             <Polish>Zera wiodące</Polish>
             <Portuguese>Zero à esquerda</Portuguese>
-             <Japanese>0 揃え</Japanese>
+            <Japanese>0 揃え</Japanese>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes_desc">
             <English>The bearing number will be filled with leading zeroes</English>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
             <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
             <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
-             <Japanese>方位角の表示を0を含めた3ケタで表示します</Japanese>
+            <Japanese>方位角の表示を0を含めた3ケタで表示します</Japanese>
+            <Russian>Значение азимута будет отображаться с лидирующими нулями</Russian>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
             <German>Gruppenführer immer als erster</German>
             <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
             <Portuguese>Sempre mostrar líder primeiro</Portuguese>
-             <Japanese>分隊長を常に先頭</Japanese>
+            <Japanese>分隊長を常に先頭</Japanese>
+            <Russian>Показывать командира первым</Russian>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
             <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
             <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
-             <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
+            <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
+            <Russian>Всегда показывать командира отделения первым в списке</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>
             <German>Sortieren</German>
             <Polish>Sortowanie</Polish>
             <Portuguese>Ordernar</Portuguese>
-             <Japanese>並び替え</Japanese>
+            <Japanese>並び替え</Japanese>
+            <Russian>Сортировать</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
             <English>Server needs to run DUI in order to have synchronicity!</English>
@@ -1061,6 +1065,7 @@
             <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
             <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
             <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
+            <Russian>DUI должен быть запущен на сервере, чтобы обеспечить синхронность!</Russian>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1407,6 +1412,7 @@
             <Polish>Brak</Polish>
             <Portuguese>Nenhum</Portuguese>
             <Japanese>行わない</Japanese>
+            <Russian>Нет</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
@@ -1414,6 +1420,7 @@
             <Polish>Imiona</Polish>
             <Portuguese>Nomes</Portuguese>
             <Japanese>名前</Japanese>
+            <Russian>Имена</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
@@ -1421,6 +1428,7 @@
             <Polish>Sekcja, Imiona</Polish>
             <Portuguese>Time, Nomes</Portuguese>
             <Japanese>班、名前</Japanese>
+            <Russian>Команда, Имена</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
@@ -1428,6 +1436,7 @@
             <Polish>Sekcja, Ranga, Imiona</Polish>
             <Portuguese>Time, Patente, Nomes</Portuguese>
             <Japanese>班、階級、名前</Japanese>
+            <Russian>Команда, Звание, Имена</Russian>
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
@@ -1435,36 +1444,42 @@
             <Polish>Ranga, Imiona</Polish>
             <Portuguese>Patente, Nomes</Portuguese>
             <Japanese>階級、名前</Japanese>
+            <Russian>Звание, Имена</Russian>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle">
             <English>Group Icons by Vehicle</English>
             <German>Icons nach Fahrzeug gruppieren</German>
             <Portuguese>Agrupar Ícones por veículo</Portuguese>
             <Japanese>車両でのグループ アイコン</Japanese>
+            <Russian>Иконка группы для техники</Russian>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
             <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
             <Portuguese>Mostrar apenas um ícone do seu esquadrão se múltiplos membros estão no veículo, normalmente o do motorista</Portuguese>
             <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
+            <Russian>Показывать только одну иконку вашего отряда, если несколько человек находятся в одной машине</Russian>
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
             <German>Zeigerstil</German>
             <Portuguese>Estilo de ponteiro</Portuguese>
             <Japanese>ポインターの形</Japanese>
+            <Russian>Стиль указателя</Russian>
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
             <English>Pointer style that should be used on the compass component</English>
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
             <Portuguese>Estilo do ponteiro que será usado no radar</Portuguese>
             <Japanese>レーダー上に表示されるポインターの形を選択できます</Japanese>
+            <Russian>Стиль указателя отображаемый на компасе</Russian>
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
             <English>Pointer color</English>
             <German>Zeigerfarbe</German>
             <Portuguese>Cor do Ponteiro</Portuguese>
             <Japanese>ポインターの色</Japanese>
+            <Russian>Цвет указателя</Russian>
         </Key>
         <!-- ACE pointer styles -->
         <Key ID="STR_dui_radar_pointer_arrowhead">
@@ -1472,6 +1487,7 @@
             <German>Pfeilspitze</German>
             <Portuguese>Ponta de flecha</Portuguese>
             <Japanese>矢尻</Japanese>
+            <Russian>Стрелка</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking">
             <English>Show icon when units speak</English>

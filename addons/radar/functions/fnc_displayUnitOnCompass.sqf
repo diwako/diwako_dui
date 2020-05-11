@@ -26,6 +26,7 @@ private _hudScaling = diwako_dui_hudScaling;
 private _occlussionCone = GVAR(enable_occlusion_actual_cone);
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
+private _showSpeaking = GVAR(showSpeaking);
 
 if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     _circleRange = diwako_dui_compassRangeCrew;
@@ -128,7 +129,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         };
         _color pushBack _alpha;
         _ctrl ctrlSetTextColor _color;
-        _ctrl ctrlSetText (_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN]);
+        _ctrl ctrlSetText ([_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN], _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}));
 
         _usedCtrls pushback _ctrl;
     };

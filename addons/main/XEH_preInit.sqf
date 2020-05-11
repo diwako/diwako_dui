@@ -117,7 +117,6 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,[1, 0, 0, 1]
     ,false
     ,{
-        params ["_value"];
         GVAR(colors_custom) setVariable ["red_compass", _this select [0, 3]];
         GVAR(colors_custom) setVariable ["red", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
     }
@@ -172,14 +171,13 @@ GVAR(radioModSpectator) = configFile call {
 
 // cba eh for hiding the hud when in certain camera modes
 ["featureCamera", {
-    params ["_player", "_featureCamera"];
+    params ["", "_featureCamera"];
     GVAR(inFeatureCamera) = !(_featureCamera isEqualTo "");
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 // player remote controls another unit or changes avatar
 // mainly used for the change in avatar / switch unit part as displays will be closed
 ["unit", {
-    params ["_newPlayerUnit", "_oldPlayerUnit"];
     [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
 }, true] call CBA_fnc_addPlayerEventHandler;
 

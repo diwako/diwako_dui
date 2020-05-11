@@ -535,24 +535,24 @@ if (_tfar) then {
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {
-    ["acre_remoteStoppedSpeaking ", {
+    ["acre_remoteStoppedSpeaking", {
         params ["_unit"];
         _unit setVariable [QGVAR(isSpeaking), false];
     }] call CBA_fnc_addEventHandler;
 
-    ["acre_remoteStartedSpeaking ", {
+    ["acre_remoteStartedSpeaking", {
         params ["_unit"];
         _unit setVariable [QGVAR(isSpeaking), true];
     }] call CBA_fnc_addEventHandler;
 
     ["acre_stoppedSpeaking", {
         params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), false, true];
+        _unit setVariable [QGVAR(isSpeaking), false];
     }] call CBA_fnc_addEventHandler;
 
     ["acre_startedSpeaking", {
         params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), true, true];
+        _unit setVariable [QGVAR(isSpeaking), true];
     }] call CBA_fnc_addEventHandler;
 };
 

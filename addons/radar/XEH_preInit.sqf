@@ -535,25 +535,19 @@ if (_tfar) then {
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {
-    ["acre_remoteStoppedSpeaking", {
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), false];
-    }] call CBA_fnc_addEventHandler;
+    {
+        [_x, {
+            params ["_unit"];
+            _unit setVariable [QGVAR(isSpeaking), false];
+        }] call CBA_fnc_addEventHandler;
+    } forEach ["acre_stoppedSpeaking", "acre_remoteStoppedSpeaking"];
 
-    ["acre_remoteStartedSpeaking", {
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), true];
-    }] call CBA_fnc_addEventHandler;
-
-    ["acre_stoppedSpeaking", {
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), false];
-    }] call CBA_fnc_addEventHandler;
-
-    ["acre_startedSpeaking", {
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), true];
-    }] call CBA_fnc_addEventHandler;
+    {
+        [_x, {
+            params ["_unit"];
+            _unit setVariable [QGVAR(isSpeaking), true];
+        }] call CBA_fnc_addEventHandler;
+    } forEach ["acre_startedSpeaking", "acre_remoteStartedSpeaking"];
 };
 
 ADDON = true;

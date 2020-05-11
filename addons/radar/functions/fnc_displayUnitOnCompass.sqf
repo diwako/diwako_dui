@@ -27,7 +27,7 @@ private _occlussionCone = GVAR(enable_occlusion_actual_cone);
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
 
-if (_player call FUNC(isInCrew)) then {
+if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     _circleRange = diwako_dui_compassRangeCrew;
     _iconScale = diwako_dui_compass_icon_scale_crew;
     _distanceWarning = linearConversion [

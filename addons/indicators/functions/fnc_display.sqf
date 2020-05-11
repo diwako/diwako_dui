@@ -6,9 +6,8 @@ if !([_player] call EFUNC(main,canHudBeShown)) exitWith {};
 // Constants
 private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
 private _vehPlayer = vehicle _player;
-private _isInCrew = _vehPlayer != player && { fullCrew [_vehPlayer, "cargo"] findIf {_player == _x # 0} == -1 };
 private _distanceWarning = diwako_dui_distanceWarning;
-private _range = [GVAR(range), GVAR(range_crew)] select _isInCrew;
+private _range = [GVAR(range), GVAR(range_crew)] select (GVAR(crew_range_enabled) && { _player call EFUNC(main,isInCrew) });
 private _size = GVAR(size);
 private _useACE = GVAR(useACENametagsRange);
 private _camPosASL = AGLtoASL positionCameraToWorld [0, 0, 0];
@@ -73,7 +72,6 @@ private _sizeFinal = 0;
                 _sizeFinal = _size;
                 if (_scaleWithRange) then {
                     _sizeFinal = linearConversion [0, _range, _distance, _size, _size/10, true];
-                    // _sizeFinal = _sizeFinal *  3 * (_distance^-0.6);
                 };
 
                 drawIcon3D [_x getVariable [QGVAR(outerIcon), ""], _color, _iconPos, _sizeFinal, _sizeFinal, 0];

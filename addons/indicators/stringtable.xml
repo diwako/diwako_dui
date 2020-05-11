@@ -42,13 +42,21 @@
                 <Japanese>インジケータの最大表示距離を決定します</Japanese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов</Russian>
             </Key>
-            <Key ID="STR_dui_indicators_range_crew">
+            <Key ID="STR_dui_indicators_crew_enabled">
+                <English>Allow Crew indicators</English>
+                <Russian>Разрешить индикаторы для экипажа</Russian>
+            </Key>
+            <Key ID="STR_dui_indicators_crew_enabled_desc">
+                <English>Allow indicators with greater range for vehicle crew</English>
+                <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
+            </Key>
+            <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
             </Key>
-            <Key ID="STR_dui_indicators_range_crew_desc">
+            <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
-                <Russian>Максимально допустимое расстояние для отображения индикаторов когда игрок в экипаже техники</Russian>
+                <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>

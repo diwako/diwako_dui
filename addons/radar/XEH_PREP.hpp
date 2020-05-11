@@ -8,4 +8,3 @@ PREP(syncGroups);
 PREP(sortNameList);
 PREP(getCompass);
 PREP(incomingFinger);
-PREP(isInCrew);

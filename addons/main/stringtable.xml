@@ -216,11 +216,19 @@
             <Spanish>¿Qué tan lejos deben los jugadores ver unidades en el mismo grupo en metros?</Spanish>
             <Russian>Как далеко игроки должны видеть юниты в одной группе в метрах?</Russian>
         </Key>
-        <Key ID="STR_dui_compass_range_crew">
-            <English>Compass range for crew</English>
-            <Russian>Дистанция компаса для экипажа</Russian>
+        <Key ID="STR_dui_compass_vehicle_enabled">
+            <English>Allow Vehicle compass</English>
+            <Russian>Разрешить компас для техники</Russian>
         </Key>
-        <Key ID="STR_dui_compass_range_crew_desc">
+        <Key ID="STR_dui_compass_vehicle_enabled_desc">
+            <English>Allow compass with greater range for vehicle crew</English>
+            <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_vehicle_range">
+            <English>Vehicle Compass range</English>
+            <Russian>Дистанция компаса для техники</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_vehicle_range_desc">
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
             <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
         </Key>
@@ -581,7 +589,7 @@
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew">
             <English>Icon Scaling for crew</English>
-            <Russian>Масштаб иконок для экиажа</Russian>
+            <Russian>Масштаб иконок для экипажа</Russian>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew_desc">
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>

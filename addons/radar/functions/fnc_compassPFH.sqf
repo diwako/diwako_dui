@@ -66,7 +66,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
 
     if !(_pointers isEqualTo []) then {
         for "_i" from (count _pointers) -1 to 0 step -1 do {
-            (_pointers#_i) params [["_pointer", controlNull], "_pointerPos"];
+            (_pointers select _i) params [["_pointer", controlNull], "_pointerPos"];
             if (isNull _pointer) then {
                 _pointers deleteAt _i;
             } else {

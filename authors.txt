@@ -22,6 +22,7 @@ bovine3dom (Radar auto scaling)
 dystopian (medic trait detection)
 654wak654 (Syncing indicators with ACE nametags)
 veteran29 (IFA compass suport)
+10Dozen (Crew long range radar/indicators)
 
 Special thanks:
 alganthe (General Arma modding support)

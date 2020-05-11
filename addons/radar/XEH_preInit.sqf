@@ -530,35 +530,24 @@ if !(hasInterface) exitWith {};
 
 if (_tfar) then {
     ["TFAR_event_OnSpeak", {
-        if !(GVAR(showSpeaking)) exitWith {};
         params ["_unit", "_isSpeaking"];
         _unit setVariable [QGVAR(isSpeaking), _isSpeaking, true];
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {
-    ["acre_remoteStoppedSpeaking ", {
-        if !(GVAR(showSpeaking)) exitWith {};
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), false];
-    }] call CBA_fnc_addEventHandler;
+    {
+        [_x, {
+            params ["_unit"];
+            _unit setVariable [QGVAR(isSpeaking), false];
+        }] call CBA_fnc_addEventHandler;
+    } forEach ["acre_stoppedSpeaking", "acre_remoteStoppedSpeaking"];
 
-    ["acre_remoteStartedSpeaking ", {
-        if !(GVAR(showSpeaking)) exitWith {};
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), true];
-    }] call CBA_fnc_addEventHandler;
-
-    ["acre_stoppedSpeaking", {
-        if !(GVAR(showSpeaking)) exitWith {};
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), false];
-    }] call CBA_fnc_addEventHandler;
-
-    ["acre_startedSpeaking", {
-        if !(GVAR(showSpeaking)) exitWith {};
-        params ["_unit"];
-        _unit setVariable [QGVAR(isSpeaking), true];
-    }] call CBA_fnc_addEventHandler;
+    {
+        [_x, {
+            params ["_unit"];
+            _unit setVariable [QGVAR(isSpeaking), true];
+        }] call CBA_fnc_addEventHandler;
+    } forEach ["acre_startedSpeaking", "acre_remoteStartedSpeaking"];
 };
 
 ADDON = true;

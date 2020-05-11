@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_sourceUnit", "_fingerPosPrecise", "_distance"];
+params ["", "_fingerPosPrecise"];
 private _player = call CBA_fnc_currentUnit;
 if !(GVAR(ace_finger) &&                            // ace finger enabled
     {[_player] call EFUNC(main,canHudBeShown) &&    // hud can be shown

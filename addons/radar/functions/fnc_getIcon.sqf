@@ -9,7 +9,7 @@ if (!_forCompass && {GVAR(showRank)}) exitWith {
 
 if !(isNull objectParent _unit || {_forCompass}) exitWith {
     private _crewInfo = ((fullCrew (vehicle _unit)) select {_x select 0 isEqualTo _unit}) select 0;
-    _crewInfo params ["", "_role", "_index", "_turretPath", "_isTurret"];
+    _crewInfo params ["", "_role", "", "", "_isTurret"];
 
     // Cargo
     if (_role == "cargo") exitWith {
@@ -78,6 +78,6 @@ if (_isEngineer) exitWith {
 // Explosive Specialist
 if (_unit getVariable ["ACE_isEOD", false] || {_unit getUnitTrait "explosiveSpecialist"}) exitWith {
     _namespace getVariable ["explosive_specialist", DUI_EXPLOSIVE_SPECIALIST];
-}; 
+};
 
 _namespace getVariable ["rifleman", DUI_RIFLEMAN];

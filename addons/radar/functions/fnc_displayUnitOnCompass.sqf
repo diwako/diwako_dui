@@ -99,11 +99,11 @@ private _showSpeaking = GVAR(showSpeaking);
             _ctrlArr pushBack _ctrl;
         };
 
-        ctrlPosition _ctrlGrp params ["_left", "_top", "_width", "_height"];
+        ctrlPosition _ctrlGrp params ["", "", "_width", "_height"];
         private _dist = _distance / linearConversion [15, 50, _circleRange, 40, 145, false];
-        private _iconScale = _iconScale * (_unit getVariable [QGVAR(icon_size), 1]);
-        private _newWidth = (44 * pixelW) /_divisor * _iconScale;
-        private _newHeight = (44 * pixelH) /_divisor * _iconScale;
+        private _baseIconScale = _iconScale * (_unit getVariable [QGVAR(icon_size), 1]);
+        private _newWidth = (44 * pixelW) /_divisor * _baseIconScale;
+        private _newHeight = (44 * pixelH) /_divisor * _baseIconScale;
 
         _ctrl ctrlSetPosition [
             _width/2 + _width * (sin _relDir * _dist) - _newWidth/2,

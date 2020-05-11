@@ -50,7 +50,7 @@ private _showSpeaking = GVAR(showSpeaking);
         private _occlusionAlpha = _alpha;
         private _occlude = !isNil "_lastSeen";
         if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
-            private _delay = [1,0.2] select (_namespace getVariable[QEGVAR(indicators,show), true]);
+            private _delay = [1,0.2] select (_namespace getVariable [QEGVAR(indicators,show), true]);
 
             _unit setVariable ["diwako_dui_lastChecked", time + _delay];
             private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];

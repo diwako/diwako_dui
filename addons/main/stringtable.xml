@@ -1498,5 +1498,6 @@
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
             <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
+        </Key>
     </Package>
 </Project>

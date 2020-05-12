@@ -531,7 +531,7 @@ if !(hasInterface) exitWith {};
 if (_tfar) then {
     ["TFAR_event_OnSpeak", {
         params ["_unit", "_isSpeaking"];
-        _unit setVariable [QGVAR(isSpeaking), _isSpeaking, true];
+        _unit setVariable [QGVAR(isSpeaking), _isSpeaking];
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {

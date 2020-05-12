@@ -224,11 +224,11 @@
             <English>Allow compass with greater range for vehicle crew</English>
             <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
         </Key>
-        <Key ID="STR_dui_compass_vehicle_range">
+        <Key ID="STR_dui_compass_crew_range">
             <English>Vehicle Compass range</English>
             <Russian>Дистанция компаса для техники</Russian>
         </Key>
-        <Key ID="STR_dui_compass_vehicle_range_desc">
+        <Key ID="STR_dui_compass_crew_range_desc">
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
             <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
         </Key>

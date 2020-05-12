@@ -151,9 +151,9 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
-    "diwako_dui_compassRangeCrew"
+    QGVAR(compassRangeCrew)
     ,"SLIDER"
-    ,[localize "STR_dui_compass_vehicle_range", localize "STR_dui_compass_vehicle_range_desc"]
+    ,[localize "STR_dui_compass_crew_range", localize "STR_dui_compass_crew_range_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, 500, 0]
     ,false
@@ -216,7 +216,7 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
-    "diwako_dui_compass_icon_scale_crew"
+    QGVAR(icon_scale_crew)
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale_crew", localize "STR_dui_compass_icon_scale_crew_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]

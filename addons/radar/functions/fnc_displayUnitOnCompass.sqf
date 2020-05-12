@@ -29,8 +29,8 @@ private _distanceWarning = diwako_dui_distanceWarning;
 private _showSpeaking = GVAR(showSpeaking);
 
 if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
-    _circleRange = diwako_dui_compassRangeCrew;
-    _iconScale = diwako_dui_compass_icon_scale_crew;
+    _circleRange = GVAR(compassRangeCrew);
+    _iconScale = GVAR(icon_scale_crew);
     _distanceWarning = linearConversion [
         DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, diwako_dui_compassRangeCrew,
         _distanceWarning, 100

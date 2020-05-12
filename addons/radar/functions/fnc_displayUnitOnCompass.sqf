@@ -32,7 +32,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     _circleRange = GVAR(compassRangeCrew);
     _iconScale = GVAR(icon_scale_crew);
     _distanceWarning = linearConversion [
-        DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, diwako_dui_compassRangeCrew,
+        DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, GVAR(compassRangeCrew),
         _distanceWarning, 100
     ];
 };

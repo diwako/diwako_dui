@@ -28,6 +28,15 @@ private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
 private _showSpeaking = GVAR(showSpeaking);
 
+if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
+    _circleRange = GVAR(compassRangeCrew);
+    _iconScale = GVAR(icon_scale_crew);
+    _distanceWarning = linearConversion [
+        DUI_MIN_VEHICLE_RANGE, DUI_MAX_VEHICLE_RANGE, GVAR(compassRangeCrew),
+        _distanceWarning, 100
+    ];
+};
+
 {
     _unit = _x;
     _unitID = _unit getVariable ["diwako_dui_unit_id", nil];

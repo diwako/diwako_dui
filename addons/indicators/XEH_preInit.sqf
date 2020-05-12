@@ -16,12 +16,32 @@ GVAR(drawEh) = -1;
 
 #define DUI_INDICATORS_MIN_RANGE 15
 #define DUI_INDICATORS_MAX_RANGE 100
+#define DUI_INDICATORS_MIN_RANGE_CREW 15
+#define DUI_INDICATORS_MAX_RANGE_CREW 1000
 [
     QGVAR(range)
     ,"SLIDER"
     ,[localize "STR_dui_indicators_range", localize "STR_dui_indicators_range_desc"]
     ,CBA_SETTINGS_CAT
     ,[DUI_INDICATORS_MIN_RANGE, DUI_INDICATORS_MAX_RANGE, 20, 0]
+    ,false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(crew_range_enabled)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_indicators_crew_enabled", localize "STR_dui_indicators_crew_enabled_desc"]
+    ,CBA_SETTINGS_CAT
+    ,false
+    ,true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(range_crew)
+    ,"SLIDER"
+    ,[localize "STR_dui_indicators_crew_range", localize "STR_dui_indicators_crew_range_desc"]
+    ,CBA_SETTINGS_CAT
+    ,[DUI_INDICATORS_MIN_RANGE_CREW, DUI_INDICATORS_MAX_RANGE_CREW, 300, 0]
     ,false
 ] call CBA_fnc_addSetting;
 

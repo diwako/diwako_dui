@@ -57,8 +57,18 @@ if (_acre || _tfar) then {
         ,true
         ,false
     ] call CBA_fnc_addSetting;
+
+    [
+        QGVAR(showSpeaking_replaceIcon)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_radar_show_speaking_replace_icon", localize "STR_dui_radar_show_speaking_replace_icon_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+    ] call CBA_fnc_addSetting;
 } else {
     GVAR(showSpeaking) = false;
+    GVAR(showSpeaking_replaceIcon) = false;
 };
 
 private _curCat = localize "STR_dui_cat_compass";

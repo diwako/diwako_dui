@@ -283,17 +283,19 @@ private _showSpeaking = GVAR(showSpeaking);
         [
             _unit getVariable [QGVAR(icon), DUI_RIFLEMAN],
             _unit getVariable QGVAR(speakingIcon)
-        ] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}),
+        ] select (_showSpeaking && { GVAR(showSpeaking_replaceIcon) && {_unit getVariable [QGVAR(isSpeaking), false]}}),
         ""
     ] select (_buddy != "" && {_onlyBuddyIcon});
-    _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2</t><br/>",
+    private _speakingIcon = ["", _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && { !GVAR(showSpeaking_replaceIcon) &&{_unit getVariable [QGVAR(isSpeaking), false]}});
+    _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1
         _unit getVariable ["ACE_Name", name _unit], // 2
         _unit getVariable [QGVAR(color),"#FFFFFF"], // 3
         _selected, // 4
         (_textSize * _heightMod), // 5
         _buddy, // 6
-        _shadow]; // 7
+        _shadow, // 7
+        _speakingIcon]; // 8
     _curList ctrlSetStructuredText parseText _text;
     _curList ctrlCommit 0;
 } forEach _group;

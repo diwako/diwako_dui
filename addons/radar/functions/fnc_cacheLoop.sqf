@@ -104,7 +104,7 @@ if (diwako_dui_enable_compass) then {
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
     private _compass = [_player] call FUNC(getCompass);
-    _compassCtrl ctrlSetText (diwako_dui_compass_style select !(_compass isEqualTo ""));
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {!(_compass isEqualTo "")}));
 
     if !(_compass isEqualTo "") then {
         GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];

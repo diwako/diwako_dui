@@ -314,6 +314,15 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     ] call CBA_fnc_addSetting;
 };
 
+[
+    QGVAR(show_cardinal_points)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_show_cardinal_points", localize "STR_dui_radar_show_cardinal_points_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_fnc_addSetting;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

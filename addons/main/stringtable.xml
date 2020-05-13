@@ -1521,5 +1521,13 @@
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
         </Key>
+        <Key ID="STR_dui_radar_show_cardinal_points">
+            <English>Show cardinal points</English>
+            <German>Himmelsrichtungen anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_cardinal_points_desc">
+            <English>Shows cardinal points on radar if you have a compass</English>
+            <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast</German>
+        </Key>
     </Package>
 </Project>

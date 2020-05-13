@@ -1526,8 +1526,8 @@
             <German>Himmelsrichtungen anzeigen</German>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
-            <English>Shows cardinal points on radar if you have a compass</English>
-            <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast</German>
+            <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
+            <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
         </Key>
     </Package>
 </Project>

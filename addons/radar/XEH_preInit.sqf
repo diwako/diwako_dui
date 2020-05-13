@@ -73,6 +73,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(show_cardinal_points)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_show_cardinal_points", localize "STR_dui_radar_show_cardinal_points_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_fnc_addSetting;
+
+[
     "diwako_dui_enable_compass_dir"
     ,"LIST"
     ,[localize "STR_dui_show_dir", localize "STR_dui_show_dir_desc"]
@@ -313,15 +322,6 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         ,false
     ] call CBA_fnc_addSetting;
 };
-
-[
-    QGVAR(show_cardinal_points)
-    ,"CHECKBOX"
-    ,[localize "STR_dui_radar_show_cardinal_points", localize "STR_dui_radar_show_cardinal_points_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
-    ,false
-] call CBA_fnc_addSetting;
 
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))

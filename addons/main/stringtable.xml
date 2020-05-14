@@ -1516,10 +1516,12 @@
         <Key ID="STR_dui_radar_show_speaking">
             <English>Show icon when units speak</English>
             <German>Zeige Icon an wenn jemand spricht</German>
+            <Russian>Показывать иконку при разговоре</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_desc">
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
+            <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
         </Key>
     </Package>
 </Project>

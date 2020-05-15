@@ -66,6 +66,15 @@ if (_acre || _tfar) then {
         ,true
         ,false
     ] call CBA_fnc_addSetting;
+
+    [
+        QGVAR(showSpeaking_radioOnly)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_radar_show_speaking_only_radio", localize "STR_dui_radar_show_speaking_only_radio_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,false
+        ,false
+    ] call CBA_fnc_addSetting;
 } else {
     GVAR(showSpeaking) = false;
     GVAR(showSpeaking_replaceIcon) = false;
@@ -576,8 +585,12 @@ if !(hasInterface) exitWith {};
 
 if (_tfar) then {
     ["TFAR_event_OnSpeak", {
-        params ["_unit", "_isSpeaking"];
-        _unit setVariable [QGVAR(isSpeaking), _isSpeaking];
+        [{
+            params ["_unit", "_isSpeaking"];
+            if (_isSpeaking && {GVAR(showSpeaking_radioOnly)
+                && {!(_unit getVariable ["TFAR_isReceiving", false])}}) exitWith {};
+            _unit setVariable [QGVAR(isSpeaking), _isSpeaking];
+        }, _this] call CBA_fnc_execNextFrame;
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {
@@ -590,10 +603,12 @@ if (_acre) then {
 
     {
         [_x, {
-            params ["_unit"];
+            params ["_unit", ["_onRadio", false]];
+            // _onRadio is either a boolean or an integer
+            if (GVAR(showSpeaking_radioOnly) && {[true, false] select _onRadio}) exitWith {};
             _unit setVariable [QGVAR(isSpeaking), true];
         }] call CBA_fnc_addEventHandler;
-    } forEach ["acre_startedSpeaking", "acre_remoteStartedSpeaking"];
+    } forEach ["acre_remoteStartedSpeaking", "acre_startedSpeaking"];
 };
 
 ADDON = true;

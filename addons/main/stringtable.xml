@@ -1527,5 +1527,13 @@
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
             <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
         </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio">
+            <English>Speaking icon on radio messages only</English>
+            <German>Sprachicon nur bei Radionachrichten</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
+            <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
+            <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
+        </Key>
     </Package>
 </Project>

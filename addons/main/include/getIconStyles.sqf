@@ -35,6 +35,7 @@ private _iconIdent = [];
     _namespace setVariable ["buddy", getText (_x >> "buddy")];
     _namespace setVariable ["buddy_compass", getText (_x >> "buddy_compass")];
     _namespace setVariable ["speaking", getText (_x >> "speaking")];
+    _namespace setVariable ["speakingRadio", getText (_x >> "speakingRadio")];
 
     missionNamespace setVariable [format[QGVAR(icon_%1), _configName], _namespace]
 } forEach (_configs + _missionConfigs);

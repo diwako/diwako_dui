@@ -44,7 +44,7 @@ private _iconNamespace = missionNamespace getVariable format[QEGVAR(main,icon_%1
     if (alive _x) then {
         _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
         _x setVariable [QGVAR(icon), [_x, _iconNamespace] call FUNC(getIcon)];
-        _x setVariable [QGVAR(speakingIcon), _iconNamespace getVariable ["speaking", "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"]];
+        _x setVariable [QGVAR(speakingIcon), _iconNamespace getVariable [["speaking", "speaking", "speakingRadio"] select (_x getVariable [QGVAR(isSpeaking), 0]), "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"]];
         // when remote controling a an AI assign can return nil
         private _assignedTeam = [assignedTeam _x] param [0, "MAIN"];
 
@@ -239,6 +239,8 @@ private _columnNo = 0;
 private _curColumnHeight = 0;
 private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
 private _showSpeaking = GVAR(showSpeaking);
+private _replaceIconWhenSpeaking = GVAR(showSpeaking_replaceIcon);
+private _circleRange = diwako_dui_compassRange;
 {
     if ((count _lists) < (_forEachIndex + 1)) then {
         private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];
@@ -279,14 +281,15 @@ private _showSpeaking = GVAR(showSpeaking);
         _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
     };
     private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
+    private _inrange = (_player distance2D _unit) < _circleRange;
     private _icon = [
         [
             _unit getVariable [QGVAR(icon), DUI_RIFLEMAN],
-            _unit getVariable QGVAR(speakingIcon)
-        ] select (_showSpeaking && { GVAR(showSpeaking_replaceIcon) && {_unit getVariable [QGVAR(isSpeaking), false]}}),
+            _unit getVariable [QGVAR(speakingIcon), DUI_RIFLEMAN]
+        ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_unit getVariable [QGVAR(isSpeaking), 0] > 0 && {_inrange}}}),
         ""
     ] select (_buddy != "" && {_onlyBuddyIcon});
-    private _speakingIcon = ["", _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && { !GVAR(showSpeaking_replaceIcon) &&{_unit getVariable [QGVAR(isSpeaking), false]}});
+    private _speakingIcon = ["", _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_unit getVariable [QGVAR(isSpeaking), 0] > 0 && {_inrange || {(_unit getVariable [QGVAR(isSpeaking), 0]) isEqualTo 2}}}});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1
         _unit getVariable ["ACE_Name", name _unit], // 2

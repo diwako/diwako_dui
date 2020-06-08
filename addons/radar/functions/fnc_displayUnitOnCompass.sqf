@@ -129,7 +129,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         };
         _color pushBack _alpha;
         _ctrl ctrlSetTextColor _color;
-        _ctrl ctrlSetText ([_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN], _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}));
+        _ctrl ctrlSetText ([_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN], _unit getVariable [QGVAR(speakingIcon), DUI_RIFLEMAN]] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), 0] > 0}));
 
         _usedCtrls pushback _ctrl;
     };

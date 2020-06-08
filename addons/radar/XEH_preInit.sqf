@@ -587,9 +587,12 @@ if (_tfar) then {
     ["TFAR_event_OnSpeak", {
         [{
             params ["_unit", "_isSpeaking"];
-            if (_isSpeaking && {GVAR(showSpeaking_radioOnly)
-                && {!(_unit getVariable ["TFAR_isReceiving", false])}}) exitWith {};
-            _unit setVariable [QGVAR(isSpeaking), _isSpeaking];
+            if !(_isSpeaking) exitWith {
+                _unit setVariable [QGVAR(isSpeaking), nil];
+            };
+            private _onRadio = _unit getVariable ["TFAR_isReceiving", false];
+            if (GVAR(showSpeaking_radioOnly) && {!_onRadio}) exitWith {};
+            _unit setVariable [QGVAR(isSpeaking), [1, 2] select _onRadio];
         }, _this] call CBA_fnc_execNextFrame;
     }] call CBA_fnc_addEventHandler;
 };
@@ -597,7 +600,7 @@ if (_acre) then {
     {
         [_x, {
             params ["_unit"];
-            _unit setVariable [QGVAR(isSpeaking), false];
+            _unit setVariable [QGVAR(isSpeaking), nil];
         }] call CBA_fnc_addEventHandler;
     } forEach ["acre_stoppedSpeaking", "acre_remoteStoppedSpeaking"];
 
@@ -605,8 +608,9 @@ if (_acre) then {
         [_x, {
             params ["_unit", ["_onRadio", false]];
             // _onRadio is either a boolean or an integer
-            if (GVAR(showSpeaking_radioOnly) && {[true, false] select _onRadio}) exitWith {};
-            _unit setVariable [QGVAR(isSpeaking), true];
+            _onRadio = [false, true] select _onRadio;
+            if (GVAR(showSpeaking_radioOnly) && {!_onRadio}) exitWith {};
+            _unit setVariable [QGVAR(isSpeaking), [1, 2] select _onRadio];
         }] call CBA_fnc_addEventHandler;
     } forEach ["acre_remoteStartedSpeaking", "acre_startedSpeaking"];
 };

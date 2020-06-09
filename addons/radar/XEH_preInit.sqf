@@ -593,10 +593,13 @@ if (_tfar) then {
         _unit setVariable [QGVAR(isSpeaking), 1];
     }] call CBA_fnc_addEventHandler;
 
-    // this is a custom event made by DUI
-    // in tfar the client's game has no idea if the one speaking is speaking locally or over radio
-    // the OnSpeak event appears to be also delayed after the onTangent event...
-    // this means you only know the unit speaks over radio and not if you can hear/receive them
+    /* This is a custom event made by DUI not by TFAR!
+     * In TFAR the client's game has no idea if the one unit speaking is speaking locally or over radio.
+     * The OnSpeak event also appears to be delayed after the onTangent event...
+     * This means you only know the unit speaks over radio and not if you can actually hear/receive them.
+     * The result is the radio icon appears even if the sender is out of range or
+     * sending over a radio you cannot possible receive...
+     */
     ["TFAR_event_onTangentRemote", {
         [{
             // params ["_unit", "_radio", "_radioType", "_additional", "_buttonDown"];

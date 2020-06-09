@@ -585,15 +585,36 @@ if !(hasInterface) exitWith {};
 
 if (_tfar) then {
     ["TFAR_event_OnSpeak", {
+        params ["_unit", "_isSpeaking"];
+        if !(_isSpeaking) exitWith {
+            _unit setVariable [QGVAR(isSpeaking), nil];
+        };
+        if (GVAR(showSpeaking_radioOnly)) exitWith {};
+        _unit setVariable [QGVAR(isSpeaking), 1];
+    }] call CBA_fnc_addEventHandler;
+
+    // this is a custom event made by DUI
+    // in tfar the client's game has no idea if the one speaking is speaking locally or over radio
+    // the OnSpeak event appears to be also delayed after the onTangent event...
+    // this means you only know the unit speaks over radio and not if you can hear/receive them
+    ["TFAR_event_onTangentRemote", {
         [{
-            params ["_unit", "_isSpeaking"];
-            if !(_isSpeaking) exitWith {
-                _unit setVariable [QGVAR(isSpeaking), nil];
+            // params ["_unit", "_radio", "_radioType", "_additional", "_buttonDown"];
+            params ["_unit", "", "", "", "_buttonDown"];
+            if !(_buttonDown) exitWith {
+                // radio button was released but only show radio icon
+                if (GVAR(showSpeaking_radioOnly)) exitWith {
+                    _unit setVariable [QGVAR(isSpeaking), nil];
+                };
+                // radio button was released, but unit is still speaking
+                if ((_unit getVariable [QGVAR(isSpeaking), 0]) isEqualTo 2) exitWith {
+                    _unit setVariable [QGVAR(isSpeaking), 1];
+                };
+                // radio button was released, but unit is not speaking anymore
+                // let OnSpeak event handler deal with it
             };
-            private _onRadio = _unit getVariable ["TFAR_isReceiving", false];
-            if (GVAR(showSpeaking_radioOnly) && {!_onRadio}) exitWith {};
-            _unit setVariable [QGVAR(isSpeaking), [1, 2] select _onRadio];
-        }, _this] call CBA_fnc_execNextFrame;
+            _unit setVariable [QGVAR(isSpeaking), 2];
+        }, _this, 0.5] call CBA_fnc_waitAndExecute;
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {

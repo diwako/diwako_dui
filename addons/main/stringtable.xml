@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="diwako_dui">
     <Package name="dui">
-        <Key ID="STR_dui_empty">
-            <English></English>
-            <Czech></Czech>
-            <French></French>
-            <German></German>
-            <Polish></Polish>
-            <Portuguese></Portuguese>
-            <Russian></Russian>
-            <Spanish></Spanish>
-            <Korean></Korean>
-            <Japanese></Japanese>
-        </Key>
         <Key ID="STR_dui_mod">
             <English>DUI - Squad Radar</English>
             <French>DUI - Squad Radar</French>
@@ -1530,6 +1518,22 @@
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
             <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_replace_icon">
+            <English>Replace main icon with speaking icon</English>
+            <German>Haupticon mit Sprechicon ersetzen</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
+            <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
+            <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio">
+            <English>Speaking icon on radio messages only</English>
+            <German>Sprachicon nur bei Radionachrichten</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
+            <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
+            <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
         </Key>
     </Package>
 </Project>

@@ -29,6 +29,7 @@ class diwako_dui_icon_style
         buddy_compass = QPATHTO_T(UI\icon_styles\standard\buddy_compass);
 
         speaking = "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa";
+        speakingRadio = "\A3\modules_f_curator\Data\portraitRadio_ca.paa";
     };
 
     class terry:standard

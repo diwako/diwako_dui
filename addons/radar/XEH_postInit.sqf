@@ -54,3 +54,12 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
         _this call FUNC(incomingFinger);
     }]  call CBA_fnc_addEventHandler;
 };
+
+if (isClass (configFile >> "CfgPatches" >> "tfar_core")) then {
+    [[], {
+        if !(hasInterface && {isNil QGVAR(onTangent)}) exitWith {};
+        GVAR(onTangent) = ["TFAR_event_onTangent", {
+            ["TFAR_event_onTangentRemote", _this, units (_this select 0)] call CBA_fnc_targetEvent;
+        }] call CBA_fnc_addEventHandler;
+    }] remoteExecCall ["call", 0, true];
+};

@@ -52,6 +52,12 @@ private _availableFonts = [
         0
     ]
     ,false
+    , {
+        params ["_value"];
+        private _iconNamespace = missionNamespace getVariable format[QGVAR(icon_%1), _value];
+        GVAR(speakingIcon) = _iconNamespace getVariable ["speaking", "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"];
+        GVAR(speakingRadioIcon) = _iconNamespace getVariable ["speakingRadio", "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"];
+    }
 ] call CBA_fnc_addSetting;
 
 #include "include\getColorStyles.sqf"

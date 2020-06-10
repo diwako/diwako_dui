@@ -8,3 +8,7 @@ releases/
 *.pbo
 
 *.bisign
+
+releases/*
+keys/*
+.hemtt/local

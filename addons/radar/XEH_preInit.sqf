@@ -57,8 +57,27 @@ if (_acre || _tfar) then {
         ,true
         ,false
     ] call CBA_fnc_addSetting;
+
+    [
+        QGVAR(showSpeaking_replaceIcon)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_radar_show_speaking_replace_icon", localize "STR_dui_radar_show_speaking_replace_icon_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,false
+    ] call CBA_fnc_addSetting;
+
+    [
+        QGVAR(showSpeaking_radioOnly)
+        ,"CHECKBOX"
+        ,[localize "STR_dui_radar_show_speaking_only_radio", localize "STR_dui_radar_show_speaking_only_radio_desc"]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,false
+        ,false
+    ] call CBA_fnc_addSetting;
 } else {
     GVAR(showSpeaking) = false;
+    GVAR(showSpeaking_replaceIcon) = false;
 };
 
 private _curCat = localize "STR_dui_cat_compass";
@@ -567,23 +586,57 @@ if !(hasInterface) exitWith {};
 if (_tfar) then {
     ["TFAR_event_OnSpeak", {
         params ["_unit", "_isSpeaking"];
-        _unit setVariable [QGVAR(isSpeaking), _isSpeaking];
+        if !(_isSpeaking) exitWith {
+            _unit setVariable [QGVAR(isSpeaking), nil];
+        };
+        if (GVAR(showSpeaking_radioOnly)) exitWith {};
+        _unit setVariable [QGVAR(isSpeaking), 1];
+    }] call CBA_fnc_addEventHandler;
+
+    /* This is a custom event made by DUI not by TFAR!
+     * In TFAR the client's game has no idea if the one unit speaking is speaking locally or over radio.
+     * The OnSpeak event also appears to be delayed after the onTangent event...
+     * This means you only know the unit speaks over radio and not if you can actually hear/receive them.
+     * The result is the radio icon appears even if the sender is out of range or
+     * sending over a radio you cannot possible receive...
+     */
+    ["TFAR_event_onTangentRemote", {
+        [{
+            // params ["_unit", "_radio", "_radioType", "_additional", "_buttonDown"];
+            params ["_unit", "", "", "", "_buttonDown"];
+            if !(_buttonDown) exitWith {
+                // radio button was released but only show radio icon
+                if (GVAR(showSpeaking_radioOnly)) exitWith {
+                    _unit setVariable [QGVAR(isSpeaking), nil];
+                };
+                // radio button was released, but unit is still speaking
+                if ((_unit getVariable [QGVAR(isSpeaking), 0]) isEqualTo 2) exitWith {
+                    _unit setVariable [QGVAR(isSpeaking), 1];
+                };
+                // radio button was released, but unit is not speaking anymore
+                // let OnSpeak event handler deal with it
+            };
+            _unit setVariable [QGVAR(isSpeaking), 2];
+        }, _this, 0.5] call CBA_fnc_waitAndExecute;
     }] call CBA_fnc_addEventHandler;
 };
 if (_acre) then {
     {
         [_x, {
             params ["_unit"];
-            _unit setVariable [QGVAR(isSpeaking), false];
+            _unit setVariable [QGVAR(isSpeaking), nil];
         }] call CBA_fnc_addEventHandler;
     } forEach ["acre_stoppedSpeaking", "acre_remoteStoppedSpeaking"];
 
     {
         [_x, {
-            params ["_unit"];
-            _unit setVariable [QGVAR(isSpeaking), true];
+            params ["_unit", ["_onRadio", false]];
+            // _onRadio is either a boolean or an integer
+            _onRadio = [false, true] select _onRadio;
+            if (GVAR(showSpeaking_radioOnly) && {!_onRadio}) exitWith {};
+            _unit setVariable [QGVAR(isSpeaking), [1, 2] select _onRadio];
         }] call CBA_fnc_addEventHandler;
-    } forEach ["acre_startedSpeaking", "acre_remoteStartedSpeaking"];
+    } forEach ["acre_remoteStartedSpeaking", "acre_startedSpeaking"];
 };
 
 ADDON = true;

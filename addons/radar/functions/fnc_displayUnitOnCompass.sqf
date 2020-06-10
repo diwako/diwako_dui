@@ -27,6 +27,7 @@ private _occlussionCone = GVAR(enable_occlusion_actual_cone);
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;
 private _showSpeaking = GVAR(showSpeaking);
+private _speakingArray = ["", EGVAR(main,speakingIcon), EGVAR(main,speakingRadioIcon)];
 
 if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     _circleRange = GVAR(compassRangeCrew);
@@ -129,7 +130,10 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         };
         _color pushBack _alpha;
         _ctrl ctrlSetTextColor _color;
-        _ctrl ctrlSetText ([_unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN], _unit getVariable QGVAR(speakingIcon)] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), false]}));
+        _ctrl ctrlSetText ([
+            _unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN],
+            _speakingArray select (_unit getVariable [QGVAR(isSpeaking), 0])
+        ] select (_showSpeaking && {_unit getVariable [QGVAR(isSpeaking), 0] > 0}));
 
         _usedCtrls pushback _ctrl;
     };

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="diwako_dui">
     <Package name="indicators">
         <Container name="cba_settings">
@@ -45,18 +45,22 @@
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
                 <Russian>Разрешить индикаторы для экипажа</Russian>
+                <German>Erlaube Mannschafts Indikatoren</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
                 <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
+                <German>Erlauben Anzeigen mit größerer Reichweite für die Fahrzeugmannschaft.</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
+                <German>Maximale Reichweite für die Mannschaft</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
+                <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugmannschaft.</German>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>

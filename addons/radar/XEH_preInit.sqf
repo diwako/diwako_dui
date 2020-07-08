@@ -80,7 +80,7 @@ if (_acre || _tfar) then {
     GVAR(showSpeaking_replaceIcon) = false;
 };
 
-if (isClass (configfile >> "CfgPatches" >> "ace_medical_engine")) then {
+if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
     [
         QGVAR(ace_medic)
         ,"CHECKBOX"

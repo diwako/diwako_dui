@@ -81,17 +81,17 @@ if (_acre || _tfar) then {
 };
 
 if (isClass (configfile >> "CfgPatches" >> "ace_medical_engine")) then {
-  [
-    QGVAR(ace_medic),
-    "CHECKBOX",
-    [localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)],
-    [CBA_SETTINGS_CAT, _curCat],
-    true,
-    true
-  ] call CBA_fnc_addSetting;
+    [
+        QGVAR(ace_medic)
+        ,"CHECKBOX"
+        ,[localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        true
+    ] call CBA_fnc_addSetting;
 
 } else {
-  GVAR(ace_medic) = false;
+    GVAR(ace_medic) = false;
 };
 
 private _curCat = localize "STR_dui_cat_compass";

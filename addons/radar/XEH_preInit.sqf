@@ -87,7 +87,7 @@ if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
         ,[localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)]
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
-        true
+        ,true
     ] call CBA_fnc_addSetting;
 
 } else {

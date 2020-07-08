@@ -63,12 +63,15 @@ if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPictur
 };
 
 // Medic
-if (diwako_dui_toggleAceMedic) then {
-    if (_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0) exitWith {
+if (GVAR(ace_medic)) then {
+
+    if (_unit getVariable ["ace_medical_medicClass", 0] > 0) exitWith {
         _namespace getVariable ["medic", DUI_MEDIC];
     };
+
 } else {
-    if (typeOf _unit in diwako_dui_known_medics) exitWith {
+
+    if (_unit getUnitTrait "medic") exitWith {
         _namespace getVariable ["medic", DUI_MEDIC];
     };
 };

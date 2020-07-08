@@ -24,6 +24,7 @@ dystopian (medic trait detection)
 veteran29 (IFA compass suport)
 Fusselwurm (Performance improvements while game is paused or minmized)
 10Dozen (Crew long range radar/indicators)
+Brazzer (Medic icon switch between ACE/Vanilla)
 
 Special thanks:
 alganthe (General Arma modding support)

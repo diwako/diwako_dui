@@ -1541,17 +1541,11 @@
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
             <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
         </Key>
-        <Key ID="STR_dui_radar_ace_medic_toggle">
+        <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
         </Key>
-        <Key ID="STR_dui_radar_ace_medic_toggle_desc">
-            <English>Choose whether to show medics by classname or ACE variable</English>
-        </Key>
-        <Key ID="STR_dui_radar_known_medics">
-            <English>Medic Classnames</English>
-        </Key>
-        <Key ID="STR_dui_radar_known_medics_desc">
-            <English>List of classnames to consider as medics</English>
+        <Key ID="STR_diwako_dui_radar_ace_medic_desc">
+            <English>Choose whether to show medics by vanilla trait or ACE variable</English>
         </Key>
     </Package>
 </Project>

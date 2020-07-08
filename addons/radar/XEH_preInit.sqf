@@ -87,10 +87,7 @@ if (isClass (configfile >> "CfgPatches" >> "ace_medical_engine")) then {
     [localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)],
     [CBA_SETTINGS_CAT, _curCat],
     true,
-    true,
-    {
-      [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-    }
+    true
   ] call CBA_fnc_addSetting;
 
 } else {

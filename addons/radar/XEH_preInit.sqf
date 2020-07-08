@@ -83,7 +83,7 @@ if (_acre || _tfar) then {
 [
   "diwako_dui_toggleAceMedic",
   "CHECKBOX",
-  [localize "STR_dui_ace_medic_toggle", localize "STR_dui_ace_medic_toggle_desc"],
+  [localize "STR_dui_radar_ace_medic_toggle", localize "STR_dui_radar_ace_medic_toggle_desc"],
   [CBA_SETTINGS_CAT, _curCat],
   true,
   true
@@ -92,7 +92,7 @@ if (_acre || _tfar) then {
 [
   "diwako_dui_known_medics",
   "LIST",
-  [localize "STR_dui_known_medics", localize "STR_dui_known_medics_desc"],
+  [localize "STR_dui_radar_known_medics", localize "STR_dui_radar_known_medics_desc"],
   [CBA_SETTINGS_CAT, _curCat],
   [
     "B_medic_F"

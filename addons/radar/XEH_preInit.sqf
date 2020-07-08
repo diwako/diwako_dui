@@ -80,28 +80,22 @@ if (_acre || _tfar) then {
     GVAR(showSpeaking_replaceIcon) = false;
 };
 
-[
-  "diwako_dui_toggleAceMedic",
-  "CHECKBOX",
-  [localize "STR_dui_radar_ace_medic_toggle", localize "STR_dui_radar_ace_medic_toggle_desc"],
-  [CBA_SETTINGS_CAT, _curCat],
-  true,
-  true
-] call CBA_fnc_addSetting;
-
-[
-  "diwako_dui_known_medics",
-  "LIST",
-  [localize "STR_dui_radar_known_medics", localize "STR_dui_radar_known_medics_desc"],
-  [CBA_SETTINGS_CAT, _curCat],
+if (isClass (configfile >> "CfgPatches" >> "ace_medical_engine")) then {
   [
-    "B_medic_F"
-  ],
-  false,
-  {
-    [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-  }
-] call CBA_fnc_addSetting;
+    QGVAR(ace_medic),
+    "CHECKBOX",
+    [localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)],
+    [CBA_SETTINGS_CAT, _curCat],
+    true,
+    true,
+    {
+      [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+    }
+  ] call CBA_fnc_addSetting;
+
+} else {
+  GVAR(ace_medic) = false;
+};
 
 private _curCat = localize "STR_dui_cat_compass";
 

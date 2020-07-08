@@ -84,7 +84,7 @@ if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
     [
         QGVAR(ace_medic)
         ,"CHECKBOX"
-        ,[localize LSTRING(ace_medic), localize LSTRING(ace_medic_desc)]
+        ,[LSTRING(ace_medic), LSTRING(ace_medic_desc)]
         ,[CBA_SETTINGS_CAT, _curCat]
         ,true
         ,true

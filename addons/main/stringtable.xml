@@ -1543,9 +1543,11 @@
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
+            <German>ACE Sanitäter Umschalter</German>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
+            <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
         </Key>
     </Package>
 </Project>

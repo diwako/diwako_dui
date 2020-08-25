@@ -63,7 +63,10 @@ if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPictur
 };
 
 // Medic
-if (_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0) exitWith {
+if (GVAR(ace_medic) && {_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0}) exitWith {
+    _namespace getVariable ["medic", DUI_MEDIC];
+};
+if (!GVAR(ace_medic) && {_unit getUnitTrait "medic"}) exitWith {
     _namespace getVariable ["medic", DUI_MEDIC];
 };
 

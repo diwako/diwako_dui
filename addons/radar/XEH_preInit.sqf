@@ -80,6 +80,20 @@ if (_acre || _tfar) then {
     GVAR(showSpeaking_replaceIcon) = false;
 };
 
+if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
+    [
+        QGVAR(ace_medic)
+        ,"CHECKBOX"
+        ,[LSTRING(ace_medic), LSTRING(ace_medic_desc)]
+        ,[CBA_SETTINGS_CAT, _curCat]
+        ,true
+        ,true
+    ] call CBA_fnc_addSetting;
+
+} else {
+    GVAR(ace_medic) = false;
+};
+
 private _curCat = localize "STR_dui_cat_compass";
 
 [

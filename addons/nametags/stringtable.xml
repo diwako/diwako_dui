@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="nametags">
+        <Key ID="STR_dui_addon_nametags">
+            <English>Nametags</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enabled">
+            <English>Enable Nametags</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enableOcclusion">
+            <English>Enable Nametag Occlusion</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enableOcclusion_desc">
+            <English>When Occlusion is Enabled the Nametags check how Visible a Unit is and Reduces based in that the Transparency of the Nametag</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enableOcclusion_desc">
+            <English>When Occlusion is Enabled the Nametags check how Visible a Unit is and Reduces based in that the Transparency of the Nametag</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeInTime">
+            <English>Fade In Time</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeInTime_desc">
+            <English>The time the Nametag takes to Fade in</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeOutTime">
+            <English>Fade Out Time</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeOutTime_desc">
+            <English>The Time the Nametag takey to Fade out</English>
+        </Key>
+        <Key ID="STR_dui_cat_fonts">
+            <English>Font Settings</English>
+        </Key>
+        <Key ID="STR_dui_nametags_nameFont">
+            <English>Name Font</English>
+        </Key>
+        <Key ID="STR_dui_nametags_nameFont_desc">
+            <English>The Font that is used for the Name in the Nametag</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameFont">
+            <English>Group Name Font</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameFont_desc">
+            <English>The Font that is used for the Group Name in the Nametag</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontNameSize">
+            <English>Name Font Scale</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontNameSize_desc">
+            <English>The Scaling that is Applied to the Name</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontGroupNameSize">
+            <English>Group Name Font Scale</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
+            <English>The Scaling that is Applied to the Group Name</English>
+        </Key>
+        <Key ID="STR_dui_nametags_deadColor">
+            <English>Dead Color</English>
+        </Key>
+        <Key ID="STR_dui_nametags_deadColor_desc">
+            <English>The Color a Dead Person has.</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupColor">
+            <English>Own Group Color</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupColor_desc">
+            <English>The Color the Group Name will have if the Unit is in your Group.</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameOtherColor">
+            <English>Other Group Color</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
+            <English>The Color Other Groups have</English>
+        </Key>
+        <Key ID="STR_dui_nametags_nameOtherColor">
+            <English>Other Group Name Color</English>
+        </Key>
+        <Key ID="STR_dui_nametags_nameOtherColor_desc">
+            <English>The Color Other Player Names are showed in that are not in your Group.</English>
+        </Key>
+        <Key ID="STR_dui_nametags_renderDistance">
+            <English>Render Distance</English>
+        </Key>
+        <Key ID="STR_dui_nametags_renderDistance_desc">
+            <English>The Distance a Nametag is render</English>
+        </Key>
+        <Key ID="STR_dui_nametags_deadRenderDistance">
+            <English>Dead Render Distance</English>
+        </Key>
+        <Key ID="STR_dui_nametags_deadRenderDistance_desc">
+            <English>The Distance a Dead unit has a Nametag Visible</English>
+        </Key>
+        <Key ID="STR_dui_nametags_drawRank">
+            <English>Display Rank</English>
+        </Key>
+        <Key ID="STR_dui_nametags_nameShadow">
+            <English>Names Shadow</English>
+        </Key>
+        <Key ID="STR_dui_nametags_groupShadow">
+            <English>Group Shadow</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enableFOVBoost">
+            <English>Enable FOV Boost</English>
+        </Key>
+        <Key ID="STR_dui_nametags_enableFOVBoost_desc">
+            <English>Increases Nametags Visiblity when Zooming in.</English>
+        </Key>
+        <Key ID="STR_dui_nametags_showUnconAsDead">
+            <English>Show Unconscious as Dead</English>
+        </Key>
+        <Key ID="STR_dui_nametags_useSideIsFriendly">
+            <English>Use Side Friendlies</English>
+        </Key>
+        <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
+            <English>If this setting is enabled the System uses BIS_fnc_sideIsFriendly instead of just checking the side</English>
+        </Key>
+        <Key ID="STR_dui_nametags_UIGrids_name">
+            <English>DUI Nametags</English>
+        </Key>
+        <Key ID="STR_dui_nametags_UIGrids_description">
+            <English>Nametag UI Element, drag and drop it to reposition it.</English>
+        </Key>
+    </Package>
+</Project>

@@ -9,7 +9,7 @@ GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
 
-private _availableFonts = [
+GVAR(availableFonts) = [
     "PuristaBold",
     "PuristaLight",
     "PuristaMedium",
@@ -30,8 +30,8 @@ private _availableFonts = [
     ,[localize "STR_dui_font", localize "STR_dui_font_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        _availableFonts,
-        _availableFonts,
+        GVAR(availableFonts),
+        GVAR(availableFonts),
         4
     ]
     ,false
@@ -84,6 +84,38 @@ private _availableFonts = [
     ,{
         params ["_value"];
         GVAR(toggled_off) = _value;
+    }
+] call CBA_fnc_addSetting;
+
+[
+    "diwako_dui_reset_ui_pos"
+    ,"CHECKBOX"
+    ,[localize "STR_dui_reset_ui_pos", localize "STR_dui_reset_ui_pos_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+    ,{
+        params ["_value"];
+        if (_value) then {
+            ["diwako_dui_reset_ui_pos", false, 0, "server", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;
+            ["diwako_dui_reset_ui_pos", false, 0, "client", true] call CBA_settings_fnc_set;
+            profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (EGVAR(radar,uiPixels) / 2))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (EGVAR(radar,uiPixels) + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (EGVAR(radar,uiPixels) / 2 + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (EGVAR(radar,uiPixels) + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
+            profileNamespace setVariable ['igui_diwako_dui_nametags_x', nil];
+            profileNamespace setVariable ['igui_diwako_dui_nametags_y', nil];
+            profileNamespace setVariable ['igui_diwako_dui_nametags_w', nil];
+            profileNamespace setVariable ['igui_diwako_dui_nametags_h', nil];
+            saveProfileNamespace;
+
+            [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+        };
     }
 ] call CBA_fnc_addSetting;
 

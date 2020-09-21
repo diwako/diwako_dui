@@ -646,7 +646,20 @@ if (_acre) then {
         [_x, {
             params ["_unit", ["_onRadio", false]];
             // _onRadio is either a boolean or an integer
-            _onRadio = [false, true] select _onRadio;
+            // handle remoteStartedSpeaking integers
+            if (_onRadio isEqualType 0) then {
+                _onRadio = switch (_onRadio) do {
+                    // handle specific acre speaking types
+                    case 2; // unknown
+                    case 3; // intercom
+                    case 4; // spectator
+                    case 6: { false }; // zeus
+
+                    case 1; // radio
+                    case 5: { true }; // god
+                    default { false }; // future features
+                };
+            };
             if (GVAR(showSpeaking_radioOnly) && {!_onRadio}) exitWith {};
             _unit setVariable [QGVAR(isSpeaking), [1, 2] select _onRadio];
         }] call CBA_fnc_addEventHandler;

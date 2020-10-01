@@ -116,7 +116,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
 
         private _color = [0.85, 0.4, 0];
         if (_distance > _distanceWarning || {!(isNull objectParent _unit) || {_unit == _player}}) then {
-            _color = + (_unit getVariable [QGVAR(compass_color), [1,1,1]]);
+            _color = + (_unit getVariable [QEGVAR(main,compass_color), [1,1,1]]);
         };
         _color pushBack _alpha;
         _ctrl ctrlSetTextColor _color;

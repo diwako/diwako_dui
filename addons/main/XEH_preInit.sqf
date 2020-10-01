@@ -199,6 +199,15 @@ _curCat = localize "STR_dui_cat_custom_color";
     }
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(trackingColor)
+    ,"COLOR"
+    ,[localize "STR_dui_trackingColor_time", localize "STR_dui_trackingColor_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0.93, 0.26, 0.93, 1]
+    ,false
+] call CBA_fnc_addSetting;
+
 if !(hasInterface) exitWith {};
 
 GVAR(radioModSpectator) = configFile call {

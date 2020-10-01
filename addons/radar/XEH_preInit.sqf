@@ -314,15 +314,6 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_fnc_addSetting;
 
-[
-    QGVAR(trackingColor)
-    ,"COLOR"
-    ,[localize "STR_dui_trackingColor_time", localize "STR_dui_trackingColor_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.93, 0.26, 0.93, 1]
-    ,false
-] call CBA_fnc_addSetting;
-
 GVAR(pointers) = [];
 if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     #include "include\getPointerStyles.sqf"

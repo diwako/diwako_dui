@@ -34,7 +34,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color
             private _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"]; // Other Group Default Color
             if ((group _target) isEqualTo (group player)) then {
-                _color = _target getVariable [QEGVAR(radar,color), "#FFFFFF"];
+                _color = _target getVariable [QEGVAR(main,color), "#FFFFFF"];
                 _colorGroup = EGVAR(main,colors_custom) getVariable ["group", "#FFFFFF"];
             };
             private _alive = alive _target;
@@ -53,7 +53,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
                 _data pushBack format ["%1. ", _target getVariable [QGVAR(rank), rank _target]];
             };
 
-            _data pushBack (_target getVariable [QGVAR(name), name _target]);
+            _data pushBack (_target getVariable ["ACE_Name", _target getVariable [QGVAR(name), name _target]]);
 
             _data append ["</t>", "<br/>"];
             _data pushBack format [_tags, GVAR(fontGroup), _colorGroup, (GET_POS_H) * GVAR(fontGroupNameSize), GVAR(groupFontShadow)];

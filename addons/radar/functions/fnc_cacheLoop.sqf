@@ -37,7 +37,6 @@ if (GVAR(group_by_vehicle)) then {
 private _uiScale = diwako_dui_hudScaling;
 private _uiPixels = GVAR(uiPixels);
 
-private _colorNameSpace = missionNamespace getVariable format[QEGVAR(main,colors_%1), diwako_dui_colors];
 private _iconNamespace = missionNamespace getVariable format[QEGVAR(main,icon_%1), diwako_dui_icon_style];
 
 private _speakingArray = ["", EGVAR(main,speakingIcon), EGVAR(main,speakingRadioIcon)];
@@ -46,15 +45,6 @@ private _speakingArray = ["", EGVAR(main,speakingIcon), EGVAR(main,speakingRadio
     if (alive _x) then {
         _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
         _x setVariable [QGVAR(icon), [_x, _iconNamespace] call FUNC(getIcon)];
-
-        // when remote controling a an AI assign can return nil
-        private _assignedTeam = [assignedTeam _x] param [0, "MAIN"];
-
-        private _color = _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"];
-        _x setVariable [QGVAR(color), _color];
-
-        private _compassColor = _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]];
-        _x setVariable [QGVAR(compass_color), _compassColor];
     };
 } forEach _group;
 
@@ -62,12 +52,10 @@ private _specialTrack = missionNamespace getVariable ["diwako_dui_special_track"
 if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
     private _toTrack = [];
     private _vehNamespace = GVAR(vehicleNamespace);
-    private _trackingcolor = GVAR(trackingColor) select [0, 3];
     {
         if !(isNull _x) then {
             private _index = _toTrack pushBackUnique _x;
             if (_index > -1) then {
-                _x setVariable [QGVAR(compass_color), _trackingcolor];
                 if (_x isKindOf "CAManBase") then {
                     _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
                 };
@@ -297,7 +285,7 @@ private _circleRange = diwako_dui_compassRange;
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1
         _unit getVariable ["ACE_Name", name _unit], // 2
-        _unit getVariable [QGVAR(color),"#FFFFFF"], // 3
+        _unit getVariable [QEGVAR(main,color),"#FFFFFF"], // 3
         _selected, // 4
         (_textSize * _heightMod), // 5
         _buddy, // 6

@@ -63,7 +63,7 @@ private _sizeFinal = 0;
 
             if (_alpha > 0) then {
                 _color = +(if (_distance > _distanceWarning || {!(isNull objectParent _x)}) then {
-                    _x getVariable [QEGVAR(radar,compass_color), [1, 1, 1]]
+                    _x getVariable [QEGVAR(main,compass_color), [1, 1, 1]]
                 } else {
                     [0.85, 0.4, 0]
                 });

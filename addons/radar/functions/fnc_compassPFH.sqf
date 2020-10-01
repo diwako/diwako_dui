@@ -51,7 +51,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
     };
 
     private _ctrls = _ctrlGrp getVariable ["diwako_dui_ctrlArr",[]];
-    private _playerDir = getDir _player;
+    private _playerDir = getDirVisual _player;
 
     private _usedCtrls = [_grp, _display, _dir, _playerDir, _player, _ctrlGrp] call FUNC(displayUnitOnCompass);
 

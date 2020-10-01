@@ -41,7 +41,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     private _relDir = 0;
     if (_distance <= _circleRange) then {
         _alpha = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
-        private _rDir = (((_player getDir _unit) - _playerDir) + 360) % 360;
+        private _rDir = ((((getPosVisual _player) getDir (getPosVisual _unit)) - _playerDir) + 360) % 360;
         _relDir = (_rDir - (_viewDir - _playerDir) ) mod 360;
     };
 

@@ -157,6 +157,18 @@ private _curCat = localize "STR_dui_cat_compass";
     }
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(dir_padding)
+    ,"SLIDER"
+    ,[localize "STR_dui_dir_padding", ""]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 100, 25, 2]
+    ,false
+    ,{
+        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
+    }
+] call CBA_fnc_addSetting;
+
 #include "include\getCompassStyles.sqf"
 [
     "diwako_dui_compass_style"

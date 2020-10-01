@@ -36,12 +36,12 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         _unit setVariable ["diwako_dui_unit_id", _unitID];
     };
 
-    private _distance = _player distance2d _unit;
+    private _distance = (getPosVisual _player) distance2d (getPosVisual _unit);
     private _alpha = 0;
     private _relDir = 0;
     if (_distance <= _circleRange) then {
         _alpha = linearConversion [_circleRange * 0.90, _circleRange, _distance, diwako_dui_compass_opacity, 0, true];
-        private _rDir = (((_player getDir _unit) - _playerDir) + 360) % 360;
+        private _rDir = ((((getPosVisual _player) getDir (getPosVisual _unit)) - _playerDir) + 360) % 360;
         _relDir = (_rDir - (_viewDir - _playerDir) ) mod 360;
     };
 
@@ -53,7 +53,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
             private _delay = [1,0.2] select (missionNamespace getVariable [QEGVAR(indicators,show), true]);
 
             _unit setVariable ["diwako_dui_lastChecked", time + _delay];
-            private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorld (_unit selectionPosition "Spine2"))];
+            private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
             private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
             if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
                 _occlude = true;
@@ -84,7 +84,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     if (_alpha <= 0) then {
         ctrlDelete _ctrl;
     } else {
-        private _dir = -(_viewDir - (getDir _unit)) mod 360;
+        private _dir = -(_viewDir - (getDirVisual _unit)) mod 360;
         private _divisor = linearConversion [35, 50, _circleRange, 2.25, 2.75, false] / diwako_dui_hudScaling; //2.25;
 
         if (isNull _ctrl) then {

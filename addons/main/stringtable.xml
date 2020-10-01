@@ -637,6 +637,10 @@
             <Spanish>Tamaño del texto del dirección</Spanish>
             <Russian>Размр окна со списком юнитов</Russian>
         </Key>
+        <Key ID="STR_dui_dir_padding">
+            <English>Bearing padding to radar</English>
+            <German>Abstand der Richtungsanzeige zum Radar</German>
+        </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
             <Czech>Obrys textu</Czech>

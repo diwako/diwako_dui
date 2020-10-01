@@ -136,7 +136,7 @@ if (diwako_dui_enable_compass) then {
         _grpCtrl ctrlCommit 0;
         _dirCtrl ctrlSetPosition [
             _ctrlMiddleX,
-            _compassY - (pixelH * 25 * _uiScale),
+            _compassY - (pixelH * GVAR(dir_padding) * _uiScale),
             // safeZoneY + safeZoneH - (pixelH * (_uiPixels + (55 * _uiScale))),
             _ctrlWidth,
             pixelH * 70 * _uiScale

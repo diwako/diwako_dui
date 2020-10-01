@@ -45,40 +45,6 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         _relDir = (_rDir - (_viewDir - _playerDir) ) mod 360;
     };
 
-    if (diwako_dui_enable_occlusion && {_alpha > 0}) then {
-        private _lastSeen = _unit getVariable QGVAR(lastSeen);
-        private _occlusionAlpha = _alpha;
-        private _occlude = !isNil "_lastSeen";
-        if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
-            private _delay = [1,0.2] select (missionNamespace getVariable [QEGVAR(indicators,show), true]);
-
-            _unit setVariable ["diwako_dui_lastChecked", time + _delay];
-            private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
-            private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
-            if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
-                _occlude = true;
-            } else {
-                // unit visible
-                if !(isNil "_lastSeen") then {
-                    _unit setVariable [QGVAR(lastSeen), nil];
-                };
-                _occlude = false;
-            };
-        };
-        if (_occlude) then {
-            // unit not visible anymore
-            if (isNil "_lastSeen") then {
-                _lastSeen = time;
-                _unit setVariable [QGVAR(lastSeen), _lastSeen];
-            };
-            _alpha = linearConversion [0, GVAR(occlusion_fade_time), time - _lastSeen, 1, 0, true] min _alpha;
-            _occlusionAlpha = _alpha;
-        } else {
-            _occlusionAlpha = 1;
-        };
-        _unit setVariable [QGVAR(occlusion_alpha), _occlusionAlpha];
-    };
-
     private _ctrl = _ctrlGrp getVariable [format ["diwako_dui_ctrl_unit_%1", _unitID], controlNull];
 
     if (_alpha <= 0) then {
@@ -124,6 +90,43 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
             _unit getVariable [QGVAR(compass_icon), DUI_RIFLEMAN],
             _speakingArray select (_unit getVariable [QGVAR(isSpeaking), 0])
         ] select (GVAR(showSpeaking) && {_unit getVariable [QGVAR(isSpeaking), 0] > 0}));
+
+        if (diwako_dui_enable_occlusion) then {
+            private _lastSeen = _unit getVariable QGVAR(lastSeen);
+            private _occlusionAlpha = 0;
+            private _occlude = !isNil "_lastSeen";
+            if (_unit getVariable ["diwako_dui_lastChecked", -1] < time) then {
+                private _delay = [1,0.2] select (missionNamespace getVariable [QEGVAR(indicators,show), true]);
+
+                _unit setVariable ["diwako_dui_lastChecked", time + _delay];
+                private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
+                private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
+                if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
+                    _occlude = true;
+                } else {
+                    // unit visible
+                    if !(isNil "_lastSeen") then {
+                        _unit setVariable [QGVAR(lastSeen), nil];
+                    };
+                    _occlude = false;
+                };
+            };
+            if (_occlude) then {
+                // unit not visible anymore
+                if (isNil "_lastSeen") then {
+                    _lastSeen = time;
+                    _unit setVariable [QGVAR(lastSeen), _lastSeen];
+                };
+                _occlusionAlpha = linearConversion [0, GVAR(occlusion_fade_time), time - _lastSeen, 1, 0, true] min _alpha;
+                _ctrl ctrlSetFade (1 - _occlusionAlpha);
+                _ctrl ctrlCommit 0;
+            } else {
+                _occlusionAlpha = 1;
+                _ctrl ctrlSetFade 0;
+                _ctrl ctrlCommit (GVAR(occlusion_fade_in_time) / 2);
+            };
+            _unit setVariable [QGVAR(occlusion_alpha), _occlusionAlpha];
+        };
 
         _usedCtrls pushback _ctrl;
     };

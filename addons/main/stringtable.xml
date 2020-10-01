@@ -869,16 +869,8 @@
             <Russian>Использует заданную редактором макета позицию, а не позицию по умолчанию</Russian>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time">
-            <English>Occlusion Fade Time</English>
-            <!-- <Czech></Czech> -->
-            <!-- <French></French> -->
-            <German>Okklusionsüberblendzeit</German>
-            <!-- <Korean></Korean> -->
-            <Japanese>オクルージョン消失時間</Japanese>
-            <Polish>Czas wygaśnięcia okluzji</Polish>
-            <Portuguese>Tempo de Oclusão</Portuguese>
-            <Spanish>Tiempo de oclusión para desvanecerse</Spanish>
-            <Russian>Время исчезания оклюзии</Russian>
+            <English>Occlusion Fade Out Time</English>
+            <German>Okklusionsausblendzeit</German>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -891,6 +883,14 @@
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
             <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
             <Russian>Устанавливает время исчезновения значков на радаре.</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_in_time">
+            <English>Occlusion Fade In Time</English>
+            <German>Okklusionseinblendzeit</German>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_time_in_desc">
+            <English>Sets the time it takes for icons to fade in on the radar</English>
+            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>

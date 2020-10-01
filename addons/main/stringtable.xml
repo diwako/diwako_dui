@@ -621,6 +621,10 @@
             <English>Icon Opacity</English>
             <German>Iconopazität</German>
         </Key>
+        <Key ID="STR_dui_compass_icon_opacity_no_player">
+            <English>Icon Opacity does not affect own unit</English>
+            <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
+        </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
             <Czech>Velikost azimutu</Czech>

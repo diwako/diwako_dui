@@ -80,6 +80,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
     };
 
     private _ctrl = _ctrlGrp getVariable [format ["diwako_dui_ctrl_unit_%1", _unitID], controlNull];
+    _alpha = _alpha min GVAR(icon_opacity);
 
     if (_alpha <= 0) then {
         ctrlDelete _ctrl;

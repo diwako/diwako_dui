@@ -614,16 +614,12 @@
             <Russian>При взаимодействии с вещами через ACE меню должен ли пользовательский интерфейс быть скрытым?</Russian>
         </Key>
         <Key ID="STR_dui_compass_opacity">
-            <English>Opacity</English>
-            <Czech>Viditelnost</Czech>
-            <French>Opacité</French>
-            <German>Opazität</German>
-            <Korean>투명도</Korean>
-            <Japanese>透明度</Japanese>
-            <Polish>Nieprzejrzystość</Polish>
-            <Portuguese>Opacidade</Portuguese>
-            <Spanish>Opacidad</Spanish>
-            <Russian>Затемнение</Russian>
+            <English>Radar Opacity</English>
+            <German>Radaropazität</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_opacity">
+            <English>Icon Opacity</English>
+            <German>Iconopazität</German>
         </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>

@@ -21,8 +21,8 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
     private _player = [] call CBA_fnc_currentUnit;
 
 
-    private _targetSide = side group _target;
-    private _playerSide = side group _player;
+    private _targetSide = _target getVariable [QGVAR(side), side group _target];
+    private _playerSide = _player getVariable [QGVAR(side), side group _player];
     private _areFriendly = if (GVAR(useSideIsFriendly)) then {
         [_playerSide, _targetSide] call BIS_fnc_sideIsFriendly;
     } else {

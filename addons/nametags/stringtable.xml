@@ -13,9 +13,6 @@
         <Key ID="STR_dui_nametags_enableOcclusion_desc">
             <English>When Occlusion is Enabled the Nametags check how Visible a Unit is and Reduces based in that the Transparency of the Nametag</English>
         </Key>
-        <Key ID="STR_dui_nametags_enableOcclusion_desc">
-            <English>When Occlusion is Enabled the Nametags check how Visible a Unit is and Reduces based in that the Transparency of the Nametag</English>
-        </Key>
         <Key ID="STR_dui_nametags_fadeInTime">
             <English>Fade In Time</English>
         </Key>

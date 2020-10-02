@@ -291,6 +291,24 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(icon_opacity)
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_icon_opacity", ""]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[0, 1, 1, 2]
+    ,false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(icon_opacity_no_player)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_compass_icon_opacity_no_player", ""]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_fnc_addSetting;
+
+[
     "diwako_dui_distanceWarning"
     ,"SLIDER"
     ,[localize "STR_dui_compass_warning", localize "STR_dui_compass_warning_desc"]

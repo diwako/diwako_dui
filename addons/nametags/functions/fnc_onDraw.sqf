@@ -39,7 +39,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
             };
             private _alive = alive _target;
             if (GVAR(showUnconAsDead) && _alive) then {
-                _alive = (lifeState _target) != "INCAPACITATED";
+                _alive = (lifeState _target) isNotEqualTo "INCAPACITATED";
             };
             if !(_alive) then {
                 _color = EGVAR(main,colors_custom) getVariable ["dead", "#333333"];

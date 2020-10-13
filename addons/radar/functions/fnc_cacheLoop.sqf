@@ -25,7 +25,7 @@ if (GVAR(group_by_vehicle)) then {
     private _dummyList = [];
     private _filteredGrp = [];
     {
-        if (_dummyList pushBackUnique (vehicle _x) != -1) then {
+        if (_dummyList pushBackUnique (vehicle _x) isNotEqualTo -1) then {
             _filteredGrp pushBack _x;
         };
     } forEach _newGrp;
@@ -257,7 +257,7 @@ private _circleRange = diwako_dui_compassRange;
 
     private _unit = _x;
     private _selected = "";
-    if ((count _selectedUnits) > 0 && {_unit != _player}) then {
+    if ((count _selectedUnits) > 0 && {_unit isNotEqualTo _player}) then {
         private _curName = vehicleVarName _unit;
         _unit setVehicleVarName "";
         private _defaultIdent = str _unit;
@@ -268,9 +268,9 @@ private _circleRange = diwako_dui_compassRange;
         } else {
             ""
         };
-        _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x == _unit} > -1)), _num];
+        _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x isEqualTo _unit} > -1)), _num];
     };
-    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player isEqualTo (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
     private _inrange = (_player distance2D _unit) < _circleRange;
     private _isSpeaking = _unit getVariable [QGVAR(isSpeaking), 0];
     private _speakingIcon = _speakingArray select _isSpeaking;
@@ -280,7 +280,7 @@ private _circleRange = diwako_dui_compassRange;
             _speakingIcon
         ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange}}}),
         ""
-    ] select (_buddy != "" && {_onlyBuddyIcon});
+    ] select (_buddy isNotEqualTo "" && {_onlyBuddyIcon});
     private _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1

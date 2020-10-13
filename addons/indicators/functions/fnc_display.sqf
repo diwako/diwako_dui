@@ -76,7 +76,7 @@ private _sizeFinal = 0;
 
                 drawIcon3D [_x getVariable [QGVAR(outerIcon), ""], _color, _iconPos, _sizeFinal, _sizeFinal, 0];
                 _secondIcon = _x getVariable [QGVAR(innerIcon), ""];
-                if (_secondIcon != "" && {_vehTarget isEqualTo _x}) then {
+                if (_secondIcon isNotEqualTo "" && {_vehTarget isEqualTo _x}) then {
                     drawIcon3D [_secondIcon, _color, _iconPos, _sizeFinal, _sizeFinal, 0];
                 };
             };

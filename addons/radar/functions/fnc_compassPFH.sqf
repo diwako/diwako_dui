@@ -35,10 +35,10 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
 
     _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];
 
-    if (_hasCompass && {diwako_dui_enable_compass_dir == 2 || {diwako_dui_enable_compass_dir == 1 && {!(isNull objectParent _player)}}}) then {
+    if (_hasCompass && {diwako_dui_enable_compass_dir isEqualTo 2 || {diwako_dui_enable_compass_dir isEqualTo 1 && {!(isNull objectParent _player)}}}) then {
         private _dirCalc = (round _dir) mod 360;
         private _maxDegrees = GVAR(maxDegrees);
-        if (_maxDegrees != 360) then {
+        if (_maxDegrees isNotEqualTo 360) then {
             _dirCalc = (round (linearConversion [0, 360, _dir, 0, _maxDegrees, true])) mod _maxDegrees;
         };
         if (_maxDegrees isNotEqualTo 6400 && {diwako_dui_dir_showMildot}) then {

@@ -10,7 +10,7 @@ player setVariable [QGVAR(name), name player];
 player setVariable [QGVAR(groupName), groupID (group player)];
 private _rank = rank player;
 private _index = (GVAR(RankNames) select 0) find _rank;
-if (_index != -1) then {
+if (_index isNotEqualTo -1) then {
     _rank = (GVAR(RankNames) select 1) select _index;
 };
 player setVariable [QGVAR(rank), _rank];

@@ -49,7 +49,7 @@ private _speakingArray = ["", EGVAR(main,speakingIcon), EGVAR(main,speakingRadio
 } forEach _group;
 
 private _specialTrack = missionNamespace getVariable ["diwako_dui_special_track", []];
-if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
+if (_specialTrack isEqualType [] && {_specialTrack isNotEqualTo []}) then {
     private _toTrack = [];
     private _vehNamespace = GVAR(vehicleNamespace);
     {
@@ -68,7 +68,7 @@ if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
                             _picture = getText (configfile >> "CfgVehicleIcons" >> _picture);
                         } else {
                             private _found = (toLower _picture) find ".paa";
-                            if (_found isEqualTo -1 || {!(((count _picture) - 4) isEqualTo _found)}) then {
+                            if (_found isEqualTo -1 || {((count _picture) - 4) isNotEqualTo _found}) then {
                                 _picture = "a3\ui_f\data\Map\VehicleIcons\iconObject_ca.paa";
                             };
                         };
@@ -94,7 +94,7 @@ if (diwako_dui_enable_compass) then {
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
     private _compass = [_player] call FUNC(getCompass);
-    _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {!(_compass isEqualTo "")}));
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {_compass isNotEqualTo ""}));
 
     if !(_compass isEqualTo "") then {
         GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];

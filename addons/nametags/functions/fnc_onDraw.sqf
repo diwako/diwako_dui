@@ -4,7 +4,7 @@ if (isGamePaused || !isGameFocused) exitWith {};
 (_this select 0) params ["_ctrl"];
 if (isNull _ctrl) exitWith {};
 private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
-if !((ctrlPosition _ctrl) isEqualTo _pos) then {
+if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
     _ctrl ctrlSetPosition _pos;
 };
 

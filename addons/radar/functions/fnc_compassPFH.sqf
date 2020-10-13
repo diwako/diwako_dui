@@ -31,7 +31,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
     private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
     private _dir = _camDirVec call CBA_fnc_vectDir;
     // private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
-    private _hasCompass = !(([_player] call FUNC(getCompass)) isEqualTo "");
+    private _hasCompass = ([_player] call FUNC(getCompass)) isNotEqualTo "";
 
     _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];
 
@@ -41,7 +41,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
         if (_maxDegrees != 360) then {
             _dirCalc = (round (linearConversion [0, 360, _dir, 0, _maxDegrees, true])) mod _maxDegrees;
         };
-        if (!(_maxDegrees isEqualTo 6400) && {diwako_dui_dir_showMildot}) then {
+        if (_maxDegrees isNotEqualTo 6400 && {diwako_dui_dir_showMildot}) then {
             _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%3' shadow='2' shadowColor='#000000'>%1 | %2</t>", [_dirCalc, [1,3] select GVAR(leadingZeroes)] call CBA_fnc_formatNumber, [round (_dir / 0.056250), [1,4] select GVAR(leadingZeroes)] call CBA_fnc_formatNumber, GVAR(bearing_size_calc)];
         } else {
             _dirCtrl ctrlSetStructuredText parseText format ["<t align='center' size='%2' shadow='2' shadowColor='#000000'>%1</t>", [_dirCalc, [1,3] select GVAR(leadingZeroes)] call CBA_fnc_formatNumber, GVAR(bearing_size_calc)];
@@ -64,7 +64,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
     };
     _ctrlGrp setVariable ["diwako_dui_ctrlArr", _usedCtrls];
 
-    if !(_pointers isEqualTo []) then {
+    if (_pointers isNotEqualTo []) then {
         for "_i" from (count _pointers) -1 to 0 step -1 do {
             (_pointers select _i) params [["_pointer", controlNull], "_pointerPos"];
             if (isNull _pointer) then {

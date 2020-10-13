@@ -30,7 +30,7 @@ private _groups = [];
 private _grp = [];
 {
     _grp = units _x;
-    if !(_grp isEqualTo (_x getVariable [QGVAR(syncGroup), []])) then {
+    if (_grp isNotEqualTo (_x getVariable [QGVAR(syncGroup), []])) then {
         _x setVariable [QGVAR(syncGroup), _grp, true];
     };
 } forEach _groups;

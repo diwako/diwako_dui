@@ -16,7 +16,7 @@ private _colorNameSpace = missionNamespace getVariable format[QGVAR(colors_%1), 
 } forEach (units ([] call CBA_fnc_currentUnit));
 
 private _specialTrack = missionNamespace getVariable ["diwako_dui_special_track", []];
-if (_specialTrack isEqualType [] && {!(_specialTrack isEqualTo [])}) then {
+if (_specialTrack isEqualType [] && {_specialTrack isNotEqualTo []}) then {
     private _trackingcolor = GVAR(trackingColor) select [0, 3];
     {
         _x setVariable [QGVAR(compass_color), _trackingcolor];

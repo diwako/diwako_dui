@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="dui">
+        <Key ID="STR_dui_mod">
+            <English>DUI - Squad Radar</English>
+            <Chinesesimp>DUI - 小队雷达</Chinesesimp>
+            <Chinese>DUI - 小隊雷達</Chinese>
+            <French>DUI - Squad Radar</French>
+            <Czech>DUI - Squad Radar</Czech>
+            <German>DUI - Squad Radar</German>
+            <Korean>DUI - Squad Radar</Korean>
+            <Japanese>DUI - スクワッド レーダー</Japanese>
+            <Polish>DUI - Radar drużyny</Polish>
+            <Portuguese>DUI - Radar do Esquadrão</Portuguese>
+            <Spanish>DUI - Radar De Escuadron</Spanish>
+            <Russian>DUI - Сквад-Радар</Russian>
+        </Key>
+        <Key ID="STR_dui_font">
+            <English>Font</English>
+            <Chinesesimp>字体</Chinesesimp>
+            <Chinese>字體</Chinese>
+            <Czech>Font</Czech>
+            <French>Police de charactère</French>
+            <German>Schriftart</German>
+            <Korean>폰트</Korean>
+            <Japanese>フォント</Japanese>
+            <Polish>Font</Polish>
+            <Portuguese>Fonte</Portuguese>
+            <Spanish>Fuente</Spanish>
+            <Russian>Шрифт</Russian>
+        </Key>
+        <Key ID="STR_dui_font_desc">
+            <English>Which font should be used?</English>
+            <Chinesesimp>使用哪种字体</Chinesesimp>
+            <Chinese>使用哪種字體</Chinese>
+            <Czech>Který font by se měl použít.</Czech>
+            <French>Quel police de charactère doit être utilisé?</French>
+            <German>Welche Schriftart soll verwendet werden?</German>
+            <Korean>사용하는 폰트를 설정합니다.</Korean>
+            <Japanese>使用するフォントを設定します。</Japanese>
+            <Polish>Który font użyć?</Polish>
+            <Portuguese>Qual fonte será usada?</Portuguese>
+            <Spanish>¿Que fuente debe ser usada?</Spanish>
+            <Russian>Какой шрифт следует использовать?</Russian>
+        </Key>
+        <Key ID="STR_dui_icon">
+            <English>Icon Style</English>
+            <Chinesesimp>图标风格</Chinesesimp>
+            <Chinese>圖標風格</Chinese>
+            <Czech>Styl ikon</Czech>
+            <French>Style d'icône</French>
+            <German>Icon Style</German>
+            <Korean>아이콘 스타일</Korean>
+            <Japanese>アイコンのスタイル</Japanese>
+            <Polish>Styl ikony</Polish>
+            <Portuguese>Estilo de Ícones</Portuguese>
+            <Spanish>Estilo de Icono</Spanish>
+            <Russian>Стиль иконок</Russian>
+        </Key>
+        <Key ID="STR_dui_icon_desc">
+            <English>Which icon style should be used?</English>
+            <Chinesesimp>要使用哪种图标风格</Chinesesimp>
+            <Chinese>要使用哪種圖標風格</Chinese>
+            <Czech>Který styl ikon by se měl použít.</Czech>
+            <French>Quel style d'icône doit être utilisé?</French>
+            <German>Welcher Icon Style soll genutzt werden?</German>
+            <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
+            <Japanese>使用するアイコン スタイルを設定します。</Japanese>
+            <Polish>Jaki styl ikony powinien być użyty?</Polish>
+            <Portuguese>Qual estilo de ícones será usado?</Portuguese>
+            <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
+            <Russian>Какой стиль следует использовать?</Russian>
+        </Key>
+        <Key ID="STR_dui_color">
+            <English>Color Scheme</English>
+            <Chinesesimp>颜色方案</Chinesesimp>
+            <Chinese>顔色方案</Chinese>
+            <Czech>Barevné schéma</Czech>
+            <French>Schéma de couleur</French>
+            <German>Farbschema</German>
+            <Korean>색상 테마</Korean>
+            <Japanese>カラー テーマ</Japanese>
+            <Polish>Schemat kolorów</Polish>
+            <Portuguese>Esquema de cores</Portuguese>
+            <Spanish>Esquema de colores</Spanish>
+            <Russian>Цветовая гамма</Russian>
+        </Key>
+        <Key ID="STR_dui_color_desc">
+            <English>Which color scheme should be used?</English>
+            <Chinesesimp>要使用哪种颜色方案</Chinesesimp>
+            <Chinese>要使用哪種顔色方案</Chinese>
+            <Czech>Které barevné schéma by se mělo použít.</Czech>
+            <French>Quel schéma de couleur doit être utilisé?</French>
+            <German>Welches Farbschema soll verwendet werden?</German>
+            <Korean>사용하는 색상 테마를 설정합니다.</Korean>
+            <Japanese>使用するカラー テーマを設定します。</Japanese>
+            <Polish>Jaki schematu kolorów powinien być użyty?</Polish>
+            <Portuguese>Qual esquema de cores será usado?</Portuguese>
+            <Spanish>¿Que esquema de colores debe ser usado?</Spanish>
+            <Russian>Какую цветовую гамму следует использовать?</Russian>
+        </Key>
+        <Key ID="STR_dui_show_compass">
+            <English>Show Compass</English>
+            <Chinesesimp>显示罗盘</Chinesesimp>
+            <Chinese>顯示羅盤</Chinese>
+            <Czech>Ukázat kompas</Czech>
+            <French>Afficher la boussole</French>
+            <German>Kompass anzeigen</German>
+            <Korean>나침반 표시</Korean>
+            <Japanese>コンパスを表示</Japanese>
+            <Polish>Pokaż kompas</Polish>
+            <Portuguese>Mostrar Bússola</Portuguese>
+            <Spanish>Mostrar Brújula</Spanish>
+            <Russian>Показать компас</Russian>
+        </Key>
+        <Key ID="STR_dui_show_compass_desc">
+            <English>Shows compass and unit markers on it</English>
+            <Chinesesimp>显示罗盘和上面的单位标识</Chinesesimp>
+            <Chinese>顯示羅盤和上面的單位標識</Chinese>
+            <Czech>Ukáže kompas a značky jednotek</Czech>
+            <French>Afficher la boussole et marqueurs d'unité dessus</French>
+            <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
+            <Korean>나침반과 유닛마커를 표시합니다.</Korean>
+            <Japanese>コンパスとユニット マーカーを表示します。</Japanese>
+            <Polish>Pokaż na kompasie znaczniki i jednostki</Polish>
+            <Portuguese>Mostra a bússola e os ícones de unidades nela</Portuguese>
+            <Spanish>Mostrar la brújula y los iconos de unidades en ella </Spanish>
+            <Russian>Показать компас и маркер игрока на нем</Russian>
+        </Key>
+        <Key ID="STR_dui_show_dir">
+            <English>Show Bearing</English>
+            <Chinesesimp>显示方位角</Chinesesimp>
+            <Chinese>顯示方位角</Chinese>
+            <Czech>Ukázat azimut</Czech>
+            <French>Afficher la direction</French>
+            <German>Richtung anzeigen</German>
+            <Korean>방위각 표시</Korean>
+            <Japanese>方位を表示</Japanese>
+            <Polish>Pokaż azymut</Polish>
+            <Portuguese>Mostrar Orientação</Portuguese>
+            <Spanish>Mostrar Dirección</Spanish>
+            <Russian>Показывать азимут</Russian>
+        </Key>
+        <Key ID="STR_dui_show_dir_desc">
+            <English>Shows bearing above the compass, compass itself needs to be enabled!</English>
+            <Chinesesimp>在罗盘上方显示方位角，罗盘本身需要被启用！</Chinesesimp>
+            <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啓用！</Chinese>
+            <Czech>Ukáže azimut nad kompasem. (Kompas sám musí být zapnutý)</Czech>
+            <French>Afficher la direction au-dessus de la boussole (la boussole doit ètre activé!) (</French>
+            <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
+            <Korean>나침반 위에 방위각을 표시합니다. 사용하려면 나침반을 가지고 있어야 합니다! </Korean>
+            <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
+            <Polish>Pokazuje azymut nad kompasem, sam kompas musi być włączony</Polish>
+            <Portuguese>Mostra a orientação acima da bússola, esta precisa estar ativada!</Portuguese>
+            <Spanish>Mostrar la dirección encima de la brújula, la brújula necesita estar activada!</Spanish>
+            <Russian>Показывает азимут над компасом, сам компас должен быть включен!</Russian>
+        </Key>
+        <Key ID="STR_dui_show_milrad">
+            <English>Show bearing also in milradians</English>
+            <Chinesesimp>同样以密位为单位显示方位角</Chinesesimp>
+            <Chinese>同樣以密位爲單位顯示方位角</Chinese>
+            <Czech>Ukázat azimut i v miliradiánech</Czech>
+            <French>Afficher la direction aussi en milliradiens</French>
+            <German>Richtung auch in Milradians anzeigen</German>
+            <Korean>방위각을 밀라디안으로 표시</Korean>
+            <Japanese>方位をミル ラジアンで表示</Japanese>
+            <Polish>Pokaż azymut również w miliradianach</Polish>
+            <Portuguese>Mostrar a orientação também em mil angular</Portuguese>
+            <Spanish>Mostrar la dirección tambien en milradianos</Spanish>
+            <Russian>Показывать азимут еще и в миллирадианах</Russian>
+        </Key>
+        <Key ID="STR_dui_show_milrad_desc">
+            <English>Shows milradians next to the regular bearing</English>
+            <Chinesesimp>在方位角旁边显示密位</Chinesesimp>
+            <Chinese>在方位角旁邊顯示密位</Chinese>
+            <Czech>Ukáže miliradiány vedle normálního azimutu.</Czech>
+            <French>Afficher les milliradiens à côté de la direction régulière</French>
+            <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
+            <Japanese>方位の隣にミル ラジアンを表示します。</Japanese>
+            <Polish>Pokaż miliradiany obok regularnego azymutu</Polish>
+            <Portuguese>Mostrar mil angular próximo à orientação normal</Portuguese>
+            <Spanish>Mostrar milradianos alado de la dirección normal</Spanish>
+            <Russian>Показывает миллирадианы рядом с обычным азимутом</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_style">
+            <English>Compass Style</English>
+            <Chinesesimp>罗盘风格</Chinesesimp>
+            <Chinese>羅盤風格</Chinese>
+            <Czech>Styl kompasu</Czech>
+            <French>Style de boussole</French>
+            <German>Kompassstyle</German>
+            <Korean>나침반 스타일</Korean>
+            <Japanese>コンパスのスタイル</Japanese>
+            <Polish>Styl kompasu</Polish>
+            <Portuguese>Estilo de Bússola</Portuguese>
+            <Spanish>Estilo de Brújula</Spanish>
+            <Russian>Дизайн компаса</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_style_desc">
+            <English>Which compass style should be used?</English>
+            <Chinesesimp>要使用哪种罗盘风格</Chinesesimp>
+            <Chinese>要使用哪種羅盤風格</Chinese>
+            <Czech>Který styl kompasu by se měl použít.</Czech>
+            <French>Quel style de boussole doit être utilisé?</French>
+            <German>Welcher Kompassstyle soll verwendet werden?</German>
+            <Korean>사용하는 나침반 스타일을 설정합니다.</Korean>
+            <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
+            <Polish>Jaki styl kompasu powinien byc użyty?</Polish>
+            <Portuguese>Qual estilo de bússola será usado?</Portuguese>
+            <Spanish>¿Que estilo de brújula debe ser usada?</Spanish>
+            <Russian>Какой компас следует использовать?</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_range">
+            <English>Compass Range</English>
+            <Chinesesimp>罗盘距离设置</Chinesesimp>
+            <Chinese>羅盤距離設置</Chinese>
+            <Czech>Dosah kompasu</Czech>
+            <French>Portée de la Boussole</French>
+            <German>Kompassreichweite</German>
+            <Korean>나침반 범위</Korean>
+            <Japanese>コンパスの範囲</Japanese>
+            <Polish>Zasięg kompasu</Polish>
+            <Portuguese>Distância da Bússola</Portuguese>
+            <Spanish>Distancia de la Brújula</Spanish>
+            <Russian>Дистанция компаса</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_range_desc">
+            <English>How far should players see units in the same group in meters?</English>
+            <Chinesesimp>玩家看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>玩家看到同一團隊中的其他單位的最遠距離（米）</Chinese>
+            <Czech>Na jak daleko by se měly zobrazovat jednotky ve stejné skupině? (v metrech)</Czech>
+            <French>Jusqu'où les joueurs doivent voir les unités du même groupe en mètres?</French>
+            <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
+            <Korean>같은 그룹내에 유닛이 보이는 거리를 미터 단위로 설정합니다.</Korean>
+            <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
+            <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie? (w metrach)</Polish>
+            <Portuguese>Qual distância em metros os jogadores verão unidades do mesmo grupo?</Portuguese>
+            <Spanish>¿Qué tan lejos deben los jugadores ver unidades en el mismo grupo en metros?</Spanish>
+            <Russian>Как далеко игроки должны видеть юниты в одной группе в метрах?</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_vehicle_enabled">
+            <English>Allow Vehicle compass</English>
+            <Chinesesimp>允许载具罗盘</Chinesesimp>
+            <Chinese>允許載具羅盤</Chinese>
+            <Russian>Разрешить компас для техники</Russian>
+            <German>Fahrzeugkompass zulassen</German>
+        </Key>
+        <Key ID="STR_dui_compass_vehicle_enabled_desc">
+            <English>Allow compass with greater range for vehicle crew</English>
+            <Chinesesimp>允许载具罗盘有更远的显示距离</Chinesesimp>
+            <Chinese>允許載具羅盤有更遠的顯示距離</Chinese>
+            <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
+            <German>Kompass mit größerer Reichweite für die Fahrzeugmannschaft erlauben</German>
+        </Key>
+        <Key ID="STR_dui_compass_crew_range">
+            <English>Vehicle Compass range</English>
+            <Chinesesimp>载具罗盘距离设置</Chinesesimp>
+            <Chinese>載具羅盤距離設置</Chinese>
+            <Russian>Дистанция компаса для техники</Russian>
+            <German>Reichweite des Fahrzeugkompasses</German>
+        </Key>
+        <Key ID="STR_dui_compass_crew_range_desc">
+            <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
+            <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
+            <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
+            <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
+        </Key>
+        <Key ID="STR_dui_compass_refresh">
+            <English>Refresh Rate</English>
+            <Chinesesimp>刷新率</Chinesesimp>
+            <Chinese>刷新率</Chinese>
+            <Czech>Obnovovací frekvence</Czech>
+            <French>Taux de rafraichissement</French>
+            <German>Aktualisierungsrate</German>
+            <Korean>새로고침 빈도</Korean>
+            <Japanese>リフレッシュ レート</Japanese>
+            <Polish>Częstotliwość odświeżania kompasu</Polish>
+            <Portuguese>Taxa de atualização</Portuguese>
+            <Spanish>Frecuencia de actualización</Spanish>
+            <Russian>Частота обновления</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_refresh_desc">
+            <English>How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!</English>
+            <Chinesesimp>罗盘的刷新速度，值以秒为单位，0代表每帧都会刷新！主机焦糊警告！</Chinesesimp>
+            <Chinese>羅盤的刷新速度，值以秒爲單位，0代表每幀都會刷新！主機焦糊警告！</Chinese>
+            <Czech>Jak často by se měl kompas renderovat? Hodnota 0 znamená každý frame - nastavte na vlastní nebezpečí.</Czech>
+            <French>À quelle vitesse doit être le rendu de la boussole, Valeur en seconds, 0 veut dire chaque frame! Définisé à votre péril!</French>
+            <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
+            <Korean>나침반의 새로고침 빈도를 설정합니다. 값은 초 단위이며, 0은 각 프레임을 의미합니다! 위험 감수!</Korean>
+            <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
+            <Polish>Jak szybko powinien się wyświetlać kompas? Wartość w sekundach, 0 oznacza każdą klatkę! Ustaw na własne ryzyko!</Polish>
+            <Portuguese>O quão rápido a bússola será atualizada? Valor em segundos, 0 significa a cada quadro! Mude a seu próprio risco!</Portuguese>
+            <Spanish>¿Qué tan rápido debe refrescarse la brújula? Valor en segundos, 0 significa cada cuadro! Establecer a su propio riesgo!</Spanish>
+            <Russian>Как быстро должен рендерить компас? Значение в секундах, 0 означает каждый кадр! Установите на свой страх и риск!</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion">
+            <English>Enable Occlusion</English>
+            <Chinesesimp>启用遮挡</Chinesesimp>
+            <Chinese>啓用遮擋</Chinese>
+            <Czech>Zapnout okluzi</Czech>
+            <French>Activé l'Occlusion</French>
+            <German>Okklusion anschalten</German>
+            <Korean>오클루전 사용</Korean>
+            <Japanese>オクルージョンを有効化</Japanese>
+            <Polish>Włączyć okluzje?</Polish>
+            <Portuguese>Habilitar oclusão</Portuguese>
+            <Spanish>Habilitar la oclusión</Spanish>
+            <Russian>Включить оклюзию</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_desc">
+            <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
+            <Chinesesimp>如果玩家无法看到一个单位，该单位将慢慢在罗盘上消失，直到该单位重新出现在玩家视野中</Chinesesimp>
+            <Chinese>如果玩家無法看到一個單位，該單位將慢慢在羅盤上消失，直到該單位重新出現在玩家視野中</Chinese>
+            <Czech>Pokud jednotka není vidět, postupně zmizí z kompasu.</Czech>
+            <French>Si un joueur ne peut pas voir une unité, elle disparaîtra lentement de la boussole jusqu'à qu'elle soit vue de nouveau</French>
+            <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
+            <Korean>만약 플레이어가 유닛을 발견하지 않으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
+            <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
+            <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie ona z kompasu, dopóki nie będzie widziana ponownie.</Polish>
+            <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
+            <Spanish>Si un jugador no puede ver una unidad, desaparecerá lentamente de la brújula hasta que se vuelva a ver.</Spanish>
+            <Russian>Если игрок не видит юнит, он медленно исчезает с компаса, пока его не увидят снова.</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist">
+            <English>Show Names</English>
+            <Chinesesimp>显示名称</Chinesesimp>
+            <Chinese>顯示名稱</Chinese>
+            <Czech>Ukázat jména</Czech>
+            <French>Afficher les noms</French>
+            <German>Namen anzeigen</German>
+            <Korean>이름 표시</Korean>
+            <Japanese>名前を表示</Japanese>
+            <Polish>Pokaż imiona</Polish>
+            <Portuguese>Mostrar Nomes</Portuguese>
+            <Spanish>Mostrar Nombres</Spanish>
+            <Russian>Показать имена</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_desc">
+            <English>Shows a list of names of units currently in the same group</English>
+            <Chinesesimp>显示在当前同一团队内的单位的名单列表</Chinesesimp>
+            <Chinese>顯示在當前同一團隊內的單位的名單列表</Chinese>
+            <Czech>Ukáže seznam jmen jednotek ve stejné skupině.</Czech>
+            <French>Afficher une liste des noms des unités actuellement dans le même groupe</French>
+            <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
+            <Korean>같은 그룹내에 있는 유닛의 이름을 목록 형식으로 표시합니다.</Korean>
+            <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
+            <Polish>Wyświetla listę imion jednostek znajdujących się obecnie w tej samej grupie.</Polish>
+            <Portuguese>Mostra uma lista de nomes das unidades presentes no seu grupo</Portuguese>
+            <Spanish>Muestra una lista de nombres de unidades actualmente en el mismo grupo.</Spanish>
+            <Russian>Показывает список имен юнитов, которые в настоящее время находятся в одной группе</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_buddy">
+            <English>Show Only Buddy Icon</English>
+            <Chinesesimp>只显示搭档的图标</Chinesesimp>
+            <Chinese>只顯示搭檔的圖標</Chinese>
+            <Czech>Ukázat pouze buddy ikonu</Czech>
+            <French>Afficher seulement l'icone du buddy</French>
+            <German>Nur Buddy Icon anzeigen</German>
+            <Korean>친구 아이콘만 표시</Korean>
+            <Japanese>バディ アイコンのみ表示</Japanese>
+            <Polish>Pokaż tylko ikonę dwójki</Polish>
+            <Portuguese>Mostrar apenas ícone de Parceiro</Portuguese>
+            <Spanish>Mostrar solo el icono de amigo</Spanish>
+            <Russian>Показать только иконки друзей</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_buddy_desc">
+            <English>Shows only the buddy icon in the name list instead of both, buddy and unit class</English>
+            <Chinesesimp>只在名单列表中显示搭档图标</Chinesesimp>
+            <Chinese>只在名單列表中顯示搭檔圖標</Chinese>
+            <Czech>Ukáže v seznamu jmen pouze buddy ikonu.</Czech>
+            <French>Afficher seulement l'icone du buddy dans la liste de nom que les deux (buddy et classe d'unité)</French>
+            <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
+            <Korean>이름 목록에서 친구 아이콘만 표시합니다. </Korean>
+            <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
+            <Polish>Wyświetla tylko ikonę dwójki na liście imion zamiast obu, dwójki i klasy jednostki</Polish>
+            <Portuguese>Mostra apenas o ícone de parceiro na lista de nomes além de ambos, parceiro e classe de unidade</Portuguese>
+            <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
+            <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_size">
+            <English>Text Size</English>
+            <Chinesesimp>文字大小</Chinesesimp>
+            <Chinese>文字大小</Chinese>
+            <Czech>Velikost textu</Czech>
+            <French>Taille du texte</French>
+            <German>Textgröße</German>
+            <Korean>이름 크기</Korean>
+            <Japanese>テキストの大きさ</Japanese>
+            <Polish>Rozmiar Tekstu</Polish>
+            <Portuguese>Tamanho de Texto</Portuguese>
+            <Spanish>Tamaño del Texto</Spanish>
+            <Russian>Размер текста</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_size_desc">
+            <English>Size of the names, smaller means more in one column</English>
+            <Chinesesimp>名字字体大小，更小意味着在一列中显示更多人</Chinesesimp>
+            <Chinese>名字字體大小，更小意味著在一列中顯示更多人</Chinese>
+            <Czech>Velikost textu jmen.</Czech>
+            <French>Taille des noms (plus dans une colonne si plus petit)</French>
+            <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
+            <Korean>이름 크기를 설정합니다. 작을수록 한 폭에 많은 이름이 들어가게 됩니다.</Korean>
+            <Japanese>名前の大きさを設定します。小さければ一つの幅にたくさんの名前が収まります。</Japanese>
+            <Polish>Rozmiar imion, mniejszy rozmiar oznacza więcej w jednej kolumnie</Polish>
+            <Portuguese>Tamanho dos nomes, menor significa mais nomes em uma coluna</Portuguese>
+            <Spanish>Tamaño de los nombres, menor significa más nombres en una columna.</Spanish>
+            <Russian>Размер имен, меньше означает больше в одном столбце</Russian>
+        </Key>
+        <Key ID="STR_dui_key_toggle">
+            <English>Toggle UI on and off</English>
+            <Chinesesimp>切换UI开关</Chinesesimp>
+            <Chinese>切換UI開關</Chinese>
+            <Czech>Zapnout/vypnout UI</Czech>
+            <French>Activé/désactivé l'IU</French>
+            <German>UI an- und ausschalten</German>
+            <Korean>UI 전환 켜기/끄기</Korean>
+            <Japanese>UI 切り替えのオン/オフ</Japanese>
+            <Polish>Włącz lub wyłącz interfejs użytkownika</Polish>
+            <Portuguese>Ativa ou desativa a Interface</Portuguese>
+            <Spanish>Activar o desactivar la interfaz de usuario</Spanish>
+            <Russian>Включение и выключение пользовательского интерфейса</Russian>
+        </Key>
+        <Key ID="STR_dui_key_increase_range">
+            <English>Increase Compass Range</English>
+            <Chinesesimp>增加罗盘距离</Chinesesimp>
+            <Chinese>增加羅盤距離</Chinese>
+            <Czech>Zvýšit dosah kompasu</Czech>
+            <French>Augmenter la porté de la boussole</French>
+            <German>Kompassreichweite erhöhen</German>
+            <Korean>나침반 범위 증가</Korean>
+            <Japanese>コンパスの範囲を増加</Japanese>
+            <Polish>Zwiększ zasięg kompasu</Polish>
+            <Portuguese>Aumenta Distância da bússola</Portuguese>
+            <Spanish>Aumentar el alcance de la brújula</Spanish>
+            <Russian>Увеличение дальности компаса</Russian>
+        </Key>
+        <Key ID="STR_dui_key_decrease_range">
+            <English>Decrease Compass Range</English>
+            <Chinesesimp>减少罗盘距离</Chinesesimp>
+            <Chinese>減少羅盤距離</Chinese>
+            <Czech>Snížit dosah kompasu</Czech>
+            <French>Diminuer la porté de la boussole</French>
+            <German>Kompassreichweite verkleinern</German>
+            <Korean>나침반 범위 감소</Korean>
+            <Japanese>コンパスの範囲を減少</Japanese>
+            <Polish>Zmniejsz zasięg kompasu</Polish>
+            <Portuguese>Diminui Distância da Bússola</Portuguese>
+            <Spanish>Disminuir el alcance de la brújula</Spanish>
+            <Russian>Уменьшение дальности компаса</Russian>
+        </Key>
+        <Key ID="STR_dui_key_rank">
+            <English>Hold to show ranks</English>
+            <Chinesesimp>按住以显示军衔</Chinesesimp>
+            <Chinese>按住以顯示軍銜</Chinese>
+            <Czech>Podržet pro ukázání hodnosti</Czech>
+            <French>Maintener pour Afficher les grades</French>
+            <German>Taste halten um Ränge anzuzeigen</German>
+            <Korean>누른상태로 계급 표시</Korean>
+            <Japanese>長押しで階級を表示</Japanese>
+            <Polish>Przytrzymaj, aby pokazać stopnie wojskowe.</Polish>
+            <Portuguese>Segure para mostrar patentes</Portuguese>
+            <Spanish>Mantener para mostrar los rangos</Spanish>
+            <Russian>Держать, чтобы увидеть звания</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_compass">
+            <English>Compass</English>
+            <Chinesesimp>罗盘</Chinesesimp>
+            <Chinese>羅盤</Chinese>
+            <Czech>Kompas</Czech>
+            <French>Boussole</French>
+            <German>Kompass</German>
+            <Korean>나침반 설정</Korean>
+            <Japanese>コンパス</Japanese>
+            <Polish>Kompas</Polish>
+            <Portuguese>Bússola</Portuguese>
+            <Spanish>Brújula</Spanish>
+            <Russian>Компас</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_compass_desc">
+            <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <Chinesesimp>罗盘的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>羅盤的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <Korean>나침반을 드래그 앤 드롭하여 위치를 변경할 수 있습니다. 또 CBA설정으로 위치를 초기화할 수 있습니다!</Korean>
+            <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
+            <Polish>Kompas, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
+            <Portuguese>Elemento de Interface da Bússola. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de extensão se algo der errado!</Portuguese>
+            <Spanish>Elemento de la interfaz de usuario de la brújula, arrástrelo y suéltelo para reposicionarlo.  ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
+            <Russian>UI элемент компаса, перетащите его, чтобы изменить положение. Вы можете сбросить позицию в настройках CBA, если что-то пойдет не так!</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_namelist">
+            <English>Name List</English>
+            <Chinesesimp>名单列表</Chinesesimp>
+            <Chinese>名單列表</Chinese>
+            <Czech>Seznam jmen</Czech>
+            <French>Liste des noms</French>
+            <German>Namesliste</German>
+            <Korean>이름 설정</Korean>
+            <Japanese>名前リスト</Japanese>
+            <Polish>Lista imion</Polish>
+            <Portuguese>Lista de Nomes</Portuguese>
+            <Spanish>Lista de Nombres</Spanish>
+            <Russian>Список имен</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_namelist_desc">
+            <English>Name List UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <Chinesesimp>名单列表的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>名單列表的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <Korean>이름 목록을 드래그 앤 드롭하여 위치를 변경 할 수 있습니다. 또 CBA설정으로 위치를 리셋할 수 있습니다!</Korean>
+            <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
+            <Polish>Lista imion, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
+            <Portuguese>Elemento de Interface da Lista de Nomes. Arraste e solte para a posição desejada. Você pode restaurar a posição original nas configurações de estensão se algo der errado!</Portuguese>
+            <Spanish>Nombre de la lista de elementos de la interfaz de usuario, arrástrelo y suéltelo para reposicionarlo. ¡Puedes restablecer la posición en la configuración de CBA si algo sale mal!</Spanish>
+            <Russian>UI элемент списка имен, перетащите его, чтобы изменить положение. Вы можете сбросить позицию в настройках CBA, если что-то пойдет не так!</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_general">
+            <English>General Settings</English>
+            <Chinesesimp>一般设置</Chinesesimp>
+            <Chinese>一般設置</Chinese>
+            <Czech>Obecná nastavení</Czech>
+            <French>Paramètres Généraux</French>
+            <German>Allgmeine Einstellungen</German>
+            <Korean>일반 설정</Korean>
+            <Japanese>全般設定</Japanese>
+            <Polish>Ustawienia główne</Polish>
+            <Portuguese>Configurações Gerais</Portuguese>
+            <Spanish>Configuración General</Spanish>
+            <Russian>Основные настройки</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_custom_color">
+            <English>Custom Colors</English>
+            <Chinesesimp>自定义颜色</Chinesesimp>
+            <Chinese>自定義顔色</Chinese>
+            <German>Benutzerdefinierte Farben</German>
+            <Japanese>カスタム カラー</Japanese>
+            <Portuguese>Cores Customizadas</Portuguese>
+            <Russian>Пользовательские цвета</Russian>
+        </Key>
+        <Key ID="STR_dui_show_dir_opt1">
+            <English>Never</English>
+            <Chinesesimp>从不</Chinesesimp>
+            <Chinese>從不</Chinese>
+            <Czech>Nikdy</Czech>
+            <French>Jamais</French>
+            <German>Niemals</German>
+            <Korean>사용안함</Korean>
+            <Japanese>行わない</Japanese>
+            <Polish>Nigdy</Polish>
+            <Portuguese>Nunca</Portuguese>
+            <Spanish>Nunca</Spanish>
+            <Russian>Никогда</Russian>
+        </Key>
+        <Key ID="STR_dui_show_dir_opt3">
+            <English>Always</English>
+            <Chinesesimp>总是</Chinesesimp>
+            <Chinese>總是</Chinese>
+            <Czech>Vždy</Czech>
+            <French>Toujours</French>
+            <German>Immer</German>
+            <Korean>언제든지</Korean>
+            <Japanese>常に</Japanese>
+            <Polish>Zawsze</Polish>
+            <Portuguese>Sempre</Portuguese>
+            <Spanish>Siempre</Spanish>
+            <Russian>Всегда</Russian>
+        </Key>
+        <Key ID="STR_dui_show_dir_opt2">
+            <English>Only In Vehicles</English>
+            <Chinesesimp>只在载具中</Chinesesimp>
+            <Chinese>只在載具中</Chinese>
+            <Czech>Pouze ve vozidlech</Czech>
+            <French>Seulement En Vehicules</French>
+            <German>Nur In Fahrzeugen</German>
+            <Korean>차량내에서만</Korean>
+            <Japanese>車両内のみ</Japanese>
+            <Polish>Tylko w pojazdach</Polish>
+            <Portuguese>Apenas em veículos</Portuguese>
+            <Spanish>Solo en vehiculos</Spanish>
+            <Russian>Только в транспорте</Russian>
+        </Key>
+        <Key ID="STR_dui_ui_scale">
+            <English>UI Scaling</English>
+            <Chinesesimp>UI大小</Chinesesimp>
+            <Chinese>UI大小</Chinese>
+            <Czech>Velikost UI</Czech>
+            <French>Mise a l'échelle de l'IU</French>
+            <German>UI Größe</German>
+            <Korean>UI 크기</Korean>
+            <Japanese>UI スケール</Japanese>
+            <Polish>Skalowanie interfejsu użytkownika</Polish>
+            <Portuguese>Escala de Interface</Portuguese>
+            <Spanish>Escala de interfaz de usuario</Spanish>
+            <Russian>UI шкала</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_bg">
+            <English>Background Opacity</English>
+            <Chinesesimp>背景透明度</Chinesesimp>
+            <Chinese>背景透明度</Chinese>
+            <Czech>Viditelnost pozadí</Czech>
+            <French>Opacité du fond</French>
+            <German>Hintergrund Sichtbarkeit</German>
+            <Korean>배경 투명도</Korean>
+            <Japanese>背景の透明度</Japanese>
+            <Polish>Przeźroczystość tła</Polish>
+            <Portuguese>Opacidade do Fundo</Portuguese>
+            <Spanish>Opacidad de Fondo</Spanish>
+            <Russian>Прозрачность фона</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_bg_desc">
+            <English>How much should the black background be visible</English>
+            <Chinesesimp>设置黑色背景的透明度</Chinesesimp>
+            <Chinese>設置黑色背景的透明度</Chinese>
+            <Czech>Jak moc by mělo být černé pozadí viditelné</Czech>
+            <French>Combien le fond doit être visible?</French>
+            <German>Wie stark soll der Hintergrund sichtbar sein</German>
+            <Korean>배경의 투명도를 설정합니다.</Korean>
+            <Japanese>背景の透明度を設定します。</Japanese>
+            <Polish>Jak mocne powinno być widoczne czarne tło</Polish>
+            <Portuguese>O quão visível será o fundo preto?</Portuguese>
+            <Spanish>¿Cuánto debería ser visible el fondo negro?</Spanish>
+            <Russian>Сколько должен быть виден черный фон</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_width">
+            <English>Column Width</English>
+            <Chinesesimp>列宽度</Chinesesimp>
+            <Chinese>列寬度</Chinese>
+            <Czech>Šířka sloupku</Czech>
+            <French>Largeur des Colonnes</French>
+            <German>Spaltenbreite</German>
+            <Korean>열 너비</Korean>
+            <Japanese>カラムの幅</Japanese>
+            <Polish>Szerokość kolumny</Polish>
+            <Portuguese>Largura de Coluna</Portuguese>
+            <Spanish>Ancho de columna</Spanish>
+            <Russian>Ширина колонки с никами юнитов</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_width_desc">
+            <English>Which width in pixels should be used for the column widths? Be aware that UI scaling will affect this!</English>
+            <Chinesesimp>要使用哪个宽度（像素点）来作为列的宽度？注意，UI大小设置选项会影响这个</Chinesesimp>
+            <Chinese>要使用哪個寬度（像素點）來作爲列的寬度？注意，UI大小設置選項會影響這個</Chinese>
+            <Czech>Jaká šířka v pixelech by se měla použít pro sloupky? (je ovlivněno velikostí UI)</Czech>
+            <French>Quelle largeur en pixels doit être utilisée pour celle des colonnes? la mise à l'échelle est affecté par ceci!</French>
+            <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
+            <Korean>열 너비를 픽셀로 설정합니다. UI크기는 이 설정에 영향을 끼칩니다!</Korean>
+            <Japanese>カラムの幅をピクセルで設定します。UI スケールはこの設定に影響を及ぼします!</Japanese>
+            <Polish>Jaką szerokość w pikselach należy zastosować dla szerokości kolumn? Należy pamiętać, że skalowanie interfejsu użytkownika będzie miało wpływ na to</Polish>
+            <Portuguese>Qual será a largura em pixels de cada coluna? Lembre-se que a escala de interface afetará isso!</Portuguese>
+            <Spanish>¿Qué ancho en píxeles se debe usar para los anchos de las columnas? Tenga en cuenta que la escala de la interfaz de usuario afectará esto!</Spanish>
+            <Russian>Какую ширину в пикселях следует использовать для ширины столбца? Имейте в виду, что масштабирование пользовательского интерфейса повлияет на это!</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale">
+            <English>Icon Scaling</English>
+            <Chinesesimp>图标大小</Chinesesimp>
+            <Chinese>圖標大小</Chinese>
+            <Czech>Velikost ikon</Czech>
+            <French>mise a l'échelle de l'icone</French>
+            <German>Icon Größe</German>
+            <Korean>아이콘 크기</Korean>
+            <Japanese>アイコンのスケール</Japanese>
+            <Polish>Skalowanie ikon</Polish>
+            <Portuguese>Escala de Ícones</Portuguese>
+            <Spanish>Escala de Iconos</Spanish>
+            <Russian>Масштаб иконок</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale_desc">
+            <English>Set the icon scale for units on your compass</English>
+            <Chinesesimp>设置罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>設置羅盤上的單位的圖標大小</Chinese>
+            <Czech>Nastaví velikost ikon jednotek na kompasu.</Czech>
+            <French>Définiser l'échelle de l'icône des unités sur votre boussole</French>
+            <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
+            <Korean>나침반 위에 표시되는 유닛 아이콘의 크기를 설정합니다.</Korean>
+            <Japanese>コンパス上に表示されるユニット アイコンのスケールを設定します。</Japanese>
+            <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
+            <Portuguese>Defina a escala dos ícones na bússola</Portuguese>
+            <Spanish>Establece la escala de iconos para las unidades en tu brújula</Spanish>
+            <Russian>Установите масштаб значков для юнитов на вашем компасе</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale_crew">
+            <English>Icon Scaling for crew</English>
+            <Chinesesimp>乘员的图标大小</Chinesesimp>
+            <Chinese>乘員的圖標大小</Chinese>
+            <Russian>Масштаб иконок для экипажа</Russian>
+            <German>Symbol Skalierung für Mannschaften</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_scale_crew_desc">
+            <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
+            <Chinesesimp>设置当玩家作为载具乘员时的罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
+            <Russian>Установите масштаб значков для юнитов на вашем компасе когда вы в экипаже техники</Russian>
+            <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
+        </Key>
+        <Key ID="STR_dui_ace_hide_interaction">
+            <English>Hide while ACE Interacting</English>
+            <Chinesesimp>在使用ACE互动时隐藏</Chinesesimp>
+            <Chinese>在使用ACE互動時隱藏</Chinese>
+            <Czech>Schovat při ACE interakcích</Czech>
+            <French>Cacher pendant ACE Interaction</French>
+            <German>Während ACE Interaktionen verstecken</German>
+            <Korean>ACE 상호작용 일때 숨기기</Korean>
+            <Japanese>インタラクション中は非表示</Japanese>
+            <Polish>Ukrycie podczas używania interakcji ACE</Polish>
+            <Portuguese>Esconder durante interação ACE</Portuguese>
+            <Spanish>Ocultar mientras interacción ACE</Spanish>
+            <Russian>Скрывать, если есть АСЕ меню</Russian>
+        </Key>
+        <Key ID="STR_dui_ace_hide_interaction_desc">
+            <English>When interacting with things via ACE interaction should the UI be hidden?</English>
+            <Chinesesimp>在使用ACE互动时，UI是否被隐藏</Chinesesimp>
+            <Chinese>在使用ACE互動時，UI是否被隱藏</Chinese>
+            <Czech>Má se UI schovat při ACE interakcích?</Czech>
+            <French>L'UI doit-il être cacher pendant l'interaction avec objets via ACE Interaction?</French>
+            <German>Wenn man durch ACE mit Dingen interagiert, soll die UI versteckt werden?</German>
+            <Korean>ACE 인터렉션중에는 UI를 숨기겠습니까?</Korean>
+            <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
+            <Polish>Czy podczas używania interakcji ACE należy ukryć interfejs użytkownika?</Polish>
+            <Portuguese>Esconder a interface enquanto estiver interagindo atráves do ACE?</Portuguese>
+            <Spanish>Al interactuar con las cosas a través de la interacción ACE, ¿debería ocultarse la interfaz de usuario?</Spanish>
+            <Russian>При взаимодействии с вещами через ACE меню должен ли пользовательский интерфейс быть скрытым?</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_opacity">
+            <English>Radar Opacity</English>
+            <Chinesesimp>雷达透明度</Chinesesimp>
+            <Chinese>雷達透明度</Chinese>
+            <German>Radaropazität</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_opacity">
+            <English>Icon Opacity</English>
+            <Chinesesimp>图标透明度</Chinesesimp>
+            <Chinese>圖標透明度</Chinese>
+            <German>Iconopazität</German>
+        </Key>
+        <Key ID="STR_dui_compass_icon_opacity_no_player">
+            <English>Icon Opacity does not affect own unit</English>
+            <Chinesesimp>图标透明度不影响自己</Chinesesimp>
+            <Chinese>圖標透明度不影響自己</Chinese>
+            <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
+        </Key>
+        <Key ID="STR_dui_dir_size">
+            <English>Bearing Size</English>
+            <Chinesesimp>方位角大小</Chinesesimp>
+            <Chinese>方位角大小</Chinese>
+            <Czech>Velikost azimutu</Czech>
+            <French>Taille de la direction</French>
+            <German>Größe der Richtungsanzeige</German>
+            <Korean>방위각 크기</Korean>
+            <Japanese>方位の大きさ</Japanese>
+            <Polish>Wielkość azymutu</Polish>
+            <Portuguese>Tamanho da Orientação</Portuguese>
+            <Spanish>Tamaño del texto del dirección</Spanish>
+            <Russian>Размр окна со списком юнитов</Russian>
+        </Key>
+        <Key ID="STR_dui_dir_padding">
+            <English>Bearing padding to radar</English>
+            <Chinesesimp>方位角与雷达的间距</Chinesesimp>
+            <Chinese>方位角與雷達的間距</Chinese>
+            <German>Abstand der Richtungsanzeige zum Radar</German>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow">
+            <English>Text Outline</English>
+            <Chinesesimp>文字描边</Chinesesimp>
+            <Chinese>文字描邊</Chinese>
+            <Czech>Obrys textu</Czech>
+            <French>Contour du texte</French>
+            <German>Text Umrandung</German>
+            <Korean>텍스트 외형</Korean>
+            <Japanese>テキストのアウトライン</Japanese>
+            <Polish>Zarys tekstu</Polish>
+            <Portuguese>Contorno do Texto</Portuguese>
+            <Spanish>Contorno de Texto</Spanish>
+            <Russian>Текст контура</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_0">
+            <English>None</English>
+            <Chinesesimp>无</Chinesesimp>
+            <Chinese>無</Chinese>
+            <Czech>Žádný</Czech>
+            <French>Aucun</French>
+            <German>Nichts</German>
+            <Korean>없음</Korean>
+            <Japanese>無し</Japanese>
+            <Polish>Nic</Polish>
+            <Portuguese>Nenhum</Portuguese>
+            <Spanish>Ninguno</Spanish>
+            <Russian>Пусто</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_1">
+            <English>Shadow</English>
+            <Chinesesimp>阴影</Chinesesimp>
+            <Chinese>陰影</Chinese>
+            <Czech>Stín</Czech>
+            <French>Ombre</French>
+            <German>Schatten</German>
+            <Korean>그림자</Korean>
+            <Japanese>影付き</Japanese>
+            <Polish>Cień</Polish>
+            <Portuguese>Sombra</Portuguese>
+            <Spanish>Sombra</Spanish>
+            <Russian>Тень</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_text_shadow_2">
+            <English>Outline</English>
+            <Chinesesimp>描边</Chinesesimp>
+            <Chinese>描邊</Chinese>
+            <Czech>Obrys</Czech>
+            <French>Contour</French>
+            <German>Umrandung</German>
+            <Korean>테두리</Korean>
+            <Japanese>アウトライン</Japanese>
+            <Polish>Zarys</Polish>
+            <Portuguese>Contorno</Portuguese>
+            <Spanish>Contorno</Spanish>
+            <Russian>Контур</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_warning">
+            <English>Distance Warning</English>
+            <Chinesesimp>距离警告</Chinesesimp>
+            <Chinese>距離警告</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Abstandswarnung</German>
+            <Korean>거리 경고</Korean>
+            <Japanese>距離警告</Japanese>
+            <Polish>Ostrzeżenie o odległości</Polish>
+            <Portuguese>Alerta de distância</Portuguese>
+            <Spanish>Distancia de advertencia</Spanish>
+            <Russian>Дистанция предупреждения</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_warning_desc">
+            <English>Sets the distance in meters which will turn a unit icon orange when being too close to you</English>
+            <Chinesesimp>以米为单位，设置一个距离，当别的单位太靠近你并低于设置的这个距离时，该单位的图标会变成橘色</Chinesesimp>
+            <Chinese>以米爲單位，設置一個距離，當別的單位太靠近你並低于設置的這個距離時，該單位的圖標會變成橘色</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
+            <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
+            <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
+            <Polish>Ustawia odległość w metrach, która spowoduje zmianę koloru ikony jednostki na pomarańczowy, gdy znajduje się ona zbyt blisko użytkownika.</Polish>
+            <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
+            <Spanish>Establece la distancia en metros que hará que el icono de una unidad se vuelva naranja cuando esté demasiado cerca de usted</Spanish>
+            <Russian>Устанавливает расстояние в метрах, при котором значок устройства становится оранжевым, если он находится слишком близко к вам</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_hide_when_alone">
+            <English>Hide Whole Compass When Alone</English>
+            <Chinesesimp>当不属于任何团队时，隐藏整个罗盘</Chinesesimp>
+            <Chinese>當不屬于任何團隊時，隱藏整個羅盤</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Verstecke den Kompass wenn man alleine ist</German>
+            <Korean>혼자일때 나침반 숨기기</Korean>
+            <Japanese>単独時はコンパスを非表示</Japanese>
+            <Polish>Ukryj cały kompas, gdy jest sam</Polish>
+            <Portuguese>Esconder toda a Bússola quando sozinho</Portuguese>
+            <Spanish>Ocultar todo la brújula cuando estás solo</Spanish>
+            <Russian>Скрыть компас, когда юнит остался один</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_hide_when_alone_desc">
+            <English>When you are alone in a group, this will hide the compass UI element from your screen</English>
+            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，隐藏屏幕上所有的罗盘元件</Chinesesimp>
+            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，隱藏屏幕上所有的羅盤元件</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
+            <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
+            <Japanese>グループに単独の際はコンパスを非表示にします。</Japanese>
+            <Polish>Nie pokazuj kompasu, gdy jesteś sam w grupie.</Polish>
+            <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
+            <Spanish>Cuando esté solo en un grupo, esto ocultará el elemento de la interfaz de usuario de la brújula de su pantalla</Spanish>
+            <Russian>Когда вы один в группе, это скрывает элемент компаса UI с вашего экрана</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_hide_blip_when_alone">
+            <English>Hide Player Marker when alone</English>
+            <Chinesesimp>单独行动时隐藏玩家标识</Chinesesimp>
+            <Chinese>單獨行動時隱藏玩家標識</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Verstecke den Spieler Marker wenn man alleine ist</German>
+            <Korean>혼자일때 플레이어 마커 숨기기</Korean>
+            <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
+            <Polish>Ukrywaj znacznik gracza, kiedy jest sam</Polish>
+            <Portuguese>Esconder Ícone do Jogador quando sozinho</Portuguese>
+            <Spanish>Ocultar el marcador del jugador cuando estás solo</Spanish>
+            <Russian>Скрыть маркер юнита, если юнит один</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
+            <English>When you are alone in a group, this will only hide the player marker on the compass</English>
+            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，只隐藏罗盘上的玩家标识</Chinesesimp>
+            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，只隱藏羅盤上的玩家標識</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
+            <Korean>그룹내에 혼자만 있을때 플레이어 마커를 숨깁니다.</Korean>
+            <Japanese>グループに単独の際はプレイヤー マーカーを非表示にします。</Japanese>
+            <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
+            <Portuguese>Quando estiver sozinho no grupo, isso ira esconder apenas o ícone do jogador na bússola</Portuguese>
+            <Spanish>Cuando estés solo en un grupo, esto solo ocultará el marcador del jugador en la brújula</Spanish>
+            <Russian>Когда вы одни в группе, это скроет маркер игрока на компасе</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_cone">
+            <English>Occlusion Cone</English>
+            <Chinesesimp>视野的椎体范围</Chinesesimp>
+            <Chinese>視野的椎體範圍</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Okklusionskegel</German>
+            <Korean>오클루전 원뿔</Korean>
+            <Japanese>オクルージョン対象範囲</Japanese>
+            <Polish>Stożek okluzji</Polish>
+            <Portuguese>Cone de oclusão</Portuguese>
+            <Spanish>Cono de oclusión</Spanish>
+            <Russian>Угол оклюзии</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_cone_desc">
+            <English>Sets the cone (in degrees) in which a unit is considered seen infront of the player. E.g. 90 means you can see the unit 45 degrees to your left and right</English>
+            <Chinesesimp>设置一个以角度为单位的视野椎体范围，用于模拟玩家视野。例：90意味着亦会模拟一个视野中心向左45度到向右45度的一个椎体范围。</Chinesesimp>
+            <Chinese>設置一個以角度爲單位的視野椎體範圍，用于模擬玩家視野。例：90意味著亦會模擬一個視野中心向左45度到向右45度的一個椎體範圍。</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
+            <Korean>플레이어의 정면으로 부터 설정되는 가시범위를 '도'단위로 설정합니다. 예를들어 90도로 설정되면 좌우 45도가 가시범위가 됩니다.</Korean>
+            <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
+            <Polish>Stożek (w stopniach), w którym znajdująca się jednostka znajduje się przed graczem. Np. 90 stopni oznacza, że możesz widzieć jednostki 45 stopni z lewej i prawej.</Polish>
+            <Portuguese>Define o cone (em graus) o qual uma unidade é considerada como a frente do jogador. Exemplo: 90 significa que você pode ver a unidade 45° à sua esquerda e à sua direita.</Portuguese>
+            <Spanish>Establece el cono (en grados) en el que una unidad se considera vista frente al jugador. Ejemplo: 90 significa que puede ver la unidad 45 grados a su izquierda y derecha.</Spanish>
+            <Russian>Устанавливает угол (в градусах), в котором юнит считается видимым перед игроком. Т.е. 90 означает, что вы можете видеть устройство на 45 градусов влево и вправо</Russian>
+        </Key>
+        <Key ID="STR_dui_reset_ui_pos">
+            <English>Reset UI Position</English>
+            <Chinesesimp>重置UI位置</Chinesesimp>
+            <Chinese>重置UI位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI Positionen zurücksetzen</German>
+            <Korean>UI 위치 초기화</Korean>
+            <Japanese>UI 位置をリセット</Japanese>
+            <Polish>Zresetuj pozycję interfejsu użytkownika</Polish>
+            <Portuguese>Restaurar a posição da Interface</Portuguese>
+            <Spanish>Restablecer la posición de la interfaz de usuario</Spanish>
+            <Russian>Сбросить UI позицию</Russian>
+        </Key>
+        <Key ID="STR_dui_reset_ui_pos_desc">
+            <English>Resets the position of all DUI UI elements</English>
+            <Chinesesimp>重置所有DUI模组的UI元件位置</Chinesesimp>
+            <Chinese>重置所有DUI模組的UI元件位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
+            <Korean>DUI에서 추가된 모든 UI의 위치를 초기화 합니다.</Korean>
+            <Japanese>DUI で追加された全ての UI の位置をリセットします。</Japanese>
+            <Portuguese>Restaura a posição original de toda a interface DUI UI</Portuguese>
+            <Spanish>Restablece la posición de todos los elementos de la interfaz de usuario de DUI.</Spanish>
+            <Russian>Сбросить позицию для всех DUI UI элементов</Russian>
+        </Key>
+        <Key ID="STR_dui_show_squadbar">
+            <English>Show Vanilla Squad Bar</English>
+            <Chinesesimp>显示原版班组指挥栏</Chinesesimp>
+            <Chinese>顯示原版班組指揮欄</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Vanilla Squad Bar anzeigen</German>
+            <Korean>바닐라 분대바 표시</Korean>
+            <Japanese>ゲーム標準の分隊バーを表示</Japanese>
+            <Polish>Pokazuj domyślny pasek drużyny.</Polish>
+            <Portuguese>Mostrar Barra de grupo padrão</Portuguese>
+            <Spanish>Mostrar Barra de escuadrilla</Spanish>
+            <Russian>Показать ванильный сквад-бар</Russian>
+        </Key>
+        <Key ID="STR_dui_show_squadbar_desc">
+            <English>Shows the vanilla Arma3 Squad Bar when being in a squad leader position</English>
+            <Chinesesimp>作为班长时，显示Arma3原版的班组指挥栏</Chinesesimp>
+            <Chinese>作爲班長時，顯示Arma3原版的班組指揮欄</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
+            <Korean>분대장일때 아르마3 바닐라 분대바를 표시합니다.</Korean>
+            <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
+            <Polish>Pokazuj domyślny pasek drużyny jeśli jesteś dowódcą drużyny.</Polish>
+            <Portuguese>Mostra a barra de grupo do Arma 3 quando for o líder do esquadrão</Portuguese>
+            <Spanish>Muestra la barra de escuadrilla de vainilla Arma 3 cuando se encuentra en la posición de líder de escuadrón.</Spanish>
+            <Russian>Показывает ванильный сквад-бар Arma3, находясь в позиции лидера отряда</Russian>
+        </Key>
+        <Key ID="STR_dui_cat_layout">
+            <English>Layout</English>
+            <Chinesesimp>布局</Chinesesimp>
+            <Chinese>布局</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Layout</German>
+            <Korean>레이아웃</Korean>
+            <Japanese>レイアウト</Japanese>
+            <Polish>Układ</Polish>
+            <Portuguese>Layout</Portuguese>
+            <Spanish>Diseño</Spanish>
+            <Russian>Раскладка</Russian>
+        </Key>
+        <Key ID="STR_dui_layout">
+            <English>Use A3 Layout Editor Position</English>
+            <Chinesesimp>使用A3布局编辑器位置</Chinesesimp>
+            <Chinese>使用A3布局編輯器位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>A3 Layout Editor Position nutzen</German>
+            <Korean>A3 레이아웃 편집기 위치 사용</Korean>
+            <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
+            <Polish>Użyj pozycji Edytora Układu A3</Polish>
+            <Portuguese>Usar a posição do editor de Layout do A3</Portuguese>
+            <Spanish>Utilice la posición del editor de A3</Spanish>
+            <Russian>Использовать A3 Layout Editor Position</Russian>
+        </Key>
+        <Key ID="STR_dui_layout_desc">
+            <English>Uses the layout editor defined position and not the default position</English>
+            <Chinesesimp>使用布局编辑器来确定位置，而不是使用默认的位置</Chinesesimp>
+            <Chinese>使用布局編輯器來確定位置，而不是使用默認的位置</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
+            <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
+            <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
+            <Polish>Użyj pozycji z Edytora Układu, nie domyślnej pozycji.</Polish>
+            <Portuguese>Usa a posição definida no editor de layout do jogo ao invés da posição padrão</Portuguese>
+            <Spanish>Utiliza la posición definida por el editor de diseño y no la posición predeterminada</Spanish>
+            <Russian>Использует заданную редактором макета позицию, а не позицию по умолчанию</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_time">
+            <English>Occlusion Fade Out Time</English>
+            <Chinesesimp>遮挡淡出时间</Chinesesimp>
+            <Chinese>遮擋淡出時間</Chinese>
+            <German>Okklusionsausblendzeit</German>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_time_desc">
+            <English>Sets the time it takes for icons to fade away on the radar</English>
+            <Chinesesimp>设置图标在雷达上彻底淡出需要的时间</Chinesesimp>
+            <Chinese>設置圖標在雷達上徹底淡出需要的時間</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
+            <Polish>Ustala czas jaki ikona na radarze potrzebuje by zniknąć całkowicie.</Polish>
+            <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
+            <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
+            <Russian>Устанавливает время исчезновения значков на радаре.</Russian>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_in_time">
+            <English>Occlusion Fade In Time</English>
+            <Chinesesimp>遮挡渐入时间</Chinesesimp>
+            <Chinese>遮擋漸入時間</Chinese>
+            <German>Okklusionseinblendzeit</German>
+        </Key>
+        <Key ID="STR_dui_occlusion_fade_time_in_desc">
+            <English>Sets the time it takes for icons to fade in on the radar</English>
+            <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
+            <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
+            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
+        </Key>
+        <Key ID="STR_dui_trackingColor_time">
+            <English>Tracking Color</English>
+            <Chinesesimp>追踪颜色</Chinesesimp>
+            <Chinese>追蹤顔色</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Tracking-Farbe</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>追跡カラー</Japanese>
+            <Polish>Kolor śledzenia</Polish>
+            <Portuguese>Cor de objetos rastreados</Portuguese>
+            <Spanish>Color de objectos rastreados</Spanish>
+            <Russian>Цвет трекера</Russian>
+        </Key>
+        <Key ID="STR_dui_trackingColor_desc">
+            <English>Special tracked objects appear in this color on the radar. Be warned the alpha value will do nothing!</English>
+            <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha值无意义。</Chinesesimp>
+            <Chinese>特別追蹤的物體會在雷達上以這個顔色顯示。注意，Alpha值無意義。</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
+            <Polish>Kolor śledzenia specjalnego obiektu. Przeźroczystość nie wpływa na kolor!</Polish>
+            <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
+            <Spanish>Objetos especiales rastreados aparecen en este color en el radar. Tenga en cuenta que el valor alfa no hará nada!</Spanish>
+            <Russian>Специальные отслеживаемые объекты отображаются на радаре этого цвета. Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_vertical_spacing">
+            <English>Vertical Padding Modifier</English>
+            <Chinesesimp>行间距</Chinesesimp>
+            <Chinese>行間距</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Vertikaler Padding Modifikator</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>行間の余白</Japanese>
+            <Polish>Współczynnik odstępu w pionie</Polish>
+            <Portuguese>Modificador de espaçamento vertical</Portuguese>
+            <Spanish>Modificador de relleno vertical</Spanish>
+            <Russian>Модификатор вертикального заполнения</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_vertical_spacing_desc">
+            <English>Sets the vertical padding of single unit entries in the namelist</English>
+            <Chinesesimp>设置名单列表的行间距</Chinesesimp>
+            <Chinese>設置名單列表的行間距</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
+            <Polish>Ustawia odstęp w pionie pomiędzy kolejnymi wpisami na liście graczy w drużynie.</Polish>
+            <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
+            <Spanish>Establece el relleno vertical de las entradas de una sola unidad en la lista de nombres.</Spanish>
+            <Russian>Устанавливает вертикальное заполнение отдельных записей единиц в списке имен</Russian>
+        </Key>
+        <Key ID="STR_dui_hide_ui_by_default">
+            <English>Hide UI By Default</English>
+            <Chinesesimp>默认隐藏UI</Chinesesimp>
+            <Chinese>默認隱藏UI</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>UI von Anfang an verbergen</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>標準で UI を非表示</Japanese>
+            <Polish>Domyślne ukrywanie interfejsu.</Polish>
+            <Portuguese>Ocultar a interface por padrão</Portuguese>
+            <Spanish>Ocultar la interfaz de usuario por forma predeterminada</Spanish>
+            <Russian>Скрыть пользовательский интерфейс по умолчанию</Russian>
+        </Key>
+        <Key ID="STR_dui_hide_ui_by_default_desc">
+            <English>Sets the toggle to show the UI to off by default</English>
+            <Chinesesimp>设置关为切换UI显示的默认状态</Chinesesimp>
+            <Chinese>設置關爲切換UI顯示的默認狀態</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
+            <Polish>Włącza domyślne ukrywanie interfejsu.</Polish>
+            <Portuguese>Define que a interface estará oculta por padrão, esperando o apertar da tecla para ser revelada</Portuguese>
+            <Spanish>Establece el conmutador para mostrar la interfaz de usuario como desactivada de forma predeterminada</Spanish>
+            <Russian>Устанавливает переключатель для показа пользовательского интерфейса по умолчанию выключенным</Russian>
+        </Key>
+        <Key ID="STR_dui_button_hold_ui">
+            <English>Hold to show/hide UI</English>
+            <Chinesesimp>按住以显示/隐藏UI</Chinesesimp>
+            <Chinese>按住以顯示/隱藏UI</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Halten um UI an oder auszuschalten</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>長押しで UI の表示/非表示</Japanese>
+            <Polish>Przytrzymaj by pokazać/ukryć interfejs.</Polish>
+            <Portuguese>Segurar para mostrar/ocultar a interface</Portuguese>
+            <Spanish>Sostener para mostrar / ocultar la interfaz de usuario</Spanish>
+            <Russian>Держать чтобы вкл или выкл пользовательский интерфейс</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_hideWhenLeader">
+            <English>Hide When Group Leader</English>
+            <Chinesesimp>为班长时隐藏名单列表</Chinesesimp>
+            <Chinese>爲班長時隱藏名單列表</Chinese>
+            <German>Vestecke wenn Gruppenführer</German>
+            <Japanese>グループ リーダー時は非表示</Japanese>
+            <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
+            <Portuguese>Esconder quando Líder do Grupo</Portuguese>
+            <Russian>Скрыть когда лидер группы</Russian>
+        </Key>
+        <Key ID="STR_dui_namelist_hideWhenLeader_desc">
+            <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
+            <Chinesesimp>作为班长时隐藏名单列表。给习惯使用原版班组指挥栏的人使用的。</Chinesesimp>
+            <Chinese>作爲班長時隱藏名單列表。給習慣使用原版班組指揮欄的人使用的。</Chinese>
+            <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
+            <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
+            <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
+            <Russian>Идентифицирует список имен, если вы являетесь текущим лидером группы. Используется для людей, которые предпочитают ванильный сквад-радар</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadMain">
+            <English>No Squad Color</English>
+            <Chinesesimp>无组颜色</Chinesesimp>
+            <Chinese>無組顔色</Chinese>
+            <German>Keine Squad Farbe</German>
+            <Japanese>分隊カラー無し</Japanese>
+            <Polish>Brak koloru drużyny</Polish>
+            <Portuguese>Sem Cor de Esquadrão</Portuguese>
+            <Russian>Нет цвета команды</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadRed">
+            <English>Red Squad Color</English>
+            <Chinesesimp>红组颜色</Chinesesimp>
+            <Chinese>紅組顔色</Chinese>
+            <German>Rote Squad Farbe</German>
+            <Japanese>レッド分隊カラー</Japanese>
+            <Polish>Czerwony kolor drużyny</Polish>
+            <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
+            <Russian>Красный цвет команды</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadGreen">
+            <English>Green Squad Color</English>
+            <Chinesesimp>绿组颜色</Chinesesimp>
+            <Chinese>綠組顔色</Chinese>
+            <German>Grüne Squad Farbe</German>
+            <Japanese>グリーン分隊カラー</Japanese>
+            <Polish>Zielony kolor drużyny</Polish>
+            <Portuguese>Cor Verde de Esquadrão</Portuguese>
+            <Russian>Зеленый цвет команды</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadBlue">
+            <English>Blue Squad Color</English>
+            <Chinesesimp>蓝组颜色</Chinesesimp>
+            <Chinese>藍組顔色</Chinese>
+            <German>Blaue Squad Farbe</German>
+            <Japanese>ブルー分隊カラー</Japanese>
+            <Polish>Niebieski kolor drużyny</Polish>
+            <Portuguese>Cor Azul de Esquadrão</Portuguese>
+            <Russian>Синий цвет команды</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadYellow">
+            <English>Yellow Squad Color</English>
+            <Chinesesimp>黄组颜色</Chinesesimp>
+            <Chinese>黃組顔色</Chinese>
+            <German>Gelbe Squad Farbe</German>
+            <Japanese>イエロー分隊カラー</Japanese>
+            <Polish>Żółty kolor drużyny</Polish>
+            <Portuguese>Cor Amarela de Esquadrão</Portuguese>
+            <Russian>Желтый цвет команды</Russian>
+        </Key>
+        <Key ID="STR_dui_main_squadColor_desc">
+            <English>Be warned the alpha value will do nothing!</English>
+            <Chinesesimp>注意，Alpha值无意义！</Chinesesimp>
+            <Chinese>注意，Alpha值無意義！</Chinese>
+            <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <Japanese>アルファ値は影響を及ぼしません！</Japanese>
+            <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
+            <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
+            <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
+            <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroes">
+            <English>Leading Zeroes</English>
+            <Chinesesimp>方位角总是三位数</Chinesesimp>
+            <Chinese>方位角總是三位數</Chinese>
+            <German>Führende Nullen</German>
+            <Russian>Нули в азимутах</Russian>
+            <Polish>Zera wiodące</Polish>
+            <Portuguese>Zero à esquerda</Portuguese>
+            <Japanese>0 揃え</Japanese>
+        </Key>
+        <Key ID="STR_dui_radar_leading_zeroes_desc">
+            <English>The bearing number will be filled with leading zeroes</English>
+            <Chinesesimp>方位角总会以三位数的方式显示</Chinesesimp>
+            <Chinese>方位角總會以三位數的方式顯示</Chinese>
+            <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
+            <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
+            <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
+            <Japanese>方位角の表示を0を含めた3ケタで表示します</Japanese>
+            <Russian>Значение азимута будет отображаться с лидирующими нулями</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sqlFirst">
+            <English>Show SQL Always First</English>
+            <Chinesesimp>总是优先显示班长</Chinesesimp>
+            <Chinese>總是優先顯示班長</Chinese>
+            <German>Gruppenführer immer als erster</German>
+            <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
+            <Portuguese>Sempre mostrar líder primeiro</Portuguese>
+            <Japanese>分隊長を常に先頭</Japanese>
+            <Russian>Показывать командира первым</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sqlFirst_desc">
+            <English>Shows the squad leader always as first unit</English>
+            <Chinesesimp>总是将班长作为第一个单位显示</Chinesesimp>
+            <Chinese>總是將班長作爲第一個單位顯示</Chinese>
+            <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+            <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
+            <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
+            <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
+            <Russian>Всегда показывать командира отделения первым в списке</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort">
+            <English>Sort</English>
+            <Chinesesimp>分类</Chinesesimp>
+            <Chinese>分類</Chinese>
+            <German>Sortieren</German>
+            <Polish>Sortowanie</Polish>
+            <Portuguese>Ordernar</Portuguese>
+            <Japanese>並び替え</Japanese>
+            <Russian>Сортировать</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort_desc">
+            <English>Server needs to run DUI in order to have synchronicity!</English>
+            <Chinesesimp>服务器需要运行DUI来进行同步</Chinesesimp>
+            <Chinese>服務器需要運行DUI來進行同步</Chinese>
+            <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+            <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
+            <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
+            <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
+            <Russian>DUI должен быть запущен на сервере, чтобы обеспечить синхронность!</Russian>
+        </Key>
+        <!-- Addon module names -->
+        <Key ID="STR_dui_addon_main">
+            <English>Main</English>
+            <Chinesesimp>主要</Chinesesimp>
+            <Chinese>主要</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Main</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>メイン</Japanese>
+            <Polish>Główny</Polish>
+            <Portuguese>Principal</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Основное</Russian>
+        </Key>
+        <Key ID="STR_dui_addon_radar">
+            <English>Radar</English>
+            <Chinesesimp>雷达</Chinesesimp>
+            <Chinese>雷達</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Radar</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>レーダー</Japanese>
+            <Polish>Radar</Polish>
+            <Portuguese>Radar</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Радар</Russian>
+        </Key>
+        <!-- Color style names -->
+        <Key ID="STR_dui_color_standard">
+            <English>Standard</English>
+            <Chinesesimp>标准</Chinesesimp>
+            <Chinese>標准</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Standart</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>通常</Japanese>
+            <Polish>Standardowy</Polish>
+            <Portuguese>Padrão</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Стандартное</Russian>
+        </Key>
+        <Key ID="STR_dui_color_ace">
+            <English>ACE 3</English>
+            <Chinesesimp>ACE 3</Chinesesimp>
+            <Chinese>ACE 3</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>ACE 3</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ACE 3</Japanese>
+            <Polish>ACE 3</Polish>
+            <Portuguese>ACE3</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>АСЕ 3</Russian>
+        </Key>
+        <Key ID="STR_dui_color_sthud">
+            <English>STUI</English>
+            <Chinesesimp>STUI</Chinesesimp>
+            <Chinese>STUI</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>STUI</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>STUI</Japanese>
+            <Polish>STUI</Polish>
+            <Portuguese>STUI</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>STUI</Russian>
+        </Key>
+        <!-- note:  wargame as the video game -->
+        <Key ID="STR_dui_color_wargame">
+            <English>Wargame</English>
+            <Chinesesimp>战争游戏</Chinesesimp>
+            <Chinese>戰爭遊戲</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wargame</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>Wargame</Japanese>
+            <Polish>Wargame</Polish>
+            <Portuguese>Wargame</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Wargame</Russian>
+        </Key>
+        <Key ID="STR_dui_color_wargame2">
+            <English>Wargame (Military Green)</English>
+            <Chinesesimp>战争游戏（军绿）</Chinesesimp>
+            <Chinese>戰爭遊戲（軍綠）</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wargame (Militär Grün)</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>Wargame (ミリタリー グリーン)</Japanese>
+            <Polish>Wargame (wojskowy zielony)</Polish>
+            <Portuguese>Wargame (Verde Militar)</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Wargame (Зеленый военный)</Russian>
+        </Key>
+        <Key ID="STR_dui_color_protanopia">
+            <English>Protanopia</English>
+            <Chinesesimp>红绿色盲（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（紅色感知缺陷）</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Protanopie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>1 型 2 色覚</Japanese>
+            <Polish>Protanopia</Polish>
+            <Portuguese>Protanopia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Protanopia</Russian>
+        </Key>
+        <Key ID="STR_dui_color_protanomaly">
+            <English>Protanomaly</English>
+            <Chinesesimp>红绿色弱（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色弱（紅色感知缺陷）</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Protanomalie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>1 型 3 色覚</Japanese>
+            <Polish>Protanomalia</Polish>
+            <Portuguese>Protanomalia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Protanomalie</Russian>
+        </Key>
+        <Key ID="STR_dui_color_deuteranopia">
+            <English>Deuteranopia</English>
+            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Deuteranopie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>2 型 2 色覚</Japanese>
+            <Polish>Deuteranopia</Polish>
+            <Portuguese>Deuteranopia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Deuteranopia</Russian>
+        </Key>
+        <Key ID="STR_dui_color_deuteranomaly">
+            <English>Deuteranomaly</English>
+            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Deuteranomalie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>2 型 3 色覚</Japanese>
+            <Polish>Deuteranomalia</Polish>
+            <Portuguese>Deuteranomalia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Deuteranomaly</Russian>
+        </Key>
+        <Key ID="STR_dui_color_tritanopia">
+            <English>Tritanopia</English>
+            <Chinesesimp>黄蓝色盲</Chinesesimp>
+            <Chinese>黃藍色盲</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Tritanopie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>3 型 2 色覚</Japanese>
+            <Polish>Tritanopia</Polish>
+            <Portuguese>Trinatopia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Tritanopia</Russian>
+        </Key>
+        <Key ID="STR_dui_color_tritanomaly">
+            <English>Tritanomaly</English>
+            <Chinesesimp>黄蓝色弱</Chinesesimp>
+            <Chinese>黃藍色弱</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Ttritanomalie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>3 型 3 色覚</Japanese>
+            <Polish>Tritanomalia</Polish>
+            <Portuguese>Tritanomalia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Tritanomaly</Russian>
+        </Key>
+        <Key ID="STR_dui_color_achromatopsia">
+            <English>Achromatopsia</English>
+            <Chinesesimp>全色盲</Chinesesimp>
+            <Chinese>全色盲</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Achromatopsia</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>1 色覚</Japanese>
+            <Polish>Achromatopsja</Polish>
+            <Portuguese>Acromatopsia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Achromatopsia</Russian>
+        </Key>
+        <Key ID="STR_dui_color_achromatomaly">
+            <English>Achromatomaly</English>
+            <Chinesesimp>全色弱</Chinesesimp>
+            <Chinese>全色弱</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Achromatomalie</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>異常 3 色覚</Japanese>
+            <Polish>Achromatomalia</Polish>
+            <Portuguese>Acromatomalia</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Achromatomaly</Russian>
+        </Key>
+        <Key ID="STR_dui_color_custom">
+            <English>Custom</English>
+            <Chinesesimp>自定义</Chinesesimp>
+            <Chinese>自定義</Chinese>
+            <German>Benutzerdefiniert</German>
+            <Japanese>カスタム</Japanese>
+            <Portuguese>Customizado</Portuguese>
+            <Russian>Пользовательское</Russian>
+        </Key>
+        <!-- Icon styles -->
+        <!-- Standard string will be just reused from color -->
+        <Key ID="STR_dui_icon_terry">
+            <English>Just The Tip</English>
+            <Chinesesimp>只有顶端</Chinesesimp>
+            <Chinese>只有頂端</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Nur die Spitze</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>先端のみ</Japanese>
+            <Polish>Tylko wierzchołek</Polish>
+            <Portuguese>Só a pontinha</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Просто совет</Russian>
+        </Key>
+        <Key ID="STR_dui_icon_nato">
+            <English>NATO JMS</English>
+            <Chinesesimp>NATO JMS</Chinesesimp>
+            <Chinese>NATO JMS</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>NATO JMS</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>NATO JMS</Japanese>
+            <Polish>NATO JMS</Polish>
+            <Portuguese>NATO JMS</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>НАТО JMC</Russian>
+        </Key>
+        <Key ID="STR_dui_icon_clones">
+            <English>Clones</English>
+            <Chinesesimp>克隆</Chinesesimp>
+            <Chinese>克隆</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Klone</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>クローン</Japanese>
+            <Polish>Klony</Polish>
+            <Portuguese>Clones</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Копии</Russian>
+        </Key>
+        <!-- Compass styles -->
+        <Key ID="STR_dui_compass_bohemia">
+            <English>Bohemia Interactive</English>
+            <Chinesesimp>波西米亚互动</Chinesesimp>
+            <Chinese>波西米亞互動</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Bohemia Interactive</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ボヘミア インタラクティブ</Japanese>
+            <Polish>Bohemia Interactive</Polish>
+            <Portuguese>Bohemia Interactive</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Бисовский</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_pizza">
+            <English>Pizza Time</English>
+            <Chinesesimp>披萨时间</Chinesesimp>
+            <Chinese>披薩時間</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Zeit für Pizza</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ピザ タイム</Japanese>
+            <Polish>Czas na pizzę</Polish>
+            <Portuguese>Hora da Pizza</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Пицца</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_olde">
+            <English>Ye Olde Times</English>
+            <Chinesesimp>过去的时光</Chinesesimp>
+            <Chinese>過去的時光</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Wie alte Zeiten</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>いにしえ</Japanese>
+            <Polish>Stare dobre czasy</Polish>
+            <Portuguese>Tempos antigos</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Древний</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_clock">
+            <English>Clock</English>
+            <Chinesesimp>钟表</Chinesesimp>
+            <Chinese>鍾表</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Uhr</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>時計</Japanese>
+            <Polish>Zegar</Polish>
+            <Portuguese>Relógio</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Часы</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_classic">
+            <English>Classic</English>
+            <Chinesesimp>经典</Chinesesimp>
+            <Chinese>經典</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Klassisch</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>クラシック</Japanese>
+            <Polish>Klasyczny</Polish>
+            <Portuguese>Clássico</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Классический</Russian>
+        </Key>
+        <!-- Note: xeno as in Aliens franchise -->
+        <Key ID="STR_dui_compass_xeno_red">
+            <English>Xeno - Red</English>
+            <Chinesesimp>Xeno-红</Chinesesimp>
+            <Chinese>Xeno-紅</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Rot</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ゼノ - レッド</Japanese>
+            <Polish>Xeno - Czerwony</Polish>
+            <Portuguese>Xeno - Vermelho</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Ксено-красный</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_xeno_green">
+            <English>Xeno - Green</English>
+            <Chinesesimp>Xeno-绿</Chinesesimp>
+            <Chinese>Xeno-綠</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Grün</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ゼノ - グリーン</Japanese>
+            <Polish>Xeno - Zielony</Polish>
+            <Portuguese>Xeno - Verde</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Ксено-зеленый</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_xeno_blue">
+            <English>Xeno - Blue</English>
+            <Chinesesimp>Xeno-蓝</Chinesesimp>
+            <Chinese>Xeno-藍</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Xeno - Blau</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ゼノ - ブルー</Japanese>
+            <Polish>Xeno - Niebieski</Polish>
+            <Portuguese>Xeno - Azul</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Ксено-синий</Russian>
+        </Key>
+        <Key ID="STR_dui_compass_milint">
+            <English>Military Interface</English>
+            <Chinesesimp>军用面板</Chinesesimp>
+            <Chinese>軍用面板</Chinese>
+            <!-- <Czech></Czech> -->
+            <!-- <French></French> -->
+            <German>Militär Interface</German>
+            <!-- <Korean></Korean> -->
+            <Japanese>ミリタリー風</Japanese>
+            <Polish>Wojskowy Interfejs</Polish>
+            <Portuguese>Interface Militar</Portuguese>
+            <!-- <Spanish></Spanish> -->
+            <Russian>Армейский интерфейс</Russian>
+        </Key>
+        <!-- Sort options -->
+        <Key ID="STR_dui_radar_sort_none">
+            <English>None</English>
+            <Chinesesimp>无</Chinesesimp>
+            <Chinese>無</Chinese>
+            <German>Kein</German>
+            <Polish>Brak</Polish>
+            <Portuguese>Nenhum</Portuguese>
+            <Japanese>行わない</Japanese>
+            <Russian>Нет</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort_name">
+            <English>Names</English>
+            <Chinesesimp>名称</Chinesesimp>
+            <Chinese>名稱</Chinese>
+            <German>Namen</German>
+            <Polish>Imiona</Polish>
+            <Portuguese>Nomes</Portuguese>
+            <Japanese>名前</Japanese>
+            <Russian>Имена</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam">
+            <English>Fire Team, Names</English>
+            <Chinesesimp>火力组，名称</Chinesesimp>
+            <Chinese>火力組，名稱</Chinese>
+            <German>Fireteam, Namen</German>
+            <Polish>Sekcja, Imiona</Polish>
+            <Portuguese>Time, Nomes</Portuguese>
+            <Japanese>班、名前</Japanese>
+            <Russian>Команда, Имена</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort_fireteam2">
+            <English>Fire Team, Rank, Names</English>
+            <Chinesesimp>火力组，军衔，名称</Chinesesimp>
+            <Chinese>火力組，軍銜，名稱</Chinese>
+            <German>Fireteam, Rang, Namen</German>
+            <Polish>Sekcja, Ranga, Imiona</Polish>
+            <Portuguese>Time, Patente, Nomes</Portuguese>
+            <Japanese>班、階級、名前</Japanese>
+            <Russian>Команда, Звание, Имена</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_sort_rank">
+            <English>Rank, Names</English>
+            <Chinesesimp>军衔，名称</Chinesesimp>
+            <Chinese>軍銜，名稱</Chinese>
+            <German>Rang, Namen</German>
+            <Polish>Ranga, Imiona</Polish>
+            <Portuguese>Patente, Nomes</Portuguese>
+            <Japanese>階級、名前</Japanese>
+            <Russian>Звание, Имена</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_group_by_vehicle">
+            <English>Group Icons by Vehicle</English>
+            <Chinesesimp>载具团队图标</Chinesesimp>
+            <Chinese>載具團隊圖標</Chinese>
+            <German>Icons nach Fahrzeug gruppieren</German>
+            <Portuguese>Agrupar Ícones por veículo</Portuguese>
+            <Japanese>車両でのグループ アイコン</Japanese>
+            <Russian>Иконка группы для техники</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_group_by_vehicle_desc">
+            <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
+            <Chinesesimp>当多名团队成员在一辆载具中时，只显示一个图标，一般为司机</Chinesesimp>
+            <Chinese>當多名團隊成員在一輛載具中時，只顯示一個圖標，一般爲司機</Chinese>
+            <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
+            <Portuguese>Mostrar apenas um ícone do seu esquadrão se múltiplos membros estão no veículo, normalmente o do motorista</Portuguese>
+            <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
+            <Russian>Показывать только одну иконку вашего отряда, если несколько человек находятся в одной машине</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_pointer_style">
+            <English>Pointer style</English>
+            <Chinesesimp>指向风格</Chinesesimp>
+            <Chinese>指向風格</Chinese>
+            <German>Zeigerstil</German>
+            <Portuguese>Estilo de ponteiro</Portuguese>
+            <Japanese>ポインターの形</Japanese>
+            <Russian>Стиль указателя</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_pointer_style_desc">
+            <English>Pointer style that should be used on the compass component</English>
+            <Chinesesimp>在罗盘上显示的指向风格</Chinesesimp>
+            <Chinese>在羅盤上顯示的指向風格</Chinese>
+            <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
+            <Portuguese>Estilo do ponteiro que será usado no radar</Portuguese>
+            <Japanese>レーダー上に表示されるポインターの形を選択できます</Japanese>
+            <Russian>Стиль указателя отображаемый на компасе</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_pointer_color">
+            <English>Pointer color</English>
+            <Chinesesimp>指向颜色</Chinesesimp>
+            <Chinese>指向顔色</Chinese>
+            <German>Zeigerfarbe</German>
+            <Portuguese>Cor do Ponteiro</Portuguese>
+            <Japanese>ポインターの色</Japanese>
+            <Russian>Цвет указателя</Russian>
+        </Key>
+        <!-- ACE pointer styles -->
+        <Key ID="STR_dui_radar_pointer_arrowhead">
+            <English>Arrowhead</English>
+            <Chinesesimp>箭头</Chinesesimp>
+            <Chinese>箭頭</Chinese>
+            <German>Pfeilspitze</German>
+            <Portuguese>Ponta de flecha</Portuguese>
+            <Japanese>矢尻</Japanese>
+            <Russian>Стрелка</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking">
+            <English>Show icon when units speak</English>
+            <Chinesesimp>当单位说话时显示图标</Chinesesimp>
+            <Chinese>当单位说话时显示图标</Chinese>
+            <German>Zeige Icon an wenn jemand spricht</German>
+            <Russian>Показывать иконку при разговоре</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_desc">
+            <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
+            <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
+            <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
+            <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
+            <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
+        </Key>
+        <Key ID="STR_dui_radar_show_cardinal_points">
+            <English>Show cardinal points</English>
+            <Chinesesimp>显示基点</Chinesesimp>
+            <Chinese>顯示基點</Chinese>
+            <German>Himmelsrichtungen anzeigen</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_cardinal_points_desc">
+            <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
+            <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
+            <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
+            <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_replace_icon">
+            <English>Replace main icon with speaking icon</English>
+            <Chinesesimp>正在发言图标替换主图标</Chinesesimp>
+            <Chinese>正在發言圖標替換主圖標</Chinese>
+            <German>Haupticon mit Sprechicon ersetzen</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
+            <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
+            <Chinesesimp>名单列表中的单位主图标会被正在发言图标替换</Chinesesimp>
+            <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
+            <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio">
+            <English>Speaking icon on radio messages only</English>
+            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
+            <German>Sprachicon nur bei Radionachrichten</German>
+        </Key>
+        <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
+            <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
+            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
+            <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
+        </Key>
+        <Key ID="STR_diwako_dui_radar_ace_medic">
+            <English>ACE Medic Toggle</English>
+            <Chinesesimp>ACE医疗切换</Chinesesimp>
+            <Chinese>ACE醫療切換</Chinese>
+            <German>ACE Sanitäter Umschalter</German>
+        </Key>
+        <Key ID="STR_diwako_dui_radar_ace_medic_desc">
+            <English>Choose whether to show medics by vanilla trait or ACE variable</English>
+            <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
+            <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
+            <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
+        </Key>
+    </Package>
+</Project>

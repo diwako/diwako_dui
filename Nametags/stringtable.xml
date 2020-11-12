@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="nametags">
+        <Key ID="STR_dui_addon_nametags">
+            <English>Nametags</English>
+            <Chinesesimp>名牌</Chinesesimp>
+            <Chinese>名牌</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_enabled">
+            <English>Enable Nametags</English>
+            <Chinesesimp>启用名牌</Chinesesimp>
+            <Chinese>啓用名牌</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_enableOcclusion">
+            <English>Enable Nametag Occlusion</English>
+            <Chinesesimp>启用名牌遮挡</Chinesesimp>
+            <Chinese>啓用名牌遮擋</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_enableOcclusion_desc">
+            <English>When Occlusion is Enabled the Nametags check how Visible a Unit is and Reduces based in that the Transparency of the Nametag</English>
+            <Chinesesimp>当遮挡启用时，会检查该单位的可视程度来调整该单位的名牌透明度</Chinesesimp>
+            <Chinese>當遮擋啓用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeInTime">
+            <English>Fade In Time</English>
+            <Chinesesimp>渐入时间</Chinesesimp>
+            <Chinese>漸入時間</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeInTime_desc">
+            <English>The time the Nametag takes to Fade in</English>
+            <Chinesesimp>名牌渐入时间</Chinesesimp>
+            <Chinese>名牌漸入時間</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeOutTime">
+            <English>Fade Out Time</English>
+            <Chinesesimp>淡出时间</Chinesesimp>
+            <Chinese>淡出時間</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fadeOutTime_desc">
+            <English>The Time the Nametag takey to Fade out</English>
+            <Chinesesimp>名牌淡出时间</Chinesesimp>
+            <Chinese>名牌淡出時間</Chinese>
+        </Key>
+        <Key ID="STR_dui_cat_fonts">
+            <English>Font Settings</English>
+            <Chinesesimp>字体设置</Chinesesimp>
+            <Chinese>字體設置</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_nameFont">
+            <English>Name Font</English>
+            <Chinesesimp>名称字体</Chinesesimp>
+            <Chinese>名稱字體</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_nameFont_desc">
+            <English>The Font that is used for the Name in the Nametag</English>
+            <Chinesesimp>名牌中名称的字体</Chinesesimp>
+            <Chinese>名牌中名稱的字體</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameFont">
+            <English>Group Name Font</English>
+            <Chinesesimp>团队名称字体</Chinesesimp>
+            <Chinese>團隊名稱字體</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameFont_desc">
+            <English>The Font that is used for the Group Name in the Nametag</English>
+            <Chinesesimp>名牌中团队名称的字体</Chinesesimp>
+            <Chinese>名牌中團隊名稱的字體</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fontNameSize">
+            <English>Name Font Scale</English>
+            <Chinesesimp>名称字体大小</Chinesesimp>
+            <Chinese>名稱字體大小</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fontNameSize_desc">
+            <English>The Scaling that is Applied to the Name</English>
+            <Chinesesimp>名称字体大小</Chinesesimp>
+            <Chinese>名稱字體大小</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fontGroupNameSize">
+            <English>Group Name Font Scale</English>
+            <Chinesesimp>团队名称字体大小</Chinesesimp>
+            <Chinese>團隊名稱字體大小</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
+            <English>The Scaling that is Applied to the Group Name</English>
+            <Chinesesimp>团队名称所使用的字体大小</Chinesesimp>
+            <Chinese>團隊名稱所使用的字體大小</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_deadColor">
+            <English>Dead Color</English>
+            <Chinesesimp>死亡颜色</Chinesesimp>
+            <Chinese>死亡顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_deadColor_desc">
+            <English>The Color a Dead Person has.</English>
+            <Chinesesimp>已死亡单位的颜色</Chinesesimp>
+            <Chinese>已死亡單位的顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupColor">
+            <English>Own Group Color</English>
+            <Chinesesimp>自己团队的颜色</Chinesesimp>
+            <Chinese>自己團隊的顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupColor_desc">
+            <English>The Color the Group Name will have if the Unit is in your Group.</English>
+            <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
+            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameOtherColor">
+            <English>Other Group Color</English>
+            <Chinesesimp>其他团队的颜色</Chinesesimp>
+            <Chinese>其他團隊的顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
+            <English>The Color Other Groups have</English>
+            <Chinesesimp>其他团队的名称</Chinesesimp>
+            <Chinese>其他團隊的顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_nameOtherColor">
+            <English>Other Group Name Color</English>
+            <Chinesesimp>其他团队的名称颜色</Chinesesimp>
+            <Chinese>其他團隊的名稱顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_nameOtherColor_desc">
+            <English>The Color Other Player Names are showed in that are not in your Group.</English>
+            <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
+            <Chinese>非本團隊玩家名稱顔色</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_renderDistance">
+            <English>Render Distance</English>
+            <Chinesesimp>渲染距离</Chinesesimp>
+            <Chinese>渲染距離</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_renderDistance_desc">
+            <English>The Distance a Nametag is render</English>
+            <Chinesesimp>名牌的渲染距离</Chinesesimp>
+            <Chinese>名牌的渲染距離</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_deadRenderDistance">
+            <English>Dead Render Distance</English>
+            <Chinesesimp>死亡渲染距离</Chinesesimp>
+            <Chinese>死亡渲染距離</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_deadRenderDistance_desc">
+            <English>The Distance a Dead unit has a Nametag Visible</English>
+            <Chinesesimp>已死亡单位的名牌可视距离</Chinesesimp>
+            <Chinese>已死亡單位的名牌可視距離</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_drawRank">
+            <English>Display Rank</English>
+            <Chinesesimp>显示军衔</Chinesesimp>
+            <Chinese>顯示軍銜</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_nameShadow">
+            <English>Names Shadow</English>
+            <Chinesesimp>名称阴影</Chinesesimp>
+            <Chinese>名稱陰影</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_groupShadow">
+            <English>Group Shadow</English>
+            <Chinesesimp>团队阴影</Chinesesimp>
+            <Chinese>團隊陰影</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_enableFOVBoost">
+            <English>Enable FOV Boost</English>
+            <Chinesesimp>启用视野范围角度增强</Chinesesimp>
+            <Chinese>啓用視野範圍角度增強</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_enableFOVBoost_desc">
+            <English>Increases Nametags Visiblity when Zooming in.</English>
+            <Chinesesimp>放大时增强名牌可视度</Chinesesimp>
+            <Chinese>放大時增強名牌可視度</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_showUnconAsDead">
+            <English>Show Unconscious as Dead</English>
+            <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
+            <Chinese>将失去意识归类为死亡</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_useSideIsFriendly">
+            <English>Use Side Friendlies</English>
+            <Chinesesimp>使用阵营友好</Chinesesimp>
+            <Chinese>使用陣營友好</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
+            <English>If this setting is enabled the System uses BIS_fnc_sideIsFriendly instead of just checking the side</English>
+            <Chinesesimp>如果这个设定启用，系统会使用BIS_fnc_sideIsFriendly来代替阵营检查</Chinesesimp>
+            <Chinese>如果這個設定啓用，系統會使用BIS_fnc_sideIsFriendly來代替陣營檢查</Chinese>
+        </Key>
+        <Key ID="STR_dui_nametags_UIGrids_name">
+            <English>DUI Nametags</English>
+            <Chinesesimp>DUI名牌</Chinesesimp>
+        </Key>
+        <Key ID="STR_dui_nametags_UIGrids_description">
+            <English>Nametag UI Element, drag and drop it to reposition it.</English>
+            <Chinesesimp>名牌UI元件，拖拽与松开它来给他重新设定位置</Chinesesimp>
+            <Chinese>名牌UI元件，拖拽與松開它來給他重新設定位置</Chinese>
+        </Key>
+    </Package>
+</Project>

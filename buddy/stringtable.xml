@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="buddy">
+        <Key ID="STR_dui_buddy_action">
+            <English>Assign Buddy [HUD]</English>
+            <Czech>Přiřadit buddyho [HUD]</Czech>
+            <French>Assigner Buddy [HUD]</French>
+            <German>Als Buddy markieren [HUD]</German>
+            <Korean>친구로 등록 [HUD]</Korean>
+            <Japanese>バディに登録 [HUD]</Japanese>
+            <Polish>Przydziel do dwójki [HUD]</Polish>
+            <Portuguese>Marcar Parceiro</Portuguese>
+            <Spanish>Marcar Amigo</Spanish>
+            <Russian>Назначить напарников [HUD]</Russian>
+            <Chinesesimp>搭档登录 [HUD]</Chinesesimp>
+            <Chinese>搭檔登錄 [HUD]</Chinese>
+
+        </Key>
+        <Key ID="STR_dui_buddy_action_remove">
+            <English>Unassign Buddy [HUD]</English>
+            <Czech>Zrušit přiřazení buddyho [HUD]</Czech>
+            <French>Désassigner Buddy [HUD]</French>
+            <German>Buddymarkierung aufheben [HUD]</German>
+            <Korean>친구 해제 [HUD]</Korean>
+            <Japanese>バディを解除 [HUD]</Japanese>
+            <Polish>Usuń z dwójki [HUD]</Polish>
+            <Portuguese>Desmarcar Parceiro</Portuguese>
+            <Spanish>Desmarcar Amigo</Spanish>
+            <Russian>Распустить напарников [HUD]</Russian>
+            <Chinesesimp>搭档解除 [HUD]</Chinesesimp>
+            <Chinese>搭檔解除 [HUD]</Chinese>
+        </Key>
+    </Package>
+</Project>

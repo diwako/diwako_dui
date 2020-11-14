@@ -9,9 +9,13 @@
                 <Portuguese>Indicadores</Portuguese>
                 <Japanese>インジケータ</Japanese>
                 <Russian>Индикаторы</Russian>
+                <Chinesesimp>标记</Chinesesimp>
+                <Chinese>標記</Chinese>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
+                <Chinesesimp>显示标记</Chinesesimp>
+                <Chinese>顯示標記</Chinese>
                 <German>Indikatoren anzeigen</German>
                 <Polish>Pokazuj znaczniki</Polish>
                 <Japanese>インジケータ表示</Japanese>
@@ -20,6 +24,8 @@
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
+                <Chinesesimp>在一定距离内才显示标记</Chinesesimp>
+                <Chinese>在一定距離內才顯示標記</Chinese>
                 <German>Näherungsindikatoren</German>
                 <Polish>Znaczniki pobliskich graczy</Polish>
                 <Portuguese>Indicadores de Proximidade</Portuguese>
@@ -28,6 +34,8 @@
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
+                <Chinesesimp>最远距离</Chinesesimp>
+                <Chinese>最遠距離</Chinese>
                 <German>Maximale Reichweite</German>
                 <Polish>Maksymalny zasięg</Polish>
                 <Portuguese>Distância Máxima</Portuguese>
@@ -36,6 +44,8 @@
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
+                <Chinesesimp>显示标记的最远距离</Chinesesimp>
+                <Chinese>顯示標記的最遠距離</Chinese>
                 <German>Maximale Reichweite wie weit die Indikatoren angezeigt werden dürfen</German>
                 <Polish>Maksymalny zasięg pokazywania znaczników.</Polish>
                 <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
@@ -44,26 +54,36 @@
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
+                <Chinesesimp>允许乘员标记</Chinesesimp>
+                <Chinese>允許乘員標記</Chinese>
                 <Russian>Разрешить индикаторы для экипажа</Russian>
                 <German>Erlaube Mannschafts Indikatoren</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
+                <Chinesesimp>允许乘员有额外的标记距离</Chinesesimp>
+                <Chinese>允許乘員有額外的標記距離</Chinese>
                 <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
                 <German>Erlauben Anzeigen mit größerer Reichweite für die Fahrzeugmannschaft.</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
+                <Chinesesimp>乘员的最远距离</Chinesesimp>
+                <Chinese>乘員的最遠距離</Chinese>
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
                 <German>Maximale Reichweite für die Mannschaft</German>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
+                <Chinesesimp>作为载具乘员时允许显示的最远的距离</Chinesesimp>
+                <Chinese>作爲載具乘員時允許顯示的最遠的距離</Chinese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
                 <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugmannschaft.</German>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
+                <Chinesesimp>图标风格</Chinesesimp>
+                <Chinese>圖標風格</Chinese>
                 <Czech>Styl ikon</Czech>
                 <French>Style d'icône</French>
                 <German>Icon Style</German>
@@ -76,6 +96,8 @@
             </Key>
             <Key ID="STR_dui_indicators_style_desc">
                 <English>Which icon style should be used?</English>
+                <Chinesesimp>要使用哪种图标风格</Chinesesimp>
+                <Chinese>要使用哪種圖標風格</Chinese>
                 <Czech>Který styl ikon by se měl použít.</Czech>
                 <French>Quel style d'icône doit être utilisé?</French>
                 <German>Welcher Icon Style soll genutzt werden?</German>
@@ -88,6 +110,8 @@
             </Key>
             <Key ID="STR_dui_indicators_size">
                 <English>Size</English>
+                <Chinesesimp>图标大小</Chinesesimp>
+                <Chinese>圖標大小</Chinese>
                 <German>Größe</German>
                 <Polish>Rozmiar</Polish>
                 <Portuguese>Tamanho</Portuguese>
@@ -96,6 +120,8 @@
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
+                <Chinesesimp>设置图标的大小</Chinesesimp>
+                <Chinese>設置圖標的大小</Chinese>
                 <German>Setzt die Größe der Indikatoren</German>
                 <Polish>Ustawia rozmiar znaczników.</Polish>
                 <Portuguese>Define o tamanho dos indicadores</Portuguese>
@@ -104,6 +130,8 @@
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange">
                 <English>Use ACE Nametags Logic</English>
+                <Chinesesimp>使用ACE名牌逻辑</Chinesesimp>
+                <Chinese>使用ACE名牌邏輯</Chinese>
                 <German>ACE Nametags Logik verwenden</German>
                 <Portuguese>Usar lógica do ACE Etiquetas de Nome</Portuguese>
                 <Russian>Использовать ACE Nametags Logic</Russian>
@@ -111,6 +139,8 @@
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
+                <Chinesesimp>将标识透明度匹配ACE名牌的透明度设置。会复写一般设置中的距离和行为！</Chinesesimp>
+                <Chinese>將標識透明度匹配ACE名牌的透明度設置。會複寫一般設置中的距離和行爲！</Chinese>
                 <German>Setzt die Transparenz der Indikatoren gleich wie die Nametags von ACE. Überschreibt die normale Reichweite und Verhalten!</German>
                 <Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
                 <Russian>Сопоставляет прозрачность индикатора с прозрачностью именных меток ACE.</Russian>
@@ -119,6 +149,8 @@
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
                 <English>Standard</English>
+                <Chinesesimp>标准</Chinesesimp>
+                <Chinese>標准</Chinese>
                 <German>Standart</German>
                 <Japanese>通常</Japanese>
                 <Polish>Standard</Polish>
@@ -127,6 +159,8 @@
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
+                <Chinesesimp>方形</Chinesesimp>
+                <Chinese>方形</Chinese>
                 <German>Rechteck</German>
                 <Polish>Kwadrat</Polish>
                 <Portuguese>Quadrado</Portuguese>
@@ -135,6 +169,8 @@
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
+                <Chinesesimp>菱形</Chinesesimp>
+                <Chinese>菱形</Chinese>
                 <German>Diamant</German>
                 <Polish>Diament</Polish>
                 <Portuguese>Diamante</Portuguese>
@@ -143,6 +179,8 @@
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
+                <Chinesesimp>圆形</Chinesesimp>
+                <Chinese>圓形</Chinese>
                 <German>Kreis</German>
                 <Polish>Kółko</Polish>
                 <Portuguese>Círculo</Portuguese>
@@ -152,6 +190,8 @@
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
                 <English>Icons</English>
+                <Chinesesimp>图标</Chinesesimp>
+                <Chinese>圖標</Chinese>
                 <German>Icons</German>
                 <Japanese>アイコン</Japanese>
                 <Polish>Ikony</Polish>
@@ -160,6 +200,8 @@
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
+                <Chinesesimp>显示队长图标</Chinesesimp>
+                <Chinese>顯示隊長圖標</Chinese>
                 <German>Gruppenführer anzeigen</German>
                 <Japanese>リーダー アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę dowódcy.</Polish>
@@ -168,6 +210,8 @@
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
+                <Chinesesimp>显示搭档图标</Chinesesimp>
+                <Chinese>顯示搭檔圖標</Chinese>
                 <German>Buddy anzeigen</German>
                 <Japanese>バディ アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę dwójki.</Polish>
@@ -176,6 +220,8 @@
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
+                <Chinesesimp>显示医疗兵图标</Chinesesimp>
+                <Chinese>顯示醫療兵圖標</Chinese>
                 <German>Medic anzeigen</German>
                 <Japanese>衛生兵アイコンを表示</Japanese>
                 <Polish>Pokazuj ikonę medyka.</Polish>
@@ -184,6 +230,8 @@
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
+                <Chinesesimp>重设距离大小</Chinesesimp>
+                <Chinese>重設距離大小</Chinese>
                 <German>Mit Entfernung Skalieren</German>
                 <Polish>Zmieniaj rozmiar w zależności od rangi.</Polish>
                 <Portuguese>Distância altera tamanho</Portuguese>
@@ -192,6 +240,8 @@
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according with distance to unit</English>
+                <Chinesesimp>标识的大小根据到达单位的距离而变化</Chinesesimp>
+                <Chinese>標識的大小根據到達單位的距離而變化</Chinese>
                 <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
                 <Polish>Zmieniaj rozmiar znaczników w zależności od odległości do jednostki.</Polish>
                 <Portuguese>Escala o tamanho dos indicadores de acordo com a distância das unidades</Portuguese>
@@ -200,6 +250,8 @@
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
+                <Chinesesimp>重设视野范围角度</Chinesesimp>
+                <Chinese>重設視野範圍角度</Chinese>
                 <German>Mit Blickwinkelgröße skalieren</German>
                 <Polish>Zmieniaj rozmiar w zależności od pola widzenia.</Polish>
                 <Portuguese>FOV altera tamanho</Portuguese>
@@ -208,6 +260,8 @@
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according with current field of view</English>
+                <Chinesesimp>根据视野范围角度调节标识大小</Chinesesimp>
+                <Chinese>根據視野範圍角度調節標識大小</Chinese>
                 <German>Indikatoren werden anhand der zurzeitigen Blinkwinkelgröße skaliert</German>
                 <Polish>Zmieniaj rozmiar znaczników w zależności od aktualnego pola widzenia.</Polish>
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>

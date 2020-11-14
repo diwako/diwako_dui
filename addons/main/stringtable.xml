@@ -12,9 +12,13 @@
             <Portuguese>DUI - Radar do Esquadrão</Portuguese>
             <Spanish>DUI - Radar De Escuadron</Spanish>
             <Russian>DUI - Сквад-Радар</Russian>
+            <Chinesesimp>DUI - 小队雷达</Chinesesimp>
+            <Chinese>DUI - 小隊雷達</Chinese>
         </Key>
         <Key ID="STR_dui_font">
             <English>Font</English>
+            <Chinesesimp>字体</Chinesesimp>
+            <Chinese>字體</Chinese>
             <Czech>Font</Czech>
             <French>Police de charactère</French>
             <German>Schriftart</German>
@@ -27,6 +31,8 @@
         </Key>
         <Key ID="STR_dui_font_desc">
             <English>Which font should be used?</English>
+            <Chinesesimp>使用哪种字体</Chinesesimp>
+            <Chinese>使用哪種字體</Chinese>
             <Czech>Který font by se měl použít.</Czech>
             <French>Quel police de charactère doit être utilisé?</French>
             <German>Welche Schriftart soll verwendet werden?</German>
@@ -39,6 +45,8 @@
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
+            <Chinesesimp>图标风格</Chinesesimp>
+            <Chinese>圖標風格</Chinese>
             <Czech>Styl ikon</Czech>
             <French>Style d'icône</French>
             <German>Icon Style</German>
@@ -51,6 +59,8 @@
         </Key>
         <Key ID="STR_dui_icon_desc">
             <English>Which icon style should be used?</English>
+            <Chinesesimp>要使用哪种图标风格</Chinesesimp>
+            <Chinese>要使用哪種圖標風格</Chinese>
             <Czech>Který styl ikon by se měl použít.</Czech>
             <French>Quel style d'icône doit être utilisé?</French>
             <German>Welcher Icon Style soll genutzt werden?</German>
@@ -63,6 +73,8 @@
         </Key>
         <Key ID="STR_dui_color">
             <English>Color Scheme</English>
+            <Chinesesimp>颜色方案</Chinesesimp>
+            <Chinese>顔色方案</Chinese>
             <Czech>Barevné schéma</Czech>
             <French>Schéma de couleur</French>
             <German>Farbschema</German>
@@ -75,6 +87,8 @@
         </Key>
         <Key ID="STR_dui_color_desc">
             <English>Which color scheme should be used?</English>
+            <Chinesesimp>要使用哪种颜色方案</Chinesesimp>
+            <Chinese>要使用哪種顔色方案</Chinese>
             <Czech>Které barevné schéma by se mělo použít.</Czech>
             <French>Quel schéma de couleur doit être utilisé?</French>
             <German>Welches Farbschema soll verwendet werden?</German>
@@ -87,6 +101,8 @@
         </Key>
         <Key ID="STR_dui_show_compass">
             <English>Show Compass</English>
+            <Chinesesimp>显示罗盘</Chinesesimp>
+            <Chinese>顯示羅盤</Chinese>
             <Czech>Ukázat kompas</Czech>
             <French>Afficher la boussole</French>
             <German>Kompass anzeigen</German>
@@ -99,6 +115,8 @@
         </Key>
         <Key ID="STR_dui_show_compass_desc">
             <English>Shows compass and unit markers on it</English>
+            <Chinesesimp>显示罗盘和上面的单位标识</Chinesesimp>
+            <Chinese>顯示羅盤和上面的單位標識</Chinese>
             <Czech>Ukáže kompas a značky jednotek</Czech>
             <French>Afficher la boussole et marqueurs d'unité dessus</French>
             <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
@@ -111,6 +129,8 @@
         </Key>
         <Key ID="STR_dui_show_dir">
             <English>Show Bearing</English>
+            <Chinesesimp>显示方位角</Chinesesimp>
+            <Chinese>顯示方位角</Chinese>
             <Czech>Ukázat azimut</Czech>
             <French>Afficher la direction</French>
             <German>Richtung anzeigen</German>
@@ -123,6 +143,8 @@
         </Key>
         <Key ID="STR_dui_show_dir_desc">
             <English>Shows bearing above the compass, compass itself needs to be enabled!</English>
+            <Chinesesimp>在罗盘上方显示方位角，罗盘本身需要被启用！</Chinesesimp>
+            <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啓用！</Chinese>
             <Czech>Ukáže azimut nad kompasem. (Kompas sám musí být zapnutý)</Czech>
             <French>Afficher la direction au-dessus de la boussole (la boussole doit ètre activé!) (</French>
             <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
@@ -135,6 +157,8 @@
         </Key>
         <Key ID="STR_dui_show_milrad">
             <English>Show bearing also in milradians</English>
+            <Chinesesimp>同样以密位为单位显示方位角</Chinesesimp>
+            <Chinese>同樣以密位爲單位顯示方位角</Chinese>
             <Czech>Ukázat azimut i v miliradiánech</Czech>
             <French>Afficher la direction aussi en milliradiens</French>
             <German>Richtung auch in Milradians anzeigen</German>
@@ -147,6 +171,8 @@
         </Key>
         <Key ID="STR_dui_show_milrad_desc">
             <English>Shows milradians next to the regular bearing</English>
+            <Chinesesimp>在方位角旁边显示密位</Chinesesimp>
+            <Chinese>在方位角旁邊顯示密位</Chinese>
             <Czech>Ukáže miliradiány vedle normálního azimutu.</Czech>
             <French>Afficher les milliradiens à côté de la direction régulière</French>
             <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
@@ -158,6 +184,8 @@
         </Key>
         <Key ID="STR_dui_compass_style">
             <English>Compass Style</English>
+            <Chinesesimp>罗盘风格</Chinesesimp>
+            <Chinese>羅盤風格</Chinese>
             <Czech>Styl kompasu</Czech>
             <French>Style de boussole</French>
             <German>Kompassstyle</German>
@@ -170,6 +198,8 @@
         </Key>
         <Key ID="STR_dui_compass_style_desc">
             <English>Which compass style should be used?</English>
+            <Chinesesimp>要使用哪种罗盘风格</Chinesesimp>
+            <Chinese>要使用哪種羅盤風格</Chinese>
             <Czech>Který styl kompasu by se měl použít.</Czech>
             <French>Quel style de boussole doit être utilisé?</French>
             <German>Welcher Kompassstyle soll verwendet werden?</German>
@@ -182,6 +212,8 @@
         </Key>
         <Key ID="STR_dui_compass_range">
             <English>Compass Range</English>
+            <Chinesesimp>罗盘距离设置</Chinesesimp>
+            <Chinese>羅盤距離設置</Chinese>
             <Czech>Dosah kompasu</Czech>
             <French>Portée de la Boussole</French>
             <German>Kompassreichweite</German>
@@ -194,6 +226,8 @@
         </Key>
         <Key ID="STR_dui_compass_range_desc">
             <English>How far should players see units in the same group in meters?</English>
+            <Chinesesimp>玩家看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>玩家看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Czech>Na jak daleko by se měly zobrazovat jednotky ve stejné skupině? (v metrech)</Czech>
             <French>Jusqu'où les joueurs doivent voir les unités du même groupe en mètres?</French>
             <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
@@ -206,26 +240,36 @@
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
+            <Chinesesimp>允许载具罗盘</Chinesesimp>
+            <Chinese>允許載具羅盤</Chinese>
             <Russian>Разрешить компас для техники</Russian>
             <German>Fahrzeugkompass zulassen</German>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled_desc">
             <English>Allow compass with greater range for vehicle crew</English>
+            <Chinesesimp>允许载具罗盘有更远的显示距离</Chinesesimp>
+            <Chinese>允許載具羅盤有更遠的顯示距離</Chinese>
             <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
             <German>Kompass mit größerer Reichweite für die Fahrzeugmannschaft erlauben</German>
         </Key>
         <Key ID="STR_dui_compass_crew_range">
             <English>Vehicle Compass range</English>
+            <Chinesesimp>载具罗盘距离设置</Chinesesimp>
+            <Chinese>載具羅盤距離設置</Chinese>
             <Russian>Дистанция компаса для техники</Russian>
             <German>Reichweite des Fahrzeugkompasses</German>
         </Key>
         <Key ID="STR_dui_compass_crew_range_desc">
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
+            <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
             <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
         </Key>
         <Key ID="STR_dui_compass_refresh">
             <English>Refresh Rate</English>
+            <Chinesesimp>刷新率</Chinesesimp>
+            <Chinese>刷新率</Chinese>
             <Czech>Obnovovací frekvence</Czech>
             <French>Taux de rafraichissement</French>
             <German>Aktualisierungsrate</German>
@@ -238,6 +282,8 @@
         </Key>
         <Key ID="STR_dui_compass_refresh_desc">
             <English>How fast should the compass render? Value in seconds, 0 means each frame! Set at your own peril!</English>
+            <Chinesesimp>罗盘的刷新速度，值以秒为单位，0代表每帧都会刷新！主机焦糊警告！</Chinesesimp>
+            <Chinese>羅盤的刷新速度，值以秒爲單位，0代表每幀都會刷新！主機焦糊警告！</Chinese>
             <Czech>Jak často by se měl kompas renderovat? Hodnota 0 znamená každý frame - nastavte na vlastní nebezpečí.</Czech>
             <French>À quelle vitesse doit être le rendu de la boussole, Valeur en seconds, 0 veut dire chaque frame! Définisé à votre péril!</French>
             <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
@@ -250,6 +296,8 @@
         </Key>
         <Key ID="STR_dui_occlusion">
             <English>Enable Occlusion</English>
+            <Chinesesimp>启用遮挡</Chinesesimp>
+            <Chinese>啓用遮擋</Chinese>
             <Czech>Zapnout okluzi</Czech>
             <French>Activé l'Occlusion</French>
             <German>Okklusion anschalten</German>
@@ -262,6 +310,8 @@
         </Key>
         <Key ID="STR_dui_occlusion_desc">
             <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
+            <Chinesesimp>如果玩家无法看到一个单位，该单位将慢慢在罗盘上消失，直到该单位重新出现在玩家视野中</Chinesesimp>
+            <Chinese>如果玩家無法看到一個單位，該單位將慢慢在羅盤上消失，直到該單位重新出現在玩家視野中</Chinese>
             <Czech>Pokud jednotka není vidět, postupně zmizí z kompasu.</Czech>
             <French>Si un joueur ne peut pas voir une unité, elle disparaîtra lentement de la boussole jusqu'à qu'elle soit vue de nouveau</French>
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
@@ -274,6 +324,8 @@
         </Key>
         <Key ID="STR_dui_namelist">
             <English>Show Names</English>
+            <Chinesesimp>显示名称</Chinesesimp>
+            <Chinese>顯示名稱</Chinese>
             <Czech>Ukázat jména</Czech>
             <French>Afficher les noms</French>
             <German>Namen anzeigen</German>
@@ -286,6 +338,8 @@
         </Key>
         <Key ID="STR_dui_namelist_desc">
             <English>Shows a list of names of units currently in the same group</English>
+            <Chinesesimp>显示在当前同一团队内的单位的名单列表</Chinesesimp>
+            <Chinese>顯示在當前同一團隊內的單位的名單列表</Chinese>
             <Czech>Ukáže seznam jmen jednotek ve stejné skupině.</Czech>
             <French>Afficher une liste des noms des unités actuellement dans le même groupe</French>
             <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
@@ -298,6 +352,8 @@
         </Key>
         <Key ID="STR_dui_namelist_buddy">
             <English>Show Only Buddy Icon</English>
+            <Chinesesimp>只显示搭档的图标</Chinesesimp>
+            <Chinese>只顯示搭檔的圖標</Chinese>
             <Czech>Ukázat pouze buddy ikonu</Czech>
             <French>Afficher seulement l'icone du buddy</French>
             <German>Nur Buddy Icon anzeigen</German>
@@ -310,6 +366,8 @@
         </Key>
         <Key ID="STR_dui_namelist_buddy_desc">
             <English>Shows only the buddy icon in the name list instead of both, buddy and unit class</English>
+            <Chinesesimp>只在名单列表中显示搭档图标</Chinesesimp>
+            <Chinese>只在名單列表中顯示搭檔圖標</Chinese>
             <Czech>Ukáže v seznamu jmen pouze buddy ikonu.</Czech>
             <French>Afficher seulement l'icone du buddy dans la liste de nom que les deux (buddy et classe d'unité)</French>
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
@@ -322,6 +380,8 @@
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
+            <Chinesesimp>文字大小</Chinesesimp>
+            <Chinese>文字大小</Chinese>
             <Czech>Velikost textu</Czech>
             <French>Taille du texte</French>
             <German>Textgröße</German>
@@ -334,6 +394,8 @@
         </Key>
         <Key ID="STR_dui_namelist_size_desc">
             <English>Size of the names, smaller means more in one column</English>
+            <Chinesesimp>名字字体大小，更小意味着在一列中显示更多人</Chinesesimp>
+            <Chinese>名字字體大小，更小意味著在一列中顯示更多人</Chinese>
             <Czech>Velikost textu jmen.</Czech>
             <French>Taille des noms (plus dans une colonne si plus petit)</French>
             <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
@@ -346,6 +408,8 @@
         </Key>
         <Key ID="STR_dui_key_toggle">
             <English>Toggle UI on and off</English>
+            <Chinesesimp>切换UI开关</Chinesesimp>
+            <Chinese>切換UI開關</Chinese>
             <Czech>Zapnout/vypnout UI</Czech>
             <French>Activé/désactivé l'IU</French>
             <German>UI an- und ausschalten</German>
@@ -358,6 +422,8 @@
         </Key>
         <Key ID="STR_dui_key_increase_range">
             <English>Increase Compass Range</English>
+            <Chinesesimp>增加罗盘距离</Chinesesimp>
+            <Chinese>增加羅盤距離</Chinese>
             <Czech>Zvýšit dosah kompasu</Czech>
             <French>Augmenter la porté de la boussole</French>
             <German>Kompassreichweite erhöhen</German>
@@ -370,6 +436,8 @@
         </Key>
         <Key ID="STR_dui_key_decrease_range">
             <English>Decrease Compass Range</English>
+            <Chinesesimp>减少罗盘距离</Chinesesimp>
+            <Chinese>減少羅盤距離</Chinese>
             <Czech>Snížit dosah kompasu</Czech>
             <French>Diminuer la porté de la boussole</French>
             <German>Kompassreichweite verkleinern</German>
@@ -382,6 +450,8 @@
         </Key>
         <Key ID="STR_dui_key_rank">
             <English>Hold to show ranks</English>
+            <Chinesesimp>按住以显示军衔</Chinesesimp>
+            <Chinese>按住以顯示軍銜</Chinese>
             <Czech>Podržet pro ukázání hodnosti</Czech>
             <French>Maintener pour Afficher les grades</French>
             <German>Taste halten um Ränge anzuzeigen</German>
@@ -394,6 +464,8 @@
         </Key>
         <Key ID="STR_dui_cat_compass">
             <English>Compass</English>
+            <Chinesesimp>罗盘</Chinesesimp>
+            <Chinese>羅盤</Chinese>
             <Czech>Kompas</Czech>
             <French>Boussole</French>
             <German>Kompass</German>
@@ -406,6 +478,8 @@
         </Key>
         <Key ID="STR_dui_cat_compass_desc">
             <English>Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <Chinesesimp>罗盘的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>羅盤的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
@@ -418,6 +492,8 @@
         </Key>
         <Key ID="STR_dui_cat_namelist">
             <English>Name List</English>
+            <Chinesesimp>名单列表</Chinesesimp>
+            <Chinese>名單列表</Chinese>
             <Czech>Seznam jmen</Czech>
             <French>Liste des noms</French>
             <German>Namesliste</German>
@@ -430,6 +506,8 @@
         </Key>
         <Key ID="STR_dui_cat_namelist_desc">
             <English>Name List UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            <Chinesesimp>名单列表的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>名單列表的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
@@ -442,6 +520,8 @@
         </Key>
         <Key ID="STR_dui_cat_general">
             <English>General Settings</English>
+            <Chinesesimp>一般设置</Chinesesimp>
+            <Chinese>一般設置</Chinese>
             <Czech>Obecná nastavení</Czech>
             <French>Paramètres Généraux</French>
             <German>Allgmeine Einstellungen</German>
@@ -454,6 +534,8 @@
         </Key>
         <Key ID="STR_dui_cat_custom_color">
             <English>Custom Colors</English>
+            <Chinesesimp>自定义颜色</Chinesesimp>
+            <Chinese>自定義顔色</Chinese>
             <German>Benutzerdefinierte Farben</German>
             <Japanese>カスタム カラー</Japanese>
             <Portuguese>Cores Customizadas</Portuguese>
@@ -461,6 +543,8 @@
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
+            <Chinesesimp>从不</Chinesesimp>
+            <Chinese>從不</Chinese>
             <Czech>Nikdy</Czech>
             <French>Jamais</French>
             <German>Niemals</German>
@@ -473,6 +557,8 @@
         </Key>
         <Key ID="STR_dui_show_dir_opt3">
             <English>Always</English>
+            <Chinesesimp>总是</Chinesesimp>
+            <Chinese>總是</Chinese>
             <Czech>Vždy</Czech>
             <French>Toujours</French>
             <German>Immer</German>
@@ -485,6 +571,8 @@
         </Key>
         <Key ID="STR_dui_show_dir_opt2">
             <English>Only In Vehicles</English>
+            <Chinesesimp>只在载具中</Chinesesimp>
+            <Chinese>只在載具中</Chinese>
             <Czech>Pouze ve vozidlech</Czech>
             <French>Seulement En Vehicules</French>
             <German>Nur In Fahrzeugen</German>
@@ -497,6 +585,8 @@
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
+            <Chinesesimp>UI大小</Chinesesimp>
+            <Chinese>UI大小</Chinese>
             <Czech>Velikost UI</Czech>
             <French>Mise a l'échelle de l'IU</French>
             <German>UI Größe</German>
@@ -509,6 +599,8 @@
         </Key>
         <Key ID="STR_dui_namelist_bg">
             <English>Background Opacity</English>
+            <Chinesesimp>背景透明度</Chinesesimp>
+            <Chinese>背景透明度</Chinese>
             <Czech>Viditelnost pozadí</Czech>
             <French>Opacité du fond</French>
             <German>Hintergrund Sichtbarkeit</German>
@@ -521,6 +613,8 @@
         </Key>
         <Key ID="STR_dui_namelist_bg_desc">
             <English>How much should the black background be visible</English>
+            <Chinesesimp>设置黑色背景的透明度</Chinesesimp>
+            <Chinese>設置黑色背景的透明度</Chinese>
             <Czech>Jak moc by mělo být černé pozadí viditelné</Czech>
             <French>Combien le fond doit être visible?</French>
             <German>Wie stark soll der Hintergrund sichtbar sein</German>
@@ -533,6 +627,8 @@
         </Key>
         <Key ID="STR_dui_namelist_width">
             <English>Column Width</English>
+            <Chinesesimp>列宽度</Chinesesimp>
+            <Chinese>列寬度</Chinese>
             <Czech>Šířka sloupku</Czech>
             <French>Largeur des Colonnes</French>
             <German>Spaltenbreite</German>
@@ -545,6 +641,8 @@
         </Key>
         <Key ID="STR_dui_namelist_width_desc">
             <English>Which width in pixels should be used for the column widths? Be aware that UI scaling will affect this!</English>
+            <Chinesesimp>要使用哪个宽度（像素点）来作为列的宽度？注意，UI大小设置选项会影响这个</Chinesesimp>
+            <Chinese>要使用哪個寬度（像素點）來作爲列的寬度？注意，UI大小設置選項會影響這個</Chinese>
             <Czech>Jaká šířka v pixelech by se měla použít pro sloupky? (je ovlivněno velikostí UI)</Czech>
             <French>Quelle largeur en pixels doit être utilisée pour celle des colonnes? la mise à l'échelle est affecté par ceci!</French>
             <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
@@ -557,6 +655,8 @@
         </Key>
         <Key ID="STR_dui_compass_icon_scale">
             <English>Icon Scaling</English>
+            <Chinesesimp>图标大小</Chinesesimp>
+            <Chinese>圖標大小</Chinese>
             <Czech>Velikost ikon</Czech>
             <French>mise a l'échelle de l'icone</French>
             <German>Icon Größe</German>
@@ -569,6 +669,8 @@
         </Key>
         <Key ID="STR_dui_compass_icon_scale_desc">
             <English>Set the icon scale for units on your compass</English>
+            <Chinesesimp>设置罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>設置羅盤上的單位的圖標大小</Chinese>
             <Czech>Nastaví velikost ikon jednotek na kompasu.</Czech>
             <French>Définiser l'échelle de l'icône des unités sur votre boussole</French>
             <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
@@ -581,16 +683,22 @@
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew">
             <English>Icon Scaling for crew</English>
+            <Chinesesimp>乘员的图标大小</Chinesesimp>
+            <Chinese>乘員的圖標大小</Chinese>
             <Russian>Масштаб иконок для экипажа</Russian>
             <German>Symbol Skalierung für Mannschaften</German>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew_desc">
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
+            <Chinesesimp>设置当玩家作为载具乘员时的罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
             <Russian>Установите масштаб значков для юнитов на вашем компасе когда вы в экипаже техники</Russian>
             <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
             <English>Hide while ACE Interacting</English>
+            <Chinesesimp>在使用ACE互动时隐藏</Chinesesimp>
+            <Chinese>在使用ACE互動時隱藏</Chinese>
             <Czech>Schovat při ACE interakcích</Czech>
             <French>Cacher pendant ACE Interaction</French>
             <German>Während ACE Interaktionen verstecken</German>
@@ -603,6 +711,8 @@
         </Key>
         <Key ID="STR_dui_ace_hide_interaction_desc">
             <English>When interacting with things via ACE interaction should the UI be hidden?</English>
+            <Chinesesimp>在使用ACE互动时，UI是否被隐藏</Chinesesimp>
+            <Chinese>在使用ACE互動時，UI是否被隱藏</Chinese>
             <Czech>Má se UI schovat při ACE interakcích?</Czech>
             <French>L'UI doit-il être cacher pendant l'interaction avec objets via ACE Interaction?</French>
             <German>Wenn man durch ACE mit Dingen interagiert, soll die UI versteckt werden?</German>
@@ -615,18 +725,26 @@
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
+            <Chinesesimp>雷达透明度</Chinesesimp>
+            <Chinese>雷達透明度</Chinese>
             <German>Radaropazität</German>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity">
             <English>Icon Opacity</English>
+            <Chinesesimp>图标透明度</Chinesesimp>
+            <Chinese>圖標透明度</Chinese>
             <German>Iconopazität</German>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity_no_player">
             <English>Icon Opacity does not affect own unit</English>
+            <Chinesesimp>图标透明度不影响自己</Chinesesimp>
+            <Chinese>圖標透明度不影響自己</Chinese>
             <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
         </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
+            <Chinesesimp>方位角大小</Chinesesimp>
+            <Chinese>方位角大小</Chinese>
             <Czech>Velikost azimutu</Czech>
             <French>Taille de la direction</French>
             <German>Größe der Richtungsanzeige</German>
@@ -639,10 +757,14 @@
         </Key>
         <Key ID="STR_dui_dir_padding">
             <English>Bearing padding to radar</English>
+            <Chinesesimp>方位角与雷达的间距</Chinesesimp>
+            <Chinese>方位角與雷達的間距</Chinese>
             <German>Abstand der Richtungsanzeige zum Radar</German>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
+            <Chinesesimp>文字描边</Chinesesimp>
+            <Chinese>文字描邊</Chinese>
             <Czech>Obrys textu</Czech>
             <French>Contour du texte</French>
             <German>Text Umrandung</German>
@@ -655,6 +777,8 @@
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
+            <Chinesesimp>无</Chinesesimp>
+            <Chinese>無</Chinese>
             <Czech>Žádný</Czech>
             <French>Aucun</French>
             <German>Nichts</German>
@@ -667,6 +791,8 @@
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_1">
             <English>Shadow</English>
+            <Chinesesimp>阴影</Chinesesimp>
+            <Chinese>陰影</Chinese>
             <Czech>Stín</Czech>
             <French>Ombre</French>
             <German>Schatten</German>
@@ -679,6 +805,8 @@
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_2">
             <English>Outline</English>
+            <Chinesesimp>描边</Chinesesimp>
+            <Chinese>描邊</Chinese>
             <Czech>Obrys</Czech>
             <French>Contour</French>
             <German>Umrandung</German>
@@ -691,6 +819,8 @@
         </Key>
         <Key ID="STR_dui_compass_warning">
             <English>Distance Warning</English>
+            <Chinesesimp>距离警告</Chinesesimp>
+            <Chinese>距離警告</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Abstandswarnung</German>
@@ -703,6 +833,8 @@
         </Key>
         <Key ID="STR_dui_compass_warning_desc">
             <English>Sets the distance in meters which will turn a unit icon orange when being too close to you</English>
+            <Chinesesimp>以米为单位，设置一个距离，当别的单位太靠近你并低于设置的这个距离时，该单位的图标会变成橘色</Chinesesimp>
+            <Chinese>以米爲單位，設置一個距離，當別的單位太靠近你並低于設置的這個距離時，該單位的圖標會變成橘色</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
@@ -715,6 +847,8 @@
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone">
             <English>Hide Whole Compass When Alone</English>
+            <Chinesesimp>当不属于任何团队时，隐藏整个罗盘</Chinesesimp>
+            <Chinese>當不屬于任何團隊時，隱藏整個羅盤</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Kompass wenn man alleine ist</German>
@@ -727,6 +861,8 @@
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone_desc">
             <English>When you are alone in a group, this will hide the compass UI element from your screen</English>
+            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，隐藏屏幕上所有的罗盘元件</Chinesesimp>
+            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，隱藏屏幕上所有的羅盤元件</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
@@ -739,6 +875,8 @@
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone">
             <English>Hide Player Marker when alone</English>
+            <Chinesesimp>单独行动时隐藏玩家标识</Chinesesimp>
+            <Chinese>單獨行動時隱藏玩家標識</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Verstecke den Spieler Marker wenn man alleine ist</German>
@@ -751,6 +889,8 @@
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
             <English>When you are alone in a group, this will only hide the player marker on the compass</English>
+            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，只隐藏罗盘上的玩家标识</Chinesesimp>
+            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，只隱藏羅盤上的玩家標識</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
@@ -763,6 +903,8 @@
         </Key>
         <Key ID="STR_dui_occlusion_cone">
             <English>Occlusion Cone</English>
+            <Chinesesimp>视野的椎体范围</Chinesesimp>
+            <Chinese>視野的椎體範圍</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Okklusionskegel</German>
@@ -775,6 +917,8 @@
         </Key>
         <Key ID="STR_dui_occlusion_cone_desc">
             <English>Sets the cone (in degrees) in which a unit is considered seen infront of the player. E.g. 90 means you can see the unit 45 degrees to your left and right</English>
+            <Chinesesimp>设置一个以角度为单位的视野椎体范围，用于模拟玩家视野。例：90意味着亦会模拟一个视野中心向左45度到向右45度的一个椎体范围。</Chinesesimp>
+            <Chinese>設置一個以角度爲單位的視野椎體範圍，用于模擬玩家視野。例：90意味著亦會模擬一個視野中心向左45度到向右45度的一個椎體範圍。</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
@@ -787,6 +931,8 @@
         </Key>
         <Key ID="STR_dui_reset_ui_pos">
             <English>Reset UI Position</English>
+            <Chinesesimp>重置UI位置</Chinesesimp>
+            <Chinese>重置UI位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI Positionen zurücksetzen</German>
@@ -799,6 +945,8 @@
         </Key>
         <Key ID="STR_dui_reset_ui_pos_desc">
             <English>Resets the position of all DUI UI elements</English>
+            <Chinesesimp>重置所有DUI模组的UI元件位置</Chinesesimp>
+            <Chinese>重置所有DUI模組的UI元件位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
@@ -810,6 +958,8 @@
         </Key>
         <Key ID="STR_dui_show_squadbar">
             <English>Show Vanilla Squad Bar</English>
+            <Chinesesimp>显示原版班组指挥栏</Chinesesimp>
+            <Chinese>顯示原版班組指揮欄</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Vanilla Squad Bar anzeigen</German>
@@ -822,6 +972,8 @@
         </Key>
         <Key ID="STR_dui_show_squadbar_desc">
             <English>Shows the vanilla Arma3 Squad Bar when being in a squad leader position</English>
+            <Chinesesimp>作为班长时，显示Arma3原版的班组指挥栏</Chinesesimp>
+            <Chinese>作爲班長時，顯示Arma3原版的班組指揮欄</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
@@ -834,6 +986,8 @@
         </Key>
         <Key ID="STR_dui_cat_layout">
             <English>Layout</English>
+            <Chinesesimp>布局</Chinesesimp>
+            <Chinese>布局</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Layout</German>
@@ -846,6 +1000,8 @@
         </Key>
         <Key ID="STR_dui_layout">
             <English>Use A3 Layout Editor Position</English>
+            <Chinesesimp>使用A3布局编辑器位置</Chinesesimp>
+            <Chinese>使用A3布局編輯器位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>A3 Layout Editor Position nutzen</German>
@@ -858,6 +1014,8 @@
         </Key>
         <Key ID="STR_dui_layout_desc">
             <English>Uses the layout editor defined position and not the default position</English>
+            <Chinesesimp>使用布局编辑器来确定位置，而不是使用默认的位置</Chinesesimp>
+            <Chinese>使用布局編輯器來確定位置，而不是使用默認的位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
@@ -870,10 +1028,14 @@
         </Key>
         <Key ID="STR_dui_occlusion_fade_time">
             <English>Occlusion Fade Out Time</English>
+            <Chinesesimp>遮挡淡出时间</Chinesesimp>
+            <Chinese>遮擋淡出時間</Chinese>
             <German>Okklusionsausblendzeit</German>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
+            <Chinesesimp>设置图标在雷达上彻底淡出需要的时间</Chinesesimp>
+            <Chinese>設置圖標在雷達上徹底淡出需要的時間</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
@@ -886,14 +1048,20 @@
         </Key>
         <Key ID="STR_dui_occlusion_fade_in_time">
             <English>Occlusion Fade In Time</English>
+            <Chinesesimp>遮挡渐入时间</Chinesesimp>
+            <Chinese>遮擋漸入時間</Chinese>
             <German>Okklusionseinblendzeit</German>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_in_desc">
             <English>Sets the time it takes for icons to fade in on the radar</English>
+            <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
+            <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
+            <Chinesesimp>追踪颜色</Chinesesimp>
+            <Chinese>追蹤顔色</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Tracking-Farbe</German>
@@ -906,6 +1074,8 @@
         </Key>
         <Key ID="STR_dui_trackingColor_desc">
             <English>Special tracked objects appear in this color on the radar. Be warned the alpha value will do nothing!</English>
+            <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha值无意义。</Chinesesimp>
+            <Chinese>特別追蹤的物體會在雷達上以這個顔色顯示。注意，Alpha值無意義。</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
@@ -918,6 +1088,8 @@
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">
             <English>Vertical Padding Modifier</English>
+            <Chinesesimp>行间距</Chinesesimp>
+            <Chinese>行間距</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Vertikaler Padding Modifikator</German>
@@ -930,6 +1102,8 @@
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing_desc">
             <English>Sets the vertical padding of single unit entries in the namelist</English>
+            <Chinesesimp>设置名单列表的行间距</Chinesesimp>
+            <Chinese>設置名單列表的行間距</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
@@ -942,6 +1116,8 @@
         </Key>
         <Key ID="STR_dui_hide_ui_by_default">
             <English>Hide UI By Default</English>
+            <Chinesesimp>默认隐藏UI</Chinesesimp>
+            <Chinese>默認隱藏UI</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI von Anfang an verbergen</German>
@@ -954,6 +1130,8 @@
         </Key>
         <Key ID="STR_dui_hide_ui_by_default_desc">
             <English>Sets the toggle to show the UI to off by default</English>
+            <Chinesesimp>设置关为切换UI显示的默认状态</Chinesesimp>
+            <Chinese>設置關爲切換UI顯示的默認狀態</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
@@ -966,6 +1144,8 @@
         </Key>
         <Key ID="STR_dui_button_hold_ui">
             <English>Hold to show/hide UI</English>
+            <Chinesesimp>按住以显示/隐藏UI</Chinesesimp>
+            <Chinese>按住以顯示/隱藏UI</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Halten um UI an oder auszuschalten</German>
@@ -978,6 +1158,8 @@
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader">
             <English>Hide When Group Leader</English>
+            <Chinesesimp>为班长时隐藏名单列表</Chinesesimp>
+            <Chinese>爲班長時隱藏名單列表</Chinese>
             <German>Vestecke wenn Gruppenführer</German>
             <Japanese>グループ リーダー時は非表示</Japanese>
             <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
@@ -986,6 +1168,8 @@
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
+            <Chinesesimp>作为班长时隐藏名单列表。给习惯使用原版班组指挥栏的人使用的。</Chinesesimp>
+            <Chinese>作爲班長時隱藏名單列表。給習慣使用原版班組指揮欄的人使用的。</Chinese>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
             <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
@@ -994,6 +1178,8 @@
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
+            <Chinesesimp>无组颜色</Chinesesimp>
+            <Chinese>無組顔色</Chinese>
             <German>Keine Squad Farbe</German>
             <Japanese>分隊カラー無し</Japanese>
             <Polish>Brak koloru drużyny</Polish>
@@ -1002,6 +1188,8 @@
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
+            <Chinesesimp>红组颜色</Chinesesimp>
+            <Chinese>紅組顔色</Chinese>
             <German>Rote Squad Farbe</German>
             <Japanese>レッド分隊カラー</Japanese>
             <Polish>Czerwony kolor drużyny</Polish>
@@ -1010,6 +1198,8 @@
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
+            <Chinesesimp>绿组颜色</Chinesesimp>
+            <Chinese>綠組顔色</Chinese>
             <German>Grüne Squad Farbe</German>
             <Japanese>グリーン分隊カラー</Japanese>
             <Polish>Zielony kolor drużyny</Polish>
@@ -1018,6 +1208,8 @@
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
+            <Chinesesimp>蓝组颜色</Chinesesimp>
+            <Chinese>藍組顔色</Chinese>
             <German>Blaue Squad Farbe</German>
             <Japanese>ブルー分隊カラー</Japanese>
             <Polish>Niebieski kolor drużyny</Polish>
@@ -1026,6 +1218,8 @@
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
+            <Chinesesimp>黄组颜色</Chinesesimp>
+            <Chinese>黃組顔色</Chinese>
             <German>Gelbe Squad Farbe</German>
             <Japanese>イエロー分隊カラー</Japanese>
             <Polish>Żółty kolor drużyny</Polish>
@@ -1034,6 +1228,8 @@
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
             <English>Be warned the alpha value will do nothing!</English>
+            <Chinesesimp>注意，Alpha值无意义！</Chinesesimp>
+            <Chinese>注意，Alpha值無意義！</Chinese>
             <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <Japanese>アルファ値は影響を及ぼしません！</Japanese>
             <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
@@ -1043,6 +1239,8 @@
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes">
             <English>Leading Zeroes</English>
+            <Chinesesimp>方位角总是三位数</Chinesesimp>
+            <Chinese>方位角總是三位數</Chinese>
             <German>Führende Nullen</German>
             <Russian>Нули в азимутах</Russian>
             <Polish>Zera wiodące</Polish>
@@ -1051,6 +1249,8 @@
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes_desc">
             <English>The bearing number will be filled with leading zeroes</English>
+            <Chinesesimp>方位角总会以三位数的方式显示</Chinesesimp>
+            <Chinese>方位角總會以三位數的方式顯示</Chinese>
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
             <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
             <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
@@ -1059,6 +1259,8 @@
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
+            <Chinesesimp>总是优先显示班长</Chinesesimp>
+            <Chinese>總是優先顯示班長</Chinese>
             <German>Gruppenführer immer als erster</German>
             <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
             <Portuguese>Sempre mostrar líder primeiro</Portuguese>
@@ -1067,6 +1269,8 @@
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
+            <Chinesesimp>总是将班长作为第一个单位显示</Chinesesimp>
+            <Chinese>總是將班長作爲第一個單位顯示</Chinese>
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
             <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
             <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
@@ -1075,6 +1279,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>
+            <Chinesesimp>分类</Chinesesimp>
+            <Chinese>分類</Chinese>
             <German>Sortieren</German>
             <Polish>Sortowanie</Polish>
             <Portuguese>Ordernar</Portuguese>
@@ -1083,6 +1289,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
             <English>Server needs to run DUI in order to have synchronicity!</English>
+            <Chinesesimp>服务器需要运行DUI来进行同步</Chinesesimp>
+            <Chinese>服務器需要運行DUI來進行同步</Chinese>
             <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
             <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
             <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
@@ -1092,6 +1300,8 @@
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
             <English>Main</English>
+            <Chinesesimp>主要</Chinesesimp>
+            <Chinese>主要</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Main</German>
@@ -1104,6 +1314,8 @@
         </Key>
         <Key ID="STR_dui_addon_radar">
             <English>Radar</English>
+            <Chinesesimp>雷达</Chinesesimp>
+            <Chinese>雷達</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Radar</German>
@@ -1117,6 +1329,8 @@
         <!-- Color style names -->
         <Key ID="STR_dui_color_standard">
             <English>Standard</English>
+            <Chinesesimp>标准</Chinesesimp>
+            <Chinese>標准</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Standart</German>
@@ -1129,6 +1343,8 @@
         </Key>
         <Key ID="STR_dui_color_ace">
             <English>ACE 3</English>
+            <Chinesesimp>ACE 3</Chinesesimp>
+            <Chinese>ACE 3</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>ACE 3</German>
@@ -1141,6 +1357,8 @@
         </Key>
         <Key ID="STR_dui_color_sthud">
             <English>STUI</English>
+            <Chinesesimp>STUI</Chinesesimp>
+            <Chinese>STUI</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>STUI</German>
@@ -1154,6 +1372,8 @@
         <!-- note:  wargame as the video game -->
         <Key ID="STR_dui_color_wargame">
             <English>Wargame</English>
+            <Chinesesimp>战争游戏</Chinesesimp>
+            <Chinese>戰爭遊戲</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wargame</German>
@@ -1166,6 +1386,8 @@
         </Key>
         <Key ID="STR_dui_color_wargame2">
             <English>Wargame (Military Green)</English>
+            <Chinesesimp>战争游戏（军绿）</Chinesesimp>
+            <Chinese>戰爭遊戲（軍綠）</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wargame (Militär Grün)</German>
@@ -1178,6 +1400,8 @@
         </Key>
         <Key ID="STR_dui_color_protanopia">
             <English>Protanopia</English>
+            <Chinesesimp>红绿色盲（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（紅色感知缺陷）</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Protanopie</German>
@@ -1190,6 +1414,8 @@
         </Key>
         <Key ID="STR_dui_color_protanomaly">
             <English>Protanomaly</English>
+            <Chinesesimp>红绿色弱（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色弱（紅色感知缺陷）</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Protanomalie</German>
@@ -1202,6 +1428,8 @@
         </Key>
         <Key ID="STR_dui_color_deuteranopia">
             <English>Deuteranopia</English>
+            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Deuteranopie</German>
@@ -1214,6 +1442,8 @@
         </Key>
         <Key ID="STR_dui_color_deuteranomaly">
             <English>Deuteranomaly</English>
+            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Deuteranomalie</German>
@@ -1226,6 +1456,8 @@
         </Key>
         <Key ID="STR_dui_color_tritanopia">
             <English>Tritanopia</English>
+            <Chinesesimp>黄蓝色盲</Chinesesimp>
+            <Chinese>黃藍色盲</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Tritanopie</German>
@@ -1238,6 +1470,8 @@
         </Key>
         <Key ID="STR_dui_color_tritanomaly">
             <English>Tritanomaly</English>
+            <Chinesesimp>黄蓝色弱</Chinesesimp>
+            <Chinese>黃藍色弱</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Ttritanomalie</German>
@@ -1250,6 +1484,8 @@
         </Key>
         <Key ID="STR_dui_color_achromatopsia">
             <English>Achromatopsia</English>
+            <Chinesesimp>全色盲</Chinesesimp>
+            <Chinese>全色盲</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Achromatopsia</German>
@@ -1262,6 +1498,8 @@
         </Key>
         <Key ID="STR_dui_color_achromatomaly">
             <English>Achromatomaly</English>
+            <Chinesesimp>全色弱</Chinesesimp>
+            <Chinese>全色弱</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Achromatomalie</German>
@@ -1274,6 +1512,8 @@
         </Key>
         <Key ID="STR_dui_color_custom">
             <English>Custom</English>
+            <Chinesesimp>自定义</Chinesesimp>
+            <Chinese>自定義</Chinese>
             <German>Benutzerdefiniert</German>
             <Japanese>カスタム</Japanese>
             <Portuguese>Customizado</Portuguese>
@@ -1283,6 +1523,8 @@
         <!-- Standard string will be just reused from color -->
         <Key ID="STR_dui_icon_terry">
             <English>Just The Tip</English>
+            <Chinesesimp>只有顶端</Chinesesimp>
+            <Chinese>只有頂端</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Nur die Spitze</German>
@@ -1295,6 +1537,8 @@
         </Key>
         <Key ID="STR_dui_icon_nato">
             <English>NATO JMS</English>
+            <Chinesesimp>NATO JMS</Chinesesimp>
+            <Chinese>NATO JMS</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>NATO JMS</German>
@@ -1307,6 +1551,8 @@
         </Key>
         <Key ID="STR_dui_icon_clones">
             <English>Clones</English>
+            <Chinesesimp>克隆</Chinesesimp>
+            <Chinese>克隆</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Klone</German>
@@ -1320,6 +1566,8 @@
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">
             <English>Bohemia Interactive</English>
+            <Chinesesimp>波西米亚互动</Chinesesimp>
+            <Chinese>波西米亞互動</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Bohemia Interactive</German>
@@ -1332,6 +1580,8 @@
         </Key>
         <Key ID="STR_dui_compass_pizza">
             <English>Pizza Time</English>
+            <Chinesesimp>披萨时间</Chinesesimp>
+            <Chinese>披薩時間</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Zeit für Pizza</German>
@@ -1344,6 +1594,8 @@
         </Key>
         <Key ID="STR_dui_compass_olde">
             <English>Ye Olde Times</English>
+            <Chinesesimp>过去的时光</Chinesesimp>
+            <Chinese>過去的時光</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wie alte Zeiten</German>
@@ -1356,6 +1608,8 @@
         </Key>
         <Key ID="STR_dui_compass_clock">
             <English>Clock</English>
+            <Chinesesimp>钟表</Chinesesimp>
+            <Chinese>鍾表</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Uhr</German>
@@ -1368,6 +1622,8 @@
         </Key>
         <Key ID="STR_dui_compass_classic">
             <English>Classic</English>
+            <Chinesesimp>经典</Chinesesimp>
+            <Chinese>經典</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Klassisch</German>
@@ -1381,6 +1637,8 @@
         <!-- Note: xeno as in Aliens franchise -->
         <Key ID="STR_dui_compass_xeno_red">
             <English>Xeno - Red</English>
+            <Chinesesimp>Xeno-红</Chinesesimp>
+            <Chinese>Xeno-紅</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Rot</German>
@@ -1393,6 +1651,8 @@
         </Key>
         <Key ID="STR_dui_compass_xeno_green">
             <English>Xeno - Green</English>
+            <Chinesesimp>Xeno-绿</Chinesesimp>
+            <Chinese>Xeno-綠</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Grün</German>
@@ -1405,6 +1665,8 @@
         </Key>
         <Key ID="STR_dui_compass_xeno_blue">
             <English>Xeno - Blue</English>
+            <Chinesesimp>Xeno-蓝</Chinesesimp>
+            <Chinese>Xeno-藍</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Blau</German>
@@ -1417,6 +1679,8 @@
         </Key>
         <Key ID="STR_dui_compass_milint">
             <English>Military Interface</English>
+            <Chinesesimp>军用面板</Chinesesimp>
+            <Chinese>軍用面板</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Militär Interface</German>
@@ -1430,6 +1694,8 @@
         <!-- Sort options -->
         <Key ID="STR_dui_radar_sort_none">
             <English>None</English>
+            <Chinesesimp>无</Chinesesimp>
+            <Chinese>無</Chinese>
             <German>Kein</German>
             <Polish>Brak</Polish>
             <Portuguese>Nenhum</Portuguese>
@@ -1438,6 +1704,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
+            <Chinesesimp>名称</Chinesesimp>
+            <Chinese>名稱</Chinese>
             <German>Namen</German>
             <Polish>Imiona</Polish>
             <Portuguese>Nomes</Portuguese>
@@ -1446,6 +1714,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
+            <Chinesesimp>火力组，名称</Chinesesimp>
+            <Chinese>火力組，名稱</Chinese>
             <German>Fireteam, Namen</German>
             <Polish>Sekcja, Imiona</Polish>
             <Portuguese>Time, Nomes</Portuguese>
@@ -1454,6 +1724,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
+            <Chinesesimp>火力组，军衔，名称</Chinesesimp>
+            <Chinese>火力組，軍銜，名稱</Chinese>
             <German>Fireteam, Rang, Namen</German>
             <Polish>Sekcja, Ranga, Imiona</Polish>
             <Portuguese>Time, Patente, Nomes</Portuguese>
@@ -1462,6 +1734,8 @@
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
+            <Chinesesimp>军衔，名称</Chinesesimp>
+            <Chinese>軍銜，名稱</Chinese>
             <German>Rang, Namen</German>
             <Polish>Ranga, Imiona</Polish>
             <Portuguese>Patente, Nomes</Portuguese>
@@ -1470,6 +1744,8 @@
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle">
             <English>Group Icons by Vehicle</English>
+            <Chinesesimp>载具团队图标</Chinesesimp>
+            <Chinese>載具團隊圖標</Chinese>
             <German>Icons nach Fahrzeug gruppieren</German>
             <Portuguese>Agrupar Ícones por veículo</Portuguese>
             <Japanese>車両でのグループ アイコン</Japanese>
@@ -1477,6 +1753,8 @@
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
             <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
+            <Chinesesimp>当多名团队成员在一辆载具中时，只显示一个图标，一般为司机</Chinesesimp>
+            <Chinese>當多名團隊成員在一輛載具中時，只顯示一個圖標，一般爲司機</Chinese>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
             <Portuguese>Mostrar apenas um ícone do seu esquadrão se múltiplos membros estão no veículo, normalmente o do motorista</Portuguese>
             <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
@@ -1484,6 +1762,8 @@
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
+            <Chinesesimp>指向风格</Chinesesimp>
+            <Chinese>指向風格</Chinese>
             <German>Zeigerstil</German>
             <Portuguese>Estilo de ponteiro</Portuguese>
             <Japanese>ポインターの形</Japanese>
@@ -1491,6 +1771,8 @@
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
             <English>Pointer style that should be used on the compass component</English>
+            <Chinesesimp>在罗盘上显示的指向风格</Chinesesimp>
+            <Chinese>在羅盤上顯示的指向風格</Chinese>
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
             <Portuguese>Estilo do ponteiro que será usado no radar</Portuguese>
             <Japanese>レーダー上に表示されるポインターの形を選択できます</Japanese>
@@ -1498,6 +1780,8 @@
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
             <English>Pointer color</English>
+            <Chinesesimp>指向颜色</Chinesesimp>
+            <Chinese>指向顔色</Chinese>
             <German>Zeigerfarbe</German>
             <Portuguese>Cor do Ponteiro</Portuguese>
             <Japanese>ポインターの色</Japanese>
@@ -1506,6 +1790,8 @@
         <!-- ACE pointer styles -->
         <Key ID="STR_dui_radar_pointer_arrowhead">
             <English>Arrowhead</English>
+            <Chinesesimp>箭头</Chinesesimp>
+            <Chinese>箭頭</Chinese>
             <German>Pfeilspitze</German>
             <Portuguese>Ponta de flecha</Portuguese>
             <Japanese>矢尻</Japanese>
@@ -1513,44 +1799,64 @@
         </Key>
         <Key ID="STR_dui_radar_show_speaking">
             <English>Show icon when units speak</English>
+            <Chinesesimp>当单位说话时显示图标</Chinesesimp>
+            <Chinese>当单位说话时显示图标</Chinese>
             <German>Zeige Icon an wenn jemand spricht</German>
             <Russian>Показывать иконку при разговоре</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_desc">
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
+            <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
+            <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
             <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
             <English>Show cardinal points</English>
+            <Chinesesimp>显示基点</Chinesesimp>
+            <Chinese>顯示基點</Chinese>
             <German>Himmelsrichtungen anzeigen</German>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
+            <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
+            <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
             <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
             <English>Replace main icon with speaking icon</English>
+            <Chinesesimp>正在发言图标替换主图标</Chinesesimp>
+            <Chinese>正在發言圖標替換主圖標</Chinese>
             <German>Haupticon mit Sprechicon ersetzen</German>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
+            <Chinesesimp>名单列表中的单位主图标会被正在发言图标替换</Chinesesimp>
+            <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
             <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
             <English>Speaking icon on radio messages only</English>
+            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Sprachicon nur bei Radionachrichten</German>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
+            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
+            <Chinesesimp>ACE医疗切换</Chinesesimp>
+            <Chinese>ACE醫療切換</Chinese>
             <German>ACE Sanitäter Umschalter</German>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
+            <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
+            <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
             <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
         </Key>
     </Package>

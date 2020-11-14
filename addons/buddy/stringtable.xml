@@ -12,6 +12,8 @@
             <Portuguese>Marcar Parceiro</Portuguese>
             <Spanish>Marcar Amigo</Spanish>
             <Russian>Назначить напарников [HUD]</Russian>
+            <Chinesesimp>搭档登录 [HUD]</Chinesesimp>
+            <Chinese>搭檔登錄 [HUD]</Chinese>
         </Key>
         <Key ID="STR_dui_buddy_action_remove">
             <English>Unassign Buddy [HUD]</English>
@@ -24,6 +26,8 @@
             <Portuguese>Desmarcar Parceiro</Portuguese>
             <Spanish>Desmarcar Amigo</Spanish>
             <Russian>Распустить напарников [HUD]</Russian>
+            <Chinesesimp>搭档解除 [HUD]</Chinesesimp>
+            <Chinese>搭檔解除 [HUD]</Chinese>
         </Key>
     </Package>
 </Project>

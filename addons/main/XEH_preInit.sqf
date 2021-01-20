@@ -220,6 +220,7 @@ _curCat = localize "STR_dui_cat_custom_color";
 if !(hasInterface) exitWith {};
 
 GVAR(radioModSpectator) = configFile call {
+    if (isClass (_this >> "CfgPatches" >> "task_force_radio")) exitWith { {_player getVariable ["tf_forceSpectator", false]} };
     if (isClass (_this >> "CfgPatches" >> "tfar_core")) exitWith { {_player getVariable ["TFAR_forceSpectator", false]} };
     if (isClass (_this >> "CfgPatches" >> "acre_main")) exitWith { {ACRE_IS_SPECTATOR} };
     {false};

@@ -55,9 +55,7 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
     }]  call CBA_fnc_addEventHandler;
 };
 
-private _tfar = isClass (configFile >> "CfgPatches" >> "tfar_core");
-private _tfarOld = isClass (configFile >> "CfgPatches" >> "task_force_radio");
-if (_tfar || _tfarOld) then {
+if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
     [[], {
         if !(hasInterface && {isNil QGVAR(onTangent)}) exitWith {};
         GVAR(onTangent) = ["TFAR_event_onTangent", {

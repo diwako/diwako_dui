@@ -26,8 +26,7 @@ GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 6000];
 GVAR(oddDirectionCompasses) setVariable ["lib_ger_itemcompass", 6400];
 GVAR(maxDegrees) = 360;
 
-private _tfar = isClass (configFile >> "CfgPatches" >> "tfar_core");
-private _tfarOld = isClass (configFile >> "CfgPatches" >> "task_force_radio");
+private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 private _curCat = localize "STR_dui_cat_general";
 
@@ -49,7 +48,7 @@ if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
     ] call CBA_fnc_addSetting;
 };
 
-if (_acre || _tfar || _tfarOld) then {
+if (_acre || _tfar) then {
     [
         QGVAR(showSpeaking)
         ,"CHECKBOX"
@@ -620,7 +619,7 @@ if !(hasInterface) exitWith {};
     true
 }] call CBA_fnc_addKeybind;
 
-if (_tfar || _tfarOld) then {
+if (_tfar) then {
     ["TFAR_event_OnSpeak", {
         params ["_unit", "_isSpeaking"];
         if !(_isSpeaking) exitWith {

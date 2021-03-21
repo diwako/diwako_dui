@@ -223,6 +223,12 @@
             <Chinese>如果這個設定啓用，系統會使用BIS_fnc_sideIsFriendly來代替陣營檢查</Chinese>
             <German>Wenn diese Einstellung aktiviert ist, verwendet das System BIS_fnc_sideIsFriendly, anstatt nur die Seite</German>
         </Key>
+        <Key ID="STR_dui_nametags_useLIS">
+            <English>Use LineIntersects</English>
+        </Key>
+        <Key ID="STR_dui_nametags_useLIS_desc">
+            <English>Use Line Intersects to detect the Crew inside a Vehicle</English>
+        </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
             <English>DUI Nametags</English>
             <Chinesesimp>DUI名牌</Chinesesimp>

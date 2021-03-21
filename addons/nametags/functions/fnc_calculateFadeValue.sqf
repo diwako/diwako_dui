@@ -38,7 +38,7 @@ if (GVAR(enableFOVBoost)) then {
 
 private _fadeValue = (linearConversion [0, (_maxDistance * _rangeModifier), _distance, 1, 0, true]) - _darknessPenalty;
 if (GVAR(enableOcclusion)) then {
-    _fadeValue = _fadeValue - ([objNull, "VIEW"] checkVisibility [eyePos _player, _pos]);
+    _fadeValue = _fadeValue - ([objNull, "FIRE"] checkVisibility [eyePos _player, _pos]);
 };
 
 // this function allows Mission Builders to implement there own coefs

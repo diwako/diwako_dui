@@ -729,7 +729,7 @@
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
             <English>When a UI dialog is open should the UI be hidden?</English>
-            <German>Wenn ein Dialogfenster offen ist, soll die UI versteckt werden?</German>
+            <German>Wenn ein Dialogsfenster offen ist, soll die UI versteckt werden?</German>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>

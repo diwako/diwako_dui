@@ -723,6 +723,14 @@
             <Spanish>Al interactuar con las cosas a través de la interacción ACE, ¿debería ocultarse la interfaz de usuario?</Spanish>
             <Russian>При взаимодействии с вещами через ACE меню должен ли пользовательский интерфейс быть скрытым?</Russian>
         </Key>
+        <Key ID="STR_dui_dialog_hide_interaction">
+            <English>Hide while a dialog is open</English>
+            <German>Während eines Dialogs verstecken</German>
+        </Key>
+        <Key ID="STR_dui_dialog_hide_interaction_desc">
+            <English>When a UI dialog is open should the UI be hidden?</English>
+            <German>Wenn ein Dialogfenster offen ist, soll die UI versteckt werden?</German>
+        </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
             <Chinesesimp>雷达透明度</Chinesesimp>

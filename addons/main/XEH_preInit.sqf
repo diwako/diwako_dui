@@ -132,6 +132,15 @@ if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
     diwako_dui_ace_hide_interaction = false;
 };
 
+[
+    QGVAR(hide_dialog)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_dialog_hide_interaction", localize "STR_dui_dialog_hide_interaction_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_fnc_addSetting;
+
 _curCat = localize "STR_dui_cat_custom_color";
 
 [

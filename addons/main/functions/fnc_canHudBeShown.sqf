@@ -5,8 +5,9 @@ params ["_player"];
     {!alive _player || 
     {(_player getVariable ["ace_spectator_isSet", false]) ||
     GVAR(radioModSpectator) ||
+    {_player isKindof "VirtualSpectator_F" ||
     {dialog ||
     {diwako_dui_ace_hide_interaction && {missionNamespace getVariable ["ace_interact_menu_openedMenuType",-1] > -1} || 
     {!isnull (missionNamespace getVariable ["ace_arsenal_camera", objNull]) || 
-    {GVAR(inFeatureCamera)}}}}}}
+    {GVAR(inFeatureCamera)}}}}}}}
 )

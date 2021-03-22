@@ -15,15 +15,19 @@ if (GVAR(useLIS) && {!(isNull (objectParent _player)) || {(crew _target) isNotEq
     private _lis = lineIntersectsSurfaces [
         AGLToASL positionCameraToWorld [0, 0, 0],
         AGLToASL positionCameraToWorld [0, 0, GVAR(renderDistance) + 1],
-        objNull,
+        _player,
         objNull,
         true,
-        2,
+        -1,
         "FIRE"
     ];
     {
         _x params ["", "", "_obj"];
-        if (_obj isKindOf "CAManBase" && _obj != _player) then {
+        if (_obj isKindOf "CAManBase" &&
+           {_obj isNotEqualTo _player &&
+           {_obj in (crew _target) ||
+           {_obj in crew (vehicle _player)
+        }}}) then {
             _target = _obj;
             break;
         };

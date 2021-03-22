@@ -18,7 +18,7 @@ if (GVAR(useLIS) && {!(isNull (objectParent _player)) || {(crew _target) isNotEq
         objNull,
         objNull,
         true,
-        -1,
+        2,
         "FIRE"
     ];
     {

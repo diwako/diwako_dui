@@ -79,7 +79,7 @@ if (_isEngineer) exitWith {
 };
 
 // Explosive Specialist
-if (_unit getVariable ["ACE_isEOD", false] || {_unit getUnitTrait "explosiveSpecialist"}) exitWith {
+if ((_unit getVariable ["ACE_isEOD", _unit getUnitTrait "explosiveSpecialist"]) in [1, true]) exitWith {
     _namespace getVariable ["explosive_specialist", DUI_EXPLOSIVE_SPECIALIST];
 };
 

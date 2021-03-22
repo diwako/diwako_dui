@@ -775,6 +775,10 @@
             <Spanish>Contorno de Texto</Spanish>
             <Russian>Текст контура</Russian>
         </Key>
+        <Key ID="STR_dui_dir_shadow">
+            <English>Bearing Text Outline</English>
+            <German>Text Umrandung der Richtungsanzeige</German>
+        </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
             <Chinesesimp>无</Chinesesimp>

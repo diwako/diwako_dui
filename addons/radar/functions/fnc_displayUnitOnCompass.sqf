@@ -83,7 +83,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         _ctrl ctrlCommit 0;
 
         private _color = [0.85, 0.4, 0];
-        if (_distance > _distanceWarning || {!(isNull objectParent _unit) || {_unit == _player}}) then {
+        if (_distance > _distanceWarning || {!(isNull objectParent _unit) || {_unit isEqualTo _player}}) then {
             _color = + (_unit getVariable [QEGVAR(main,compass_color), [1,1,1]]);
         };
         _color pushBack _alpha;
@@ -103,7 +103,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
                 _unit setVariable ["diwako_dui_lastChecked", time + _delay];
                 private _vis = [vehicle _unit, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
                 private _cone = if (_relDir > 180) then { abs (_relDir - 360)} else { abs _relDir};
-                if (_vis == 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
+                if (_vis isEqualTo 0 || {GVAR(enable_occlusion_actual_cone) < _cone}) then {
                     _occlude = true;
                 } else {
                     // unit visible

@@ -6,7 +6,7 @@ if !(GVAR(ace_finger) &&                            // ace finger enabled
     {[_player] call EFUNC(main,canHudBeShown) &&    // hud can be shown
     {diwako_dui_enable_compass &&                   // compass is enabled
     {                                               // hide compass when alone enabled and alone in group
-        (!diwako_dui_compass_hide_alone_group) || {(!((units group _player) isEqualTo [_player]) && {diwako_dui_compass_hide_alone_group})}
+        (!diwako_dui_compass_hide_alone_group) || {(units group _player) isNotEqualTo [_player] && {diwako_dui_compass_hide_alone_group}}
     }}}) exitWith {};
 private _texture = GVAR(pointerPaths) getVariable GVAR(pointer_style);
 if (isNil "_texture") exitWith {

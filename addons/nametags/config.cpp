@@ -6,7 +6,7 @@
             weapons[] = {};
             requiredVersion = REQUIRED_VERSION;
             requiredAddons[] = {"diwako_dui_main"};
-            author = "Diwako";
+            author = "joko // Jonas";
             VERSION_CONFIG;
         };
     };

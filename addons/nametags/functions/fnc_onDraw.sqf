@@ -4,7 +4,7 @@ if (isGamePaused || !isGameFocused) exitWith {};
 (_this select 0) params ["_ctrl"];
 if (isNull _ctrl) exitWith {};
 private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
-if !((ctrlPosition _ctrl) isEqualTo _pos) then {
+if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
     _ctrl ctrlSetPosition _pos;
 };
 
@@ -61,7 +61,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
             };
             private _alive = alive _target;
             if (GVAR(showUnconAsDead) && _alive) then {
-                _alive = (lifeState _target) != "INCAPACITATED";
+                _alive = (lifeState _target) isNotEqualTo "INCAPACITATED";
             };
             if !(_alive) then {
                 _color = EGVAR(main,colors_custom) getVariable ["dead", "#333333"];

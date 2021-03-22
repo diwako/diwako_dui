@@ -38,7 +38,7 @@ if !(isNull objectParent _unit || {_forCompass}) exitWith {
 };
 
 // Custom icon
-if !(_unit getVariable [QGVAR(customIcon), ""] isEqualTo "") exitWith {
+if (_unit getVariable [QGVAR(customIcon), ""] isNotEqualTo "") exitWith {
     _unit getVariable QGVAR(customIcon);
 };
 

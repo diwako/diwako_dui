@@ -583,6 +583,10 @@
             <Spanish>Solo en vehiculos</Spanish>
             <Russian>Только в транспорте</Russian>
         </Key>
+        <Key ID="STR_dui_show_dir_opt4">
+            <English>Driver only</English>
+            <German>Nur Fahrer</German>
+        </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
             <Chinesesimp>UI大小</Chinesesimp>

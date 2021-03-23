@@ -120,8 +120,8 @@ private _curCat = localize "STR_dui_cat_compass";
     ,[localize "STR_dui_show_dir", localize "STR_dui_show_dir_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[
-        [0,1,2],
-        [localize "STR_dui_show_dir_opt1",localize "STR_dui_show_dir_opt2",localize "STR_dui_show_dir_opt3"],
+        [0,1,2,3],
+        [localize "STR_dui_show_dir_opt1",localize "STR_dui_show_dir_opt2",localize "STR_dui_show_dir_opt3",localize "STR_dui_show_dir_opt4"],
         1
     ]
     ,false

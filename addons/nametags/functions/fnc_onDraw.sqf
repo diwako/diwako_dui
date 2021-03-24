@@ -53,7 +53,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
                 _data pushBack format ["%1. ", _target getVariable [QGVAR(rank), rank _target]];
             };
 
-            _data pushBack (_target getVariable ["ACE_Name", _target getVariable [QGVAR(name), name _target]]);
+            _data pushBack (_target getVariable [QGVAR(name), name _target]);
 
             _data append ["</t>", "<br/>"];
             _data pushBack format [_tags, GVAR(fontGroup), _colorGroup, (GET_POS_H) * GVAR(fontGroupNameSize), GVAR(groupFontShadow)];

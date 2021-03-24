@@ -18,7 +18,7 @@ if (GVAR(pfhID) isEqualTo -1) then {
 
 {
     if (alive _x) then {
-        _x setVariable [QGVAR(name), name _x];
+        _x setVariable [QGVAR(name), _x getVariable [QEGVAR(main,customName), name _x]];
         _x setVariable [QGVAR(groupName), _x getVariable [QGVAR(customGroup), groupID (group _x)]];
         _x setVariable [QGVAR(side), side group _x];
         private _rank = rank _x;

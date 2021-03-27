@@ -11,7 +11,7 @@ if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
 private _target = cursorObject;
 private _player = call CBA_fnc_currentUnit;
 
-if (GVAR(useLIS) && {!(isNull (objectParent _player)) || {(crew _target) isNotEqualTo []}}) then {
+if (GVAR(useLIS)) then {
     private _lis = lineIntersectsSurfaces [
         AGLToASL positionCameraToWorld [0, 0, 0],
         AGLToASL positionCameraToWorld [0, 0, GVAR(renderDistance) + 1],
@@ -25,9 +25,8 @@ if (GVAR(useLIS) && {!(isNull (objectParent _player)) || {(crew _target) isNotEq
         _x params ["", "", "_obj"];
         if (_obj isKindOf "CAManBase" &&
            {_obj isNotEqualTo _player &&
-           {_obj in (crew _target) ||
-           {_obj in crew (vehicle _player)
-        }}}) then {
+           {!isNull (objectParent _obj)
+        }}) then {
             _target = _obj;
             break;
         };

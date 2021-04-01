@@ -227,7 +227,7 @@
             <English>Visualize Vehicle Crew</English>
         </Key>
         <Key ID="STR_dui_nametags_useLIS_desc">
-            <English>Detect Crew Inside Vehicles</English>
+            <English>Detect Crew Inside Vehicles. Runs extra checks and routines when enabled.</English>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
             <English>DUI Nametags</English>

@@ -9,17 +9,38 @@ if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
 };
 
 private _target = cursorObject;
+private _player = call CBA_fnc_currentUnit;
 
-private _effectiveCommander = effectiveCommander _target;
-if !(isNull _effectiveCommander) then {
-    _target = _effectiveCommander;
+if (GVAR(useLIS)) then {
+    private _lis = lineIntersectsSurfaces [
+        AGLToASL positionCameraToWorld [0, 0, 0],
+        AGLToASL positionCameraToWorld [0, 0, GVAR(renderDistance) + 1],
+        _player,
+        objNull,
+        true,
+        -1,
+        "FIRE"
+    ];
+    {
+        _x params ["", "", "_obj"];
+        if (_obj isKindOf "CAManBase" &&
+           {_obj isNotEqualTo _player &&
+           {!isNull (objectParent _obj)
+        }}) then {
+            _target = _obj;
+            break;
+        };
+    } forEach _lis;
 };
 
 if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
     GVAR(targetedFade) = 1;
 } else {
-    private _player = [] call CBA_fnc_currentUnit;
 
+    private _effectiveCommander = effectiveCommander _target;
+    if !(isNull _effectiveCommander) then {
+        _target = _effectiveCommander;
+    };
 
     private _targetSide = _target getVariable [QGVAR(side), side group _target];
     private _playerSide = _player getVariable [QGVAR(side), side group _player];
@@ -33,7 +54,7 @@ if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
         if (GVAR(targetedFade) < 1) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color
             private _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"]; // Other Group Default Color
-            if ((group _target) isEqualTo (group player)) then {
+            if ((group _target) isEqualTo (group _player)) then {
                 _color = _target getVariable [QEGVAR(main,color), "#FFFFFF"];
                 _colorGroup = EGVAR(main,colors_custom) getVariable ["group", "#FFFFFF"];
             };

@@ -19,6 +19,14 @@ private _curCat = localize "STR_dui_cat_general";
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(useLIS),
+    "CHECKBOX",
+    ["STR_dui_nametags_useLIS", "STR_dui_nametags_useLIS_desc"],
+    [_cat, _curCat],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(fadeInTime),
     "SLIDER",
     ["STR_dui_nametags_fadeInTime", "STR_dui_nametags_fadeInTime_desc"],

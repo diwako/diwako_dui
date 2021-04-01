@@ -26,7 +26,7 @@ GVAR(oddDirectionCompasses) setVariable ["gm_gc_compass_f73", 6000];
 GVAR(oddDirectionCompasses) setVariable ["lib_ger_itemcompass", 6400];
 GVAR(maxDegrees) = 360;
 
-private _tfar = isClass (configFile >> "CfgPatches" >> "tfar_core");
+private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 private _curCat = localize "STR_dui_cat_general";
 
@@ -620,14 +620,14 @@ if !(hasInterface) exitWith {};
 }] call CBA_fnc_addKeybind;
 
 if (_tfar) then {
-    ["TFAR_event_OnSpeak", {
+    [QGVAR(OnSpeak), "OnSpeak", {
         params ["_unit", "_isSpeaking"];
         if !(_isSpeaking) exitWith {
             _unit setVariable [QGVAR(isSpeaking), nil];
         };
         if (GVAR(showSpeaking_radioOnly)) exitWith {};
         _unit setVariable [QGVAR(isSpeaking), 1];
-    }] call CBA_fnc_addEventHandler;
+    }, objNull] call TFAR_fnc_addEventHandler;
 
     /* This is a custom event made by DUI not by TFAR!
      * In TFAR the client's game has no idea if the one unit speaking is speaking locally or over radio.

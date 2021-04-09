@@ -19,7 +19,7 @@ if (GVAR(useLIS)) then {
         objNull,
         true,
         -1,
-        "FIRE"
+        "VIEW"
     ];
     {
         _x params ["", "", "_obj"];

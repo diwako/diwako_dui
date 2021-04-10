@@ -52,16 +52,6 @@ if ((leader _unit) isEqualTo _unit) exitWith {
     _namespace getVariable ["sql", DUI_SQL];
 };
 
-// AR
-if (getText(configFile >> "CfgWeapons" >> (primaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_mg_ca.paa") exitWith {
-    _namespace getVariable ["auto_rifleman", DUI_AUTO_RIFLEMAN];
-};
-
-// AT
-if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa") exitWith {
-    _namespace getVariable ["at_gunner", DUI_AT_GUNNER];
-};
-
 // Medic
 if (GVAR(ace_medic) && {_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0}) exitWith {
     _namespace getVariable ["medic", DUI_MEDIC];
@@ -81,6 +71,16 @@ if (_isEngineer) exitWith {
 // Explosive Specialist
 if ((_unit getVariable ["ACE_isEOD", _unit getUnitTrait "explosiveSpecialist"]) in [1, true]) exitWith {
     _namespace getVariable ["explosive_specialist", DUI_EXPLOSIVE_SPECIALIST];
+};
+
+// AR
+if (getText(configFile >> "CfgWeapons" >> (primaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_mg_ca.paa") exitWith {
+    _namespace getVariable ["auto_rifleman", DUI_AUTO_RIFLEMAN];
+};
+
+// AT
+if (getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa") exitWith {
+    _namespace getVariable ["at_gunner", DUI_AT_GUNNER];
 };
 
 _namespace getVariable ["rifleman", DUI_RIFLEMAN];

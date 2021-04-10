@@ -33,3 +33,20 @@ jobs:
        path: 'sqf.log'
     - name: Validate SQFLinter Logs
       run: python3 tools/sqf_linter_LogChecker.py
+
+  stringtables:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install Python packages
+      run: |
+        pip3 install wheel
+        pip3 install setuptools
+        pip3 install pygithub
+        pip3 install pygithub3
+    - name: Checkout the source code
+      uses: actions/checkout@master
+    - name: Update Translation issue
+      if: github.repository == 'diwako/diwako_dui' && github.ref	== 'refs/heads/master' && ! contains(github.event.head_commit.message, '[ci skip]')
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: python3 tools/stringtableDeploy.py

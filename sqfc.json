@@ -1,0 +1,10 @@
+{
+  "inputDirs": ["P:/z/diwako_dui/addons"],
+  "includePaths": ["P:/"],
+  "excludeList": [
+    "z/diwako_dui/addons/indicators/includes",
+    "z/diwako_dui/addons/radar/includes"
+  ],
+  "outputDir": "P:/",
+  "workerThreads": 0
+}

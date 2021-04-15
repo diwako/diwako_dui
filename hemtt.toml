@@ -9,14 +9,16 @@ exclude = [
     "*.png",
     "*.tga"
 ]
-# postbuild = ["!sign","!copy"]
+# prebuild = ["!compile_scripts"]
+# postbuild = ["!sign","!copy","!remove_compiled_scripts"]
 
 releasebuild = [
     "@zip @{{prefix}}"
 ]
+
 [scripts.copy]
 foreach = true
-only_release = true
+only_release = false
 steps = [
     "COPY {{target}} D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\",
     "COPY {{target}}.diwako_dui.bisign D:\\SteamLibrary\\steamapps\\common\\\"Arma 3\"\\@diwako_dui\\addons\\"
@@ -24,7 +26,23 @@ steps = [
 
 [scripts.sign]
 foreach = true
-only_release = true
+only_release = false
 steps = [
     "G:\\\"Program Files (x86)\"\\Steam\\steamapps\\common\\\"Arma 3 Tools\"\\DSSignFile\\DSSignFile.exe diwako_dui.biprivatekey {{target}}"
 ]
+
+[scripts.compile_scripts]
+steps_windows = [
+    "echo 'Compile Arma Scripts'",
+    "ArmaScriptCompiler"
+]
+only_release = false
+show_output = true
+
+[scripts.remove_compiled_scripts]
+steps_windows = [
+    "echo 'remove Compiled Scripts'",
+    "powershell -Command Remove-Item './addons/*' -Recurse -Include *.sqfc"
+]
+only_release = false
+show_output = true

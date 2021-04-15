@@ -12,3 +12,6 @@ releases/
 releases/*
 keys/*
 .hemtt/local
+*.pdb
+*.exe
+*.sqfc

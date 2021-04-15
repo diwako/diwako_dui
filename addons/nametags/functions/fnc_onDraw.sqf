@@ -33,7 +33,7 @@ if (GVAR(useLIS)) then {
     } forEach _lis;
 };
 
-if (isNull _target || !(player call EFUNC(main,canHudBeShown))) then {
+if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _target}}) then {
     GVAR(targetedFade) = 1;
 } else {
 

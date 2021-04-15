@@ -49,7 +49,7 @@ if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _t
     } else {
         _targetSide isEqualTo _playerSide;
     };
-    if (_target isKindOf "AllVehicles" && {_areFriendly} && {!unitIsUAV _target}) then {
+    if (_target isKindOf "AllVehicles" && {_areFriendly}) then {
         GVAR(targetedFade) = [_target, _player] call FUNC(calculateFadeValue);
         if (GVAR(targetedFade) < 1) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color

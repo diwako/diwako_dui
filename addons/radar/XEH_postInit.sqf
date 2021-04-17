@@ -56,6 +56,15 @@ if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
 };
 
 if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
+    [QGVAR(OnSpeak), "OnSpeak", {
+        params ["_unit", "_isSpeaking"];
+        if !(_isSpeaking) exitWith {
+            _unit setVariable [QGVAR(isSpeaking), nil];
+        };
+        if (GVAR(showSpeaking_radioOnly)) exitWith {};
+        _unit setVariable [QGVAR(isSpeaking), 1];
+    }, objNull] call TFAR_fnc_addEventHandler;
+
     [[], {
         if !(hasInterface && {isNil QGVAR(onTangent)}) exitWith {};
         private _eventId = [QGVAR(onTangent), "onTangent", {

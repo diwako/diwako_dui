@@ -12,7 +12,7 @@ A strong point of this UI is its customizability and its many features are all s
 ## Supported mods
 - ACE 3
 - ACRE
-- TFAR (1.0 Beta)
+- TFAR (Both versions)
 
 ## Features
 ####  Scaling

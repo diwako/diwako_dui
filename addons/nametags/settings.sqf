@@ -1,3 +1,6 @@
+#ifndef MAINPREFIX
+    #include "script_component.hpp"
+#endif
 private _cat = format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_nametags"];
 
 private _curCat = localize "STR_dui_cat_general";

@@ -15,3 +15,4 @@ keys/*
 *.pdb
 *.exe
 *.sqfc
+*.bat

@@ -587,6 +587,9 @@
             <English>Driver only</English>
             <German>Nur Fahrer</German>
         </Key>
+        <Key ID="STR_dui_show_dir_opt5">
+            <English>If the player has GPS</English>
+        </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
             <Chinesesimp>UI大小</Chinesesimp>

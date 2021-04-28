@@ -19,6 +19,12 @@ GVAR(setNamelist) = true;
 // compass whitelist, these need to be lowercase!!
 GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {configName _x};
 
+// GPS whitelist
+private _uavTerminals = "inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'UavTerminal_base')" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+private _gpsDevices = "getText (_x >> 'simulation') == 'ItemGPS'" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+
+GVAR(gpsWhitelist) = _uavTerminals + _gpsDevices;
+
 // some compasses have less then 360 degrees
 GVAR(oddDirectionCompasses) = [] call CBA_fnc_createNamespace;
 GVAR(oddDirectionCompasses) setVariable ["gm_ge_army_conat2", 6400];

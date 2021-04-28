@@ -9,4 +9,5 @@ PREP(syncGroups);
 PREP(syncGroupsPFH);
 PREP(sortNameList);
 PREP(getCompass);
+PREP(getGPS);
 PREP(incomingFinger);

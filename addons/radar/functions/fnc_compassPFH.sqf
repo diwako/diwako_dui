@@ -32,17 +32,16 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
     private _dir = _camDirVec call CBA_fnc_vectDir;
     // private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
     private _hasCompass = ([_player] call FUNC(getCompass)) isNotEqualTo "";
-    private _hasGPS = ([_player] call FUNC(getGPS)) isNotEqualTo "";
 
     _compassCtrl ctrlSetAngle [[0,-_dir] select _hasCompass, 0.5, 0.5, true];
 
     if (_hasCompass &&
-        {diwako_dui_enable_compass_dir in [1, 2, 3] &&
+        {diwako_dui_enable_compass_dir in [1, 2, 3, 4] &&
         {diwako_dui_enable_compass_dir isEqualTo 1 && {!(isNull objectParent _player)} ||
         {diwako_dui_enable_compass_dir isEqualTo 2} ||
-        {diwako_dui_enable_compass_dir isEqualTo 3 && {private _veh = (vehicle _player); _veh isNotEqualTo _player && {(driver _veh) isEqualTo _player}}}
-        }} ||
-        _hasGPS && {diwako_dui_enable_compass_dir isEqualTo 4}) then {
+        {diwako_dui_enable_compass_dir isEqualTo 3 && {private _veh = (vehicle _player); _veh isNotEqualTo _player && {(driver _veh) isEqualTo _player}}} || 
+        {diwako_dui_enable_compass_dir isEqualTo 4 && {([_player] call FUNC(getGPS)) isNotEqualTo ""}}
+        }}) then {
         private _dirCalc = (round _dir) mod 360;
         private _maxDegrees = GVAR(maxDegrees);
         if (_maxDegrees isNotEqualTo 360) then {

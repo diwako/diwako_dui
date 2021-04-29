@@ -244,6 +244,7 @@
             <Chinese>允許載具羅盤</Chinese>
             <Russian>Разрешить компас для техники</Russian>
             <German>Fahrzeugkompass zulassen</German>
+            <Japanese>車両コンパス許可</Japanese>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled_desc">
             <English>Allow compass with greater range for vehicle crew</English>
@@ -251,6 +252,7 @@
             <Chinese>允許載具羅盤有更遠的顯示距離</Chinese>
             <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
             <German>Kompass mit größerer Reichweite für die Fahrzeugmannschaft erlauben</German>
+            <Japanese>車両の乗員用にコンパス表示範囲を倍増させます。</Japanese>
         </Key>
         <Key ID="STR_dui_compass_crew_range">
             <English>Vehicle Compass range</English>
@@ -258,6 +260,7 @@
             <Chinese>載具羅盤距離設置</Chinese>
             <Russian>Дистанция компаса для техники</Russian>
             <German>Reichweite des Fahrzeugkompasses</German>
+            <Japanese>車両コンパス距離</Japanese>
         </Key>
         <Key ID="STR_dui_compass_crew_range_desc">
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
@@ -265,6 +268,7 @@
             <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
             <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
+            <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_compass_refresh">
             <English>Refresh Rate</English>
@@ -586,6 +590,7 @@
         <Key ID="STR_dui_show_dir_opt4">
             <English>Driver only</English>
             <German>Nur Fahrer</German>
+            <Japanese>運転手のみ</Japanese>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
@@ -595,7 +600,7 @@
             <French>Mise a l'échelle de l'IU</French>
             <German>UI Größe</German>
             <Korean>UI 크기</Korean>
-            <Japanese>UI スケール</Japanese>
+            <Japanese>UI 大きさ</Japanese>
             <Polish>Skalowanie interfejsu użytkownika</Polish>
             <Portuguese>Escala de Interface</Portuguese>
             <Spanish>Escala de interfaz de usuario</Spanish>
@@ -651,7 +656,7 @@
             <French>Quelle largeur en pixels doit être utilisée pour celle des colonnes? la mise à l'échelle est affecté par ceci!</French>
             <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
             <Korean>열 너비를 픽셀로 설정합니다. UI크기는 이 설정에 영향을 끼칩니다!</Korean>
-            <Japanese>カラムの幅をピクセルで設定します。UI スケールはこの設定に影響を及ぼします!</Japanese>
+            <Japanese>カラムの幅をピクセルで設定します。UI の大きさはこの設定に影響を及ぼします！</Japanese>
             <Polish>Jaką szerokość w pikselach należy zastosować dla szerokości kolumn? Należy pamiętać, że skalowanie interfejsu użytkownika będzie miało wpływ na to</Polish>
             <Portuguese>Qual será a largura em pixels de cada coluna? Lembre-se que a escala de interface afetará isso!</Portuguese>
             <Spanish>¿Qué ancho en píxeles se debe usar para los anchos de las columnas? Tenga en cuenta que la escala de la interfaz de usuario afectará esto!</Spanish>
@@ -665,7 +670,7 @@
             <French>mise a l'échelle de l'icone</French>
             <German>Icon Größe</German>
             <Korean>아이콘 크기</Korean>
-            <Japanese>アイコンのスケール</Japanese>
+            <Japanese>アイコンの大きさ</Japanese>
             <Polish>Skalowanie ikon</Polish>
             <Portuguese>Escala de Ícones</Portuguese>
             <Spanish>Escala de Iconos</Spanish>
@@ -679,7 +684,7 @@
             <French>Définiser l'échelle de l'icône des unités sur votre boussole</French>
             <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
             <Korean>나침반 위에 표시되는 유닛 아이콘의 크기를 설정합니다.</Korean>
-            <Japanese>コンパス上に表示されるユニット アイコンのスケールを設定します。</Japanese>
+            <Japanese>コンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
             <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
             <Portuguese>Defina a escala dos ícones na bússola</Portuguese>
             <Spanish>Establece la escala de iconos para las unidades en tu brújula</Spanish>
@@ -691,6 +696,7 @@
             <Chinese>乘員的圖標大小</Chinese>
             <Russian>Масштаб иконок для экипажа</Russian>
             <German>Symbol Skalierung für Mannschaften</German>
+            <Japanese>乗員用アイコンの大きさ</Japanese>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew_desc">
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
@@ -698,6 +704,7 @@
             <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
             <Russian>Установите масштаб значков для юнитов на вашем компасе когда вы в экипаже техники</Russian>
             <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
+            <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
             <English>Hide while ACE Interacting</English>
@@ -730,28 +737,33 @@
         <Key ID="STR_dui_dialog_hide_interaction">
             <English>Hide while a dialog is open</English>
             <German>Während eines Dialogs verstecken</German>
+            <Japanese>ダイアログ時は非表示</Japanese>
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
             <English>When a UI dialog is open should the UI be hidden?</English>
             <German>Wenn ein Dialogsfenster offen ist, soll die UI versteckt werden?</German>
+            <Japanese>ダイアログを開いているときは UI を非表示にしますか？</Japanese>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
             <Chinesesimp>雷达透明度</Chinesesimp>
             <Chinese>雷達透明度</Chinese>
             <German>Radaropazität</German>
+            <Japanese>レーダー透明度</Japanese>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity">
             <English>Icon Opacity</English>
             <Chinesesimp>图标透明度</Chinesesimp>
             <Chinese>圖標透明度</Chinese>
             <German>Iconopazität</German>
+            <Japanese>アイコン透明度</Japanese>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity_no_player">
             <English>Icon Opacity does not affect own unit</English>
             <Chinesesimp>图标透明度不影响自己</Chinesesimp>
             <Chinese>圖標透明度不影響自己</Chinese>
             <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
+            <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
         </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
@@ -772,6 +784,7 @@
             <Chinesesimp>方位角与雷达的间距</Chinesesimp>
             <Chinese>方位角與雷達的間距</Chinese>
             <German>Abstand der Richtungsanzeige zum Radar</German>
+            <Japanese>方位をレーダー位置に寄せる</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
@@ -781,7 +794,7 @@
             <French>Contour du texte</French>
             <German>Text Umrandung</German>
             <Korean>텍스트 외형</Korean>
-            <Japanese>テキストのアウトライン</Japanese>
+            <Japanese>テキストの縁取り</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
             <Spanish>Contorno de Texto</Spanish>
@@ -790,6 +803,7 @@
         <Key ID="STR_dui_dir_shadow">
             <English>Bearing Text Outline</English>
             <German>Text Umrandung der Richtungsanzeige</German>
+            <Japanese>方位テキストの縁取り</Japanese>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
@@ -827,7 +841,7 @@
             <French>Contour</French>
             <German>Umrandung</German>
             <Korean>테두리</Korean>
-            <Japanese>アウトライン</Japanese>
+            <Japanese>縁取り</Japanese>
             <Polish>Zarys</Polish>
             <Portuguese>Contorno</Portuguese>
             <Spanish>Contorno</Spanish>
@@ -855,7 +869,7 @@
             <!-- <French></French> -->
             <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
             <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
-            <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離をメートルで設定します。</Japanese>
+            <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離 (m) で設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która spowoduje zmianę koloru ikony jednostki na pomarańczowy, gdy znajduje się ona zbyt blisko użytkownika.</Polish>
             <Portuguese>Define a distância em metros em que o ícone de unidade ficará laranja por estar perto demais</Portuguese>
             <Spanish>Establece la distancia en metros que hará que el icono de una unidad se vuelva naranja cuando esté demasiado cerca de usted</Spanish>
@@ -1047,6 +1061,7 @@
             <Chinesesimp>遮挡淡出时间</Chinesesimp>
             <Chinese>遮擋淡出時間</Chinese>
             <German>Okklusionsausblendzeit</German>
+            <Japanese>アイコン非表示時間</Japanese>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -1067,12 +1082,14 @@
             <Chinesesimp>遮挡渐入时间</Chinesesimp>
             <Chinese>遮擋漸入時間</Chinese>
             <German>Okklusionseinblendzeit</German>
+            <Japanese>アイコン表示時間</Japanese>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_in_desc">
             <English>Sets the time it takes for icons to fade in on the radar</English>
             <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
             <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
+            <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
@@ -1602,7 +1619,7 @@
             <!-- <French></French> -->
             <German>Zeit für Pizza</German>
             <!-- <Korean></Korean> -->
-            <Japanese>ピザ タイム</Japanese>
+            <Japanese>ピッツァ</Japanese>
             <Polish>Czas na pizzę</Polish>
             <Portuguese>Hora da Pizza</Portuguese>
             <!-- <Spanish></Spanish> -->
@@ -1819,6 +1836,7 @@
             <Chinese>当单位说话时显示图标</Chinese>
             <German>Zeige Icon an wenn jemand spricht</German>
             <Russian>Показывать иконку при разговоре</Russian>
+            <Japanese>ユニット発話時はアイコン表示</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_desc">
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
@@ -1826,54 +1844,63 @@
             <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
             <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
+            <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
             <English>Show cardinal points</English>
             <Chinesesimp>显示基点</Chinesesimp>
             <Chinese>顯示基點</Chinese>
             <German>Himmelsrichtungen anzeigen</German>
+            <Japanese>方位基点を表示</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
             <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
             <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
             <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
+            <Japanese>コンパスを所持時は方位基点を表示します。無効化すると、コンパスを所持していても表示されなくなります。</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
             <English>Replace main icon with speaking icon</English>
             <Chinesesimp>正在发言图标替换主图标</Chinesesimp>
             <Chinese>正在發言圖標替換主圖標</Chinese>
             <German>Haupticon mit Sprechicon ersetzen</German>
+            <Japanese>発話時はメイン アイコンを置換</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
             <Chinesesimp>名单列表中的单位主图标会被正在发言图标替换</Chinesesimp>
             <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
             <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
+            <Japanese>ユニットが発話時はネームリスト上にあるアイコンを置き換えます。</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
             <English>Speaking icon on radio messages only</English>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Sprachicon nur bei Radionachrichten</German>
+            <Japanese>無線通信時のみ発話アイコン表示</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
+            <Japanese>無線通信時のみ発話アイコンを表示します。直接会話時は表示されません。</Japanese>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
             <Chinesesimp>ACE医疗切换</Chinesesimp>
             <Chinese>ACE醫療切換</Chinese>
             <German>ACE Sanitäter Umschalter</German>
+            <Japanese>ACE 3 医療切り替え</Japanese>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
             <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
             <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
             <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
+            <Japanese>衛生兵ユニットを表示するときにゲーム標準の衛生兵か、ACE 3 で指定された衛生兵のどちらを元にするか設定できます。</Japanese>
         </Key>
     </Package>
 </Project>

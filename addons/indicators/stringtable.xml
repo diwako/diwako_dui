@@ -58,6 +58,7 @@
                 <Chinese>允許乘員標記</Chinese>
                 <Russian>Разрешить индикаторы для экипажа</Russian>
                 <German>Erlaube Mannschafts Indikatoren</German>
+                <Japanese>乗員用インジケータ許可</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
@@ -65,6 +66,7 @@
                 <Chinese>允許乘員有額外的標記距離</Chinese>
                 <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
                 <German>Erlauben Anzeigen mit größerer Reichweite für die Fahrzeugmannschaft.</German>
+                <Japanese>車両の乗員用にインジケータ表示範囲を倍増させます。</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
@@ -72,6 +74,7 @@
                 <Chinese>乘員的最遠距離</Chinese>
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
                 <German>Maximale Reichweite für die Mannschaft</German>
+                <Japanese>乗員用最大距離</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
@@ -79,6 +82,7 @@
                 <Chinese>作爲載具乘員時允許顯示的最遠的距離</Chinese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
                 <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugmannschaft.</German>
+                <Japanese>車両の乗員用にインジケータを表示する最大範囲を設定します。</Japanese>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>

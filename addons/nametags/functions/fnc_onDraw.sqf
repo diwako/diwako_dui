@@ -9,12 +9,13 @@ if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
 };
 
 private _target = cursorObject;
-private _skipVicCheck = (netId _target) isEqualTo "1:0"; // only ever true when cursorObject returns the weapon of a
-// unit, per the comment from Pierre MGI at https://community.bistudio.com/wiki/cursorObject
-// we'd like to find the cursorObject regardless, so we piggyback on the LIS check to find the most probable one
 private _player = call CBA_fnc_currentUnit;
 
 if (GVAR(useLIS)) then {
+    private _skipVicCheck = (netId _target) isEqualTo "1:0"; // only ever true when cursorObject returns the weapon of a
+    // unit, per the comment from Pierre MGI at https://community.bistudio.com/wiki/cursorObject
+    // we'd like to find the cursorObject regardless, so we piggyback on the LIS check to find the most probable one
+    
     private _lis = lineIntersectsSurfaces [
         AGLToASL positionCameraToWorld [0, 0, 0],
         AGLToASL positionCameraToWorld [0, 0, GVAR(renderDistance) + 1],

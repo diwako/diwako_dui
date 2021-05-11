@@ -592,6 +592,9 @@
             <German>Nur Fahrer</German>
             <Japanese>運転手のみ</Japanese>
         </Key>
+        <Key ID="STR_dui_show_dir_opt5">
+            <English>Only with GPS</English>
+        </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
             <Chinesesimp>UI大小</Chinesesimp>

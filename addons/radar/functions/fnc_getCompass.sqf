@@ -2,7 +2,4 @@
 params ["_unit"];
 
 private _array = (assignedItems _unit) arrayIntersect GVAR(compassWhitelist);
-if (_array isNotEqualTo []) exitWith {
-    _array select 0
-};
-""
+_array param [0, ""];

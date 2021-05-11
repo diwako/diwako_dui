@@ -9,6 +9,9 @@ if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
 };
 
 private _target = cursorObject;
+private _skipVicCheck = (netId _target) isEqualTo "1:0"; // only ever true when cursorObject returns the weapon of a
+// unit, per the comment from Pierre MGI at https://community.bistudio.com/wiki/cursorObject
+// we'd like to find the cursorObject regardless, so we piggyback on the LIS check to find the most probable one
 private _player = call CBA_fnc_currentUnit;
 
 if (GVAR(useLIS)) then {
@@ -25,7 +28,7 @@ if (GVAR(useLIS)) then {
         _x params ["", "", "_obj"];
         if (_obj isKindOf "CAManBase" &&
            {_obj isNotEqualTo _player &&
-           {!isNull (objectParent _obj)
+           {!isNull (objectParent _obj) || {_skipVicCheck}
         }}) then {
             _target = _obj;
             break;

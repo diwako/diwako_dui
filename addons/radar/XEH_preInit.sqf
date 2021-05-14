@@ -472,10 +472,7 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     ,[localize "STR_dui_namelist_icon_priority", localize "STR_dui_namelist_icon_priority_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[[0, 1], [localize "STR_dui_namelist_icon_priority_setting0", localize "STR_dui_namelist_icon_priority_setting1"], 1]
-    ,false
-    ,{
-        [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
-    }
+    ,true
 ] call CBA_fnc_addSetting;
 
 [

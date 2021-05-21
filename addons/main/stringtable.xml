@@ -382,6 +382,18 @@
             <Spanish>Muestra solo el icono de amigo en la lista de nombres en lugar de ambos, amigo y clase de unidad</Spanish>
             <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian>
         </Key>
+        <Key ID="STR_dui_namelist_icon_priority">
+            <English>Prioritise icons</English>
+        </Key>
+        <Key ID="STR_dui_namelist_icon_priority_desc">
+            <English>Priorises icons selected in this setting over the other ones in the list.</English>
+        </Key>
+        <Key ID="STR_dui_namelist_icon_priority_setting0">
+            <English>AR and AT</English>
+        </Key>
+        <Key ID="STR_dui_namelist_icon_priority_setting1">
+            <English>Engineer, Medic and EOD</English>
+        </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
             <Chinesesimp>文字大小</Chinesesimp>

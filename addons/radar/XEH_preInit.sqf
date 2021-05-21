@@ -467,6 +467,15 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
 };
 
 [
+    QGVAR(icon_priority_setting)
+    ,"LIST"
+    ,[localize "STR_dui_namelist_icon_priority", localize "STR_dui_namelist_icon_priority_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[[0, 1], [localize "STR_dui_namelist_icon_priority_setting0", localize "STR_dui_namelist_icon_priority_setting1"], 1]
+    ,true
+] call CBA_fnc_addSetting;
+
+[
     "diwako_dui_namelist_width"
     ,"SLIDER"
     ,[localize "STR_dui_namelist_width", localize "STR_dui_namelist_width_desc"]

@@ -52,6 +52,16 @@ if ((leader _unit) isEqualTo _unit) exitWith {
     _namespace getVariable ["sql", DUI_SQL];
 };
 
+// AR - if it has priority over Engineer, Medic and EOD
+if (GVAR(icon_priority_setting) isEqualTo 0 && {getText(configFile >> "CfgWeapons" >> (primaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_mg_ca.paa"}) exitWith {
+    _namespace getVariable ["auto_rifleman", DUI_AUTO_RIFLEMAN];
+};
+
+// AT - if it has priority over Engineer, Medic and EOD
+if (GVAR(icon_priority_setting) isEqualTo 0 && {getText(configFile >> "CfgWeapons" >> (secondaryWeapon (_unit)) >> "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa"}) exitWith {
+    _namespace getVariable ["at_gunner", DUI_AT_GUNNER];
+};
+
 // Medic
 if (GVAR(ace_medic) && {_unit getVariable ["ace_medical_medicClass", [0, 1] select (_unit getUnitTrait "medic")] > 0}) exitWith {
     _namespace getVariable ["medic", DUI_MEDIC];

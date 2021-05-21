@@ -383,7 +383,7 @@
             <Russian>Показывает только иконку в списке вместо имени и класса юнита</Russian>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority">
-            <English>Prioritise icons:</English>
+            <English>Prioritise icons</English>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
             <English>Priorises icons selected in this setting over the other ones in the list.</English>

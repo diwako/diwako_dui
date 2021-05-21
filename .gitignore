@@ -16,3 +16,4 @@ keys/*
 *.exe
 *.sqfc
 *.bat
+*.dll

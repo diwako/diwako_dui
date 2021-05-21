@@ -105,7 +105,7 @@ class diwako_dui_colors {
         white = "#FFFFFF";
         red = "#DE0000";
         green = "#079625";
-        blue = "#3369dA";
+        blue = "#3369DA";
         yellow = "#D99F28";
     };
 

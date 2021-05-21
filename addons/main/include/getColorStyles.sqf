@@ -12,7 +12,7 @@ private _colorIdent = [];
 
 private _getColorFromHex = {
     params ["_key", "_hex"];
-    _hex = toArray _hex;
+    _hex = toArray toUpper _hex;
     _hex deleteAt 0; //remove the '#' at the beginning
     private _nums = toArray "0123456789ABCDEF"; //for converting hex nibbles to base 10 equivalents
 

@@ -97,6 +97,15 @@ if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
     GVAR(ace_medic) = false;
 };
 
+[
+    QGVAR(icon_priority_setting)
+    ,"LIST"
+    ,[localize "STR_dui_namelist_icon_priority", localize "STR_dui_namelist_icon_priority_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[[0, 1], [localize "STR_dui_namelist_icon_priority_setting0", localize "STR_dui_namelist_icon_priority_setting1"], 1]
+    ,true
+] call CBA_fnc_addSetting;
+
 private _curCat = localize "STR_dui_cat_compass";
 
 [
@@ -465,15 +474,6 @@ if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
 } else {
     diwako_dui_namelist_only_buddy_icon = false;
 };
-
-[
-    QGVAR(icon_priority_setting)
-    ,"LIST"
-    ,[localize "STR_dui_namelist_icon_priority", localize "STR_dui_namelist_icon_priority_desc"]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,[[0, 1], [localize "STR_dui_namelist_icon_priority_setting0", localize "STR_dui_namelist_icon_priority_setting1"], 1]
-    ,true
-] call CBA_fnc_addSetting;
 
 [
     "diwako_dui_namelist_width"

@@ -3,7 +3,6 @@
 params ["_target", "_player"];
 private _vehicle = vehicle _target;
 private _distance = _player distance _vehicle;
-private _pos = _vehicle modelToWorld [0,0,1.4];
 
 private _darknessPenalty = 0;
 private _rangeModifier = 0;
@@ -38,7 +37,10 @@ if (GVAR(enableFOVBoost)) then {
 
 private _fadeValue = (linearConversion [0, (_maxDistance * _rangeModifier), _distance, 1, 0, true]) - _darknessPenalty;
 if (GVAR(enableOcclusion)) then {
-    _fadeValue = _fadeValue - ([objNull, "FIRE"] checkVisibility [eyePos _player, _pos]);
+    _fadeValue = _fadeValue - ([objNull, "FIRE"] checkVisibility [
+        _player modelToWorldVisualWorld (_player selectionPosition "pilot"),
+        _vehicle modelToWorldVisual [0,0,1.4]
+    ]);
 };
 
 // this function allows Mission Builders to implement there own coefs

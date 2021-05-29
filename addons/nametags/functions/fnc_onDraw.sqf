@@ -21,10 +21,9 @@ if (GVAR(useLIS)) then {
     // while a theoretical positionCameraToWorldVisual command would translate positions from camera space to world
     // space in RENDER time scope.
     private _camPos = _player modelToWorldVisualWorld (_player selectionPosition "pilot");
-    private _endPos = _camPos vectorAdd ((getCameraViewDirection _player) vectorMultiply (GVAR(renderDistance) + 1));
     private _lis = lineIntersectsSurfaces [
         _camPos,
-        _endPos,
+        _camPos vectorAdd ((getCameraViewDirection _player) vectorMultiply (GVAR(renderDistance) + 1)),
         _player,
         objNull,
         true,

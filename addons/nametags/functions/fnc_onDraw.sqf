@@ -16,9 +16,14 @@ if (GVAR(useLIS)) then {
     // unit, per the comment from Pierre MGI at https://community.bistudio.com/wiki/cursorObject
     // we'd like to find the cursorObject regardless, so we piggyback on the LIS check to find the most probable one
 
+    // This is the best we can do without a positionCameraToWorldVisual command.
+    // positionCameraToWorld translates position from camera space to world space in SIMULATION time scope,
+    // while a theoretical positionCameraToWorldVisual command would translate positions from camera space to world
+    // space in RENDER time scope.
+    private _camPos = _player modelToWorldVisualWorld (_player selectionPosition "pilot");
     private _lis = lineIntersectsSurfaces [
-        AGLToASL positionCameraToWorld [0, 0, 0],
-        AGLToASL positionCameraToWorld [0, 0, GVAR(renderDistance) + 1],
+        _camPos,
+        _camPos vectorAdd ((getCameraViewDirection _player) vectorMultiply (GVAR(renderDistance) + 1)),
         _player,
         objNull,
         true,

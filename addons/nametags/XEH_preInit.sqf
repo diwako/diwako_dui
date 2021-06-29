@@ -12,7 +12,7 @@ GVAR(RankNames) = createHashMap;
         _rankHashMap set [_x, _text];
     } forEach ["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"];
     GVAR(RankNames) set [configName _x, _rankHashMap];
-} forEach "isClass _x" configClasses (configFile >> "CfgRankNameStyles");
+} forEach ("isClass _x" configClasses (configFile >> "CfgRankNameStyles"));
 
 #include "settings.sqf"
 ADDON = true;

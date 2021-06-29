@@ -15,3 +15,4 @@
 #include "CfgEventHandlers.hpp"
 #include "CfgUIGrids.hpp"
 #include "gui.hpp"
+#include "CfgRankNameStyles.hpp"

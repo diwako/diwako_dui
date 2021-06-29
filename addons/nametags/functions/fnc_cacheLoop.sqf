@@ -16,16 +16,18 @@ if (GVAR(pfhID) isEqualTo -1) then {
     GVAR(pfhID) = [{ call FUNC(onDraw) }, 0.1, _ctrl] call CBA_fnc_addPerframeHandler;
 };
 
+private _rankNamesHashMap = GVAR(RankNames) get GVAR(rankNameStyle);
+
 {
     if (alive _x) then {
         _x setVariable [QGVAR(name), _x getVariable [QEGVAR(main,customName), name _x]];
         _x setVariable [QGVAR(groupName), _x getVariable [QGVAR(customGroup), groupID (group _x)]];
         _x setVariable [QGVAR(side), side group _x];
         private _rank = rank _x;
-        private _index = (GVAR(RankNames) select 0) find _rank;
-        if (_index isNotEqualTo -1) then {
-            _rank = (GVAR(RankNames) select 1) select _index;
+        private _rankName = _rankNamesHashMap get _rank;
+        if (isNil "_rankName") then {
+            _rankName = (GVAR(RankNames) get "default") get _rank;
         };
-        _x setVariable [QGVAR(rank), _rank];
+        _x setVariable [QGVAR(rank), _rankName];
     };
 } forEach allUnits;

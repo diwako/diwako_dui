@@ -263,6 +263,7 @@
             <German>Fahrzeugkompass zulassen</German>
             <Japanese>車両コンパス許可</Japanese>
             <Turkish>Araç Pusulası</Turkish>
+            <Spanish>Permitir brújula de vehículo</Spanish>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled_desc">
             <English>Allow compass with greater range for vehicle crew</English>
@@ -272,6 +273,7 @@
             <German>Kompass mit größerer Reichweite für die Fahrzeugmannschaft erlauben</German>
             <Japanese>車両の乗員用にコンパス表示範囲を倍増させます。</Japanese>
             <Turkish>Araç mürettebatları için daha yüksek menzilli pusulaya izin ver</Turkish>
+            <Spanish>Permitir brújula con mayor alcance para la tripulación del vehículo</Spanish>
         </Key>
         <Key ID="STR_dui_compass_crew_range">
             <English>Vehicle Compass range</English>
@@ -281,6 +283,7 @@
             <German>Reichweite des Fahrzeugkompasses</German>
             <Japanese>車両コンパス距離</Japanese>
             <Turkish>Araç Pusulası Menzili</Turkish>
+            <Spanish>Rango de la brújula del vehículo</Spanish>
         </Key>
         <Key ID="STR_dui_compass_crew_range_desc">
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
@@ -290,6 +293,7 @@
             <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
             <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
             <Turkish>Araç mürettebatlarının pusulaları içinde ne kadar yakın birimler görünmeli?</Turkish>
+            <Spanish>¿Hasta qué punto los jugadores en el rol de la tripulación (conductor, artillero o comandante) deben ver las unidades en el mismo grupo en metros?</Spanish>
         </Key>
         <Key ID="STR_dui_compass_refresh">
             <English>Refresh Rate</English>
@@ -415,11 +419,13 @@
             <English>Prioritise icons</English>
             <Russian>Приоритет иконок</Russian>
             <Turkish>İkonlara Öncelik Ver</Turkish>
+            <Spanish>Priorizar iconos</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
             <English>Priorises icons selected in this setting over the other ones in the list.</English>
             <Russian>Приоритет иконок, выбранных в этой настройке, над другими в списке</Russian>
             <Turkish>Bu ayarda seçilen ikonlara diğerlerine göre öncelik ver</Turkish>
+            <Spanish>Prioriza los iconos seleccionados en esta configuración sobre los demás en la lista</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting0">
             <English>AR and AT</English>
@@ -429,6 +435,7 @@
             <English>Engineer, Medic and EOD</English>
             <Russian>Инженер, медик и EOD</Russian>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
+            <Spanish>Ingeniero, Médico y EOD</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -604,6 +611,7 @@
             <Portuguese>Cores Customizadas</Portuguese>
             <Russian>Пользовательские цвета</Russian>
             <Turkish>Özel Renkler</Turkish>
+            <Spanish>Colores personalizados</spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -656,11 +664,13 @@
             <Japanese>運転手のみ</Japanese>
             <Russian>Только водитель</Russian>
             <Turkish>Yalnız Sürücü İçin</Turkish>
+            <Spanish>Solo conductor</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt5">
             <English>Only with GPS</English>
             <Russian>Только с GPS</Russian>
             <Turkish>Sadece GPS İle</Turkish>
+            <Spanish>Solo con GPS</Spanish>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
@@ -775,6 +785,7 @@
             <German>Symbol Skalierung für Mannschaften</German>
             <Japanese>乗員用アイコンの大きさ</Japanese>
             <Turkish>Mürettebat İkon Ölçeği</Turkish>
+            <Spanish>Escala de iconos para la tripulación</Spanish>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew_desc">
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
@@ -784,6 +795,7 @@
             <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
             <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
             <Turkish>Araç mürettebatının parçasıyken pusulanızdaki kişiler için ikon ölceğini belirler</Turkish>
+            <Spanish>Establezca la escala de iconos para las unidades en su brújula mientras el jugador está en la tripulación del vehículo</Spanish>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
             <English>Hide while ACE Interacting</English>
@@ -821,6 +833,7 @@
             <Japanese>ダイアログ時は非表示</Japanese>
             <Russian>Скрывать, если диалоговое меню открыто</Russian>
             <Turkish>Diyaloglar Sırasında Sakla</Turkish>
+            <Spanish>Ocultar mientras un diálogo está abierto</Spanish>
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
             <English>When a UI dialog is open should the UI be hidden?</English>
@@ -828,6 +841,7 @@
             <Japanese>ダイアログを開いているときは UI を非表示にしますか？</Japanese>
             <Russian>Если интерфейс диалога открыт, нужно ли прятать интерфейс?</Russian>
             <Turkish>Pusula herhangi bir oyun için diyalog çıktığında gizlenmeli mi?</Turkish>
+            <Spanish>Cuando se abre un cuadro de diálogo de la interfaz de usuario, ¿debe estar oculta la interfaz de usuario?</Spanish>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
@@ -837,6 +851,7 @@
             <Japanese>レーダー透明度</Japanese>
             <Russian>Прозрачность радара</Russian>
             <Turkish>Radar Opaklığı</Turkish>
+            <Spanish>Opacidad del radar</Spanish>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity">
             <English>Icon Opacity</English>
@@ -846,6 +861,7 @@
             <Japanese>アイコン透明度</Japanese>
             <Russian>Прозрачность иконки</Russian>
             <Turkish>İkon Opaklığı</Turkish>
+            <Spanish>Opacidad del icono</Spanish>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity_no_player">
             <English>Icon Opacity does not affect own unit</English>
@@ -855,6 +871,7 @@
             <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
             <Russian>Прозрачность иконки не оказывает эффект на собственного юнита</Russian>
             <Turkish>İkon Opaklığı Ayarı Kendi İkonunu Etkilemesin</Turkish>
+            <Spanish>La opacidad del icono no afecta la propia unidad</Spanish>
         </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
@@ -879,6 +896,7 @@
             <Japanese>方位をレーダー位置に寄せる</Japanese>
             <Russian>Расстояние указателя поворота до радара</Russian>
             <Turkish>Yön Derecesiyle Radar Arasındaki Boşluk</Turkish>
+            <Spanish>Relleno de rumbo al radar</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
@@ -901,6 +919,7 @@
             <Japanese>方位テキストの縁取り</Japanese>
             <Russian>Текст контура указателя поворота</Russian>
             <Turkish>Yön Derecesi Çerçevesi</Turkish>
+            <Spanish>Contorno del texto del rumbo</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
@@ -1179,6 +1198,7 @@
             <Japanese>アイコン非表示時間</Japanese>
             <Russian>Время исчезновения окклюзии</Russian>
             <Turkish>'Occlusion' Efekti Şeffaflaşma Süresi</Turkish>
+            <Spanish>Tiempo de desvanecimiento de la oclusión</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -1203,6 +1223,7 @@
             <Japanese>アイコン表示時間</Japanese>
             <Russian>Время появления окклюзии</Russian>
             <Turkish>'Occlusion' Efekti Opaklaşma Süresi</Turkish>
+            <Spanish>La oclusión se desvanece en el tiempo</Spanish>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_in_desc">
             <English>Sets the time it takes for icons to fade in on the radar</English>
@@ -1212,6 +1233,7 @@
             <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
             <Russian>Устанавливает время появления иконок на радаре.</Russian>
             <Turkish>Radardaki ikonların geri gelme süresini belirler</Turkish>
+            <Spanish>Establece el tiempo que tardan los iconos en aparecer en el radar</Spanish>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
@@ -1328,6 +1350,7 @@
             <Portuguese>Esconder quando Líder do Grupo</Portuguese>
             <Russian>Скрыть когда лидер группы</Russian>
             <Turkish>Grup Lideriyken Gizle</Turkish>
+            <Spanish>Ocultar cuando el líder del grupo</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
             <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
@@ -1339,6 +1362,7 @@
             <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
             <Russian>Идентифицирует список имен, если вы являетесь текущим лидером группы. Используется для людей, которые предпочитают ванильный сквад-радар</Russian>
             <Turkish>Grup lideriyken isim listesini gizle. Vanilya takım barının tercih edenler için ideal ayar</Turkish>
+            <Spanish>Oculta la lista de nombres si es el líder del grupo actual. Usado para personas que prefieren la barra de escuadrón de vainilla</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadMain">
             <English>No Squad Color</English>
@@ -1350,6 +1374,7 @@
             <Portuguese>Sem Cor de Esquadrão</Portuguese>
             <Russian>Нет цвета команды</Russian>
             <Turkish>Takım Rengi Yok</Turkish>
+            <Spanish>Sin color de escuadrón</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadRed">
             <English>Red Squad Color</English>
@@ -1361,6 +1386,7 @@
             <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
             <Russian>Красный цвет команды</Russian>
             <Turkish>Kırmızı Takım Rengi</Turkish>
+            <Spanish>Color de escuadrón Rojo</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadGreen">
             <English>Green Squad Color</English>
@@ -1372,6 +1398,7 @@
             <Portuguese>Cor Verde de Esquadrão</Portuguese>
             <Russian>Зеленый цвет команды</Russian>
             <Turkish>Yeşil Takım Rengi</Turkish>
+            <Spanish>Color de escuadrón Verde</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadBlue">
             <English>Blue Squad Color</English>
@@ -1383,6 +1410,7 @@
             <Portuguese>Cor Azul de Esquadrão</Portuguese>
             <Russian>Синий цвет команды</Russian>
             <Turkish>Mavi Takım Rengi</Turkish>
+            <Spanish>Color de escuadrón Azul</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadYellow">
             <English>Yellow Squad Color</English>
@@ -1394,6 +1422,7 @@
             <Portuguese>Cor Amarela de Esquadrão</Portuguese>
             <Russian>Желтый цвет команды</Russian>
             <Turkish>Sarı Tekım Rengi</Turkish>
+            <Spanish>Color de escuadrón Amarillo</Spanish>
         </Key>
         <Key ID="STR_dui_main_squadColor_desc">
             <English>Be warned the alpha value will do nothing!</English>
@@ -1406,6 +1435,7 @@
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
             <Turkish>Uyarı: Alpha (saydamlık) değerinin bir etkisi yok!</Turkish>
+            <Spanish>Tenga en cuenta que el valor alfa no hará nada</Spanish>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes">
             <English>Leading Zeroes</English>
@@ -1417,6 +1447,7 @@
             <Portuguese>Zero à esquerda</Portuguese>
             <Japanese>0 揃え</Japanese>
             <Turkish>0 ile doldur</Turkish>
+            <Spanish>Ceros a la izquierda</Spanish>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes_desc">
             <English>The bearing number will be filled with leading zeroes</English>
@@ -1428,6 +1459,7 @@
             <Japanese>方位角の表示を0を含めた3ケタで表示します</Japanese>
             <Russian>Значение азимута будет отображаться с лидирующими нулями</Russian>
             <Turkish>Yön derecesinin başını 0 ile tamamla</Turkish>
+            <Spanish>El número de rodamiento se rellenará con ceros a la izquierda.</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst">
             <English>Show SQL Always First</English>
@@ -1439,6 +1471,7 @@
             <Japanese>分隊長を常に先頭</Japanese>
             <Russian>Показывать командира первым</Russian>
             <Turkish>En Başta Lideri Göster</Turkish>
+            <Spanish>Mostrar SQL siempre primero</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
             <English>Shows the squad leader always as first unit</English>
@@ -1450,6 +1483,7 @@
             <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
             <Russian>Всегда показывать командира отделения первым в списке</Russian>
             <Turkish>Her zaman en üstte grup liderini gösterir</Turkish>
+            <Spanish>Muestra al líder del escuadrón siempre como primera unidad.</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort">
             <English>Sort</English>
@@ -1461,6 +1495,7 @@
             <Japanese>並び替え</Japanese>
             <Russian>Сортировать</Russian>
             <Turkish>Sıralama</Turkish>
+            <Spanish>Ordenar</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
             <English>Server needs to run DUI in order to have synchronicity!</English>
@@ -1472,6 +1507,7 @@
             <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
             <Russian>DUI должен быть запущен на сервере, чтобы обеспечить синхронность!</Russian>
             <Turkish>Senkronizasyon için sunucuda da DUI çalışması gerekir!</Turkish>
+            <Spanish>El servidor necesita ejecutar DUI para tener sincronía</Spanish>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1485,7 +1521,7 @@
             <Japanese>メイン</Japanese>
             <Polish>Główny</Polish>
             <Portuguese>Principal</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Principal</Spanish>
             <Russian>Основное</Russian>
             <Turkish>Ana</Turkish>
         </Key>
@@ -1500,7 +1536,7 @@
             <Japanese>レーダー</Japanese>
             <Polish>Radar</Polish>
             <Portuguese>Radar</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Radar</Spanish>
             <Russian>Радар</Russian>
             <Turkish>Radar</Turkish>
         </Key>
@@ -1516,7 +1552,7 @@
             <Japanese>通常</Japanese>
             <Polish>Standardowy</Polish>
             <Portuguese>Padrão</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Estándar</Spanish>
             <Russian>Стандартное</Russian>
             <Turkish>Standart</Turkish>
         </Key>
@@ -1531,7 +1567,7 @@
             <Japanese>ACE 3</Japanese>
             <Polish>ACE 3</Polish>
             <Portuguese>ACE3</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>ACE 3</Spanish>
             <Russian>АСЕ 3</Russian>
             <Turkish>ACE 3</Turkish>
         </Key>
@@ -1546,7 +1582,7 @@
             <Japanese>STUI</Japanese>
             <Polish>STUI</Polish>
             <Portuguese>STUI</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>STUI</Spanish>
             <Russian>STUI</Russian>
             <Turkish>STUI</Turkish>
         </Key>
@@ -1562,7 +1598,7 @@
             <Japanese>Wargame</Japanese>
             <Polish>Wargame</Polish>
             <Portuguese>Wargame</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Wargame</Spanish>
             <Russian>Wargame</Russian>
             <Turkish>Wargame</Turkish>
         </Key>
@@ -1577,7 +1613,7 @@
             <Japanese>Wargame (ミリタリー グリーン)</Japanese>
             <Polish>Wargame (wojskowy zielony)</Polish>
             <Portuguese>Wargame (Verde Militar)</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Wargame (Verde Militar)</Spanish>
             <Russian>Wargame (Зеленый военный)</Russian>
             <Turkish>Wargame (Ordu Yeşili)</Turkish>
         </Key>
@@ -1592,7 +1628,7 @@
             <Japanese>1 型 2 色覚</Japanese>
             <Polish>Protanopia</Polish>
             <Portuguese>Protanopia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Protanopia</Spanish>
             <Russian>Protanopia</Russian>
             <Turkish>Protanopi</Turkish>
         </Key>
@@ -1607,7 +1643,7 @@
             <Japanese>1 型 3 色覚</Japanese>
             <Polish>Protanomalia</Polish>
             <Portuguese>Protanomalia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Protanomalía</Spanish>
             <Russian>Протаномалия</Russian>
             <Turkish>Protanomali</Turkish>
         </Key>
@@ -1622,7 +1658,7 @@
             <Japanese>2 型 2 色覚</Japanese>
             <Polish>Deuteranopia</Polish>
             <Portuguese>Deuteranopia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Deuteranopía</Spanish>
             <Russian>Дейтеранопия</Russian>
             <Turkish>Döteranopi</Turkish>
         </Key>
@@ -1637,7 +1673,7 @@
             <Japanese>2 型 3 色覚</Japanese>
             <Polish>Deuteranomalia</Polish>
             <Portuguese>Deuteranomalia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Deuteranomalía</Spanish>
             <Russian>Дейтераномалия</Russian>
             <Turkish>Deuteranomali</Turkish>
         </Key>
@@ -1652,7 +1688,7 @@
             <Japanese>3 型 2 色覚</Japanese>
             <Polish>Tritanopia</Polish>
             <Portuguese>Trinatopia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Tritanopia</Spanish>
             <Russian>Тританопия</Russian>
             <Turkish>Tritanopi</Turkish>
         </Key>
@@ -1667,7 +1703,7 @@
             <Japanese>3 型 3 色覚</Japanese>
             <Polish>Tritanomalia</Polish>
             <Portuguese>Tritanomalia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Tritanomalía</Spanish>
             <Russian>Тританомалия</Russian>
             <Turkish>Tritanomali</Turkish>
         </Key>
@@ -1682,7 +1718,7 @@
             <Japanese>1 色覚</Japanese>
             <Polish>Achromatopsja</Polish>
             <Portuguese>Acromatopsia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Acromatopsia</Spanish>
             <Russian>Ахроматопсия</Russian>
             <Turkish>Akromatopsi</Turkish>
         </Key>
@@ -1697,7 +1733,7 @@
             <Japanese>異常 3 色覚</Japanese>
             <Polish>Achromatomalia</Polish>
             <Portuguese>Acromatomalia</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Acromatomalía</Spanish>
             <Russian>Ахроматомалия</Russian>
             <Turkish>Akromatomali</Turkish>
         </Key>
@@ -1710,6 +1746,7 @@
             <Portuguese>Customizado</Portuguese>
             <Russian>Пользовательское</Russian>
             <Turkish>Özel</Turkish>
+            <Spanish>Personalizado</Spanish>
         </Key>
         <!-- Icon styles -->
         <!-- Standard string will be just reused from color -->
@@ -1724,7 +1761,7 @@
             <Japanese>先端のみ</Japanese>
             <Polish>Tylko wierzchołek</Polish>
             <Portuguese>Só a pontinha</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Solo la punta</Spanish>
             <Russian>Просто совет</Russian>
             <Turkish>Sadece Ucu</Turkish>
         </Key>
@@ -1739,7 +1776,7 @@
             <Japanese>NATO JMS</Japanese>
             <Polish>NATO JMS</Polish>
             <Portuguese>NATO JMS</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>NATO JMS</Spanish>
             <Russian>НАТО JMC</Russian>
             <Turkish>NATO JMS</Turkish>
         </Key>
@@ -1754,7 +1791,7 @@
             <Japanese>クローン</Japanese>
             <Polish>Klony</Polish>
             <Portuguese>Clones</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Clones</Spanish>
             <Russian>Копии</Russian>
             <Turkish>Klonlar</Turkish>
         </Key>
@@ -1770,7 +1807,7 @@
             <Japanese>ボヘミア インタラクティブ</Japanese>
             <Polish>Bohemia Interactive</Polish>
             <Portuguese>Bohemia Interactive</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Bohemia Interactive</Spanish>
             <Russian>Бисовский</Russian>
             <Turkish>Bohemia Interactive</Turkish>
         </Key>
@@ -1785,7 +1822,7 @@
             <Japanese>ピッツァ</Japanese>
             <Polish>Czas na pizzę</Polish>
             <Portuguese>Hora da Pizza</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Hora da Pizza</Spanish>
             <Russian>Пицца</Russian>
             <Turkish>Pizza Zamanı</Turkish>
         </Key>
@@ -1800,7 +1837,7 @@
             <Japanese>いにしえ</Japanese>
             <Polish>Stare dobre czasy</Polish>
             <Portuguese>Tempos antigos</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Tiempos antigos</Spanish>
             <Russian>Древний</Russian>
             <Turkish>Eski Güzel Zamanlar</Turkish>
         </Key>
@@ -1815,7 +1852,7 @@
             <Japanese>時計</Japanese>
             <Polish>Zegar</Polish>
             <Portuguese>Relógio</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Reloj</Spanish>
             <Russian>Часы</Russian>
             <Turkish>Saat</Turkish>
         </Key>
@@ -1830,7 +1867,7 @@
             <Japanese>クラシック</Japanese>
             <Polish>Klasyczny</Polish>
             <Portuguese>Clássico</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Clasico</Spanish>
             <Russian>Классический</Russian>
             <Turkish>Klasik</Turkish>
         </Key>
@@ -1846,7 +1883,7 @@
             <Japanese>ゼノ - レッド</Japanese>
             <Polish>Xeno - Czerwony</Polish>
             <Portuguese>Xeno - Vermelho</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Xeno - Rojo</Spanish>
             <Russian>Ксено-красный</Russian>
             <Turkish>Xeno - Kırmızı</Turkish>
         </Key>
@@ -1861,7 +1898,7 @@
             <Japanese>ゼノ - グリーン</Japanese>
             <Polish>Xeno - Zielony</Polish>
             <Portuguese>Xeno - Verde</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Xeno - Verde</Spanish>
             <Russian>Ксено-зеленый</Russian>
             <Turkish>Xeno - Yeşil</Turkish>
         </Key>
@@ -1876,7 +1913,7 @@
             <Japanese>ゼノ - ブルー</Japanese>
             <Polish>Xeno - Niebieski</Polish>
             <Portuguese>Xeno - Azul</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Xeno - Azul</Spanish>
             <Russian>Ксено-синий</Russian>
             <Turkish>Xeno - Mavi</Turkish>
         </Key>
@@ -1891,7 +1928,7 @@
             <Japanese>ミリタリー風</Japanese>
             <Polish>Wojskowy Interfejs</Polish>
             <Portuguese>Interface Militar</Portuguese>
-            <!-- <Spanish></Spanish> -->
+            <Spanish>Interfaz Militar</Spanish>
             <Russian>Армейский интерфейс</Russian>
             <Turkish>Ordu Arayüzü</Turkish>
         </Key>
@@ -1906,6 +1943,7 @@
             <Japanese>行わない</Japanese>
             <Russian>Нет</Russian>
             <Turkish>Hiç</Turkish>
+            <Spanish>Ninguno</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort_name">
             <English>Names</English>
@@ -1917,6 +1955,7 @@
             <Japanese>名前</Japanese>
             <Russian>Имена</Russian>
             <Turkish>İsimler</Turkish>
+            <Spanish>Nombres</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam">
             <English>Fire Team, Names</English>
@@ -1928,6 +1967,7 @@
             <Japanese>班、名前</Japanese>
             <Russian>Команда, Имена</Russian>
             <Turkish>Takımlar, İsimler</Turkish>
+            <Spanish>Equipo de fuego, Nombres</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort_fireteam2">
             <English>Fire Team, Rank, Names</English>
@@ -1939,6 +1979,7 @@
             <Japanese>班、階級、名前</Japanese>
             <Russian>Команда, Звание, Имена</Russian>
             <Turkish>Takımlar, Rütbe, İsimlar</Turkish>
+            <Spanish>Equipo de fuego, rango, nombres</Spanish>
         </Key>
         <Key ID="STR_dui_radar_sort_rank">
             <English>Rank, Names</English>
@@ -1950,6 +1991,7 @@
             <Japanese>階級、名前</Japanese>
             <Russian>Звание, Имена</Russian>
             <Turkish>Rütbe, İsimler</Turkish>
+            <Spanish>Rango, Nombres</SPanish>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle">
             <English>Group Icons by Vehicle</English>
@@ -1960,6 +2002,7 @@
             <Japanese>車両でのグループ アイコン</Japanese>
             <Russian>Иконка группы для техники</Russian>
             <Turkish>İkonları Araca Göre Grupla</Turkish>
+            <Spanish>Agrupar iconos por vehículo</Spanish>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
             <English>Shows only one icon of your squad if multiple members are in the same vehicle, usually the driver.</English>
@@ -1970,6 +2013,7 @@
             <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
             <Russian>Показывать только одну иконку вашего отряда, если несколько человек находятся в одной машине</Russian>
             <Turkish>Eğer grubun birden fazla üyesi aynı araçta ise sadece 1 üye için ikon göster (genelde sürücü)</Turkish>
+            <Spanish>Muestra solo un ícono de su escuadrón si varios miembros están en el mismo vehículo, generalmente el conductor</Spanish>
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
@@ -1980,6 +2024,7 @@
             <Japanese>ポインターの形</Japanese>
             <Russian>Стиль указателя</Russian>
             <Turkish>İbre Tarzı</Turkish>
+            <Spanish>Estilo de puntero</Spanish>
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
             <English>Pointer style that should be used on the compass component</English>
@@ -1990,6 +2035,7 @@
             <Japanese>レーダー上に表示されるポインターの形を選択できます</Japanese>
             <Russian>Стиль указателя отображаемый на компасе</Russian>
             <Turkish>Pusulada kullanılacak ibrenin tarzı</Turkish>
+            <Spanish>Estilo de puntero que debe usarse en el componente de brújula</Spanish>
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
             <English>Pointer color</English>
@@ -2000,6 +2046,7 @@
             <Japanese>ポインターの色</Japanese>
             <Russian>Цвет указателя</Russian>
             <Turkish>İbre Rengi</Turkish>
+            <Spanish>Color del puntero</Spanish>
         </Key>
         <!-- ACE pointer styles -->
         <Key ID="STR_dui_radar_pointer_arrowhead">
@@ -2011,6 +2058,7 @@
             <Japanese>矢尻</Japanese>
             <Russian>Стрелка</Russian>
             <Turkish>İbre Ucu</Turkish>
+            <Spanish>Punta de flecha</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking">
             <English>Show icon when units speak</English>
@@ -2020,6 +2068,7 @@
             <Russian>Показывать иконку при разговоре</Russian>
             <Japanese>ユニット発話時はアイコン表示</Japanese>
             <Turkish>Konuşan Kişi İkonu</Turkish>
+            <Spanish>Mostrar icono cuando las unidades hablan</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_desc">
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
@@ -2029,6 +2078,7 @@
             <Russian>Показывать иконку разговора, когда юнит говорит используя ACRE или TFAR</Russian>
             <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
             <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
+            <Spanish>Muestra un icono de burbuja de diálogo cuando una unidad habla por ACRE o TFAR</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
             <English>Show cardinal points</English>
@@ -2038,6 +2088,7 @@
             <Japanese>方位基点を表示</Japanese>
             <Russian>Показывать кардинальные точки</Russian>
             <Turkish>Kardinal Noktaları Göster</Turkish>
+            <Spanish>Mostrar puntos cardinales</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
@@ -2047,6 +2098,7 @@
             <Japanese>コンパスを所持時は方位基点を表示します。無効化すると、コンパスを所持していても表示されなくなります。</Japanese>
             <Russian>Показывает кардинальные точки на радаре, если у вас есть компас. Если отключено, кардинальные точки не будут отображаться даже при наличии компаса в инвентаре.</Russian>
             <Turkish>Eğer bir pusulaya sahipseniz radarda kardinal noktaları gösterir. Bu ayar kapalıyken envanterda pusula varken bile kardinal noktalar gösterilmez</Turkish>
+            <Spanish>Muestra puntos cardinales en el radar si tiene una brújula. Cuando está deshabilitado, no se mostrarán puntos cardinales incluso con una brújula en el inventario</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
             <English>Replace main icon with speaking icon</English>
@@ -2056,6 +2108,7 @@
             <Japanese>発話時はメイン アイコンを置換</Japanese>
             <Russian>Заменить главную иконку на иконку разговора</Russian>
             <Turkish>Ana İkonu Konuşma İkonuyla Değiştir</Turkish>
+            <Spanish>Reemplazar el ícono principal con el ícono que habla</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
@@ -2065,6 +2118,7 @@
             <Japanese>ユニットが発話時はネームリスト上にあるアイコンを置き換えます。</Japanese>
             <Russian>Заменяет иконку юнита на иконку разговора в списке имен</Russian>
             <Turkish>Konuşan kişinin İsim listesindeki ikonunu konuşma ikonuyla değiştirir</Turkish>
+            <Spanish>Reemplaza el ícono de la unidad con el ícono que habla en la lista de nombres</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
             <English>Speaking icon on radio messages only</English>
@@ -2074,6 +2128,7 @@
             <Japanese>無線通信時のみ発話アイコン表示</Japanese>
             <Russian>Иконка разговора только в радио сообщениях</Russian>
             <Turkish>Sadece Telsiz İçin Konuşma İkonu</Turkish>
+            <Spanish>Icono de habla solo en mensajes de radio</Spanish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
@@ -2083,6 +2138,7 @@
             <Japanese>無線通信時のみ発話アイコンを表示します。直接会話時は表示されません。</Japanese>
             <Russian>Значок разговора появляется только при приеме или разговоре по радио, но не при локальном разговоре с другим человеком.</Russian>
             <Turkish>Konuşma ikonu sadece telsiz konuşmalarında kullanılır, birisi etrafındakilerle konuşurken aktive olmaz</Turkish>
+            <Spanish>El icono de habla solo aparecerá al recibir o hablar por radio, no al hablar localmente con otras personas.</Spanish>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
@@ -2092,6 +2148,7 @@
             <Japanese>ACE 3 医療切り替え</Japanese>
             <Russian>Тумблер ACE Medic</Russian>
             <Turkish>ACE Medic Göstergesi</Turkish>
+            <Spanish>Alternar ACE Medic</Spanish>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
@@ -2101,6 +2158,7 @@
             <Japanese>衛生兵ユニットを表示するときにゲーム標準の衛生兵か、ACE 3 で指定された衛生兵のどちらを元にするか設定できます。</Japanese>
             <Russian>Выберите, показывать ли медиков по ванильному признаку или по переменной ACE</Russian>
             <Turkish>Sıhhiyeler ACE ayarlarına göre mi vanilya ayarlara göre mi belirlensin?</Turkish>
+            <Spanish>Elija si mostrar a los médicos por rasgo básico o variable ACE</Spanish>
         </Key>
     </Package>
 </Project>

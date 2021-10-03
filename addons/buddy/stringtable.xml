@@ -14,6 +14,7 @@
             <Russian>Назначить напарников [HUD]</Russian>
             <Chinesesimp>搭档登录 [HUD]</Chinesesimp>
             <Chinese>搭檔登錄 [HUD]</Chinese>
+            <Turkish>Eş Seç [HUD]</Turkish>
         </Key>
         <Key ID="STR_dui_buddy_action_remove">
             <English>Unassign Buddy [HUD]</English>
@@ -28,6 +29,7 @@
             <Russian>Распустить напарников [HUD]</Russian>
             <Chinesesimp>搭档解除 [HUD]</Chinesesimp>
             <Chinese>搭檔解除 [HUD]</Chinese>
+            <Turkish>Eş Kaldır [HUD]</Turkish>
         </Key>
     </Package>
 </Project>

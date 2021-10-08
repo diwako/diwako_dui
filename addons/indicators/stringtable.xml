@@ -11,6 +11,7 @@
                 <Russian>Индикаторы</Russian>
                 <Chinesesimp>标记</Chinesesimp>
                 <Chinese>標記</Chinese>
+                <Turkish>Göstergeler</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
@@ -21,6 +22,7 @@
                 <Japanese>インジケータ表示</Japanese>
                 <Russian>Показать индикаторы</Russian>
                 <Portuguese>Mostrar Indicadores</Portuguese>
+                <Turkish>Göstergeleri Göster</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
@@ -31,6 +33,7 @@
                 <Portuguese>Indicadores de Proximidade</Portuguese>
                 <Japanese>近くにインジケータを表示します</Japanese>
                 <Russian>Индикаторы приближения</Russian>
+                <Turkish>Yakınlık Göstergeleri</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
@@ -41,6 +44,7 @@
                 <Portuguese>Distância Máxima</Portuguese>
                 <Japanese>最大距離</Japanese>
                 <Russian>Максимальная расстояние</Russian>
+                <Turkish>Max Menzil</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
@@ -51,6 +55,7 @@
                 <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
                 <Japanese>インジケータの最大表示距離を決定します</Japanese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов</Russian>
+                <Turkish>Göstergelerin gösterileceği maximum mesafe</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
@@ -59,6 +64,7 @@
                 <Russian>Разрешить индикаторы для экипажа</Russian>
                 <German>Erlaube Mannschafts Indikatoren</German>
                 <Japanese>乗員用インジケータ許可</Japanese>
+                <Turkish>Mürettebat göstergelerine izin ver</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
@@ -67,6 +73,7 @@
                 <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
                 <German>Erlauben Anzeigen mit größerer Reichweite für die Fahrzeugmannschaft.</German>
                 <Japanese>車両の乗員用にインジケータ表示範囲を倍増させます。</Japanese>
+                <Turkish>Araç mürettebatları için göstergelerin daha uzaktan görünmesine izin ver</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
@@ -75,6 +82,7 @@
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
                 <German>Maximale Reichweite für die Mannschaft</German>
                 <Japanese>乗員用最大距離</Japanese>
+                <Turkish>Mürettebat Max Menzil</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
@@ -83,6 +91,7 @@
                 <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
                 <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugmannschaft.</German>
                 <Japanese>車両の乗員用にインジケータを表示する最大範囲を設定します。</Japanese>
+                <Turkish>Mürettebat için göstergelerin gösterileceği maximum mesafe</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -97,6 +106,7 @@
                 <Portuguese>Estilo de Ícones</Portuguese>
                 <Spanish>Estilo de Icono</Spanish>
                 <Russian>Вид иконок</Russian>
+                <Turkish>İkon Tarzı</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_style_desc">
                 <English>Which icon style should be used?</English>
@@ -111,6 +121,7 @@
                 <Portuguese>Qual estilo de ícones será usado?</Portuguese>
                 <Spanish>¿Que estilo de iconos debe ser usada?</Spanish>
                 <Russian>Какой вид иконок использовать?</Russian>
+                <Turkish>Kullanılacak ikon tarzı</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_size">
                 <English>Size</English>
@@ -121,6 +132,7 @@
                 <Portuguese>Tamanho</Portuguese>
                 <Japanese>大きさ</Japanese>
                 <Russian>Размер</Russian>
+                <Turkish>Boyut</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
@@ -131,6 +143,7 @@
                 <Portuguese>Define o tamanho dos indicadores</Portuguese>
                 <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
                 <Russian>Установить размер иконок индикатора</Russian>
+                <Turkish>Gösterge ikonlarının boyunu belirler</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange">
                 <English>Use ACE Nametags Logic</English>
@@ -140,6 +153,7 @@
                 <Portuguese>Usar lógica do ACE Etiquetas de Nome</Portuguese>
                 <Russian>Использовать ACE Nametags Logic</Russian>
                 <Japanese>ACE 名札ロジックを使用</Japanese>
+                <Turkish>ACE Nametags Kullan</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
@@ -149,6 +163,7 @@
                 <Portuguese>Compartilha a transparência dos indicadores com a transparência do ACE Etiquetas de Nome. Subistitui distância e comportamento normal!</Portuguese>
                 <Russian>Сопоставляет прозрачность индикатора с прозрачностью именных меток ACE.</Russian>
                 <Japanese>インジケータの透明度を ACE 名札の透明度と同じにします。これは通常の距離と挙動を上書きします!</Japanese>
+                <Turkish>Gösterge renklerini ACE Nametags rekleri ile eşleştir. Normal renk ve davranışı değiştirir!</Turkish>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -160,6 +175,7 @@
                 <Polish>Standard</Polish>
                 <Portuguese>Padrão</Portuguese>
                 <Russian>Стандарт</Russian>
+                <Turkish>Standart</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
@@ -170,6 +186,7 @@
                 <Portuguese>Quadrado</Portuguese>
                 <Japanese>四角</Japanese>
                 <Russian>Квадрат</Russian>
+                <Turkish>Kare</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
@@ -180,6 +197,7 @@
                 <Portuguese>Diamante</Portuguese>
                 <Japanese>ダイアモンド</Japanese>
                 <Russian>Ромб</Russian>
+                <Turkish>Elmas</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
@@ -190,6 +208,7 @@
                 <Portuguese>Círculo</Portuguese>
                 <Japanese>円型</Japanese>
                 <Russian>Круг</Russian>
+                <Turkish>Çember</Turkish>
             </Key>
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
@@ -201,6 +220,7 @@
                 <Polish>Ikony</Polish>
                 <Portuguese>Ícones</Portuguese>
                 <Russian>Иконки</Russian>
+                <Turkish>İkonlar</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
@@ -211,6 +231,7 @@
                 <Polish>Pokazuj ikonę dowódcy.</Polish>
                 <Portuguese>Mostrar ícone de Líder</Portuguese>
                 <Russian>Показать иконку командира</Russian>
+                <Turkish>Lider İkonunu Göster</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
@@ -221,6 +242,7 @@
                 <Polish>Pokazuj ikonę dwójki.</Polish>
                 <Portuguese>Mostrar ícone de Parceiro</Portuguese>
                 <Russian>Показать Buddy иконку</Russian>
+                <Turkish>Eş İkonunu Göster</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
@@ -231,6 +253,7 @@
                 <Polish>Pokazuj ikonę medyka.</Polish>
                 <Portuguese>Mostrar ícone de Médico</Portuguese>
                 <Russian>Показать иконку медика</Russian>
+                <Turkish>Sıhhiye İkonunu Göster</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
@@ -241,6 +264,7 @@
                 <Portuguese>Distância altera tamanho</Portuguese>
                 <Russian>Менять размер на расстоянии</Russian>
                 <Japanese>距離で大きさ変化</Japanese>
+                <Turkish>Mesafe ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according with distance to unit</English>
@@ -251,6 +275,7 @@
                 <Portuguese>Escala o tamanho dos indicadores de acordo com a distância das unidades</Portuguese>
                 <Russian>Шкала индикаторов в зависимости от расстояния до юнита</Russian>
                 <Japanese>インジケータの大きさはユニットまでの距離に応じて変化します</Japanese>
+                <Turkish>Mesafeye göre göstergelerin boyutunu ayarla</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
@@ -261,6 +286,7 @@
                 <Portuguese>FOV altera tamanho</Portuguese>
                 <Russian>Менять размер при FOV</Russian>
                 <Japanese>視野角で大きさ変化</Japanese>
+                <Turkish>FOV ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according with current field of view</English>
@@ -271,6 +297,7 @@
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>
                 <Russian>Шкала индикаторов в зависимости от дальности обзора</Russian>
                 <Japanese>インジケータの大きさは現在の視野角に応じて変化します</Japanese>
+                <Turkish>O anki FOV'a göre göstergelerin boyunu ayarla</Turkish>
             </Key>
         </Container>
     </Package>

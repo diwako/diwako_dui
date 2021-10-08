@@ -11,7 +11,7 @@
             <Polish>DUI - Radar drużyny</Polish>
             <Portuguese>DUI - Radar do Esquadrão</Portuguese>
             <Spanish>DUI - Radar De Escuadron</Spanish>
-            <Russian>DUI - Сквад-Радар</Russian>
+            <Russian>DUI - Радар команды</Russian>
             <Chinesesimp>DUI - 小队雷达</Chinesesimp>
             <Chinese>DUI - 小隊雷達</Chinese>
         </Key>
@@ -266,7 +266,7 @@
             <English>How far should players in crew role (driver, gunner or commander) see units in the same group in meters?</English>
             <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
             <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
-            <Russian>Как далеко игроки на роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
+            <Russian>Как далеко игроки в роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
             <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
             <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
         </Key>
@@ -310,7 +310,7 @@
             <Polish>Włączyć okluzje?</Polish>
             <Portuguese>Habilitar oclusão</Portuguese>
             <Spanish>Habilitar la oclusión</Spanish>
-            <Russian>Включить оклюзию</Russian>
+            <Russian>Включить окклюзию</Russian>
         </Key>
         <Key ID="STR_dui_occlusion_desc">
             <English>If a player cannot see a unit it will slowly vanish from the compass until it is seen again</English>
@@ -324,7 +324,7 @@
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie ona z kompasu, dopóki nie będzie widziana ponownie.</Polish>
             <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
             <Spanish>Si un jugador no puede ver una unidad, desaparecerá lentamente de la brújula hasta que se vuelva a ver.</Spanish>
-            <Russian>Если игрок не видит юнит, он медленно исчезает с компаса, пока его не увидят снова.</Russian>
+            <Russian>Если игрок не видит юнита, он медленно исчезает с компаса, пока его не увидят снова.</Russian>
         </Key>
         <Key ID="STR_dui_namelist">
             <English>Show Names</English>
@@ -384,15 +384,18 @@
         </Key>
         <Key ID="STR_dui_namelist_icon_priority">
             <English>Prioritise icons</English>
+            <Russian>Приоритет иконок</Russian>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
             <English>Priorises icons selected in this setting over the other ones in the list.</English>
+            <Russian>Приоритет иконок, выбранных в этой настройке, над другими в списке</Russian>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting0">
             <English>AR and AT</English>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting1">
             <English>Engineer, Medic and EOD</English>
+            <Russian>Инженер, медик и EOD</Russian>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -476,7 +479,7 @@
             <Polish>Przytrzymaj, aby pokazać stopnie wojskowe.</Polish>
             <Portuguese>Segure para mostrar patentes</Portuguese>
             <Spanish>Mantener para mostrar los rangos</Spanish>
-            <Russian>Держать, чтобы увидеть звания</Russian>
+            <Russian>Удерживать, чтобы увидеть звания</Russian>
         </Key>
         <Key ID="STR_dui_cat_compass">
             <English>Compass</English>
@@ -603,9 +606,11 @@
             <English>Driver only</English>
             <German>Nur Fahrer</German>
             <Japanese>運転手のみ</Japanese>
+            <Russian>Только водитель</Russian>
         </Key>
         <Key ID="STR_dui_show_dir_opt5">
             <English>Only with GPS</English>
+            <Russian>Только с GPS</Russian>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
@@ -619,7 +624,7 @@
             <Polish>Skalowanie interfejsu użytkownika</Polish>
             <Portuguese>Escala de Interface</Portuguese>
             <Spanish>Escala de interfaz de usuario</Spanish>
-            <Russian>UI шкала</Russian>
+            <Russian>Масштабирование интерфейса</Russian>
         </Key>
         <Key ID="STR_dui_namelist_bg">
             <English>Background Opacity</English>
@@ -703,7 +708,7 @@
             <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
             <Portuguese>Defina a escala dos ícones na bússola</Portuguese>
             <Spanish>Establece la escala de iconos para las unidades en tu brújula</Spanish>
-            <Russian>Установите масштаб значков для юнитов на вашем компасе</Russian>
+            <Russian>Установите масштаб иконок для юнитов на вашем компасе</Russian>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew">
             <English>Icon Scaling for crew</English>
@@ -717,7 +722,7 @@
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
             <Chinesesimp>设置当玩家作为载具乘员时的罗盘上的单位的图标大小</Chinesesimp>
             <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
-            <Russian>Установите масштаб значков для юнитов на вашем компасе когда вы в экипаже техники</Russian>
+            <Russian>Установите масштаб иконок для юнитов на вашем компасе когда вы в экипаже техники</Russian>
             <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
             <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
         </Key>
@@ -753,11 +758,13 @@
             <English>Hide while a dialog is open</English>
             <German>Während eines Dialogs verstecken</German>
             <Japanese>ダイアログ時は非表示</Japanese>
+            <Russian>Скрывать, если диалоговое меню открыто</Russian>
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
             <English>When a UI dialog is open should the UI be hidden?</English>
             <German>Wenn ein Dialogsfenster offen ist, soll die UI versteckt werden?</German>
             <Japanese>ダイアログを開いているときは UI を非表示にしますか？</Japanese>
+            <Russian>Если интерфейс диалога открыт, нужно ли прятать интерфейс?</Russian>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
@@ -765,6 +772,7 @@
             <Chinese>雷達透明度</Chinese>
             <German>Radaropazität</German>
             <Japanese>レーダー透明度</Japanese>
+            <Russian>Прозрачность радара</Russian>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity">
             <English>Icon Opacity</English>
@@ -772,6 +780,7 @@
             <Chinese>圖標透明度</Chinese>
             <German>Iconopazität</German>
             <Japanese>アイコン透明度</Japanese>
+            <Russian>Прозрачность иконки</Russian>
         </Key>
         <Key ID="STR_dui_compass_icon_opacity_no_player">
             <English>Icon Opacity does not affect own unit</English>
@@ -779,6 +788,7 @@
             <Chinese>圖標透明度不影響自己</Chinese>
             <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
             <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
+            <Russian>Прозрачность иконки не оказывает эффект на собственного юнита</Russian>
         </Key>
         <Key ID="STR_dui_dir_size">
             <English>Bearing Size</English>
@@ -792,7 +802,7 @@
             <Polish>Wielkość azymutu</Polish>
             <Portuguese>Tamanho da Orientação</Portuguese>
             <Spanish>Tamaño del texto del dirección</Spanish>
-            <Russian>Размр окна со списком юнитов</Russian>
+            <Russian>Размер окна со списком юнитов</Russian>
         </Key>
         <Key ID="STR_dui_dir_padding">
             <English>Bearing padding to radar</English>
@@ -800,6 +810,7 @@
             <Chinese>方位角與雷達的間距</Chinese>
             <German>Abstand der Richtungsanzeige zum Radar</German>
             <Japanese>方位をレーダー位置に寄せる</Japanese>
+            <Russian>Расстояние указателя поворота до радара</Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
@@ -819,6 +830,7 @@
             <English>Bearing Text Outline</English>
             <German>Text Umrandung der Richtungsanzeige</German>
             <Japanese>方位テキストの縁取り</Japanese>
+            <Russian>Текст контура указателя поворота</Russian>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
             <English>None</English>
@@ -916,7 +928,7 @@
             <Polish>Nie pokazuj kompasu, gdy jesteś sam w grupie.</Polish>
             <Portuguese>Quando estiver sozinho no grupo, esta configuração irá esconder todo a interface da bússola em sua tela.</Portuguese>
             <Spanish>Cuando esté solo en un grupo, esto ocultará el elemento de la interfaz de usuario de la brújula de su pantalla</Spanish>
-            <Russian>Когда вы один в группе, это скрывает элемент компаса UI с вашего экрана</Russian>
+            <Russian>Когда вы один в группе, эта опция скрывает элемент компаса UI с вашего экрана</Russian>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone">
             <English>Hide Player Marker when alone</English>
@@ -1077,6 +1089,7 @@
             <Chinese>遮擋淡出時間</Chinese>
             <German>Okklusionsausblendzeit</German>
             <Japanese>アイコン非表示時間</Japanese>
+            <Russian>Время исчезновения окклюзии</Russian>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -1090,7 +1103,7 @@
             <Polish>Ustala czas jaki ikona na radarze potrzebuje by zniknąć całkowicie.</Polish>
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
             <Spanish>Establece el tiempo que tardan los iconos en desaparecer en el radar</Spanish>
-            <Russian>Устанавливает время исчезновения значков на радаре.</Russian>
+            <Russian>Устанавливает время исчезновения иконок на радаре.</Russian>
         </Key>
         <Key ID="STR_dui_occlusion_fade_in_time">
             <English>Occlusion Fade In Time</English>
@@ -1098,6 +1111,7 @@
             <Chinese>遮擋漸入時間</Chinese>
             <German>Okklusionseinblendzeit</German>
             <Japanese>アイコン表示時間</Japanese>
+            <Russian>Время появления окклюзии</Russian>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_in_desc">
             <English>Sets the time it takes for icons to fade in on the radar</English>
@@ -1105,6 +1119,7 @@
             <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
             <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
+            <Russian>Устанавливает время появления иконок на радаре.</Russian>
         </Key>
         <Key ID="STR_dui_trackingColor_time">
             <English>Tracking Color</English>
@@ -1472,7 +1487,7 @@
             <Polish>Protanomalia</Polish>
             <Portuguese>Protanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Protanomalie</Russian>
+            <Russian>Протаномалия</Russian>
         </Key>
         <Key ID="STR_dui_color_deuteranopia">
             <English>Deuteranopia</English>
@@ -1486,7 +1501,7 @@
             <Polish>Deuteranopia</Polish>
             <Portuguese>Deuteranopia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Deuteranopia</Russian>
+            <Russian>Дейтеранопия</Russian>
         </Key>
         <Key ID="STR_dui_color_deuteranomaly">
             <English>Deuteranomaly</English>
@@ -1500,7 +1515,7 @@
             <Polish>Deuteranomalia</Polish>
             <Portuguese>Deuteranomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Deuteranomaly</Russian>
+            <Russian>Дейтераномалия</Russian>
         </Key>
         <Key ID="STR_dui_color_tritanopia">
             <English>Tritanopia</English>
@@ -1514,7 +1529,7 @@
             <Polish>Tritanopia</Polish>
             <Portuguese>Trinatopia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Tritanopia</Russian>
+            <Russian>Тританопия</Russian>
         </Key>
         <Key ID="STR_dui_color_tritanomaly">
             <English>Tritanomaly</English>
@@ -1528,7 +1543,7 @@
             <Polish>Tritanomalia</Polish>
             <Portuguese>Tritanomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Tritanomaly</Russian>
+            <Russian>Тританомалия</Russian>
         </Key>
         <Key ID="STR_dui_color_achromatopsia">
             <English>Achromatopsia</English>
@@ -1542,7 +1557,7 @@
             <Polish>Achromatopsja</Polish>
             <Portuguese>Acromatopsia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Achromatopsia</Russian>
+            <Russian>Ахроматопсия</Russian>
         </Key>
         <Key ID="STR_dui_color_achromatomaly">
             <English>Achromatomaly</English>
@@ -1556,7 +1571,7 @@
             <Polish>Achromatomalia</Polish>
             <Portuguese>Acromatomalia</Portuguese>
             <!-- <Spanish></Spanish> -->
-            <Russian>Achromatomaly</Russian>
+            <Russian>Ахроматомалия</Russian>
         </Key>
         <Key ID="STR_dui_color_custom">
             <English>Custom</English>
@@ -1858,7 +1873,7 @@
             <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
             <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
             <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
-            <Russian>Показывать "говорящую" иконку, когда юнит говорит используя ACRE или TFAR</Russian>
+            <Russian>Показывать иконку разговора, когда юнит говорит используя ACRE или TFAR</Russian>
             <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
@@ -1867,6 +1882,7 @@
             <Chinese>顯示基點</Chinese>
             <German>Himmelsrichtungen anzeigen</German>
             <Japanese>方位基点を表示</Japanese>
+            <Russian>Показывать кардинальные точки</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
@@ -1874,6 +1890,7 @@
             <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
             <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
             <Japanese>コンパスを所持時は方位基点を表示します。無効化すると、コンパスを所持していても表示されなくなります。</Japanese>
+            <Russian>Показывает кардинальные точки на радаре, если у вас есть компас. Если отключено, кардинальные точки не будут отображаться даже при наличии компаса в инвентаре.</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
             <English>Replace main icon with speaking icon</English>
@@ -1881,6 +1898,7 @@
             <Chinese>正在發言圖標替換主圖標</Chinese>
             <German>Haupticon mit Sprechicon ersetzen</German>
             <Japanese>発話時はメイン アイコンを置換</Japanese>
+            <Russian>Заменить главную иконку на иконку разговора</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
@@ -1888,6 +1906,7 @@
             <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
             <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
             <Japanese>ユニットが発話時はネームリスト上にあるアイコンを置き換えます。</Japanese>
+            <Russian>Заменяет иконку юнита на иконку разговора в списке имен</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
             <English>Speaking icon on radio messages only</English>
@@ -1895,6 +1914,7 @@
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Sprachicon nur bei Radionachrichten</German>
             <Japanese>無線通信時のみ発話アイコン表示</Japanese>
+            <Russian>Иконка разговора только в радио сообщениях</Russian>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
@@ -1902,6 +1922,7 @@
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
             <Japanese>無線通信時のみ発話アイコンを表示します。直接会話時は表示されません。</Japanese>
+            <Russian>Значок разговора появляется только при приеме или разговоре по радио, но не при локальном разговоре с другим человеком.</Russian>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
@@ -1909,6 +1930,7 @@
             <Chinese>ACE醫療切換</Chinese>
             <German>ACE Sanitäter Umschalter</German>
             <Japanese>ACE 3 医療切り替え</Japanese>
+            <Russian>Тумблер ACE Medic</Russian>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
@@ -1916,6 +1938,7 @@
             <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
             <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
             <Japanese>衛生兵ユニットを表示するときにゲーム標準の衛生兵か、ACE 3 で指定された衛生兵のどちらを元にするか設定できます。</Japanese>
+            <Russian>Выберите, показывать ли медиков по ванильному признаку или по переменной ACE</Russian>
         </Key>
     </Package>
 </Project>

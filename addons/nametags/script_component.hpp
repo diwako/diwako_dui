@@ -31,3 +31,5 @@
     profileNamespace setVariable ['igui_diwako_dui_nametags_w', nil];
     profileNamespace setVariable ['igui_diwako_dui_nametags_h', nil];
 */
+
+#define DEFAULT_CUSTOM_RANKS [["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"], ["Pvt.", "Cpl.", "Sgt.", "Lt.", "Capt.", "Maj.", "Col."]]

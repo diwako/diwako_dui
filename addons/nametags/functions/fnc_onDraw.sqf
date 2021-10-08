@@ -80,7 +80,7 @@ if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _t
             _data pushBack format [_tags, GVAR(fontName), _color, (GET_POS_H) * GVAR(fontNameSize), GVAR(nameFontShadow)];
 
             if (GVAR(drawRank)) then {
-                _data pushBack format ["%1. ", _target getVariable [QGVAR(rank), rank _target]];
+                _data pushBack format ["%1 ", _target getVariable [QGVAR(rank), rank _target]];
             };
 
             _data pushBack (_target getVariable [QGVAR(name), name _target]);

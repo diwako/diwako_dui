@@ -131,13 +131,14 @@ private _curCat = "STR_dui_cat_fonts";
 ] call CBA_fnc_addSetting;
 
 private _rankNames = keys GVAR(RankNames);
-private _defaultIndex = "default" find _rankNames;
+private _defaultIndex = _rankNames find "default";
+private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayName"};
 [
     QGVAR(rankNameStyle),
     "LIST",
     ["STR_dui_nametags_rankNameStyle", "STR_dui_nametags_rankNameStyle_desc"],
     [_cat, _curCat],
-    [_rankNames, _rankNames, _defaultIndex],
+    [_rankNames, _displayNames, _defaultIndex],
     false
 ] call CBA_fnc_addSetting;
 
@@ -146,18 +147,23 @@ private _defaultIndex = "default" find _rankNames;
     "EDITBOX",
     ["STR_dui_nametags_customRankStyle", "STR_dui_nametags_customRankStyle_desc"],
     [_cat, _curCat],
-    str [["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"], ["Pvt", "Cpl", "Sgt", "Lt", "Capt", "Maj", "Col"]],
+    str DEFAULT_CUSTOM_RANKS,
     false,
     {
         params ["_value"];
         private _parsedArray = parseSimpleArray _value;
-        if (count _parsedArray == 2) exitWith {
-            GVAR(RankNames) set ["custom", (_parsedArray select 0) createHashMapFromArray (_parsedArray select 0)];
+        private _count = count _parsedArray;
+        if (_count == 2) exitWith {
+            GVAR(RankNames) set ["custom", (_parsedArray select 0) createHashMapFromArray (_parsedArray select 1)];
         };
-        if (count _parsedArray == 7) exitWith {
+        if (_count == 7) exitWith {
             GVAR(RankNames) set ["custom", createHashMapFromArray _parsedArray];
         };
-        // Q(diwako): Should we display some kind of Hint it is not a valid hashMap array?
+        [["DUI Custom Ranks", 2],
+         [format ["Setting ""%1"" is wrong!", localize "STR_dui_nametags_customRankStyle"]],
+         ["Default values will be used!"]
+        ] call CBA_fnc_notify;
+        GVAR(RankNames) set ["custom", (DEFAULT_CUSTOM_RANKS select 0) createHashMapFromArray (DEFAULT_CUSTOM_RANKS select 1)];
     }
 ] call CBA_fnc_addSetting;
 

@@ -282,5 +282,20 @@
             <German>Nametag UI-Element, ziehen Sie es per Drag &amp; Drop, um es neu zu positionieren.</German>
             <Japanese>DUI の UI をドラッグ アンド ドロップで配置できます。</Japanese>
         </Key>
+        <Key ID="STR_dui_nametags_rankNameStyle">
+            <English>Rank style</English>
+        </Key>
+        <Key ID="STR_dui_nametags_rankNameStyle_desc">
+            <English>Select rank display style</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customRankStyle">
+            <English>Custom rank style</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customRankStyle_desc">
+            <English>Defines custom ranks for each possible rank in the game. Warning: Input must be correct else default value will be used!</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customRankStyle_defaultLong">
+            <English>Default long</English>
+        </Key>
     </Package>
 </Project>

@@ -12,7 +12,14 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 };
 
 private _player = [] call CBA_fnc_currentUnit;
-private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
+private _group = units _player;
+if (isMultiplayer && {GVAR(sortType) isEqualTo "none" && {local (leader _player)}}) then {
+    if (_group isNotEqualTo ((group _player) getVariable [QGVAR(syncGroup), []])) then {
+        (group _player) setVariable [QGVAR(syncGroup), _group, true];
+    };
+};
+
+_group = (group _player) getVariable [QGVAR(syncGroup), _group];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };

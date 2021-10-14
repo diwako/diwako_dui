@@ -569,6 +569,13 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
         0
     ]
     ,true
+    ,{
+        params ["_value"];
+        if (_value isEqualTo "none") exitWith {};
+        {
+            _x setVariable [QGVAR(syncGroup), nil];
+        } forEach allGroups;
+    }
 ] call CBA_fnc_addSetting;
 
 [

@@ -569,9 +569,18 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
         0
     ]
     ,true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(syncGroup)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_syncGroup", localize "STR_dui_radar_syncGroup_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,true
     ,{
         params ["_value"];
-        if (_value isEqualTo "none") exitWith {};
+        if (_value) exitWith {};
         {
             _x setVariable [QGVAR(syncGroup), nil];
         } forEach allGroups;

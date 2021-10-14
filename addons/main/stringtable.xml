@@ -1360,6 +1360,14 @@
             <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
             <Russian>DUI должен быть запущен на сервере, чтобы обеспечить синхронность!</Russian>
         </Key>
+        <Key ID="STR_dui_radar_syncGroup">
+            <English>Sync units in group</English>
+            <German>Synchronisiere Einheiten in der Gruppe</German>
+        </Key>
+        <Key ID="STR_dui_radar_syncGroup_desc">
+            <English>Will sync the order of units in a player&apos;s group if sort type is set to &quot;None&quot;. Only works in MP, every player must have DUI loaded for this to work properly</English>
+            <German>Snychronisiert die Anordnung der Einheiten in der Gruppe wenn die Sortierung auf &quot;Kein&quot; gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen damit dies korrekt funktioniert</German>
+        </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
             <English>Main</English>

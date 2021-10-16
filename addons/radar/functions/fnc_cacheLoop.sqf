@@ -3,6 +3,14 @@
 // loop
 [FUNC(cacheLoop),[],0.5] call CBA_fnc_waitAndExecute;
 
+private _player = [] call CBA_fnc_currentUnit;
+private _group = units _player;
+if (GVAR(syncGroup) && {isMultiplayer && {GVAR(sortType) isEqualTo "none" && {local (leader _player)}}}) then {
+    if (_group isNotEqualTo ((group _player) getVariable [QGVAR(syncGroup), []])) then {
+        (group _player) setVariable [QGVAR(syncGroup), _group, true];
+    };
+};
+
 // if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     for "_i" from 0 to (count GVAR(namebox_lists)) do {
@@ -11,8 +19,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
     "diwako_dui_namebox" cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
 };
 
-private _player = [] call CBA_fnc_currentUnit;
-private _group = (group _player) getVariable [QGVAR(syncGroup), units _player];
+_group = (group _player) getVariable [QGVAR(syncGroup), _group];
 if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
     _group = [];
 };

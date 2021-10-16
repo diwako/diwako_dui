@@ -572,6 +572,22 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(syncGroup)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_syncGroup", localize "STR_dui_radar_syncGroup_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,true
+    ,{
+        params ["_value"];
+        if (_value) exitWith {};
+        {
+            _x setVariable [QGVAR(syncGroup), nil];
+        } forEach allGroups;
+    }
+] call CBA_fnc_addSetting;
+
+[
     "diwako_dui_hudScaling"
     ,"SLIDER"
     ,[localize "STR_dui_ui_scale", ""]

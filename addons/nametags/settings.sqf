@@ -130,6 +130,43 @@ private _curCat = "STR_dui_cat_fonts";
     false
 ] call CBA_fnc_addSetting;
 
+private _rankNames = keys GVAR(RankNames);
+private _defaultIndex = _rankNames find "default";
+private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayName"};
+[
+    QGVAR(rankNameStyle),
+    "LIST",
+    ["STR_dui_nametags_rankNameStyle", "STR_dui_nametags_rankNameStyle_desc"],
+    [_cat, _curCat],
+    [_rankNames, _displayNames, _defaultIndex],
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(customRankStyle),
+    "EDITBOX",
+    ["STR_dui_nametags_customRankStyle", "STR_dui_nametags_customRankStyle_desc"],
+    [_cat, _curCat],
+    str DEFAULT_CUSTOM_RANKS,
+    false,
+    {
+        params ["_value"];
+        private _parsedArray = parseSimpleArray _value;
+        private _count = count _parsedArray;
+        if (_count == 2) exitWith {
+            GVAR(RankNames) set ["custom", (_parsedArray select 0) createHashMapFromArray (_parsedArray select 1)];
+        };
+        if (_count == 7) exitWith {
+            GVAR(RankNames) set ["custom", createHashMapFromArray _parsedArray];
+        };
+        [["DUI Custom Ranks", 2],
+         [format ["Setting ""%1"" is wrong!", localize "STR_dui_nametags_customRankStyle"]],
+         ["Default values will be used!"]
+        ] call CBA_fnc_notify;
+        GVAR(RankNames) set ["custom", (DEFAULT_CUSTOM_RANKS select 0) createHashMapFromArray (DEFAULT_CUSTOM_RANKS select 1)];
+    }
+] call CBA_fnc_addSetting;
+
 [
     QGVAR(groupFontShadow),
     "LIST",

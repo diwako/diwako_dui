@@ -188,6 +188,7 @@
             <Czech>Ukáže miliradiány vedle normálního azimutu.</Czech>
             <French>Afficher les milliradiens à côté de la direction régulière</French>
             <German>Zeigt Milradians neben der normalen Richtungsanzeige an</German>
+            <Korean>방위각과 밀리라디안을 동시에 표시</Korean>
             <Japanese>方位の隣にミル ラジアンを表示します。</Japanese>
             <Polish>Pokaż miliradiany obok regularnego azymutu</Polish>
             <Portuguese>Mostrar mil angular próximo à orientação normal</Portuguese>
@@ -261,6 +262,7 @@
             <Chinese>允許載具羅盤</Chinese>
             <Russian>Разрешить компас для техники</Russian>
             <German>Fahrzeugkompass zulassen</German>
+            <Korean>차량 방위각 표시</Korean>
             <Japanese>車両コンパス許可</Japanese>
             <Turkish>Araç Pusulası</Turkish>
             <Spanish>Permitir brújula de vehículo</Spanish>
@@ -271,6 +273,7 @@
             <Chinese>允許載具羅盤有更遠的顯示距離</Chinese>
             <Russian>Разрешить компас с большей дальностью для экипажей</Russian>
             <German>Kompass mit größerer Reichweite für die Fahrzeugmannschaft erlauben</German>
+            <Korean>차량 승무원의 나침반 범위증가</Korean>
             <Japanese>車両の乗員用にコンパス表示範囲を倍増させます。</Japanese>
             <Turkish>Araç mürettebatları için daha yüksek menzilli pusulaya izin ver</Turkish>
             <Spanish>Permitir brújula con mayor alcance para la tripulación del vehículo</Spanish>
@@ -281,6 +284,7 @@
             <Chinese>載具羅盤距離設置</Chinese>
             <Russian>Дистанция компаса для техники</Russian>
             <German>Reichweite des Fahrzeugkompasses</German>
+            <Korean>차량 나침반 범위</Korean>
             <Japanese>車両コンパス距離</Japanese>
             <Turkish>Araç Pusulası Menzili</Turkish>
             <Spanish>Rango de la brújula del vehículo</Spanish>
@@ -291,6 +295,7 @@
             <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Russian>Как далеко игроки в роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
             <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
+            <Korean>차량 승무원 좌석 (운전석, 사수, 지휘관)에서의 분대위치 표시 범위</Korean>
             <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
             <Turkish>Araç mürettebatlarının pusulaları içinde ne kadar yakın birimler görünmeli?</Turkish>
             <Spanish>¿Hasta qué punto los jugadores en el rol de la tripulación (conductor, artillero o comandante) deben ver las unidades en el mismo grupo en metros?</Spanish>
@@ -347,7 +352,7 @@
             <Czech>Pokud jednotka není vidět, postupně zmizí z kompasu.</Czech>
             <French>Si un joueur ne peut pas voir une unité, elle disparaîtra lentement de la boussole jusqu'à qu'elle soit vue de nouveau</French>
             <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
-            <Korean>만약 플레이어가 유닛을 발견하지 않으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
+            <Korean>만약 플레이어가 유닛을 볼수 없으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie ona z kompasu, dopóki nie będzie widziana ponownie.</Polish>
             <Portuguese>Se o jogador não puder ver uma unidade, ela irá lentamente desaparecer da bússola até que possa ser vista novamente</Portuguese>
@@ -420,6 +425,7 @@
             <Russian>Приоритет иконок</Russian>
             <Turkish>İkonlara Öncelik Ver</Turkish>
             <Spanish>Priorizar iconos</Spanish>
+            <Korean>아이콘 우선표시</Korean>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
             <English>Priorises icons selected in this setting over the other ones in the list.</English>
@@ -436,6 +442,7 @@
             <Russian>Инженер, медик и EOD</Russian>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
             <Spanish>Ingeniero, Médico y EOD</Spanish>
+            <Korean>엔지니어, 의무병, EOD</Korean>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -444,7 +451,7 @@
             <Czech>Velikost textu</Czech>
             <French>Taille du texte</French>
             <German>Textgröße</German>
-            <Korean>이름 크기</Korean>
+            <Korean>글자 크기</Korean>
             <Japanese>テキストの大きさ</Japanese>
             <Polish>Rozmiar Tekstu</Polish>
             <Portuguese>Tamanho de Texto</Portuguese>
@@ -564,7 +571,7 @@
             <Czech>Seznam jmen</Czech>
             <French>Liste des noms</French>
             <German>Namesliste</German>
-            <Korean>이름 설정</Korean>
+            <Korean>이름목록 설정</Korean>
             <Japanese>名前リスト</Japanese>
             <Polish>Lista imion</Polish>
             <Portuguese>Lista de Nomes</Portuguese>
@@ -607,6 +614,7 @@
             <Chinesesimp>自定义颜色</Chinesesimp>
             <Chinese>自定義顔色</Chinese>
             <German>Benutzerdefinierte Farben</German>
+            <Korean>사용자 정의 색상</Korean>
             <Japanese>カスタム カラー</Japanese>
             <Portuguese>Cores Customizadas</Portuguese>
             <Russian>Пользовательские цвета</Russian>
@@ -635,7 +643,7 @@
             <Czech>Vždy</Czech>
             <French>Toujours</French>
             <German>Immer</German>
-            <Korean>언제든지</Korean>
+            <Korean>항상</Korean>
             <Japanese>常に</Japanese>
             <Polish>Zawsze</Polish>
             <Portuguese>Sempre</Portuguese>
@@ -662,6 +670,7 @@
             <English>Driver only</English>
             <German>Nur Fahrer</German>
             <Japanese>運転手のみ</Japanese>
+            <Korean>운전수만</Korean>
             <Russian>Только водитель</Russian>
             <Turkish>Yalnız Sürücü İçin</Turkish>
             <Spanish>Solo conductor</Spanish>
@@ -671,6 +680,7 @@
             <Russian>Только с GPS</Russian>
             <Turkish>Sadece GPS İle</Turkish>
             <Spanish>Solo con GPS</Spanish>
+            <Korean>GPS를 소지할경우만</Korean>
         </Key>
         <Key ID="STR_dui_ui_scale">
             <English>UI Scaling</English>
@@ -793,6 +803,7 @@
             <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
             <Russian>Установите масштаб иконок для юнитов на вашем компасе когда вы в экипаже техники</Russian>
             <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
+            <Korean>차량탑승시 나침반에 표시되는 유닛마크 크기조절</Korean>
             <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
             <Turkish>Araç mürettebatının parçasıyken pusulanızdaki kişiler için ikon ölceğini belirler</Turkish>
             <Spanish>Establezca la escala de iconos para las unidades en su brújula mientras el jugador está en la tripulación del vehículo</Spanish>
@@ -830,6 +841,7 @@
         <Key ID="STR_dui_dialog_hide_interaction">
             <English>Hide while a dialog is open</English>
             <German>Während eines Dialogs verstecken</German>
+            <Korean>대화창이 켜져있을때 나침반 숨김</Korean>
             <Japanese>ダイアログ時は非表示</Japanese>
             <Russian>Скрывать, если диалоговое меню открыто</Russian>
             <Turkish>Diyaloglar Sırasında Sakla</Turkish>
@@ -848,6 +860,7 @@
             <Chinesesimp>雷达透明度</Chinesesimp>
             <Chinese>雷達透明度</Chinese>
             <German>Radaropazität</German>
+            <Korean>레이더 투명도</Korean>
             <Japanese>レーダー透明度</Japanese>
             <Russian>Прозрачность радара</Russian>
             <Turkish>Radar Opaklığı</Turkish>
@@ -858,6 +871,7 @@
             <Chinesesimp>图标透明度</Chinesesimp>
             <Chinese>圖標透明度</Chinese>
             <German>Iconopazität</German>
+            <Korean>아이콘 투명도</Korean>
             <Japanese>アイコン透明度</Japanese>
             <Russian>Прозрачность иконки</Russian>
             <Turkish>İkon Opaklığı</Turkish>
@@ -868,6 +882,7 @@
             <Chinesesimp>图标透明度不影响自己</Chinesesimp>
             <Chinese>圖標透明度不影響自己</Chinese>
             <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
+            <Korean>아이콘 투명도가 내 아이콘에 영향을 주지 않습니다</Korean>
             <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
             <Russian>Прозрачность иконки не оказывает эффект на собственного юнита</Russian>
             <Turkish>İkon Opaklığı Ayarı Kendi İkonunu Etkilemesin</Turkish>
@@ -905,7 +920,7 @@
             <Czech>Obrys textu</Czech>
             <French>Contour du texte</French>
             <German>Text Umrandung</German>
-            <Korean>텍스트 외형</Korean>
+            <Korean>텍스트 외곽선</Korean>
             <Japanese>テキストの縁取り</Japanese>
             <Polish>Zarys tekstu</Polish>
             <Portuguese>Contorno do Texto</Portuguese>
@@ -916,6 +931,7 @@
         <Key ID="STR_dui_dir_shadow">
             <English>Bearing Text Outline</English>
             <German>Text Umrandung der Richtungsanzeige</German>
+            <Korean>방위각 텍스트 외곽선</Korean>
             <Japanese>方位テキストの縁取り</Japanese>
             <Russian>Текст контура указателя поворота</Russian>
             <Turkish>Yön Derecesi Çerçevesi</Turkish>
@@ -1207,7 +1223,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
-            <!-- <Korean></Korean> -->
+            <Korean>아이콘이 레이더에서 페이드아웃 되는 시간 설정</Korean>
             <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
             <Polish>Ustala czas jaki ikona na radarze potrzebuje by zniknąć całkowicie.</Polish>
             <Portuguese>Determina o tempo que demora para os ícones desaparecerem da bússola</Portuguese>
@@ -1230,6 +1246,7 @@
             <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
             <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
             <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
+            <Korean>아이콘이 레이더에서 페이드인 되는 시간 설정</Korean>
             <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
             <Russian>Устанавливает время появления иконок на радаре.</Russian>
             <Turkish>Radardaki ikonların geri gelme süresini belirler</Turkish>
@@ -1242,7 +1259,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Tracking-Farbe</German>
-            <!-- <Korean></Korean> -->
+            <Korean>트래킹 색상</Korean>
             <Japanese>追跡カラー</Japanese>
             <Polish>Kolor śledzenia</Polish>
             <Portuguese>Cor de objetos rastreados</Portuguese>
@@ -1257,7 +1274,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
-            <!-- <Korean></Korean> -->
+            <Korean>특수 추적 객체의 레이더상 표시되는 색상을 설정합니다. 알파값 변경은 적용이 안됩니다</Korean>
             <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
             <Polish>Kolor śledzenia specjalnego obiektu. Przeźroczystość nie wpływa na kolor!</Polish>
             <Portuguese>Objetos rastreados aparecerão nesta cor na bússola. O valor do canal alpha não é utilizado</Portuguese>
@@ -1272,7 +1289,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Vertikaler Padding Modifikator</German>
-            <!-- <Korean></Korean> -->
+            <Korean>수직여백 설정</Korean>
             <Japanese>行間の余白</Japanese>
             <Polish>Współczynnik odstępu w pionie</Polish>
             <Portuguese>Modificador de espaçamento vertical</Portuguese>
@@ -1287,7 +1304,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
-            <!-- <Korean></Korean> -->
+            <Korean>이름목록의 줄간격을 설정합니다</Korean>
             <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
             <Polish>Ustawia odstęp w pionie pomiędzy kolejnymi wpisami na liście graczy w drużynie.</Polish>
             <Portuguese>Define o tamanho do espaço vertical entre unidades na lista de nomes</Portuguese>
@@ -1302,7 +1319,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>UI von Anfang an verbergen</German>
-            <!-- <Korean></Korean> -->
+            <Korean>기본으로 UI를 숨깁니다</Korean>
             <Japanese>標準で UI を非表示</Japanese>
             <Polish>Domyślne ukrywanie interfejsu.</Polish>
             <Portuguese>Ocultar a interface por padrão</Portuguese>
@@ -1317,7 +1334,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
-            <!-- <Korean></Korean> -->
+            <Korean>UI를 기본적으로 꺼짐으로 표시하도록 토글을 설정합니다.</Korean>
             <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
             <Polish>Włącza domyślne ukrywanie interfejsu.</Polish>
             <Portuguese>Define que a interface estará oculta por padrão, esperando o apertar da tecla para ser revelada</Portuguese>
@@ -1332,7 +1349,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Halten um UI an oder auszuschalten</German>
-            <!-- <Korean></Korean> -->
+            <Korean>UI표시 (홀드)</Korean>
             <Japanese>長押しで UI の表示/非表示</Japanese>
             <Polish>Przytrzymaj by pokazać/ukryć interfejs.</Polish>
             <Portuguese>Segurar para mostrar/ocultar a interface</Portuguese>
@@ -1345,6 +1362,7 @@
             <Chinesesimp>为班长时隐藏名单列表</Chinesesimp>
             <Chinese>爲班長時隱藏名單列表</Chinese>
             <German>Vestecke wenn Gruppenführer</German>
+            <Korean>분대장일때 숨기기</Korean>
             <Japanese>グループ リーダー時は非表示</Japanese>
             <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
             <Portuguese>Esconder quando Líder do Grupo</Portuguese>
@@ -1357,6 +1375,7 @@
             <Chinesesimp>作为班长时隐藏名单列表。给习惯使用原版班组指挥栏的人使用的。</Chinesesimp>
             <Chinese>作爲班長時隱藏名單列表。給習慣使用原版班組指揮欄的人使用的。</Chinese>
             <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <Korean>분대장일때 이름목록을 숨깁니다. 바닐라 분대표시를 선호하는 사람들이 사용합니다</Korean>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
             <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
             <Portuguese>Esconde a lista de nomes quando for líder do grupo. Usado por pessoas que preferem a barra de esquadrão padrão</Portuguese>
@@ -1369,6 +1388,7 @@
             <Chinesesimp>无组颜色</Chinesesimp>
             <Chinese>無組顔色</Chinese>
             <German>Keine Squad Farbe</German>
+            <Korean>분대색상 없음</Korean>
             <Japanese>分隊カラー無し</Japanese>
             <Polish>Brak koloru drużyny</Polish>
             <Portuguese>Sem Cor de Esquadrão</Portuguese>
@@ -1381,6 +1401,7 @@
             <Chinesesimp>红组颜色</Chinesesimp>
             <Chinese>紅組顔色</Chinese>
             <German>Rote Squad Farbe</German>
+            <Korean>분대색상 빨강</Korean>
             <Japanese>レッド分隊カラー</Japanese>
             <Polish>Czerwony kolor drużyny</Polish>
             <Portuguese>Cor Vermelho de Esquadrão</Portuguese>
@@ -1393,6 +1414,7 @@
             <Chinesesimp>绿组颜色</Chinesesimp>
             <Chinese>綠組顔色</Chinese>
             <German>Grüne Squad Farbe</German>
+            <Korean>분대색상 초록</Korean>
             <Japanese>グリーン分隊カラー</Japanese>
             <Polish>Zielony kolor drużyny</Polish>
             <Portuguese>Cor Verde de Esquadrão</Portuguese>
@@ -1405,6 +1427,7 @@
             <Chinesesimp>蓝组颜色</Chinesesimp>
             <Chinese>藍組顔色</Chinese>
             <German>Blaue Squad Farbe</German>
+            <Korean>분대색상 파랑</Korean>
             <Japanese>ブルー分隊カラー</Japanese>
             <Polish>Niebieski kolor drużyny</Polish>
             <Portuguese>Cor Azul de Esquadrão</Portuguese>
@@ -1417,6 +1440,7 @@
             <Chinesesimp>黄组颜色</Chinesesimp>
             <Chinese>黃組顔色</Chinese>
             <German>Gelbe Squad Farbe</German>
+            <Korean>분대색상 노랑</Korean>
             <Japanese>イエロー分隊カラー</Japanese>
             <Polish>Żółty kolor drużyny</Polish>
             <Portuguese>Cor Amarela de Esquadrão</Portuguese>
@@ -1429,6 +1453,7 @@
             <Chinesesimp>注意，Alpha值无意义！</Chinesesimp>
             <Chinese>注意，Alpha值無意義！</Chinese>
             <German>Achtung, der Alpha-Wert wird nicht verwendet!</German>
+            <Korean>알파값 변경은 적용이 안되니 주의하세요</Korean>
             <Japanese>アルファ値は影響を及ぼしません！</Japanese>
             <Polish>Przeźroczystość nie wpływa na kolor!</Polish>
             <Portuguese>O valor do canal alpha não é utilizado</Portuguese>
@@ -1445,6 +1470,7 @@
             <Russian>Нули в азимутах</Russian>
             <Polish>Zera wiodące</Polish>
             <Portuguese>Zero à esquerda</Portuguese>
+            <Korean>방위각 항상 세자리</Korean>
             <Japanese>0 揃え</Japanese>
             <Turkish>0 ile doldur</Turkish>
             <Spanish>Ceros a la izquierda</Spanish>
@@ -1456,6 +1482,7 @@
             <German>Die Richtungsanzeige wird mit führenden Nullen aufgefüllt</German>
             <Polish>Kierunek będzie zawierał zera wiodące.</Polish>
             <Portuguese>O número de orientação mostrará todos os dígitos, incluindo zeros à esquerda</Portuguese>
+            <Korean>방위각이 항상 세자리로 표시됩니다</Korean>
             <Japanese>方位角の表示を0を含めた3ケタで表示します</Japanese>
             <Russian>Значение азимута будет отображаться с лидирующими нулями</Russian>
             <Turkish>Yön derecesinin başını 0 ile tamamla</Turkish>
@@ -1468,6 +1495,7 @@
             <German>Gruppenführer immer als erster</German>
             <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
             <Portuguese>Sempre mostrar líder primeiro</Portuguese>
+            <Korean>분대장 상위 표시</Korean>
             <Japanese>分隊長を常に先頭</Japanese>
             <Russian>Показывать командира первым</Russian>
             <Turkish>En Başta Lideri Göster</Turkish>
@@ -1480,6 +1508,7 @@
             <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
             <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
             <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
+            <Korean>분대장이 항상 상위에 표시됩니다</Korean>
             <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
             <Russian>Всегда показывать командира отделения первым в списке</Russian>
             <Turkish>Her zaman en üstte grup liderini gösterir</Turkish>
@@ -1525,7 +1554,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Main</German>
-            <!-- <Korean></Korean> -->
+            <Korean>메인</Korean>
             <Japanese>メイン</Japanese>
             <Polish>Główny</Polish>
             <Portuguese>Principal</Portuguese>
@@ -1540,7 +1569,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Radar</German>
-            <!-- <Korean></Korean> -->
+            <Korean>레이더</Korean>
             <Japanese>レーダー</Japanese>
             <Polish>Radar</Polish>
             <Portuguese>Radar</Portuguese>
@@ -1556,7 +1585,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Standart</German>
-            <!-- <Korean></Korean> -->
+            <Korean>표준</Korean>
             <Japanese>通常</Japanese>
             <Polish>Standardowy</Polish>
             <Portuguese>Padrão</Portuguese>
@@ -1571,7 +1600,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>ACE 3</German>
-            <!-- <Korean></Korean> -->
+            <Korean>ACE 3</Korean>
             <Japanese>ACE 3</Japanese>
             <Polish>ACE 3</Polish>
             <Portuguese>ACE3</Portuguese>
@@ -1586,7 +1615,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>STUI</German>
-            <!-- <Korean></Korean> -->
+            <Korean>STUI</Korean>
             <Japanese>STUI</Japanese>
             <Polish>STUI</Polish>
             <Portuguese>STUI</Portuguese>
@@ -1602,7 +1631,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wargame</German>
-            <!-- <Korean></Korean> -->
+            <Korean>Wargame</Korean>
             <Japanese>Wargame</Japanese>
             <Polish>Wargame</Polish>
             <Portuguese>Wargame</Portuguese>
@@ -1617,7 +1646,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wargame (Militär Grün)</German>
-            <!-- <Korean></Korean> -->
+            <Korean>Wargame (국방색)</Korean>
             <Japanese>Wargame (ミリタリー グリーン)</Japanese>
             <Polish>Wargame (wojskowy zielony)</Polish>
             <Portuguese>Wargame (Verde Militar)</Portuguese>
@@ -1632,7 +1661,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Protanopie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>적색맹</Korean>
             <Japanese>1 型 2 色覚</Japanese>
             <Polish>Protanopia</Polish>
             <Portuguese>Protanopia</Portuguese>
@@ -1647,7 +1676,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Protanomalie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>적색약</Korean>
             <Japanese>1 型 3 色覚</Japanese>
             <Polish>Protanomalia</Polish>
             <Portuguese>Protanomalia</Portuguese>
@@ -1662,7 +1691,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Deuteranopie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>녹색맹</Korean>
             <Japanese>2 型 2 色覚</Japanese>
             <Polish>Deuteranopia</Polish>
             <Portuguese>Deuteranopia</Portuguese>
@@ -1677,7 +1706,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Deuteranomalie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>녹색약</Korean>
             <Japanese>2 型 3 色覚</Japanese>
             <Polish>Deuteranomalia</Polish>
             <Portuguese>Deuteranomalia</Portuguese>
@@ -1692,7 +1721,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Tritanopie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>청색맹</Korean>
             <Japanese>3 型 2 色覚</Japanese>
             <Polish>Tritanopia</Polish>
             <Portuguese>Trinatopia</Portuguese>
@@ -1707,7 +1736,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Ttritanomalie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>청색약</Korean>
             <Japanese>3 型 3 色覚</Japanese>
             <Polish>Tritanomalia</Polish>
             <Portuguese>Tritanomalia</Portuguese>
@@ -1722,7 +1751,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Achromatopsia</German>
-            <!-- <Korean></Korean> -->
+            <Korean>전색맹</Korean>
             <Japanese>1 色覚</Japanese>
             <Polish>Achromatopsja</Polish>
             <Portuguese>Acromatopsia</Portuguese>
@@ -1737,7 +1766,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Achromatomalie</German>
-            <!-- <Korean></Korean> -->
+            <Korean>전색약</Korean>
             <Japanese>異常 3 色覚</Japanese>
             <Polish>Achromatomalia</Polish>
             <Portuguese>Acromatomalia</Portuguese>
@@ -1750,6 +1779,7 @@
             <Chinesesimp>自定义</Chinesesimp>
             <Chinese>自定義</Chinese>
             <German>Benutzerdefiniert</German>
+            <Korean>사용자설정</Korean>
             <Japanese>カスタム</Japanese>
             <Portuguese>Customizado</Portuguese>
             <Russian>Пользовательское</Russian>
@@ -1765,7 +1795,6 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Nur die Spitze</German>
-            <!-- <Korean></Korean> -->
             <Japanese>先端のみ</Japanese>
             <Polish>Tylko wierzchołek</Polish>
             <Portuguese>Só a pontinha</Portuguese>
@@ -1780,7 +1809,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>NATO JMS</German>
-            <!-- <Korean></Korean> -->
+            <Korean>NATO JMS</Korean>
             <Japanese>NATO JMS</Japanese>
             <Polish>NATO JMS</Polish>
             <Portuguese>NATO JMS</Portuguese>
@@ -1795,7 +1824,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Klone</German>
-            <!-- <Korean></Korean> -->
+            <Korean>복제</Korean>
             <Japanese>クローン</Japanese>
             <Polish>Klony</Polish>
             <Portuguese>Clones</Portuguese>
@@ -1811,7 +1840,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Bohemia Interactive</German>
-            <!-- <Korean></Korean> -->
+            <Korean>Bohemia Interactive</Korean>
             <Japanese>ボヘミア インタラクティブ</Japanese>
             <Polish>Bohemia Interactive</Polish>
             <Portuguese>Bohemia Interactive</Portuguese>
@@ -1826,7 +1855,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Zeit für Pizza</German>
-            <!-- <Korean></Korean> -->
+            <Korean>피자묵자</Korean>
             <Japanese>ピッツァ</Japanese>
             <Polish>Czas na pizzę</Polish>
             <Portuguese>Hora da Pizza</Portuguese>
@@ -1841,7 +1870,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Wie alte Zeiten</German>
-            <!-- <Korean></Korean> -->
+            <Korean>호랑이 담배피던 시절</Korean>
             <Japanese>いにしえ</Japanese>
             <Polish>Stare dobre czasy</Polish>
             <Portuguese>Tempos antigos</Portuguese>
@@ -1856,7 +1885,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Uhr</German>
-            <!-- <Korean></Korean> -->
+            <Korean>시계</Korean>
             <Japanese>時計</Japanese>
             <Polish>Zegar</Polish>
             <Portuguese>Relógio</Portuguese>
@@ -1869,7 +1898,6 @@
             <Chinesesimp>经典</Chinesesimp>
             <Chinese>經典</Chinese>
             <!-- <Czech></Czech> -->
-            <!-- <French></French> -->
             <German>Klassisch</German>
             <!-- <Korean></Korean> -->
             <Japanese>クラシック</Japanese>
@@ -1887,7 +1915,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Rot</German>
-            <!-- <Korean></Korean> -->
+            <Korean>외계인 - 적색</Korean>
             <Japanese>ゼノ - レッド</Japanese>
             <Polish>Xeno - Czerwony</Polish>
             <Portuguese>Xeno - Vermelho</Portuguese>
@@ -1902,7 +1930,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Grün</German>
-            <!-- <Korean></Korean> -->
+            <Korean>외계인 - 녹색</Korean>
             <Japanese>ゼノ - グリーン</Japanese>
             <Polish>Xeno - Zielony</Polish>
             <Portuguese>Xeno - Verde</Portuguese>
@@ -1917,7 +1945,7 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Xeno - Blau</German>
-            <!-- <Korean></Korean> -->
+            <Korean>외계인 - 청색</Korean>
             <Japanese>ゼノ - ブルー</Japanese>
             <Polish>Xeno - Niebieski</Polish>
             <Portuguese>Xeno - Azul</Portuguese>
@@ -1932,7 +1960,6 @@
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
             <German>Militär Interface</German>
-            <!-- <Korean></Korean> -->
             <Japanese>ミリタリー風</Japanese>
             <Polish>Wojskowy Interfejs</Polish>
             <Portuguese>Interface Militar</Portuguese>
@@ -1948,6 +1975,7 @@
             <German>Kein</German>
             <Polish>Brak</Polish>
             <Portuguese>Nenhum</Portuguese>
+            <Korean>없음</Korean>
             <Japanese>行わない</Japanese>
             <Russian>Нет</Russian>
             <Turkish>Hiç</Turkish>
@@ -1960,6 +1988,7 @@
             <German>Namen</German>
             <Polish>Imiona</Polish>
             <Portuguese>Nomes</Portuguese>
+            <Korean>이름</Korean>
             <Japanese>名前</Japanese>
             <Russian>Имена</Russian>
             <Turkish>İsimler</Turkish>
@@ -1972,6 +2001,7 @@
             <German>Fireteam, Namen</German>
             <Polish>Sekcja, Imiona</Polish>
             <Portuguese>Time, Nomes</Portuguese>
+            <Korean>조, 이름</Korean>
             <Japanese>班、名前</Japanese>
             <Russian>Команда, Имена</Russian>
             <Turkish>Takımlar, İsimler</Turkish>
@@ -1984,6 +2014,7 @@
             <German>Fireteam, Rang, Namen</German>
             <Polish>Sekcja, Ranga, Imiona</Polish>
             <Portuguese>Time, Patente, Nomes</Portuguese>
+            <Korean>조, 계급, 이름</Korean>
             <Japanese>班、階級、名前</Japanese>
             <Russian>Команда, Звание, Имена</Russian>
             <Turkish>Takımlar, Rütbe, İsimlar</Turkish>
@@ -1996,6 +2027,7 @@
             <German>Rang, Namen</German>
             <Polish>Ranga, Imiona</Polish>
             <Portuguese>Patente, Nomes</Portuguese>
+            <Korean>계급, 이름</Korean>
             <Japanese>階級、名前</Japanese>
             <Russian>Звание, Имена</Russian>
             <Turkish>Rütbe, İsimler</Turkish>
@@ -2007,6 +2039,7 @@
             <Chinese>載具團隊圖標</Chinese>
             <German>Icons nach Fahrzeug gruppieren</German>
             <Portuguese>Agrupar Ícones por veículo</Portuguese>
+            <Korean>차량별 아이콘 표시</Korean>
             <Japanese>車両でのグループ アイコン</Japanese>
             <Russian>Иконка группы для техники</Russian>
             <Turkish>İkonları Araca Göre Grupla</Turkish>
@@ -2018,6 +2051,7 @@
             <Chinese>當多名團隊成員在一輛載具中時，只顯示一個圖標，一般爲司機</Chinese>
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
             <Portuguese>Mostrar apenas um ícone do seu esquadrão se múltiplos membros estão no veículo, normalmente o do motorista</Portuguese>
+            <Korean>한 차량에 분대원 여러명이 탑승해 있으면 레이더 아이콘을 하나만 표시합니다. 주로 운전수가 표시됩니다</Korean>
             <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
             <Russian>Показывать только одну иконку вашего отряда, если несколько человек находятся в одной машине</Russian>
             <Turkish>Eğer grubun birden fazla üyesi aynı araçta ise sadece 1 üye için ikon göster (genelde sürücü)</Turkish>

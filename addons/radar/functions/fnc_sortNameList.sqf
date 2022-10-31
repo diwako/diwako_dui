@@ -19,17 +19,17 @@ switch (GVAR(sortType)) do {
         _newGrp = _newGrp apply { _x select 1 };
     };
     case "fireteam": {
-        _newGrp = _newGrp apply { [_nameSpace getVariable [[assignedTeam _x] param [0, "MAIN"], 9999], _x getVariable [QEGVAR(main,customName), name _x], _x] };
+        _newGrp = _newGrp apply { [_nameSpace getVariable [[assignedTeam _x] param [0, "MAIN"], 9999], _x getVariable [QEGVAR(main,customName), _x getVariable ["ACE_Name", name _x]], _x] };
         _newGrp sort true;
         _newGrp = _newGrp apply { _x select 2 };
     };
     case "fireteam2": {
-        _newGrp = _newGrp apply { [_nameSpace getVariable [[assignedTeam _x] param [0, "MAIN"], 9999], _nameSpace getVariable [rank _x, 9999], _x getVariable [QEGVAR(main,customName), name _x], _x] };
+        _newGrp = _newGrp apply { [_nameSpace getVariable [[assignedTeam _x] param [0, "MAIN"], 9999], _nameSpace getVariable [rank _x, 9999], _x getVariable [QEGVAR(main,customName), _x getVariable ["ACE_Name", name _x]], _x] };
         _newGrp sort true;
         _newGrp = _newGrp apply { _x select 3 };
     };
     case "rank": {
-        _newGrp = _newGrp apply { [_nameSpace getVariable [rank _x, 9999], _x getVariable [QEGVAR(main,customName), name _x], _x] };
+        _newGrp = _newGrp apply { [_nameSpace getVariable [rank _x, 9999], _x getVariable [QEGVAR(main,customName), _x getVariable ["ACE_Name", name _x]], _x] };
         _newGrp sort true;
         _newGrp = _newGrp apply { _x select 2 };
     };

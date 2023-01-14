@@ -50,7 +50,7 @@
                 <English>Maximum allowed range to show indicators</English>
                 <Chinesesimp>显示标记的最远距离</Chinesesimp>
                 <Chinese>顯示標記的最遠距離</Chinese>
-                <German>Maximale Reichweite wie weit die Indikatoren angezeigt werden dürfen</German>
+                <German>Maximale Reichweite für die Anzeige von Indikatoren</German>
                 <Polish>Maksymalny zasięg pokazywania znaczników.</Polish>
                 <Portuguese>Distância máxima permitida para mostrar os indicadores</Portuguese>
                 <Japanese>インジケータの最大表示距離を決定します</Japanese>
@@ -62,7 +62,7 @@
                 <Chinesesimp>允许乘员标记</Chinesesimp>
                 <Chinese>允許乘員標記</Chinese>
                 <Russian>Разрешить индикаторы для экипажа</Russian>
-                <German>Erlaube Mannschafts Indikatoren</German>
+                <German>Indikatoren für die Besatzung zulassen</German>
                 <Japanese>乗員用インジケータ許可</Japanese>
                 <Turkish>Mürettebat göstergelerine izin ver</Turkish>
             </Key>
@@ -71,7 +71,7 @@
                 <Chinesesimp>允许乘员有额外的标记距离</Chinesesimp>
                 <Chinese>允許乘員有額外的標記距離</Chinese>
                 <Russian>Разрешить индикаторы на большие расстояния для экипажей</Russian>
-                <German>Erlauben Anzeigen mit größerer Reichweite für die Fahrzeugmannschaft.</German>
+                <German>Erlaubt Indikatoren mit größerer Reichweite für die Fahrzeugbesatzung.</German>
                 <Japanese>車両の乗員用にインジケータ表示範囲を倍増させます。</Japanese>
                 <Turkish>Araç mürettebatları için göstergelerin daha uzaktan görünmesine izin ver</Turkish>
             </Key>
@@ -80,7 +80,7 @@
                 <Chinesesimp>乘员的最远距离</Chinesesimp>
                 <Chinese>乘員的最遠距離</Chinese>
                 <Russian>Максимальная расстояние (для экипажа)</Russian>
-                <German>Maximale Reichweite für die Mannschaft</German>
+                <German>Maximale Reichweite für die Besatzung</German>
                 <Japanese>乗員用最大距離</Japanese>
                 <Turkish>Mürettebat Max Menzil</Turkish>
             </Key>
@@ -89,7 +89,7 @@
                 <Chinesesimp>作为载具乘员时允许显示的最远的距离</Chinesesimp>
                 <Chinese>作爲載具乘員時允許顯示的最遠的距離</Chinese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов для игрока в экипаже техники</Russian>
-                <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugmannschaft.</German>
+                <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugbesatzung.</German>
                 <Japanese>車両の乗員用にインジケータを表示する最大範囲を設定します。</Japanese>
                 <Turkish>Mürettebat için göstergelerin gösterileceği maximum mesafe</Turkish>
             </Key>
@@ -99,7 +99,7 @@
                 <Chinese>圖標風格</Chinese>
                 <Czech>Styl ikon</Czech>
                 <French>Style d'icône</French>
-                <German>Icon Style</German>
+                <German>Icon-Stil</German>
                 <Korean>아이콘 스타일</Korean>
                 <Japanese>アイコンのスタイル</Japanese>
                 <Polish>Styl ikony</Polish>
@@ -114,7 +114,7 @@
                 <Chinese>要使用哪種圖標風格</Chinese>
                 <Czech>Který styl ikon by se měl použít.</Czech>
                 <French>Quel style d'icône doit être utilisé?</French>
-                <German>Welcher Icon Style soll genutzt werden?</German>
+                <German>Welcher Icon-Stil soll genutzt werden?</German>
                 <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
                 <Japanese>使用するアイコン スタイルを設定します。</Japanese>
                 <Polish>Jaki styl ikony powinien być użyty?</Polish>
@@ -170,7 +170,7 @@
                 <English>Standard</English>
                 <Chinesesimp>标准</Chinesesimp>
                 <Chinese>標准</Chinese>
-                <German>Standart</German>
+                <German>Standard</German>
                 <Japanese>通常</Japanese>
                 <Polish>Standard</Polish>
                 <Portuguese>Padrão</Portuguese>
@@ -267,7 +267,7 @@
                 <Turkish>Mesafe ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
-                <English>Scale indicators according with distance to unit</English>
+                <English>Scale indicators according to distance to unit</English>
                 <Chinesesimp>标识的大小根据到达单位的距离而变化</Chinesesimp>
                 <Chinese>標識的大小根據到達單位的距離而變化</Chinese>
                 <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
@@ -281,7 +281,7 @@
                 <English>Resize With FOV</English>
                 <Chinesesimp>重设视野范围角度</Chinesesimp>
                 <Chinese>重設視野範圍角度</Chinese>
-                <German>Mit Blickwinkelgröße skalieren</German>
+                <German>Mit FOV skalieren</German>
                 <Polish>Zmieniaj rozmiar w zależności od pola widzenia.</Polish>
                 <Portuguese>FOV altera tamanho</Portuguese>
                 <Russian>Менять размер при FOV</Russian>
@@ -289,10 +289,10 @@
                 <Turkish>FOV ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
-                <English>Scale indicators according with current field of view</English>
+                <English>Scale indicators according to current field of view</English>
                 <Chinesesimp>根据视野范围角度调节标识大小</Chinesesimp>
                 <Chinese>根據視野範圍角度調節標識大小</Chinese>
-                <German>Indikatoren werden anhand der zurzeitigen Blinkwinkelgröße skaliert</German>
+                <German>Indikatoren werden entsprechend der aktuellen Blinkwinkelgröße skaliert</German>
                 <Polish>Zmieniaj rozmiar znaczników w zależności od aktualnego pola widzenia.</Polish>
                 <Portuguese>Escala os indicadores de acordo com o campo de visão(FOV) do momento</Portuguese>
                 <Russian>Шкала индикаторов в зависимости от дальности обзора</Russian>

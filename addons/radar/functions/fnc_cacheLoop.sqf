@@ -242,7 +242,7 @@ private _circleRange = diwako_dui_compassRange;
     if ((count _lists) < (_forEachIndex + 1)) then {
         private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];
         _curGrp ctrlSetPosition [
-            (0 * pixelW) * _columnNo + _listWidth * _columnNo,
+            _listWidth * _columnNo,
             _curColumnHeight * pixelH,
             _listWidth,
             _itemHeight * pixelH

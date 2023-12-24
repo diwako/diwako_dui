@@ -157,7 +157,7 @@
             <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啓用！</Chinese>
             <Czech>Ukáže azimut nad kompasem. (Kompas sám musí být zapnutý)</Czech>
             <French>Afficher la direction au-dessus de la boussole (la boussole doit ètre activé!) (</French>
-            <German>Zeigt die Richtung in Grad an, der Kompass muss angeschalten sein hierfür!</German>
+            <German>Zeigt die Richtung in Grad an, der Kompass muss dafür angeschalten sein!</German>
             <Korean>나침반 위에 방위각을 표시합니다. 사용하려면 나침반을 가지고 있어야 합니다! </Korean>
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
             <Polish>Pokazuje azymut nad kompasem, sam kompas musi być włączony</Polish>
@@ -202,7 +202,7 @@
             <Chinese>羅盤風格</Chinese>
             <Czech>Styl kompasu</Czech>
             <French>Style de boussole</French>
-            <German>Kompassstyle</German>
+            <German>Kompass-Stil</German>
             <Korean>나침반 스타일</Korean>
             <Japanese>コンパスのスタイル</Japanese>
             <Polish>Styl kompasu</Polish>
@@ -217,7 +217,7 @@
             <Chinese>要使用哪種羅盤風格</Chinese>
             <Czech>Který styl kompasu by se měl použít.</Czech>
             <French>Quel style de boussole doit être utilisé?</French>
-            <German>Welcher Kompassstyle soll verwendet werden?</German>
+            <German>Welcher Kompass-Stil soll verwendet werden?</German>
             <Korean>사용하는 나침반 스타일을 설정합니다.</Korean>
             <Japanese>使用するコンパスのスタイルを設定します。</Japanese>
             <Polish>Jaki styl kompasu powinien byc użyty?</Polish>
@@ -232,7 +232,7 @@
             <Chinese>羅盤距離設置</Chinese>
             <Czech>Dosah kompasu</Czech>
             <French>Portée de la Boussole</French>
-            <German>Kompassreichweite</German>
+            <German>Kompass Reichweite</German>
             <Korean>나침반 범위</Korean>
             <Japanese>コンパスの範囲</Japanese>
             <Polish>Zasięg kompasu</Polish>
@@ -247,7 +247,7 @@
             <Chinese>玩家看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Czech>Na jak daleko by se měly zobrazovat jednotky ve stejné skupině? (v metrech)</Czech>
             <French>Jusqu'où les joueurs doivent voir les unités du même groupe en mètres?</French>
-            <German>Wie weit in Metern soll ein spieler die Einheiten im Squad sehen können?</German>
+            <German>Wie weit soll ein Spieler die Einheiten im Squad in Metern sehen können?</German>
             <Korean>같은 그룹내에 유닛이 보이는 거리를 미터 단위로 설정합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
             <Polish>Jak daleko gracze powinni widzieć jednostki w tej samej grupie? (w metrach)</Polish>
@@ -294,7 +294,7 @@
             <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
             <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
             <Russian>Как далеко игроки в роли экипажа (водитель, стрелок или командир) должны видеть юнитов своей группы в метрах?</Russian>
-            <German>Inwieweit sollten die Spieler in der Besatzungsrolle (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
+            <German>Wie weit sollen Spieler in Besatzungsrollen (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
             <Korean>차량 승무원 좌석 (운전석, 사수, 지휘관)에서의 분대위치 표시 범위</Korean>
             <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
             <Turkish>Araç mürettebatlarının pusulaları içinde ne kadar yakın birimler görünmeli?</Turkish>
@@ -321,7 +321,7 @@
             <Chinese>羅盤的刷新速度，值以秒爲單位，0代表每幀都會刷新！主機焦糊警告！</Chinese>
             <Czech>Jak často by se měl kompas renderovat? Hodnota 0 znamená každý frame - nastavte na vlastní nebezpečí.</Czech>
             <French>À quelle vitesse doit être le rendu de la boussole, Valeur en seconds, 0 veut dire chaque frame! Définisé à votre péril!</French>
-            <German>Wie schnell soll der Kompas upgedated werden? Wert ist in Sekunden, 0 bedeuter jeden Frame!</German>
+            <German>Wie schnell soll der Kompass aktualisiert werden? Wert ist in Sekunden, 0 bedeutet jeden Frame!</German>
             <Korean>나침반의 새로고침 빈도를 설정합니다. 값은 초 단위이며, 0은 각 프레임을 의미합니다! 위험 감수!</Korean>
             <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
             <Polish>Jak szybko powinien się wyświetlać kompas? Wartość w sekundach, 0 oznacza każdą klatkę! Ustaw na własne ryzyko!</Polish>
@@ -351,7 +351,7 @@
             <Chinese>如果玩家無法看到一個單位，該單位將慢慢在羅盤上消失，直到該單位重新出現在玩家視野中</Chinese>
             <Czech>Pokud jednotka není vidět, postupně zmizí z kompasu.</Czech>
             <French>Si un joueur ne peut pas voir une unité, elle disparaîtra lentement de la boussole jusqu'à qu'elle soit vue de nouveau</French>
-            <German>Wenn ein Spieler eine Einheit nicht mehr sehen kann, verschwinded diese nach einer Zeil, bis diese wieder gesehn wird</German>
+            <German>Wenn ein Spieler eine Einheit nicht sehen kann, verschwindet diese langsam vom Kompass, bis diese wieder gesehen wird</German>
             <Korean>만약 플레이어가 유닛을 볼수 없으면 다시 볼 수 있을 때까지 천천히 사라집니다.</Korean>
             <Japanese>もしプレイヤーがユニットを見えていなければ、再び見れるようになるまでゆっくりと消えます。</Japanese>
             <Polish>Jeśli gracz nie widzi jednostki, powoli zniknie ona z kompasu, dopóki nie będzie widziana ponownie.</Polish>
@@ -422,23 +422,27 @@
         </Key>
         <Key ID="STR_dui_namelist_icon_priority">
             <English>Prioritise icons</English>
+            <German>Icons priorisieren</German>
             <Russian>Приоритет иконок</Russian>
             <Turkish>İkonlara Öncelik Ver</Turkish>
             <Spanish>Priorizar iconos</Spanish>
             <Korean>아이콘 우선표시</Korean>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
-            <English>Priorises icons selected in this setting over the other ones in the list.</English>
+            <English>Prioritise icons selected in this setting over the other ones in the list.</English>
+            <German>Gibt den ausgewählten Icons Vorrang vor den anderen Icons in der Liste.</German>
             <Russian>Приоритет иконок, выбранных в этой настройке, над другими в списке</Russian>
             <Turkish>Bu ayarda seçilen ikonlara diğerlerine göre öncelik ver</Turkish>
             <Spanish>Prioriza los iconos seleccionados en esta configuración sobre los demás en la lista</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting0">
             <English>AR and AT</English>
+            <German>AR und AT</German>
             <Turkish>Otomatik Tüfek ve Anti-Tank</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting1">
             <English>Engineer, Medic and EOD</English>
+            <German>Pionier, Sanitäter und EOD</German>
             <Russian>Инженер, медик и EOD</Russian>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
             <Spanish>Ingeniero, Médico y EOD</Spanish>
@@ -510,7 +514,7 @@
             <Chinese>減少羅盤距離</Chinese>
             <Czech>Snížit dosah kompasu</Czech>
             <French>Diminuer la porté de la boussole</French>
-            <German>Kompassreichweite verkleinern</German>
+            <German>Kompassreichweite verringern</German>
             <Korean>나침반 범위 감소</Korean>
             <Japanese>コンパスの範囲を減少</Japanese>
             <Polish>Zmniejsz zasięg kompasu</Polish>
@@ -525,7 +529,7 @@
             <Chinese>按住以顯示軍銜</Chinese>
             <Czech>Podržet pro ukázání hodnosti</Czech>
             <French>Maintener pour Afficher les grades</French>
-            <German>Taste halten um Ränge anzuzeigen</German>
+            <German>Taste halten, um Ränge anzuzeigen</German>
             <Korean>누른상태로 계급 표시</Korean>
             <Japanese>長押しで階級を表示</Japanese>
             <Polish>Przytrzymaj, aby pokazać stopnie wojskowe.</Polish>
@@ -555,7 +559,7 @@
             <Chinese>羅盤的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>UI Element des Kompasses. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <German>UI Element des Kompasses. Drag &amp; Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schiefläuft!</German>
             <Korean>나침반을 드래그 앤 드롭하여 위치를 변경할 수 있습니다. 또 CBA설정으로 위치를 초기화할 수 있습니다!</Korean>
             <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <Polish>Kompas, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
@@ -570,7 +574,7 @@
             <Chinese>名單列表</Chinese>
             <Czech>Seznam jmen</Czech>
             <French>Liste des noms</French>
-            <German>Namesliste</German>
+            <German>Namensliste</German>
             <Korean>이름목록 설정</Korean>
             <Japanese>名前リスト</Japanese>
             <Polish>Lista imion</Polish>
@@ -585,7 +589,7 @@
             <Chinese>名單列表的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>UI Element der Namesliste. Drag and Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schief läuft!</German>
+            <German>UI Element der Namensliste. Drag &amp; Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schiefläuft!</German>
             <Korean>이름 목록을 드래그 앤 드롭하여 위치를 변경 할 수 있습니다. 또 CBA설정으로 위치를 리셋할 수 있습니다!</Korean>
             <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
             <Polish>Lista imion, element interfejsu. Przeciągnij i upuść by zmienić pozycję. Możesz zresetować pozycję w menu ustawień CBA jeśli coś pójdzie nie tak.</Polish>
@@ -600,7 +604,7 @@
             <Chinese>一般設置</Chinese>
             <Czech>Obecná nastavení</Czech>
             <French>Paramètres Généraux</French>
-            <German>Allgmeine Einstellungen</German>
+            <German>Allgemeine Einstellungen</German>
             <Korean>일반 설정</Korean>
             <Japanese>全般設定</Japanese>
             <Polish>Ustawienia główne</Polish>
@@ -619,7 +623,7 @@
             <Portuguese>Cores Customizadas</Portuguese>
             <Russian>Пользовательские цвета</Russian>
             <Turkish>Özel Renkler</Turkish>
-            <Spanish>Colores personalizados</spanish>
+            <Spanish>Colores personalizados</Spanish>
         </Key>
         <Key ID="STR_dui_show_dir_opt1">
             <English>Never</English>
@@ -657,7 +661,7 @@
             <Chinese>只在載具中</Chinese>
             <Czech>Pouze ve vozidlech</Czech>
             <French>Seulement En Vehicules</French>
-            <German>Nur In Fahrzeugen</German>
+            <German>Nur in Fahrzeugen</German>
             <Korean>차량내에서만</Korean>
             <Japanese>車両内のみ</Japanese>
             <Polish>Tylko w pojazdach</Polish>
@@ -677,6 +681,7 @@
         </Key>
         <Key ID="STR_dui_show_dir_opt5">
             <English>Only with GPS</English>
+            <German>Nur mit GPS</German>
             <Russian>Только с GPS</Russian>
             <Turkish>Sadece GPS İle</Turkish>
             <Spanish>Solo con GPS</Spanish>
@@ -718,7 +723,7 @@
             <Chinese>設置黑色背景的透明度</Chinese>
             <Czech>Jak moc by mělo být černé pozadí viditelné</Czech>
             <French>Combien le fond doit être visible?</French>
-            <German>Wie stark soll der Hintergrund sichtbar sein</German>
+            <German>Wie stark soll der schwarze Hintergrund sichtbar sein?</German>
             <Korean>배경의 투명도를 설정합니다.</Korean>
             <Japanese>背景の透明度を設定します。</Japanese>
             <Polish>Jak mocne powinno być widoczne czarne tło</Polish>
@@ -778,7 +783,7 @@
             <Chinese>設置羅盤上的單位的圖標大小</Chinese>
             <Czech>Nastaví velikost ikon jednotek na kompasu.</Czech>
             <French>Définiser l'échelle de l'icône des unités sur votre boussole</French>
-            <German>Setze die Größe der Icons der Einheiten auf dem Kompass</German>
+            <German>Setze die Größe der Icons für Einheiten auf dem Kompass</German>
             <Korean>나침반 위에 표시되는 유닛 아이콘의 크기를 설정합니다.</Korean>
             <Japanese>コンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
             <Polish>Ustaw skalę ikon dla jednostek na kompasie</Polish>
@@ -792,7 +797,7 @@
             <Chinesesimp>乘员的图标大小</Chinesesimp>
             <Chinese>乘員的圖標大小</Chinese>
             <Russian>Масштаб иконок для экипажа</Russian>
-            <German>Symbol Skalierung für Mannschaften</German>
+            <German>Icon Größe für Besatzung</German>
             <Japanese>乗員用アイコンの大きさ</Japanese>
             <Turkish>Mürettebat İkon Ölçeği</Turkish>
             <Spanish>Escala de iconos para la tripulación</Spanish>
@@ -802,7 +807,7 @@
             <Chinesesimp>设置当玩家作为载具乘员时的罗盘上的单位的图标大小</Chinesesimp>
             <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
             <Russian>Установите масштаб иконок для юнитов на вашем компасе когда вы в экипаже техники</Russian>
-            <German>Stellen Sie die Symbolskala für Einheiten auf Ihrem Kompass ein, während der Spieler in der Fahrzeugmannschaft ist</German>
+            <German>Setze die Größe der Icons für Einheiten auf dem Kompass ein, während der Spieler in einem Fahrzeug sitzt</German>
             <Korean>차량탑승시 나침반에 표시되는 유닛마크 크기조절</Korean>
             <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
             <Turkish>Araç mürettebatının parçasıyken pusulanızdaki kişiler için ikon ölceğini belirler</Turkish>
@@ -814,7 +819,7 @@
             <Chinese>在使用ACE互動時隱藏</Chinese>
             <Czech>Schovat při ACE interakcích</Czech>
             <French>Cacher pendant ACE Interaction</French>
-            <German>Während ACE Interaktionen verstecken</German>
+            <German>Während ACE Interaktionen ausblenden</German>
             <Korean>ACE 상호작용 일때 숨기기</Korean>
             <Japanese>インタラクション中は非表示</Japanese>
             <Polish>Ukrycie podczas używania interakcji ACE</Polish>
@@ -829,7 +834,7 @@
             <Chinese>在使用ACE互動時，UI是否被隱藏</Chinese>
             <Czech>Má se UI schovat při ACE interakcích?</Czech>
             <French>L'UI doit-il être cacher pendant l'interaction avec objets via ACE Interaction?</French>
-            <German>Wenn man durch ACE mit Dingen interagiert, soll die UI versteckt werden?</German>
+            <German>Soll die UI ausgeblendet werden, wenn durch ACE mit Dingen interagiert wird?</German>
             <Korean>ACE 인터렉션중에는 UI를 숨기겠습니까?</Korean>
             <Japanese>ACE インタラクション中は UI を非表示にしますか？</Japanese>
             <Polish>Czy podczas używania interakcji ACE należy ukryć interfejs użytkownika?</Polish>
@@ -840,7 +845,7 @@
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction">
             <English>Hide while a dialog is open</English>
-            <German>Während eines Dialogs verstecken</German>
+            <German>Während offener Dialoge ausblenden</German>
             <Korean>대화창이 켜져있을때 나침반 숨김</Korean>
             <Japanese>ダイアログ時は非表示</Japanese>
             <Russian>Скрывать, если диалоговое меню открыто</Russian>
@@ -849,7 +854,7 @@
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
             <English>When a UI dialog is open should the UI be hidden?</English>
-            <German>Wenn ein Dialogsfenster offen ist, soll die UI versteckt werden?</German>
+            <German>Soll die UI ausgeblendet werden, wenn ein Dialogfenster offen ist?</German>
             <Japanese>ダイアログを開いているときは UI を非表示にしますか？</Japanese>
             <Russian>Если интерфейс диалога открыт, нужно ли прятать интерфейс?</Russian>
             <Turkish>Pusula herhangi bir oyun için diyalog çıktığında gizlenmeli mi?</Turkish>
@@ -859,7 +864,7 @@
             <English>Radar Opacity</English>
             <Chinesesimp>雷达透明度</Chinesesimp>
             <Chinese>雷達透明度</Chinese>
-            <German>Radaropazität</German>
+            <German>Radar Sichtbarkeit</German>
             <Korean>레이더 투명도</Korean>
             <Japanese>レーダー透明度</Japanese>
             <Russian>Прозрачность радара</Russian>
@@ -870,7 +875,7 @@
             <English>Icon Opacity</English>
             <Chinesesimp>图标透明度</Chinesesimp>
             <Chinese>圖標透明度</Chinese>
-            <German>Iconopazität</German>
+            <German>Icon Sichtbarkeit</German>
             <Korean>아이콘 투명도</Korean>
             <Japanese>アイコン透明度</Japanese>
             <Russian>Прозрачность иконки</Russian>
@@ -881,7 +886,7 @@
             <English>Icon Opacity does not affect own unit</English>
             <Chinesesimp>图标透明度不影响自己</Chinesesimp>
             <Chinese>圖標透明度不影響自己</Chinese>
-            <German>Iconopazität wird nicht auf eigene Einheit angewendet</German>
+            <German>Icon Sichtbarkeit wird nicht auf eigene Einheit angewendet</German>
             <Korean>아이콘 투명도가 내 아이콘에 영향을 주지 않습니다</Korean>
             <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
             <Russian>Прозрачность иконки не оказывает эффект на собственного юнита</Russian>
@@ -1003,7 +1008,7 @@
             <Chinese>以米爲單位，設置一個距離，當別的單位太靠近你並低于設置的這個距離時，該單位的圖標會變成橘色</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Setzt die Distanz in Meter, wenn ein Einheitsmarker Orange werden soll, wenn dieser zu nah an dir ist</German>
+            <German>Setzt die Distanz in Meter, bei der ein Einheitenmarker Orange werden soll, wenn sie zu nah an dir ist</German>
             <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
             <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離 (m) で設定します。</Japanese>
             <Polish>Ustawia odległość w metrach, która spowoduje zmianę koloru ikony jednostki na pomarańczowy, gdy znajduje się ona zbyt blisko użytkownika.</Polish>
@@ -1018,7 +1023,7 @@
             <Chinese>當不屬于任何團隊時，隱藏整個羅盤</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Verstecke den Kompass wenn man alleine ist</German>
+            <German>Den ganzen Kompass ausblenden, wenn man allein ist</German>
             <Korean>혼자일때 나침반 숨기기</Korean>
             <Japanese>単独時はコンパスを非表示</Japanese>
             <Polish>Ukryj cały kompas, gdy jest sam</Polish>
@@ -1033,7 +1038,7 @@
             <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，隱藏屏幕上所有的羅盤元件</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Das Kompass UI Element wird versteckt wenn du alleine in einer Gruppe bist</German>
+            <German>Wenn du alleine in einer Gruppe bist, wird der Kompass ausgeblendet</German>
             <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
             <Japanese>グループに単独の際はコンパスを非表示にします。</Japanese>
             <Polish>Nie pokazuj kompasu, gdy jesteś sam w grupie.</Polish>
@@ -1048,7 +1053,7 @@
             <Chinese>單獨行動時隱藏玩家標識</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Verstecke den Spieler Marker wenn man alleine ist</German>
+            <German>Verstecke die Spielermarkierung, wenn du alleine bist</German>
             <Korean>혼자일때 플레이어 마커 숨기기</Korean>
             <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
             <Polish>Ukrywaj znacznik gracza, kiedy jest sam</Polish>
@@ -1063,7 +1068,7 @@
             <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，只隱藏羅盤上的玩家標識</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Es wird nur der Spieler Marker vom Kompass versteckt wenn man alleine in einer Gruppe ist</German>
+            <German>Wenn du alleine in einer Gruppe bist, wird nur die Spielermarkierung auf dem Kompass ausgeblendet.</German>
             <Korean>그룹내에 혼자만 있을때 플레이어 마커를 숨깁니다.</Korean>
             <Japanese>グループに単独の際はプレイヤー マーカーを非表示にします。</Japanese>
             <Polish>Gdy jesteś sam w grupie, będzie to tylko ukrywać znacznik gracza na kompasie</Polish>
@@ -1093,7 +1098,7 @@
             <Chinese>設置一個以角度爲單位的視野椎體範圍，用于模擬玩家視野。例：90意味著亦會模擬一個視野中心向左45度到向右45度的一個椎體範圍。</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Als Beispiel mit 90 grad sieht man Einheiten 45° nach links und rechts</German>
+            <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Z.B. 90° bedeutet, dass man Einheiten 45° nach links und rechts sieht</German>
             <Korean>플레이어의 정면으로 부터 설정되는 가시범위를 '도'단위로 설정합니다. 예를들어 90도로 설정되면 좌우 45도가 가시범위가 됩니다.</Korean>
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
             <Polish>Stożek (w stopniach), w którym znajdująca się jednostka znajduje się przed graczem. Np. 90 stopni oznacza, że możesz widzieć jednostki 45 stopni z lewej i prawej.</Polish>
@@ -1108,7 +1113,7 @@
             <Chinese>重置UI位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>UI Positionen zurücksetzen</German>
+            <German>UI-Position zurücksetzen</German>
             <Korean>UI 위치 초기화</Korean>
             <Japanese>UI 位置をリセット</Japanese>
             <Polish>Zresetuj pozycję interfejsu użytkownika</Polish>
@@ -1197,7 +1202,7 @@
             <Chinese>使用布局編輯器來確定位置，而不是使用默認的位置</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Nutzt anstatt der Defaultposition die im Layout Editor gesetzte Position</German>
+            <German>Nutzt anstatt der Standardposition die im Layout Editor gesetzte Position</German>
             <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
             <Polish>Użyj pozycji z Edytora Układu, nie domyślnej pozycji.</Polish>
@@ -1222,7 +1227,7 @@
             <Chinese>設置圖標在雷達上徹底淡出需要的時間</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
+            <German>Stellt die Zeit ein, wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
             <Korean>아이콘이 레이더에서 페이드아웃 되는 시간 설정</Korean>
             <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
             <Polish>Ustala czas jaki ikona na radarze potrzebuje by zniknąć całkowicie.</Polish>
@@ -1245,7 +1250,7 @@
             <English>Sets the time it takes for icons to fade in on the radar</English>
             <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
             <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
-            <German>Stellt die Zeit ein wie lange es dauert, bis ein Icon vom Radar wieder komplett sichtbar ist</German>
+            <German>Stellt die Zeit ein, wie lange es dauert, bis ein Icon auf dem Radar wieder komplett sichtbar ist</German>
             <Korean>아이콘이 레이더에서 페이드인 되는 시간 설정</Korean>
             <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
             <Russian>Устанавливает время появления иконок на радаре.</Russian>
@@ -1288,7 +1293,7 @@
             <Chinese>行間距</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Vertikaler Padding Modifikator</German>
+            <German>Vertikaler Abstand</German>
             <Korean>수직여백 설정</Korean>
             <Japanese>行間の余白</Japanese>
             <Polish>Współczynnik odstępu w pionie</Polish>
@@ -1303,7 +1308,7 @@
             <Chinese>設置名單列表的行間距</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Setzt das vertikale Padding der einzelnen Einheiteneinträge in der Namensliste</German>
+            <German>Setzt den vertikalen Abstand zwischen den Einträgen der einzelnen Einträge in der Namensliste</German>
             <Korean>이름목록의 줄간격을 설정합니다</Korean>
             <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
             <Polish>Ustawia odstęp w pionie pomiędzy kolejnymi wpisami na liście graczy w drużynie.</Polish>
@@ -1318,7 +1323,7 @@
             <Chinese>默認隱藏UI</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>UI von Anfang an verbergen</German>
+            <German>UI standardmäßig ausblenden</German>
             <Korean>기본으로 UI를 숨깁니다</Korean>
             <Japanese>標準で UI を非表示</Japanese>
             <Polish>Domyślne ukrywanie interfejsu.</Polish>
@@ -1333,7 +1338,7 @@
             <Chinese>設置關爲切換UI顯示的默認狀態</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen standardmäßig auf aus</German>
+            <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen, standardmäßig auf aus</German>
             <Korean>UI를 기본적으로 꺼짐으로 표시하도록 토글을 설정합니다.</Korean>
             <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
             <Polish>Włącza domyślne ukrywanie interfejsu.</Polish>
@@ -1348,7 +1353,7 @@
             <Chinese>按住以顯示/隱藏UI</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Halten um UI an oder auszuschalten</German>
+            <German>Halten um UI ein-/auszublenden</German>
             <Korean>UI표시 (홀드)</Korean>
             <Japanese>長押しで UI の表示/非表示</Japanese>
             <Polish>Przytrzymaj by pokazać/ukryć interfejs.</Polish>
@@ -1361,7 +1366,7 @@
             <English>Hide When Group Leader</English>
             <Chinesesimp>为班长时隐藏名单列表</Chinesesimp>
             <Chinese>爲班長時隱藏名單列表</Chinese>
-            <German>Vestecke wenn Gruppenführer</German>
+            <German>Verstecke, wenn Gruppenführer</German>
             <Korean>분대장일때 숨기기</Korean>
             <Japanese>グループ リーダー時は非表示</Japanese>
             <Polish>Ukryj gdy jesteś dowódcą drużyny.</Polish>
@@ -1371,10 +1376,10 @@
             <Spanish>Ocultar cuando el líder del grupo</Spanish>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
-            <English>Hides the namelist if you are a the current group leader. Used for people who prefer the vanilla squad bar</English>
+            <English>Hides the namelist if you are the current group leader. Used for people who prefer the vanilla squad bar</English>
             <Chinesesimp>作为班长时隐藏名单列表。给习惯使用原版班组指挥栏的人使用的。</Chinesesimp>
             <Chinese>作爲班長時隱藏名單列表。給習慣使用原版班組指揮欄的人使用的。</Chinese>
-            <German>Versteckt die Namensliste, wenn man der zur Zeitige Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
+            <German>Versteckt die Namensliste, wenn man aktuell Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
             <Korean>분대장일때 이름목록을 숨깁니다. 바닐라 분대표시를 선호하는 사람들이 사용합니다</Korean>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
             <Polish>Ukrywa listę imion, gdy jesteś dowódcą drużyny. Przeznaczone dla osób, które wolą domyślny pasek drużyny.</Polish>
@@ -1492,7 +1497,7 @@
             <English>Show SQL Always First</English>
             <Chinesesimp>总是优先显示班长</Chinesesimp>
             <Chinese>總是優先顯示班長</Chinese>
-            <German>Gruppenführer immer als erster</German>
+            <German>Gruppenführer immer zuerst</German>
             <Polish>Dowódca drużyny zawsze pierwszy.</Polish>
             <Portuguese>Sempre mostrar líder primeiro</Portuguese>
             <Korean>분대장 상위 표시</Korean>
@@ -1505,7 +1510,7 @@
             <English>Shows the squad leader always as first unit</English>
             <Chinesesimp>总是将班长作为第一个单位显示</Chinesesimp>
             <Chinese>總是將班長作爲第一個單位顯示</Chinese>
-            <German>Zeigt den Gruppenführer immer als Erster in der Liste an</German>
+            <German>Zeigt den Gruppenführer immer als ersten in der Liste an</German>
             <Polish>Zawsze pokazuje dowódcę drużyny jako pierwszego na liście.</Polish>
             <Portuguese>Sempre mostrará o líder de esquadrão como primeira unidade.</Portuguese>
             <Korean>분대장이 항상 상위에 표시됩니다</Korean>
@@ -1530,7 +1535,7 @@
             <English>Server needs to run DUI in order to have synchronicity!</English>
             <Chinesesimp>服务器需要运行DUI来进行同步</Chinesesimp>
             <Chinese>服務器需要運行DUI來進行同步</Chinese>
-            <German>Der Server muss DUI geladen haben um Synchronität zu garantieren!</German>
+            <German>Der Server muss DUI geladen haben, um Synchronität zu garantieren!</German>
             <Polish>Serwer musi mieć włączone DUI by zapewnić synchronizację.</Polish>
             <Portuguese>O servidor precisa carregar DUI para haver sincronia</Portuguese>
             <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
@@ -1543,8 +1548,8 @@
             <German>Synchronisiere Einheiten in der Gruppe</German>
         </Key>
         <Key ID="STR_dui_radar_syncGroup_desc">
-            <English>Will sync the order of units in a player&apos;s group if sort type is set to &quot;None&quot;. Only works in MP, every player must have DUI loaded for this to work properly</English>
-            <German>Snychronisiert die Anordnung der Einheiten in der Gruppe wenn die Sortierung auf &quot;Kein&quot; gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen damit dies korrekt funktioniert</German>
+            <English>Will sync the order of units in a player&apos;s group if sort type is set to &quot;None&quot;. Only works in MP and every player must have DUI loaded for this to work properly</English>
+            <German>Synchronisiert die Reihenfolge der Einheiten in der Gruppe, wenn die Sortierung auf &quot;Kein&quot; gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen, damit dies korrekt funktioniert</German>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1584,7 +1589,7 @@
             <Chinese>標准</Chinese>
             <!-- <Czech></Czech> -->
             <!-- <French></French> -->
-            <German>Standart</German>
+            <German>Standard</German>
             <Korean>표준</Korean>
             <Japanese>通常</Japanese>
             <Polish>Standardowy</Polish>
@@ -2031,7 +2036,7 @@
             <Japanese>階級、名前</Japanese>
             <Russian>Звание, Имена</Russian>
             <Turkish>Rütbe, İsimler</Turkish>
-            <Spanish>Rango, Nombres</SPanish>
+            <Spanish>Rango, Nombres</Spanish>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle">
             <English>Group Icons by Vehicle</English>
@@ -2106,7 +2111,7 @@
             <English>Show icon when units speak</English>
             <Chinesesimp>当单位说话时显示图标</Chinesesimp>
             <Chinese>当单位说话时显示图标</Chinese>
-            <German>Zeige Icon an wenn jemand spricht</German>
+            <German>Zeige Icon, wenn jemand spricht</German>
             <Russian>Показывать иконку при разговоре</Russian>
             <Japanese>ユニット発話時はアイコン表示</Japanese>
             <Turkish>Konuşan Kişi İkonu</Turkish>
@@ -2116,7 +2121,7 @@
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
             <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
             <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
-            <German>Zeigt eine Sprachbox an wenn eine Einheit mit ACRE oder TFAR spricht</German>
+            <German>Zeigt eine Sprachbox an, wenn eine Einheit mit ACRE oder TFAR spricht</German>
             <Russian>Показывать иконку разговора, когда юнит говорит используя ACRE или TFAR</Russian>
             <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
             <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
@@ -2136,7 +2141,7 @@
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
             <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
             <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
-            <German>Zeigt die Himmelsrichtungen auf dem Kompass an wenn du einen hast. Es werden keine Himmelsrichtungen angezeigt auch wenn man einen Kompass hat, wenn dieses Setting ausgeschalten ist</German>
+            <German>Zeigt die Himmelsrichtungen auf dem Kompass an, wenn du einen hast. Wenn deaktiviert, werden keine Himmelsrichtungen angezeigt, auch wenn man einen Kompass hat</German>
             <Japanese>コンパスを所持時は方位基点を表示します。無効化すると、コンパスを所持していても表示されなくなります。</Japanese>
             <Russian>Показывает кардинальные точки на радаре, если у вас есть компас. Если отключено, кардинальные точки не будут отображаться даже при наличии компаса в инвентаре.</Russian>
             <Turkish>Eğer bir pusulaya sahipseniz radarda kardinal noktaları gösterir. Bu ayar kapalıyken envanterda pusula varken bile kardinal noktalar gösterilmez</Turkish>
@@ -2166,7 +2171,7 @@
             <English>Speaking icon on radio messages only</English>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
-            <German>Sprachicon nur bei Radionachrichten</German>
+            <German>Sprachicon nur bei Funknachrichten</German>
             <Japanese>無線通信時のみ発話アイコン表示</Japanese>
             <Russian>Иконка разговора только в радио сообщениях</Russian>
             <Turkish>Sadece Telsiz İçin Konuşma İkonu</Turkish>
@@ -2176,7 +2181,7 @@
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
-            <German>Das Sprachicon wird nur angezeigt wenn man über ein Radio kommuniziert und nicht wenn lokal gesprochen wird</German>
+            <German>Das Sprachicon wird nur angezeigt, wenn man über ein Funkgerät kommuniziert, nicht aber, wenn lokal gesprochen wird</German>
             <Japanese>無線通信時のみ発話アイコンを表示します。直接会話時は表示されません。</Japanese>
             <Russian>Значок разговора появляется только при приеме или разговоре по радио, но не при локальном разговоре с другим человеком.</Russian>
             <Turkish>Konuşma ikonu sadece telsiz konuşmalarında kullanılır, birisi etrafındakilerle konuşurken aktive olmaz</Turkish>
@@ -2196,7 +2201,7 @@
             <English>Choose whether to show medics by vanilla trait or ACE variable</English>
             <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
             <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
-            <German>Auswahl, ob Sanitäter anhand der Basisspiel Logik oder per ACE Medical Logik angezeigt werden soll</German>
+            <German>Auswahl, ob Sanitäter anhand der Vanilla Logik oder per ACE Medical Variable angezeigt werden soll</German>
             <Japanese>衛生兵ユニットを表示するときにゲーム標準の衛生兵か、ACE 3 で指定された衛生兵のどちらを元にするか設定できます。</Japanese>
             <Russian>Выберите, показывать ли медиков по ванильному признаку или по переменной ACE</Russian>
             <Turkish>Sıhhiyeler ACE ayarlarına göre mi vanilya ayarlara göre mi belirlensin?</Turkish>

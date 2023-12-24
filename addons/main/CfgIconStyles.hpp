@@ -71,4 +71,19 @@ class diwako_dui_icon_style
         explosive_specialist = QPATHTO_T(UI\icon_styles\clones\icon_grenadier.paa);
         rifleman = QPATHTO_T(UI\icon_styles\clones\icon_rifleman.paa);
     };
+
+    class everlight:standard
+    {
+        name = "$STR_dui_icon_everlight";
+
+        sql = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManLeader_ca.paa);
+        medic = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManMedic_ca.paa);
+        auto_rifleman = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManMG_ca.paa);
+        at_gunner = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManAT_ca.paa);
+        engineer = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManEngineer_ca.paa);
+        explosive_specialist = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconManExplosive_ca.paa);
+        rifleman = QPATHTO_T(UI\icon_styles\everlight\Everlight_iconMan_ca.paa);
+
+        buddy_compass = QPATHTO_T(UI\icon_styles\everlight\Everlight_buddy_compass.paa);
+    };
 };

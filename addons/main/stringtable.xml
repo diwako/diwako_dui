@@ -1837,6 +1837,9 @@
             <Russian>Копии</Russian>
             <Turkish>Klonlar</Turkish>
         </Key>
+        <Key ID="STR_dui_icon_everlight">
+            <English>Everlight</English>
+        </Key>
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">
             <English>Bohemia Interactive</English>

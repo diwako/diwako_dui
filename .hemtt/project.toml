@@ -1,0 +1,43 @@
+name = "DUI Squad Radar"
+prefix = "diwako_dui"
+author = "Diwako"
+mainprefix = "z"
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "mod.cpp",
+    "authors.txt",
+    "license.txt",
+    "logolarge.paa",
+    "logosmall.paa"
+]
+exclude = [
+    "*.psd",
+    "*.png",
+    "*.tga"
+]
+
+[hemtt.launch.default]
+workshop = [
+    "450814997", # CBA_A3's Workshop ID
+    "463939057"  # ACE3
+]
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+    "-world=empty",
+    "-filePatching",
+    "C:\\Users\\diwako\\Documents\\Arma 3\\missions\\dui.VR\\mission.sqm", # Launch into existing Editor Mission - \\ needed
+]
+
+[hemtt.signing]
+authority = "diwako_dui"
+
+[hemtt.release]
+folder = "diwako_dui"

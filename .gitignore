@@ -3,6 +3,7 @@
 
 hemtt\.exe
 armake2\.exe
+.hemttout/
 keys/
 releases/
 *.pbo
@@ -17,3 +18,5 @@ keys/*
 *.sqfc
 *.bat
 *.dll
+
+.vscode/*

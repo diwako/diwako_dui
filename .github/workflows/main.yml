@@ -3,50 +3,64 @@ name: CI
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the source code
-      uses: actions/checkout@master
-    - name: Validate SQF
-      run: python3 tools/sqf_validator.py
-    - name: Validate Config
-      run: python3 tools/config_style_checker.py
-    - name: Check for BOM
-      uses: arma-actions/bom-check@master
+      - name: Checkout the source code
+        uses: actions/checkout@master
+      - name: Validate SQF
+        run: python3 tools/sqf_validator.py
+      - name: Validate Config
+        run: python3 tools/config_style_checker.py
+      - name: Check for BOM
+        uses: arma-actions/bom-check@master
 
   lint:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the source code
-      uses: actions/checkout@master
-    - name: Lint (sqflint)
-      uses: jokoho48/sqflint@master
-      continue-on-error: true # No failure due to many false-positives
-    - uses: actions/upload-artifact@master
-      with:
-       name: 'sqfLint Log'
-       path: 'sqf.log'
-    - name: Validate SQFLinter Logs
-      run: python3 tools/sqf_linter_LogChecker.py
+      - name: Checkout the source code
+        uses: actions/checkout@master
+      - name: Lint (sqflint)
+        uses: jokoho48/sqflint@master
+        continue-on-error: true # No failure due to many false-positives
+      - uses: actions/upload-artifact@master
+        with:
+          name: "sqfLint Log"
+          path: "sqf.log"
+      - name: Validate SQFLinter Logs
+        run: python3 tools/sqf_linter_LogChecker.py
 
   stringtables:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Python packages
-      run: |
-        pip3 install wheel
-        pip3 install setuptools
-        pip3 install pygithub
-        pip3 install pygithub3
-    - name: Checkout the source code
-      uses: actions/checkout@master
-    - name: Update Translation issue
-      if: github.repository == 'diwako/diwako_dui' && github.ref	== 'refs/heads/master' && ! contains(github.event.head_commit.message, '[ci skip]')
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python3 tools/stringtableDeploy.py
+      - name: Install Python packages
+        run: |
+          pip3 install wheel
+          pip3 install setuptools
+          pip3 install pygithub
+          pip3 install pygithub3
+      - name: Checkout the source code
+        uses: actions/checkout@master
+      - name: Update Translation issue
+        if: github.repository == 'diwako/diwako_dui' && github.ref	== 'refs/heads/master' && ! contains(github.event.head_commit.message, '[ci skip]')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/stringtableDeploy.py
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT build
+        run: hemtt release
+      # - name: Upload Release
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #       name: my-mod-latest
+      #       path: release/my-mod-latest.zip

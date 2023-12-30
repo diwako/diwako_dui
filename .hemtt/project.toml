@@ -36,6 +36,3 @@ authority = "diwako_dui"
 
 [hemtt.release]
 folder = "diwako_dui"
-
-[asc]
-enabled = false

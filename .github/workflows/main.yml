@@ -57,6 +57,8 @@ jobs:
       - uses: actions/checkout@master
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
+        with:
+          version: 'v1.10.2'
       - name: Run HEMTT build
         run: hemtt release
       # - name: Upload Release

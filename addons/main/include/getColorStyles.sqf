@@ -27,7 +27,7 @@ private _getColorFromHex = {
     private _namespace = [] call CBA_fnc_createNamespace;
     private _configName = configName _x;
     _colorIdent pushBack _configName;
-    _colorNames pushback getText (_x >> "name");
+    _colorNames pushBack getText (_x >> "name");
 
     _namespace setVariable ["main", getText (_x >> "white")];
     ["main", _namespace getVariable "main"] call _getColorFromHex;
@@ -60,7 +60,7 @@ _namespace setVariable ["yellow", "#FFFF00"];
 GVAR(colors_custom) = _namespace;
 
 // ACE name tags support
-if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+if (isClass (configFile >> "CfgPatches" >> "ace_nametags")) then {
     // ace nametags is also loaded, provide ace nametag colors as well
     _namespace = missionNamespace getVariable QGVAR(colors_ace);
     if (isNil "_namespace") then {

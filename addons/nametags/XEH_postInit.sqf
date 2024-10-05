@@ -7,7 +7,7 @@ GVAR(targetedFade) = 1;
 call FUNC(cacheLoop);
 
 player setVariable [QGVAR(name), name player];
-player setVariable [QGVAR(groupName), groupID (group player)];
+player setVariable [QGVAR(groupName), groupId (group player)];
 
 // Create UI
 ([QUOTE(ADDON)] call BIS_fnc_rscLayer) cutRsc [QUOTE(ADDON), "PLAIN", 1, false];

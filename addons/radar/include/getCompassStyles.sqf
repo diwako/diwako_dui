@@ -8,6 +8,6 @@ private _compassNames = [];
 private _compassPaths = [];
 
 {
-    _compassNames pushback getText (_x >> "name");
+    _compassNames pushBack getText (_x >> "name");
     _compassPaths pushBack [getText (_x >> "limited"), getText (_x >> "full")];
 } forEach (_configs + _missionConfigs);

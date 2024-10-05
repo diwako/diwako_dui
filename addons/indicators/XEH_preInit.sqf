@@ -84,7 +84,7 @@ GVAR(drawEh) = -1;
     ,false
 ] call CBA_fnc_addSetting;
 
-if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+if (isClass (configFile >> "CfgPatches" >> "ace_nametags")) then {
     [
         QGVAR(useACENametagsRange)
         ,"CHECKBOX"
@@ -106,7 +106,7 @@ private _curCat = localize "STR_dui_cat_icons";
     ,true
 ] call CBA_fnc_addSetting;
 
-if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
+if (isClass(configFile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     [
         QGVAR(icon_buddy)
         ,"CHECKBOX"

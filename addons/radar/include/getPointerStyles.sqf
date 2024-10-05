@@ -13,6 +13,6 @@ GVAR(pointerPaths) = [] call CBA_fnc_createNamespace;
 
 {
     _pointerClasses pushBack (configName _x);
-    _pointerNames pushback getText (_x >> "name");
+    _pointerNames pushBack getText (_x >> "name");
     GVAR(pointerPaths) setVariable [(configName _x), getText (_x >> "file")];
 } forEach (_configs + _missionConfigs);

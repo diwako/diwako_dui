@@ -119,7 +119,7 @@ GVAR(availableFonts) = [
     }
 ] call CBA_fnc_addSetting;
 
-if (isClass(configfile >> "CfgPatches" >> "ace_interact_menu")) then {
+if (isClass(configFile >> "CfgPatches" >> "ace_interact_menu")) then {
     [
         "diwako_dui_ace_hide_interaction"
         ,"CHECKBOX"
@@ -238,7 +238,7 @@ GVAR(radioModSpectator) = configFile call {
     [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;
 }, true] call CBA_fnc_addPlayerEventHandler;
 
-if (isClass (configfile >> "CfgPatches" >> "ace_nametags")) then {
+if (isClass (configFile >> "CfgPatches" >> "ace_nametags")) then {
     ["CBA_SettingChanged", {
         params ["_setting", "_value"];
         switch (_setting) do {

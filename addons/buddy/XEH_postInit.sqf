@@ -8,11 +8,11 @@ private _range = 10;
 if (isNil "ace_interact_menu_fnc_createAction") then {
     [[_labelAdd, {
         [player, cursorObject] call FUNC(pairBuddies);
-    }, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable ['%2', objNull]) isNotEqualTo cursorObject}}", _range, QGVAR(buddy)]]] call CBA_fnc_addPlayerAction;
+    }, [], -5000, false, true, "", format ["cursorObject distance2D player <= %1 && {cursorObject in (units group player) && {(player getVariable ['%2', objNull]) isNotEqualTo cursorObject}}", _range, QGVAR(buddy)]]] call CBA_fnc_addPlayerAction;
 
     [[_labelRemove, {
         [player, cursorObject, false] call FUNC(pairBuddies);
-    }, [], -5000, false, true, "", format ["cursorObject distance2d player <= %1 && {cursorObject in (units group player) && {(player getVariable ['%2', objNull]) isEqualTo cursorObject}}", _range, QGVAR(buddy)]]] call CBA_fnc_addPlayerAction;
+    }, [], -5000, false, true, "", format ["cursorObject distance2D player <= %1 && {cursorObject in (units group player) && {(player getVariable ['%2', objNull]) isEqualTo cursorObject}}", _range, QGVAR(buddy)]]] call CBA_fnc_addPlayerAction;
 } else {
     // root
     private _action = [QGVAR(buddy_action), _labelAdd, "", {

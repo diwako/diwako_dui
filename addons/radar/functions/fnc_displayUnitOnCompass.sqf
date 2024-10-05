@@ -36,7 +36,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         _unit setVariable ["diwako_dui_unit_id", _unitID];
     };
 
-    private _distance = (getPosVisual _player) distance2d (getPosVisual _unit);
+    private _distance = (getPosVisual _player) distance2D (getPosVisual _unit);
     private _alpha = 0;
     private _relDir = 0;
     if (_distance <= _circleRange) then {
@@ -130,7 +130,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
             _unit setVariable [QGVAR(occlusion_alpha), _occlusionAlpha];
         };
 
-        _usedCtrls pushback _ctrl;
+        _usedCtrls pushBack _ctrl;
     };
 } forEach _grp;
 

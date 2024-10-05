@@ -25,7 +25,7 @@ if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
 };
 
 if (GVAR(group_by_vehicle)) then {
-    private _newGrp = _group apply { [objectParent _x, [1,0] select ((driver vehicle _x) isEqualTo _x), _x] };
+    private _newGrp = _group apply { [objectParent _x, parseNumber !((driver vehicle _x) isEqualTo _x), _x] };
     _newGrp sort true;
     _newGrp = _newGrp apply { _x select 2 };
 
@@ -70,9 +70,9 @@ if (_specialTrack isEqualType [] && {_specialTrack isNotEqualTo []}) then {
                     private _type = (typeOf _x);
                     private _picture = _vehNamespace getVariable _type;
                     if (isNil "_picture") then {
-                        _picture = getText (configfile >> "CfgVehicles" >> _type >> "icon");
-                        if (isText (configfile >> "CfgVehicleIcons" >> _picture)) then {
-                            _picture = getText (configfile >> "CfgVehicleIcons" >> _picture);
+                        _picture = getText (configFile >> "CfgVehicles" >> _type >> "icon");
+                        if (isText (configFile >> "CfgVehicleIcons" >> _picture)) then {
+                            _picture = getText (configFile >> "CfgVehicleIcons" >> _picture);
                         } else {
                             private _found = (toLower _picture) find ".paa";
                             if (_found isEqualTo -1 || {((count _picture) - 4) isNotEqualTo _found}) then {

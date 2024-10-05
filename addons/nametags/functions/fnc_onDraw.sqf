@@ -88,7 +88,7 @@ if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _t
             _data append ["</t>", "<br/>"];
             _data pushBack format [_tags, GVAR(fontGroup), _colorGroup, (GET_POS_H) * GVAR(fontGroupNameSize), GVAR(groupFontShadow)];
 
-            _data pushBack (_target getVariable [QGVAR(groupName), groupID (group _target)]);
+            _data pushBack (_target getVariable [QGVAR(groupName), groupId (group _target)]);
             _data append ["</t>", "</t>"];
             // TODO(joko): Add Extra Fade for Group?
             _ctrl ctrlSetStructuredText parseText (_data joinString "");

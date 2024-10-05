@@ -28,7 +28,7 @@ if ([_player] call EFUNC(main,canHudBeShown)) then {
         _compassCtrl ctrlShow true;
         _dirCtrl ctrlShow true;
     };
-    private _camDirVec = positionCameratoWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
+    private _camDirVec = positionCameraToWorld [0,0,0] vectorFromTo (positionCameraToWorld [0,0,1]);
     private _dir = _camDirVec call CBA_fnc_vectDir;
     // private _dir = (getCameraViewDirection _player) call CBA_fnc_vectDir;
     private _hasCompass = ([_player] call FUNC(getCompass)) isNotEqualTo "";

@@ -3,7 +3,7 @@
 params ["_unit"];
 
 _unit setVariable [QGVAR(name), name _unit];
-_unit setVariable [QGVAR(groupName), groupID group _unit];
+_unit setVariable [QGVAR(groupName), groupId group _unit];
 
 private _rank = rank _unit;
 private _styledRank = GVAR(RankNames) getOrDefault [_rank, ""];

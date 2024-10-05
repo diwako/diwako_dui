@@ -14,7 +14,7 @@ private _indicatorPaths = [];
     private _namespace = [] call CBA_fnc_createNamespace;
     private _configName = configName _x;
     _indicatorNames pushBack _configName;
-    _indicatorPaths pushback getText (_x >> "name");
+    _indicatorPaths pushBack getText (_x >> "name");
 
     _namespace setVariable ["indicator", getText (_x >> "indicator")];
     _namespace setVariable ["leader", getText (_x >> "leader")];

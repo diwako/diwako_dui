@@ -10,7 +10,7 @@ private _distanceWarning = diwako_dui_distanceWarning;
 private _range = [GVAR(range), GVAR(range_crew)] select (GVAR(crew_range_enabled) && { _player call EFUNC(main,isInCrew) });
 private _size = GVAR(size);
 private _useACE = GVAR(useACENametagsRange);
-private _camPosASL = AGLtoASL positionCameraToWorld [0, 0, 0];
+private _camPosASL = AGLToASL positionCameraToWorld [0, 0, 0];
 private _scaleWithRange = GVAR(range_scale);
 if (GVAR(fov_scale)) then {
     _size =  _size * ((call CBA_fnc_getFov) select 1);
@@ -30,7 +30,7 @@ private _sizeFinal = 0;
     _alpha = _x getVariable [QEGVAR(radar,occlusion_alpha), 1];
     if (_alpha > 0) then {
         _vehTarget = vehicle _x;
-        _iconPos = (ASLtoAGL visiblePositionASL _vehTarget) vectorAdd (if (_vehTarget isEqualTo _x) then {
+        _iconPos = (ASLToAGL visiblePositionASL _vehTarget) vectorAdd (if (_vehTarget isEqualTo _x) then {
             [0, 0, 0.2 + ((_x selectionPosition "pelvis") select 2)]
         } else {
             [0, 0, 0.9]

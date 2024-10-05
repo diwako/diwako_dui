@@ -33,7 +33,7 @@ private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 private _curCat = localize "STR_dui_cat_general";
 
-if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
+if !(isClass(configFile >> "CfgPatches" >> "ace_ui")) then {
     [
         "diwako_dui_show_squadbar"
         ,"CHECKBOX"
@@ -44,9 +44,9 @@ if !(isClass(configfile >> "CfgPatches" >> "ace_ui")) then {
         ,{
             params ["_value"];
             // disable/enable vanilla squadbar
-            private _showHud = shownHUD;
-            _showHud set [6, _value];
-            showHud (_showHud select [0, 8]);
+            private _showHUD = shownHUD;
+            _showHUD set [6, _value];
+            showHUD (_showHUD select [0, 8]);
         }
     ] call CBA_fnc_addSetting;
 };
@@ -83,7 +83,7 @@ if (_acre || _tfar) then {
     GVAR(showSpeaking_replaceIcon) = false;
 };
 
-if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
+if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then {
     [
         QGVAR(ace_medic)
         ,"CHECKBOX"
@@ -386,7 +386,7 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 GVAR(pointers) = [];
-if (isClass(configfile >> "CfgPatches" >> "ace_finger")) then {
+if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     #include "include\getPointerStyles.sqf"
     [
         QGVAR(ace_finger)
@@ -462,7 +462,7 @@ private _curCat = localize "STR_dui_cat_namelist";
     }
 ] call CBA_fnc_addSetting;
 
-if (isClass(configfile >> "CfgPatches" >> "diwako_dui_buddy")) then {
+if (isClass(configFile >> "CfgPatches" >> "diwako_dui_buddy")) then {
     [
         "diwako_dui_namelist_only_buddy_icon"
         ,"CHECKBOX"

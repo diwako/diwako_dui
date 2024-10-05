@@ -12,7 +12,7 @@ private _iconIdent = [];
 
 {
     private _namespace = [] call CBA_fnc_createNamespace;
-    _iconNames pushback getText (_x >> "name");
+    _iconNames pushBack getText (_x >> "name");
     private _configName = configName _x;
     _iconIdent pushBack _configName;
 

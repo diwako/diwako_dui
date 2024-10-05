@@ -264,7 +264,7 @@ private _circleRange = diwako_dui_compassRange;
 
     private _unit = _x;
     private _selected = "";
-    if (_selectedUnits isNotEqualTo [] && {_unit isNotEqualTo _player}) then {
+    if ((GVAR(always_show_unit_numbers) || {_selectedUnits isNotEqualTo []}) && {_unit isNotEqualTo _player}) then {
         private _curName = vehicleVarName _unit;
         _unit setVehicleVarName "";
         private _defaultIdent = str _unit;

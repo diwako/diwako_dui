@@ -418,6 +418,15 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     ] call CBA_fnc_addSetting;
 };
 
+[
+    QGVAR(always_show_unit_numbers)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_always_show_unit_numbers", localize "STR_dui_radar_always_show_unit_numbers_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,false
+    ,false
+] call CBA_fnc_addSetting;
+
 // todo display to change the position in-game (should reset to center of screen)(0.5,0.5)
 // todo keydown or option for ^ (or addAction(resets after use))
 // save it in profileNamespace

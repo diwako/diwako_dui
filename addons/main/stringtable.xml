@@ -2210,5 +2210,11 @@
             <Turkish>Sıhhiyeler ACE ayarlarına göre mi vanilya ayarlara göre mi belirlensin?</Turkish>
             <Spanish>Elija si mostrar a los médicos por rasgo básico o variable ACE</Spanish>
         </Key>
+        <Key ID="STR_dui_radar_always_show_unit_numbers">
+            <English>Always show unit selection number</English>
+        </Key>
+        <Key ID="STR_dui_radar_always_show_unit_numbers_desc">
+            <English>Will always show the unit number the squad leader can use to select a squad member using the function keys</English>
+        </Key>
     </Package>
 </Project>

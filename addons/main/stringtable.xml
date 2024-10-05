@@ -32,19 +32,7 @@
             <Turkish>Font</Turkish>
         </Key>
         <Key ID="STR_dui_font_desc">
-            <English>Which font should be used?</English>
-            <Chinesesimp>使用哪种字体</Chinesesimp>
-            <Chinese>使用哪種字體</Chinese>
-            <Czech>Který font by se měl použít.</Czech>
-            <French>Quel police de charactère doit être utilisé?</French>
-            <German>Welche Schriftart soll verwendet werden?</German>
-            <Korean>사용하는 폰트를 설정합니다.</Korean>
-            <Japanese>使用するフォントを設定します。</Japanese>
-            <Polish>Który font użyć?</Polish>
-            <Portuguese>Qual fonte será usada?</Portuguese>
-            <Spanish>¿Que fuente debe ser usada?</Spanish>
-            <Russian>Какой шрифт следует использовать?</Russian>
-            <Turkish>Kullanılacak font</Turkish>
+            <English>Which font should be used? Warning custom fonts might cause issues!</English>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>

@@ -9,20 +9,14 @@ GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
 
-GVAR(availableFonts) = [
-    "PuristaBold",
-    "PuristaLight",
-    "PuristaMedium",
-    "PuristaSemibold",
-    "RobotoCondensed",
-    "RobotoCondensedBold",
-    "RobotoCondensedLight",
-    "EtelkaMonospacePro",
-    // "EtelkaMonospaceProBold",
-    // "EtelkaNarrowMediumPro",
-    "LCD14"
-    // "TahomaB"
-];
+// Blacklisted fonts
+GVAR(availableFonts) = '!(configName _x in [
+    "EtelkaMonospaceProBold",
+    "EtelkaNarrowMediumPro",
+    "TahomaB",
+    "PixelSplitterBold"
+])' configClasses (configFile >> "CfgFontFamilies") apply {configName _x};
+private _fontIndex = GVAR(availableFonts) findIf {_x isEqualTo "RobotoCondensed"};
 
 [
     "diwako_dui_font"
@@ -32,7 +26,7 @@ GVAR(availableFonts) = [
     ,[
         GVAR(availableFonts),
         GVAR(availableFonts),
-        4
+        _fontIndex
     ]
     ,false
     ,{

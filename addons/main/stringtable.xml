@@ -2065,6 +2065,12 @@
             <Turkish>Eğer grubun birden fazla üyesi aynı araçta ise sadece 1 üye için ikon göster (genelde sürücü)</Turkish>
             <Spanish>Muestra solo un ícono de su escuadrón si varios miembros están en el mismo vehículo, generalmente el conductor</Spanish>
         </Key>
+        <Key ID="STR_dui_radar_enable_seat_icons">
+            <English>Enable Vehicle Seat Icons</English>
+        </Key>
+        <Key ID="STR_dui_radar_enable_seat_icons_desc">
+            <English>When enabled will show if a unit is in a vehicle or not.</English>
+        </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
             <Chinesesimp>指向风格</Chinesesimp>

@@ -1,7 +1,0 @@
-{
-    "inputDirs": ["P:/z/diwako_dui/addons"],
-    "includePaths": ["P:/"],
-    "excludeList": [],
-    "outputDir": "P:/",
-    "workerThreads": 0
-}

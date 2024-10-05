@@ -385,6 +385,15 @@ private _curCat = localize "STR_dui_cat_compass";
     ,false
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enable_seat_icons)
+    ,"CHECKBOX"
+    ,[localize "STR_dui_radar_enable_seat_icons", localize "STR_dui_radar_enable_seat_icons_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+    ,false
+] call CBA_fnc_addSetting;
+
 GVAR(pointers) = [];
 if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     #include "include\getPointerStyles.sqf"

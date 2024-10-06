@@ -10,6 +10,7 @@ if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
 
 private _target = cursorObject;
 private _player = call CBA_fnc_currentUnit;
+private _targetedFade = 1;
 
 if (GVAR(useLIS)) then {
     private _skipVicCheck = (netId _target) isEqualTo "1:0"; // only ever true when cursorObject returns the weapon of a
@@ -42,10 +43,7 @@ if (GVAR(useLIS)) then {
     } forEach _lis;
 };
 
-if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _target}}) then {
-    GVAR(targetedFade) = 1;
-} else {
-
+if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _target}}) then {
     private _effectiveCommander = effectiveCommander _target;
     if !(isNull _effectiveCommander) then {
         _target = _effectiveCommander;
@@ -59,8 +57,8 @@ if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _t
         _targetSide isEqualTo _playerSide;
     };
     if (_target isKindOf "AllVehicles" && {_areFriendly}) then {
-        GVAR(targetedFade) = [_target, _player] call FUNC(calculateFadeValue);
-        if (GVAR(targetedFade) < 1) then {
+        _targetedFade = (([_target, _player] call FUNC(calculateFadeValue)) min 1) max 0;
+        if (_targetedFade < 1) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color
             private _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"]; // Other Group Default Color
             if ((group _target) isEqualTo (group _player)) then {
@@ -93,17 +91,8 @@ if (isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _t
             // TODO(joko): Add Extra Fade for Group?
             _ctrl ctrlSetStructuredText parseText (_data joinString "");
         };
-    } else {
-        GVAR(targetedFade) = 1;
     };
 };
 
-GVAR(targetedFade) = (GVAR(targetedFade) min 1) max 0;
-
-private _fadeIn = GVAR(targetedFade) <= ctrlFade _ctrl;
-_ctrl ctrlSetFade GVAR(targetedFade);
-if (_fadeIn) then {
-    _ctrl ctrlCommit GVAR(fadeInTime);
-} else {
-    _ctrl ctrlCommit GVAR(fadeOutTime);
-};
+_ctrl ctrlSetFade _targetedFade;
+_ctrl ctrlCommit ([GVAR(fadeOutTime), GVAR(fadeInTime)] select (_targetedFade <= ctrlFade _ctrl));

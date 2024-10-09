@@ -2059,6 +2059,9 @@
         <Key ID="STR_dui_radar_enable_seat_icons_desc">
             <English>When enabled will show if a unit is in a vehicle or not.</English>
         </Key>
+        <Key ID="STR_dui_radar_enable_seat_icons_sameVehicle">
+            <English>Only in the same vehicle</English>
+        </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
             <Chinesesimp>指向风格</Chinesesimp>

@@ -1,0 +1,31 @@
+respawn = BASE;
+respawnDelay = 10;
+respawnDialog = 0;
+
+// === DO NOT EDIT BELOW
+
+showGPS = 1;
+showMap = 1;
+showWatch = 1;
+showCompass = 1;
+joinUnassigned = 1;
+allowFunctionsLog = 0;
+onLoadIntroTime = 0;
+enableItemsDropping = 0;
+onLoadMissionTime = 0;
+
+// Debug (and CBA target debug)
+enableDebugConsole = 1;
+enableTargetDebug = 1;
+
+// Clean up settings
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 150;
+corpseRemovalMaxTime = 600;
+
+wreckManagerMode = 1;
+wreckLimit = 10;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 800;
+minPlayerDistance = 80;

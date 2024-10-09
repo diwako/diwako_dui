@@ -1,0 +1,13 @@
+// force force diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
+// force force diwako_dui_nametags_deadRenderDistance = 3.5;
+// force force diwako_dui_nametags_drawRank = false;
+// force force diwako_dui_nametags_enabled = true;
+// force force diwako_dui_nametags_enableFOVBoost = false;
+// force force diwako_dui_nametags_enableOcclusion = false;
+// force force diwako_dui_nametags_groupColor = [1,1,1,1];
+// force force diwako_dui_nametags_groupNameOtherGroupColor = [0.6,0.85,0.6,1];
+// force force diwako_dui_nametags_nameOtherGroupColor = [0.2,1,0,1];
+// force force diwako_dui_nametags_renderDistance = 15;
+// force force diwako_dui_nametags_showUnconAsDead = true;
+// force force diwako_dui_nametags_useLIS = true;
+// force force diwako_dui_nametags_useSideIsFriendly = true;

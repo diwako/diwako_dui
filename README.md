@@ -98,7 +98,7 @@ Tell in detail what your PR will change, why it should be added and what benefit
 
 # Building
 
-Use the [latest version of Hemtt](https://github.com/BrettMayson/HEMTT/releases/tag/v1.13.0) to build this project.
+Use the [latest version of Hemtt](https://github.com/BrettMayson/HEMTT/releases/tag/v1.13.1) to build this project.
 After installing Hemtt, you can build this project using `hemtt dev` or `hemtt build`.
 
 To test your changes and such, you can launch Arma directly using `hemtt launch`.

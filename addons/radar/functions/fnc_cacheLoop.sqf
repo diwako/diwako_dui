@@ -13,14 +13,15 @@ if (GVAR(syncGroup) && {isMultiplayer && {GVAR(sortType) isEqualTo "none" && {lo
 
 // if both compass and namelist are not enabled, just remove the controls if there are any
 if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
-    for "_i" from 0 to (count GVAR(namebox_lists)) do {
+    {
         ctrlDelete ctrlParentControlsGroup (GVAR(namebox_lists) deleteAt 0);
-    };
+    } forEach GVAR(namebox_lists);
     "diwako_dui_namebox" cutRsc ["diwako_dui_RscNameBox","PLAIN", 0, true];
 };
 
 _group = (group _player) getVariable [QGVAR(syncGroup), _group];
-if (diwako_dui_compass_hide_blip_alone_group && {(count _group) <= 1}) then {
+private _isAloneInGroup = (count _group) <= 1;
+if (diwako_dui_compass_hide_blip_alone_group && {_isAloneInGroup}) then {
     _group = [];
 };
 
@@ -168,10 +169,10 @@ private _lists = GVAR(namebox_lists);
 
 // delete all name list controls if not active
 if (!diwako_dui_namelist || {GVAR(namelist_hideWhenLeader) && (leader _player) isEqualTo _player}) exitWith {
-    if ((count _lists) > 0) then {
-        for "_i" from (count _lists) -1 to 0 step -1 do {
-            ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
-        };
+    if (_lists isNotEqualTo []) then {
+        {
+            ctrlDelete ctrlParentControlsGroup (_lists deleteAt _forEachIndex);
+        } forEachReversed _lists;
         "diwako_dui_namebox" cutText ["","PLAIN"];
     };
 };
@@ -208,12 +209,10 @@ ctrlPosition _grpCtrl params ["", "", "", "_height"];
 private _curNameListHeight = (_height / pixelH) - ((15 * _uiScale) max 15);
 
 // no need to show any names if you are alone in the group
-if (count _group <= 1) exitWith {
-    if ((count _lists) > 0) then {
-        for "_i" from (count _lists) -1 to 0 step -1 do {
-            ctrlDelete ctrlParentControlsGroup (_lists deleteAt _i);
-        };
-    };
+if (_isAloneInGroup) exitWith {
+    {
+        ctrlDelete ctrlParentControlsGroup (_lists deleteAt _forEachIndex);
+    } forEachReversed _lists;
 };
 if !(ctrlShown _grpCtrl) then {
     _grpCtrl ctrlShow true;

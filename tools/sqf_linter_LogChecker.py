@@ -1,7 +1,7 @@
 import sys
 import os
 
-defaultFalsePositives = 38 # Change 0 to Current number of false positives
+defaultFalsePositives = 42 # Change 0 to Current number of false positives
 def main():
     f = open("sqf.log", "r")
     log = f.readlines()

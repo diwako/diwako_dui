@@ -2,8 +2,6 @@
 
 if !(hasInterface) exitWith {};
 
-GVAR(targetedFade) = 1;
-
 call FUNC(cacheLoop);
 
 player setVariable [QGVAR(name), name player];

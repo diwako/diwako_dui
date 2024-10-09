@@ -14,23 +14,17 @@ include = [
     "authors.txt",
     "license.txt",
     "logolarge.paa",
-    "logosmall.paa"
+    "logosmall.paa",
 ]
-exclude = [
-    "*.psd",
-    "*.png",
-    "*.tga"
-]
+exclude = ["*.psd", "*.png", "*.tga"]
 
 [hemtt.launch.default]
 workshop = [
     "450814997", # CBA_A3's Workshop ID
-    "463939057"  # ACE3
+    "463939057", # ACE3
 ]
-parameters = [
-    "-world=empty",
-    "C:\\Users\\diwako\\Documents\\Arma 3\\missions\\dui.VR\\mission.sqm", # Launch into existing Editor Mission - \\ needed
-]
+parameters = ["-world=empty"]
+mission = "dui.vr"
 
 [hemtt.signing]
 authority = "diwako_dui"

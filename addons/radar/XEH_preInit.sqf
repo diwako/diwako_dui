@@ -387,10 +387,10 @@ private _curCat = localize "STR_dui_cat_compass";
 
 [
     QGVAR(enable_seat_icons)
-    ,"CHECKBOX"
+    ,"LIST"
     ,[localize "STR_dui_radar_enable_seat_icons", localize "STR_dui_radar_enable_seat_icons_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
+    ,[[0, 1, 2], [localize "STR_dui_show_dir_opt1", localize "STR_dui_radar_enable_seat_icons_sameVehicle", localize "STR_dui_show_dir_opt3"], 2]
     ,false
 ] call CBA_fnc_addSetting;
 

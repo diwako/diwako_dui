@@ -52,7 +52,7 @@ private _speakingArray = ["", EGVAR(main,speakingIcon), EGVAR(main,speakingRadio
 {
     if (alive _x) then {
         _x setVariable [QGVAR(compass_icon), [_x, _iconNamespace, _player, true] call FUNC(getIcon)];
-        _x setVariable [QGVAR(icon), [_x, _iconNamespace] call FUNC(getIcon)];
+        _x setVariable [QGVAR(icon), [_x, _iconNamespace, _player] call FUNC(getIcon)];
     };
 } forEach _group;
 

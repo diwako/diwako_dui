@@ -99,12 +99,14 @@ private _curCat = localize "STR_dui_cat_general";
 
 private _curCat = "STR_dui_cat_fonts";
 
+private _fontNameIndex = EGVAR(main,availableFonts) findIf {_x isEqualTo "RobotoCondensedBold"};
+private _fontGroupIndex = EGVAR(main,availableFonts) findIf {_x isEqualTo "RobotoCondensedLight"};
 [
     QGVAR(fontName),
     "LIST",
     ["STR_dui_nametags_nameFont", "STR_dui_nametags_nameFont_desc"],
     [_cat, _curCat],
-    [EGVAR(main,availableFonts), EGVAR(main,availableFonts), 5],
+    [EGVAR(main,availableFonts), EGVAR(main,availableFonts), _fontNameIndex],
     false
 ] call CBA_fnc_addSetting;
 
@@ -113,7 +115,7 @@ private _curCat = "STR_dui_cat_fonts";
     "LIST",
     ["STR_dui_nametags_groupNameFont", "STR_dui_nametags_groupNameFont_desc"],
     [_cat, _curCat],
-    [EGVAR(main,availableFonts), EGVAR(main,availableFonts), 6],
+    [EGVAR(main,availableFonts), EGVAR(main,availableFonts), _fontGroupIndex],
     false
 ] call CBA_fnc_addSetting;
 

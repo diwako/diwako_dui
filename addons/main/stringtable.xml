@@ -1453,7 +1453,6 @@
             <Spanish>Tenga en cuenta que el valor alfa no hará nada!</Spanish>
             <Russian>Имейте в виду, что альфа-значение ничего не изменит!</Russian>
             <Turkish>Uyarı: Alpha (saydamlık) değerinin bir etkisi yok!</Turkish>
-            <Spanish>Tenga en cuenta que el valor alfa no hará nada</Spanish>
         </Key>
         <Key ID="STR_dui_radar_leading_zeroes">
             <English>Leading Zeroes</English>

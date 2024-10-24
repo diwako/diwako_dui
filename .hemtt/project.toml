@@ -31,3 +31,6 @@ authority = "diwako_dui"
 
 [hemtt.release]
 folder = "diwako_dui"
+
+[lints.stringtables.sorted]
+enabled = false

@@ -9,6 +9,7 @@
             <Japanese>ネームタグ</Japanese>
             <Russian>Именные жетоны</Russian>
             <Turkish>İsimler</Turkish>
+            <French>Badges d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_enabled">
             <English>Enable Nametags</English>
@@ -18,6 +19,7 @@
             <Japanese>ネームタグを有効化</Japanese>
             <Russian>Включить именные жетоны</Russian>
             <Turkish>İsimleri Göster</Turkish>
+            <French>Activer les badges</French>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion">
             <English>Enable Nametag Occlusion</English>
@@ -27,6 +29,7 @@
             <Japanese>ネームタグのオクルージョンを有効化</Japanese>
             <Russian>Включить окклюзию именных жетонлов</Russian>
             <Turkish>İsimlerde 'Occlusion' Efekti</Turkish>
+            <French>Activer l'occlusion du badge</French>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion_desc">
             <English>When Occlusion is Enabled, the Nametags check how Visible a Unit is and Reduces the Transparency of the Nametag based on this value</English>
@@ -36,6 +39,7 @@
             <Japanese>有効化すると、ネームタグはユニットの視認性を確認するようになり、状況によってはネームタグの透明度を変更します。</Japanese>
             <Russian>Когда окклюзия включена, именные жетоны проверяют, насколько заметен Юнит и, в зависимости от этого, уменьшают прозрачность именного жетона.</Russian>
             <Turkish>İsmi gözüken kişinin görünebilirliğine göre ismin şeffaflığını ayarlar</Turkish>
+            <French>Lorsque l'occlusion est activée, les badges vérifient la visibilité d'une unité et réduisent la transparence du badge en fonction de cette valeur.</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime">
             <English>Fade In Time</English>
@@ -45,6 +49,7 @@
             <Japanese>表示時間</Japanese>
             <Russian>Время появления</Russian>
             <Turkish>Opaklaşma Süresi</Turkish>
+            <French>Temps d'affichage</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime_desc">
             <English>The time the Nametag takes to Fade in</English>
@@ -54,6 +59,7 @@
             <Japanese>ネームタグが現れるまでの時間を設定します。</Japanese>
             <Russian>Время через которое именные жетоны появляются</Russian>
             <Turkish>İsmin opaklaşma süresi</Turkish>
+            <French>Le temps que met le badge à s'afficher</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime">
             <English>Fade Out Time</English>
@@ -63,6 +69,7 @@
             <Japanese>非表示時間</Japanese>
             <Russian>Время исчезания</Russian>
             <Turkish>Şeffaflaşma Süresi</Turkish>
+            <French>Temps de fondu enchaîné</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime_desc">
             <English>The Time the Nametag takes to Fade out</English>
@@ -72,6 +79,7 @@
             <Japanese>ネームタグが消えるまでの時間を設定します。</Japanese>
             <Russian>Время через которое именные жетоны исчезают</Russian>
             <Turkish>İsmin şefflaşma süresi</Turkish>
+            <French>Le temps que met le badge à être masqué</French>
         </Key>
         <Key ID="STR_dui_cat_fonts">
             <English>Font Settings</English>
@@ -81,6 +89,7 @@
             <Japanese>フォント設定</Japanese>
             <Russian>Настройки шрифта</Russian>
             <Turkish>Font Ayarları</Turkish>
+            <French>Paramètres de police</French>
         </Key>
         <Key ID="STR_dui_nametags_nameFont">
             <English>Name Font</English>
@@ -90,6 +99,7 @@
             <Japanese>名前のフォント</Japanese>
             <Russian>Имя шрифта</Russian>
             <Turkish>İsim Fontu</Turkish>
+            <French>Police de caractères du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_nameFont_desc">
             <English>The Font that is used for the Name in the Nametag</English>
@@ -99,6 +109,7 @@
             <Japanese>ネームタグ内の名前に適用されます。</Japanese>
             <Russian>Шрифт, который будет использоваться для именных жетонов</Russian>
             <Turkish>İsmi göstermek için kullanılacak font</Turkish>
+            <French>Police utilisée pour le nom dans le badge d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont">
             <English>Group Name Font</English>
@@ -108,6 +119,7 @@
             <Japanese>グループ名フォント</Japanese>
             <Russian>Имя шрифта для группы</Russian>
             <Turkish>Grup İsmi Fontu</Turkish>
+            <French>Nom de la police de caractères pour le groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont_desc">
             <English>The Font that is used for the Group Name in the Nametag</English>
@@ -115,8 +127,9 @@
             <Chinese>名牌中團隊名稱的字體</Chinese>
             <German>Die Schriftart, die für den Gruppennamen im Namensschild verwendet wird</German>
             <Japanese>ネームタグ内のグループ名に適用されます。</Japanese>
-            <Russian>>Шрифт, который будет использоваться для групп в именных жетонах</Russian>
+            <Russian>&gt;Шрифт, который будет использоваться для групп в именных жетонах</Russian>
             <Turkish>Grup isimlerini göstermek için kullanılacak font</Turkish>
+            <French>Police utilisée pour le nom du groupe dans le badge d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize">
             <English>Name Font Scale</English>
@@ -126,6 +139,7 @@
             <Japanese>名前フォントの大きさ</Japanese>
             <Russian>Размер шрифта для имени</Russian>
             <Turkish>İsim Font Ölçeği</Turkish>
+            <French>Taille de police du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize_desc">
             <English>The Scaling that is Applied to the Name</English>
@@ -135,6 +149,7 @@
             <Japanese>名前の大きさを設定します。</Japanese>
             <Russian>Размер шрифта, который будет использован для имени</Russian>
             <Turkish>İsim fontuna uygulanacak ölçek</Turkish>
+            <French>L'échelle appliquée pour le nom</French>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize">
             <English>Group Name Font Scale</English>
@@ -144,6 +159,7 @@
             <Japanese>グループ名フォントの大きさ</Japanese>
             <Russian>Размер шрифта для группы</Russian>
             <Turkish>Grup İsmi Font Ölceği</Turkish>
+            <French>Taille de la police pour le groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
             <English>The Scaling that is Applied to the Group Name</English>
@@ -153,6 +169,7 @@
             <Japanese>グループ名の大きさを設定します。</Japanese>
             <Russian>Размер шрифта, который будет использован для групп</Russian>
             <Turkish>Grup ismi fontuna uygulanacak ölçek</Turkish>
+            <French>Taille de la police à utiliser pour les groupes</French>
         </Key>
         <Key ID="STR_dui_nametags_deadColor">
             <English>Dead Color</English>
@@ -162,6 +179,7 @@
             <Japanese>死体名の色</Japanese>
             <Russian>Цвет мертвого</Russian>
             <Turkish>Ölü Rengi</Turkish>
+            <French>Couleur morte</French>
         </Key>
         <Key ID="STR_dui_nametags_deadColor_desc">
             <English>The Color a Dead Person has.</English>
@@ -171,6 +189,7 @@
             <Japanese>死体名に表示される色を設定します。</Japanese>
             <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <Turkish>Ölü bir kişinin rengi</Turkish>
+            <French>La couleur d'une personne décédée.</French>
         </Key>
         <Key ID="STR_dui_nametags_groupColor">
             <English>Own Group Color</English>
@@ -180,6 +199,7 @@
             <Japanese>自グループ色</Japanese>
             <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <Turkish>Kengi Grup Rengi</Turkish>
+            <French>Couleur du groupe propre</French>
         </Key>
         <Key ID="STR_dui_nametags_groupColor_desc">
             <English>The Color the Group Name will have if the Unit is in your Group.</English>
@@ -189,6 +209,7 @@
             <Japanese>自グループに属するユニットのグループ名に表示される色を設定します。</Japanese>
             <Russian>Цвет, который будет использоваться для игроков в вашей группе</Russian>
             <Turkish>Oyuncunun grubundaki birimlerin isim rengi</Turkish>
+            <French>La couleur du nom du groupe si l'unité fait partie de votre groupe.</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor">
             <English>Other Group Color</English>
@@ -198,6 +219,7 @@
             <Japanese>他グループ色</Japanese>
             <Russian>Цвет других групп</Russian>
             <Turkish>Diğer Grup İsim Rengi</Turkish>
+            <French>Autre groupe Couleur</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
             <English>The Color Other Groups have</English>
@@ -207,6 +229,7 @@
             <Japanese>他グループの色を設定します。</Japanese>
             <Russian>Цвет, который будет использоваться для других групп</Russian>
             <Turkish>Oyuncunun grubu olmayan grupların isim rengi</Turkish>
+            <French>La couleur que les autres groupes ont</French>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor">
             <English>Other Group Name Color</English>
@@ -216,6 +239,7 @@
             <Japanese>他グループ名色</Japanese>
             <Russian>Цвет других групп</Russian>
             <Turkish>Diğer Grup Rengi</Turkish>
+            <French>La couleur que les autres groupes ont</French>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor_desc">
             <English>The Color Other Player Names are shown in that are not in your Group.</English>
@@ -225,6 +249,7 @@
             <Japanese>他グループ名の色を設定します。</Japanese>
             <Russian>Цвет, который будет использоваться для других игроков, которые не в вашей группе</Russian>
             <Turkish>Oyuncunun grubunda olmayan birimlerin isim rengi</Turkish>
+            <French>La couleur dans laquelle sont affichés les noms des autres joueurs qui ne font pas partie de votre groupe.</French>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance">
             <English>Render Distance</English>
@@ -234,6 +259,7 @@
             <Japanese>表示範囲</Japanese>
             <Russian>Расстояние рендеринга</Russian>
             <Turkish>İsim Mesafesi</Turkish>
+            <French>Distance de rendu</French>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance_desc">
             <English>The Distance a Nametag is render</English>
@@ -243,6 +269,7 @@
             <Japanese>ネームタグが表示される距離を設定します。</Japanese>
             <Russian>Расстояние при котором показывается именной жетона</Russian>
             <Turkish>İsimlerin gösterileceği mesafe</Turkish>
+            <French>La distance à laquelle un badge est affiché</French>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance">
             <English>Dead Render Distance</English>
@@ -252,6 +279,7 @@
             <Japanese>死体名表示範囲</Japanese>
             <Russian>Расстояние рендеринга мертвого</Russian>
             <Turkish>Ölü İsim Mesafesi</Turkish>
+            <French>Distance de rendu des morts</French>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance_desc">
             <English>The Distance a Dead unit has a Nametag Visible</English>
@@ -261,6 +289,7 @@
             <Japanese>死体名が表示される距離を設定します。</Japanese>
             <Russian>Расстояние при котором показывается именной жетон мертвого юнита</Russian>
             <Turkish>Ölü kişilerin isimlerinin gösterileceği mesafe</Turkish>
+            <French>Distance à laquelle une unité morte a un badge visible</French>
         </Key>
         <Key ID="STR_dui_nametags_drawRank">
             <English>Display Rank</English>
@@ -270,6 +299,7 @@
             <Japanese>階級を表示</Japanese>
             <Russian>Показывать звание</Russian>
             <Turkish>Rütbeleri Göster</Turkish>
+            <French>Rang d'affichage</French>
         </Key>
         <Key ID="STR_dui_nametags_nameShadow">
             <English>Names Shadow</English>
@@ -279,6 +309,7 @@
             <Japanese>名前の影</Japanese>
             <Russian>Тень для имен</Russian>
             <Turkish>İsim Gölgesi</Turkish>
+            <French>Ombre du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_groupShadow">
             <English>Group Shadow</English>
@@ -288,6 +319,7 @@
             <Japanese>グループの影</Japanese>
             <Russian>Тень для групп</Russian>
             <Turkish>Grup Gölgesi</Turkish>
+            <French>Ombre du groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost">
             <English>Enable FOV Boost</English>
@@ -297,6 +329,7 @@
             <Japanese>FOV ブースト有効化</Japanese>
             <Russian>Включить FOV-буст</Russian>
             <Turkish>FOV'a Göre Arttır</Turkish>
+            <French>Activer le FOV Boost</French>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost_desc">
             <English>Increases Nametags Visibility when Zooming in.</English>
@@ -306,6 +339,7 @@
             <Japanese>ズーム時にネームタグの視認性を向上させます。</Japanese>
             <Russian>Увеличить видимость именных жетонов при зуме</Russian>
             <Turkish>İsimlerin görünebilirliğini o anki zoom'a göre arttır</Turkish>
+            <French>Augmente la visibilité des badges lors d'un zoom avant.</French>
         </Key>
         <Key ID="STR_dui_nametags_showUnconAsDead">
             <English>Show Unconscious as Dead</English>
@@ -315,6 +349,7 @@
             <Japanese>無意識者を死体として表示</Japanese>
             <Russian>Показывать юнитов без сознания как мертвых</Russian>
             <Turkish>Bilincini Kaybedenleri Ölü Olarak Göster</Turkish>
+            <French>Montrer les inconscients comme morts</French>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly">
             <English>Use Side Friendlies</English>
@@ -324,6 +359,7 @@
             <Japanese>友軍陣営を使用</Japanese>
             <Russian>Использовать Side Friendlies</Russian>
             <Turkish>Takım Dostlarını Kullan</Turkish>
+            <French>Utiliser les coéquipiers</French>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
             <English>If this setting is enabled the System uses BIS_fnc_sideIsFriendly instead of just checking the side</English>
@@ -333,6 +369,7 @@
             <Japanese>有効化するとシステムが現在の友軍を確認するようになります。</Japanese>
             <Russian>Если эта опция включена, то система показывает BIS_fnc_sideIsFriendly, вместо того, чтобы проверять сторону</Russian>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
+            <French>Si ce paramètre est activé, le système utilise BIS_fnc_sideIsFriendly au lieu de simplement vérifier le côté.</French>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">
             <English>Visualize Vehicle Crew</English>
@@ -340,6 +377,7 @@
             <Japanese>車両乗員の表示</Japanese>
             <Russian>Показывать транспорт команды</Russian>
             <Turkish>Araç Mürettebatlarını Göster</Turkish>
+            <French>Visualiser l'équipage du véhicule</French>
         </Key>
         <Key ID="STR_dui_nametags_useLIS_desc">
             <English>Detect Crew Inside Vehicles. Runs extra checks and routines when enabled.</English>
@@ -347,6 +385,7 @@
             <Japanese>車両内の乗員を検知します。有効化すると追加処理が発生します。</Japanese>
             <Russian>Показывать команду внутри транспорта. Делает дополнительные проверка, когда эта опция включена</Russian>
             <Turkish>Araç içlerindeki mürettebatları tespit et. Ekstra kontroller ve rutinleri aktive eder.</Turkish>
+            <French>Détecter l'équipage à l'intérieur des véhicules. Exécute des vérifications et des routines supplémentaires lorsqu'il est activé.</French>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
             <English>DUI Nametags</English>
@@ -356,6 +395,7 @@
             <Japanese>DUI ネームタグ</Japanese>
             <Russian>DUI именных жетонов</Russian>
             <Turkish>DUI İsimler</Turkish>
+            <French>Badges DUI</French>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_description">
             <English>Nametag UI Element, drag and drop it to reposition it.</English>
@@ -365,26 +405,32 @@
             <Japanese>DUI の UI をドラッグ アンド ドロップで配置できます。</Japanese>
             <Russian>Интерфейс именных жетонов, перетащите, чтобы поменять расположение</Russian>
             <Turkish>İsimler ve UI elementi, sürükleyip bırakarak yerini değiştirebilirsin</Turkish>
+            <French>Les interfaces utilisateur DUI peuvent être positionnées par glisser-déposer.</French>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle">
             <English>Rank style</English>
             <German>Ranganzeige-Stil</German>
+            <French>Style de rang</French>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle_desc">
             <English>Select rank display style</English>
             <German>Stil der Ranganzeige wählen</German>
+            <French>Sélectionner le style d'affichage du rang</French>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle">
             <English>Custom rank style</English>
             <German>Benutzerdefinierter Stil der Ranganzeige</German>
+            <French>Style de rang personnalisé</French>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_desc">
             <English>Defines custom ranks for each possible rank in the game. Warning: Input must be correct else default value will be used!</English>
             <German>Definiert eigene Ränge für jeden möglichen Rang im Spiel. Achtung! Die Eingabe muss korrekt sein, sonst wird der Standardwert verwendet!</German>
+            <French>Définit des rangs personnalisés pour chaque rang possible dans le jeu. Attention : La saisie doit être correcte, sinon la valeur par défaut sera utilisée !</French>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_defaultLong">
             <English>Default long</English>
             <German>Standard lang</German>
+            <French>Long par défaut</French>
         </Key>
     </Package>
 </Project>

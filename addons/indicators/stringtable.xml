@@ -12,6 +12,7 @@
                 <Chinesesimp>标记</Chinesesimp>
                 <Chinese>標記</Chinese>
                 <Turkish>Göstergeler</Turkish>
+                <French>Indicateurs</French>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
@@ -23,6 +24,7 @@
                 <Russian>Показать индикаторы</Russian>
                 <Portuguese>Mostrar Indicadores</Portuguese>
                 <Turkish>Göstergeleri Göster</Turkish>
+                <French>Afficher les indicateurs</French>
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
@@ -34,6 +36,7 @@
                 <Japanese>近くにインジケータを表示します</Japanese>
                 <Russian>Индикаторы приближения</Russian>
                 <Turkish>Yakınlık Göstergeleri</Turkish>
+                <French>Indicateurs de proximité</French>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
@@ -45,6 +48,7 @@
                 <Japanese>最大距離</Japanese>
                 <Russian>Максимальная расстояние</Russian>
                 <Turkish>Max Menzil</Turkish>
+                <French>Portée maximum</French>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
@@ -56,6 +60,7 @@
                 <Japanese>インジケータの最大表示距離を決定します</Japanese>
                 <Russian>Максимально допустимое расстояние для отображения индикаторов</Russian>
                 <Turkish>Göstergelerin gösterileceği maximum mesafe</Turkish>
+                <French>Plage maximale autorisée pour l'affichage des indicateurs</French>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
@@ -65,6 +70,7 @@
                 <German>Indikatoren für die Besatzung zulassen</German>
                 <Japanese>乗員用インジケータ許可</Japanese>
                 <Turkish>Mürettebat göstergelerine izin ver</Turkish>
+                <French>Autoriser les indicateurs d'équipage</French>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
@@ -74,6 +80,7 @@
                 <German>Erlaubt Indikatoren mit größerer Reichweite für die Fahrzeugbesatzung.</German>
                 <Japanese>車両の乗員用にインジケータ表示範囲を倍増させます。</Japanese>
                 <Turkish>Araç mürettebatları için göstergelerin daha uzaktan görünmesine izin ver</Turkish>
+                <French>Permettre à l'équipage du véhicule d'utiliser des indicateurs à plus grande portée</French>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
@@ -83,6 +90,7 @@
                 <German>Maximale Reichweite für die Besatzung</German>
                 <Japanese>乗員用最大距離</Japanese>
                 <Turkish>Mürettebat Max Menzil</Turkish>
+                <French>Portée maximale pour l'équipage</French>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
@@ -92,6 +100,7 @@
                 <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugbesatzung.</German>
                 <Japanese>車両の乗員用にインジケータを表示する最大範囲を設定します。</Japanese>
                 <Turkish>Mürettebat için göstergelerin gösterileceği maximum mesafe</Turkish>
+                <French>Distance maximale autorisée pour l'affichage des indicateurs pour un joueur dans un équipage de véhicule</French>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -133,6 +142,7 @@
                 <Japanese>大きさ</Japanese>
                 <Russian>Размер</Russian>
                 <Turkish>Boyut</Turkish>
+                <French>Taille</French>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
@@ -144,6 +154,7 @@
                 <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
                 <Russian>Установить размер иконок индикатора</Russian>
                 <Turkish>Gösterge ikonlarının boyunu belirler</Turkish>
+                <French>Définit la taille des icônes de l'indicateur</French>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange">
                 <English>Use ACE Nametags Logic</English>
@@ -154,6 +165,7 @@
                 <Russian>Использовать ACE Nametags Logic</Russian>
                 <Japanese>ACE 名札ロジックを使用</Japanese>
                 <Turkish>ACE Nametags Kullan</Turkish>
+                <French>Utiliser la logique des badges ACE</French>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
@@ -164,6 +176,7 @@
                 <Russian>Сопоставляет прозрачность индикатора с прозрачностью именных меток ACE.</Russian>
                 <Japanese>インジケータの透明度を ACE 名札の透明度と同じにします。これは通常の距離と挙動を上書きします!</Japanese>
                 <Turkish>Gösterge renklerini ACE Nametags rekleri ile eşleştir. Normal renk ve davranışı değiştirir!</Turkish>
+                <French>Partage la transparence des indicateurs avec la transparence des badges ACE. Remplace la distance et le comportement normal !</French>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -176,6 +189,7 @@
                 <Portuguese>Padrão</Portuguese>
                 <Russian>Стандарт</Russian>
                 <Turkish>Standart</Turkish>
+                <French>Standard</French>
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
@@ -187,6 +201,7 @@
                 <Japanese>四角</Japanese>
                 <Russian>Квадрат</Russian>
                 <Turkish>Kare</Turkish>
+                <French>Carré</French>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
@@ -198,6 +213,7 @@
                 <Japanese>ダイアモンド</Japanese>
                 <Russian>Ромб</Russian>
                 <Turkish>Elmas</Turkish>
+                <French>Diamant</French>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
@@ -209,6 +225,7 @@
                 <Japanese>円型</Japanese>
                 <Russian>Круг</Russian>
                 <Turkish>Çember</Turkish>
+                <French>Cercle</French>
             </Key>
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
@@ -221,6 +238,7 @@
                 <Portuguese>Ícones</Portuguese>
                 <Russian>Иконки</Russian>
                 <Turkish>İkonlar</Turkish>
+                <French>Icônes</French>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
@@ -232,6 +250,7 @@
                 <Portuguese>Mostrar ícone de Líder</Portuguese>
                 <Russian>Показать иконку командира</Russian>
                 <Turkish>Lider İkonunu Göster</Turkish>
+                <French>Afficher l'icône du leader</French>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
@@ -243,6 +262,7 @@
                 <Portuguese>Mostrar ícone de Parceiro</Portuguese>
                 <Russian>Показать Buddy иконку</Russian>
                 <Turkish>Eş İkonunu Göster</Turkish>
+                <French>Afficher l'icône du partenaire</French>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
@@ -254,6 +274,7 @@
                 <Portuguese>Mostrar ícone de Médico</Portuguese>
                 <Russian>Показать иконку медика</Russian>
                 <Turkish>Sıhhiye İkonunu Göster</Turkish>
+                <French>Afficher l'icône du Medic</French>
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
@@ -265,6 +286,7 @@
                 <Russian>Менять размер на расстоянии</Russian>
                 <Japanese>距離で大きさ変化</Japanese>
                 <Turkish>Mesafe ile Boyut Değiştir</Turkish>
+                <French>Modification de la taille en fonction de la distance</French>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according to distance to unit</English>
@@ -276,6 +298,7 @@
                 <Russian>Шкала индикаторов в зависимости от расстояния до юнита</Russian>
                 <Japanese>インジケータの大きさはユニットまでの距離に応じて変化します</Japanese>
                 <Turkish>Mesafeye göre göstergelerin boyutunu ayarla</Turkish>
+                <French>Échelonner la taille des indicateurs en fonction de la distance entre les unités</French>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
@@ -287,6 +310,7 @@
                 <Russian>Менять размер при FOV</Russian>
                 <Japanese>視野角で大きさ変化</Japanese>
                 <Turkish>FOV ile Boyut Değiştir</Turkish>
+                <French>Mettre à l'échelle avec le FOV</French>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according to current field of view</English>
@@ -298,6 +322,7 @@
                 <Russian>Шкала индикаторов в зависимости от дальности обзора</Russian>
                 <Japanese>インジケータの大きさは現在の視野角に応じて変化します</Japanese>
                 <Turkish>O anki FOV'a göre göstergelerin boyunu ayarla</Turkish>
+                <French>Échelle des indicateurs en fonction du champ de vision actuel</French>
             </Key>
         </Container>
     </Package>

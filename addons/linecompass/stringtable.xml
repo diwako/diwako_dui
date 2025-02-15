@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="indicators">
+        <Container name="cba_settings">
+            <Key ID="STR_dui_addon_linecompass">
+                <English>Line Compass</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_show">
+                <English>Show line compass</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_show_desc">
+                <English>Show line compass</English>
+            </Key>
+        </Container>
+    </Package>
+</Project>

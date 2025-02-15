@@ -1,4 +1,6 @@
-PREP(canHudBeShown);
-PREP(toHex);
-PREP(isInCrew);
 PREP(cacheLoop);
+PREP(canHudBeShown);
+PREP(getCompass);
+PREP(getGPS);
+PREP(isInCrew);
+PREP(toHex);

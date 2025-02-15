@@ -37,6 +37,7 @@ class RscTitles {
                         y = QUOTE(PY(1.6));
                         w = QUOTE(PX(2));
                         h = QUOTE(PY(1));
+                        colorBackground[] = { "profileNamespace getVariable ['igui_bcg_RGB_R', 0]", "profileNamespace getVariable ['igui_bcg_RGB_G', 0]", "profileNamespace getVariable ['igui_bcg_RGB_B', 0]", 0};
                     };
                     class CtrlGroup : RscControlsGroupNoScrollbars {
                         idc = 7100;
@@ -53,6 +54,7 @@ class RscTitles {
                                 y = QUOTE(PY(0.6));
                                 w = QUOTE(PX(2.2));
                                 h = QUOTE(PY(0.3));
+                                colorBackground[] = { "profileNamespace getVariable ['igui_bcg_RGB_R', 0]", "profileNamespace getVariable ['igui_bcg_RGB_G', 0]", "profileNamespace getVariable ['igui_bcg_RGB_B', 0]", 0};
                             };
                             LINE(2,7102);
                             LINE(3,7103);
@@ -169,7 +171,7 @@ class RscTitles {
                                 sizeEx = QUOTE(PY(2.4));
                                 style = 0x02;
                                 colorBackground[] = {0,0,0,0};
-                                colorText[] = {1,1,1,1};
+                                colorText[] = { "profileNamespace getVariable ['igui_bcg_RGB_R', 0]", "profileNamespace getVariable ['igui_bcg_RGB_G', 0]", "profileNamespace getVariable ['igui_bcg_RGB_B', 0]", 0};
                                 shadow = 0;
                                 x = QUOTE(PX(-0.25));
                                 y = QUOTE(PY(2));

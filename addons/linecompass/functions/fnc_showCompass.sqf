@@ -1,19 +1,4 @@
 #include "..\script_component.hpp"
-/*
- * Authors: joko // Jonas
- *
- *
- * Arguments:
- *
- *
- * Return Value:
- *
- *
- * Example:
- * 10 call dui_linecompass_fnc_getAlphaFromX
- *
- * Public: No
- */
 
 // Reset the cache
 GVAR(lineAlphaCache) = GVAR(lineAlphaCache) apply {1};

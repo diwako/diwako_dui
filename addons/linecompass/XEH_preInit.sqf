@@ -16,70 +16,21 @@ GVAR(lineAlphaCache) resize 109;
 GVAR(bearingAlphaCache) = [];
 GVAR(bearingAlphaCache) resize 37;
 
-GVAR(GroupColor) = [0, 0.87, 0, 1];
-GVAR(SideColor) = [0, 0.4, 0.8, 1];
-GVAR(WaypointColor) = [0.9, 0.66, 0.01, 1];
-GVAR(CompassAvailableShown) = false;
-GVAR(DrawBearing) = 2;
+if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 
-GVAR(UnitDistance) = 15;
+    ["ace_finger_fingered", {
 
-[
-    QGVAR(CompassAvailableShown),
-    "CHECKBOX",
-    "Show Only When Compass is Available",
-    "Line Compass",
-    GVAR(CompassAvailableShown),
-    1,
-    {},
-    true
-] call CBA_fnc_addSetting;
+        params ["_player", "_pos", "_dir"];
 
-[
-    QGVAR(GroupColor),
-    "COLOR",
-    "Group Color",
-    "Line Compass",
-    GVAR(GroupColor)
-] call CBA_fnc_addSetting;
+        private _key = format ["ACE_Fingering_%1_%2", _player, time];
+        [_key, GVAR(WaypointColor), _pos] call FUNC(addLineMarker);
 
-[
-    QGVAR(SideColor),
-    "COLOR",
-    "Side Color",
-    "Line Compass",
-    GVAR(SideColor)
-] call CBA_fnc_addSetting;
+        [{
+            _this call FUNC(removeLineMarker);
+        }, _key] call CBA_fnc_waitAndExecute;
+    }] call CBA_fnc_addEventhandler;
+};
 
-[
-    QGVAR(WaypointColor),
-    "COLOR",
-    "Waypoint Color",
-    "Line Compass",
-    GVAR(WaypointColor),
-    nil,
-    {
-        params ["_value"];
-        if (customWaypointPosition isNotEqualTo []) then {
-            ["MOVE", _value, customWaypointPosition] call FUNC(addLineMarker);
-        };
-    }
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(DrawBearing),
-    "LIST",
-    "Directions Drawn",
-    "Line Compass",
-    [[0, 1, 2], ["None", "Bearing", "All"], 2]
-] call CBA_fnc_addSetting;
-
-GVAR(fingerTime) = time;
-
-["ace_finger_fingered", {
-    params ["_player", "_pos", "_dir"];
-    ["Fingering", GVAR(WaypointColor), _pos] call FUNC(addLineMarker);
-    GVAR(fingerTime) = time + 2.5;
-}] call CBA_fnc_addEventhandler;
+#include "settings.inc.sqf"
 
 ADDON = true;

@@ -1,24 +1,16 @@
 #include "..\script_component.hpp"
-/*
-    Line Compass
 
-    Author: NetFusion, joko // Jonas
-
-    Description:
-    Draw3D
-
-    Parameter(s):
-    None
-
-    Returns:
-    None
-*/
+if (EGVAR(main,toggled_off) || !GVAR(Enabled)) exitWith {
+    if (GVAR(CompassShown)) exitWith {
+        call FUNC(HideCompass);
+    };
+};
 
 if (GVAR(CompassAvailableShown) && {floor(time % 1) == 0}) then {
-    if (!GVAR(CompassShown) && { "ItemCompass" in (assignedItems player) }) then {
+    if (!GVAR(CompassShown) && { call EFUNC(main,getCompass) isNotEqualTo "" }) then {
         call FUNC(ShowCompass);
     } else {
-        if (GVAR(CompassShown) && { !("ItemCompass" in (assignedItems player)) }) then {
+        if (GVAR(CompassShown) && { call EFUNC(main,getCompass) isEqualTo "" }) then {
             call FUNC(HideCompass);
         };
     };
@@ -30,16 +22,11 @@ if (isNull _dialog) exitWith {};
 
 if (customWaypointPosition isNotEqualTo GVAR(customWaypointPosition)) then {
     if (customWaypointPosition isEqualTo []) then {
-        "MOVE" call FUNC(removeLineMarker);
+        "VANILLA_MOVE" call FUNC(removeLineMarker);
     } else {
-        ["MOVE", GVAR(WaypointColor), customWaypointPosition] call FUNC(addLineMarker);
+        ["VANILLA_MOVE", GVAR(WaypointColor), customWaypointPosition] call FUNC(addLineMarker);
     };
     GVAR(customWaypointPosition) = customWaypointPosition;
-};
-
-if (GVAR(fingerTime) != -1 && { GVAR(fingerTime) <= time }) then {
-    "Fingering" call FUNC(removeLineMarker);
-    GVAR(fingerTime) = -1;
 };
 
 private _viewDirectionVector = (positionCameraToWorld [0, 0, 0]) vectorDiff (positionCameraToWorld [0, 0, -1]);
@@ -54,6 +41,7 @@ _control ctrlCommit 0;
 // Alpha
 private _lineAngleOffset = 2.5 - (_viewDirection % 5);
 private _lineIndexVisibilityOffset = floor (_viewDirection / 5);
+
 for "_i" from 0 to 37 do {
     private _idc = _i + _lineIndexVisibilityOffset;
     private _control = _dialog displayCtrl (7101 + _idc);
@@ -202,6 +190,8 @@ private _nextIconMarkerControl = 0;
             GVAR(iconMarkerControlPool) set [_nextIconMarkerControl, _control];
         };
 
+        _control ctrlSetShadow GVAR(IconOutline);
+
         private _compassAngle = _angleToUnit + 90;
         if (_viewDirection >= 270 && _compassAngle < 180) then {
             _compassAngle = _compassAngle + 360;
@@ -210,27 +200,18 @@ private _nextIconMarkerControl = 0;
             _compassAngle = _compassAngle - 360;
         };
 
-        private _icon = "a3\ui_f\data\map\Markers\Military\dot_ca.paa";
-        private _size = 3.6;
-        if (leader _x == _x) then {
-            _icon = "a3\ui_f\data\gui\cfg\ranks\corporal_gs.paa";
-            _size = 1.3;
-        };
-        if (_x getUnitTrait "medic" || _x getVariable ["ace_medical_medicClass", 0] != 0) then {
-            _icon = "a3\ui_f\data\map\vehicleicons\pictureheal_ca.paa";
-            _size = 2;
-        };
-        if !(isNil {_x getVariable QGVAR(UnitIcon)}) then {
-            private _data = _x getVariable [QGVAR(UnitIcon), [_icon, _size]];
-            _icon = _data param [0, _icon, [""]];
-            _size = _data param [1, _size, [0]];
-        };
+        (_x call FUNC(getUnitIcon)) params [["_icon", "a3\ui_f\data\map\Markers\Military\dot_ca.paa", [""]], ["_size", 2, [0]]];
         _size = [PX(_size), PY(_size)];
 
         _control ctrlSetText _icon;
 
-        private _color = [GVAR(SideColor), GVAR(GroupColor)] select (group player == group _x);
-        _color set [3, ((1 - 0.2 * ((player distance _x) - (GVAR(UnitDistance) - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
+        private _color = +(_x getVariable [QEGVAR(main,compass_color), [1, 1, 1]]);
+
+        if (_color isEqualTo [1, 1, 1]) then {
+            _color = GVAR(DefaultIconColor);
+        };
+
+        _color set [3, ((1 - 0.2 * ((player distance _x) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
         _control ctrlSetTextColor _color;
 
         private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), PY(0.75) - ((_size select 1) / 2)];
@@ -242,7 +223,7 @@ private _nextIconMarkerControl = 0;
         _nextIconMarkerControl = _nextIconMarkerControl + 1;
     };
 
-} forEach units group player;
+} forEach ((units group player) + diwako_dui_special_track);
 
 if (_nextIconMarkerControl < count GVAR(iconMarkerControlPool)) then {
     for "_i" from _nextIconMarkerControl to (count GVAR(iconMarkerControlPool) - 1) do {

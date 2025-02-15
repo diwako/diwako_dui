@@ -49,7 +49,7 @@ private _curCat = localize "STR_dui_cat_general";
     "COLOR",
     "Default Icon Color",
     [_cat, _curCat],
-    [0, 0.87, 0, 1]
+    [0.5, 0.87, 0.5, 1]
 ] call CBA_fnc_addSetting;
 
 [

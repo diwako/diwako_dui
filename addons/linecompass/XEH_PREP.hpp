@@ -1,4 +1,5 @@
 PREP(addLineMarker);
+PREP(cacheLoop);
 PREP(getAlphaFromX);
 PREP(getUnitIcon);
 PREP(hideCompass);

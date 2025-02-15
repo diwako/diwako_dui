@@ -16,6 +16,8 @@ GVAR(lineAlphaCache) resize 109;
 GVAR(bearingAlphaCache) = [];
 GVAR(bearingAlphaCache) resize 37;
 
+GVAR(UnitsToRender) = [];
+
 if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 
     ["ace_finger_fingered", {
@@ -23,11 +25,13 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
         params ["_player", "_pos", "_dir"];
 
         private _key = format ["ACE_Fingering_%1_%2", _player, time];
-        [_key, GVAR(WaypointColor), _pos] call FUNC(addLineMarker);
+        private _color = +GVAR(WaypointColor);
+
+        [_key, _color, _pos] call FUNC(addLineMarker);
 
         [{
             _this call FUNC(removeLineMarker);
-        }, _key] call CBA_fnc_waitAndExecute;
+        }, _key, 2.5] call CBA_fnc_waitAndExecute;
     }] call CBA_fnc_addEventhandler;
 };
 

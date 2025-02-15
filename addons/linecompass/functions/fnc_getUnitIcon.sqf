@@ -2,7 +2,7 @@
 
 params ["_unit"];
 
-if !(isNil {_unit getVariable QGVAR(UnitIcon)}) exitWith {
+if !(_unit isNil QGVAR(UnitIcon)) exitWith {
     _unit getVariable QGVAR(UnitIcon);
 };
 

@@ -106,6 +106,10 @@ private _fontIndex = GVAR(availableFonts) findIf {_x isEqualTo "RobotoCondensed"
             profileNamespace setVariable ['igui_diwako_dui_nametags_y', nil];
             profileNamespace setVariable ['igui_diwako_dui_nametags_w', nil];
             profileNamespace setVariable ['igui_diwako_dui_nametags_h', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_x', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_y', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_w', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_h', nil];
             saveProfileNamespace;
 
             [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;

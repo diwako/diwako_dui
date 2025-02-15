@@ -9,7 +9,11 @@ private _curCat = localize "STR_dui_cat_general";
     [_cat, _curCat],
     GVAR(CompassAvailableShown),
     1,
-    {},
+    {
+        params ["_value"];
+
+        if (_value) then { call FUNC(showCompass); };
+    },
     false
 ] call CBA_fnc_addSetting;
 

@@ -12,5 +12,6 @@ class CfgPatches {
     };
 };
 
+#include "CfgUIGrids.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgRscTitles.hpp"

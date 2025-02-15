@@ -1,7 +1,7 @@
 PREP(addLineMarker);
-PREP(draw3d);
 PREP(getAlphaFromX);
 PREP(getUnitIcon);
 PREP(hideCompass);
+PREP(onDraw);
 PREP(removeLineMarker);
 PREP(showCompass);

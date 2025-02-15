@@ -23,10 +23,10 @@ class RscTitles {
         class Controls {
             class CtrlGroup : RscControlsGroupNoScrollbars {
                 idc = 7000;
-                x = QUOTE(0.5 - PX(46.25));
-                y = QUOTE(PY(103) + safeZoneY);
-                w = QUOTE(PX(92.5));
-                h = QUOTE(PY(5));
+                x = QUOTE(GET_POS_X);
+                y = QUOTE(GET_POS_Y);
+                w = QUOTE(GET_POS_W);
+                h = QUOTE(GET_POS_H);
 
                 class Controls {
                     class Needle : RscPicture {

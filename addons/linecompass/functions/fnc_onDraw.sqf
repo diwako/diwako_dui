@@ -33,6 +33,10 @@ private _viewDirectionVector = (positionCameraToWorld [0, 0, 0]) vectorDiff (pos
 private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionVector select 1) + 360) % 360;
 private _currentPosition = getPosVisual player;
 
+private _parentControl = _dialog displayCtrl 7000;
+_parentControl ctrlSetPosition [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
+_parentControl ctrlCommit 0;
+
 // Shift the control group to view direction
 private _control = _dialog displayCtrl 7100;
 _control ctrlSetPosition [PX(_viewDirection * -0.5), PY(1)];
@@ -175,6 +179,11 @@ if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
 
 // Icon marker
 private _nextIconMarkerControl = 0;
+
+private _units = units group player;
+if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType [] }) then {
+    _units append diwako_dui_special_track;
+};
 
 {
 

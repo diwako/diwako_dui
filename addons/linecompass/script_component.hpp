@@ -20,9 +20,8 @@
 #define PX(X) ((X)/PYN*safeZoneH/(4/3))
 #define PY(Y) ((Y)/PYN*safeZoneH)
 
-
 #define POS_X 0.5 - PX(46.25)
-#define POS_Y PY(103) + safeZoneY
+#define POS_Y safeZoneY
 #define POS_W PX(92.5)
 #define POS_H PY(5)
 #define GET_POS_X profileNamespace getVariable ['igui_diwako_dui_linecompass_x', POS_X]

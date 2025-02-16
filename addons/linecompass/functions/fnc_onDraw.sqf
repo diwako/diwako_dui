@@ -134,7 +134,7 @@ private _overlapCacheLineIndices = [];
 // Remove the unused controls
 if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
     for "_i" from _nextLineMarkerControl to (count GVAR(lineMarkerControlPool) - 1) do {
-        ctrlDelete GVAR(lineMarkerControlPool) deleteAt _nextLineMarkerControl;
+        ctrlDelete (GVAR(lineMarkerControlPool) deleteAt _nextLineMarkerControl);
     };
 };
 
@@ -204,6 +204,6 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
 
 if (_nextIconMarkerControl < count GVAR(iconMarkerControlPool)) then {
     for "_i" from _nextIconMarkerControl to (count GVAR(iconMarkerControlPool) - 1) do {
-        ctrlDelete GVAR(iconMarkerControlPool) deleteAt _nextIconMarkerControl;
+        ctrlDelete (GVAR(iconMarkerControlPool) deleteAt _nextIconMarkerControl);
     };
 };

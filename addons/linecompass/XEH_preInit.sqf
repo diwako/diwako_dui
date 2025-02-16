@@ -22,7 +22,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 
     ["ace_finger_fingered", {
 
-        params ["_player", "_pos", "_dir"];
+        params ["_player", "_pos"];
 
         private _key = format ["ACE_Fingering_%1_%2", _player, time];
         private _color = +GVAR(WaypointColor);

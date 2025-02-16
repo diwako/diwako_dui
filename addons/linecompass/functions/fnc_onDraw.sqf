@@ -10,9 +10,9 @@ private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionV
 private _currentPosition = getPosVisual player;
 
 // Shift the control group to view direction
-private _control = _dialog displayCtrl 7100;
-_control ctrlSetPosition [PX(_viewDirection * -0.5), PY(1)];
-_control ctrlCommit 0;
+private _holderControl = _dialog displayCtrl HOLDER_IDC;
+_holderControl ctrlSetPosition [PX(_viewDirection * -0.5), PY(1)];
+_holderControl ctrlCommit 0;
 
 // Alpha
 private _lineAngleOffset = 2.5 - (_viewDirection % 5);
@@ -20,7 +20,7 @@ private _lineIndexVisibilityOffset = floor (_viewDirection / 5);
 
 for "_i" from 0 to 37 do {
     private _idc = _i + _lineIndexVisibilityOffset;
-    private _control = _dialog displayCtrl (7101 + _idc);
+    private _control = _dialog displayCtrl (LINE_IDC_START + _idc);
     private _newAlpha = (_i * 5 + _lineAngleOffset) call FUNC(getAlphaFromX);
     private _oldAlpha = GVAR(lineAlphaCache) select _idc;
 
@@ -35,21 +35,19 @@ private _bearingOffset = 2.5 - (_viewDirection % 15);
 for "_i" from 0 to 13 do {
 
     private _idc = _i + floor (_viewDirection / 15);
-    private _control = _dialog displayCtrl (7301 + _idc);
+    private _control = _dialog displayCtrl (BEARING_IDC_START + _idc);
     private _newAlpha = (_i * 15 + _bearingOffset) call FUNC(getAlphaFromX);
     private _oldAlpha = GVAR(bearingAlphaCache) select _idc;
 
     switch (GVAR(DrawBearing)) do {
+        case 0: {
+            _newAlpha = 0;
+        };
         case 1: {
             private _idcMod = _idc mod 3;
             if (_idcMod != 0) then {
                 _newAlpha = 0;
             };
-            break;
-        };
-        case 2: {
-            _newAlpha = 0;
-            break;
         };
     };
 
@@ -72,7 +70,7 @@ private _overlapCacheLineIndices = [];
 
     private _control = GVAR(lineMarkerControlPool) select _nextLineMarkerControl;
     if (isNil "_control" || {isNull _control}) then {
-        _control = _dialog ctrlCreate ["RscPicture", 7401 + _nextLineMarkerControl, _dialog displayCtrl 7100];
+        _control = _dialog ctrlCreate ["RscPicture", 7401 + _nextLineMarkerControl, _holderControl];
         _control ctrlSetText "#(argb,8,8,3)color(1,1,1,1)";
         GVAR(lineMarkerControlPool) set [_nextLineMarkerControl, _control];
     };
@@ -167,7 +165,7 @@ private _player = call CBA_fnc_currentUnit;
 
         private _control = GVAR(iconMarkerControlPool) select _nextIconMarkerControl;
         if (isNil "_control" || {isNull _control}) then {
-            _control = _dialog ctrlCreate ["RscPicture", 7501 + _nextIconMarkerControl, _dialog displayCtrl 7100];
+            _control = _dialog ctrlCreate ["RscPicture", 7501 + _nextIconMarkerControl, _holderControl];
             GVAR(iconMarkerControlPool) set [_nextIconMarkerControl, _control];
         };
 

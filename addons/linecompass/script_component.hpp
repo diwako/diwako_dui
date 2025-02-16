@@ -29,3 +29,9 @@
 #define GET_POS_Y profileNamespace getVariable ['igui_diwako_dui_linecompass_y', POS_Y]
 #define GET_POS_W profileNamespace getVariable ['igui_diwako_dui_linecompass_w', POS_W]
 #define GET_POS_H profileNamespace getVariable ['igui_diwako_dui_linecompass_h', POS_H]
+
+#define LINE_IDC_START 7101
+#define BEARING_IDC_START 7301
+#define CONTAINER_IDC 7000
+#define HOLDER_IDC 7100
+#define NEEDLE_IDC 7001

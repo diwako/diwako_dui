@@ -64,7 +64,8 @@ GVAR(RenderData) = _unitsToRender apply {
 
 private _dialog = uiNamespace getVariable QGVAR(Compass);
 if (!isNull _dialog) then {
-    private _parentControl = _dialog displayCtrl 7000;
+
+    private _parentControl = _dialog displayCtrl CONTAINER_IDC;
     _parentControl ctrlSetPosition [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
     _parentControl ctrlCommit 0;
 };

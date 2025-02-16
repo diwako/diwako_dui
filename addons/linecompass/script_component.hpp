@@ -22,7 +22,7 @@
 
 #define POS_X 0.5 - PX(46.25)
 #define POS_H PY(5)
-#define POS_Y safeZoneY - POS_H
+#define POS_Y safeZoneY
 #define POS_W PX(92.5)
 
 #define GET_POS_X profileNamespace getVariable ['igui_diwako_dui_linecompass_x', POS_X]

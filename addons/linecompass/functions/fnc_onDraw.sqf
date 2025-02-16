@@ -156,11 +156,6 @@ private _nextIconMarkerControl = 0;
 
 private _player = call CBA_fnc_currentUnit;
 
-private _units = units group _player;
-if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType [] }) then {
-    _units append diwako_dui_special_track;
-};
-
 {
     _x params ["_unit", "_color", "_icon", "_size"];
 

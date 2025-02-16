@@ -33,20 +33,26 @@ for "_i" from 0 to 37 do {
 
 private _bearingOffset = 2.5 - (_viewDirection % 15);
 for "_i" from 0 to 13 do {
+
     private _idc = _i + floor (_viewDirection / 15);
     private _control = _dialog displayCtrl (7301 + _idc);
     private _newAlpha = (_i * 15 + _bearingOffset) call FUNC(getAlphaFromX);
     private _oldAlpha = GVAR(bearingAlphaCache) select _idc;
-    if (GVAR(DrawBearing) == 1) then {
-        private _idcMod = _idc mod 3;
-        if (_idcMod != 0) then {
-            _newAlpha = 0;
+
+    switch (GVAR(DrawBearing)) do {
+        case 1: {
+            private _idcMod = _idc mod 3;
+            if (_idcMod != 0) then {
+                _newAlpha = 0;
+            };
+            break;
         };
-    } else {
-        if (GVAR(DrawBearing) == 0) then {
+        case 2: {
             _newAlpha = 0;
+            break;
         };
     };
+
     if (_newAlpha != _oldAlpha) then {
         GVAR(bearingAlphaCache) set [_idc, _newAlpha];
         _control ctrlSetTextColor [1, 1, 1, _newAlpha];
@@ -86,7 +92,7 @@ private _overlapCacheLineIndices = [];
 
     // Shift
     private _otherMarkerControl = _overlapCacheLineIndices param [_lineIndex, nil];
-    if (!(isNil "_otherMarkerControl")) then {
+    if !(isNil "_otherMarkerControl") then {
         // Compare
         private _otherOffset = _otherMarkerControl getVariable QGVAR(offset);
         if (abs _otherOffset < abs _offset) then {
@@ -109,7 +115,7 @@ private _overlapCacheLineIndices = [];
         // Shift
         private _shiftedLineIndex = _lineIndex;
 
-        while {!(isNil "_otherMarkerControl")} do {
+        while {!isNil "_otherMarkerControl"} do {
             _shiftedLineIndex = _shiftedLineIndex + _shiftDirection;
             _otherMarkerControl setVariable [QGVAR(lineIndex), _shiftedLineIndex];
 
@@ -128,9 +134,7 @@ private _overlapCacheLineIndices = [];
 // Remove the unused controls
 if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
     for "_i" from _nextLineMarkerControl to (count GVAR(lineMarkerControlPool) - 1) do {
-        private _control = GVAR(lineMarkerControlPool) select _nextLineMarkerControl;
-        ctrlDelete _control;
-        GVAR(lineMarkerControlPool) deleteAt _nextLineMarkerControl;
+        ctrlDelete GVAR(lineMarkerControlPool) deleteAt _nextLineMarkerControl;
     };
 };
 
@@ -161,7 +165,7 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
     _x params ["_unit", "_color", "_icon", "_size"];
 
     // Check if the unit is not the player himself and alive.
-    if (!isNull _unit && _unit != _player && alive _unit && (isNull objectParent _player || {!(_unit in crew objectParent _player)})) then {
+    if (alive _unit && _unit != _player && (isNull objectParent _player || {!(_unit in crew objectParent _player)})) then {
         private _unitPosition = getPosVisual _unit;
         private _relativeVectorToUnit = _unitPosition vectorDiff _currentPosition;
         private _angleToUnit = ((_relativeVectorToUnit select 0) atan2 (_relativeVectorToUnit select 1) + 360) % 360;
@@ -200,8 +204,6 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
 
 if (_nextIconMarkerControl < count GVAR(iconMarkerControlPool)) then {
     for "_i" from _nextIconMarkerControl to (count GVAR(iconMarkerControlPool) - 1) do {
-        private _control = GVAR(iconMarkerControlPool) select _nextIconMarkerControl;
-        ctrlDelete _control;
-        GVAR(iconMarkerControlPool) deleteAt _nextIconMarkerControl;
+        ctrlDelete GVAR(iconMarkerControlPool) deleteAt _nextIconMarkerControl;
     };
 };

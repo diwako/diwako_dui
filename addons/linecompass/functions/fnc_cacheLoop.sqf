@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 
-[{ call FUNC(cacheLoop); }, [], 0.1] call CBA_fnc_waitAndExecute;
+[{ call FUNC(cacheLoop); }, [], 0.5] call CBA_fnc_waitAndExecute;
 
 private _player = call CBA_fnc_currentUnit;
 
@@ -38,7 +38,7 @@ if (customWaypointPosition isNotEqualTo GVAR(customWaypointPosition)) then {
 };
 
 
-private _unitsToRender = units group player;
+private _unitsToRender = units group _player;
 if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType [] }) then {
     _unitsToRender append diwako_dui_special_track;
 };
@@ -50,7 +50,7 @@ GVAR(RenderData) = _unitsToRender apply {
 
     private _color = +(_x getVariable [QEGVAR(main,compass_color), [1, 1, 1]]);
     if (_color isEqualTo [1, 1, 1]) then {
-        _color = GVAR(DefaultIconColor);
+        _color = +GVAR(DefaultIconColor);
     };
 
     [

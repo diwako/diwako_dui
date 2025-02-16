@@ -2,37 +2,40 @@
 ADDON = false;
 #include "XEH_PREP.hpp"
 
-GVAR(drawEh) = -1;
+if (hasInterface) then {
 
-GVAR(lineMarkers) = createHashMap;
+    GVAR(drawEh) = -1;
 
-// Use pools to store the controls for the markers
-GVAR(lineMarkerControlPool) = [];
-GVAR(iconMarkerControlPool) = [];
+    GVAR(lineMarkers) = createHashMap;
 
-// Caches for alpha values
-GVAR(lineAlphaCache) = [];
-GVAR(lineAlphaCache) resize 109;
-GVAR(bearingAlphaCache) = [];
-GVAR(bearingAlphaCache) resize 37;
+    // Use pools to store the controls for the markers
+    GVAR(lineMarkerControlPool) = [];
+    GVAR(iconMarkerControlPool) = [];
 
-GVAR(customWaypointPosition) = customWaypointPosition;
+    // Caches for alpha values
+    GVAR(lineAlphaCache) = [];
+    GVAR(lineAlphaCache) resize 109;
+    GVAR(bearingAlphaCache) = [];
+    GVAR(bearingAlphaCache) resize 37;
 
-GVAR(UnitsToRender) = [];
+    GVAR(customWaypointPosition) = customWaypointPosition;
 
-if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
+    GVAR(UnitsToRender) = [];
 
-    ["ace_finger_fingered", {
+    if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 
-        params ["_player", "_pos"];
+        ["ace_finger_fingered", {
 
-        private _key = format ["ACE_Fingering_%1", hashValue _player];
-        [_key, _pos, GVAR(ACEFingeringColor)] call FUNC(addLineMarker);
+            params ["_player", "_pos"];
 
-        [{
-            _this call FUNC(removeLineMarker);
-        }, _key, 2.5] call CBA_fnc_waitAndExecute;
-    }] call CBA_fnc_addEventhandler;
+            private _key = format ["ACE_Fingering_%1", hashValue _player];
+            [_key, _pos, GVAR(ACEFingeringColor)] call FUNC(addLineMarker);
+
+            [{
+                _this call FUNC(removeLineMarker);
+            }, _key, 2.5] call CBA_fnc_waitAndExecute;
+        }] call CBA_fnc_addEventhandler;
+    };
 };
 
 #include "settings.inc.sqf"

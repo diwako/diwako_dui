@@ -1,4 +1,4 @@
-//diwako_dui_indicators eventhandlers
+//diwako_dui_linecompass eventhandlers
 class Extended_PreStart_EventHandlers {
     class ADDON {
         init = QUOTE(call COMPILE_SCRIPT(XEH_preStart));

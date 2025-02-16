@@ -136,6 +136,10 @@ if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
     };
 };
 
+private _yPos = [PY(0.6), PY(2)] select GVAR(SwapOrder);
+private _hPos = PX(2.2);
+private _wPos = PY(0.3);
+
 {
     if (ctrlShown _x) then {
 
@@ -143,7 +147,7 @@ if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
         private _color = _x getVariable QGVAR(color);
         private _alpha = (2.5 + ((_lineIndex - floor (_viewDirection / 5)) * 5) - (_viewDirection % 5)) call FUNC(getAlphaFromX);
 
-        _x ctrlSetPosition [PX(_lineIndex * 2.5 + 0.15), PY(0.6), PX(2.2), PY(0.3)];
+        _x ctrlSetPosition [PX(_lineIndex * 2.5 + 0.15), _yPos, _hPos, _wPos];
         _x ctrlSetTextColor [_color select 0, _color select 1, _color select 2, (_color select 3) * _alpha];
         _x ctrlCommit 0;
     };
@@ -153,6 +157,8 @@ if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
 private _nextIconMarkerControl = 0;
 
 private _player = call CBA_fnc_currentUnit;
+
+private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
 
 {
     _x params ["_unit", "_color", "_icon", "_size"];
@@ -184,7 +190,7 @@ private _player = call CBA_fnc_currentUnit;
         _color set [3, ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
         _control ctrlSetTextColor _color;
 
-        private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), PY(0.75) - ((_size select 1) / 2)];
+        private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), _yOffSet - ((_size select 1) / 2)];
         _positionCenter append _size;
         _control ctrlSetPosition _positionCenter;
 

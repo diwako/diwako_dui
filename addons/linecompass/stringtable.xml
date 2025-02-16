@@ -26,6 +26,18 @@
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
             </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_none">
+                <English>None</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_bearings">
+                <English>Quarter Bearings</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_all">
+                <English>All</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_swap_order">
+                <English>Swap Order</English>
+            </Key>
         </Container>
     </Package>
 </Project>

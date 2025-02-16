@@ -6,7 +6,7 @@ class Line##var : Line1 {\
 
 #define BEARING(var,textVar,textSize) \
 class Bearing##var : Bearing1 {\
-    idc = BEARING_IDC_START+ var - 1 ;\
+    idc = BEARING_IDC_START + var - 1 ;\
     sizeEx = QUOTE(PY(textSize));\
     x = QUOTE(PX(-0.25 + 7.5 * (var - 1)));\
     text = textVar;\
@@ -48,7 +48,7 @@ class RscTitles {
 
                         class Controls {
                             class Line1 : RscPicture {
-                                idc = LINE_IDC_START + 1;
+                                idc = LINE_IDC_START;
                                 text = "#(argb,8,8,3)color(1,1,1,1)";
                                 x = QUOTE(PX(0.15));
                                 y = QUOTE(PY(0.6));
@@ -210,10 +210,10 @@ class RscTitles {
                             BEARING(31,"N",2.4);
                             BEARING(32,"015",1.8);
                             BEARING(33,"030",1.8);
-                            BEARING(34,"NO",2.4);
+                            BEARING(34,"NE",2.4);
                             BEARING(35,"060",1.8);
                             BEARING(36,"075",1.8);
-                            BEARING(37,"O",2.4);
+                            BEARING(37,"E",2.4);
                         };
                     };
                 };

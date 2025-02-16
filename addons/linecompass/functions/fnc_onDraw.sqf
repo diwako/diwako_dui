@@ -9,10 +9,6 @@ private _viewDirectionVector = (positionCameraToWorld [0, 0, 0]) vectorDiff (pos
 private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionVector select 1) + 360) % 360;
 private _currentPosition = getPosVisual player;
 
-private _parentControl = _dialog displayCtrl 7000;
-_parentControl ctrlSetPosition [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
-_parentControl ctrlCommit 0;
-
 // Shift the control group to view direction
 private _control = _dialog displayCtrl 7100;
 _control ctrlSetPosition [PX(_viewDirection * -0.5), PY(1)];
@@ -154,7 +150,9 @@ if (_nextLineMarkerControl < count GVAR(lineMarkerControlPool)) then {
 // Icon marker
 private _nextIconMarkerControl = 0;
 
-private _units = units group player;
+private _player = call CBA_fnc_currentUnit;
+
+private _units = units group _player;
 if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType [] }) then {
     _units append diwako_dui_special_track;
 };
@@ -163,7 +161,7 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
     _x params ["_unit", "_color", "_icon", "_size"];
 
     // Check if the unit is not the player himself and alive.
-    if (!isNull _unit && _unit != player && alive _unit && (isNull objectParent player || {!(_unit in crew objectParent player)})) then {
+    if (!isNull _unit && _unit != _player && alive _unit && (isNull objectParent _player || {!(_unit in crew objectParent _player)})) then {
         private _unitPosition = getPosVisual _unit;
         private _relativeVectorToUnit = _unitPosition vectorDiff _currentPosition;
         private _angleToUnit = ((_relativeVectorToUnit select 0) atan2 (_relativeVectorToUnit select 1) + 360) % 360;
@@ -186,7 +184,7 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
 
         _control ctrlSetText _icon;
 
-        _color set [3, ((1 - 0.2 * ((player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
+        _color set [3, ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
         _control ctrlSetTextColor _color;
 
         private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), PY(0.75) - ((_size select 1) / 2)];

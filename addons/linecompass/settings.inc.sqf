@@ -5,13 +5,12 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(Enabled),
     "CHECKBOX",
-    "Enabled",
+    "STR_dui_linecompass_enabled",
     [_cat, _curCat],
     GVAR(CompassAvailableShown),
-    1,
+    0,
     {
         params ["_value"];
-
         if (_value) then { call FUNC(showCompass); };
     },
     false
@@ -20,7 +19,7 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(CompassAvailableShown),
     "CHECKBOX",
-    "Show Only When Compass is Available",
+    "STR_dui_linecompass_compass_required",
     [_cat, _curCat],
     GVAR(CompassAvailableShown),
     1,
@@ -31,7 +30,7 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(DrawBearing),
     "LIST",
-    "Directions Drawn",
+    "STR_dui_linecompass_draw_directions",
     [_cat, _curCat],
     [[0, 1, 2], ["None", "Bearing", "All"], 2]
 ] call CBA_fnc_addSetting;
@@ -39,15 +38,15 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(IconOutline),
     "LIST",
-    "Icon Outline",
+    "STR_dui_linecompass_icon_outline",
     [_cat, _curCat],
-    [[0, 1, 2], ["None", "Shadow", "Outline"], 2]
+    [[0, 1, 2], ["None", "Shadow", "Outline"], 0]
 ] call CBA_fnc_addSetting;
 
 [
     QGVAR(DefaultIconColor),
     "COLOR",
-    "Default Icon Color",
+    "STR_dui_linecompass_default_icon_color",
     [_cat, _curCat],
     [0.5, 0.87, 0.5, 1]
 ] call CBA_fnc_addSetting;
@@ -55,7 +54,23 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(WaypointColor),
     "COLOR",
-    "Default Icon Color",
+    "STR_dui_linecompass_default_waypoint_color",
     [_cat, _curCat],
-    [0.9, 0.66, 0.01, 1]
+    [0, 0, 0.87, 1]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CustomWaypointColor),
+    "COLOR",
+    "STR_dui_linecompass_default_waypoint_color",
+    [_cat, _curCat],
+    [0, 0, 0.87, 1]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(ACEFingeringColor),
+    "COLOR",
+    "STR_dui_linecompass_ace_fingering_color",
+    [_cat, _curCat],
+    [1, 0.66, 0, 1]
 ] call CBA_fnc_addSetting;

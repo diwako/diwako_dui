@@ -9,6 +9,13 @@ GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
 
+// compass whitelist, these need to be lowercase!!
+GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+
+// GPS whitelist (GPS devices + UAV terminals)
+GVAR(gpsWhitelist) = "getText (_x >> 'simulation') == 'ItemGPS' || inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'UavTerminal_base')" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+
+
 // Blacklisted fonts
 GVAR(availableFonts) = '!(configName _x in [
     "EtelkaMonospaceProBold",

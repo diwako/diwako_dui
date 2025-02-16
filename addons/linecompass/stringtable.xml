@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="diwako_dui">
-    <Package name="indicators">
+    <Package name="linecompass">
         <Container name="cba_settings">
             <Key ID="STR_dui_addon_linecompass">
                 <English>Line Compass</English>
             </Key>
-            <Key ID="STR_dui_linecompass_show">
-                <English>Show line compass</English>
+            <Key ID="STR_dui_linecompass_enabled">
+                <English>Enabled</English>
             </Key>
-            <Key ID="STR_dui_linecompass_show_desc">
-                <English>Show line compass</English>
+            <Key ID="STR_dui_linecompass_compass_required">
+                <English>Show Only When Compass is Available</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_directions">
+                <English>Directions Drawn</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_icon_outline">
+                <English>Icon Outline</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_icon_color">
+                <English>Default Icon Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_waypoint_color">
+                <English>Default Waypoint Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_ace_fingering_color">
+                <English>ACE Pointing Color</English>
             </Key>
         </Container>
     </Package>

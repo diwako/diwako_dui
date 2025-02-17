@@ -164,7 +164,7 @@ private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
     _x params ["_unit", "_color", "_icon", "_size"];
 
     // Check if the unit is not the player himself and alive.
-    if (alive _unit && _unit != _player && (isNull objectParent _player || {!(_unit in crew objectParent _player)})) then {
+    if (!isNull _unit) then {
         private _unitPosition = getPosVisual _unit;
         private _relativeVectorToUnit = _unitPosition vectorDiff _currentPosition;
         private _angleToUnit = ((_relativeVectorToUnit select 0) atan2 (_relativeVectorToUnit select 1) + 360) % 360;

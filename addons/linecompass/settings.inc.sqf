@@ -46,7 +46,7 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(DefaultIconColor),
     "COLOR",
-    "STR_dui_linecompass_default_icon_color",
+    ["STR_dui_linecompass_default_icon_color", "STR_dui_linecompass_default_icon_color_desc"],
     [_cat, _curCat],
     [0.5, 0.87, 0.5, 1]
 ] call CBA_fnc_addSetting;
@@ -54,7 +54,7 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(WaypointColor),
     "COLOR",
-    "STR_dui_linecompass_default_waypoint_color",
+    ["STR_dui_linecompass_default_waypoint_color", "STR_dui_linecompass_default_waypoint_color_desc"],
     [_cat, _curCat],
     [0, 0, 0.87, 1]
 ] call CBA_fnc_addSetting;
@@ -62,23 +62,25 @@ private _curCat = localize "STR_dui_cat_general";
 [
     QGVAR(CustomWaypointColor),
     "COLOR",
-    "STR_dui_linecompass_default_waypoint_color",
+    ["STR_dui_linecompass_custom_waypoint_color", "STR_dui_linecompass_custom_waypoint_color_desc"],
     [_cat, _curCat],
     [0, 0, 0.87, 1]
 ] call CBA_fnc_addSetting;
 
-[
-    QGVAR(ACEFingeringColor),
-    "COLOR",
-    "STR_dui_linecompass_ace_fingering_color",
-    [_cat, _curCat],
-    [1, 0.66, 0, 1]
-] call CBA_fnc_addSetting;
+if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
+    [
+        QGVAR(ACEFingeringColor),
+        "COLOR",
+        "STR_dui_linecompass_ace_fingering_color",
+        [_cat, _curCat],
+        [1, 0.66, 0, 1]
+    ] call CBA_fnc_addSetting;
+};
 
 [
     QGVAR(SwapOrder),
     "CHECKBOX",
-    "STR_dui_linecompass_swap_order",
+    ["STR_dui_linecompass_swap_order", "STR_dui_linecompass_swap_order_desc"],
     [_cat, _curCat],
     false
 ] call CBA_fnc_addSetting;

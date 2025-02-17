@@ -20,8 +20,20 @@
             <Key ID="STR_dui_linecompass_default_icon_color">
                 <English>Default Icon Color</English>
             </Key>
+            <Key ID="STR_dui_linecompass_default_icon_color_desc">
+                <English>Default color for icons without fire team assignment</English>
+            </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color">
                 <English>Default Waypoint Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_waypoint_color_desc">
+                <English>Waypoint given by squad leader or mission</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_custom_waypoint_color">
+                <English>Custom Waypoint Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_custom_waypoint_color_desc">
+                <English>Waypoint created when shift+click is on the map is used</English>
             </Key>
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
@@ -36,7 +48,10 @@
                 <English>All</English>
             </Key>
             <Key ID="STR_dui_linecompass_swap_order">
-                <English>Swap Order</English>
+                <English>Bearing above line</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_swap_order_desc">
+                <English>When enabled the bearing information, such as cardinal directions, will be displayed above the line of the compass</English>
             </Key>
         </Container>
     </Package>

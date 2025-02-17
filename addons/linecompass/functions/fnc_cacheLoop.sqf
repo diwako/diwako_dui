@@ -69,27 +69,27 @@ if (!isNull _dialog) then {
     _parentControl ctrlSetPosition [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
     _parentControl ctrlCommit 0;
 
-    private _yPos1 = PY(0.6);
-    private _yPos2 = PY(2);
+    private _yPosNum = [0.6, 2] select GVAR(SwapOrder);
+    private _yPos = PY(_yPosNum);
 
     for "_i" from 0 to 108 do {
 
         private _ctrl = _dialog displayCtrl (LINE_IDC_START + _i);
         private _pos = ctrlPosition _ctrl;
-        _pos set [1, [_yPos1, _yPos2] select GVAR(SwapOrder)];
+        _pos set [1, _yPos];
         _ctrl ctrlSetPosition _pos;
         _ctrl ctrlCommit 0;
     };
 
 
-    _yPos1 = PY(2);
-    _yPos2 = PY(0.3);
+    _yPosNum = [2, 0.3] select GVAR(SwapOrder);
+    _yPos = PY(_yPosNum);
 
     for "_i" from 0 to 36 do {
 
         private _ctrl = _dialog displayCtrl (BEARING_IDC_START + _i);
         private _pos = ctrlPosition _ctrl;
-        _pos set [1, [_yPos1, _yPos2] select GVAR(SwapOrder)];
+        _pos set [1, _yPos];
         _ctrl ctrlSetPosition _pos;
         _ctrl ctrlCommit 0;
     };

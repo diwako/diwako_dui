@@ -4,27 +4,17 @@
 
 private _player = call CBA_fnc_currentUnit;
 
-private _canShow = [_player] call EFUNC(main,canHudBeShown);
+private _shouldShowCompass = GVAR(Enabled) && { [_player] call EFUNC(main,canHudBeShown) } && { GVAR(CompassAvailableShown) && [_player] call EFUNC(main,getCompass) isNotEqualTo "" };
 
-if (!_canShow || !GVAR(Enabled)) exitWith {
+if (!_shouldShowCompass) exitWith {
     if (GVAR(CompassShown)) then {
         call FUNC(HideCompass);
     };
 };
 
-if (_canShow && GVAR(Enabled)) then {
+if (_shouldShowCompass) then {
     if (!GVAR(CompassShown)) then {
         call FUNC(ShowCompass);
-    };
-};
-
-if (GVAR(CompassAvailableShown) && {floor(time % 1) == 0}) then {
-    if (!GVAR(CompassShown) && { [_player] call EFUNC(main,getCompass) isNotEqualTo "" }) then {
-        call FUNC(ShowCompass);
-    } else {
-        if (GVAR(CompassShown) && { [_player] call EFUNC(main,getCompass) isEqualTo "" }) then {
-            call FUNC(HideCompass);
-        };
     };
 };
 

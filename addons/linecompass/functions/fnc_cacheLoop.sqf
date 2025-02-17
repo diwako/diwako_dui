@@ -19,10 +19,10 @@ if (_canShow && GVAR(Enabled)) then {
 };
 
 if (GVAR(CompassAvailableShown) && {floor(time % 1) == 0}) then {
-    if (!GVAR(CompassShown) && { call EFUNC(main,getCompass) isNotEqualTo "" }) then {
+    if (!GVAR(CompassShown) && { [_player] call EFUNC(main,getCompass) isNotEqualTo "" }) then {
         call FUNC(ShowCompass);
     } else {
-        if (GVAR(CompassShown) && { call EFUNC(main,getCompass) isEqualTo "" }) then {
+        if (GVAR(CompassShown) && { [_player] call EFUNC(main,getCompass) isEqualTo "" }) then {
             call FUNC(HideCompass);
         };
     };

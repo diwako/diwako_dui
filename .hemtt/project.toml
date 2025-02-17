@@ -33,4 +33,4 @@ authority = "diwako_dui"
 folder = "diwako_dui"
 
 [lints.stringtables.sorted]
-enabled = false
+options.only-lang = true

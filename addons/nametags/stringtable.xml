@@ -3,434 +3,434 @@
     <Package name="nametags">
         <Key ID="STR_dui_addon_nametags">
             <English>Nametags</English>
-            <Chinesesimp>名牌</Chinesesimp>
-            <Chinese>名牌</Chinese>
+            <French>Badges d'identification</French>
+            <Russian>Именные жетоны</Russian>
             <German>Namensschilder</German>
             <Japanese>ネームタグ</Japanese>
-            <Russian>Именные жетоны</Russian>
+            <Chinese>名牌</Chinese>
+            <Chinesesimp>名牌</Chinesesimp>
             <Turkish>İsimler</Turkish>
-            <French>Badges d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_enabled">
             <English>Enable Nametags</English>
-            <Chinesesimp>启用名牌</Chinesesimp>
-            <Chinese>啓用名牌</Chinese>
+            <French>Activer les badges</French>
+            <Russian>Включить именные жетоны</Russian>
             <German>Namensschilder einschalten</German>
             <Japanese>ネームタグを有効化</Japanese>
-            <Russian>Включить именные жетоны</Russian>
+            <Chinese>啓用名牌</Chinese>
+            <Chinesesimp>启用名牌</Chinesesimp>
             <Turkish>İsimleri Göster</Turkish>
-            <French>Activer les badges</French>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion">
             <English>Enable Nametag Occlusion</English>
-            <Chinesesimp>启用名牌遮挡</Chinesesimp>
-            <Chinese>啓用名牌遮擋</Chinese>
+            <French>Activer l'occlusion du badge</French>
+            <Russian>Включить окклюзию именных жетонлов</Russian>
             <German>Namensschild-Okklusion aktivieren</German>
             <Japanese>ネームタグのオクルージョンを有効化</Japanese>
-            <Russian>Включить окклюзию именных жетонлов</Russian>
+            <Chinese>啓用名牌遮擋</Chinese>
+            <Chinesesimp>启用名牌遮挡</Chinesesimp>
             <Turkish>İsimlerde 'Occlusion' Efekti</Turkish>
-            <French>Activer l'occlusion du badge</French>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion_desc">
             <English>When Occlusion is Enabled, the Nametags check how Visible a Unit is and Reduces the Transparency of the Nametag based on this value</English>
-            <Chinesesimp>当遮挡启用时，会检查该单位的可视程度来调整该单位的名牌透明度</Chinesesimp>
-            <Chinese>當遮擋啓用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
+            <French>Lorsque l'occlusion est activée, les badges vérifient la visibilité d'une unité et réduisent la transparence du badge en fonction de cette valeur.</French>
+            <Russian>Когда окклюзия включена, именные жетоны проверяют, насколько заметен Юнит и, в зависимости от этого, уменьшают прозрачность именного жетона.</Russian>
             <German>Wenn die Okklusion aktiviert ist, prüfen die Namensschilder, wie sichtbar eine Einheit ist und reduzieren die Transparenz des Namensschilder basierend auf diesem Wert</German>
             <Japanese>有効化すると、ネームタグはユニットの視認性を確認するようになり、状況によってはネームタグの透明度を変更します。</Japanese>
-            <Russian>Когда окклюзия включена, именные жетоны проверяют, насколько заметен Юнит и, в зависимости от этого, уменьшают прозрачность именного жетона.</Russian>
+            <Chinese>當遮擋啓用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
+            <Chinesesimp>当遮挡启用时，会检查该单位的可视程度来调整该单位的名牌透明度</Chinesesimp>
             <Turkish>İsmi gözüken kişinin görünebilirliğine göre ismin şeffaflığını ayarlar</Turkish>
-            <French>Lorsque l'occlusion est activée, les badges vérifient la visibilité d'une unité et réduisent la transparence du badge en fonction de cette valeur.</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime">
             <English>Fade In Time</English>
-            <Chinesesimp>渐入时间</Chinesesimp>
-            <Chinese>漸入時間</Chinese>
+            <French>Temps d'affichage</French>
+            <Russian>Время появления</Russian>
             <German>Einblendzeit</German>
             <Japanese>表示時間</Japanese>
-            <Russian>Время появления</Russian>
+            <Chinese>漸入時間</Chinese>
+            <Chinesesimp>渐入时间</Chinesesimp>
             <Turkish>Opaklaşma Süresi</Turkish>
-            <French>Temps d'affichage</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime_desc">
             <English>The time the Nametag takes to Fade in</English>
-            <Chinesesimp>名牌渐入时间</Chinesesimp>
-            <Chinese>名牌漸入時間</Chinese>
+            <French>Le temps que met le badge à s'afficher</French>
+            <Russian>Время через которое именные жетоны появляются</Russian>
             <German>Die Zeit, die das Namensschild braucht, um eingeblendet zu werden</German>
             <Japanese>ネームタグが現れるまでの時間を設定します。</Japanese>
-            <Russian>Время через которое именные жетоны появляются</Russian>
+            <Chinese>名牌漸入時間</Chinese>
+            <Chinesesimp>名牌渐入时间</Chinesesimp>
             <Turkish>İsmin opaklaşma süresi</Turkish>
-            <French>Le temps que met le badge à s'afficher</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime">
             <English>Fade Out Time</English>
-            <Chinesesimp>淡出时间</Chinesesimp>
-            <Chinese>淡出時間</Chinese>
+            <French>Temps de fondu enchaîné</French>
+            <Russian>Время исчезания</Russian>
             <German>Ausblendzeit</German>
             <Japanese>非表示時間</Japanese>
-            <Russian>Время исчезания</Russian>
+            <Chinese>淡出時間</Chinese>
+            <Chinesesimp>淡出时间</Chinesesimp>
             <Turkish>Şeffaflaşma Süresi</Turkish>
-            <French>Temps de fondu enchaîné</French>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime_desc">
             <English>The Time the Nametag takes to Fade out</English>
-            <Chinesesimp>名牌淡出时间</Chinesesimp>
-            <Chinese>名牌淡出時間</Chinese>
+            <French>Le temps que met le badge à être masqué</French>
+            <Russian>Время через которое именные жетоны исчезают</Russian>
             <German>Die Zeit, die das Namensschild braucht, um ausgeblendet zu werden</German>
             <Japanese>ネームタグが消えるまでの時間を設定します。</Japanese>
-            <Russian>Время через которое именные жетоны исчезают</Russian>
+            <Chinese>名牌淡出時間</Chinese>
+            <Chinesesimp>名牌淡出时间</Chinesesimp>
             <Turkish>İsmin şefflaşma süresi</Turkish>
-            <French>Le temps que met le badge à être masqué</French>
         </Key>
         <Key ID="STR_dui_cat_fonts">
             <English>Font Settings</English>
-            <Chinesesimp>字体设置</Chinesesimp>
-            <Chinese>字體設置</Chinese>
+            <French>Paramètres de police</French>
+            <Russian>Настройки шрифта</Russian>
             <German>Schrift-Einstellungen</German>
             <Japanese>フォント設定</Japanese>
-            <Russian>Настройки шрифта</Russian>
+            <Chinese>字體設置</Chinese>
+            <Chinesesimp>字体设置</Chinesesimp>
             <Turkish>Font Ayarları</Turkish>
-            <French>Paramètres de police</French>
         </Key>
         <Key ID="STR_dui_nametags_nameFont">
             <English>Name Font</English>
-            <Chinesesimp>名称字体</Chinesesimp>
-            <Chinese>名稱字體</Chinese>
+            <French>Police de caractères du nom</French>
+            <Russian>Имя шрифта</Russian>
             <German>Namensschriftart</German>
             <Japanese>名前のフォント</Japanese>
-            <Russian>Имя шрифта</Russian>
+            <Chinese>名稱字體</Chinese>
+            <Chinesesimp>名称字体</Chinesesimp>
             <Turkish>İsim Fontu</Turkish>
-            <French>Police de caractères du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_nameFont_desc">
             <English>The Font that is used for the Name in the Nametag</English>
-            <Chinesesimp>名牌中名称的字体</Chinesesimp>
-            <Chinese>名牌中名稱的字體</Chinese>
+            <French>Police utilisée pour le nom dans le badge d'identification</French>
+            <Russian>Шрифт, который будет использоваться для именных жетонов</Russian>
             <German>Die Schriftart, die für den Namen im Namensschild verwendet wird</German>
             <Japanese>ネームタグ内の名前に適用されます。</Japanese>
-            <Russian>Шрифт, который будет использоваться для именных жетонов</Russian>
+            <Chinese>名牌中名稱的字體</Chinese>
+            <Chinesesimp>名牌中名称的字体</Chinesesimp>
             <Turkish>İsmi göstermek için kullanılacak font</Turkish>
-            <French>Police utilisée pour le nom dans le badge d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont">
             <English>Group Name Font</English>
-            <Chinesesimp>团队名称字体</Chinesesimp>
-            <Chinese>團隊名稱字體</Chinese>
+            <French>Nom de la police de caractères pour le groupe</French>
+            <Russian>Имя шрифта для группы</Russian>
             <German>Gruppenname Schriftart</German>
             <Japanese>グループ名フォント</Japanese>
-            <Russian>Имя шрифта для группы</Russian>
+            <Chinese>團隊名稱字體</Chinese>
+            <Chinesesimp>团队名称字体</Chinesesimp>
             <Turkish>Grup İsmi Fontu</Turkish>
-            <French>Nom de la police de caractères pour le groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont_desc">
             <English>The Font that is used for the Group Name in the Nametag</English>
-            <Chinesesimp>名牌中团队名称的字体</Chinesesimp>
-            <Chinese>名牌中團隊名稱的字體</Chinese>
+            <French>Police utilisée pour le nom du groupe dans le badge d'identification</French>
+            <Russian>&gt;Шрифт, который будет использоваться для групп в именных жетонах</Russian>
             <German>Die Schriftart, die für den Gruppennamen im Namensschild verwendet wird</German>
             <Japanese>ネームタグ内のグループ名に適用されます。</Japanese>
-            <Russian>&gt;Шрифт, который будет использоваться для групп в именных жетонах</Russian>
+            <Chinese>名牌中團隊名稱的字體</Chinese>
+            <Chinesesimp>名牌中团队名称的字体</Chinesesimp>
             <Turkish>Grup isimlerini göstermek için kullanılacak font</Turkish>
-            <French>Police utilisée pour le nom du groupe dans le badge d'identification</French>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize">
             <English>Name Font Scale</English>
-            <Chinesesimp>名称字体大小</Chinesesimp>
-            <Chinese>名稱字體大小</Chinese>
+            <French>Taille de police du nom</French>
+            <Russian>Размер шрифта для имени</Russian>
             <German>Name Schriftart Skalierung</German>
             <Japanese>名前フォントの大きさ</Japanese>
-            <Russian>Размер шрифта для имени</Russian>
+            <Chinese>名稱字體大小</Chinese>
+            <Chinesesimp>名称字体大小</Chinesesimp>
             <Turkish>İsim Font Ölçeği</Turkish>
-            <French>Taille de police du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize_desc">
             <English>The Scaling that is Applied to the Name</English>
-            <Chinesesimp>名称字体大小</Chinesesimp>
-            <Chinese>名稱字體大小</Chinese>
+            <French>L'échelle appliquée pour le nom</French>
+            <Russian>Размер шрифта, который будет использован для имени</Russian>
             <German>Die Skalierung, die für den Namen angewendet wird</German>
             <Japanese>名前の大きさを設定します。</Japanese>
-            <Russian>Размер шрифта, который будет использован для имени</Russian>
+            <Chinese>名稱字體大小</Chinese>
+            <Chinesesimp>名称字体大小</Chinesesimp>
             <Turkish>İsim fontuna uygulanacak ölçek</Turkish>
-            <French>L'échelle appliquée pour le nom</French>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize">
             <English>Group Name Font Scale</English>
-            <Chinesesimp>团队名称字体大小</Chinesesimp>
-            <Chinese>團隊名稱字體大小</Chinese>
+            <French>Taille de la police pour le groupe</French>
+            <Russian>Размер шрифта для группы</Russian>
             <German>Gruppenname Schriftart Skalierung</German>
             <Japanese>グループ名フォントの大きさ</Japanese>
-            <Russian>Размер шрифта для группы</Russian>
+            <Chinese>團隊名稱字體大小</Chinese>
+            <Chinesesimp>团队名称字体大小</Chinesesimp>
             <Turkish>Grup İsmi Font Ölceği</Turkish>
-            <French>Taille de la police pour le groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
             <English>The Scaling that is Applied to the Group Name</English>
-            <Chinesesimp>团队名称所使用的字体大小</Chinesesimp>
-            <Chinese>團隊名稱所使用的字體大小</Chinese>
+            <French>Taille de la police à utiliser pour les groupes</French>
+            <Russian>Размер шрифта, который будет использован для групп</Russian>
             <German>Die Skalierung, die auf den Gruppennamen angewendet wird</German>
             <Japanese>グループ名の大きさを設定します。</Japanese>
-            <Russian>Размер шрифта, который будет использован для групп</Russian>
+            <Chinese>團隊名稱所使用的字體大小</Chinese>
+            <Chinesesimp>团队名称所使用的字体大小</Chinesesimp>
             <Turkish>Grup ismi fontuna uygulanacak ölçek</Turkish>
-            <French>Taille de la police à utiliser pour les groupes</French>
         </Key>
         <Key ID="STR_dui_nametags_deadColor">
             <English>Dead Color</English>
-            <Chinesesimp>死亡颜色</Chinesesimp>
-            <Chinese>死亡顔色</Chinese>
+            <French>Couleur morte</French>
+            <Russian>Цвет мертвого</Russian>
             <German>Toten Farbe</German>
             <Japanese>死体名の色</Japanese>
-            <Russian>Цвет мертвого</Russian>
+            <Chinese>死亡顔色</Chinese>
+            <Chinesesimp>死亡颜色</Chinesesimp>
             <Turkish>Ölü Rengi</Turkish>
-            <French>Couleur morte</French>
         </Key>
         <Key ID="STR_dui_nametags_deadColor_desc">
             <English>The Color a Dead Person has.</English>
-            <Chinesesimp>已死亡单位的颜色</Chinesesimp>
-            <Chinese>已死亡單位的顔色</Chinese>
+            <French>La couleur d'une personne décédée.</French>
+            <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <German>Die Farbe, die eine tote Person hat.</German>
             <Japanese>死体名に表示される色を設定します。</Japanese>
-            <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
+            <Chinese>已死亡單位的顔色</Chinese>
+            <Chinesesimp>已死亡单位的颜色</Chinesesimp>
             <Turkish>Ölü bir kişinin rengi</Turkish>
-            <French>La couleur d'une personne décédée.</French>
         </Key>
         <Key ID="STR_dui_nametags_groupColor">
             <English>Own Group Color</English>
-            <Chinesesimp>自己团队的颜色</Chinesesimp>
-            <Chinese>自己團隊的顔色</Chinese>
+            <French>Couleur du groupe propre</French>
+            <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <German>Eigene Gruppenfarbe</German>
             <Japanese>自グループ色</Japanese>
-            <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
+            <Chinese>自己團隊的顔色</Chinese>
+            <Chinesesimp>自己团队的颜色</Chinesesimp>
             <Turkish>Kengi Grup Rengi</Turkish>
-            <French>Couleur du groupe propre</French>
         </Key>
         <Key ID="STR_dui_nametags_groupColor_desc">
             <English>The Color the Group Name will have if the Unit is in your Group.</English>
-            <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
-            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顔色</Chinese>
+            <French>La couleur du nom du groupe si l'unité fait partie de votre groupe.</French>
+            <Russian>Цвет, который будет использоваться для игроков в вашей группе</Russian>
             <German>Die Farbe, die der Gruppenname haben wird, wenn die Einheit zu deiner Gruppe gehört.</German>
             <Japanese>自グループに属するユニットのグループ名に表示される色を設定します。</Japanese>
-            <Russian>Цвет, который будет использоваться для игроков в вашей группе</Russian>
+            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顔色</Chinese>
+            <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubundaki birimlerin isim rengi</Turkish>
-            <French>La couleur du nom du groupe si l'unité fait partie de votre groupe.</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor">
             <English>Other Group Color</English>
-            <Chinesesimp>其他团队的颜色</Chinesesimp>
-            <Chinese>其他團隊的顔色</Chinese>
+            <French>Autre groupe Couleur</French>
+            <Russian>Цвет других групп</Russian>
             <German>Andere Gruppenfarbe</German>
             <Japanese>他グループ色</Japanese>
-            <Russian>Цвет других групп</Russian>
+            <Chinese>其他團隊的顔色</Chinese>
+            <Chinesesimp>其他团队的颜色</Chinesesimp>
             <Turkish>Diğer Grup İsim Rengi</Turkish>
-            <French>Autre groupe Couleur</French>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
             <English>The Color Other Groups have</English>
-            <Chinesesimp>其他团队的名称</Chinesesimp>
-            <Chinese>其他團隊的顔色</Chinese>
+            <French>La couleur que les autres groupes ont</French>
+            <Russian>Цвет, который будет использоваться для других групп</Russian>
             <German>Die Farbe die andere Gruppen haben</German>
             <Japanese>他グループの色を設定します。</Japanese>
-            <Russian>Цвет, который будет использоваться для других групп</Russian>
+            <Chinese>其他團隊的顔色</Chinese>
+            <Chinesesimp>其他团队的名称</Chinesesimp>
             <Turkish>Oyuncunun grubu olmayan grupların isim rengi</Turkish>
-            <French>La couleur que les autres groupes ont</French>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor">
             <English>Other Group Name Color</English>
-            <Chinesesimp>其他团队的名称颜色</Chinesesimp>
-            <Chinese>其他團隊的名稱顔色</Chinese>
+            <French>La couleur que les autres groupes ont</French>
+            <Russian>Цвет других групп</Russian>
             <German>Andere Gruppennamen Farbe</German>
             <Japanese>他グループ名色</Japanese>
-            <Russian>Цвет других групп</Russian>
+            <Chinese>其他團隊的名稱顔色</Chinese>
+            <Chinesesimp>其他团队的名称颜色</Chinesesimp>
             <Turkish>Diğer Grup Rengi</Turkish>
-            <French>La couleur que les autres groupes ont</French>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor_desc">
             <English>The Color Other Player Names are shown in that are not in your Group.</English>
-            <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
-            <Chinese>非本團隊玩家名稱顔色</Chinese>
+            <French>La couleur dans laquelle sont affichés les noms des autres joueurs qui ne font pas partie de votre groupe.</French>
+            <Russian>Цвет, который будет использоваться для других игроков, которые не в вашей группе</Russian>
             <German>Die Farbe in der andere Spielernamen angezeigt werden, die nicht in deiner Gruppe sind.</German>
             <Japanese>他グループ名の色を設定します。</Japanese>
-            <Russian>Цвет, который будет использоваться для других игроков, которые не в вашей группе</Russian>
+            <Chinese>非本團隊玩家名稱顔色</Chinese>
+            <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
             <Turkish>Oyuncunun grubunda olmayan birimlerin isim rengi</Turkish>
-            <French>La couleur dans laquelle sont affichés les noms des autres joueurs qui ne font pas partie de votre groupe.</French>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance">
             <English>Render Distance</English>
-            <Chinesesimp>渲染距离</Chinesesimp>
-            <Chinese>渲染距離</Chinese>
+            <French>Distance de rendu</French>
+            <Russian>Расстояние рендеринга</Russian>
             <German>Render-Distanz</German>
             <Japanese>表示範囲</Japanese>
-            <Russian>Расстояние рендеринга</Russian>
+            <Chinese>渲染距離</Chinese>
+            <Chinesesimp>渲染距离</Chinesesimp>
             <Turkish>İsim Mesafesi</Turkish>
-            <French>Distance de rendu</French>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance_desc">
             <English>The Distance a Nametag is render</English>
-            <Chinesesimp>名牌的渲染距离</Chinesesimp>
-            <Chinese>名牌的渲染距離</Chinese>
+            <French>La distance à laquelle un badge est affiché</French>
+            <Russian>Расстояние при котором показывается именной жетона</Russian>
             <German>Die Entfernung, in der ein Nametag gerendert wird</German>
             <Japanese>ネームタグが表示される距離を設定します。</Japanese>
-            <Russian>Расстояние при котором показывается именной жетона</Russian>
+            <Chinese>名牌的渲染距離</Chinese>
+            <Chinesesimp>名牌的渲染距离</Chinesesimp>
             <Turkish>İsimlerin gösterileceği mesafe</Turkish>
-            <French>La distance à laquelle un badge est affiché</French>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance">
             <English>Dead Render Distance</English>
-            <Chinesesimp>死亡渲染距离</Chinesesimp>
-            <Chinese>死亡渲染距離</Chinese>
+            <French>Distance de rendu des morts</French>
+            <Russian>Расстояние рендеринга мертвого</Russian>
             <German>Toten Render Distanz</German>
             <Japanese>死体名表示範囲</Japanese>
-            <Russian>Расстояние рендеринга мертвого</Russian>
+            <Chinese>死亡渲染距離</Chinese>
+            <Chinesesimp>死亡渲染距离</Chinesesimp>
             <Turkish>Ölü İsim Mesafesi</Turkish>
-            <French>Distance de rendu des morts</French>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance_desc">
             <English>The Distance a Dead unit has a Nametag Visible</English>
-            <Chinesesimp>已死亡单位的名牌可视距离</Chinesesimp>
-            <Chinese>已死亡單位的名牌可視距離</Chinese>
+            <French>Distance à laquelle une unité morte a un badge visible</French>
+            <Russian>Расстояние при котором показывается именной жетон мертвого юнита</Russian>
             <German>Die Entfernung einer toten Einheit, in der das Namensschild sichtbar ist</German>
             <Japanese>死体名が表示される距離を設定します。</Japanese>
-            <Russian>Расстояние при котором показывается именной жетон мертвого юнита</Russian>
+            <Chinese>已死亡單位的名牌可視距離</Chinese>
+            <Chinesesimp>已死亡单位的名牌可视距离</Chinesesimp>
             <Turkish>Ölü kişilerin isimlerinin gösterileceği mesafe</Turkish>
-            <French>Distance à laquelle une unité morte a un badge visible</French>
         </Key>
         <Key ID="STR_dui_nametags_drawRank">
             <English>Display Rank</English>
-            <Chinesesimp>显示军衔</Chinesesimp>
-            <Chinese>顯示軍銜</Chinese>
+            <French>Rang d'affichage</French>
+            <Russian>Показывать звание</Russian>
             <German>Rang anzeigen</German>
             <Japanese>階級を表示</Japanese>
-            <Russian>Показывать звание</Russian>
+            <Chinese>顯示軍銜</Chinese>
+            <Chinesesimp>显示军衔</Chinesesimp>
             <Turkish>Rütbeleri Göster</Turkish>
-            <French>Rang d'affichage</French>
         </Key>
         <Key ID="STR_dui_nametags_nameShadow">
             <English>Names Shadow</English>
-            <Chinesesimp>名称阴影</Chinesesimp>
-            <Chinese>名稱陰影</Chinese>
+            <French>Ombre du nom</French>
+            <Russian>Тень для имен</Russian>
             <German>Namensschatten</German>
             <Japanese>名前の影</Japanese>
-            <Russian>Тень для имен</Russian>
+            <Chinese>名稱陰影</Chinese>
+            <Chinesesimp>名称阴影</Chinesesimp>
             <Turkish>İsim Gölgesi</Turkish>
-            <French>Ombre du nom</French>
         </Key>
         <Key ID="STR_dui_nametags_groupShadow">
             <English>Group Shadow</English>
-            <Chinesesimp>团队阴影</Chinesesimp>
-            <Chinese>團隊陰影</Chinese>
+            <French>Ombre du groupe</French>
+            <Russian>Тень для групп</Russian>
             <German>Gruppenschatten</German>
             <Japanese>グループの影</Japanese>
-            <Russian>Тень для групп</Russian>
+            <Chinese>團隊陰影</Chinese>
+            <Chinesesimp>团队阴影</Chinesesimp>
             <Turkish>Grup Gölgesi</Turkish>
-            <French>Ombre du groupe</French>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost">
             <English>Enable FOV Boost</English>
-            <Chinesesimp>启用视野范围角度增强</Chinesesimp>
-            <Chinese>啓用視野範圍角度增強</Chinese>
+            <French>Activer le FOV Boost</French>
+            <Russian>Включить FOV-буст</Russian>
             <German>FOV-Boost aktivieren</German>
             <Japanese>FOV ブースト有効化</Japanese>
-            <Russian>Включить FOV-буст</Russian>
+            <Chinese>啓用視野範圍角度增強</Chinese>
+            <Chinesesimp>启用视野范围角度增强</Chinesesimp>
             <Turkish>FOV'a Göre Arttır</Turkish>
-            <French>Activer le FOV Boost</French>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost_desc">
             <English>Increases Nametags Visibility when Zooming in.</English>
-            <Chinesesimp>放大时增强名牌可视度</Chinesesimp>
-            <Chinese>放大時增強名牌可視度</Chinese>
+            <French>Augmente la visibilité des badges lors d'un zoom avant.</French>
+            <Russian>Увеличить видимость именных жетонов при зуме</Russian>
             <German>Erhöht die Sichtbarkeit von Namensschildern beim Zoomen.</German>
             <Japanese>ズーム時にネームタグの視認性を向上させます。</Japanese>
-            <Russian>Увеличить видимость именных жетонов при зуме</Russian>
+            <Chinese>放大時增強名牌可視度</Chinese>
+            <Chinesesimp>放大时增强名牌可视度</Chinesesimp>
             <Turkish>İsimlerin görünebilirliğini o anki zoom'a göre arttır</Turkish>
-            <French>Augmente la visibilité des badges lors d'un zoom avant.</French>
         </Key>
         <Key ID="STR_dui_nametags_showUnconAsDead">
             <English>Show Unconscious as Dead</English>
-            <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
-            <Chinese>将失去意识归类为死亡</Chinese>
+            <French>Montrer les inconscients comme morts</French>
+            <Russian>Показывать юнитов без сознания как мертвых</Russian>
             <German>Bewusstlos als tot zeigen</German>
             <Japanese>無意識者を死体として表示</Japanese>
-            <Russian>Показывать юнитов без сознания как мертвых</Russian>
+            <Chinese>将失去意识归类为死亡</Chinese>
+            <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
             <Turkish>Bilincini Kaybedenleri Ölü Olarak Göster</Turkish>
-            <French>Montrer les inconscients comme morts</French>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly">
             <English>Use Side Friendlies</English>
-            <Chinesesimp>使用阵营友好</Chinesesimp>
-            <Chinese>使用陣營友好</Chinese>
+            <French>Utiliser les coéquipiers</French>
+            <Russian>Использовать Side Friendlies</Russian>
             <German>sideIsFriendly verwenden</German>
             <Japanese>友軍陣営を使用</Japanese>
-            <Russian>Использовать Side Friendlies</Russian>
+            <Chinese>使用陣營友好</Chinese>
+            <Chinesesimp>使用阵营友好</Chinesesimp>
             <Turkish>Takım Dostlarını Kullan</Turkish>
-            <French>Utiliser les coéquipiers</French>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
             <English>If this setting is enabled the System uses BIS_fnc_sideIsFriendly instead of just checking the side</English>
-            <Chinesesimp>如果这个设定启用，系统会使用BIS_fnc_sideIsFriendly来代替阵营检查</Chinesesimp>
-            <Chinese>如果這個設定啓用，系統會使用BIS_fnc_sideIsFriendly來代替陣營檢查</Chinese>
+            <French>Si ce paramètre est activé, le système utilise BIS_fnc_sideIsFriendly au lieu de simplement vérifier le côté.</French>
+            <Russian>Если эта опция включена, то система показывает BIS_fnc_sideIsFriendly, вместо того, чтобы проверять сторону</Russian>
             <German>Wenn diese Einstellung aktiviert ist, verwendet das System BIS_fnc_sideIsFriendly, anstatt nur der Fraktion</German>
             <Japanese>有効化するとシステムが現在の友軍を確認するようになります。</Japanese>
-            <Russian>Если эта опция включена, то система показывает BIS_fnc_sideIsFriendly, вместо того, чтобы проверять сторону</Russian>
+            <Chinese>如果這個設定啓用，系統會使用BIS_fnc_sideIsFriendly來代替陣營檢查</Chinese>
+            <Chinesesimp>如果这个设定启用，系统会使用BIS_fnc_sideIsFriendly来代替阵营检查</Chinesesimp>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
-            <French>Si ce paramètre est activé, le système utilise BIS_fnc_sideIsFriendly au lieu de simplement vérifier le côté.</French>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">
             <English>Visualize Vehicle Crew</English>
+            <French>Visualiser l'équipage du véhicule</French>
+            <Russian>Показывать транспорт команды</Russian>
             <German>Fahrzeugbesatzung sichtbar machen</German>
             <Japanese>車両乗員の表示</Japanese>
-            <Russian>Показывать транспорт команды</Russian>
             <Turkish>Araç Mürettebatlarını Göster</Turkish>
-            <French>Visualiser l'équipage du véhicule</French>
         </Key>
         <Key ID="STR_dui_nametags_useLIS_desc">
             <English>Detect Crew Inside Vehicles. Runs extra checks and routines when enabled.</English>
+            <French>Détecter l'équipage à l'intérieur des véhicules. Exécute des vérifications et des routines supplémentaires lorsqu'il est activé.</French>
+            <Russian>Показывать команду внутри транспорта. Делает дополнительные проверка, когда эта опция включена</Russian>
             <German>Fahrezeugbesatzung erkennen. Führt zusätzliche Prüfungen durch, wenn aktiviert.</German>
             <Japanese>車両内の乗員を検知します。有効化すると追加処理が発生します。</Japanese>
-            <Russian>Показывать команду внутри транспорта. Делает дополнительные проверка, когда эта опция включена</Russian>
             <Turkish>Araç içlerindeki mürettebatları tespit et. Ekstra kontroller ve rutinleri aktive eder.</Turkish>
-            <French>Détecter l'équipage à l'intérieur des véhicules. Exécute des vérifications et des routines supplémentaires lorsqu'il est activé.</French>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
             <English>DUI Nametags</English>
-            <Chinesesimp>DUI名牌</Chinesesimp>
-            <Chinese>DUI名牌</Chinese>
+            <French>Badges DUI</French>
+            <Russian>DUI именных жетонов</Russian>
             <German>DUI-Namensschilder</German>
             <Japanese>DUI ネームタグ</Japanese>
-            <Russian>DUI именных жетонов</Russian>
+            <Chinese>DUI名牌</Chinese>
+            <Chinesesimp>DUI名牌</Chinesesimp>
             <Turkish>DUI İsimler</Turkish>
-            <French>Badges DUI</French>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_description">
             <English>Nametag UI Element, drag and drop it to reposition it.</English>
-            <Chinesesimp>名牌UI元件，拖拽与松开它来给他重新设定位置</Chinesesimp>
-            <Chinese>名牌UI元件，拖拽與松開它來給他重新設定位置</Chinese>
+            <French>Les interfaces utilisateur DUI peuvent être positionnées par glisser-déposer.</French>
+            <Russian>Интерфейс именных жетонов, перетащите, чтобы поменять расположение</Russian>
             <German>Nametag UI-Element, ziehen Sie es per Drag &amp; Drop, um es neu zu positionieren.</German>
             <Japanese>DUI の UI をドラッグ アンド ドロップで配置できます。</Japanese>
-            <Russian>Интерфейс именных жетонов, перетащите, чтобы поменять расположение</Russian>
+            <Chinese>名牌UI元件，拖拽與松開它來給他重新設定位置</Chinese>
+            <Chinesesimp>名牌UI元件，拖拽与松开它来给他重新设定位置</Chinesesimp>
             <Turkish>İsimler ve UI elementi, sürükleyip bırakarak yerini değiştirebilirsin</Turkish>
-            <French>Les interfaces utilisateur DUI peuvent être positionnées par glisser-déposer.</French>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle">
             <English>Rank style</English>
-            <German>Ranganzeige-Stil</German>
             <French>Style de rang</French>
+            <German>Ranganzeige-Stil</German>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle_desc">
             <English>Select rank display style</English>
-            <German>Stil der Ranganzeige wählen</German>
             <French>Sélectionner le style d'affichage du rang</French>
+            <German>Stil der Ranganzeige wählen</German>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle">
             <English>Custom rank style</English>
-            <German>Benutzerdefinierter Stil der Ranganzeige</German>
             <French>Style de rang personnalisé</French>
+            <German>Benutzerdefinierter Stil der Ranganzeige</German>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_desc">
             <English>Defines custom ranks for each possible rank in the game. Warning: Input must be correct else default value will be used!</English>
-            <German>Definiert eigene Ränge für jeden möglichen Rang im Spiel. Achtung! Die Eingabe muss korrekt sein, sonst wird der Standardwert verwendet!</German>
             <French>Définit des rangs personnalisés pour chaque rang possible dans le jeu. Attention : La saisie doit être correcte, sinon la valeur par défaut sera utilisée !</French>
+            <German>Definiert eigene Ränge für jeden möglichen Rang im Spiel. Achtung! Die Eingabe muss korrekt sein, sonst wird der Standardwert verwendet!</German>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_defaultLong">
             <English>Default long</English>
-            <German>Standard lang</German>
             <French>Long par défaut</French>
+            <German>Standard lang</German>
         </Key>
     </Package>
 </Project>

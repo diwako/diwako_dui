@@ -26,7 +26,7 @@ if (diwako_dui_compass_hide_blip_alone_group && {_isAloneInGroup}) then {
 };
 
 if (GVAR(group_by_vehicle)) then {
-    private _newGrp = _group apply { [objectParent _x, parseNumber !((driver vehicle _x) isEqualTo _x), _x] };
+    private _newGrp = _group apply { [objectParent _x, parseNumber ((driver vehicle _x) isNotEqualTo _x), _x] };
     _newGrp sort true;
     _newGrp = _newGrp apply { _x select 2 };
 
@@ -104,7 +104,7 @@ if (diwako_dui_enable_compass) then {
     private _compass = [_player] call FUNC(getCompass);
     _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {_compass isNotEqualTo ""}));
 
-    if !(_compass isEqualTo "") then {
+    if (_compass isNotEqualTo "") then {
         GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];
     };
 

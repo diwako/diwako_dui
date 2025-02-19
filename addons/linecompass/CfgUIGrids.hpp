@@ -21,7 +21,7 @@ class CfgUIGrids {
             class ADDON {
                 displayName = "$STR_dui_addon_linecompass";
                 description = "$STR_dui_linecompass_UIGrids_desc";
-                preview = "#(argb,8,8,3)color(0,0,0,0.75)";
+                preview = QPATHTO_T(UI\line_compass_ui_editor.paa);
                 saveToProfile[] = {0,1,2,3};
                 canResize = 0;
             };

@@ -53,6 +53,9 @@
             <Key ID="STR_dui_linecompass_swap_order_desc">
                 <English>When enabled the bearing information, such as cardinal directions, will be displayed above the line of the compass</English>
             </Key>
+            <Key ID="STR_dui_linecompass_UIGrids_desc">
+                <English>Line Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            </Key>
         </Container>
     </Package>
 </Project>

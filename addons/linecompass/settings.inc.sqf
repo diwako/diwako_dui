@@ -84,3 +84,40 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     [_cat, _curCat],
     false
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(enableOcclusion),
+    "CHECKBOX",
+    ["STR_dui_linecompass_enable_occlusion", "STR_dui_linecompass_enable_occlusion_desc"],
+    [_cat, _curCat],
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(cocclusionFadeSpeed),
+    "SLIDER",
+    ["STR_dui_linecompass_occlusion_fade_speed", "STR_dui_linecompass_occlusion_fade_speed_desc"],
+    [_cat, _curCat],
+    [0, 10, 3.5, 1],
+    false
+] call CBA_fnc_addSetting;
+
+private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
+private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
+
+if (_acre || _tfar) then {
+
+    [
+        QGVAR(showSpeaking),
+        "CHECKBOX",
+        [localize "STR_dui_linecompass_show_speaking", localize "STR_dui_linecompass_show_speaking_desc"],
+        [CBA_SETTINGS_CAT, _curCat],
+        true,
+        false
+    ] call CBA_fnc_addSetting;
+
+} else {
+
+    GVAR(showSpeaking) = false;
+
+};

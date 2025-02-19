@@ -5,9 +5,11 @@
 private _dialog = uiNamespace getVariable QGVAR(Compass);
 if (isNull _dialog) exitWith {};
 
-private _viewDirectionVector = (positionCameraToWorld [0, 0, 0]) vectorDiff (positionCameraToWorld [0, 0, -1]);
+private _player = call CBA_fnc_currentUnit;
+
+private _viewDirectionVector = getCameraViewDirection _player;
 private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionVector select 1) + 360) % 360;
-private _currentPosition = getPosVisual player;
+private _currentPosition = getPosVisual _player;
 
 // Shift the control group to view direction
 private _holderControl = _dialog displayCtrl HOLDER_IDC;
@@ -156,12 +158,10 @@ private _wPos = PY(0.3);
 // Icon marker
 private _nextIconMarkerControl = 0;
 
-private _player = call CBA_fnc_currentUnit;
-
 private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
 
 {
-    _x params ["_unit", "_color", "_icon", "_size"];
+    _x params ["_unit", "_color", "_icon", "_size", "_lastSeen"];
 
     // Check if the unit is not the player himself and alive.
     if (!isNull _unit) then {
@@ -185,9 +185,25 @@ private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
             _compassAngle = _compassAngle - 360;
         };
 
+
+        if (GVAR(showSpeaking)) then {
+            _icon = [
+                _icon,
+                "\A3\modules_f_curator\Data\portraitRadio_ca.paa",
+                "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"
+            ] select (_unit getVariable [QEGVAR(radar,isSpeaking), 0])
+        };
+
         _control ctrlSetText _icon;
 
-        _color set [3, ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1];
+        private _alpha = ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1;
+
+        if (GVAR(enableOcclusion)) then {
+            private _lastSeenAlphaMultiplier = (((GVAR(cocclusionFadeSpeed) - (time - _lastSeen)) / GVAR(cocclusionFadeSpeed)) min 1) max 0;
+            _alpha = _alpha * _lastSeenAlphaMultiplier;
+        };
+
+        _color set [3, _alpha];
         _control ctrlSetTextColor _color;
 
         private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), _yOffSet - ((_size select 1) / 2)];

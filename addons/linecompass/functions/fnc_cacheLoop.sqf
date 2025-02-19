@@ -33,6 +33,8 @@ if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType 
     _unitsToRender append diwako_dui_special_track;
 };
 
+_unitsToRender = _unitsToRender - [objNull];
+
 GVAR(RenderData) = _unitsToRender apply {
 
     ([_x, _player] call FUNC(getUnitIcon)) params [["_icon", "a3\ui_f\data\map\Markers\Military\dot_ca.paa", [""]], ["_size", 2, [0]]];
@@ -43,11 +45,20 @@ GVAR(RenderData) = _unitsToRender apply {
         _color = +GVAR(DefaultIconColor);
     };
 
+    if (GVAR(enableOcclusion)) then {
+        private _vis = [vehicle _x, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_x modelToWorldVisual (_x selectionPosition "Spine2"))];
+
+        if (_vis isNotEqualTo 0) then {
+            _x setVariable [QGVAR(lastSeen), time + 0.5];
+        };
+    };
+
     [
         _x,
         _color,
         _icon,
-        _size
+        _size,
+        _x getVariable [QGVAR(lastSeen), time + 0.5]
     ];
 
 };

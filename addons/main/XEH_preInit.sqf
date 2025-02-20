@@ -9,6 +9,13 @@ GVAR(inFeatureCamera) = false;
 
 private _curCat = localize "STR_dui_cat_general";
 
+// compass whitelist, these need to be lowercase!!
+GVAR(compassWhitelist) = "getText (_x >> 'simulation') == 'ItemCompass'" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+
+// GPS whitelist (GPS devices + UAV terminals)
+GVAR(gpsWhitelist) = "getText (_x >> 'simulation') == 'ItemGPS' || inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'UavTerminal_base')" configClasses (configFile >> "CfgWeapons") apply {configName _x};
+
+
 // Blacklisted fonts
 GVAR(availableFonts) = '!(configName _x in [
     "EtelkaMonospaceProBold",
@@ -106,6 +113,10 @@ private _fontIndex = GVAR(availableFonts) findIf {_x isEqualTo "RobotoCondensed"
             profileNamespace setVariable ['igui_diwako_dui_nametags_y', nil];
             profileNamespace setVariable ['igui_diwako_dui_nametags_w', nil];
             profileNamespace setVariable ['igui_diwako_dui_nametags_h', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_x', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_y', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_w', nil];
+            profileNamespace setVariable ['igui_diwako_dui_linecompass_h', nil];
             saveProfileNamespace;
 
             [QGVAR(refreshUI),[]] call CBA_fnc_localEvent;

@@ -189,8 +189,8 @@ private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
         if (GVAR(showSpeaking)) then {
             _icon = [
                 _icon,
-                "\A3\modules_f_curator\Data\portraitRadio_ca.paa",
-                "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa"
+                "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa",
+                "\A3\modules_f_curator\Data\portraitRadio_ca.paa"
             ] select (_unit getVariable [QEGVAR(radar,isSpeaking), 0])
         };
 

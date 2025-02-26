@@ -34,3 +34,9 @@ folder = "diwako_dui"
 
 [lints.stringtables.sorted]
 options.only-lang = true
+
+[lints.sqf.var_all_caps]
+enabled = true
+options.ignore = [
+    "ACRE_IS_SPECTATOR"
+]

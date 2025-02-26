@@ -101,7 +101,7 @@ if (diwako_dui_enable_compass) then {
     };
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
-    private _compass = [_player] call FUNC(getCompass);
+    private _compass = [_player] call EFUNC(main,getCompass);
     _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {_compass isNotEqualTo ""}));
 
     if (_compass isNotEqualTo "") then {

@@ -45,20 +45,11 @@ GVAR(RenderData) = _unitsToRender apply {
         _color = +GVAR(DefaultIconColor);
     };
 
-    if (GVAR(enableOcclusion)) then {
-        private _vis = [vehicle _x, "VIEW"] checkVisibility [eyePos _player,  AGLToASL (_x modelToWorldVisual (_x selectionPosition "Spine2"))];
-
-        if (_vis isNotEqualTo 0) then {
-            _x setVariable [QGVAR(lastSeen), time + 0.5];
-        };
-    };
-
     [
         _x,
         _color,
         _icon,
-        _size,
-        _x getVariable [QGVAR(lastSeen), time + 0.5]
+        _size
     ];
 
 };

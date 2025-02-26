@@ -159,62 +159,74 @@ private _wPos = PY(0.3);
 private _nextIconMarkerControl = 0;
 
 private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
+private _time = time;
+private _eyePos = eyePos _player;
 
 {
-    _x params ["_unit", "_color", "_icon", "_size", "_lastSeen"];
+    _x params ["_unit", "_color", "_icon", "_size"];
 
     // Check if the unit is not the player himself and alive.
-    if (!isNull _unit) then {
-        private _unitPosition = getPosVisual _unit;
-        private _relativeVectorToUnit = _unitPosition vectorDiff _currentPosition;
-        private _angleToUnit = ((_relativeVectorToUnit select 0) atan2 (_relativeVectorToUnit select 1) + 360) % 360;
+    if (isNull _unit) then {
+        continue;
+    };
+    private _unitPosition = getPosVisual _unit;
+    private _relativeVectorToUnit = _unitPosition vectorDiff _currentPosition;
+    private _angleToUnit = ((_relativeVectorToUnit select 0) atan2 (_relativeVectorToUnit select 1) + 360) % 360;
 
-        private _control = GVAR(iconMarkerControlPool) select _nextIconMarkerControl;
-        if (isNil "_control" || {isNull _control}) then {
-            _control = _dialog ctrlCreate ["RscPicture", 7501 + _nextIconMarkerControl, _holderControl];
-            GVAR(iconMarkerControlPool) set [_nextIconMarkerControl, _control];
-        };
-
-        _control ctrlSetShadow GVAR(IconOutline);
-
-        private _compassAngle = _angleToUnit + 90;
-        if (_viewDirection >= 270 && _compassAngle < 180) then {
-            _compassAngle = _compassAngle + 360;
-        };
-        if (_viewDirection <= 90 && _compassAngle > 360) then {
-            _compassAngle = _compassAngle - 360;
-        };
-
-
-        if (GVAR(showSpeaking)) then {
-            _icon = [
-                _icon,
-                "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa",
-                "\A3\modules_f_curator\Data\portraitRadio_ca.paa"
-            ] select (_unit getVariable [QEGVAR(radar,isSpeaking), 0])
-        };
-
-        _control ctrlSetText _icon;
-
-        private _alpha = ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1;
-
-        if (GVAR(enableOcclusion)) then {
-            private _lastSeenAlphaMultiplier = (((GVAR(cocclusionFadeSpeed) - (time - _lastSeen)) / GVAR(cocclusionFadeSpeed)) min 1) max 0;
-            _alpha = _alpha * _lastSeenAlphaMultiplier;
-        };
-
-        _color set [3, _alpha];
-        _control ctrlSetTextColor _color;
-
-        private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), _yOffSet - ((_size select 1) / 2)];
-        _positionCenter append _size;
-        _control ctrlSetPosition _positionCenter;
-
-        _control ctrlCommit 0;
-
-        _nextIconMarkerControl = _nextIconMarkerControl + 1;
+    private _control = GVAR(iconMarkerControlPool) select _nextIconMarkerControl;
+    if (isNil "_control" || {isNull _control}) then {
+        _control = _dialog ctrlCreate ["RscPicture", 7501 + _nextIconMarkerControl, _holderControl];
+        GVAR(iconMarkerControlPool) set [_nextIconMarkerControl, _control];
     };
 
+    _control ctrlSetShadow GVAR(IconOutline);
+
+    private _compassAngle = _angleToUnit + 90;
+    if (_viewDirection >= 270 && _compassAngle < 180) then {
+        _compassAngle = _compassAngle + 360;
+    };
+    if (_viewDirection <= 90 && _compassAngle > 360) then {
+        _compassAngle = _compassAngle - 360;
+    };
+
+
+    if (GVAR(showSpeaking)) then {
+        _icon = [
+            _icon,
+            "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa",
+            "\A3\modules_f_curator\Data\portraitRadio_ca.paa"
+        ] select (_unit getVariable [QEGVAR(radar,isSpeaking), 0])
+    };
+
+    _control ctrlSetText _icon;
+
+    private _alpha = ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1;
+
+    if (GVAR(enableOcclusion) ) then {
+        if (_unit getVariable [QGVAR(checkNext), -1] < _time) then {
+            private _offset = 0.5 + random 0.5;
+            _unit setVariable [QGVAR(checkNext), _time + _offset];
+            private _vis = [vehicle _unit, "VIEW"] checkVisibility [_eyePos,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
+
+            _unit setVariable [QGVAR(seen), _vis isEqualTo 1];
+            if (_vis isEqualTo 1) then {
+                _unit setVariable [QGVAR(lastSeen), _time + _offset];
+            };
+        };
+
+        _alpha = _alpha * ((((GVAR(cocclusionFadeSpeed) - (_time - ([_unit getVariable [QGVAR(lastSeen), -1], _time] select (_unit getVariable [QGVAR(seen), false])))) / GVAR(cocclusionFadeSpeed)) min 1) max 0);
+    };
+
+    _color set [3, _alpha];
+    _control ctrlSetTextColor _color;
+
+    private _positionCenter = [PX(_compassAngle * 0.5) - ((_size select 0) / 2), _yOffSet - ((_size select 1) / 2)];
+    _positionCenter append _size;
+    _control ctrlSetPosition _positionCenter;
+
+    _control ctrlCommit 0;
+
+    _nextIconMarkerControl = _nextIconMarkerControl + 1;
 } forEach GVAR(RenderData);
 
 if (_nextIconMarkerControl < count GVAR(iconMarkerControlPool)) then {

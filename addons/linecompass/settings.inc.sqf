@@ -1,4 +1,4 @@
-private _cat = format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_linecompass"];
+private _cat = format ["%1 - %2", localize "STR_dui_mod", localize "STR_dui_addon_linecompass"];
 
 private _curCat = localize "STR_dui_cat_general";
 
@@ -111,7 +111,7 @@ if (_acre || _tfar) then {
         QGVAR(showSpeaking),
         "CHECKBOX",
         [localize "STR_dui_linecompass_show_speaking", localize "STR_dui_linecompass_show_speaking_desc"],
-        [CBA_SETTINGS_CAT, _curCat],
+        [_cat, _curCat],
         true,
         false
     ] call CBA_fnc_addSetting;

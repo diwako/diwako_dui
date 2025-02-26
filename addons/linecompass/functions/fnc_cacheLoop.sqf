@@ -28,12 +28,12 @@ if (customWaypointPosition isNotEqualTo GVAR(customWaypointPosition)) then {
 };
 
 
-private _unitsToRender = units group _player - [_player];
+private _unitsToRender = units group _player;
 if !(isNil "diwako_dui_special_track" && { diwako_dui_special_track isEqualType [] }) then {
     _unitsToRender append diwako_dui_special_track;
 };
 
-_unitsToRender = _unitsToRender - [objNull];
+_unitsToRender = _unitsToRender - [_player, objNull];
 
 GVAR(RenderData) = _unitsToRender apply {
 

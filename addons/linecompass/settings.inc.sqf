@@ -88,7 +88,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 [
     QGVAR(enableOcclusion),
     "CHECKBOX",
-    ["STR_dui_linecompass_enable_occlusion", "STR_dui_linecompass_enable_occlusion_desc"],
+    ["STR_dui_occlusion", "STR_dui_occlusion_desc"],
     [_cat, _curCat],
     false
 ] call CBA_fnc_addSetting;
@@ -96,7 +96,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 [
     QGVAR(cocclusionFadeSpeed),
     "SLIDER",
-    ["STR_dui_linecompass_occlusion_fade_speed", "STR_dui_linecompass_occlusion_fade_speed_desc"],
+    ["STR_dui_occlusion_fade_time", "STR_dui_occlusion_fade_time_desc"],
     [_cat, _curCat],
     [0, 10, 3.5, 1],
     false

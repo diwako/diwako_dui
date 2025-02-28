@@ -214,7 +214,7 @@ private _eyePos = eyePos _player;
             };
         };
 
-        _alpha = _alpha * ((((GVAR(cocclusionFadeSpeed) - (_time - ([_unit getVariable [QGVAR(lastSeen), -1], _time] select (_unit getVariable [QGVAR(seen), false])))) / GVAR(cocclusionFadeSpeed)) min 1) max 0);
+        _alpha = _alpha * ((((GVAR(occlusionFadeSpeed) - (_time - ([_unit getVariable [QGVAR(lastSeen), -1], _time] select (_unit getVariable [QGVAR(seen), false])))) / GVAR(occlusionFadeSpeed)) min 1) max 0);
     };
 
     _color set [3, _alpha];

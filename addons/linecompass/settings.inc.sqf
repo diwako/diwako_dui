@@ -94,7 +94,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(cocclusionFadeSpeed),
+    QGVAR(occlusionFadeSpeed),
     "SLIDER",
     ["STR_dui_occlusion_fade_time", "STR_dui_occlusion_fade_time_desc"],
     [_cat, _curCat],

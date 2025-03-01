@@ -9,7 +9,7 @@ private _player = call CBA_fnc_currentUnit;
 
 private _viewDirectionVector = getCameraViewDirection _player;
 private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionVector select 1) + 360) % 360;
-private _currentPosition = getPosVisual _player;
+private _currentPosition = eyePos _player;
 
 // Shift the control group to view direction
 private _holderControl = _dialog displayCtrl HOLDER_IDC;
@@ -92,7 +92,9 @@ private _overlapCacheLineIndices = [];
 
     // Shift
     private _otherMarkerControl = _overlapCacheLineIndices param [_lineIndex, nil];
-    if !(isNil "_otherMarkerControl") then {
+    if (isNil "_otherMarkerControl") then {
+        _overlapCacheLineIndices set [_lineIndex, _control];
+    } else {
         // Compare
         private _otherOffset = _otherMarkerControl getVariable QGVAR(offset);
         if (abs _otherOffset < abs _offset) then {
@@ -123,8 +125,6 @@ private _overlapCacheLineIndices = [];
             _otherMarkerControl = _overlapCacheLineIndices param [_shiftedLineIndex, nil];
             _overlapCacheLineIndices set [_shiftedLineIndex, _tmp];
         };
-    } else {
-        _overlapCacheLineIndices set [_lineIndex, _control];
     };
 
     _nextLineMarkerControl = _nextLineMarkerControl + 1;
@@ -160,7 +160,6 @@ private _nextIconMarkerControl = 0;
 
 private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
 private _time = time;
-private _eyePos = eyePos _player;
 
 {
     _x params ["_unit", "_color", "_icon", "_size"];
@@ -189,7 +188,6 @@ private _eyePos = eyePos _player;
         _compassAngle = _compassAngle - 360;
     };
 
-
     if (GVAR(showSpeaking)) then {
         _icon = [
             _icon,
@@ -206,7 +204,7 @@ private _eyePos = eyePos _player;
         if (_unit getVariable [QGVAR(checkNext), -1] < _time) then {
             private _offset = 0.5 + random 0.5;
             _unit setVariable [QGVAR(checkNext), _time + _offset];
-            private _vis = [vehicle _unit, "VIEW"] checkVisibility [_eyePos,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
+            private _vis = [vehicle _unit, "VIEW"] checkVisibility [_currentPosition,  AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine2"))];
 
             _unit setVariable [QGVAR(seen), _vis isEqualTo 1];
             if (_vis isEqualTo 1) then {

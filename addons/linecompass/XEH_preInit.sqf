@@ -32,7 +32,7 @@ if (hasInterface) then {
             [_key, _pos, GVAR(ACEFingeringColor)] call FUNC(addLineMarker);
 
             [{
-                _this call FUNC(removeLineMarker);
+                call FUNC(removeLineMarker);
             }, _key, 2.5] call CBA_fnc_waitAndExecute;
         }] call CBA_fnc_addEventhandler;
     };

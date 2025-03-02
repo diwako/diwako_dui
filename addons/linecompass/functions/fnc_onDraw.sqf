@@ -160,6 +160,7 @@ private _nextIconMarkerControl = 0;
 
 private _yOffSet = [PY(0.75), PY(2.15)] select GVAR(SwapOrder);
 private _time = time;
+private _range = GVAR(compassRangeLimit) min GVAR(compassRange);
 
 {
     _x params ["_unit", "_color", "_icon", "_size"];
@@ -198,7 +199,7 @@ private _time = time;
 
     _control ctrlSetText _icon;
 
-    private _alpha = ((1 - 0.2 * ((_player distance _unit) - (diwako_dui_compassRange - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1;
+    private _alpha = ((1 - 0.2 * ((_player distance _unit) - (_range - 6))) min 1) * ((_compassAngle - _viewDirection) call FUNC(getAlphaFromX)) min 1;
 
     if (GVAR(enableOcclusion) ) then {
         if (_unit getVariable [QGVAR(checkNext), -1] < _time) then {

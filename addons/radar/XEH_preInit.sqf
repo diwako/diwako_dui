@@ -222,6 +222,15 @@ private _curCat = localize "STR_dui_cat_compass";
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(compassRangeLimit)
+    ,"SLIDER"
+    ,[localize "STR_dui_compass_range_limit", localize "STR_dui_compass_range_limit_desc"]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,[DUI_MIN_RANGE, DUI_MAX_RANGE, DUI_DEFAULT_MAX_RANGE, 0]
+    ,true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(vehicleCompassEnabled)
     ,"CHECKBOX"
     ,[localize "STR_dui_compass_vehicle_enabled", localize "STR_dui_compass_vehicle_enabled_desc"]

@@ -47,7 +47,7 @@ if !(isNil "ace_goggles") then {
 
 if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     ["ace_finger_fingered", {
-        _this call FUNC(incomingFinger);
+        call FUNC(incomingFinger);
     }]  call CBA_fnc_addEventHandler;
 };
 

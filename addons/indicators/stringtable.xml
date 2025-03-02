@@ -62,6 +62,12 @@
                 <Chinesesimp>显示标记的最远距离</Chinesesimp>
                 <Turkish>Göstergelerin gösterileceği maximum mesafe</Turkish>
             </Key>
+            <Key ID="STR_dui_indicators_range_limit">
+                <English>Max Range Limit</English>
+            </Key>
+            <Key ID="STR_dui_indicators_range_limit_desc">
+                <English>Maximum allowed range to show indicators set by mission/server</English>
+            </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
                 <French>Autoriser les indicateurs d'équipage</French>

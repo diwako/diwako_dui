@@ -15,7 +15,8 @@ GVAR(drawEh) = -1;
 ] call CBA_fnc_addSetting;
 
 #define DUI_INDICATORS_MIN_RANGE 15
-#define DUI_INDICATORS_MAX_RANGE 100
+#define DUI_INDICATORS_MAX_RANGE 500
+#define DUI_INDICATORS_DEFAULT_MAX_RANGE 100
 #define DUI_INDICATORS_MIN_RANGE_CREW 15
 #define DUI_INDICATORS_MAX_RANGE_CREW 1000
 [
@@ -25,6 +26,15 @@ GVAR(drawEh) = -1;
     ,CBA_SETTINGS_CAT
     ,[DUI_INDICATORS_MIN_RANGE, DUI_INDICATORS_MAX_RANGE, 20, 0]
     ,false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rangeLimit)
+    ,"SLIDER"
+    ,[localize "STR_dui_indicators_range_limit", localize "STR_dui_indicators_range_limit_desc"]
+    ,CBA_SETTINGS_CAT
+    ,[DUI_INDICATORS_MIN_RANGE, DUI_INDICATORS_MAX_RANGE, DUI_INDICATORS_DEFAULT_MAX_RANGE, 0]
+    ,true
 ] call CBA_fnc_addSetting;
 
 [

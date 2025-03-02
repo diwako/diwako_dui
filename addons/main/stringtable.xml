@@ -245,6 +245,12 @@
             <Chinesesimp>玩家看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
             <Turkish>Pusula içinde ne kadar yakın birimler görünmeli?</Turkish>
         </Key>
+        <Key ID="STR_dui_compass_range_limit">
+            <English>Compass Range Limit</English>
+        </Key>
+        <Key ID="STR_dui_compass_range_limit_desc">
+            <English>The maximum allowed range of the compass set by mission/server</English>
+        </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
             <French>Autoriser la boussole du véhicule</French>

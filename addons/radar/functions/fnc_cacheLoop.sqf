@@ -236,7 +236,7 @@ private _curColumnHeight = 0;
 private _ctrlPosList = [0, 0, _listWidth * 10, _itemHeight * pixelH];
 private _showSpeaking = GVAR(showSpeaking);
 private _replaceIconWhenSpeaking = GVAR(showSpeaking_replaceIcon);
-private _circleRange = diwako_dui_compassRange;
+private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
 {
     if ((count _lists) < (_forEachIndex + 1)) then {
         private _curGrp = _display ctrlCreate["RscControlsGroupNoScrollbars", -1, _grpCtrl];

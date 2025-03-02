@@ -86,6 +86,24 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(compassRange),
+    "SLIDER",
+    [localize "STR_dui_compass_range", localize "STR_dui_compass_range_desc"],
+    [_cat, _curCat],
+    [DUI_MIN_RANGE, DUI_MAX_RANGE, 35, 0],
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(compassRangeLimit),
+    "SLIDER",
+    [localize "STR_dui_compass_range_limit", localize "STR_dui_compass_range_limit_desc"],
+    [_cat, _curCat],
+    [DUI_MIN_RANGE, DUI_MAX_RANGE, DUI_DEFAULT_MAX_RANGE, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(enableOcclusion),
     "CHECKBOX",
     ["STR_dui_occlusion", "STR_dui_occlusion_desc"],

@@ -12,7 +12,7 @@ if (_grp isEqualTo []) exitWith {[]};
 if (isNil "_player") then {
     _player = [] call CBA_fnc_currentUnit;
 };
-private _circleRange = diwako_dui_compassRange;
+private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
 private _usedCtrls = [];
 private _iconScale = diwako_dui_compass_icon_scale;
 private _distanceWarning = diwako_dui_distanceWarning;

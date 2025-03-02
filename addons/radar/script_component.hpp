@@ -21,7 +21,8 @@
 #define DUI_128PX                 (128 * (missionNamespace getVariable ['diwako_dui_hudScaling', 1]))
 
 // Script values
-#define DUI_MAX_RANGE             50
+#define DUI_MAX_RANGE             500
+#define DUI_DEFAULT_MAX_RANGE     50
 #define DUI_MIN_RANGE             15
 #define DUI_MAX_VEHICLE_RANGE     1000
 #define DUI_MIN_VEHICLE_RANGE     15

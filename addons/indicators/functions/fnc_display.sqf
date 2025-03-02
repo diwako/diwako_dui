@@ -7,7 +7,7 @@ if !([_player] call EFUNC(main,canHudBeShown)) exitWith {};
 private _clamp = NIGHT_ALPHA + (sunOrMoon * DAY_ALPHA);
 private _vehPlayer = vehicle _player;
 private _distanceWarning = diwako_dui_distanceWarning;
-private _range = [GVAR(range), GVAR(range_crew)] select (GVAR(crew_range_enabled) && { _player call EFUNC(main,isInCrew) });
+private _range = [GVAR(range) min GVAR(rangeLimit), GVAR(range_crew)] select (GVAR(crew_range_enabled) && { _player call EFUNC(main,isInCrew) });
 private _size = GVAR(size);
 private _useACE = GVAR(useACENametagsRange);
 private _camPosASL = AGLToASL positionCameraToWorld [0, 0, 0];

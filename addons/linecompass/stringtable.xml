@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="diwako_dui">
+    <Package name="linecompass">
+        <Container name="cba_settings">
+            <Key ID="STR_dui_addon_linecompass">
+                <English>Line Compass</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_enabled">
+                <English>Enabled</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_compass_required">
+                <English>Show Only When Compass is Available</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_directions">
+                <English>Directions Drawn</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_icon_outline">
+                <English>Icon Outline</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_icon_color">
+                <English>Default Icon Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_icon_color_desc">
+                <English>Default color for icons without fire team assignment</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_waypoint_color">
+                <English>Default Waypoint Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_default_waypoint_color_desc">
+                <English>Waypoint given by squad leader or mission</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_custom_waypoint_color">
+                <English>Custom Waypoint Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_custom_waypoint_color_desc">
+                <English>Waypoint created when shift+click is on the map is used</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_ace_fingering_color">
+                <English>ACE Pointing Color</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_none">
+                <English>None</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_bearings">
+                <English>Quarter Bearings</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_draw_bearings_all">
+                <English>All</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_swap_order">
+                <English>Bearing above line</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_swap_order_desc">
+                <English>When enabled the bearing information, such as cardinal directions, will be displayed above the line of the compass</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_UIGrids_desc">
+                <English>Line Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
+            </Key>
+        </Container>
+    </Package>
+</Project>

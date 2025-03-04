@@ -17,7 +17,7 @@ class CfgInGameUI {
         select = "#(argb,1,1,1)color(0,0,0,0)";
         outArrow = "#(argb,1,1,1)color(0,0,0,0)";
         leader = "#(argb,1,1,1)color(0,0,0,0)";
-        mission = "#(argb,1,1,1)color(0,0,0,0)";
+        // mission = "#(argb,1,1,1)color(0,0,0,0)";
         unitBleeding = "#(argb,1,1,1)color(0,0,0,0)";
         unitInjured = "#(argb,1,1,1)color(0,0,0,0)";
         unitHealer = "#(argb,1,1,1)color(0,0,0,0)";

@@ -56,6 +56,28 @@
             <Key ID="STR_dui_linecompass_UIGrids_desc">
                 <English>Line Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
             </Key>
+            <Key ID="STR_dui_linecompass_show_speaking">
+                <English>Show icon when units speak</English>
+                <French>Afficher l'icône lorsque les unités parlent</French>
+                <Spanish>Mostrar icono cuando las unidades hablan</Spanish>
+                <Russian>Показывать иконку при разговоре</Russian>
+                <German>Zeige Icon, wenn jemand spricht</German>
+                <Japanese>ユニット発話時はアイコン表示</Japanese>
+                <Chinese>当单位说话时显示图标</Chinese>
+                <Chinesesimp>当单位说话时显示图标</Chinesesimp>
+                <Turkish>Konuşan Kişi İkonu</Turkish>
+            </Key>
+            <Key ID="STR_dui_linecompass_show_speaking_desc">
+                <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
+                <French>Affiche une icône de bulle de dialogue lorsqu'une unité parle sur ACRE ou TFAR</French>
+                <Spanish>Muestra un icono de burbuja de diálogo cuando una unidad habla por ACRE o TFAR</Spanish>
+                <Russian>Показывать иконку разговора, когда юнит говорит используя ACRE или TFAR</Russian>
+                <German>Zeigt eine Sprachbox an, wenn eine Einheit mit ACRE oder TFAR spricht</German>
+                <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
+                <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
+                <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
+                <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
+            </Key>
         </Container>
     </Package>
 </Project>

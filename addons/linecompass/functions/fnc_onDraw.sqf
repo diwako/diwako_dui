@@ -1,11 +1,15 @@
 #include "..\script_component.hpp"
 
-
 // Exit if the compass is not visible
 private _dialog = uiNamespace getVariable QGVAR(Compass);
 if (isNull _dialog) exitWith {};
 
 private _player = call CBA_fnc_currentUnit;
+if !([_player] call EFUNC(main,canHudBeShown)) exitWith {
+    if (GVAR(CompassShown)) then {
+        call FUNC(HideCompass);
+    };
+};
 
 private _viewDirectionVector = getCameraViewDirection _player;
 private _viewDirection = ((_viewDirectionVector select 0) atan2 (_viewDirectionVector select 1) + 360) % 360;

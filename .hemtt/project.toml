@@ -22,6 +22,7 @@ exclude = ["*.psd", "*.png", "*.tga"]
 workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3
+    # "751965892", # ACRE2
 ]
 parameters = ["-world=empty"]
 mission = "dui.vr"

@@ -12,8 +12,7 @@ private _curCat = localize "STR_dui_cat_general";
     {
         params ["_value"];
         if (_value) then { call FUNC(showCompass); };
-    },
-    false
+    }
 ] call CBA_fnc_addSetting;
 
 [
@@ -21,9 +20,6 @@ private _curCat = localize "STR_dui_cat_general";
     "CHECKBOX",
     "STR_dui_linecompass_compass_required",
     [_cat, _curCat],
-    true,
-    1,
-    {},
     true
 ] call CBA_fnc_addSetting;
 
@@ -124,7 +120,6 @@ private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 
 if (_acre || _tfar) then {
-
     [
         QGVAR(showSpeaking),
         "CHECKBOX",
@@ -133,9 +128,6 @@ if (_acre || _tfar) then {
         true,
         false
     ] call CBA_fnc_addSetting;
-
 } else {
-
     GVAR(showSpeaking) = false;
-
 };

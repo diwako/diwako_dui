@@ -64,9 +64,11 @@
             </Key>
             <Key ID="STR_dui_indicators_range_limit">
                 <English>Max Range Limit</English>
+                <French>Limite maximale de la plage</French>
             </Key>
             <Key ID="STR_dui_indicators_range_limit_desc">
                 <English>Maximum allowed range to show indicators set by mission/server</English>
+                <French>Portée maximale autorisée pour l'affichage des indicateurs, fixée par la mission/serveur</French>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>

@@ -124,7 +124,7 @@
         <Key ID="STR_dui_nametags_groupNameFont_desc">
             <English>The Font that is used for the Group Name in the Nametag</English>
             <French>Police utilisée pour le nom du groupe dans le badge d'identification</French>
-            <Russian>&gt;Шрифт, который будет использоваться для групп в именных жетонах</Russian>
+            <Russian>Шрифт, который будет использоваться для групп в именных жетонах</Russian>
             <German>Die Schriftart, die für den Gruppennamen im Namensschild verwendet wird</German>
             <Japanese>ネームタグ内のグループ名に適用されます。</Japanese>
             <Chinese>名牌中團隊名稱的字體</Chinese>

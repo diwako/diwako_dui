@@ -247,9 +247,11 @@
         </Key>
         <Key ID="STR_dui_compass_range_limit">
             <English>Compass Range Limit</English>
+            <French>Limite de la portée du compas</French>
         </Key>
         <Key ID="STR_dui_compass_range_limit_desc">
             <English>The maximum allowed range of the compass set by mission/server</English>
+            <French>Portée maximale autorisée du compas, définie par la mission/serveur</French>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -1912,7 +1914,6 @@
         </Key>
         <Key ID="STR_dui_icon_everlight">
             <English>Everlight</English>
-            <French>Everlight</French>
         </Key>
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">

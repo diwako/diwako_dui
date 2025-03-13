@@ -32,27 +32,25 @@ private _curCat = localize "STR_dui_cat_general";
     0,
     {
         params ["_value"];
-        GVAR(ResolvedDrawBearing) = if (isNil QGVAR(AllowedDrawBearing)) then {
-            _value
+        GVAR(ResolvedDrawBearing) = if (!isNil QGVAR(AllowNumericDrawBearing) && {!GVAR(AllowNumericDrawBearing)}) then {
+            _value min 1
         } else {
-            GVAR(AllowedDrawBearing) min _value
+            _value
         };
     }
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(AllowedDrawBearing),
-    "LIST",
+    QGVAR(AllowNumericDrawBearing),
+    "CHECKBOX",
     ["STR_dui_linecompass_allowed_draw_directions", "STR_dui_linecompass_allowed_draw_directions_desc"],
     [_cat, _curCat],
-    [[0, 1, 2], ["STR_dui_linecompass_draw_bearings_none", "STR_dui_linecompass_draw_bearings_bearings", "STR_dui_linecompass_draw_bearings_all"], 2],
+    true,
     1,
     {
         params ["_value"];
-        GVAR(ResolvedDrawBearing) = if (isNil QGVAR(DrawBearing)) then {
-            _value
-        } else {
-            GVAR(DrawBearing) min _value
+        GVAR(ResolvedDrawBearing) = if (!isNil QGVAR(DrawBearing) && !_value) then {
+            GVAR(DrawBearing) min 1
         };
     }
 ] call CBA_fnc_addSetting;

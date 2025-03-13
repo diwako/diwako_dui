@@ -7,10 +7,10 @@
                 <French>Boussole linéaire</French>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions">
-                <English>Direction Drawn Limit</English>
+                <English>Allow Numeric Directions Drawn</English>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
-                <English>Limits the detail of the line compass bearing per mission or serverside while allowing player choice of simpler options</English>
+                <English>Allow the display of numeric bearings along the line compass.</English>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>

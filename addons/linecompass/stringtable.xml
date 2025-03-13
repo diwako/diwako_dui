@@ -10,7 +10,7 @@
                 <English>Direction Drawn Limit</English>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
-                <English>Limits the detail of the line compass bearings while allowing choices between simpler options</English>
+                <English>Limits the detail of the line compass bearings while allowing player choice of simpler options</English>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>

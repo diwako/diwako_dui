@@ -45,7 +45,7 @@ for "_i" from 0 to 13 do {
     private _newAlpha = (_i * 15 + _bearingOffset) call FUNC(getAlphaFromX);
     private _oldAlpha = GVAR(bearingAlphaCache) select _idc;
 
-    switch (GVAR(DrawBearing)) do {
+    switch (GVAR(ResolvedDrawBearing)) do {
         case 0: {
             _newAlpha = 0;
         };

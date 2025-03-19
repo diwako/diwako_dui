@@ -254,7 +254,7 @@
         <Key ID="STR_dui_compass_range_limit_desc">
             <English>The maximum allowed range of the compass set by mission/server</English>
             <French>Portée maximale autorisée du compas, définie par la mission/serveur</French>
-            <German>Die maximale Entfernung des Kompasses der Mission/des Servers</German>
+            <German>Die maximale Reichweite des Kompasses, gesetzt durch Mission/Server</German>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -2334,12 +2334,12 @@
         <Key ID="STR_dui_radar_always_show_unit_numbers">
             <English>Always show unit selection number</English>
             <French>Toujours afficher le numéro de sélection de l'unité</French>
-            <German>Immer die Einheitenauswahlnummer anzeigen</German>
+            <German>Immer den Gruppenindex der Einheit anzeigen</German>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers_desc">
             <English>Will always show the unit number the squad leader can use to select a squad member using the function keys</English>
             <French>Affiche toujours le numéro de l'unité que le chef d'escadron peut utiliser pour sélectionner un membre de l'escadron à l'aide des touches de fonction.</French>
-            <German>Zeige immer die Auswahlnummer der Einheit an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
+            <German>Zeige immer Index der Gruppenmitglieder an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
         </Key>
     </Package>
 </Project>

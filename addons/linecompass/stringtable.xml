@@ -28,7 +28,7 @@
             <Key ID="STR_dui_linecompass_draw_directions">
                 <English>Directions Drawn</English>
                 <French>Directions indiquées</French>
-                <German>Angezeigt Richtungen</German>
+                <German>Angezeigte Richtungen</German>
             </Key>
             <Key ID="STR_dui_linecompass_icon_outline">
                 <English>Icon Outline</English>
@@ -53,7 +53,7 @@
             <Key ID="STR_dui_linecompass_default_waypoint_color_desc">
                 <English>Waypoint given by squad leader or mission</English>
                 <French>Point de repère donné par le chef d'équipe ou la mission</French>
-                <German>Wegpunkt, der durch Gruppenführer oder die Mission eingestellt ist</German>
+                <German>Wegpunkt, gegeben durch Gruppenführer oder Mission</German>
             </Key>
             <Key ID="STR_dui_linecompass_custom_waypoint_color">
                 <English>Custom Waypoint Color</English>
@@ -63,7 +63,7 @@
             <Key ID="STR_dui_linecompass_custom_waypoint_color_desc">
                 <English>Waypoint created when shift+click is on the map is used</English>
                 <French>Création d'un point de passage lorsque shift+click est utilisé sur la carte</French>
-                <German>Wegpunkte, die mit Shift+Klich auf der Karte erstellt wurden</German>
+                <German>Wegpunkte, die mit Shift+Klick auf der Karte erstellt wurden</German>
             </Key>
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
@@ -78,7 +78,7 @@
             <Key ID="STR_dui_linecompass_draw_bearings_bearings">
                 <English>Only Cardinal and Ordinal</English>
                 <French>Points cardinaux</French>
-                <German>Viertel Schritte</German>
+                <German>Haupt- und Nebenrichtungen</German>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_all">
                 <English>All</English>

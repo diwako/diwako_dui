@@ -34,6 +34,7 @@
         <Key ID="STR_dui_font_desc">
             <English>Which font should be used? Warning custom fonts might cause issues!</English>
             <French>Quelle police doit être utilisée ? Attention, les polices personnalisées peuvent poser des problèmes !</French>
+            <German>Welche Schriftart soll verwendet werden? Achtung, manche Schiftarten können Probleme erzeugen!</German>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
@@ -248,10 +249,12 @@
         <Key ID="STR_dui_compass_range_limit">
             <English>Compass Range Limit</English>
             <French>Limite de la portée du compas</French>
+            <German>Kompass Entfernungslimit</German>
         </Key>
         <Key ID="STR_dui_compass_range_limit_desc">
             <English>The maximum allowed range of the compass set by mission/server</English>
             <French>Portée maximale autorisée du compas, définie par la mission/serveur</French>
+            <German>Die maximale Entfernung des Kompasses der Mission/des Servers</German>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -1914,6 +1917,7 @@
         </Key>
         <Key ID="STR_dui_icon_everlight">
             <English>Everlight</English>
+            <German>Everlight</German>
         </Key>
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">
@@ -2330,10 +2334,12 @@
         <Key ID="STR_dui_radar_always_show_unit_numbers">
             <English>Always show unit selection number</English>
             <French>Toujours afficher le numéro de sélection de l'unité</French>
+            <German>Immer die Einheitenauswahlnummer anzeigen</German>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers_desc">
             <English>Will always show the unit number the squad leader can use to select a squad member using the function keys</English>
             <French>Affiche toujours le numéro de l'unité que le chef d'escadron peut utiliser pour sélectionner un membre de l'escadron à l'aide des touches de fonction.</French>
+            <German>Zeige immer die Auswahlnummer der Einheit an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
         </Key>
     </Package>
 </Project>

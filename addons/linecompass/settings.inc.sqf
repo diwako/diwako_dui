@@ -7,7 +7,7 @@ private _curCat = localize "STR_dui_cat_general";
     "CHECKBOX",
     "STR_dui_linecompass_enabled",
     [_cat, _curCat],
-    false,
+    true,
     0,
     {
         params ["_value"];

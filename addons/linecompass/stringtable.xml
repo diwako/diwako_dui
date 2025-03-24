@@ -6,6 +6,12 @@
                 <English>Line Compass</English>
                 <French>Boussole linéaire</French>
             </Key>
+            <Key ID="STR_dui_linecompass_allowed_draw_directions">
+                <English>Allow Numeric Directions Drawn</English>
+            </Key>
+            <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
+                <English>Allow the display of numeric bearings along the line compass.</English>
+            </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>
                 <French>Activé</French>
@@ -55,7 +61,7 @@
                 <French>Aucun</French>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_bearings">
-                <English>Quarter Bearings</English>
+                <English>Only Cardinal and Ordinal</English>
                 <French>Points cardinaux</French>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_all">

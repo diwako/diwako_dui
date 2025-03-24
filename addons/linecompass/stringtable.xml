@@ -5,80 +5,100 @@
             <Key ID="STR_dui_addon_linecompass">
                 <English>Line Compass</English>
                 <French>Boussole linéaire</French>
+                <German>Linienkompass</German>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions">
                 <English>Allow Numeric Directions Drawn</English>
+                <German>Grad-Peilungen von Nebenrichtungen anzeigen</German>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
                 <English>Allow the display of numeric bearings along the line compass.</English>
+                <German>Nebenhimmelsrichtungen werden als Grad-Peilung oberhalb des Linienkompasses angezeigt.</German>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>
                 <French>Activé</French>
+                <German>Aktiviert</German>
             </Key>
             <Key ID="STR_dui_linecompass_compass_required">
                 <English>Show Only When Compass is Available</English>
                 <French>Afficher uniquement lorsque le compas est disponible</French>
+                <German>Nur zeigen, wenn der Kompass verfügbar ist</German>
             </Key>
             <Key ID="STR_dui_linecompass_draw_directions">
                 <English>Directions Drawn</English>
                 <French>Directions indiquées</French>
+                <German>Angezeigte Richtungen</German>
             </Key>
             <Key ID="STR_dui_linecompass_icon_outline">
                 <English>Icon Outline</English>
                 <French>Contour des icônes</French>
+                <German>Icon Umriss</German>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color">
                 <English>Default Icon Color</English>
                 <French>Couleur de l'icône par défaut</French>
+                <German>Standardfarbe des Icons</German>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color_desc">
                 <English>Default color for icons without fire team assignment</English>
                 <French>Couleur par défaut des icônes sans affectation à une équipe</French>
+                <German>Standardfarbe für Icons ohne Zuweisung zu einem Feuerteam</German>
             </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color">
                 <English>Default Waypoint Color</English>
                 <French>Couleur par défaut du point de passage</French>
+                <German>Standardfarbe der Wegpunkte</German>
             </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color_desc">
                 <English>Waypoint given by squad leader or mission</English>
                 <French>Point de repère donné par le chef d'équipe ou la mission</French>
+                <German>Wegpunkt, gegeben durch Gruppenführer oder Mission</German>
             </Key>
             <Key ID="STR_dui_linecompass_custom_waypoint_color">
                 <English>Custom Waypoint Color</English>
                 <French>Couleur personnalisée du point de passage</French>
+                <German>Personalisierte Farbe für Wegpunte</German>
             </Key>
             <Key ID="STR_dui_linecompass_custom_waypoint_color_desc">
                 <English>Waypoint created when shift+click is on the map is used</English>
                 <French>Création d'un point de passage lorsque shift+click est utilisé sur la carte</French>
+                <German>Wegpunkte, die mit Shift+Klick auf der Karte erstellt wurden</German>
             </Key>
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
                 <French>Couleur du pointage ACE</French>
+                <German>Anzeigefarbe von ACE</German>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_none">
                 <English>None</English>
                 <French>Aucun</French>
+                <German>Keine</German>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_bearings">
                 <English>Only Cardinal and Ordinal</English>
                 <French>Points cardinaux</French>
+                <German>Haupt- und Nebenrichtungen</German>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_all">
                 <English>All</English>
                 <French>Tous</French>
+                <German>Alle</German>
             </Key>
             <Key ID="STR_dui_linecompass_swap_order">
                 <English>Bearing above line</English>
                 <French>Position au-dessus de la ligne</French>
+                <German>Richtungen oberhalb der Linie</German>
             </Key>
             <Key ID="STR_dui_linecompass_swap_order_desc">
                 <English>When enabled the bearing information, such as cardinal directions, will be displayed above the line of the compass</English>
                 <French>Lorsque cette option est activée, les informations relatives au positionnement, telles que les directions cardinales, s'affichent au-dessus de la ligne de la boussole.</French>
+                <German>Wenn aktiviert, werden die Richtungs-Informationen, wie zum Beispiel die Himmelsrichtungen, oberhalb der Linie angezeigt</German>
             </Key>
             <Key ID="STR_dui_linecompass_UIGrids_desc">
                 <English>Line Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
                 <French>Élément de l'UI de la Boussole linéaire, faites-la glisser et déposez-la pour la repositionner. Vous pouvez réinitialiser la position dans les paramètres de l'ABC si quelque chose ne va pas !</French>
+                <German>Linien-Kompass UI Element, mit der Maus an gewünschte Position ziehen. Die Position kann durch CBA Einstellungen auf den Standard zurückgesetzt werden!</German>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>

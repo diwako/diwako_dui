@@ -100,6 +100,12 @@
                 <French>Élément de l'UI de la Boussole linéaire, faites-la glisser et déposez-la pour la repositionner. Vous pouvez réinitialiser la position dans les paramètres de l'ABC si quelque chose ne va pas !</French>
                 <German>Linien-Kompass UI Element, mit der Maus an gewünschte Position ziehen. Die Position kann durch CBA Einstellungen auf den Standard zurückgesetzt werden!</German>
             </Key>
+            <Key ID="STR_dui_show_custom_waypoint">
+                <English>Show Custom Waypoint</English>
+            </Key>
+            <Key ID="STR_dui_show_custom_waypoint_desc">
+                <English>Show custom waypoint (default shift + left click) on the line compass</English>
+            </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>
                 <French>Afficher l'icône lorsque les unités parlent</French>

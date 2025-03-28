@@ -104,7 +104,7 @@
                 <English>Show Custom Waypoint</English>
             </Key>
             <Key ID="STR_dui_show_custom_waypoint_desc">
-                <English>Show custom waypoint (default shift + left click) on the line compass</English>
+                <English>Show custom waypoint (default set by shift + left clicking on the map) on the line compass.</English>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>

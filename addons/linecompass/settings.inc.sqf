@@ -149,7 +149,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     0,
     {
         params ["_value"];
-        if (_value) then {
+        if (_value && customWaypointPosition isNotEqualTo []) then {
             ["CUSTOM_WAYPOINT_POSITION", customWaypointPosition, GVAR(CustomWaypointColor)] call FUNC(addLineMarker);
             GVAR(customWaypointPosition) = customWaypointPosition;
         } else {

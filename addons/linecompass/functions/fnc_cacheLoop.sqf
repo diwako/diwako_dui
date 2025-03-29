@@ -18,7 +18,7 @@ if (_shouldShowCompass) then {
     };
 };
 
-if (customWaypointPosition isNotEqualTo GVAR(customWaypointPosition)) then {
+if (customWaypointPosition isNotEqualTo GVAR(customWaypointPosition) && GVAR(enableShowCustomWP)) then {
     if (customWaypointPosition isEqualTo []) then {
         "CUSTOM_WAYPOINT_POSITION" call FUNC(removeLineMarker);
     } else {

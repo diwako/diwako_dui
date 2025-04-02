@@ -143,7 +143,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 [
     QGVAR(enableShowCustomWP),
     "CHECKBOX",
-    ["STR_dui_show_custom_waypoint", "STR_dui_show_custom_waypoint_desc"],
+    ["STR_dui_linecompass_show_custom_waypoint", "STR_dui_linecompass_show_custom_waypoint_desc"],
     [_cat, _curCat],
     true,
     0,

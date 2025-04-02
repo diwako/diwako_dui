@@ -102,6 +102,14 @@
                 <French>Élément de l'UI de la Boussole linéaire, faites-la glisser et déposez-la pour la repositionner. Vous pouvez réinitialiser la position dans les paramètres de l'ABC si quelque chose ne va pas !</French>
                 <German>Linien-Kompass UI Element, mit der Maus an gewünschte Position ziehen. Die Position kann durch CBA Einstellungen auf den Standard zurückgesetzt werden!</German>
             </Key>
+            <Key ID="STR_dui_linecompass_show_custom_waypoint">
+                <English>Show Custom Waypoint</English>
+                <French>Afficher le point de passage personnalisé</French>
+            </Key>
+            <Key ID="STR_dui_linecompass_show_custom_waypoint_desc">
+                <English>Show custom waypoint (default set by shift + left clicking on the map) on the line compass.</English>
+                <French>Afficher le point de repère personnalisé (défini par défaut par shift + clic gauche sur la carte) sur la boussole de ligne.</French>
+            </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>
                 <French>Afficher l'icône lorsque les unités parlent</French>

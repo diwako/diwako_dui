@@ -140,6 +140,24 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     false
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enableShowCustomWP),
+    "CHECKBOX",
+    ["STR_dui_linecompass_show_custom_waypoint", "STR_dui_linecompass_show_custom_waypoint_desc"],
+    [_cat, _curCat],
+    true,
+    0,
+    {
+        params ["_value"];
+        if (_value && customWaypointPosition isNotEqualTo []) then {
+            ["CUSTOM_WAYPOINT_POSITION", customWaypointPosition, GVAR(CustomWaypointColor)] call FUNC(addLineMarker);
+            GVAR(customWaypointPosition) = customWaypointPosition;
+        } else {
+            "CUSTOM_WAYPOINT_POSITION" call FUNC(removeLineMarker);
+        };
+    }
+] call CBA_fnc_addSetting;
+
 private _tfar = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 private _acre = isClass (configFile >> "CfgPatches" >> "acre_main");
 

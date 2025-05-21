@@ -9,13 +9,13 @@
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions">
                 <English>Allow Numeric Directions Drawn</English>
-                <German>Grad-Peilungen von Nebenrichtungen anzeigen</German>
                 <French>Afficher les degrés des directions secondaires</French>
+                <German>Grad-Peilungen von Nebenrichtungen anzeigen</German>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
                 <English>Allow the display of numeric bearings along the line compass.</English>
-                <German>Nebenhimmelsrichtungen werden als Grad-Peilung oberhalb des Linienkompasses angezeigt.</German>
                 <French>Les points cardinaux secondaires sont affichés sous la forme d'un azimut en degrés au-dessus de la boussole à lignes.</French>
+                <German>Nebenhimmelsrichtungen werden als Grad-Peilung oberhalb des Linienkompasses angezeigt.</German>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>

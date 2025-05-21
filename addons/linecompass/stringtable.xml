@@ -10,10 +10,12 @@
             <Key ID="STR_dui_linecompass_allowed_draw_directions">
                 <English>Allow Numeric Directions Drawn</English>
                 <German>Grad-Peilungen von Nebenrichtungen anzeigen</German>
+                <French>Afficher les degrés des directions secondaires</French>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
                 <English>Allow the display of numeric bearings along the line compass.</English>
                 <German>Nebenhimmelsrichtungen werden als Grad-Peilung oberhalb des Linienkompasses angezeigt.</German>
+                <French>Les points cardinaux secondaires sont affichés sous la forme d'un azimut en degrés au-dessus de la boussole à lignes.</French>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>
@@ -102,9 +104,11 @@
             </Key>
             <Key ID="STR_dui_linecompass_show_custom_waypoint">
                 <English>Show Custom Waypoint</English>
+                <French>Afficher le point de passage personnalisé</French>
             </Key>
             <Key ID="STR_dui_linecompass_show_custom_waypoint_desc">
                 <English>Show custom waypoint (default set by shift + left clicking on the map) on the line compass.</English>
+                <French>Afficher le point de repère personnalisé (défini par défaut par shift + clic gauche sur la carte) sur la boussole de ligne.</French>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>

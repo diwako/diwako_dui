@@ -21,7 +21,7 @@ if !(diwako_dui_enable_compass || diwako_dui_namelist) exitWith {
 
 _group = (group _player) getVariable [QGVAR(syncGroup), _group];
 private _isAloneInGroup = (count _group) <= 1;
-if (diwako_dui_compass_hide_blip_alone_group && {_isAloneInGroup}) then {
+if (diwako_dui_compass_hide_blip_alone_group && _isAloneInGroup) then {
     _group = [];
 };
 
@@ -284,10 +284,10 @@ private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
         [
             _unit getVariable [QGVAR(icon), DUI_RIFLEMAN],
             _speakingIcon
-        ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange}}}),
+        ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && _inrange}}),
         ""
-    ] select (_buddy isNotEqualTo "" && {_onlyBuddyIcon});
-    private _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
+    ] select (_buddy isNotEqualTo "" && _onlyBuddyIcon);
+    _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1
         _unit getVariable [QEGVAR(main,customName), _unit getVariable ["ACE_Name", name _unit]], // 2

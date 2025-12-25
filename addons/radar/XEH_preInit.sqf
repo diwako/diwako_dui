@@ -100,7 +100,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then {
     ,true
 ] call CBA_fnc_addSetting;
 
-private _curCat = localize "STR_dui_cat_compass";
+_curCat = localize "STR_dui_cat_compass";
 
 [
     "diwako_dui_enable_compass"
@@ -445,7 +445,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 // + scaling
 // + reset per axis
 
-private _curCat = localize "STR_dui_cat_namelist";
+_curCat = localize "STR_dui_cat_namelist";
 
 [
     "diwako_dui_namelist"
@@ -623,7 +623,7 @@ GVAR(sortNamespace) setVariable ["COLONEL", 0];
     }
 ] call CBA_fnc_addSetting;
 
-private _curCat = localize "STR_dui_cat_layout";
+_curCat = localize "STR_dui_cat_layout";
 
 [
     "diwako_dui_use_layout_editor"

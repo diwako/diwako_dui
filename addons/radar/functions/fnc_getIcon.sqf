@@ -3,13 +3,13 @@ params [["_unit", objNull, [objNull]], "_namespace", ["_player", objNull, [objNu
 
 if (isNull _unit) exitWith {_namespace getVariable ["rifleman", DUI_RIFLEMAN];};
 
-if (!_forCompass && {GVAR(showRank)}) exitWith {
+if (!_forCompass && GVAR(showRank)) exitWith {
     _namespace getVariable [rank _unit, DUI_RANK_PRIVATE];
 };
 
 if (
-    (GVAR(enable_seat_icons) == 2 || {GVAR(enable_seat_icons) == 1 && {vehicle _unit == vehicle _player}}) && 
-    {!(isNull objectParent _unit || {_forCompass})}
+    (GVAR(enable_seat_icons) == 2 || {GVAR(enable_seat_icons) == 1 && {vehicle _unit == vehicle _player}}) &&
+    {!(isNull objectParent _unit || _forCompass)}
 ) exitWith {
     private _crewInfo = ((fullCrew (vehicle _unit)) select {_x select 0 isEqualTo _unit}) select 0;
     _crewInfo params ["", "_role", "", "", "_isTurret"];

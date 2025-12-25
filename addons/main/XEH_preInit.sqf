@@ -41,7 +41,7 @@ private _fontIndex = GVAR(availableFonts) findIf {_x isEqualTo "RobotoCondensed"
     }
 ] call CBA_fnc_addSetting;
 
-#include "include\getIconStyles.sqf"
+#include "include\getIconStyles.inc.sqf"
 [
     "diwako_dui_icon_style"
     ,"LIST"
@@ -61,7 +61,7 @@ private _fontIndex = GVAR(availableFonts) findIf {_x isEqualTo "RobotoCondensed"
     }
 ] call CBA_fnc_addSetting;
 
-#include "include\getColorStyles.sqf"
+#include "include\getColorStyles.inc.sqf"
 [
     "diwako_dui_colors"
     ,"LIST"

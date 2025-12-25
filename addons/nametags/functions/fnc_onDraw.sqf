@@ -35,7 +35,7 @@ if (GVAR(useLIS)) then {
         _x params ["", "", "_obj"];
         if (_obj isKindOf "CAManBase" &&
            {_obj isNotEqualTo _player &&
-           {!isNull (objectParent _obj) || {_skipVicCheck}
+           {!isNull (objectParent _obj) || _skipVicCheck
         }}) then {
             _target = _obj;
             break;
@@ -56,7 +56,7 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
     } else {
         _targetSide isEqualTo _playerSide;
     };
-    if (_target isKindOf "AllVehicles" && {_areFriendly}) then {
+    if (_areFriendly && {_target isKindOf "AllVehicles"}) then {
         _targetedFade = (([_target, _player] call FUNC(calculateFadeValue)) min 1) max 0;
         if (_targetedFade < 1) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color

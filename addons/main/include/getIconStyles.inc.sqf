@@ -1,6 +1,3 @@
-#ifndef MAINPREFIX
-    #include "..\script_component.hpp"
-#endif
 private _configs = "true" configClasses (configFile >> "diwako_dui_icon_style");
 private _missionConfigs = "true" configClasses (missionConfigFile >> "diwako_dui_icon_style");
 if (isNil "_missionConfigs") then {

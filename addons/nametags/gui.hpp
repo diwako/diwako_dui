@@ -1,5 +1,7 @@
 #include "\z\diwako_dui\addons\main\RscCommon.hpp"
 
+class ctrlStructuredText;
+
 class RscTitles {
     class ADDON {
         idd = -1;

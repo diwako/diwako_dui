@@ -1,5 +1,9 @@
 #include "\z\diwako_dui\addons\main\RscCommon.hpp"
 
+class RscObject;
+class RscControlsGroupNoScrollbars;
+class ctrlStructuredText;
+
 class diwako_dui_DialogCompass {
     idd = -1;
     movingEnable = 1;

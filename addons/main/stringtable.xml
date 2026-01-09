@@ -35,6 +35,8 @@
             <English>Which font should be used? Warning custom fonts might cause issues!</English>
             <French>Quelle police doit être utilisée ? Attention, les polices personnalisées peuvent poser des problèmes !</French>
             <German>Welche Schriftart soll verwendet werden? Achtung, manche Schiftarten können Probleme erzeugen!</German>
+            <Chinese>要使用哪種字體？警告：自訂字體可能造成問題！</Chinese>
+            <Chinesesimp>要使用哪种字体？警告：自定义字体可能导致问题！</Chinesesimp>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
@@ -77,7 +79,7 @@
             <German>Farbschema</German>
             <Korean>색상 테마</Korean>
             <Japanese>カラー テーマ</Japanese>
-            <Chinese>顔色方案</Chinese>
+            <Chinese>顏色方案</Chinese>
             <Chinesesimp>颜色方案</Chinesesimp>
             <Turkish>Renk Şeması</Turkish>
         </Key>
@@ -92,7 +94,7 @@
             <German>Welches Farbschema soll verwendet werden?</German>
             <Korean>사용하는 색상 테마를 설정합니다.</Korean>
             <Japanese>使用するカラー テーマを設定します。</Japanese>
-            <Chinese>要使用哪種顔色方案</Chinese>
+            <Chinese>要使用哪種顏色方案</Chinese>
             <Chinesesimp>要使用哪种颜色方案</Chinesesimp>
             <Turkish>Kullanılacak renk şeması</Turkish>
         </Key>
@@ -152,7 +154,7 @@
             <German>Zeigt die Richtung in Grad an, der Kompass muss dafür angeschalten sein!</German>
             <Korean>나침반 위에 방위각을 표시합니다. 사용하려면 나침반을 가지고 있어야 합니다!</Korean>
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
-            <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啓用！</Chinese>
+            <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啟用！</Chinese>
             <Chinesesimp>在罗盘上方显示方位角，罗盘本身需要被启用！</Chinesesimp>
             <Turkish>Pusulanın üzerinde bakılan yönün derecesini göster. "Pusulayı Göster" ayarının da açık olması gerekir!</Turkish>
         </Key>
@@ -250,11 +252,15 @@
             <English>Compass Range Limit</English>
             <French>Limite de la portée du compas</French>
             <German>Kompass Entfernungslimit</German>
+            <Chinese>羅盤距離上限</Chinese>
+            <Chinesesimp>罗盘距离上限</Chinesesimp>
         </Key>
         <Key ID="STR_dui_compass_range_limit_desc">
             <English>The maximum allowed range of the compass set by mission/server</English>
             <French>Portée maximale autorisée du compas, définie par la mission/serveur</French>
             <German>Die maximale Reichweite des Kompasses, gesetzt durch Mission/Server</German>
+            <Chinese>由任務/伺服器設定的羅盤最大允許距離</Chinese>
+            <Chinesesimp>由任务/服务器设定的罗盘最大允许距离</Chinesesimp>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -345,7 +351,7 @@
             <German>Okklusion anschalten</German>
             <Korean>오클루전 사용</Korean>
             <Japanese>オクルージョンを有効化</Japanese>
-            <Chinese>啓用遮擋</Chinese>
+            <Chinese>啟用遮擋</Chinese>
             <Chinesesimp>启用遮挡</Chinesesimp>
             <Turkish>'Occlusion' Efekti</Turkish>
         </Key>
@@ -431,6 +437,8 @@
             <Russian>Приоритет иконок</Russian>
             <German>Icons priorisieren</German>
             <Korean>아이콘 우선표시</Korean>
+            <Chinese>優先顯示圖標</Chinese>
+            <Chinesesimp>优先显示图标</Chinesesimp>
             <Turkish>İkonlara Öncelik Ver</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_desc">
@@ -439,12 +447,16 @@
             <Spanish>Prioriza los iconos seleccionados en esta configuración sobre los demás en la lista</Spanish>
             <Russian>Приоритет иконок, выбранных в этой настройке, над другими в списке</Russian>
             <German>Gibt den ausgewählten Icons Vorrang vor den anderen Icons in der Liste.</German>
+            <Chinese>將此設定中選取的圖標優先於清單中其他圖標顯示。</Chinese>
+            <Chinesesimp>将此设置中选取的图标优先于列表中其他图标显示。</Chinesesimp>
             <Turkish>Bu ayarda seçilen ikonlara diğerlerine göre öncelik ver</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting0">
             <English>AR and AT</English>
             <French>AR et AT</French>
             <German>AR und AT</German>
+            <Chinese>自動步槍兵與反裝甲</Chinese>
+            <Chinesesimp>自动步枪兵与反坦克</Chinesesimp>
             <Turkish>Otomatik Tüfek ve Anti-Tank</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting1">
@@ -454,6 +466,8 @@
             <Russian>Инженер, медик и EOD</Russian>
             <German>Pionier, Sanitäter und EOD</German>
             <Korean>엔지니어, 의무병, EOD</Korean>
+            <Chinese>工兵、衛生兵與排爆</Chinese>
+            <Chinesesimp>工兵、卫生员与排爆</Chinesesimp>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_size">
@@ -628,7 +642,7 @@
             <German>Benutzerdefinierte Farben</German>
             <Korean>사용자 정의 색상</Korean>
             <Japanese>カスタム カラー</Japanese>
-            <Chinese>自定義顔色</Chinese>
+            <Chinese>自訂顏色</Chinese>
             <Chinesesimp>自定义颜色</Chinesesimp>
             <Turkish>Özel Renkler</Turkish>
         </Key>
@@ -685,6 +699,8 @@
             <German>Nur Fahrer</German>
             <Korean>운전수만</Korean>
             <Japanese>運転手のみ</Japanese>
+            <Chinese>僅駕駛員</Chinese>
+            <Chinesesimp>仅驾驶员</Chinesesimp>
             <Turkish>Yalnız Sürücü İçin</Turkish>
         </Key>
         <Key ID="STR_dui_show_dir_opt5">
@@ -694,6 +710,8 @@
             <Russian>Только с GPS</Russian>
             <German>Nur mit GPS</German>
             <Korean>GPS를 소지할경우만</Korean>
+            <Chinese>僅限持有 GPS</Chinese>
+            <Chinesesimp>仅限持有 GPS</Chinesesimp>
             <Turkish>Sadece GPS İle</Turkish>
         </Key>
         <Key ID="STR_dui_ui_scale">
@@ -862,6 +880,8 @@
             <German>Während offener Dialoge ausblenden</German>
             <Korean>대화창이 켜져있을때 나침반 숨김</Korean>
             <Japanese>ダイアログ時は非表示</Japanese>
+            <Chinese>對話視窗開啟時隱藏</Chinese>
+            <Chinesesimp>对话窗口打开时隐藏</Chinesesimp>
             <Turkish>Diyaloglar Sırasında Sakla</Turkish>
         </Key>
         <Key ID="STR_dui_dialog_hide_interaction_desc">
@@ -871,6 +891,8 @@
             <Russian>Если интерфейс диалога открыт, нужно ли прятать интерфейс?</Russian>
             <German>Soll die UI ausgeblendet werden, wenn ein Dialogfenster offen ist?</German>
             <Japanese>ダイアログを開いているときは UI を非表示にしますか？</Japanese>
+            <Chinese>當 UI 對話視窗開啟時，是否隱藏此 UI？</Chinese>
+            <Chinesesimp>当 UI 对话窗口打开时，是否隐藏此 UI？</Chinesesimp>
             <Turkish>Pusula herhangi bir oyun için diyalog çıktığında gizlenmeli mi?</Turkish>
         </Key>
         <Key ID="STR_dui_compass_opacity">
@@ -958,6 +980,8 @@
             <German>Text Umrandung der Richtungsanzeige</German>
             <Korean>방위각 텍스트 외곽선</Korean>
             <Japanese>方位テキストの縁取り</Japanese>
+            <Chinese>方位角文字描邊</Chinese>
+            <Chinesesimp>方位角文字描边</Chinesesimp>
             <Turkish>Yön Derecesi Çerçevesi</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow_0">
@@ -1306,7 +1330,7 @@
             <German>Tracking-Farbe</German>
             <Korean>트래킹 색상</Korean>
             <Japanese>追跡カラー</Japanese>
-            <Chinese>追蹤顔色</Chinese>
+            <Chinese>追蹤顏色</Chinese>
             <Chinesesimp>追踪颜色</Chinesesimp>
             <Turkish>Takip Etme Rengi</Turkish>
         </Key>
@@ -1322,7 +1346,7 @@
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <Korean>특수 추적 객체의 레이더상 표시되는 색상을 설정합니다. 알파값 변경은 적용이 안됩니다</Korean>
             <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
-            <Chinese>特別追蹤的物體會在雷達上以這個顔色顯示。注意，Alpha值無意義。</Chinese>
+            <Chinese>特別追蹤的物體會在雷達上以這個顏色顯示。注意，Alpha 值無意義。</Chinese>
             <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha值无意义。</Chinesesimp>
             <Turkish>Özellikle takip edilen objeler radarda bu renkte belirir. Uyarı:Alpha ayarının bir etkisi yok!</Turkish>
         </Key>
@@ -1444,7 +1468,7 @@
             <German>Keine Squad Farbe</German>
             <Korean>분대색상 없음</Korean>
             <Japanese>分隊カラー無し</Japanese>
-            <Chinese>無組顔色</Chinese>
+            <Chinese>無組顏色</Chinese>
             <Chinesesimp>无组颜色</Chinesesimp>
             <Turkish>Takım Rengi Yok</Turkish>
         </Key>
@@ -1458,7 +1482,7 @@
             <German>Rote Squad Farbe</German>
             <Korean>분대색상 빨강</Korean>
             <Japanese>レッド分隊カラー</Japanese>
-            <Chinese>紅組顔色</Chinese>
+            <Chinese>紅組顏色</Chinese>
             <Chinesesimp>红组颜色</Chinesesimp>
             <Turkish>Kırmızı Takım Rengi</Turkish>
         </Key>
@@ -1472,7 +1496,7 @@
             <German>Grüne Squad Farbe</German>
             <Korean>분대색상 초록</Korean>
             <Japanese>グリーン分隊カラー</Japanese>
-            <Chinese>綠組顔色</Chinese>
+            <Chinese>綠組顏色</Chinese>
             <Chinesesimp>绿组颜色</Chinesesimp>
             <Turkish>Yeşil Takım Rengi</Turkish>
         </Key>
@@ -1486,7 +1510,7 @@
             <German>Blaue Squad Farbe</German>
             <Korean>분대색상 파랑</Korean>
             <Japanese>ブルー分隊カラー</Japanese>
-            <Chinese>藍組顔色</Chinese>
+            <Chinese>藍組顏色</Chinese>
             <Chinesesimp>蓝组颜色</Chinesesimp>
             <Turkish>Mavi Takım Rengi</Turkish>
         </Key>
@@ -1500,7 +1524,7 @@
             <German>Gelbe Squad Farbe</German>
             <Korean>분대색상 노랑</Korean>
             <Japanese>イエロー分隊カラー</Japanese>
-            <Chinese>黃組顔色</Chinese>
+            <Chinese>黃組顏色</Chinese>
             <Chinesesimp>黄组颜色</Chinesesimp>
             <Turkish>Sarı Tekım Rengi</Turkish>
         </Key>
@@ -1604,11 +1628,15 @@
             <English>Sync units in group</English>
             <French>Synchronisation des unités dans le groupe</French>
             <German>Synchronisiere Einheiten in der Gruppe</German>
+            <Chinese>同步團隊成員順序</Chinese>
+            <Chinesesimp>同步团队成员顺序</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_syncGroup_desc">
             <English>Will sync the order of units in a player's group if sort type is set to "None". Only works in MP and every player must have DUI loaded for this to work properly</English>
             <French>Synchronise l'ordre des unités dans le groupe lorsque le tri est défini sur « Aucun ». Fonctionne uniquement en multijoueur et tous les joueurs doivent utiliser DUI pour que cela fonctionne correctement.</French>
             <German>Synchronisiert die Reihenfolge der Einheiten in der Gruppe, wenn die Sortierung auf "Kein" gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen, damit dies korrekt funktioniert</German>
+            <Chinese>當排序方式設為「無」時，將同步玩家團隊內成員的排序。僅於多人模式有效，且所有玩家都必須載入 DUI 才能正常運作。</Chinese>
+            <Chinesesimp>当排序方式设为“无”时，将同步玩家队伍内成员的排序。仅在多人模式有效，且所有玩家都必须加载 DUI 才能正常运作。</Chinesesimp>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1919,6 +1947,8 @@
             <English>Everlight</English>
             <French>Everlight</French>
             <German>Everlight</German>
+            <Chinese>Everlight</Chinese>
+            <Chinesesimp>Everlight</Chinesesimp>
         </Key>
         <!-- Compass styles -->
         <Key ID="STR_dui_compass_bohemia">
@@ -2164,14 +2194,20 @@
         <Key ID="STR_dui_radar_enable_seat_icons">
             <English>Enable Vehicle Seat Icons</English>
             <French>Activer les icônes de sièges de véhicules</French>
+            <Chinese>啟用載具座位圖標</Chinese>
+            <Chinesesimp>启用载具座位图标</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons_desc">
             <English>When enabled will show if a unit is in a vehicle or not.</English>
             <French>Lorsque cette option est activée, elle indique si une unité se trouve ou non dans un véhicule.</French>
+            <Chinese>啟用後將顯示單位是否在載具內。</Chinese>
+            <Chinesesimp>启用后将显示单位是否在载具内。</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons_sameVehicle">
             <English>Only in the same vehicle</English>
             <French>Seulement dans le même véhicule</French>
+            <Chinese>僅限同一載具</Chinese>
+            <Chinesesimp>仅限同一载具</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
@@ -2205,7 +2241,7 @@
             <Russian>Цвет указателя</Russian>
             <German>Zeigerfarbe</German>
             <Japanese>ポインターの色</Japanese>
-            <Chinese>指向顔色</Chinese>
+            <Chinese>指向顏色</Chinese>
             <Chinesesimp>指向颜色</Chinesesimp>
             <Turkish>İbre Rengi</Turkish>
         </Key>
@@ -2229,7 +2265,7 @@
             <Russian>Показывать иконку при разговоре</Russian>
             <German>Zeige Icon, wenn jemand spricht</German>
             <Japanese>ユニット発話時はアイコン表示</Japanese>
-            <Chinese>当单位说话时显示图标</Chinese>
+            <Chinese>當單位說話時顯示圖標</Chinese>
             <Chinesesimp>当单位说话时显示图标</Chinesesimp>
             <Turkish>Konuşan Kişi İkonu</Turkish>
         </Key>
@@ -2336,11 +2372,15 @@
             <English>Always show unit selection number</English>
             <French>Toujours afficher le numéro de sélection de l'unité</French>
             <German>Immer den Gruppenindex der Einheit anzeigen</German>
+            <Chinese>始終顯示單位選取編號</Chinese>
+            <Chinesesimp>始终显示单位选择编号</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers_desc">
             <English>Will always show the unit number the squad leader can use to select a squad member using the function keys</English>
             <French>Affiche toujours le numéro de l'unité que le chef d'escadron peut utiliser pour sélectionner un membre de l'escadron à l'aide des touches de fonction.</French>
             <German>Zeige immer Index der Gruppenmitglieder an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
+            <Chinese>將始終顯示單位編號，小隊長可使用功能鍵選取小隊成員。</Chinese>
+            <Chinesesimp>将始终显示单位编号，队长可使用功能键选择小队成员。</Chinesesimp>
         </Key>
     </Package>
 </Project>

@@ -66,11 +66,15 @@
                 <English>Max Range Limit</English>
                 <French>Limite maximale de la plage</French>
                 <German>Maximale Entfernung</German>
+                <Chinese>最大距離上限</Chinese>
+                <Chinesesimp>最大距离上限</Chinesesimp>
             </Key>
             <Key ID="STR_dui_indicators_range_limit_desc">
                 <English>Maximum allowed range to show indicators set by mission/server</English>
                 <French>Portée maximale autorisée pour l'affichage des indicateurs, fixée par la mission/serveur</French>
                 <German>Maximal erlaubte Entfernung zur Anzeige der Indikatoren in der Mission/dem Server</German>
+                <Chinese>由任務/伺服器設定的標記最大允許距離</Chinese>
+                <Chinesesimp>由任务/服务器设定的标记最大允许距离</Chinesesimp>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
@@ -197,7 +201,7 @@
                 <Russian>Стандарт</Russian>
                 <German>Standard</German>
                 <Japanese>通常</Japanese>
-                <Chinese>標准</Chinese>
+                <Chinese>標準</Chinese>
                 <Chinesesimp>标准</Chinesesimp>
                 <Turkish>Standart</Turkish>
             </Key>

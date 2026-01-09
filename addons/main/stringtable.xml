@@ -1347,7 +1347,7 @@
             <Korean>특수 추적 객체의 레이더상 표시되는 색상을 설정합니다. 알파값 변경은 적용이 안됩니다</Korean>
             <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
             <Chinese>特別追蹤的物體會在雷達上以這個顏色顯示。注意，Alpha 值無意義。</Chinese>
-            <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha值无意义。</Chinesesimp>
+            <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha 值无意义。</Chinesesimp>
             <Turkish>Özellikle takip edilen objeler radarda bu renkte belirir. Uyarı:Alpha ayarının bir etkisi yok!</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">

@@ -368,7 +368,7 @@
             <German>Wenn diese Einstellung aktiviert ist, verwendet das System BIS_fnc_sideIsFriendly, anstatt nur der Fraktion</German>
             <Japanese>有効化するとシステムが現在の友軍を確認するようになります。</Japanese>
             <Chinese>如果這個設定啟用，系統會使用 BIS_fnc_sideIsFriendly 來代替陣營檢查</Chinese>
-            <Chinesesimp>如果这个设定启用，系统会使用BIS_fnc_sideIsFriendly来代替阵营检查</Chinesesimp>
+            <Chinesesimp>如果这个设定启用，系统会使用 BIS_fnc_sideIsFriendly 来代替阵营检查</Chinesesimp>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">

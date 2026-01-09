@@ -90,8 +90,8 @@
                 <English>Waypoint created when shift+click is on the map is used</English>
                 <French>Création d'un point de passage lorsque shift+click est utilisé sur la carte</French>
                 <German>Wegpunkte, die mit Shift+Klick auf der Karte erstellt wurden</German>
-                <Chinese>使用 Shift+點擊地圖建立的航點</Chinese>
-                <Chinesesimp>使用 Shift+点击地图建立的航点</Chinesesimp>
+                <Chinese>使用 Shift+Click 建立的航點</Chinese>
+                <Chinesesimp>使用 Shift+Click 建立的航点</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
@@ -151,8 +151,8 @@
             <Key ID="STR_dui_linecompass_show_custom_waypoint_desc">
                 <English>Show custom waypoint (default set by shift + left clicking on the map) on the line compass.</English>
                 <French>Afficher le point de repère personnalisé (défini par défaut par shift + clic gauche sur la carte) sur la boussole de ligne.</French>
-                <Chinese>在線性羅盤上顯示自訂航點（預設為 Shift + 滑鼠左鍵於地圖上設定）。</Chinese>
-                <Chinesesimp>在线性罗盘上显示自定义航点（默认通过 Shift + 鼠标左键在地图上设置）。</Chinesesimp>
+                <Chinese>在線性羅盤上顯示自訂航點（預設為 Shift+LeftClick 於地圖上設定）。</Chinese>
+                <Chinesesimp>在线性罗盘上显示自定义航点（默认通过 Shift+LeftClick 在地图上设置）。</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>

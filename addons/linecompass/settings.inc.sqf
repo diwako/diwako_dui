@@ -48,9 +48,11 @@ private _curCat = localize "STR_dui_cat_general";
     true,
     1,
     {
-        params ["_value"];
+        params [["_value", true]];
         GVAR(ResolvedDrawBearing) = if (!isNil QGVAR(DrawBearing) && !_value) then {
             GVAR(DrawBearing) min 1
+        } else {
+            0
         };
     }
 ] call CBA_fnc_addSetting;

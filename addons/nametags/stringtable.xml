@@ -17,7 +17,7 @@
             <Russian>Включить именные жетоны</Russian>
             <German>Namensschilder einschalten</German>
             <Japanese>ネームタグを有効化</Japanese>
-            <Chinese>啓用名牌</Chinese>
+            <Chinese>啟用名牌</Chinese>
             <Chinesesimp>启用名牌</Chinesesimp>
             <Turkish>İsimleri Göster</Turkish>
         </Key>
@@ -27,7 +27,7 @@
             <Russian>Включить окклюзию именных жетонлов</Russian>
             <German>Namensschild-Okklusion aktivieren</German>
             <Japanese>ネームタグのオクルージョンを有効化</Japanese>
-            <Chinese>啓用名牌遮擋</Chinese>
+            <Chinese>啟用名牌遮擋</Chinese>
             <Chinesesimp>启用名牌遮挡</Chinesesimp>
             <Turkish>İsimlerde 'Occlusion' Efekti</Turkish>
         </Key>
@@ -37,7 +37,7 @@
             <Russian>Когда окклюзия включена, именные жетоны проверяют, насколько заметен Юнит и, в зависимости от этого, уменьшают прозрачность именного жетона.</Russian>
             <German>Wenn die Okklusion aktiviert ist, prüfen die Namensschilder, wie sichtbar eine Einheit ist und reduzieren die Transparenz des Namensschilder basierend auf diesem Wert</German>
             <Japanese>有効化すると、ネームタグはユニットの視認性を確認するようになり、状況によってはネームタグの透明度を変更します。</Japanese>
-            <Chinese>當遮擋啓用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
+            <Chinese>當遮擋啟用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
             <Chinesesimp>当遮挡启用时，会检查该单位的可视程度来调整该单位的名牌透明度</Chinesesimp>
             <Turkish>İsmi gözüken kişinin görünebilirliğine göre ismin şeffaflığını ayarlar</Turkish>
         </Key>
@@ -177,7 +177,7 @@
             <Russian>Цвет мертвого</Russian>
             <German>Toten Farbe</German>
             <Japanese>死体名の色</Japanese>
-            <Chinese>死亡顔色</Chinese>
+            <Chinese>死亡顏色</Chinese>
             <Chinesesimp>死亡颜色</Chinesesimp>
             <Turkish>Ölü Rengi</Turkish>
         </Key>
@@ -187,7 +187,7 @@
             <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <German>Die Farbe, die eine tote Person hat.</German>
             <Japanese>死体名に表示される色を設定します。</Japanese>
-            <Chinese>已死亡單位的顔色</Chinese>
+            <Chinese>已死亡單位的顏色</Chinese>
             <Chinesesimp>已死亡单位的颜色</Chinesesimp>
             <Turkish>Ölü bir kişinin rengi</Turkish>
         </Key>
@@ -197,7 +197,7 @@
             <Russian>Цвет, который будет обозначать мертвого юнита</Russian>
             <German>Eigene Gruppenfarbe</German>
             <Japanese>自グループ色</Japanese>
-            <Chinese>自己團隊的顔色</Chinese>
+            <Chinese>自己團隊的顏色</Chinese>
             <Chinesesimp>自己团队的颜色</Chinesesimp>
             <Turkish>Kengi Grup Rengi</Turkish>
         </Key>
@@ -207,7 +207,7 @@
             <Russian>Цвет, который будет использоваться для игроков в вашей группе</Russian>
             <German>Die Farbe, die der Gruppenname haben wird, wenn die Einheit zu deiner Gruppe gehört.</German>
             <Japanese>自グループに属するユニットのグループ名に表示される色を設定します。</Japanese>
-            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顔色</Chinese>
+            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顏色</Chinese>
             <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubundaki birimlerin isim rengi</Turkish>
         </Key>
@@ -217,7 +217,7 @@
             <Russian>Цвет других групп</Russian>
             <German>Andere Gruppenfarbe</German>
             <Japanese>他グループ色</Japanese>
-            <Chinese>其他團隊的顔色</Chinese>
+            <Chinese>其他團隊的顏色</Chinese>
             <Chinesesimp>其他团队的颜色</Chinesesimp>
             <Turkish>Diğer Grup İsim Rengi</Turkish>
         </Key>
@@ -227,8 +227,8 @@
             <Russian>Цвет, который будет использоваться для других групп</Russian>
             <German>Die Farbe die andere Gruppen haben</German>
             <Japanese>他グループの色を設定します。</Japanese>
-            <Chinese>其他團隊的顔色</Chinese>
-            <Chinesesimp>其他团队的名称</Chinesesimp>
+            <Chinese>其他團隊的顏色</Chinese>
+            <Chinesesimp>其他团队的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubu olmayan grupların isim rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor">
@@ -237,7 +237,7 @@
             <Russian>Цвет других групп</Russian>
             <German>Andere Gruppennamen Farbe</German>
             <Japanese>他グループ名色</Japanese>
-            <Chinese>其他團隊的名稱顔色</Chinese>
+            <Chinese>其他團隊的名稱顏色</Chinese>
             <Chinesesimp>其他团队的名称颜色</Chinesesimp>
             <Turkish>Diğer Grup Rengi</Turkish>
         </Key>
@@ -247,7 +247,7 @@
             <Russian>Цвет, который будет использоваться для других игроков, которые не в вашей группе</Russian>
             <German>Die Farbe in der andere Spielernamen angezeigt werden, die nicht in deiner Gruppe sind.</German>
             <Japanese>他グループ名の色を設定します。</Japanese>
-            <Chinese>非本團隊玩家名稱顔色</Chinese>
+            <Chinese>非本團隊玩家名稱顏色</Chinese>
             <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
             <Turkish>Oyuncunun grubunda olmayan birimlerin isim rengi</Turkish>
         </Key>
@@ -327,7 +327,7 @@
             <Russian>Включить FOV-буст</Russian>
             <German>FOV-Boost aktivieren</German>
             <Japanese>FOV ブースト有効化</Japanese>
-            <Chinese>啓用視野範圍角度增強</Chinese>
+            <Chinese>啟用視野範圍角度增強</Chinese>
             <Chinesesimp>启用视野范围角度增强</Chinesesimp>
             <Turkish>FOV'a Göre Arttır</Turkish>
         </Key>
@@ -347,7 +347,7 @@
             <Russian>Показывать юнитов без сознания как мертвых</Russian>
             <German>Bewusstlos als tot zeigen</German>
             <Japanese>無意識者を死体として表示</Japanese>
-            <Chinese>将失去意识归类为死亡</Chinese>
+            <Chinese>將失去意識視為死亡</Chinese>
             <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
             <Turkish>Bilincini Kaybedenleri Ölü Olarak Göster</Turkish>
         </Key>
@@ -367,8 +367,8 @@
             <Russian>Если эта опция включена, то система показывает BIS_fnc_sideIsFriendly, вместо того, чтобы проверять сторону</Russian>
             <German>Wenn diese Einstellung aktiviert ist, verwendet das System BIS_fnc_sideIsFriendly, anstatt nur der Fraktion</German>
             <Japanese>有効化するとシステムが現在の友軍を確認するようになります。</Japanese>
-            <Chinese>如果這個設定啓用，系統會使用BIS_fnc_sideIsFriendly來代替陣營檢查</Chinese>
-            <Chinesesimp>如果这个设定启用，系统会使用BIS_fnc_sideIsFriendly来代替阵营检查</Chinesesimp>
+            <Chinese>如果這個設定啟用，系統會使用 BIS_fnc_sideIsFriendly 來代替陣營檢查</Chinese>
+            <Chinesesimp>如果这个设定启用，系统会使用 BIS_fnc_sideIsFriendly 来代替阵营检查</Chinesesimp>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">
@@ -377,6 +377,8 @@
             <Russian>Показывать транспорт команды</Russian>
             <German>Fahrzeugbesatzung sichtbar machen</German>
             <Japanese>車両乗員の表示</Japanese>
+            <Chinese>顯示載具乘員</Chinese>
+            <Chinesesimp>显示载具乘员</Chinesesimp>
             <Turkish>Araç Mürettebatlarını Göster</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useLIS_desc">
@@ -385,6 +387,8 @@
             <Russian>Показывать команду внутри транспорта. Делает дополнительные проверка, когда эта опция включена</Russian>
             <German>Fahrezeugbesatzung erkennen. Führt zusätzliche Prüfungen durch, wenn aktiviert.</German>
             <Japanese>車両内の乗員を検知します。有効化すると追加処理が発生します。</Japanese>
+            <Chinese>偵測載具內乘員。啟用後會執行額外檢查與流程。</Chinese>
+            <Chinesesimp>侦测载具内乘员。启用后会执行额外检查与流程。</Chinesesimp>
             <Turkish>Araç içlerindeki mürettebatları tespit et. Ekstra kontroller ve rutinleri aktive eder.</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
@@ -411,26 +415,36 @@
             <English>Rank style</English>
             <French>Style de rang</French>
             <German>Ranganzeige-Stil</German>
+            <Chinese>軍銜樣式</Chinese>
+            <Chinesesimp>军衔样式</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle_desc">
             <English>Select rank display style</English>
             <French>Sélectionner le style d'affichage du rang</French>
             <German>Stil der Ranganzeige wählen</German>
+            <Chinese>選擇軍銜顯示樣式</Chinese>
+            <Chinesesimp>选择军衔显示样式</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle">
             <English>Custom rank style</English>
             <French>Style de rang personnalisé</French>
             <German>Benutzerdefinierter Stil der Ranganzeige</German>
+            <Chinese>自訂軍銜樣式</Chinese>
+            <Chinesesimp>自定义军衔样式</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_desc">
             <English>Defines custom ranks for each possible rank in the game. Warning: Input must be correct else default value will be used!</English>
             <French>Définit des rangs personnalisés pour chaque rang possible dans le jeu. Attention : La saisie doit être correcte, sinon la valeur par défaut sera utilisée !</French>
             <German>Definiert eigene Ränge für jeden möglichen Rang im Spiel. Achtung! Die Eingabe muss korrekt sein, sonst wird der Standardwert verwendet!</German>
+            <Chinese>為遊戲中各種軍銜定義自訂顯示文字。警告：輸入內容必須正確，否則將使用預設值！</Chinese>
+            <Chinesesimp>为游戏中各类军衔定义自定义显示文字。警告：输入内容必须正确，否则将使用默认值！</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_defaultLong">
             <English>Default long</English>
             <French>Long par défaut</French>
             <German>Standard lang</German>
+            <Chinese>預設（長）</Chinese>
+            <Chinesesimp>默认（长）</Chinesesimp>
         </Key>
     </Package>
 </Project>

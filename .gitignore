@@ -20,3 +20,5 @@ keys/*
 *.dll
 
 .vscode/*
+*.hemttprivatekey
+privatekeypassword.txt

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if !(hasInterface) exitWith {};
+if !(hasInterface && ADDON_MAIN) exitWith {};
 
 private _labelAdd = localize "STR_dui_buddy_action";
 private _labelRemove = localize "STR_dui_buddy_action_remove";

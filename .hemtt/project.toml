@@ -27,8 +27,8 @@ workshop = [
 parameters = ["-world=empty"]
 mission = "dui.vr"
 
-[hemtt.signing]
-authority = "diwako_dui"
+[signing]
+private_key_hash = "49d88a0d41217ee098923074df25c520faad099"
 
 [hemtt.release]
 folder = "diwako_dui"

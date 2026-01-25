@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 ADDON = false;
+
+if !(SYSTEM_CHECK) exitWith {};
+
 #include "XEH_PREP.hpp"
 
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"

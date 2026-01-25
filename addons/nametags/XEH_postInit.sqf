@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if !(hasInterface) exitWith {};
+if !(hasInterface && ADDON_MAIN) exitWith {};
 
 call FUNC(cacheLoop);
 

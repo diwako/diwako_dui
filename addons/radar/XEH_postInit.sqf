@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 if (is3DEN) exitWith {};
 
-if !(hasInterface) exitWith {};
+if !(hasInterface && ADDON_MAIN) exitWith {};
 
 GVAR(uiPixels) = DUI_128PX;
 

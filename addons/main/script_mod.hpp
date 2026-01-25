@@ -17,4 +17,4 @@
 #endif
 
 #define ADDON_MAIN diwako_dui_main
-#define BUILD_CHECK_FILE(var1,var2,var3) ui\##var1##\##var2##\icon.bin
+#define BUILD_CHECK_FILE(var1,var2,var3) ui\##var1##\##var2##\icon.lip

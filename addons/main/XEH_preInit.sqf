@@ -225,7 +225,9 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
 ] call CBA_fnc_addSetting;
 
-if !(hasInterface) exitWith {};
+if !(hasInterface) exitWith {
+    ADDON = true;
+};
 
 GVAR(radioModSpectator) = configFile call {
     if (isClass (_this >> "CfgPatches" >> "tfar_core")) exitWith { {_player getVariable ["TFAR_forceSpectator", false]} };

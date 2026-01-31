@@ -37,6 +37,7 @@ for "_i" from 0 to 37 do {
     };
 };
 
+private _resolvedDrawBearing = GVAR(DrawBearing) min ([1, 9] select GVAR(AllowNumericDrawBearing));
 private _bearingOffset = 2.5 - (_viewDirection % 15);
 for "_i" from 0 to 13 do {
 
@@ -45,7 +46,7 @@ for "_i" from 0 to 13 do {
     private _newAlpha = (_i * 15 + _bearingOffset) call FUNC(getAlphaFromX);
     private _oldAlpha = GVAR(bearingAlphaCache) select _idc;
 
-    switch (GVAR(ResolvedDrawBearing)) do {
+    switch (_resolvedDrawBearing) do {
         case 0: {
             _newAlpha = 0;
         };

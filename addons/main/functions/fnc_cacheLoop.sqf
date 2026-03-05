@@ -10,8 +10,8 @@ private _colorNameSpace = missionNamespace getVariable format[QGVAR(colors_%1), 
         // when remote controling a an AI assign can return nil
         private _assignedTeam = [assignedTeam _x] param [0, "MAIN"];
 
-        _x setVariable [QGVAR(color), _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"]];
-        _x setVariable [QGVAR(compass_color), _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]]];
+        _x setVariable [QGVAR(color), _x getVariable ["dui_customHexColor", _colorNameSpace getVariable [_assignedTeam, "#FFFFFF"]]];
+        _x setVariable [QGVAR(compass_color), _x getVariable ["dui_customRGBColor", _colorNameSpace getVariable [(format ["%1_compass", _assignedTeam]), [1,1,1]]]];
     };
 } forEach (units ([] call CBA_fnc_currentUnit));
 

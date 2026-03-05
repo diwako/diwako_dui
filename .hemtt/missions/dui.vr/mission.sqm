@@ -683,7 +683,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Colorful Person";
+									value="Random Color";
 								};
 							};
 						};

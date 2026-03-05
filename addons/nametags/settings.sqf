@@ -211,7 +211,7 @@ _curCat = "STR_dui_cat_custom_color";
     false,
     {
         EGVAR(main,colors_custom) setVariable ["dead_compass", _this select [0, 3]];
-        EGVAR(main,colors_custom) setVariable ["dead", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call EFUNC(main,toHex)];
+        EGVAR(main,colors_custom) setVariable ["dead", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -224,7 +224,7 @@ _curCat = "STR_dui_cat_custom_color";
     false,
     {
         EGVAR(main,colors_custom) setVariable ["group_compass", _this select [0, 3]];
-        EGVAR(main,colors_custom) setVariable ["group", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call EFUNC(main,toHex)];
+        EGVAR(main,colors_custom) setVariable ["group", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -237,7 +237,7 @@ _curCat = "STR_dui_cat_custom_color";
     false,
     {
         EGVAR(main,colors_custom) setVariable ["otherGroup_compass", _this select [0, 3]];
-        EGVAR(main,colors_custom) setVariable ["otherGroup", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call EFUNC(main,toHex)];
+        EGVAR(main,colors_custom) setVariable ["otherGroup", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 [
@@ -249,6 +249,6 @@ _curCat = "STR_dui_cat_custom_color";
     false,
     {
         EGVAR(main,colors_custom) setVariable ["otherName_compass", _this select [0, 3]];
-        EGVAR(main,colors_custom) setVariable ["otherName", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call EFUNC(main,toHex)];
+        EGVAR(main,colors_custom) setVariable ["otherName", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;

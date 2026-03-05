@@ -77,9 +77,9 @@ if (isClass (configFile >> "CfgPatches" >> "ace_nametags")) then {
     _namespace setVariable ["green_compass", _green select [0, 3]];
     _namespace setVariable ["blue_compass", _blue select [0, 3]];
     _namespace setVariable ["yellow_compass", _yellow select [0, 3]];
-    _namespace setVariable ["main", [(_main select 0) * 255,(_main select 1) * 255,(_main select 2) * 255] call EFUNC(main,toHex)];
-    _namespace setVariable ["red", [(_red select 0) * 255,(_red select 1) * 255,(_red select 2) * 255] call EFUNC(main,toHex)];
-    _namespace setVariable ["green", [(_green select 0) * 255,(_green select 1) * 255,(_green select 2) * 255] call EFUNC(main,toHex)];
-    _namespace setVariable ["blue", [(_blue select 0) * 255,(_blue select 1) * 255,(_blue select 2) * 255] call EFUNC(main,toHex)];
-    _namespace setVariable ["yellow", [(_yellow select 0) * 255,(_yellow select 1) * 255,(_yellow select 2) * 255] call EFUNC(main,toHex)];
+    _namespace setVariable ["main", _main call BIS_fnc_colorRGBtoHTML];
+    _namespace setVariable ["red", _red call BIS_fnc_colorRGBtoHTML];
+    _namespace setVariable ["green", _green call BIS_fnc_colorRGBtoHTML];
+    _namespace setVariable ["blue", _blue call BIS_fnc_colorRGBtoHTML];
+    _namespace setVariable ["yellow", _yellow call BIS_fnc_colorRGBtoHTML];
 };

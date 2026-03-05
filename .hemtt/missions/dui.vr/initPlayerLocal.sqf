@@ -33,6 +33,6 @@ hank setVariable ["diwako_dui_nametags_customGroup", "Custom group name"];
     private _color = [random 1, random 1, random 1];
 
     colorful setVariable ["dui_customRGBColor", _color];
-    colorful setVariable ["dui_customHexColor", (_color apply {_x * 255}) call diwako_dui_main_fnc_toHex];
-    colorful setObjectTexture [0, format ["#(rgb,1,1,1)color(%1,%2,%3,1)", _color select 0, _color select 1, _color select 2]];
+    colorful setVariable ["dui_customHexColor", _color call BIS_fnc_colorRGBtoHTML];
+    // colorful setObjectTexture [0, format ["#(rgb,1,1,1)color(%1,%2,%3,1)", _color select 0, _color select 1, _color select 2]];
 }, 0.5] call CBA_fnc_addPerFrameHandler;

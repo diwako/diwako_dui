@@ -160,7 +160,7 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
     ,{
         GVAR(colors_custom) setVariable ["main_compass", _this select [0, 3]];
-        GVAR(colors_custom) setVariable ["main", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+        GVAR(colors_custom) setVariable ["main", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -173,7 +173,7 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
     ,{
         GVAR(colors_custom) setVariable ["red_compass", _this select [0, 3]];
-        GVAR(colors_custom) setVariable ["red", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+        GVAR(colors_custom) setVariable ["red", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -186,7 +186,7 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
     ,{
         GVAR(colors_custom) setVariable ["green_compass", _this select [0, 3]];
-        GVAR(colors_custom) setVariable ["green", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+        GVAR(colors_custom) setVariable ["green", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -199,7 +199,7 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
     ,{
         GVAR(colors_custom) setVariable ["blue_compass", _this select [0, 3]];
-        GVAR(colors_custom) setVariable ["blue", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+        GVAR(colors_custom) setVariable ["blue", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -212,7 +212,7 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
     ,{
         GVAR(colors_custom) setVariable ["yellow_compass", _this select [0, 3]];
-        GVAR(colors_custom) setVariable ["yellow", [(_this select 0) * 255,(_this select 1) * 255,(_this select 2) * 255] call FUNC(toHex)];
+        GVAR(colors_custom) setVariable ["yellow", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 
@@ -254,23 +254,23 @@ if (isClass (configFile >> "CfgPatches" >> "ace_nametags")) then {
         switch (_setting) do {
             case "ace_nametags_nametagColorMain": {
                 GVAR(colors_ace) setVariable ["main_compass", _value select [0, 3]];
-                GVAR(colors_ace) setVariable ["main", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
+                GVAR(colors_ace) setVariable ["main", _value call BIS_fnc_colorRGBtoHTML];
             };
             case "ace_nametags_nametagColorRed": {
                 GVAR(colors_ace) setVariable ["red_compass", _value select [0, 3]];
-                GVAR(colors_ace) setVariable ["red", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
+                GVAR(colors_ace) setVariable ["red", _value call BIS_fnc_colorRGBtoHTML];
             };
             case "ace_nametags_nametagColorGreen": {
                 GVAR(colors_ace) setVariable ["green_compass", _value select [0, 3]];
-                GVAR(colors_ace) setVariable ["green", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
+                GVAR(colors_ace) setVariable ["green", _value call BIS_fnc_colorRGBtoHTML];
             };
             case "ace_nametags_nametagColorBlue": {
                 GVAR(colors_ace) setVariable ["blue_compass", _value select [0, 3]];
-                GVAR(colors_ace) setVariable ["blue", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
+                GVAR(colors_ace) setVariable ["blue", _value call BIS_fnc_colorRGBtoHTML];
             };
             case "ace_nametags_nametagColorYellow": {
                 GVAR(colors_ace) setVariable ["yellow_compass", _value select [0, 3]];
-                GVAR(colors_ace) setVariable ["yellow", [(_value select 0) * 255,(_value select 1) * 255,(_value select 2) * 255] call FUNC(toHex)];
+                GVAR(colors_ace) setVariable ["yellow", _value call BIS_fnc_colorRGBtoHTML];
             };
             default { };
         };

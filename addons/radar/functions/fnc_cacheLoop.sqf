@@ -25,6 +25,8 @@ if (diwako_dui_compass_hide_blip_alone_group && _isAloneInGroup) then {
     _group = [];
 };
 
+_group = [_group, _player] call FUNC(sortNameList);
+
 if (GVAR(group_by_vehicle)) then {
     private _newGrp = _group apply { [objectParent _x, parseNumber ((driver vehicle _x) isNotEqualTo _x), _x] };
     _newGrp sort true;
@@ -217,8 +219,6 @@ if (_isAloneInGroup) exitWith {
 if !(ctrlShown _grpCtrl) then {
     _grpCtrl ctrlShow true;
 };
-
-_group = [_group, _player] call FUNC(sortNameList);
 
 private _text = "";
 private _curList = controlNull;

@@ -55,6 +55,8 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         private _dir = -(_viewDir - (getDirVisual _unit)) mod 360;
         private _divisor = linearConversion [35, 50, _circleRange, 2.25, 2.75, false] / diwako_dui_hudScaling; //2.25;
 
+        private _fovTop = getResolution select 6;
+
         if (isNull _ctrl) then {
             _ctrl = _display ctrlCreate ["RscPicture", -1, _ctrlGrp];
             _ctrlGrp setVariable [format ["diwako_dui_ctrl_unit_%1", _unitID], _ctrl];
@@ -70,12 +72,12 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         ctrlPosition _ctrlGrp params ["", "", "_width", "_height"];
         private _dist = _distance / linearConversion [15, 50, _circleRange, 40, 145, false];
         private _baseIconScale = _iconScale * (_unit getVariable [QGVAR(icon_size), 1]);
-        private _newWidth = (44 * pixelW) /_divisor * _baseIconScale;
-        private _newHeight = (44 * pixelH) /_divisor * _baseIconScale;
+        private _newWidth = (44 * pixelW) /_divisor * _baseIconScale * _fovTop;
+        private _newHeight = (44 * pixelH) /_divisor * _baseIconScale * 0.75;
 
         _ctrl ctrlSetPosition [
-            _width/2 + _width * (sin _relDir * _dist) - _newWidth/2,
-            _height/2 - _height * (cos _relDir * _dist) - _newHeight/2,
+            _width/2 + _width * (sin _relDir * _dist) * _fovTop - _newWidth/2,
+            _height/2 - _height * (cos _relDir * _dist) * 0.75 - _newHeight/2,
             _newWidth,
             _newHeight
         ];

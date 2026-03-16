@@ -21,8 +21,6 @@ private _ctrlWidth = pixelW * GVAR(uiPixels);
 private _ctrlMiddleX = 0.5 - (pixelW * (GVAR(uiPixels) / 2));
 private _compassY = safeZoneY + safeZoneH - (pixelH * (GVAR(uiPixels) + 10));
 
-private _fovTweak = (getResolution select 6)/0.75;
-
 if (diwako_dui_use_layout_editor) then {
     _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
     _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
@@ -32,9 +30,9 @@ if (diwako_dui_use_layout_editor) then {
 
 private _pointer = _display ctrlCreate ["RscPicture", -1];
 _pointer ctrlSetPosition [
-    _ctrlMiddleX + _ctrlWidth*(1 - _fovTweak)/2,
+    _ctrlMiddleX + _ctrlWidth * ((1 - GVAR(fovTweak)) / 2),
     _compassY,
-    _ctrlWidth * _fovTweak,
+    _ctrlWidth * GVAR(fovTweak),
     _ctrlHeight
 ];
 _pointer ctrlSetTextColor GVAR(pointer_color);

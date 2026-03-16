@@ -74,7 +74,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         private _newHeight = (44 * pixelH) /_divisor * _baseIconScale;
 
         _ctrl ctrlSetPosition [
-            _width/2 + _width * (sin _relDir * _dist) * GVAR(fovTweak) - _newWidth/2,
+            _width/2 + _width * (sin _relDir * _dist) - _newWidth/2,
             _height/2 - _height * (cos _relDir * _dist) - _newHeight/2,
             _newWidth,
             _newHeight

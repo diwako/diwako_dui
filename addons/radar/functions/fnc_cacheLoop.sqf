@@ -120,12 +120,17 @@ if (diwako_dui_enable_compass) then {
         private _dirCtrl = _compassDisplay displayCtrl IDC_DIRECTION;
         private _grpCtrl = _compassDisplay displayCtrl IDC_COMPASS_CTRLGRP;
 
+        GVAR(fovTweak) = (getResolution select 6)/0.75;
+
         if (diwako_dui_use_layout_editor) then {
             _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
             _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
             _ctrlWidth = profileNamespace getVariable ["igui_diwako_dui_compass_w", _ctrlWidth];
             _ctrlHeight = profileNamespace getVariable ["igui_diwako_dui_compass_h", _ctrlHeight];
         };
+        
+        _ctrlMiddleX = _ctrlMiddleX  + _ctrlWidth * ((1 - GVAR(fovTweak)) / 2);
+        _ctrlWidth = _ctrlWidth * GVAR(fovTweak);
 
         GVAR(bearing_size_calc) = diwako_dui_dir_size * GVAR(a3UiScale) * _uiScale * GVAR(windowHeightMod);
 
@@ -135,7 +140,7 @@ if (diwako_dui_enable_compass) then {
             _ctrlWidth,
             _ctrlHeight
         ];
-        _compassCtrl ctrlSetTextColor [1 ,1 , 1, diwako_dui_compass_opacity];
+        _compassCtrl ctrlSetTextColor [1, 1, 1, diwako_dui_compass_opacity];
         _compassCtrl ctrlCommit 0;
         _grpCtrl ctrlSetPosition [
            _ctrlMiddleX,

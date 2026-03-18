@@ -70,7 +70,7 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
         ctrlPosition _ctrlGrp params ["", "", "_width", "_height"];
         private _dist = _distance / linearConversion [15, 50, _circleRange, 40, 145, false];
         private _baseIconScale = _iconScale * (_unit getVariable [QGVAR(icon_size), 1]);
-        private _newWidth = (44 * pixelW) /_divisor * _baseIconScale;
+        private _newWidth = (44 * pixelW) /_divisor * _baseIconScale * GVAR(fovTweak);
         private _newHeight = (44 * pixelH) /_divisor * _baseIconScale;
 
         _ctrl ctrlSetPosition [

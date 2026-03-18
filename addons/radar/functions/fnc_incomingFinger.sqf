@@ -30,9 +30,9 @@ if (diwako_dui_use_layout_editor) then {
 
 private _pointer = _display ctrlCreate ["RscPicture", -1];
 _pointer ctrlSetPosition [
-    _ctrlMiddleX,
+    _ctrlMiddleX + _ctrlWidth * ((1 - GVAR(fovTweak)) / 2),
     _compassY,
-    _ctrlWidth,
+    _ctrlWidth * GVAR(fovTweak),
     _ctrlHeight
 ];
 _pointer ctrlSetTextColor GVAR(pointer_color);

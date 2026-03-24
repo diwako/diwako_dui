@@ -3,7 +3,7 @@
 if (isGamePaused || !isGameFocused) exitWith {};
 (_this select 0) params ["_ctrl"];
 if (isNull _ctrl) exitWith {};
-private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
+private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, POS_H];
 if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
     _ctrl ctrlSetPosition _pos;
 };
@@ -22,15 +22,6 @@ if (GVAR(useLIS)) then {
     // while a theoretical positionCameraToWorldVisual command would translate positions from camera space to world
     // space in RENDER time scope.
     private _camPos = _player modelToWorldVisualWorld (_player selectionPosition "pilot");
-    private _lis = lineIntersectsSurfaces [
-        _camPos,
-        _camPos vectorAdd ((getCameraViewDirection _player) vectorMultiply (GVAR(renderDistance) + 1)),
-        _player,
-        objNull,
-        true,
-        -1,
-        "FIRE"
-    ];
     {
         _x params ["", "", "_obj"];
         if (_obj isKindOf "CAManBase" &&
@@ -40,7 +31,15 @@ if (GVAR(useLIS)) then {
             _target = _obj;
             break;
         };
-    } forEach _lis;
+    } forEach (lineIntersectsSurfaces [
+        _camPos,
+        _camPos vectorAdd ((getCameraViewDirection _player) vectorMultiply (GVAR(renderDistance) + 1)),
+        _player,
+        objNull,
+        true,
+        -1,
+        "FIRE"
+    ]);
 };
 
 if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _target}}) then {
@@ -61,9 +60,11 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
         if (_targetedFade < 1) then {
             private _color = EGVAR(main,colors_custom) getVariable ["otherName", "#33FF00"]; // Other Group Default Color
             private _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"]; // Other Group Default Color
+            private _customInfoColor = _color;
             if ((group _target) isEqualTo (group _player)) then {
                 _color = _target getVariable [QEGVAR(main,color), "#FFFFFF"];
                 _colorGroup = EGVAR(main,colors_custom) getVariable ["group", "#FFFFFF"];
+                _customInfoColor = GVAR(customInfoColor);
             };
             private _alive = alive _target;
             if (GVAR(showUnconAsDead) && _alive) then {
@@ -71,7 +72,8 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
             };
             if !(_alive) then {
                 _color = EGVAR(main,colors_custom) getVariable ["dead", "#333333"];
-                _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"];; // Other Group Default Color
+                _colorGroup = EGVAR(main,colors_custom) getVariable ["otherGroup", "#99D999"]; // Other Group Default Color
+                _customInfoColor = _color;
             };
             private _tags = "<t font='%1' color='%2' size='%3' shadow='%4'>";
             private _data = ["<t align='center' valign='middle'>"];
@@ -87,8 +89,13 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
             _data pushBack format [_tags, GVAR(fontGroup), _colorGroup, (GET_POS_H) * GVAR(fontGroupNameSize), GVAR(groupFontShadow)];
 
             _data pushBack (_target getVariable [QGVAR(groupName), groupId (group _target)]);
-            _data append ["</t>", "</t>"];
+            _data append ["</t>", "<br/>"];
             // TODO(joko): Add Extra Fade for Group?
+
+            _data pushBack format [_tags, GVAR(fontCustomInfo), _customInfoColor, (GET_POS_H) * GVAR(fontCustomInfoSize), GVAR(customInfoShadow)];
+
+            _data pushBack (_target getVariable [QGVAR(customInfo), ""]);
+            _data append ["</t>", "</t>"];
             _ctrl ctrlSetStructuredText parseText (_data joinString "");
         };
     };

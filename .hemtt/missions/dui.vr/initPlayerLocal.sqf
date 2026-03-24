@@ -14,6 +14,7 @@ diwako_dui_special_track pushBack hank;
 hank setVariable ["diwako_dui_radar_customIcon", "yes.paa"];
 hank setVariable ["diwako_dui_linecompass_customIcon", ["yes.paa", 2]];
 hank setVariable ["diwako_dui_nametags_customGroup", "Custom group name"];
+hank setVariable ["diwako_dui_nametags_customInfo", "Hank"];
 
 [] spawn {
 	sleep 5;
@@ -36,3 +37,5 @@ hank setVariable ["diwako_dui_nametags_customGroup", "Custom group name"];
     colorful setVariable ["dui_customHexColor", _color call BIS_fnc_colorRGBtoHTML];
     // colorful setObjectTexture [0, format ["#(rgb,1,1,1)color(%1,%2,%3,1)", _color select 0, _color select 1, _color select 2]];
 }, 0.5] call CBA_fnc_addPerFrameHandler;
+
+colorful setVariable ["diwako_dui_nametags_customInfo", "Likes the rainbow"];

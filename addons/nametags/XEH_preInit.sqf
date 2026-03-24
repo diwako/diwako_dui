@@ -23,5 +23,5 @@ GVAR(RankNames) = createHashMap;
     GVAR(RankNames) set [_configName, _rankHashMap];
 } forEach ("isClass _x" configClasses (configFile >> "diwako_dui_rankNameStyles"));
 
-#include "settings.sqf"
+#include "settings.inc.sqf"
 ADDON = true;

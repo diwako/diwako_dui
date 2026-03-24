@@ -450,7 +450,7 @@
             <English>Custom Info Font</English>
         </Key>
         <Key ID="STR_dui_nametags_customInfoFont_desc">
-            <English>The font that is used for the custom information text below the group name. This feature can be used by mission makers or other mods to add additional information to a unit. For example, if the unit is a VIP, another sub team, or their pronouns,  etc.</English>
+            <English>The font that is used for the custom information text below the group name. This feature can be used by mission makers or other mods to add additional information to a unit. For example, if the unit is a VIP, another sub team, or their pronouns, etc.</English>
         </Key>
         <Key ID="STR_dui_nametags_customInfoShadow">
             <English>Custom Info Shadow</English>

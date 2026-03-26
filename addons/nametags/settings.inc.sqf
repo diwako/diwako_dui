@@ -201,13 +201,12 @@ private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayN
     false
 ] call CBA_fnc_addSetting;
 
-private _saneScale = linearConversion [1080, 1440, getResolution select 1, 1, 1.5, false];
 [
     QGVAR(fontNameSize),
     "SLIDER",
     ["STR_dui_nametags_fontNameSize", "STR_dui_nametags_fontNameSize_desc"],
     [_cat, _curCat],
-    [0, 20, 10 * _saneScale, 1],
+    [0, 20, 10, 1],
     false
 ] call CBA_fnc_addSetting;
 
@@ -216,7 +215,7 @@ private _saneScale = linearConversion [1080, 1440, getResolution select 1, 1, 1.
     "SLIDER",
     ["STR_dui_nametags_fontGroupNameSize", "STR_dui_nametags_fontGroupNameSize_desc"],
     [_cat, _curCat],
-    [0, 20, 8 * _saneScale, 1],
+    [0, 20, 8, 1],
     false
 ] call CBA_fnc_addSetting;
 
@@ -225,7 +224,7 @@ private _saneScale = linearConversion [1080, 1440, getResolution select 1, 1, 1.
     "SLIDER",
     ["STR_dui_nametags_fontCustomInfoSize", "STR_dui_nametags_fontCustomInfoSize_desc"],
     [_cat, _curCat],
-    [0, 20, 6 * _saneScale, 1],
+    [0, 20, 6, 1],
     false
 ] call CBA_fnc_addSetting;
 

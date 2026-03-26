@@ -142,7 +142,7 @@
             <Turkish>İsim Font Ölçeği</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize_desc">
-            <English>The Scaling that is Applied to the Name</English>
+            <English>The Scaling that is applied to the Name</English>
             <French>L'échelle appliquée pour le nom</French>
             <Russian>Размер шрифта, который будет использован для имени</Russian>
             <German>Die Skalierung, die für den Namen angewendet wird</German>
@@ -162,7 +162,7 @@
             <Turkish>Grup İsmi Font Ölceği</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
-            <English>The Scaling that is Applied to the Group Name</English>
+            <English>The Scaling that is applied to the Group Name</English>
             <French>Taille de la police à utiliser pour les groupes</French>
             <Russian>Размер шрифта, который будет использован для групп</Russian>
             <German>Die Skalierung, die auf den Gruppennamen angewendet wird</German>
@@ -445,6 +445,24 @@
             <German>Standard lang</German>
             <Chinese>預設（長）</Chinese>
             <Chinesesimp>默认（长）</Chinesesimp>
+        </Key>
+        <Key ID="STR_dui_nametags_customInfoFont">
+            <English>Custom Info Font</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customInfoFont_desc">
+            <English>The font that is used for the custom information text below the group name. This feature can be used by mission makers or other mods to add additional information to a unit. For example, if the unit is a VIP, another sub team, or their pronouns, etc.</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customInfoShadow">
+            <English>Custom Info Shadow</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontCustomInfoSize">
+            <English>Custom Info Font Scale</English>
+        </Key>
+        <Key ID="STR_dui_nametags_fontCustomInfoSize_desc">
+            <English>The Scaling that is applied to the custom information font</English>
+        </Key>
+        <Key ID="STR_dui_nametags_customInfoColor">
+            <English>Custom Info Color</English>
         </Key>
     </Package>
 </Project>

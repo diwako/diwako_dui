@@ -19,15 +19,13 @@ if (GVAR(pfhID) isEqualTo -1) then {
 private _rankNamesHashMap = GVAR(RankNames) get GVAR(rankNameStyle);
 
 {
-    if (alive _x) then {
-        _x setVariable [QGVAR(name), _x getVariable [QEGVAR(main,customName), _x getVariable ["ACE_Name", name _x]]];
-        _x setVariable [QGVAR(groupName), _x getVariable [QGVAR(customGroup), groupId (group _x)]];
-        _x setVariable [QGVAR(side), side group _x];
-        private _rank = rank _x;
-        private _rankName = _rankNamesHashMap get _rank;
-        if (isNil "_rankName") then {
-            _rankName = (GVAR(RankNames) get "default") get _rank;
-        };
-        _x setVariable [QGVAR(rank), _rankName];
+    _x setVariable [QGVAR(name), _x getVariable [QEGVAR(main,customName), _x getVariable ["ACE_Name", name _x]]];
+    _x setVariable [QGVAR(groupName), _x getVariable [QGVAR(customGroup), groupId (group _x)]];
+    _x setVariable [QGVAR(side), side group _x];
+    private _rank = rank _x;
+    private _rankName = _rankNamesHashMap get _rank;
+    if (isNil "_rankName") then {
+        _rankName = (GVAR(RankNames) get "default") get _rank;
     };
-} forEach allUnits;
+    _x setVariable [QGVAR(rank), _rankName];
+} forEach (allUnits select {alive _x});

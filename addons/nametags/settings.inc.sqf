@@ -1,6 +1,3 @@
-#ifndef MAINPREFIX
-    #include "script_component.hpp"
-#endif
 private _cat = format ["%1 - %2",localize "STR_dui_mod", localize "STR_dui_addon_nametags"];
 
 private _curCat = localize "STR_dui_cat_general";
@@ -120,6 +117,15 @@ private _fontGroupIndex = EGVAR(main,availableFonts) findIf {_x isEqualTo "Robot
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(fontCustomInfo),
+    "LIST",
+    ["STR_dui_nametags_customInfoFont", "STR_dui_nametags_customInfoFont_desc"],
+    [_cat, _curCat],
+    [EGVAR(main,availableFonts), EGVAR(main,availableFonts), _fontGroupIndex],
+    false
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(nameFontShadow),
     "LIST",
     ["STR_dui_nametags_nameShadow", ""],
@@ -183,11 +189,25 @@ private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayN
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(customInfoShadow),
+    "LIST",
+    ["STR_dui_nametags_customInfoShadow", ""],
+    [_cat, _curCat],
+    [[0, 1, 2], [
+        localize "STR_dui_namelist_text_shadow_0",
+        localize "STR_dui_namelist_text_shadow_1",
+        localize "STR_dui_namelist_text_shadow_2"
+    ], 1],
+    false
+] call CBA_fnc_addSetting;
+
+private _saneScale = linearConversion [1080, 1440, getResolution select 1, 1, 1.5, false];
+[
     QGVAR(fontNameSize),
     "SLIDER",
     ["STR_dui_nametags_fontNameSize", "STR_dui_nametags_fontNameSize_desc"],
     [_cat, _curCat],
-    [0, 20, 10, 1],
+    [0, 20, 10 * _saneScale, 1],
     false
 ] call CBA_fnc_addSetting;
 
@@ -196,7 +216,16 @@ private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayN
     "SLIDER",
     ["STR_dui_nametags_fontGroupNameSize", "STR_dui_nametags_fontGroupNameSize_desc"],
     [_cat, _curCat],
-    [0, 20, 8, 1],
+    [0, 20, 8 * _saneScale, 1],
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(fontCustomInfoSize),
+    "SLIDER",
+    ["STR_dui_nametags_fontCustomInfoSize", "STR_dui_nametags_fontCustomInfoSize_desc"],
+    [_cat, _curCat],
+    [0, 20, 6 * _saneScale, 1],
     false
 ] call CBA_fnc_addSetting;
 
@@ -225,6 +254,19 @@ _curCat = "STR_dui_cat_custom_color";
     {
         EGVAR(main,colors_custom) setVariable ["group_compass", _this select [0, 3]];
         EGVAR(main,colors_custom) setVariable ["group", _this call BIS_fnc_colorRGBtoHTML];
+    }
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(customInfoColor),
+    "COLOR",
+    ["STR_dui_nametags_customInfoColor", ""],
+    [_cat, _curCat],
+    [1, 1, 1, 1],
+    false,
+    {
+        EGVAR(main,colors_custom) setVariable ["otherGroup_compass", _this select [0, 3]];
+        EGVAR(main,colors_custom) setVariable ["otherGroup", _this call BIS_fnc_colorRGBtoHTML];
     }
 ] call CBA_fnc_addSetting;
 

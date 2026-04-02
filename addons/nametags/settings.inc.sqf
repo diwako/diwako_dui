@@ -224,7 +224,7 @@ private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayN
     "SLIDER",
     ["STR_dui_nametags_fontCustomInfoSize", "STR_dui_nametags_fontCustomInfoSize_desc"],
     [_cat, _curCat],
-    [0, 20, 6, 1],
+    [0, 20, 7, 1],
     false
 ] call CBA_fnc_addSetting;
 

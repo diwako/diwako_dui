@@ -3,8 +3,8 @@
 if (isGamePaused || !isGameFocused) exitWith {};
 (_this select 0) params ["_ctrl"];
 if (isNull _ctrl) exitWith {};
-private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, POS_H];
-if ((ctrlPosition _ctrl) isNotEqualTo _pos) then {
+private _pos = [GET_POS_X, GET_POS_Y, GET_POS_W, GET_POS_H];
+if ((ctrlPosition _ctrl select [0, 3]) isNotEqualTo (_pos select [0, 3])) then {
     _ctrl ctrlSetPosition _pos;
 };
 
@@ -97,6 +97,9 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
             _data pushBack (_target getVariable [QGVAR(customInfo), ""]);
             _data append ["</t>", "</t>"];
             _ctrl ctrlSetStructuredText parseText (_data joinString "");
+            if (ctrlTextHeight _ctrl > (ctrlPosition _ctrl select 3)) then {
+                _ctrl ctrlSetPosition [GET_POS_X, GET_POS_Y, GET_POS_W, ctrlTextHeight _ctrl];
+            };
         };
     };
 };

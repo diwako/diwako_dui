@@ -35,6 +35,7 @@ hank setVariable ["diwako_dui_nametags_customInfo", "Hank"];
 
     colorful setVariable ["dui_customRGBColor", _color];
     colorful setVariable ["dui_customHexColor", _color call BIS_fnc_colorRGBtoHTML];
+    colorful setVariable ["dui_customInfoHexColor", _color call BIS_fnc_colorRGBtoHTML];
     // colorful setObjectTexture [0, format ["#(rgb,1,1,1)color(%1,%2,%3,1)", _color select 0, _color select 1, _color select 2]];
 }, 0.5] call CBA_fnc_addPerFrameHandler;
 

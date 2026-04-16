@@ -92,7 +92,7 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
             _data append ["</t>", "<br/>"];
             // TODO(joko): Add Extra Fade for Group?
 
-            _data pushBack format [_tags, GVAR(fontCustomInfo), _customInfoColor, (GET_POS_H) * GVAR(fontCustomInfoSize), GVAR(customInfoShadow)];
+            _data pushBack format [_tags, GVAR(fontCustomInfo), _target getVariable ["dui_customInfoHexColor", _customInfoColor], (GET_POS_H) * GVAR(fontCustomInfoSize), GVAR(customInfoShadow)];
 
             _data pushBack (_target getVariable [QGVAR(customInfo), ""]);
             _data append ["</t>", "</t>"];

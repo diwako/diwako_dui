@@ -37,6 +37,7 @@
             <German>Welche Schriftart soll verwendet werden? Achtung, manche Schiftarten können Probleme erzeugen!</German>
             <Chinese>要使用哪種字體？警告：自訂字體可能造成問題！</Chinese>
             <Chinesesimp>要使用哪种字体？警告：自定义字体可能导致问题！</Chinesesimp>
+            <Korean>어떤 글꼴로 사용하시겠습니까? 경고, 사용자 지정 글꼴이 문제를 일으킬 수 있습니다.</Korean>
         </Key>
         <Key ID="STR_dui_icon">
             <English>Icon Style</English>
@@ -254,6 +255,7 @@
             <German>Kompass Entfernungslimit</German>
             <Chinese>羅盤距離上限</Chinese>
             <Chinesesimp>罗盘距离上限</Chinesesimp>
+            <Korean>나침반 범위 제한</Korean>
         </Key>
         <Key ID="STR_dui_compass_range_limit_desc">
             <English>The maximum allowed range of the compass set by mission/server</English>
@@ -261,6 +263,7 @@
             <German>Die maximale Reichweite des Kompasses, gesetzt durch Mission/Server</German>
             <Chinese>由任務/伺服器設定的羅盤最大允許距離</Chinese>
             <Chinesesimp>由任务/服务器设定的罗盘最大允许距离</Chinesesimp>
+            <Korean>미션/서버에서 설정한 나침반의 최대 허용 범위</Korean>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -450,6 +453,7 @@
             <Chinese>將此設定中選取的圖標優先於清單中其他圖標顯示。</Chinese>
             <Chinesesimp>将此设置中选取的图标优先于列表中其他图标显示。</Chinesesimp>
             <Turkish>Bu ayarda seçilen ikonlara diğerlerine göre öncelik ver</Turkish>
+            <Korean>이 설정에서 선택한 아이콘을 목록의 다른 아이콘보다 우선시합니다.</Korean>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority_setting0">
             <English>AR and AT</English>
@@ -469,6 +473,7 @@
             <Chinese>工兵、衛生兵與排爆</Chinese>
             <Chinesesimp>工兵、卫生员与排爆</Chinesesimp>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
+            <Korean>엔지니어, 의무병, EOD</Korean>
         </Key>
         <Key ID="STR_dui_namelist_size">
             <English>Text Size</English>
@@ -829,6 +834,7 @@
             <Chinese>乘員的圖標大小</Chinese>
             <Chinesesimp>乘员的图标大小</Chinesesimp>
             <Turkish>Mürettebat İkon Ölçeği</Turkish>
+            <Korean>승무원을 위한 아이콘 크기</Korean>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew_desc">
             <English>Set the icon scale for units on your compass while player is in vehicle crew</English>
@@ -894,6 +900,7 @@
             <Chinese>當 UI 對話視窗開啟時，是否隱藏此 UI？</Chinese>
             <Chinesesimp>当 UI 对话窗口打开时，是否隐藏此 UI？</Chinesesimp>
             <Turkish>Pusula herhangi bir oyun için diyalog çıktığında gizlenmeli mi?</Turkish>
+            <Korean>UI Dialog가 열려 있을 때 UI를 숨기시겠습니까?</Korean>
         </Key>
         <Key ID="STR_dui_compass_opacity">
             <English>Radar Opacity</English>
@@ -956,6 +963,7 @@
             <Chinese>方位角與雷達的間距</Chinese>
             <Chinesesimp>方位角与雷达的间距</Chinesesimp>
             <Turkish>Yön Derecesiyle Radar Arasındaki Boşluk</Turkish>
+            <Korean>방위각과 레이더 사이의 거리</Korean>
         </Key>
         <Key ID="STR_dui_namelist_text_shadow">
             <English>Text Outline</English>
@@ -1278,6 +1286,7 @@
             <Chinese>遮擋淡出時間</Chinese>
             <Chinesesimp>遮挡淡出时间</Chinesesimp>
             <Turkish>'Occlusion' Efekti Şeffaflaşma Süresi</Turkish>
+            <Korean>오클루젼 사라지는 시간</Korean>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_desc">
             <English>Sets the time it takes for icons to fade away on the radar</English>
@@ -1305,6 +1314,7 @@
             <Chinese>遮擋漸入時間</Chinese>
             <Chinesesimp>遮挡渐入时间</Chinesesimp>
             <Turkish>'Occlusion' Efekti Opaklaşma Süresi</Turkish>
+            <Korean>오클루젼 나타나는 시간</Korean>
         </Key>
         <Key ID="STR_dui_occlusion_fade_time_in_desc">
             <English>Sets the time it takes for icons to fade in on the radar</English>
@@ -1623,6 +1633,7 @@
             <Chinese>服務器需要運行DUI來進行同步</Chinese>
             <Chinesesimp>服务器需要运行DUI来进行同步</Chinesesimp>
             <Turkish>Senkronizasyon için sunucuda da DUI çalışması gerekir!</Turkish>
+            <Korean>서버 동기화를 위해서는 DUI가 실행되어야 합니다!</Korean>
         </Key>
         <Key ID="STR_dui_radar_syncGroup">
             <English>Sync units in group</English>
@@ -1630,6 +1641,7 @@
             <German>Synchronisiere Einheiten in der Gruppe</German>
             <Chinese>同步團隊成員順序</Chinese>
             <Chinesesimp>同步团队成员顺序</Chinesesimp>
+            <Korean>그룹 내 유닛 동기화</Korean>
         </Key>
         <Key ID="STR_dui_radar_syncGroup_desc">
             <English>Will sync the order of units in a player's group if sort type is set to "None". Only works in MP and every player must have DUI loaded for this to work properly</English>
@@ -1637,6 +1649,7 @@
             <German>Synchronisiert die Reihenfolge der Einheiten in der Gruppe, wenn die Sortierung auf "Kein" gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen, damit dies korrekt funktioniert</German>
             <Chinese>當排序方式設為「無」時，將同步玩家團隊內成員的排序。僅於多人模式有效，且所有玩家都必須載入 DUI 才能正常運作。</Chinese>
             <Chinesesimp>当排序方式设为“无”时，将同步玩家队伍内成员的排序。仅在多人模式有效，且所有玩家都必须加载 DUI 才能正常运作。</Chinesesimp>
+            <Korean>Sort를 "없음"으로 설정된 경우 플레이어 그룹 내 유닛 순서를 동기화 합니다. 멀티플레이어 모드에서만 작동하며, 모든 플레이어가 DUI를 설치해야 제대로 작동합니다.</Korean>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1910,6 +1923,7 @@
             <Chinese>只有頂端</Chinese>
             <Chinesesimp>只有顶端</Chinesesimp>
             <Turkish>Sadece Ucu</Turkish>
+            <Korean>팁</Korean>
         </Key>
         <Key ID="STR_dui_icon_nato">
             <English>NATO JMS</English>
@@ -2024,7 +2038,7 @@
             <Russian>Классический</Russian>
             <!-- <Czech></Czech> -->
             <German>Klassisch</German>
-            <!-- <Korean></Korean> -->
+            <Korean>클래식</Korean>
             <Japanese>クラシック</Japanese>
             <Chinese>經典</Chinese>
             <Chinesesimp>经典</Chinesesimp>
@@ -2196,18 +2210,21 @@
             <French>Activer les icônes de sièges de véhicules</French>
             <Chinese>啟用載具座位圖標</Chinese>
             <Chinesesimp>启用载具座位图标</Chinesesimp>
+            <Korean>차량 탑승 아이콘 활성화</Korean>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons_desc">
             <English>When enabled will show if a unit is in a vehicle or not.</English>
             <French>Lorsque cette option est activée, elle indique si une unité se trouve ou non dans un véhicule.</French>
             <Chinese>啟用後將顯示單位是否在載具內。</Chinese>
             <Chinesesimp>启用后将显示单位是否在载具内。</Chinesesimp>
+            <Korean>이 기능을 활성화하면 유닛이 차량에 있는지 여부를 표시합니다.</Korean>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons_sameVehicle">
             <English>Only in the same vehicle</English>
             <French>Seulement dans le même véhicule</French>
             <Chinese>僅限同一載具</Chinese>
             <Chinesesimp>仅限同一载具</Chinesesimp>
+            <Korean>같은 차량에서만</Korean>
         </Key>
         <Key ID="STR_dui_radar_pointer_style">
             <English>Pointer style</English>
@@ -2220,6 +2237,7 @@
             <Chinese>指向風格</Chinese>
             <Chinesesimp>指向风格</Chinesesimp>
             <Turkish>İbre Tarzı</Turkish>
+            <Korean>포인터 스타일</Korean>
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
             <English>Pointer style that should be used on the compass component</English>
@@ -2232,6 +2250,7 @@
             <Chinese>在羅盤上顯示的指向風格</Chinese>
             <Chinesesimp>在罗盘上显示的指向风格</Chinesesimp>
             <Turkish>Pusulada kullanılacak ibrenin tarzı</Turkish>
+            <Korean>나침반 구성 요소에 사용할 포인터 스타일</Korean>
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
             <English>Pointer color</English>
@@ -2244,6 +2263,7 @@
             <Chinese>指向顏色</Chinese>
             <Chinesesimp>指向颜色</Chinesesimp>
             <Turkish>İbre Rengi</Turkish>
+            <Korean>포인터 색상</Korean>
         </Key>
         <!-- ACE pointer styles -->
         <Key ID="STR_dui_radar_pointer_arrowhead">
@@ -2257,6 +2277,7 @@
             <Chinese>箭頭</Chinese>
             <Chinesesimp>箭头</Chinesesimp>
             <Turkish>İbre Ucu</Turkish>
+            <Korean>화살촉</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking">
             <English>Show icon when units speak</English>
@@ -2268,6 +2289,7 @@
             <Chinese>當單位說話時顯示圖標</Chinese>
             <Chinesesimp>当单位说话时显示图标</Chinesesimp>
             <Turkish>Konuşan Kişi İkonu</Turkish>
+            <Korean>유닛이 말할때 아이콘 표시</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_desc">
             <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
@@ -2279,6 +2301,7 @@
             <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
             <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
             <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
+            <Korean>ACRE 또는 TFAR에서 유닛이 말할 때 말풍선 아이콘이 표시됩니다.</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
             <English>Show cardinal points</English>
@@ -2290,6 +2313,7 @@
             <Chinese>顯示基點</Chinese>
             <Chinesesimp>显示基点</Chinesesimp>
             <Turkish>Kardinal Noktaları Göster</Turkish>
+            <Korean>기본 방위 표시</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
             <English>Shows cardinal points on radar if you have a compass. When disabled no cardinal points will be shown even with a compass in inventory</English>
@@ -2301,6 +2325,7 @@
             <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
             <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
             <Turkish>Eğer bir pusulaya sahipseniz radarda kardinal noktaları gösterir. Bu ayar kapalıyken envanterda pusula varken bile kardinal noktalar gösterilmez</Turkish>
+            <Korean>나침반 소지 시 레이더에 방위 표시합니다. 이 기능을 비활성화하면 인벤토리에 나침반이 있어도 방위가 표시되지 않습니다.</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
             <English>Replace main icon with speaking icon</English>
@@ -2312,6 +2337,7 @@
             <Chinese>正在發言圖標替換主圖標</Chinese>
             <Chinesesimp>正在发言图标替换主图标</Chinesesimp>
             <Turkish>Ana İkonu Konuşma İkonuyla Değiştir</Turkish>
+            <Korean>메인 아이콘을 말하는 아이콘으로 교체</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
             <English>Replaces the icon of the unit with the speaking icon in the namelist</English>
@@ -2323,6 +2349,7 @@
             <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
             <Chinesesimp>名单列表中的单位主图标会被正在发言图标替换</Chinesesimp>
             <Turkish>Konuşan kişinin İsim listesindeki ikonunu konuşma ikonuyla değiştirir</Turkish>
+            <Korean>이름 목록에서 해당 유닛의 아이콘을 말하는 아이콘으로 바꿉니다.</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
             <English>Speaking icon on radio messages only</English>
@@ -2334,6 +2361,7 @@
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Turkish>Sadece Telsiz İçin Konuşma İkonu</Turkish>
+            <Korean>라디오 메세지에만 말하는 아이콘이 표시됩니다.</Korean>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
             <English>Speaking icon will only appear when receiving or talking on radio not when talking locally to others</English>
@@ -2345,6 +2373,7 @@
             <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
             <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
             <Turkish>Konuşma ikonu sadece telsiz konuşmalarında kullanılır, birisi etrafındakilerle konuşurken aktive olmaz</Turkish>
+            <Korean>말하는 아이콘은 라디오를 수신하거나 말할 때만 나타나며, 로컬에서 다른 사람과 통화할 때는 나타나지 않습니다.</Korean>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
             <English>ACE Medic Toggle</English>
@@ -2367,6 +2396,7 @@
             <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
             <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
             <Turkish>Sıhhiyeler ACE ayarlarına göre mi vanilya ayarlara göre mi belirlensin?</Turkish>
+            <Korean>의무병을 기본 특성으로 표시할지, 아니면 ACE3에서 지정된 의무병으로 표시할지 선택하세요.</Korean>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers">
             <English>Always show unit selection number</English>
@@ -2374,6 +2404,7 @@
             <German>Immer den Gruppenindex der Einheit anzeigen</German>
             <Chinese>始終顯示單位選取編號</Chinese>
             <Chinesesimp>始终显示单位选择编号</Chinesesimp>
+            <Korean>유닛 선택 번호 항상 표시</Korean>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers_desc">
             <English>Will always show the unit number the squad leader can use to select a squad member using the function keys</English>
@@ -2381,6 +2412,7 @@
             <German>Zeige immer Index der Gruppenmitglieder an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
             <Chinese>將始終顯示單位編號，小隊長可使用功能鍵選取小隊成員。</Chinese>
             <Chinesesimp>将始终显示单位编号，队长可使用功能键选择小队成员。</Chinesesimp>
+            <Korean>분대장이 기능 키를 사용하여 분대원을 선택할 때 사용할 수 있는 부대 번호가 항상 표시됩니다.</Korean>
         </Key>
     </Package>
 </Project>

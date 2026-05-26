@@ -443,7 +443,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
 [
     QGVAR(always_show_player_number)
     ,"CHECKBOX"
-    ,[localize "STR_dui_radar_always_show_player_numbers", localize "STR_dui_radar_always_show_player_number_desc"]
+    ,[localize "STR_dui_radar_always_show_player_number", localize "STR_dui_radar_always_show_player_number_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,false
     ,false

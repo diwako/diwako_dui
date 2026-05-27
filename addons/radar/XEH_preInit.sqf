@@ -445,7 +445,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_finger")) then {
     ,"CHECKBOX"
     ,[localize "STR_dui_radar_always_show_player_number", localize "STR_dui_radar_always_show_player_number_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,false
+    ,true
     ,false
 ] call CBA_fnc_addSetting;
 

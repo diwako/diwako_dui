@@ -2412,5 +2412,11 @@
             <Chinesesimp>将始终显示单位编号，队长可使用功能键选择小队成员。</Chinesesimp>
             <Korean>분대장이 기능 키를 사용하여 분대원을 선택할 때 사용할 수 있는 부대 번호가 항상 표시됩니다.</Korean>
         </Key>
+        <Key ID="STR_dui_radar_always_show_player_number">
+            <English>Show player number</English>
+        </Key>
+        <Key ID="STR_dui_radar_always_show_player_number_desc">
+            <English>Will always show the unit number of the current player</English>
+        </Key>
     </Package>
 </Project>

@@ -64,7 +64,7 @@ if !(isNull _target || {!(player call EFUNC(main,canHudBeShown)) || {unitIsUAV _
             if ((group _target) isEqualTo (group _player)) then {
                 _color = _target getVariable [QEGVAR(main,color), "#FFFFFF"];
                 _colorGroup = EGVAR(main,colors_custom) getVariable ["group", "#FFFFFF"];
-                _customInfoColor = GVAR(customInfoColor);
+                _customInfoColor = GVAR(customInfoColor) call BIS_fnc_colorRGBtoHTML;
             };
             private _alive = alive _target;
             if (GVAR(showUnconAsDead) && _alive) then {

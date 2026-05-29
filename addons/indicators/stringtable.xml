@@ -13,6 +13,7 @@
                 <Chinese>標記</Chinese>
                 <Chinesesimp>标记</Chinesesimp>
                 <Turkish>Göstergeler</Turkish>
+                <Korean>인디케이터</Korean>
             </Key>
             <Key ID="STR_dui_indicators_show">
                 <English>Show indicators</English>
@@ -25,6 +26,7 @@
                 <Chinese>顯示標記</Chinese>
                 <Chinesesimp>显示标记</Chinesesimp>
                 <Turkish>Göstergeleri Göster</Turkish>
+                <Korean>인디케이터 보기</Korean>
             </Key>
             <Key ID="STR_dui_indicators_show_desc">
                 <English>Proximity Indicators</English>
@@ -37,6 +39,7 @@
                 <Chinese>在一定距離內才顯示標記</Chinese>
                 <Chinesesimp>在一定距离内才显示标记</Chinesesimp>
                 <Turkish>Yakınlık Göstergeleri</Turkish>
+                <Korean>근접 인디케이터</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range">
                 <English>Max Range</English>
@@ -49,6 +52,7 @@
                 <Chinese>最遠距離</Chinese>
                 <Chinesesimp>最远距离</Chinesesimp>
                 <Turkish>Max Menzil</Turkish>
+                <Korean>최대 거리</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range_desc">
                 <English>Maximum allowed range to show indicators</English>
@@ -61,6 +65,7 @@
                 <Chinese>顯示標記的最遠距離</Chinese>
                 <Chinesesimp>显示标记的最远距离</Chinesesimp>
                 <Turkish>Göstergelerin gösterileceği maximum mesafe</Turkish>
+                <Korean>인디케이터에 표시할 최대 거리</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range_limit">
                 <English>Max Range Limit</English>
@@ -68,6 +73,7 @@
                 <German>Maximale Entfernung</German>
                 <Chinese>最大距離上限</Chinese>
                 <Chinesesimp>最大距离上限</Chinesesimp>
+                <Korean>최대 거리 제한</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range_limit_desc">
                 <English>Maximum allowed range to show indicators set by mission/server</English>
@@ -75,6 +81,7 @@
                 <German>Maximal erlaubte Entfernung zur Anzeige der Indikatoren in der Mission/dem Server</German>
                 <Chinese>由任務/伺服器設定的標記最大允許距離</Chinese>
                 <Chinesesimp>由任务/服务器设定的标记最大允许距离</Chinesesimp>
+                <Korean>미션/서버에서 개인이 설정 할 수 있는 최대 인디케이터 표시 거리</Korean>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
@@ -85,6 +92,7 @@
                 <Chinese>允許乘員標記</Chinese>
                 <Chinesesimp>允许乘员标记</Chinesesimp>
                 <Turkish>Mürettebat göstergelerine izin ver</Turkish>
+                <Korean>승무원 인디케이터 활성화</Korean>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled_desc">
                 <English>Allow indicators with greater range for vehicle crew</English>
@@ -95,6 +103,7 @@
                 <Chinese>允許乘員有額外的標記距離</Chinese>
                 <Chinesesimp>允许乘员有额外的标记距离</Chinesesimp>
                 <Turkish>Araç mürettebatları için göstergelerin daha uzaktan görünmesine izin ver</Turkish>
+                <Korean>승무원이 더 넓은 범위의 인디케이터를 사용 할 수 있도록 허용함.</Korean>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
                 <English>Max Range for crew</English>
@@ -105,6 +114,7 @@
                 <Chinese>乘員的最遠距離</Chinese>
                 <Chinesesimp>乘员的最远距离</Chinesesimp>
                 <Turkish>Mürettebat Max Menzil</Turkish>
+                <Korean>승무원을 위한 최대 거리</Korean>
             </Key>
             <Key ID="STR_dui_indicators_crew_range_desc">
                 <English>Maximum allowed range to show indicators while in vehicle crew</English>
@@ -115,6 +125,7 @@
                 <Chinese>作爲載具乘員時允許顯示的最遠的距離</Chinese>
                 <Chinesesimp>作为载具乘员时允许显示的最远的距离</Chinesesimp>
                 <Turkish>Mürettebat için göstergelerin gösterileceği maximum mesafe</Turkish>
+                <Korean>차량에 탑승하는 동안 표시되는 최대 인디케이터 거리를 설정합니다.</Korean>
             </Key>
             <Key ID="STR_dui_indicators_style">
                 <English>Icon Style</English>
@@ -157,6 +168,7 @@
                 <Chinese>圖標大小</Chinese>
                 <Chinesesimp>图标大小</Chinesesimp>
                 <Turkish>Boyut</Turkish>
+                <Korean>크기</Korean>
             </Key>
             <Key ID="STR_dui_indicators_size_desc">
                 <English>Sets the size of the indicator icons</English>
@@ -169,6 +181,7 @@
                 <Chinese>設置圖標的大小</Chinese>
                 <Chinesesimp>设置图标的大小</Chinesesimp>
                 <Turkish>Gösterge ikonlarının boyunu belirler</Turkish>
+                <Korean>인디케이터 아이콘의 사이즈를 설정합니다.</Korean>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange">
                 <English>Use ACE Nametags Logic</English>
@@ -180,6 +193,7 @@
                 <Chinese>使用ACE名牌邏輯</Chinese>
                 <Chinesesimp>使用ACE名牌逻辑</Chinesesimp>
                 <Turkish>ACE Nametags Kullan</Turkish>
+                <Korean>ACE 이름표 로직</Korean>
             </Key>
             <Key ID="STR_dui_indicators_useACENametagsRange_desc">
                 <English>Matches indicator transparency to ACE Nametags transparency. Overrides normal range and behaviour!</English>
@@ -191,6 +205,7 @@
                 <Chinese>將標識透明度匹配ACE名牌的透明度設置。會複寫一般設置中的距離和行爲！</Chinese>
                 <Chinesesimp>将标识透明度匹配ACE名牌的透明度设置。会复写一般设置中的距离和行为！</Chinesesimp>
                 <Turkish>Gösterge renklerini ACE Nametags rekleri ile eşleştir. Normal renk ve davranışı değiştirir!</Turkish>
+                <Korean>인디케이터 투명도를 ACE 이름표 투명도와 일치시킵니다. 정상 범위와 동작을 무시합니다!</Korean>
             </Key>
             <!-- Indicator styles -->
             <Key ID="STR_dui_indicators_indicator_standard">
@@ -204,6 +219,7 @@
                 <Chinese>標準</Chinese>
                 <Chinesesimp>标准</Chinesesimp>
                 <Turkish>Standart</Turkish>
+                <Korean>기본</Korean>
             </Key>
             <Key ID="STR_dui_indicators_indicator_square">
                 <English>Square</English>
@@ -216,6 +232,7 @@
                 <Chinese>方形</Chinese>
                 <Chinesesimp>方形</Chinesesimp>
                 <Turkish>Kare</Turkish>
+                <Korean>사각형</Korean>
             </Key>
             <Key ID="STR_dui_indicators_indicator_diamond">
                 <English>Diamond</English>
@@ -228,6 +245,7 @@
                 <Chinese>菱形</Chinese>
                 <Chinesesimp>菱形</Chinesesimp>
                 <Turkish>Elmas</Turkish>
+                <Korean>다이아몬드형</Korean>
             </Key>
             <Key ID="STR_dui_indicators_indicator_circle">
                 <English>Circle</English>
@@ -240,6 +258,7 @@
                 <Chinese>圓形</Chinese>
                 <Chinesesimp>圆形</Chinesesimp>
                 <Turkish>Çember</Turkish>
+                <Korean>원형</Korean>
             </Key>
             <!-- Icon Toggle -->
             <Key ID="STR_dui_cat_icons">
@@ -253,6 +272,7 @@
                 <Chinese>圖標</Chinese>
                 <Chinesesimp>图标</Chinesesimp>
                 <Turkish>İkonlar</Turkish>
+                <Korean>아이콘</Korean>
             </Key>
             <Key ID="STR_dui_indicators_icon_leader">
                 <English>Show Leader icon</English>
@@ -265,6 +285,7 @@
                 <Chinese>顯示隊長圖標</Chinese>
                 <Chinesesimp>显示队长图标</Chinesesimp>
                 <Turkish>Lider İkonunu Göster</Turkish>
+                <Korean>분대장 아이콘 표시</Korean>
             </Key>
             <Key ID="STR_dui_indicators_icon_buddy">
                 <English>Show Buddy icon</English>
@@ -277,6 +298,7 @@
                 <Chinese>顯示搭檔圖標</Chinese>
                 <Chinesesimp>显示搭档图标</Chinesesimp>
                 <Turkish>Eş İkonunu Göster</Turkish>
+                <Korean>친구 아이콘 표시</Korean>
             </Key>
             <Key ID="STR_dui_indicators_icon_medic">
                 <English>Show Medic icon</English>
@@ -289,6 +311,7 @@
                 <Chinese>顯示醫療兵圖標</Chinese>
                 <Chinesesimp>显示医疗兵图标</Chinesesimp>
                 <Turkish>Sıhhiye İkonunu Göster</Turkish>
+                <Korean>의무병 아이콘 표시</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range_scale">
                 <English>Resize With Range</English>
@@ -301,6 +324,7 @@
                 <Chinese>重設距離大小</Chinese>
                 <Chinesesimp>重设距离大小</Chinesesimp>
                 <Turkish>Mesafe ile Boyut Değiştir</Turkish>
+                <Korean>범위에 따라 크기 조정</Korean>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
                 <English>Scale indicators according to distance to unit</English>
@@ -313,6 +337,7 @@
                 <Chinese>標識的大小根據到達單位的距離而變化</Chinese>
                 <Chinesesimp>标识的大小根据到达单位的距离而变化</Chinesesimp>
                 <Turkish>Mesafeye göre göstergelerin boyutunu ayarla</Turkish>
+                <Korean>인디케이터의 크기가 유닛까지의 거리에 따라 변합니다</Korean>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
                 <English>Resize With FOV</English>
@@ -325,6 +350,7 @@
                 <Chinese>重設視野範圍角度</Chinese>
                 <Chinesesimp>重设视野范围角度</Chinesesimp>
                 <Turkish>FOV ile Boyut Değiştir</Turkish>
+                <Korean>시야각에 따라 크기 조정</Korean>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
                 <English>Scale indicators according to current field of view</English>
@@ -337,6 +363,7 @@
                 <Chinese>根據視野範圍角度調節標識大小</Chinese>
                 <Chinesesimp>根据视野范围角度调节标识大小</Chinesesimp>
                 <Turkish>O anki FOV'a göre göstergelerin boyunu ayarla</Turkish>
+                <Korean>현재 시야에 따라 인디케이터를 조정합니다</Korean>
             </Key>
         </Container>
     </Package>

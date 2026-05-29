@@ -10,6 +10,7 @@
             <Chinese>名牌</Chinese>
             <Chinesesimp>名牌</Chinesesimp>
             <Turkish>İsimler</Turkish>
+            <Korean>이름표</Korean>
         </Key>
         <Key ID="STR_dui_nametags_enabled">
             <English>Enable Nametags</English>
@@ -20,6 +21,7 @@
             <Chinese>啟用名牌</Chinese>
             <Chinesesimp>启用名牌</Chinesesimp>
             <Turkish>İsimleri Göster</Turkish>
+            <Korean>이름표 활성화</Korean>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion">
             <English>Enable Nametag Occlusion</English>
@@ -30,6 +32,7 @@
             <Chinese>啟用名牌遮擋</Chinese>
             <Chinesesimp>启用名牌遮挡</Chinesesimp>
             <Turkish>İsimlerde 'Occlusion' Efekti</Turkish>
+            <Korean>이름표 오쿨루젼 활성화</Korean>
         </Key>
         <Key ID="STR_dui_nametags_enableOcclusion_desc">
             <English>When Occlusion is Enabled, the Nametags check how Visible a Unit is and Reduces the Transparency of the Nametag based on this value</English>
@@ -40,6 +43,7 @@
             <Chinese>當遮擋啟用時，會檢查該單位的可視程度來調整該單位的名牌透明度</Chinese>
             <Chinesesimp>当遮挡启用时，会检查该单位的可视程度来调整该单位的名牌透明度</Chinesesimp>
             <Turkish>İsmi gözüken kişinin görünebilirliğine göre ismin şeffaflığını ayarlar</Turkish>
+            <Korean>오쿨루젼이 활성화 되어 있을때, 이름표는 부대원들이 보이는지 확인하고, 이 값에 따라 이름표의 투명도를 낮춥니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime">
             <English>Fade In Time</English>
@@ -50,6 +54,7 @@
             <Chinese>漸入時間</Chinese>
             <Chinesesimp>渐入时间</Chinesesimp>
             <Turkish>Opaklaşma Süresi</Turkish>
+            <Korean>페이드인 시간</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fadeInTime_desc">
             <English>The time the Nametag takes to Fade in</English>
@@ -60,6 +65,7 @@
             <Chinese>名牌漸入時間</Chinese>
             <Chinesesimp>名牌渐入时间</Chinesesimp>
             <Turkish>İsmin opaklaşma süresi</Turkish>
+            <Korean>이름표가 서서히 나타나는 데 걸리는 시간</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime">
             <English>Fade Out Time</English>
@@ -70,6 +76,7 @@
             <Chinese>淡出時間</Chinese>
             <Chinesesimp>淡出时间</Chinesesimp>
             <Turkish>Şeffaflaşma Süresi</Turkish>
+            <Korean>페이드 아웃 시간</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fadeOutTime_desc">
             <English>The Time the Nametag takes to Fade out</English>
@@ -80,6 +87,7 @@
             <Chinese>名牌淡出時間</Chinese>
             <Chinesesimp>名牌淡出时间</Chinesesimp>
             <Turkish>İsmin şefflaşma süresi</Turkish>
+            <Korean>이름표가 서서히 사라지는 데 걸리는 시간</Korean>
         </Key>
         <Key ID="STR_dui_cat_fonts">
             <English>Font Settings</English>
@@ -90,6 +98,7 @@
             <Chinese>字體設置</Chinese>
             <Chinesesimp>字体设置</Chinesesimp>
             <Turkish>Font Ayarları</Turkish>
+            <Korean>폰트 설정</Korean>
         </Key>
         <Key ID="STR_dui_nametags_nameFont">
             <English>Name Font</English>
@@ -100,6 +109,7 @@
             <Chinese>名稱字體</Chinese>
             <Chinesesimp>名称字体</Chinesesimp>
             <Turkish>İsim Fontu</Turkish>
+            <Korean>이름 폰트</Korean>
         </Key>
         <Key ID="STR_dui_nametags_nameFont_desc">
             <English>The Font that is used for the Name in the Nametag</English>
@@ -110,6 +120,7 @@
             <Chinese>名牌中名稱的字體</Chinese>
             <Chinesesimp>名牌中名称的字体</Chinesesimp>
             <Turkish>İsmi göstermek için kullanılacak font</Turkish>
+            <Korean>이름표에 들어갈 이름의 폰트 설정</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont">
             <English>Group Name Font</English>
@@ -120,6 +131,7 @@
             <Chinese>團隊名稱字體</Chinese>
             <Chinesesimp>团队名称字体</Chinesesimp>
             <Turkish>Grup İsmi Fontu</Turkish>
+            <Korean>분대 이름 폰트</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont_desc">
             <English>The Font that is used for the Group Name in the Nametag</English>
@@ -130,6 +142,7 @@
             <Chinese>名牌中團隊名稱的字體</Chinese>
             <Chinesesimp>名牌中团队名称的字体</Chinesesimp>
             <Turkish>Grup isimlerini göstermek için kullanılacak font</Turkish>
+            <Korean>이름표에 들어갈 그룹 이름의 폰트 설정</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize">
             <English>Name Font Scale</English>
@@ -140,6 +153,7 @@
             <Chinese>名稱字體大小</Chinese>
             <Chinesesimp>名称字体大小</Chinesesimp>
             <Turkish>İsim Font Ölçeği</Turkish>
+            <Korean>이름 폰트 크기</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize_desc">
             <English>The Scaling that is applied to the Name</English>
@@ -150,6 +164,7 @@
             <Chinese>名稱字體大小</Chinese>
             <Chinesesimp>名称字体大小</Chinesesimp>
             <Turkish>İsim fontuna uygulanacak ölçek</Turkish>
+            <Korean>이름의 크기를 설정합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize">
             <English>Group Name Font Scale</English>
@@ -160,6 +175,7 @@
             <Chinese>團隊名稱字體大小</Chinese>
             <Chinesesimp>团队名称字体大小</Chinesesimp>
             <Turkish>Grup İsmi Font Ölceği</Turkish>
+            <Korean>그룹 이름 폰트 크기</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
             <English>The Scaling that is applied to the Group Name</English>
@@ -170,6 +186,7 @@
             <Chinese>團隊名稱所使用的字體大小</Chinese>
             <Chinesesimp>团队名称所使用的字体大小</Chinesesimp>
             <Turkish>Grup ismi fontuna uygulanacak ölçek</Turkish>
+            <Korean>그룹 이름의 크기를 설정합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_deadColor">
             <English>Dead Color</English>
@@ -180,6 +197,7 @@
             <Chinese>死亡顏色</Chinese>
             <Chinesesimp>死亡颜色</Chinesesimp>
             <Turkish>Ölü Rengi</Turkish>
+            <Korean>사망자 색</Korean>
         </Key>
         <Key ID="STR_dui_nametags_deadColor_desc">
             <English>The Color a Dead Person has.</English>
@@ -190,6 +208,7 @@
             <Chinese>已死亡單位的顏色</Chinese>
             <Chinesesimp>已死亡单位的颜色</Chinesesimp>
             <Turkish>Ölü bir kişinin rengi</Turkish>
+            <Korean>사망자의 색상을 설정합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupColor">
             <English>Own Group Color</English>
@@ -200,6 +219,7 @@
             <Chinese>自己團隊的顏色</Chinese>
             <Chinesesimp>自己团队的颜色</Chinesesimp>
             <Turkish>Kengi Grup Rengi</Turkish>
+            <Korean>자신의 그룹 색상</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupColor_desc">
             <English>The Color the Group Name will have if the Unit is in your Group.</English>
@@ -210,6 +230,7 @@
             <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顏色</Chinese>
             <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubundaki birimlerin isim rengi</Turkish>
+            <Korean>해당 유닛이 그룹에 속해 있을 경우 그룹 이름에 표시될 색상입니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor">
             <English>Other Group Color</English>
@@ -220,6 +241,7 @@
             <Chinese>其他團隊的顏色</Chinese>
             <Chinesesimp>其他团队的颜色</Chinesesimp>
             <Turkish>Diğer Grup İsim Rengi</Turkish>
+            <Korean>다른 그룹 색상</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
             <English>The Color Other Groups have</English>
@@ -230,6 +252,7 @@
             <Chinese>其他團隊的顏色</Chinese>
             <Chinesesimp>其他团队的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubu olmayan grupların isim rengi</Turkish>
+            <Korean>다른 그룹 색상을 설정합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor">
             <English>Other Group Name Color</English>
@@ -240,6 +263,7 @@
             <Chinese>其他團隊的名稱顏色</Chinese>
             <Chinesesimp>其他团队的名称颜色</Chinesesimp>
             <Turkish>Diğer Grup Rengi</Turkish>
+            <Korean>다른 그룹 이름 색상</Korean>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor_desc">
             <English>The Color Other Player Names are shown in that are not in your Group.</English>
@@ -250,6 +274,7 @@
             <Chinese>非本團隊玩家名稱顏色</Chinese>
             <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
             <Turkish>Oyuncunun grubunda olmayan birimlerin isim rengi</Turkish>
+            <Korean>다른 그룹 이름의 색상을 설정합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance">
             <English>Render Distance</English>
@@ -260,6 +285,7 @@
             <Chinese>渲染距離</Chinese>
             <Chinesesimp>渲染距离</Chinesesimp>
             <Turkish>İsim Mesafesi</Turkish>
+            <Korean>렌더 거리</Korean>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance_desc">
             <English>The Distance a Nametag is render</English>
@@ -270,6 +296,7 @@
             <Chinese>名牌的渲染距離</Chinese>
             <Chinesesimp>名牌的渲染距离</Chinesesimp>
             <Turkish>İsimlerin gösterileceği mesafe</Turkish>
+            <Korean>이름표가 렌더링되는 거리</Korean>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance">
             <English>Dead Render Distance</English>
@@ -280,6 +307,7 @@
             <Chinese>死亡渲染距離</Chinese>
             <Chinesesimp>死亡渲染距离</Chinesesimp>
             <Turkish>Ölü İsim Mesafesi</Turkish>
+            <Korean>사망자 렌더 거리</Korean>
         </Key>
         <Key ID="STR_dui_nametags_deadRenderDistance_desc">
             <English>The Distance a Dead unit has a Nametag Visible</English>
@@ -290,6 +318,7 @@
             <Chinese>已死亡單位的名牌可視距離</Chinese>
             <Chinesesimp>已死亡单位的名牌可视距离</Chinesesimp>
             <Turkish>Ölü kişilerin isimlerinin gösterileceği mesafe</Turkish>
+            <Korean>사망자의 이름표가 보이는 거리</Korean>
         </Key>
         <Key ID="STR_dui_nametags_drawRank">
             <English>Display Rank</English>
@@ -300,6 +329,7 @@
             <Chinese>顯示軍銜</Chinese>
             <Chinesesimp>显示军衔</Chinesesimp>
             <Turkish>Rütbeleri Göster</Turkish>
+            <Korean>계급 표시</Korean>
         </Key>
         <Key ID="STR_dui_nametags_nameShadow">
             <English>Names Shadow</English>
@@ -310,6 +340,7 @@
             <Chinese>名稱陰影</Chinese>
             <Chinesesimp>名称阴影</Chinesesimp>
             <Turkish>İsim Gölgesi</Turkish>
+            <Korean>이름 그림자</Korean>
         </Key>
         <Key ID="STR_dui_nametags_groupShadow">
             <English>Group Shadow</English>
@@ -320,6 +351,7 @@
             <Chinese>團隊陰影</Chinese>
             <Chinesesimp>团队阴影</Chinesesimp>
             <Turkish>Grup Gölgesi</Turkish>
+            <Korean>그룹 그림자</Korean>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost">
             <English>Enable FOV Boost</English>
@@ -330,6 +362,7 @@
             <Chinese>啟用視野範圍角度增強</Chinese>
             <Chinesesimp>启用视野范围角度增强</Chinesesimp>
             <Turkish>FOV'a Göre Arttır</Turkish>
+            <Korean>시야각 부스트 활성화</Korean>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost_desc">
             <English>Increases Nametags Visibility when Zooming in.</English>
@@ -340,6 +373,7 @@
             <Chinese>放大時增強名牌可視度</Chinese>
             <Chinesesimp>放大时增强名牌可视度</Chinesesimp>
             <Turkish>İsimlerin görünebilirliğini o anki zoom'a göre arttır</Turkish>
+            <Korean>확대 시 이름표의 가시성을 높입니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_showUnconAsDead">
             <English>Show Unconscious as Dead</English>
@@ -350,6 +384,7 @@
             <Chinese>將失去意識視為死亡</Chinese>
             <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
             <Turkish>Bilincini Kaybedenleri Ölü Olarak Göster</Turkish>
+            <Korean>기절 상태를 사망으로 표시</Korean>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly">
             <English>Use Side Friendlies</English>
@@ -360,6 +395,7 @@
             <Chinese>使用陣營友好</Chinese>
             <Chinesesimp>使用阵营友好</Chinesesimp>
             <Turkish>Takım Dostlarını Kullan</Turkish>
+            <Korean>아군 진영 사용</Korean>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
             <English>If this setting is enabled the System uses BIS_fnc_sideIsFriendly instead of just checking the side</English>
@@ -370,6 +406,7 @@
             <Chinese>如果這個設定啟用，系統會使用 BIS_fnc_sideIsFriendly 來代替陣營檢查</Chinese>
             <Chinesesimp>如果这个设定启用，系统会使用 BIS_fnc_sideIsFriendly 来代替阵营检查</Chinesesimp>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
+            <Korean>이 설정이 활성화되면 시스템은 진영만 확인하는 대신 BIS_fnc_sideIsFriendly를 사용합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">
             <English>Visualize Vehicle Crew</English>
@@ -380,6 +417,7 @@
             <Chinese>顯示載具乘員</Chinese>
             <Chinesesimp>显示载具乘员</Chinesesimp>
             <Turkish>Araç Mürettebatlarını Göster</Turkish>
+            <Korean>차량 탑승자 표시</Korean>
         </Key>
         <Key ID="STR_dui_nametags_useLIS_desc">
             <English>Detect Crew Inside Vehicles. Runs extra checks and routines when enabled.</English>
@@ -390,6 +428,7 @@
             <Chinese>偵測載具內乘員。啟用後會執行額外檢查與流程。</Chinese>
             <Chinesesimp>侦测载具内乘员。启用后会执行额外检查与流程。</Chinesesimp>
             <Turkish>Araç içlerindeki mürettebatları tespit et. Ekstra kontroller ve rutinleri aktive eder.</Turkish>
+            <Korean>차량 내 승무원 감지. 활성화 시 추가 검사 및 루틴을 실행합니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_name">
             <English>DUI Nametags</English>
@@ -400,6 +439,7 @@
             <Chinese>DUI名牌</Chinese>
             <Chinesesimp>DUI名牌</Chinesesimp>
             <Turkish>DUI İsimler</Turkish>
+            <Korean>DUI 이름표</Korean>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_description">
             <English>Nametag UI Element, drag and drop it to reposition it.</English>
@@ -410,6 +450,7 @@
             <Chinese>名牌UI元件，拖拽與松開它來給他重新設定位置</Chinese>
             <Chinesesimp>名牌UI元件，拖拽与松开它来给他重新设定位置</Chinesesimp>
             <Turkish>İsimler ve UI elementi, sürükleyip bırakarak yerini değiştirebilirsin</Turkish>
+            <Korean>이름표 UI 요소를 드래그 앤 드롭하여 위치를 변경할 수 있습니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle">
             <English>Rank style</English>
@@ -417,6 +458,7 @@
             <German>Ranganzeige-Stil</German>
             <Chinese>軍銜樣式</Chinese>
             <Chinesesimp>军衔样式</Chinesesimp>
+            <Korean>계급 스타일</Korean>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle_desc">
             <English>Select rank display style</English>
@@ -424,6 +466,7 @@
             <German>Stil der Ranganzeige wählen</German>
             <Chinese>選擇軍銜顯示樣式</Chinese>
             <Chinesesimp>选择军衔显示样式</Chinesesimp>
+            <Korean>표시할 계급 스타일을 선택</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle">
             <English>Custom rank style</English>
@@ -431,6 +474,7 @@
             <German>Benutzerdefinierter Stil der Ranganzeige</German>
             <Chinese>自訂軍銜樣式</Chinese>
             <Chinesesimp>自定义军衔样式</Chinesesimp>
+            <Korean>사용자 정의 계급 스타일</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_desc">
             <English>Defines custom ranks for each possible rank in the game. Warning: Input must be correct else default value will be used!</English>
@@ -438,6 +482,7 @@
             <German>Definiert eigene Ränge für jeden möglichen Rang im Spiel. Achtung! Die Eingabe muss korrekt sein, sonst wird der Standardwert verwendet!</German>
             <Chinese>為遊戲中各種軍銜定義自訂顯示文字。警告：輸入內容必須正確，否則將使用預設值！</Chinese>
             <Chinesesimp>为游戏中各类军衔定义自定义显示文字。警告：输入内容必须正确，否则将使用默认值！</Chinesesimp>
+            <Korean>게임 내 각 계급에 대한 사용자 지정 계급을 정의합니다. 경고: 입력값이 정확해야 하며, 그렇지 않으면 기본값이 사용됩니다!</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customRankStyle_defaultLong">
             <English>Default long</English>
@@ -448,21 +493,27 @@
         </Key>
         <Key ID="STR_dui_nametags_customInfoFont">
             <English>Custom Info Font</English>
+            <Korean>사용자 정의 정보 폰트</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customInfoFont_desc">
             <English>The font that is used for the custom information text below the group name. This feature can be used by mission makers or other mods to add additional information to a unit. For example, if the unit is a VIP, another sub team, or their pronouns, etc.</English>
+            <Korean>그룹 이름 아래에 표시되는 사용자 지정 정보 텍스트에 사용되는 글꼴입니다. 이 기능은 미션 제작자나 다른 모드 제작자가 유닛에 추가 정보를 추가하는 데 사용할 수 있습니다. 예를 들어, 해당 유닛이 VIP인지, 다른 하위 팀인지, 또는 대명사를 사용하는지 등을 표시할 수 있습니다.</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customInfoShadow">
             <English>Custom Info Shadow</English>
+            <Korean>사용자 정의 정보 그림자</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontCustomInfoSize">
             <English>Custom Info Font Scale</English>
+            <Korean>사용자 정의 정보 크기</Korean>
         </Key>
         <Key ID="STR_dui_nametags_fontCustomInfoSize_desc">
             <English>The Scaling that is applied to the custom information font</English>
+            <Korean>사용자 지정 정보 글꼴에 적용되는 크기 조정</Korean>
         </Key>
         <Key ID="STR_dui_nametags_customInfoColor">
             <English>Custom Info Color</English>
+            <Korean>사용자 정의 정보 색상</Korean>
         </Key>
     </Package>
 </Project>

@@ -8,6 +8,7 @@
                 <German>Linienkompass</German>
                 <Chinese>線性羅盤</Chinese>
                 <Chinesesimp>线性罗盘</Chinesesimp>
+                <Korean>라인 나침반</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions">
                 <English>Allow Numeric Directions Drawn</English>
@@ -15,6 +16,7 @@
                 <German>Grad-Peilungen von Nebenrichtungen anzeigen</German>
                 <Chinese>允許顯示數字方位</Chinese>
                 <Chinesesimp>允许显示数字方位</Chinesesimp>
+                <Korean>방위각 숫자 표시 허용</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_allowed_draw_directions_desc">
                 <English>Allow the display of numeric bearings along the line compass.</English>
@@ -22,6 +24,7 @@
                 <German>Nebenhimmelsrichtungen werden als Grad-Peilung oberhalb des Linienkompasses angezeigt.</German>
                 <Chinese>允許在線性羅盤上顯示數值方位角（度）。</Chinese>
                 <Chinesesimp>允许在线性罗盘上显示数值方位角（度）。</Chinesesimp>
+                <Korean>라인 나침반에 숫자 방위각 표시를 허용합니다.</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_enabled">
                 <English>Enabled</English>
@@ -29,6 +32,7 @@
                 <German>Aktiviert</German>
                 <Chinese>啟用</Chinese>
                 <Chinesesimp>启用</Chinesesimp>
+                <Korean>활성화</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_compass_required">
                 <English>Show Only When Compass is Available</English>
@@ -36,6 +40,7 @@
                 <German>Nur zeigen, wenn der Kompass verfügbar ist</German>
                 <Chinese>僅在持有羅盤時顯示</Chinese>
                 <Chinesesimp>仅在拥有罗盘时显示</Chinesesimp>
+                <Korean>나침반을 소지했을 때만 표시</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_draw_directions">
                 <English>Directions Drawn</English>
@@ -43,6 +48,7 @@
                 <German>Angezeigte Richtungen</German>
                 <Chinese>方位顯示</Chinese>
                 <Chinesesimp>方位显示</Chinesesimp>
+                <Korean>방향 표시</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_icon_outline">
                 <English>Icon Outline</English>
@@ -50,6 +56,7 @@
                 <German>Icon Umriss</German>
                 <Chinese>圖標描邊</Chinese>
                 <Chinesesimp>图标描边</Chinesesimp>
+                <Korean>아이콘 외곽선</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color">
                 <English>Default Icon Color</English>
@@ -57,6 +64,7 @@
                 <German>Standardfarbe des Icons</German>
                 <Chinese>預設圖標顏色</Chinese>
                 <Chinesesimp>默认图标颜色</Chinesesimp>
+                <Korean>기본 아이콘 색상</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color_desc">
                 <English>Default color for icons without fire team assignment</English>
@@ -64,6 +72,7 @@
                 <German>Standardfarbe für Icons ohne Zuweisung zu einem Feuerteam</German>
                 <Chinese>未分配火力小組時的圖標預設顏色</Chinese>
                 <Chinesesimp>未分配火力小组时的图标默认颜色</Chinesesimp>
+                <Korean>화력팀이 지정되지 않았을 때 아이콘의 기본 색상</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color">
                 <English>Default Waypoint Color</English>
@@ -71,6 +80,7 @@
                 <German>Standardfarbe der Wegpunkte</German>
                 <Chinese>預設航點顏色</Chinese>
                 <Chinesesimp>默认航点颜色</Chinesesimp>
+                <Korean>기본 경유지 색상</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color_desc">
                 <English>Waypoint given by squad leader or mission</English>
@@ -78,6 +88,7 @@
                 <German>Wegpunkt, gegeben durch Gruppenführer oder Mission</German>
                 <Chinese>由小隊長或任務指定的航點</Chinese>
                 <Chinesesimp>由小队长或任务指定的航点</Chinesesimp>
+                <Korean>분대장 또는 임무가 지정한 경유지</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_custom_waypoint_color">
                 <English>Custom Waypoint Color</English>
@@ -85,6 +96,7 @@
                 <German>Personalisierte Farbe für Wegpunte</German>
                 <Chinese>自訂航點顏色</Chinese>
                 <Chinesesimp>自定义航点颜色</Chinesesimp>
+                <Korean>사용자 지정 경유지 색상</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_custom_waypoint_color_desc">
                 <English>Waypoint created when shift+click is on the map is used</English>
@@ -92,6 +104,7 @@
                 <German>Wegpunkte, die mit Shift+Klick auf der Karte erstellt wurden</German>
                 <Chinese>使用 Shift+Click 建立的航點</Chinese>
                 <Chinesesimp>使用 Shift+Click 建立的航点</Chinesesimp>
+                <Korean>지도에서 Shift+클릭으로 생성한 경유지</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_ace_fingering_color">
                 <English>ACE Pointing Color</English>
@@ -99,6 +112,7 @@
                 <German>Anzeigefarbe von ACE</German>
                 <Chinese>ACE 指向顏色</Chinese>
                 <Chinesesimp>ACE 指向颜色</Chinesesimp>
+                <Korean>ACE 가리키기 색상</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_none">
                 <English>None</English>
@@ -106,6 +120,7 @@
                 <German>Keine</German>
                 <Chinese>無</Chinese>
                 <Chinesesimp>无</Chinesesimp>
+                <Korean>없음</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_bearings">
                 <English>Only Cardinal and Ordinal</English>
@@ -113,6 +128,7 @@
                 <German>Haupt- und Nebenrichtungen</German>
                 <Chinese>僅主方位與間方位</Chinese>
                 <Chinesesimp>仅主方位与间方位</Chinesesimp>
+                <Korean>주 방위각 및 보조 방위각만</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_all">
                 <English>All</English>
@@ -120,6 +136,7 @@
                 <German>Alle</German>
                 <Chinese>全部</Chinese>
                 <Chinesesimp>全部</Chinesesimp>
+                <Korean>전체</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_swap_order">
                 <English>Bearing above line</English>
@@ -127,6 +144,7 @@
                 <German>Richtungen oberhalb der Linie</German>
                 <Chinese>方位顯示於線上方</Chinese>
                 <Chinesesimp>方位显示在线上方</Chinesesimp>
+                <Korean>방위를 선 위에 표시</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_swap_order_desc">
                 <English>When enabled the bearing information, such as cardinal directions, will be displayed above the line of the compass</English>
@@ -134,6 +152,7 @@
                 <German>Wenn aktiviert, werden die Richtungs-Informationen, wie zum Beispiel die Himmelsrichtungen, oberhalb der Linie angezeigt</German>
                 <Chinese>啟用後，方位資訊（如主方位）將顯示於羅盤線上方</Chinese>
                 <Chinesesimp>启用后，方位信息（如主方位）将显示于罗盘线上方</Chinesesimp>
+                <Korean>활성화하면 주 방위각 등의 방위각 정보가 라인 나침반 위에 표시됩니다.</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_UIGrids_desc">
                 <English>Line Compass UI element, drag and drop it to reposition it. You can reset the position in CBA settings if something goes wrong!</English>
@@ -141,18 +160,21 @@
                 <German>Linien-Kompass UI Element, mit der Maus an gewünschte Position ziehen. Die Position kann durch CBA Einstellungen auf den Standard zurückgesetzt werden!</German>
                 <Chinese>線性羅盤 UI 元件，可拖曳以重新定位；若出現問題，可在 CBA 設定中重置位置。</Chinese>
                 <Chinesesimp>线性罗盘 UI 元件，可拖拽以重新定位；若出现问题，可在 CBA 设置中重置位置。</Chinesesimp>
+                <Korean>라인 나침반 UI 요소입니다. 드래그하여 위치를 옮길 수 있습니다. 문제가 생기면 CBA 설정에서 위치를 초기화할 수 있습니다!</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_show_custom_waypoint">
                 <English>Show Custom Waypoint</English>
                 <French>Afficher le point de passage personnalisé</French>
                 <Chinese>顯示自訂航點</Chinese>
                 <Chinesesimp>显示自定义航点</Chinesesimp>
+                <Korean>사용자 지정 경유지 표시</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_show_custom_waypoint_desc">
                 <English>Show custom waypoint (default set by shift + left clicking on the map) on the line compass.</English>
                 <French>Afficher le point de repère personnalisé (défini par défaut par shift + clic gauche sur la carte) sur la boussole de ligne.</French>
                 <Chinese>在線性羅盤上顯示自訂航點（預設為 Shift+LeftClick 於地圖上設定）。</Chinese>
                 <Chinesesimp>在线性罗盘上显示自定义航点（默认通过 Shift+LeftClick 在地图上设置）。</Chinesesimp>
+                <Korean>라인 나침반에 사용자 지정 경유지(기본적으로 지도에서 Shift+왼쪽 클릭으로 설정)를 표시합니다.</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking">
                 <English>Show icon when units speak</English>
@@ -164,6 +186,7 @@
                 <Chinese>當單位說話時顯示圖標</Chinese>
                 <Chinesesimp>当单位说话时显示图标</Chinesesimp>
                 <Turkish>Konuşan Kişi İkonu</Turkish>
+                <Korean>유닛이 말할 때 아이콘 표시</Korean>
             </Key>
             <Key ID="STR_dui_linecompass_show_speaking_desc">
                 <English>Shows a speech bubble icon when a unit is speaking over ACRE or TFAR</English>
@@ -175,6 +198,7 @@
                 <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
                 <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
                 <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
+                <Korean>유닛이 ACRE 또는 TFAR로 말할 때 말풍선 아이콘을 표시합니다.</Korean>
             </Key>
         </Container>
     </Package>

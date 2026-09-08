@@ -270,43 +270,46 @@ private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
     private _selected = "";
 
     if (isNull _unit) then {
-        _text = "";
-    } else {
-        if ((GVAR(always_show_unit_numbers) || {_selectedUnits isNotEqualTo []}) && {GVAR(always_show_player_number) || (_unit isNotEqualTo _player)}) then {
-            private _curName = vehicleVarName _unit;
-            _unit setVehicleVarName "";
-            private _defaultIdent = str _unit;
-            _unit setVehicleVarName _curName;
-            private _arr = [_defaultIdent, ":"] call CBA_fnc_split;
-            private _num = if ((count _arr) > 1) then {
-                (_arr select 1) select [0, 2]
-            } else {
-                ""
-            };
-            _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x isEqualTo _unit} > -1)), _num];
-        };
-        private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player isEqualTo (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
-        private _inrange = (_player distance2D _unit) < _circleRange;
-        private _isSpeaking = _unit getVariable [QGVAR(isSpeaking), 0];
-        private _speakingIcon = _speakingArray select _isSpeaking;
-        private _icon = [
-            [
-                _unit getVariable [QGVAR(icon), DUI_RIFLEMAN],
-                _speakingIcon
-            ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && _inrange}}),
-            ""
-        ] select (_buddy isNotEqualTo "" && _onlyBuddyIcon);
-        _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
-        _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
-            _icon, // 1
-            _unit getVariable [QEGVAR(main,customName), _unit getVariable ["ACE_Name", name _unit]], // 2
-            _unit getVariable [QEGVAR(main,color),"#FFFFFF"], // 3
-            _selected, // 4
-            (_textSize * _heightMod), // 5
-            _buddy, // 6
-            _shadow, // 7
-            _speakingIcon]; // 8
+        _curList ctrlSetStructuredText parseText "";
+        _curList ctrlCommit 0;
+        continue
     };
+
+    if ((GVAR(always_show_unit_numbers) || {_selectedUnits isNotEqualTo []}) && {GVAR(always_show_player_number) || (_unit isNotEqualTo _player)}) then {
+        private _curName = vehicleVarName _unit;
+        _unit setVehicleVarName "";
+        private _defaultIdent = str _unit;
+        _unit setVehicleVarName _curName;
+        private _arr = [_defaultIdent, ":"] call CBA_fnc_split;
+        private _num = if ((count _arr) > 1) then {
+            (_arr select 1) select [0, 2]
+        } else {
+            ""
+        };
+        _selected = format ["%1%2", (["", ">> "] select (_selectedUnits findIf {_x isEqualTo _unit} > -1)), _num];
+    };
+    private _buddy = ["", _iconNamespace getVariable ["buddy", DUI_BUDDY]] select (_player isEqualTo (_unit getVariable [QEGVAR(buddy,buddy), objNull]));
+    private _inrange = (_player distance2D _unit) < _circleRange;
+    private _isSpeaking = _unit getVariable [QGVAR(isSpeaking), 0];
+    private _speakingIcon = _speakingArray select _isSpeaking;
+    private _icon = [
+        [
+            _unit getVariable [QGVAR(icon), DUI_RIFLEMAN],
+            _speakingIcon
+        ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && _inrange}}),
+        ""
+    ] select (_buddy isNotEqualTo "" && _onlyBuddyIcon);
+    _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
+    _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
+        _icon, // 1
+        _unit getVariable [QEGVAR(main,customName), _unit getVariable ["ACE_Name", name _unit]], // 2
+        _unit getVariable [QEGVAR(main,color),"#FFFFFF"], // 3
+        _selected, // 4
+        (_textSize * _heightMod), // 5
+        _buddy, // 6
+        _shadow, // 7
+        _speakingIcon]; // 8
+
 
     _curList ctrlSetStructuredText parseText _text;
     _curList ctrlCommit 0;

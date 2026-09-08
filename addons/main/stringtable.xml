@@ -1700,6 +1700,9 @@
             <Chinesesimp>标准</Chinesesimp>
             <Turkish>Standart</Turkish>
         </Key>
+        <Key ID="STR_dui_color_officer">
+            <English>Officer</English>
+        </Key>
         <Key ID="STR_dui_color_ace">
             <English>ACE 3</English>
             <French>ACE 3</French>

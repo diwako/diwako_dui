@@ -309,8 +309,6 @@ private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
         _buddy, // 6
         _shadow, // 7
         _speakingIcon]; // 8
-
-
     _curList ctrlSetStructuredText parseText _text;
     _curList ctrlCommit 0;
 } forEach _group;

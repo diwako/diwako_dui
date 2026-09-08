@@ -86,4 +86,9 @@ class diwako_dui_icon_style
 
         buddy_compass = QPATHTO_T(UI\icon_styles\everlight\Everlight_buddy_compass.paa);
     };
+
+    class officer:standard
+    {
+        sql = "\A3\ui_f\data\map\vehicleicons\iconManOfficer_ca.paa";
+    };
 };

@@ -132,6 +132,6 @@ if (GVAR(vehicleCompassEnabled) && { _player call EFUNC(main,isInCrew) }) then {
 
         _usedCtrls pushBack _ctrl;
     };
-} forEach _grp;
+} forEach (_grp select {!isNull _x});
 
 _usedCtrls

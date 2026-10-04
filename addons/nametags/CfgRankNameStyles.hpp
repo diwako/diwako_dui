@@ -9,7 +9,7 @@ class diwako_dui_rankNameStyles {
         major = "$STR_major";
         colonel = "$STR_colonel";
     };
-    class default {
+    class Default {
         displayName = "$STR_vehicle_default";
         private = "$STR_short_private";
         corporal = "$STR_short_corporal";
@@ -19,7 +19,7 @@ class diwako_dui_rankNameStyles {
         major = "$STR_short_major";
         colonel = "$STR_short_colonel";
     };
-    class custom : default {
+    class custom : Default {
         displayName = "$STR_dui_color_custom";
     };
 };

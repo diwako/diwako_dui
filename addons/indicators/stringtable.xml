@@ -365,6 +365,12 @@
                 <Chinesesimp>根据视野范围角度调节标识大小</Chinesesimp>
                 <Turkish>O anki FOV'a göre göstergelerin boyunu ayarla</Turkish>
             </Key>
+            <Key ID="STR_diwako_dui_indicators_customIconIndicators">
+                <English>Custom Icon Indicators</English>
+            </Key>
+            <Key ID="STR_diwako_dui_indicators_customIconIndicators_desc">
+                <English>Overrides the unit's icon used in the indicator feature. File must exist! Path starting without a "\" are treated as mission files!</English>
+            </Key>
         </Container>
     </Package>
 </Project>

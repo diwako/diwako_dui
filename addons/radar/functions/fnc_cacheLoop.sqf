@@ -128,7 +128,7 @@ if (diwako_dui_enable_compass) then {
             _ctrlWidth = profileNamespace getVariable ["igui_diwako_dui_compass_w", _ctrlWidth];
             _ctrlHeight = profileNamespace getVariable ["igui_diwako_dui_compass_h", _ctrlHeight];
         };
-        
+
         _ctrlMiddleX = _ctrlMiddleX  + _ctrlWidth * ((1 - GVAR(fovTweak)) / 2);
         _ctrlWidth = _ctrlWidth * GVAR(fovTweak);
 
@@ -268,6 +268,13 @@ private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
 
     private _unit = _x;
     private _selected = "";
+
+    if (isNull _unit) then {
+        _curList ctrlSetStructuredText parseText "";
+        _curList ctrlCommit 0;
+        continue
+    };
+
     if ((GVAR(always_show_unit_numbers) || {_selectedUnits isNotEqualTo []}) && {GVAR(always_show_player_number) || (_unit isNotEqualTo _player)}) then {
         private _curName = vehicleVarName _unit;
         _unit setVehicleVarName "";

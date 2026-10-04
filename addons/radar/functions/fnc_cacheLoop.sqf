@@ -104,7 +104,7 @@ if (diwako_dui_enable_compass) then {
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
     private _compass = [_player] call EFUNC(main,getCompass);
-    _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && {_compass isNotEqualTo ""}));
+    _compassCtrl ctrlSetText (diwako_dui_compass_style select (GVAR(show_cardinal_points) && _compass isNotEqualTo ""));
 
     if (_compass isNotEqualTo "") then {
         GVAR(maxDegrees) = GVAR(oddDirectionCompasses) getVariable [_compass, 360];
@@ -299,7 +299,7 @@ private _circleRange = GVAR(compassRangeLimit) min diwako_dui_compassRange;
         ] select (_showSpeaking && { _replaceIconWhenSpeaking && {_isSpeaking > 0 && _inrange}}),
         ""
     ] select (_buddy isNotEqualTo "" && _onlyBuddyIcon);
-    _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || {_isSpeaking isEqualTo 2}}}});
+    _speakingIcon = ["", _speakingIcon] select (_showSpeaking && { !_replaceIconWhenSpeaking && {_isSpeaking > 0 && {_inrange || _isSpeaking isEqualTo 2}}});
     _text = format ["<t color='%3' size='%5' shadow='%7' shadowColor='#000000' valign='middle' align='left'>%4<img image='%6'valign='bottom'/><img image='%1'valign='bottom'/> %2 <img image='%8'valign='bottom'/></t><br/>",
         _icon, // 1
         _unit getVariable [QEGVAR(main,customName), _unit getVariable ["ACE_Name", name _unit]], // 2

@@ -45,14 +45,14 @@ if (_unit getVariable [QGVAR(customIcon), ""] isNotEqualTo "") exitWith {
     _unit getVariable QGVAR(customIcon);
 };
 
-// Set unit type
-if (_unit getVariable ["dui_unitType", ""] isNotEqualTo "") exitWith {
-    _namespace getVariable [_unit getVariable "dui_unitType", DUI_RIFLEMAN];
-};
-
 // Buddy
 if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
+};
+
+// Set unit type
+if (_unit getVariable ["dui_unitType", ""] isNotEqualTo "") exitWith {
+    _namespace getVariable [_unit getVariable "dui_unitType", DUI_RIFLEMAN];
 };
 
 // Leader

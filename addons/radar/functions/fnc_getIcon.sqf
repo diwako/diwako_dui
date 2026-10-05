@@ -47,8 +47,7 @@ if (_unit getVariable [QGVAR(customIcon), ""] isNotEqualTo "") exitWith {
 
 // Set unit type
 if (_unit getVariable ["dui_unitType", ""] isNotEqualTo "") exitWith {
-    // _namespace getVariable [_unit getVariable "dui_unitType", DUI_RIFLEMAN];
-    _namespace getVariable [_unit getVariable "dui_unitType", DUI_BUDDY_COMPASS];
+    _namespace getVariable [_unit getVariable "dui_unitType", DUI_RIFLEMAN];
 };
 
 // Buddy

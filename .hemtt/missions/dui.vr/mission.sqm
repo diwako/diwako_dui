@@ -897,6 +897,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="diwako_dui_nametags_customNametagInfo";
+							expression="if (local _this && _value isNotEqualTo '') then {_this setVariable [""diwako_dui_nametags_customInfo"", _value, true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Kappa?";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="diwako_dui_linecompass_customIconLineCompass";
 							expression="if (local _this && _value isNotEqualTo '' && {private _arr = parseSimpleArray _value; !isNil '_arr' && {_arr isNotEqualTo []} && {(count _arr) >= 2} && {(_arr select 0) isEqualType ''} && {fileExists (_arr select 0)} && {(_arr select 1) isEqualType 0} && {(_arr select 1) > 0}}) then {private _arr = parseSimpleArray _value; _this setVariable [""diwako_dui_linecompass_customIcon"", [_arr select 0, _arr select 1], true];}";
 							class Value
@@ -908,7 +921,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -1620,6 +1633,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="diwako_dui_linecompass_customIconLineCompass";
+							expression="if (local _this && _value isNotEqualTo '' && {private _arr = parseSimpleArray _value; !isNil '_arr' && {_arr isNotEqualTo []} && {(count _arr) >= 2} && {(_arr select 0) isEqualType ''} && {fileExists (_arr select 0)} && {(_arr select 1) isEqualType 0} && {(_arr select 1) > 0}}) then {private _arr = parseSimpleArray _value; _this setVariable [""diwako_dui_linecompass_customIcon"", [_arr select 0, _arr select 1], true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[""yes.paa"", 2]";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="diwako_dui_radar_customIconRadar";
 							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {_this setVariable [""diwako_dui_radar_customIcon"", _value, true];};";
 							class Value
@@ -1631,7 +1657,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="diwako_dui_indicators_customIconIndicators";
 							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {if (_value select [0, 1] == '\') then {_this setVariable [""diwako_dui_indicators_customIcon"", _value, true]} else {_this setVariable [""diwako_dui_indicators_customIcon"", getMissionPath _value, true]}}";
@@ -1644,46 +1670,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male02ENG";
-								};
-							};
-						};
 						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="diwako_dui_linecompass_customIconLineCompass";
-							expression="if (local _this && _value isNotEqualTo '' && {private _arr = parseSimpleArray _value; !isNil '_arr' && {_arr isNotEqualTo []} && {(count _arr) >= 2} && {(_arr select 0) isEqualType ''} && {fileExists (_arr select 0)} && {(_arr select 1) isEqualType 0} && {(_arr select 1) > 0}}) then {private _arr = parseSimpleArray _value; _this setVariable [""diwako_dui_linecompass_customIcon"", [_arr select 0, _arr select 1], true];}";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""yes.paa"", 2]";
-								};
-							};
-						};
-						class Attribute5
 						{
 							property="unitName";
 							expression="_this setname _value;";
@@ -1696,7 +1683,46 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="diwako_dui_nametags_customNametagInfo";
+							expression="if (local _this && _value isNotEqualTo '') then {_this setVariable [""diwako_dui_nametags_customInfo"", _value, true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Hank";
+								};
+							};
+						};
+						nAttributes=7;
 					};
 				};
 			};

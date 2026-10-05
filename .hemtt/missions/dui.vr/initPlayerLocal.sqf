@@ -12,7 +12,6 @@ diwako_dui_special_track = [shall,shall2,shall3,farted];
 
 diwako_dui_special_track pushBack hank;
 hank setVariable ["diwako_dui_nametags_customGroup", "Custom group name"];
-hank setVariable ["diwako_dui_nametags_customInfo", "Hank"];
 
 [] spawn {
 	sleep 5;

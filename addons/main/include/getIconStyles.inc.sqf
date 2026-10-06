@@ -16,7 +16,7 @@ private _iconIdent = [];
 
     {
         _namespace setVariable [configName _x, getText _x];
-    } forEach (configProperties [_config, "(configname _x select [0,5]) != 'rank_'", true]);
+    } forEach (configProperties [_config, "(configName _x) regexMatch ""^(?!rank_).*""", true]);
 
     _namespace setVariable ["PRIVATE", getText (_config >> "rank_private")];
     _namespace setVariable ["CORPORAL", getText (_config >> "rank_corporal")];

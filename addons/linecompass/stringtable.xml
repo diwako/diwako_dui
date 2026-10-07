@@ -200,6 +200,12 @@
                 <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
                 <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
             </Key>
+            <Key ID="STR_diwako_dui_linecompass_customIconLineCompass">
+                <English>Custom Icon Linecompass</English>
+            </Key>
+            <Key ID="STR_diwako_dui_linecompass_customIconLineCompass_desc">
+                <English>Overrides the unit's icon used in the linecompass feature. Must be an array of size 2. First entry must be the file path. File must exist! Second entry must be the numeric size above 0</English>
+            </Key>
         </Container>
     </Package>
 </Project>

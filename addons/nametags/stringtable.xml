@@ -515,5 +515,11 @@
             <English>Custom Info Color</English>
             <Korean>사용자 정의 정보 색상</Korean>
         </Key>
+        <Key ID="STR_diwako_dui_nametags_customNametagInfo">
+            <English>Custom Nametag Info</English>
+        </Key>
+        <Key ID="STR_diwako_dui_nametags_customNametagInfo_desc">
+            <English>Sets value of the third row of the nametags</English>
+        </Key>
     </Package>
 </Project>

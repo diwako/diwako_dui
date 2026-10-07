@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3204.5291,15.601435,2938.3145};
-		dir[]={-0.5854485,-0.41458815,0.69669157};
-		up[]={-0.26672325,0.91000748,0.31740433};
-		aside[]={0.76558614,-1.8469291e-07,0.64334267};
+		pos[]={3207.8162,16.859665,2938.1167};
+		dir[]={-0.58544487,-0.41458553,0.69668728};
+		up[]={-0.26671892,0.91001034,0.31739911};
+		aside[]={0.76558173,0,0.64333868};
 	};
 };
 binarizationWanted=0;
@@ -45,11 +45,11 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_attach",
 	"ace_chemlights",
-	"ace_explosives",
 	"A3_Weapons_F_Rifles_MX",
 	"A3_Weapons_F_Tank_Launchers_MRAWS",
 	"A3_Weapons_F_Tank",
 	"ace_hearing",
+	"ace_explosives",
 	"A3_Weapons_F_Explosives",
 	"A3_Weapons_F_Orange",
 	"ace_arsenal",
@@ -187,22 +187,22 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item18
-		{
 			className="A3_Weapons_F_Tank";
 			name="Arma 3 Tank - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item19
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
@@ -529,6 +529,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="diwako_dui_radar_customIconRadar";
+							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {_this setVariable [""diwako_dui_radar_customIcon"", _value, true];};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -540,7 +553,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -553,7 +566,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -717,7 +730,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this setVariable [""diwako_dui_radar_customIcon"", ""yes.paa""]}";
 						isPlayable=1;
 						class Inventory
 						{
@@ -833,6 +845,32 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="diwako_dui_radar_customIconRadar";
+							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {_this setVariable [""diwako_dui_radar_customIcon"", _value, true];};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="yes.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="diwako_dui_indicators_customIconIndicators";
+							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {if (_value select [0, 1] == '\') then {_this setVariable [""diwako_dui_indicators_customIcon"", _value, true]} else {_this setVariable [""diwako_dui_indicators_customIcon"", getMissionPath _value, true]}}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="yes.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -844,7 +882,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -857,7 +895,33 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute4
+						{
+							property="diwako_dui_nametags_customNametagInfo";
+							expression="if (local _this && _value isNotEqualTo '') then {_this setVariable [""diwako_dui_nametags_customInfo"", _value, true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Kappa?";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="diwako_dui_linecompass_customIconLineCompass";
+							expression="if (local _this && _value isNotEqualTo '' && {private _arr = parseSimpleArray _value; !isNil '_arr' && {_arr isNotEqualTo []} && {(count _arr) >= 2} && {(_arr select 0) isEqualType ''} && {fileExists (_arr select 0)} && {(_arr select 1) isEqualType 0} && {(_arr select 1) > 0}}) then {private _arr = parseSimpleArray _value; _this setVariable [""diwako_dui_linecompass_customIcon"", [_arr select 0, _arr select 1], true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[""yes.paa"", 5]";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -1569,31 +1633,44 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="speaker";
-							expression="_this setspeaker _value;";
+							property="diwako_dui_linecompass_customIconLineCompass";
+							expression="if (local _this && _value isNotEqualTo '' && {private _arr = parseSimpleArray _value; !isNil '_arr' && {_arr isNotEqualTo []} && {(count _arr) >= 2} && {(_arr select 0) isEqualType ''} && {fileExists (_arr select 0)} && {(_arr select 1) isEqualType 0} && {(_arr select 1) > 0}}) then {private _arr = parseSimpleArray _value; _this setVariable [""diwako_dui_linecompass_customIcon"", [_arr select 0, _arr select 1], true];}";
 							class Value
 							{
 								class data
 								{
 									singleType="STRING";
-									value="Male02ENG";
+									value="[""yes.paa"", 2]";
 								};
 							};
 						};
 						class Attribute1
 						{
-							property="pitch";
-							expression="_this setpitch _value;";
+							property="diwako_dui_radar_customIconRadar";
+							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {_this setVariable [""diwako_dui_radar_customIcon"", _value, true];};";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=0.98000002;
+									singleType="STRING";
+									value="yes.paa";
 								};
 							};
 						};
 						class Attribute2
+						{
+							property="diwako_dui_indicators_customIconIndicators";
+							expression="if (local _this && _value isNotEqualTo '' && {fileExists _value}) then {if (_value select [0, 1] == '\') then {_this setVariable [""diwako_dui_indicators_customIcon"", _value, true]} else {_this setVariable [""diwako_dui_indicators_customIcon"", getMissionPath _value, true]}}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="yes.paa";
+								};
+							};
+						};
+						class Attribute3
 						{
 							property="unitName";
 							expression="_this setname _value;";
@@ -1606,7 +1683,46 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="diwako_dui_nametags_customNametagInfo";
+							expression="if (local _this && _value isNotEqualTo '') then {_this setVariable [""diwako_dui_nametags_customInfo"", _value, true];}";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Hank";
+								};
+							};
+						};
+						nAttributes=7;
 					};
 				};
 			};

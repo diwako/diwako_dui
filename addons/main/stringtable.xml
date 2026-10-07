@@ -2418,5 +2418,20 @@
         <Key ID="STR_dui_radar_always_show_player_number_desc">
             <English>Will always show the unit number of the current player</English>
         </Key>
+        <Key ID="STR_diwako_dui_main_options">
+            <English>DUI Options</English>
+        </Key>
+        <Key ID="STR_diwako_dui_main_unittype">
+            <English>Unit type</English>
+        </Key>
+        <Key ID="STR_diwako_dui_main_unittype_desc">
+            <English>Overrides the dynamic unit type icon lookup with a fixed static one</English>
+        </Key>
+        <Key ID="STR_diwako_dui_radar_customIconRadar">
+            <English>Custom Icon Compass/Namelist</English>
+        </Key>
+        <Key ID="STR_diwako_dui_radar_customIconRadar_desc">
+            <English>Overrides the unit's icon on the compass, takes precedence to the unit type setting. Icon file must exist else it will be ignored</English>
+        </Key>
     </Package>
 </Project>

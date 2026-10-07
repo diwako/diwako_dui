@@ -5,6 +5,8 @@ class diwako_dui_icon_style
         name = "$STR_dui_color_standard";
 
         sql = "\A3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";
+        officer = "\A3\ui_f\data\map\vehicleicons\iconmanofficer_ca.paa";
+        commander = "\A3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa";
         medic = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";
         auto_rifleman = "\A3\ui_f\data\map\vehicleicons\iconManMG_ca.paa";
         at_gunner = "\A3\ui_f\data\map\vehicleicons\iconManAT_ca.paa";

@@ -14,5 +14,6 @@
 
 #include "CfgEventHandlers.hpp"
 #include "CfgUIGrids.hpp"
+#include "Cfg3DEN.hpp"
 #include "gui.hpp"
 #include "CfgRankNameStyles.hpp"

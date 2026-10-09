@@ -139,7 +139,7 @@ private _fontGroupIndex = EGVAR(main,availableFonts) findIf {_x isEqualTo "Robot
 ] call CBA_fnc_addSetting;
 
 private _rankNames = keys GVAR(RankNames);
-private _defaultIndex = _rankNames find "default";
+private _defaultIndex = _rankNames find "Default";
 private _displayNames = _rankNames apply {(GVAR(RankNames) get _x) get "displayName"};
 [
     QGVAR(rankNameStyle),

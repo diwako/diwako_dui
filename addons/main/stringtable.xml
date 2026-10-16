@@ -50,7 +50,7 @@
             <German>Icon Style</German>
             <Korean>아이콘 스타일</Korean>
             <Japanese>アイコンのスタイル</Japanese>
-            <Chinese>圖標風格</Chinese>
+            <Chinese>圖示風格</Chinese>
             <Chinesesimp>图标风格</Chinesesimp>
             <Turkish>İkon Tarzı</Turkish>
         </Key>
@@ -65,7 +65,7 @@
             <German>Welcher Icon Style soll genutzt werden?</German>
             <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
             <Japanese>使用するアイコン スタイルを設定します。</Japanese>
-            <Chinese>要使用哪種圖標風格</Chinese>
+            <Chinese>要使用哪種圖示風格</Chinese>
             <Chinesesimp>要使用哪种图标风格</Chinesesimp>
             <Turkish>Kullanılacak ikon tarzı</Turkish>
         </Key>
@@ -125,8 +125,8 @@
             <German>Zeigt den Kompass und Einheiten im Squad als Icons an</German>
             <Korean>나침반과 유닛마커를 표시합니다.</Korean>
             <Japanese>コンパスとユニット マーカーを表示します。</Japanese>
-            <Chinese>顯示羅盤和上面的單位標識</Chinese>
-            <Chinesesimp>显示罗盘和上面的单位标识</Chinesesimp>
+            <Chinese>顯示羅盤和上面的單位標記</Chinese>
+            <Chinesesimp>显示罗盘和上面的单位标记</Chinesesimp>
             <Turkish>Pusulayı ve birim işaretlerini göster</Turkish>
         </Key>
         <Key ID="STR_dui_show_dir">
@@ -155,8 +155,8 @@
             <German>Zeigt die Richtung in Grad an, der Kompass muss dafür angeschalten sein!</German>
             <Korean>나침반 위에 방위각을 표시합니다. 사용하려면 나침반을 가지고 있어야 합니다!</Korean>
             <Japanese>コンパス上に方位を表示します。これはコンパスを有効化している必要があります!</Japanese>
-            <Chinese>在羅盤上方顯示方位角，羅盤本身需要被啟用！</Chinese>
-            <Chinesesimp>在罗盘上方显示方位角，罗盘本身需要被启用！</Chinesesimp>
+            <Chinese>在羅盤上方顯示方位角，需要先啟用羅盤！</Chinese>
+            <Chinesesimp>在罗盘上方显示方位角，需要先启用罗盘！</Chinesesimp>
             <Turkish>Pusulanın üzerinde bakılan yönün derecesini göster. "Pusulayı Göster" ayarının da açık olması gerekir!</Turkish>
         </Key>
         <Key ID="STR_dui_show_milrad">
@@ -170,7 +170,7 @@
             <German>Richtung auch in Milradians anzeigen</German>
             <Korean>방위각을 밀라디안으로 표시</Korean>
             <Japanese>方位をミル ラジアンで表示</Japanese>
-            <Chinese>同樣以密位爲單位顯示方位角</Chinese>
+            <Chinese>同樣以密位為單位顯示方位角</Chinese>
             <Chinesesimp>同样以密位为单位显示方位角</Chinesesimp>
             <Turkish>Yön Derecesinde Milradyan Göster</Turkish>
         </Key>
@@ -230,8 +230,8 @@
             <German>Kompass Reichweite</German>
             <Korean>나침반 범위</Korean>
             <Japanese>コンパスの範囲</Japanese>
-            <Chinese>羅盤距離設置</Chinese>
-            <Chinesesimp>罗盘距离设置</Chinesesimp>
+            <Chinese>羅盤距離</Chinese>
+            <Chinesesimp>罗盘距离</Chinesesimp>
             <Turkish>Pusula Menzili</Turkish>
         </Key>
         <Key ID="STR_dui_compass_range_desc">
@@ -245,8 +245,8 @@
             <German>Wie weit soll ein Spieler die Einheiten im Squad in Metern sehen können?</German>
             <Korean>같은 그룹내에 유닛이 보이는 거리를 미터 단위로 설정합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの見える距離をメートルで設定します。</Japanese>
-            <Chinese>玩家看到同一團隊中的其他單位的最遠距離（米）</Chinese>
-            <Chinesesimp>玩家看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>玩家可以看到同一小組成員的最遠距離（米）</Chinese>
+            <Chinesesimp>玩家可以看到同一小组成员的最远距离（米）</Chinesesimp>
             <Turkish>Pusula içinde ne kadar yakın birimler görünmeli?</Turkish>
         </Key>
         <Key ID="STR_dui_compass_range_limit">
@@ -263,7 +263,7 @@
             <German>Die maximale Reichweite des Kompasses, gesetzt durch Mission/Server</German>
             <Korean>미션/서버에서 설정한 나침반의 최대 허용 범위</Korean>
             <Chinese>由任務/伺服器設定的羅盤最大允許距離</Chinese>
-            <Chinesesimp>由任务/服务器设定的罗盘最大允许距离</Chinesesimp>
+            <Chinesesimp>由任务/服务器设置的罗盘最大允许距离</Chinesesimp>
         </Key>
         <Key ID="STR_dui_compass_vehicle_enabled">
             <English>Allow Vehicle compass</English>
@@ -297,7 +297,7 @@
             <German>Reichweite des Fahrzeugkompasses</German>
             <Korean>차량 나침반 범위</Korean>
             <Japanese>車両コンパス距離</Japanese>
-            <Chinese>載具羅盤距離設置</Chinese>
+            <Chinese>載具羅盤距離設定</Chinese>
             <Chinesesimp>载具罗盘距离设置</Chinesesimp>
             <Turkish>Araç Pusulası Menzili</Turkish>
         </Key>
@@ -309,8 +309,8 @@
             <German>Wie weit sollen Spieler in Besatzungsrollen (Fahrer, Richtschütze oder Kommandant) Einheiten in derselben Gruppe in Metern sehen?</German>
             <Korean>차량 승무원 좌석 (운전석, 사수, 지휘관)에서의 분대위치 표시 범위</Korean>
             <Japanese>乗員 (運転手、砲手、車長) が同じグループ内のユニットを視認できる最大範囲 (m) を設定します。</Japanese>
-            <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一團隊中的其他單位的最遠距離（米）</Chinese>
-            <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一团队中的其他单位的最远距离（米）</Chinesesimp>
+            <Chinese>載具乘員玩家（駕駛員、炮手或車長）可以看到同一小組成員的最遠距離（米）</Chinese>
+            <Chinesesimp>载具乘员玩家（驾驶员、炮手或车长）可以看到同一小组成员的最远距离（米）</Chinesesimp>
             <Turkish>Araç mürettebatlarının pusulaları içinde ne kadar yakın birimler görünmeli?</Turkish>
         </Key>
         <Key ID="STR_dui_compass_refresh">
@@ -339,8 +339,8 @@
             <German>Wie schnell soll der Kompass aktualisiert werden? Wert ist in Sekunden, 0 bedeutet jeden Frame!</German>
             <Korean>나침반의 새로고침 빈도를 설정합니다. 값은 초 단위이며, 0은 각 프레임을 의미합니다! 위험 감수!</Korean>
             <Japanese>コンパスの描画速度を設定します。値は秒で、0 は各フレームを意味します!</Japanese>
-            <Chinese>羅盤的刷新速度，值以秒爲單位，0代表每幀都會刷新！主機焦糊警告！</Chinese>
-            <Chinesesimp>罗盘的刷新速度，值以秒为单位，0代表每帧都会刷新！主机焦糊警告！</Chinesesimp>
+            <Chinese>羅盤的刷新速度，數值以秒為單位，0 表示每幀都會刷新！後果自負！</Chinese>
+            <Chinesesimp>罗盘的刷新速度，数值以秒为单位，0 表示每帧都会刷新！后果自负！</Chinesesimp>
             <Turkish>Pusula (saniye bazında) ne sıklıkla güncellenmeli? 0 değeri her kare demek! Dikkatli olun!</Turkish>
         </Key>
         <Key ID="STR_dui_occlusion">
@@ -399,8 +399,8 @@
             <German>Zeigt eine Liste von Namen der Einheiten im Squad an</German>
             <Korean>같은 그룹내에 있는 유닛의 이름을 목록 형식으로 표시합니다.</Korean>
             <Japanese>同じグループ内にいるユニットの名前をリストで表示します。</Japanese>
-            <Chinese>顯示在當前同一團隊內的單位的名單列表</Chinese>
-            <Chinesesimp>显示在当前同一团队内的单位的名单列表</Chinesesimp>
+            <Chinese>顯示當前同一小組內單位的名單列表</Chinese>
+            <Chinesesimp>显示当前同一小组内单位的名单列表</Chinesesimp>
             <Turkish>Oyuncunun içinde olduğu gruptaki kişilerin isimlerini göster</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_buddy">
@@ -414,7 +414,7 @@
             <German>Nur Buddy Icon anzeigen</German>
             <Korean>친구 아이콘만 표시</Korean>
             <Japanese>バディ アイコンのみ表示</Japanese>
-            <Chinese>只顯示搭檔的圖標</Chinese>
+            <Chinese>只顯示搭檔的圖示</Chinese>
             <Chinesesimp>只显示搭档的图标</Chinesesimp>
             <Turkish>Sadece Eş İkonunu Göster</Turkish>
         </Key>
@@ -429,8 +429,8 @@
             <German>Zeigt nur das Buddy Icon anstelle von Buddy und Klasseicon in der Namensliste an</German>
             <Korean>이름 목록에서 친구 아이콘만 표시합니다.</Korean>
             <Japanese>名前リストではバディとユニット クラス両方の代わりに、バディ アイコンのみを表示します。</Japanese>
-            <Chinese>只在名單列表中顯示搭檔圖標</Chinese>
-            <Chinesesimp>只在名单列表中显示搭档图标</Chinesesimp>
+            <Chinese>在名單列表中僅顯示搭檔圖示，而不顯示單位兵種圖示</Chinese>
+            <Chinesesimp>在名单列表中仅显示搭档图标，而不显示单位兵种图标</Chinesesimp>
             <Turkish>İsim listesinde hem rol hem eş ikonu yerine sadece eş ikonunu gösterir</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_icon_priority">
@@ -440,7 +440,7 @@
             <Russian>Приоритет иконок</Russian>
             <German>Icons priorisieren</German>
             <Korean>아이콘 우선표시</Korean>
-            <Chinese>優先顯示圖標</Chinese>
+            <Chinese>優先顯示圖示</Chinese>
             <Chinesesimp>优先显示图标</Chinesesimp>
             <Turkish>İkonlara Öncelik Ver</Turkish>
         </Key>
@@ -451,7 +451,7 @@
             <Russian>Приоритет иконок, выбранных в этой настройке, над другими в списке</Russian>
             <German>Gibt den ausgewählten Icons Vorrang vor den anderen Icons in der Liste.</German>
             <Korean>이 설정에서 선택한 아이콘을 목록의 다른 아이콘보다 우선시합니다.</Korean>
-            <Chinese>將此設定中選取的圖標優先於清單中其他圖標顯示。</Chinese>
+            <Chinese>將此設定中選取的圖示優先於清單中其他圖示顯示。</Chinese>
             <Chinesesimp>将此设置中选取的图标优先于列表中其他图标显示。</Chinesesimp>
             <Turkish>Bu ayarda seçilen ikonlara diğerlerine göre öncelik ver</Turkish>
         </Key>
@@ -470,8 +470,8 @@
             <Russian>Инженер, медик и EOD</Russian>
             <German>Pionier, Sanitäter und EOD</German>
             <Korean>엔지니어, 의무병, EOD</Korean>
-            <Chinese>工兵、衛生兵與排爆</Chinese>
-            <Chinesesimp>工兵、卫生员与排爆</Chinesesimp>
+            <Chinese>工兵、醫療兵與排爆</Chinese>
+            <Chinesesimp>工兵、医疗兵与排爆</Chinesesimp>
             <Turkish>Teknisyen, Sıhhiye ve Bomba İmha</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_size">
@@ -500,8 +500,8 @@
             <German>Größe der Namen, kleiner bedeutet mehr Namen in einer Spalte</German>
             <Korean>이름 크기를 설정합니다. 작을수록 한 폭에 많은 이름이 들어가게 됩니다.</Korean>
             <Japanese>名前の大きさを設定します。小さければ一つの幅にたくさんの名前が収まります。</Japanese>
-            <Chinese>名字字體大小，更小意味著在一列中顯示更多人</Chinese>
-            <Chinesesimp>名字字体大小，更小意味着在一列中显示更多人</Chinesesimp>
+            <Chinese>名稱文字大小，越小則一列中可顯示越多名稱</Chinese>
+            <Chinesesimp>名称文字大小，越小则一列中可显示越多名称</Chinesesimp>
             <Turkish>İsimlerin boyutu, daha küçük boyut kolon başı daha çok isim demek</Turkish>
         </Key>
         <Key ID="STR_dui_key_toggle">
@@ -589,8 +589,8 @@
             <German>UI Element des Kompasses. Drag &amp; Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schiefläuft!</German>
             <Korean>나침반을 드래그 앤 드롭하여 위치를 변경할 수 있습니다. 또 CBA설정으로 위치를 초기화할 수 있습니다!</Korean>
             <Japanese>コンパスをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
-            <Chinese>羅盤的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
-            <Chinesesimp>罗盘的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>羅盤 UI 元件，可拖曳以重新定位；若出現問題，可在 CBA 設定中重置位置。</Chinese>
+            <Chinesesimp>罗盘 UI 组件，可拖拽以重新定位；若出现问题，可在 CBA 设置中重置位置。</Chinesesimp>
             <Turkish>Pusula UI elementi, sürükleyip bırakarak yerini değiştirebilirsin. CBA ayarlarından sıfırlanabilir.</Turkish>
         </Key>
         <Key ID="STR_dui_cat_namelist">
@@ -618,8 +618,8 @@
             <German>UI Element der Namensliste. Drag &amp; Drop um neue Position zu setzen. Die Position kann in den CBA Optionen zurückgesetzt werden, falls etwas schiefläuft!</German>
             <Korean>이름 목록을 드래그 앤 드롭하여 위치를 변경 할 수 있습니다. 또 CBA설정으로 위치를 리셋할 수 있습니다!</Korean>
             <Japanese>名前リストをドラッグ アンド ドロップして位置を変更できます。また CBA 設定で位置をリセットする事ができます!</Japanese>
-            <Chinese>名單列表的UI元件，拖拉並松開它來給它更換位置。如果出現問題，可以再CBA設置中重置位置</Chinese>
-            <Chinesesimp>名单列表的UI元件，拖拉并松开它来给它更换位置。如果出现问题，可以再CBA设置中重置位置</Chinesesimp>
+            <Chinese>名單列表 UI 元件，可拖曳以重新定位；若出現問題，可在 CBA 設定中重置位置。</Chinese>
+            <Chinesesimp>名单列表 UI 组件，可拖拽以重新定位；若出现问题，可在 CBA 设置中重置位置。</Chinesesimp>
             <Turkish>İsim Listesi UI elementi, sürükleyip bırakarak yerini değiştirebilirsin. CBA ayarlarından sıfırlanabilir.</Turkish>
         </Key>
         <Key ID="STR_dui_cat_general">
@@ -633,7 +633,7 @@
             <German>Allgemeine Einstellungen</German>
             <Korean>일반 설정</Korean>
             <Japanese>全般設定</Japanese>
-            <Chinese>一般設置</Chinese>
+            <Chinese>一般設定</Chinese>
             <Chinesesimp>一般设置</Chinesesimp>
             <Turkish>Genel Ayarlar</Turkish>
         </Key>
@@ -729,8 +729,8 @@
             <German>UI Größe</German>
             <Korean>UI 크기</Korean>
             <Japanese>UI 大きさ</Japanese>
-            <Chinese>UI大小</Chinese>
-            <Chinesesimp>UI大小</Chinesesimp>
+            <Chinese>UI 縮放</Chinese>
+            <Chinesesimp>UI 缩放</Chinesesimp>
             <Turkish>Arayüz Ölçeği</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_bg">
@@ -759,7 +759,7 @@
             <German>Wie stark soll der schwarze Hintergrund sichtbar sein?</German>
             <Korean>배경의 투명도를 설정합니다.</Korean>
             <Japanese>背景の透明度を設定します。</Japanese>
-            <Chinese>設置黑色背景的透明度</Chinese>
+            <Chinese>設定黑色背景的透明度</Chinese>
             <Chinesesimp>设置黑色背景的透明度</Chinesesimp>
             <Turkish>Siyah arkaplan ne kadar görünür olmalı</Turkish>
         </Key>
@@ -789,8 +789,8 @@
             <German>Wie breit in Pixel soll eine Spalte sein? Achtung, UI Größe wird hier mit einberechnet!</German>
             <Korean>열 너비를 픽셀로 설정합니다. UI크기는 이 설정에 영향을 끼칩니다!</Korean>
             <Japanese>カラムの幅をピクセルで設定します。UI の大きさはこの設定に影響を及ぼします！</Japanese>
-            <Chinese>要使用哪個寬度（像素點）來作爲列的寬度？注意，UI大小設置選項會影響這個</Chinese>
-            <Chinesesimp>要使用哪个宽度（像素点）来作为列的宽度？注意，UI大小设置选项会影响这个</Chinesesimp>
+            <Chinese>列寬應使用多少像素？注意：UI 縮放會影響此項！</Chinese>
+            <Chinesesimp>列宽应使用多少像素？注意：UI 缩放会影响此项！</Chinesesimp>
             <Turkish>Kolon genişliği kaç piksel olmalı? 'Arayüz Ölçeği' ayarı tarafından etkilenir!</Turkish>
         </Key>
         <Key ID="STR_dui_compass_icon_scale">
@@ -804,7 +804,7 @@
             <German>Icon Größe</German>
             <Korean>아이콘 크기</Korean>
             <Japanese>アイコンの大きさ</Japanese>
-            <Chinese>圖標大小</Chinese>
+            <Chinese>圖示大小</Chinese>
             <Chinesesimp>图标大小</Chinesesimp>
             <Turkish>İkon Ölçeği</Turkish>
         </Key>
@@ -819,8 +819,8 @@
             <German>Setze die Größe der Icons für Einheiten auf dem Kompass</German>
             <Korean>나침반 위에 표시되는 유닛 아이콘의 크기를 설정합니다.</Korean>
             <Japanese>コンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
-            <Chinese>設置羅盤上的單位的圖標大小</Chinese>
-            <Chinesesimp>设置罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>設定羅盤上單位圖示的大小</Chinese>
+            <Chinesesimp>设置罗盘上单位图标的大小</Chinesesimp>
             <Turkish>Pusulanızdaki kişiler için ikon ölceğini belirler</Turkish>
         </Key>
         <Key ID="STR_dui_compass_icon_scale_crew">
@@ -831,7 +831,7 @@
             <German>Icon Größe für Besatzung</German>
             <Korean>승무원을 위한 아이콘 크기</Korean>
             <Japanese>乗員用アイコンの大きさ</Japanese>
-            <Chinese>乘員的圖標大小</Chinese>
+            <Chinese>乘員的圖示大小</Chinese>
             <Chinesesimp>乘员的图标大小</Chinesesimp>
             <Turkish>Mürettebat İkon Ölçeği</Turkish>
         </Key>
@@ -843,8 +843,8 @@
             <German>Setze die Größe der Icons für Einheiten auf dem Kompass ein, während der Spieler in einem Fahrzeug sitzt</German>
             <Korean>차량탑승시 나침반에 표시되는 유닛마크 크기조절</Korean>
             <Japanese>乗員の時にコンパス上に表示されるユニット アイコンの大きさを設定します。</Japanese>
-            <Chinese>設置當玩家作爲載具乘員時的羅盤上的單位的圖標大小</Chinese>
-            <Chinesesimp>设置当玩家作为载具乘员时的罗盘上的单位的图标大小</Chinesesimp>
+            <Chinese>玩家作為載具乘員時，設定羅盤上單位圖示的大小</Chinese>
+            <Chinesesimp>玩家作为载具乘员时，设置罗盘上单位图标的大小</Chinesesimp>
             <Turkish>Araç mürettebatının parçasıyken pusulanızdaki kişiler için ikon ölceğini belirler</Turkish>
         </Key>
         <Key ID="STR_dui_ace_hide_interaction">
@@ -921,7 +921,7 @@
             <German>Icon Sichtbarkeit</German>
             <Korean>아이콘 투명도</Korean>
             <Japanese>アイコン透明度</Japanese>
-            <Chinese>圖標透明度</Chinese>
+            <Chinese>圖示透明度</Chinese>
             <Chinesesimp>图标透明度</Chinesesimp>
             <Turkish>İkon Opaklığı</Turkish>
         </Key>
@@ -933,7 +933,7 @@
             <German>Icon Sichtbarkeit wird nicht auf eigene Einheit angewendet</German>
             <Korean>아이콘 투명도가 내 아이콘에 영향을 주지 않습니다</Korean>
             <Japanese>アイコンの透明度は自ユニットへ影響しません。</Japanese>
-            <Chinese>圖標透明度不影響自己</Chinese>
+            <Chinese>圖示透明度不影響自己</Chinese>
             <Chinesesimp>图标透明度不影响自己</Chinesesimp>
             <Turkish>İkon Opaklığı Ayarı Kendi İkonunu Etkilemesin</Turkish>
         </Key>
@@ -1064,8 +1064,8 @@
             <German>Setzt die Distanz in Meter, bei der ein Einheitenmarker Orange werden soll, wenn sie zu nah an dir ist</German>
             <Korean>다른 플레이어와 너무 가까울 때 유닛 아이콘이 오렌지색으로 바뀌는 거리를 미터단위로 설정합니다.</Korean>
             <Japanese>他のプレイヤーと近すぎる際に、ユニット アイコンがオレンジに変わる距離 (m) で設定します。</Japanese>
-            <Chinese>以米爲單位，設置一個距離，當別的單位太靠近你並低于設置的這個距離時，該單位的圖標會變成橘色</Chinese>
-            <Chinesesimp>以米为单位，设置一个距离，当别的单位太靠近你并低于设置的这个距离时，该单位的图标会变成橘色</Chinesesimp>
+            <Chinese>設定一個距離（米），當其他單位與你的距離低於該值時，其圖示會變成橘色</Chinese>
+            <Chinesesimp>设置一个距离（米），当其他单位与你的距离低于该值时，其图标会变成橙色</Chinesesimp>
             <Turkish>Bir kişinin size yaklaşınca ikonunun turuncu renge döndüğü mesafe</Turkish>
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone">
@@ -1080,8 +1080,8 @@
             <German>Den ganzen Kompass ausblenden, wenn man allein ist</German>
             <Korean>혼자일때 나침반 숨기기</Korean>
             <Japanese>単独時はコンパスを非表示</Japanese>
-            <Chinese>當不屬于任何團隊時，隱藏整個羅盤</Chinese>
-            <Chinesesimp>当不属于任何团队时，隐藏整个罗盘</Chinesesimp>
+            <Chinese>獨自一人時隱藏整個羅盤</Chinese>
+            <Chinesesimp>独自一人时隐藏整个罗盘</Chinesesimp>
             <Turkish>Yalnızken Bütün Pusulayı Gizle</Turkish>
         </Key>
         <Key ID="STR_dui_compass_hide_when_alone_desc">
@@ -1096,8 +1096,8 @@
             <German>Wenn du alleine in einer Gruppe bist, wird der Kompass ausgeblendet</German>
             <Korean>그룹내에 혼자만 있을때 나침반을 숨깁니다.</Korean>
             <Japanese>グループに単独の際はコンパスを非表示にします。</Japanese>
-            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，隱藏屏幕上所有的羅盤元件</Chinese>
-            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，隐藏屏幕上所有的罗盘元件</Chinesesimp>
+            <Chinese>當你在小組中獨自一人時，隱藏螢幕上的整個羅盤元件</Chinese>
+            <Chinesesimp>当你在小组中独自一人时，隐藏屏幕上的整个罗盘组件</Chinesesimp>
             <Turkish>Grubunuzda tek başınızayken bütün pusula arayüzünü saklar</Turkish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone">
@@ -1112,8 +1112,8 @@
             <German>Verstecke die Spielermarkierung, wenn du alleine bist</German>
             <Korean>혼자일때 플레이어 마커 숨기기</Korean>
             <Japanese>単独時はプレイヤー マーカーを非表示</Japanese>
-            <Chinese>單獨行動時隱藏玩家標識</Chinese>
-            <Chinesesimp>单独行动时隐藏玩家标识</Chinesesimp>
+            <Chinese>獨自一人時隱藏玩家標記</Chinese>
+            <Chinesesimp>独自一人时隐藏玩家标记</Chinesesimp>
             <Turkish>Yalnızken Oyuncu İkonunu Gizle</Turkish>
         </Key>
         <Key ID="STR_dui_compass_hide_blip_when_alone_desc">
@@ -1128,8 +1128,8 @@
             <German>Wenn du alleine in einer Gruppe bist, wird nur die Spielermarkierung auf dem Kompass ausgeblendet.</German>
             <Korean>그룹내에 혼자만 있을때 플레이어 마커를 숨깁니다.</Korean>
             <Japanese>グループに単独の際はプレイヤー マーカーを非表示にします。</Japanese>
-            <Chinese>當不屬于任何團隊，或覺得你一個人就是一只軍隊的時侯，只隱藏羅盤上的玩家標識</Chinese>
-            <Chinesesimp>当不属于任何团队，或觉得你一个人就是一只军队的时侯，只隐藏罗盘上的玩家标识</Chinesesimp>
+            <Chinese>當你在小組中獨自一人時，僅隱藏羅盤上的玩家標記</Chinese>
+            <Chinesesimp>当你在小组中独自一人时，仅隐藏罗盘上的玩家标记</Chinesesimp>
             <Turkish>Grubunuzda tek başınızayken sadece pusulanın ortasındaki ikonu saklar</Turkish>
         </Key>
         <Key ID="STR_dui_occlusion_cone">
@@ -1144,8 +1144,8 @@
             <German>Okklusionskegel</German>
             <Korean>오클루전 원뿔</Korean>
             <Japanese>オクルージョン対象範囲</Japanese>
-            <Chinese>視野的椎體範圍</Chinese>
-            <Chinesesimp>视野的椎体范围</Chinesesimp>
+            <Chinese>遮擋錐角</Chinese>
+            <Chinesesimp>遮挡锥角</Chinesesimp>
             <Turkish>Occlusion Konisi</Turkish>
         </Key>
         <Key ID="STR_dui_occlusion_cone_desc">
@@ -1160,8 +1160,8 @@
             <German>Stellt den Kegel (in Grad) ein, in dem eine Einheit als vor dem Spieler gesehen gilt. Z.B. 90° bedeutet, dass man Einheiten 45° nach links und rechts sieht</German>
             <Korean>플레이어의 정면으로 부터 설정되는 가시범위를 '도'단위로 설정합니다. 예를들어 90도로 설정되면 좌우 45도가 가시범위가 됩니다.</Korean>
             <Japanese>プレイヤーの正面に設定される可視範囲を度で設定します。例えば、90 度に設定されると左右 45 度が可視範囲になります。</Japanese>
-            <Chinese>設置一個以角度爲單位的視野椎體範圍，用于模擬玩家視野。例：90意味著亦會模擬一個視野中心向左45度到向右45度的一個椎體範圍。</Chinese>
-            <Chinesesimp>设置一个以角度为单位的视野椎体范围，用于模拟玩家视野。例：90意味着亦会模拟一个视野中心向左45度到向右45度的一个椎体范围。</Chinesesimp>
+            <Chinese>設定單位被視為位於玩家視野內的錐形角度範圍（度）。例如：90 表示視野中心左右各 45 度內的單位均視為可見。</Chinese>
+            <Chinesesimp>设置单位被视为位于玩家视野内的锥形角度范围（度）。例如：90 表示视野中心左右各 45 度内的单位均视为可见。</Chinesesimp>
             <Turkish>Occlusion efekti için oyuncunun ön tarafından görebildiği alan. Örn:90 demek, 45 derece sol ve 45 derece sağı görebildiğiniz anlamına gelir</Turkish>
         </Key>
         <Key ID="STR_dui_reset_ui_pos">
@@ -1191,8 +1191,8 @@
             <German>Setzt alle DUI UI Elemente auf ihre Ursprungsposition zurück</German>
             <Korean>DUI에서 추가된 모든 UI의 위치를 초기화 합니다.</Korean>
             <Japanese>DUI で追加された全ての UI の位置をリセットします。</Japanese>
-            <Chinese>重置所有DUI模組的UI元件位置</Chinese>
-            <Chinesesimp>重置所有DUI模组的UI元件位置</Chinesesimp>
+            <Chinese>重置所有 DUI UI 元件的位置</Chinese>
+            <Chinesesimp>重置所有 DUI UI 组件的位置</Chinesesimp>
             <Turkish>Bütün DUI UI elementlerinin konumlarını sıfırlar</Turkish>
         </Key>
         <Key ID="STR_dui_show_squadbar">
@@ -1207,8 +1207,8 @@
             <German>Vanilla Squad Bar anzeigen</German>
             <Korean>바닐라 분대바 표시</Korean>
             <Japanese>ゲーム標準の分隊バーを表示</Japanese>
-            <Chinese>顯示原版班組指揮欄</Chinese>
-            <Chinesesimp>显示原版班组指挥栏</Chinesesimp>
+            <Chinese>顯示原版小隊欄</Chinese>
+            <Chinesesimp>显示原版小队栏</Chinesesimp>
             <Turkish>Vanilya Takım Barını Göster</Turkish>
         </Key>
         <Key ID="STR_dui_show_squadbar_desc">
@@ -1223,8 +1223,8 @@
             <German>Zeigt die Vanilla Arma3 Squad Bar an, wenn man ein Gruppenführer in einem Squad ist</German>
             <Korean>분대장일때 아르마3 바닐라 분대바를 표시합니다.</Korean>
             <Japanese>分隊長の際はゲーム標準の分隊バーを表示します。</Japanese>
-            <Chinese>作爲班長時，顯示Arma3原版的班組指揮欄</Chinese>
-            <Chinesesimp>作为班长时，显示Arma3原版的班组指挥栏</Chinesesimp>
+            <Chinese>擔任小隊長時，顯示 Arma 3 原版小隊欄</Chinese>
+            <Chinesesimp>担任小队长时，显示 Arma 3 原版小队栏</Chinesesimp>
             <Turkish>Takım lideriyken çıkan vanilya Arma 3 takım barını gösterir</Turkish>
         </Key>
         <Key ID="STR_dui_cat_layout">
@@ -1239,7 +1239,7 @@
             <German>Layout</German>
             <Korean>레이아웃</Korean>
             <Japanese>レイアウト</Japanese>
-            <Chinese>布局</Chinese>
+            <Chinese>佈局</Chinese>
             <Chinesesimp>布局</Chinesesimp>
             <Turkish>Düzen</Turkish>
         </Key>
@@ -1255,7 +1255,7 @@
             <German>A3 Layout Editor Position nutzen</German>
             <Korean>A3 레이아웃 편집기 위치 사용</Korean>
             <Japanese>ゲーム標準のレイアウト エディタ ポジション</Japanese>
-            <Chinese>使用A3布局編輯器位置</Chinese>
+            <Chinese>使用A3佈局編輯器位置</Chinese>
             <Chinesesimp>使用A3布局编辑器位置</Chinesesimp>
             <Turkish>Arma 3 'Layout Editor' konumunu kullan</Turkish>
         </Key>
@@ -1271,7 +1271,7 @@
             <German>Nutzt anstatt der Standardposition die im Layout Editor gesetzte Position</German>
             <Korean>레이아웃 에디터를 사용하여 위치를 변경합니다.</Korean>
             <Japanese>レイアウト エディタを使用して位置を変更します。</Japanese>
-            <Chinese>使用布局編輯器來確定位置，而不是使用默認的位置</Chinese>
+            <Chinese>使用佈局編輯器來確定位置，而不是使用預設的位置</Chinese>
             <Chinesesimp>使用布局编辑器来确定位置，而不是使用默认的位置</Chinesesimp>
             <Turkish>Normal konum yerine 'Layout Editor' içinde ayarlanan konumu kullan</Turkish>
         </Key>
@@ -1299,7 +1299,7 @@
             <German>Stellt die Zeit ein, wie lange es dauert, bis ein Icon vom Radar verschwindet</German>
             <Korean>아이콘이 레이더에서 페이드아웃 되는 시간 설정</Korean>
             <Japanese>レーダーからアイコンが消えるまでの時間を設定します。</Japanese>
-            <Chinese>設置圖標在雷達上徹底淡出需要的時間</Chinese>
+            <Chinese>設定圖示在雷達上徹底淡出需要的時間</Chinese>
             <Chinesesimp>设置图标在雷达上彻底淡出需要的时间</Chinesesimp>
             <Turkish>Radardaki ikonların yok olma süresini belirler</Turkish>
         </Key>
@@ -1323,7 +1323,7 @@
             <German>Stellt die Zeit ein, wie lange es dauert, bis ein Icon auf dem Radar wieder komplett sichtbar ist</German>
             <Korean>아이콘이 레이더에서 페이드인 되는 시간 설정</Korean>
             <Japanese>レーダーへアイコンが現れるまでの時間を設定します。</Japanese>
-            <Chinese>設置圖標在雷達上漸入需要的時間</Chinese>
+            <Chinese>設定圖示在雷達上漸入需要的時間</Chinese>
             <Chinesesimp>设置图标在雷达上渐入需要的时间</Chinesesimp>
             <Turkish>Radardaki ikonların geri gelme süresini belirler</Turkish>
         </Key>
@@ -1355,8 +1355,8 @@
             <German>Spezielle getrackte Objekte erscheinen in dieser Farbe auf dem Radar. Achtung, der Alpha-Wert wird nicht verwendet!</German>
             <Korean>특수 추적 객체의 레이더상 표시되는 색상을 설정합니다. 알파값 변경은 적용이 안됩니다</Korean>
             <Japanese>レーダー上では特殊な追跡オブジェクトをこのカラーで表示します。なおアルファ値は影響を及ぼしません！</Japanese>
-            <Chinese>特別追蹤的物體會在雷達上以這個顏色顯示。注意，Alpha 值無意義。</Chinese>
-            <Chinesesimp>特别追踪的物体会在雷达上以这个颜色显示。注意，Alpha 值无意义。</Chinesesimp>
+            <Chinese>被特殊追蹤的物體會在雷達上以該顏色顯示。注意：Alpha 值不會生效！</Chinese>
+            <Chinesesimp>被特殊追踪的物体会在雷达上以该颜色显示。注意：Alpha 值不会生效！</Chinesesimp>
             <Turkish>Özellikle takip edilen objeler radarda bu renkte belirir. Uyarı:Alpha ayarının bir etkisi yok!</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_vertical_spacing">
@@ -1387,7 +1387,7 @@
             <German>Setzt den vertikalen Abstand zwischen den Einträgen der einzelnen Einträge in der Namensliste</German>
             <Korean>이름목록의 줄간격을 설정합니다</Korean>
             <Japanese>名前リスト上での行間の余白を設定します。</Japanese>
-            <Chinese>設置名單列表的行間距</Chinese>
+            <Chinese>設定名單列表的行間距</Chinese>
             <Chinesesimp>设置名单列表的行间距</Chinesesimp>
             <Turkish>İsim listesindeki isimler arasındaki boşluğun ölceği</Turkish>
         </Key>
@@ -1403,7 +1403,7 @@
             <German>UI standardmäßig ausblenden</German>
             <Korean>기본으로 UI를 숨깁니다</Korean>
             <Japanese>標準で UI を非表示</Japanese>
-            <Chinese>默認隱藏UI</Chinese>
+            <Chinese>預設隱藏UI</Chinese>
             <Chinesesimp>默认隐藏UI</Chinesesimp>
             <Turkish>Arayüzü Varsayılan Olarak Gizle</Turkish>
         </Key>
@@ -1419,8 +1419,8 @@
             <German>Setzt den Toggle, um die Benutzeroberfläche anzuzeigen, standardmäßig auf aus</German>
             <Korean>UI를 기본적으로 꺼짐으로 표시하도록 토글을 설정합니다.</Korean>
             <Japanese>標準で UI を非表示にし、切り替えて表示になるよう設定します。</Japanese>
-            <Chinese>設置關爲切換UI顯示的默認狀態</Chinese>
-            <Chinesesimp>设置关为切换UI显示的默认状态</Chinesesimp>
+            <Chinese>預設將 UI 顯示開關設為關閉</Chinese>
+            <Chinesesimp>默认将 UI 显示开关设为关闭</Chinesesimp>
             <Turkish>Arayüzü gizler</Turkish>
         </Key>
         <Key ID="STR_dui_button_hold_ui">
@@ -1449,8 +1449,8 @@
             <German>Verstecke, wenn Gruppenführer</German>
             <Korean>분대장일때 숨기기</Korean>
             <Japanese>グループ リーダー時は非表示</Japanese>
-            <Chinese>爲班長時隱藏名單列表</Chinese>
-            <Chinesesimp>为班长时隐藏名单列表</Chinesesimp>
+            <Chinese>擔任小組長時隱藏名單列表</Chinese>
+            <Chinesesimp>担任小组长时隐藏名单列表</Chinesesimp>
             <Turkish>Grup Lideriyken Gizle</Turkish>
         </Key>
         <Key ID="STR_dui_namelist_hideWhenLeader_desc">
@@ -1463,8 +1463,8 @@
             <German>Versteckt die Namensliste, wenn man aktuell Gruppenführer ist. Für Spieler, die die Vanilla Squad Bar bevorzugen</German>
             <Korean>분대장일때 이름목록을 숨깁니다. 바닐라 분대표시를 선호하는 사람들이 사용합니다</Korean>
             <Japanese>自らがグループ リーダー時は名前リストを表示にします。これはゲーム標準の分隊バー使用時に使われます。</Japanese>
-            <Chinese>作爲班長時隱藏名單列表。給習慣使用原版班組指揮欄的人使用的。</Chinese>
-            <Chinesesimp>作为班长时隐藏名单列表。给习惯使用原版班组指挥栏的人使用的。</Chinesesimp>
+            <Chinese>擔任小組長時隱藏名單列表。適合習慣使用原版小隊欄的玩家。</Chinese>
+            <Chinesesimp>担任小组长时隐藏名单列表。适合习惯使用原版小队栏的玩家。</Chinesesimp>
             <Turkish>Grup lideriyken isim listesini gizle. Vanilya takım barının tercih edenler için ideal ayar</Turkish>
         </Key>
         <Key ID="STR_dui_main_squadMain">
@@ -1589,8 +1589,8 @@
             <German>Gruppenführer immer zuerst</German>
             <Korean>분대장 상위 표시</Korean>
             <Japanese>分隊長を常に先頭</Japanese>
-            <Chinese>總是優先顯示班長</Chinese>
-            <Chinesesimp>总是优先显示班长</Chinesesimp>
+            <Chinese>總是優先顯示小隊長</Chinese>
+            <Chinesesimp>总是优先显示小队长</Chinesesimp>
             <Turkish>En Başta Lideri Göster</Turkish>
         </Key>
         <Key ID="STR_dui_radar_sqlFirst_desc">
@@ -1603,8 +1603,8 @@
             <German>Zeigt den Gruppenführer immer als ersten in der Liste an</German>
             <Korean>분대장이 항상 상위에 표시됩니다</Korean>
             <Japanese>ユニットを表示する際には分隊長を常に先頭で表示させます</Japanese>
-            <Chinese>總是將班長作爲第一個單位顯示</Chinese>
-            <Chinesesimp>总是将班长作为第一个单位显示</Chinesesimp>
+            <Chinese>總是將小隊長作為第一個單位顯示</Chinese>
+            <Chinesesimp>总是将小队长作为第一个单位显示</Chinesesimp>
             <Turkish>Her zaman en üstte grup liderini gösterir</Turkish>
         </Key>
         <Key ID="STR_dui_radar_sort">
@@ -1616,8 +1616,8 @@
             <Russian>Сортировать</Russian>
             <German>Sortieren</German>
             <Japanese>並び替え</Japanese>
-            <Chinese>分類</Chinese>
-            <Chinesesimp>分类</Chinesesimp>
+            <Chinese>排序</Chinese>
+            <Chinesesimp>排序</Chinesesimp>
             <Turkish>Sıralama</Turkish>
         </Key>
         <Key ID="STR_dui_radar_sort_desc">
@@ -1630,8 +1630,8 @@
             <German>Der Server muss DUI geladen haben, um Synchronität zu garantieren!</German>
             <Korean>서버 동기화를 위해서는 DUI가 실행되어야 합니다!</Korean>
             <Japanese>並び替えを同期させるにはサーバー側で DUI を動作させている必要があります！</Japanese>
-            <Chinese>服務器需要運行DUI來進行同步</Chinese>
-            <Chinesesimp>服务器需要运行DUI来进行同步</Chinesesimp>
+            <Chinese>需要伺服器也執行 DUI 才能保持同步！</Chinese>
+            <Chinesesimp>需要服务器也运行 DUI 才能保持同步！</Chinesesimp>
             <Turkish>Senkronizasyon için sunucuda da DUI çalışması gerekir!</Turkish>
         </Key>
         <Key ID="STR_dui_radar_syncGroup">
@@ -1639,16 +1639,16 @@
             <French>Synchronisation des unités dans le groupe</French>
             <German>Synchronisiere Einheiten in der Gruppe</German>
             <Korean>그룹 내 유닛 동기화</Korean>
-            <Chinese>同步團隊成員順序</Chinese>
-            <Chinesesimp>同步团队成员顺序</Chinesesimp>
+            <Chinese>同步小組內成員順序</Chinese>
+            <Chinesesimp>同步小组内成员顺序</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_syncGroup_desc">
             <English>Will sync the order of units in a player's group if sort type is set to "None". Only works in MP and every player must have DUI loaded for this to work properly</English>
             <French>Synchronise l'ordre des unités dans le groupe lorsque le tri est défini sur « Aucun ». Fonctionne uniquement en multijoueur et tous les joueurs doivent utiliser DUI pour que cela fonctionne correctement.</French>
             <German>Synchronisiert die Reihenfolge der Einheiten in der Gruppe, wenn die Sortierung auf "Kein" gesetzt wurde. Funktioniert nur im Multiplayer und alle Spieler müssen DUI nutzen, damit dies korrekt funktioniert</German>
             <Korean>Sort를 "없음"으로 설정된 경우 플레이어 그룹 내 유닛 순서를 동기화 합니다. 멀티플레이어 모드에서만 작동하며, 모든 플레이어가 DUI를 설치해야 제대로 작동합니다.</Korean>
-            <Chinese>當排序方式設為「無」時，將同步玩家團隊內成員的排序。僅於多人模式有效，且所有玩家都必須載入 DUI 才能正常運作。</Chinese>
-            <Chinesesimp>当排序方式设为“无”时，将同步玩家队伍内成员的排序。仅在多人模式有效，且所有玩家都必须加载 DUI 才能正常运作。</Chinesesimp>
+            <Chinese>當排序方式設為「無」時，將同步玩家小組內成員的排序。僅於多人模式有效，且所有玩家都必須載入 DUI 才能正常運作。</Chinese>
+            <Chinesesimp>当排序方式设为“无”时，将同步玩家小组内成员的排序。仅在多人模式有效，且所有玩家都必须加载 DUI 才能正常运作。</Chinesesimp>
         </Key>
         <!-- Addon module names -->
         <Key ID="STR_dui_addon_main">
@@ -1696,7 +1696,7 @@
             <German>Standard</German>
             <Korean>표준</Korean>
             <Japanese>通常</Japanese>
-            <Chinese>標准</Chinese>
+            <Chinese>標準</Chinese>
             <Chinesesimp>标准</Chinesesimp>
             <Turkish>Standart</Turkish>
         </Key>
@@ -1777,8 +1777,8 @@
             <German>Protanopie</German>
             <Korean>적색맹</Korean>
             <Japanese>1 型 2 色覚</Japanese>
-            <Chinese>紅綠色盲（紅色感知缺陷）</Chinese>
-            <Chinesesimp>红绿色盲（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅色盲</Chinese>
+            <Chinesesimp>红色盲</Chinesesimp>
             <Turkish>Protanopi</Turkish>
         </Key>
         <Key ID="STR_dui_color_protanomaly">
@@ -1793,8 +1793,8 @@
             <German>Protanomalie</German>
             <Korean>적색약</Korean>
             <Japanese>1 型 3 色覚</Japanese>
-            <Chinese>紅綠色弱（紅色感知缺陷）</Chinese>
-            <Chinesesimp>红绿色弱（红色感知缺陷）</Chinesesimp>
+            <Chinese>紅色弱</Chinese>
+            <Chinesesimp>红色弱</Chinesesimp>
             <Turkish>Protanomali</Turkish>
         </Key>
         <Key ID="STR_dui_color_deuteranopia">
@@ -1809,8 +1809,8 @@
             <German>Deuteranopie</German>
             <Korean>녹색맹</Korean>
             <Japanese>2 型 2 色覚</Japanese>
-            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
-            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>綠色盲</Chinese>
+            <Chinesesimp>绿色盲</Chinesesimp>
             <Turkish>Döteranopi</Turkish>
         </Key>
         <Key ID="STR_dui_color_deuteranomaly">
@@ -1825,8 +1825,8 @@
             <German>Deuteranomalie</German>
             <Korean>녹색약</Korean>
             <Japanese>2 型 3 色覚</Japanese>
-            <Chinese>紅綠色盲（綠色感知缺陷）</Chinese>
-            <Chinesesimp>红绿色盲（绿色感知缺陷）</Chinesesimp>
+            <Chinese>綠色弱</Chinese>
+            <Chinesesimp>绿色弱</Chinesesimp>
             <Turkish>Deuteranomali</Turkish>
         </Key>
         <Key ID="STR_dui_color_tritanopia">
@@ -1841,8 +1841,8 @@
             <German>Tritanopie</German>
             <Korean>청색맹</Korean>
             <Japanese>3 型 2 色覚</Japanese>
-            <Chinese>黃藍色盲</Chinese>
-            <Chinesesimp>黄蓝色盲</Chinesesimp>
+            <Chinese>藍黃色盲</Chinese>
+            <Chinesesimp>蓝黄色盲</Chinesesimp>
             <Turkish>Tritanopi</Turkish>
         </Key>
         <Key ID="STR_dui_color_tritanomaly">
@@ -1857,8 +1857,8 @@
             <German>Tritanomalie</German>
             <Korean>청색약</Korean>
             <Japanese>3 型 3 色覚</Japanese>
-            <Chinese>黃藍色弱</Chinese>
-            <Chinesesimp>黄蓝色弱</Chinesesimp>
+            <Chinese>藍黃色弱</Chinese>
+            <Chinesesimp>蓝黄色弱</Chinesesimp>
             <Turkish>Tritanomali</Turkish>
         </Key>
         <Key ID="STR_dui_color_achromatopsia">
@@ -2024,7 +2024,7 @@
             <German>Uhr</German>
             <Korean>시계</Korean>
             <Japanese>時計</Japanese>
-            <Chinese>鍾表</Chinese>
+            <Chinese>鐘錶</Chinese>
             <Chinesesimp>钟表</Chinesesimp>
             <Turkish>Saat</Turkish>
         </Key>
@@ -2102,8 +2102,8 @@
             <!-- <French></French> -->
             <German>Militär Interface</German>
             <Japanese>ミリタリー風</Japanese>
-            <Chinese>軍用面板</Chinese>
-            <Chinesesimp>军用面板</Chinesesimp>
+            <Chinese>軍用介面</Chinese>
+            <Chinesesimp>军用界面</Chinesesimp>
             <Turkish>Ordu Arayüzü</Turkish>
         </Key>
         <!-- Sort options -->
@@ -2186,8 +2186,8 @@
             <German>Icons nach Fahrzeug gruppieren</German>
             <Korean>차량별 아이콘 표시</Korean>
             <Japanese>車両でのグループ アイコン</Japanese>
-            <Chinese>載具團隊圖標</Chinese>
-            <Chinesesimp>载具团队图标</Chinesesimp>
+            <Chinese>按載具分組圖示</Chinese>
+            <Chinesesimp>按载具分组图标</Chinesesimp>
             <Turkish>İkonları Araca Göre Grupla</Turkish>
         </Key>
         <Key ID="STR_dui_radar_group_by_vehicle_desc">
@@ -2199,15 +2199,15 @@
             <German>Zeigt nur ein Icon deines Squads an, wenn mehrere Gruppenmitglieder im selben Fahrzeug sitzen, normalerweise den Fahrer.</German>
             <Korean>한 차량에 분대원 여러명이 탑승해 있으면 레이더 아이콘을 하나만 표시합니다. 주로 운전수가 표시됩니다</Korean>
             <Japanese>複数のメンバーが同一車両に乗っている場合は、分隊を 1 つだけのアイコンで表示します</Japanese>
-            <Chinese>當多名團隊成員在一輛載具中時，只顯示一個圖標，一般爲司機</Chinese>
-            <Chinesesimp>当多名团队成员在一辆载具中时，只显示一个图标，一般为司机</Chinesesimp>
+            <Chinese>當多名小組成員乘坐同一載具時，僅顯示一個圖示，通常為駕駛員</Chinese>
+            <Chinesesimp>当多名小组成员乘坐同一载具时，仅显示一个图标，通常为驾驶员</Chinesesimp>
             <Turkish>Eğer grubun birden fazla üyesi aynı araçta ise sadece 1 üye için ikon göster (genelde sürücü)</Turkish>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons">
             <English>Enable Vehicle Seat Icons</English>
             <French>Activer les icônes de sièges de véhicules</French>
             <Korean>차량 탑승 아이콘 활성화</Korean>
-            <Chinese>啟用載具座位圖標</Chinese>
+            <Chinese>啟用載具座位圖示</Chinese>
             <Chinesesimp>启用载具座位图标</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_enable_seat_icons_desc">
@@ -2233,8 +2233,8 @@
             <German>Zeigerstil</German>
             <Korean>포인터 스타일</Korean>
             <Japanese>ポインターの形</Japanese>
-            <Chinese>指向風格</Chinese>
-            <Chinesesimp>指向风格</Chinesesimp>
+            <Chinese>指針樣式</Chinese>
+            <Chinesesimp>指针样式</Chinesesimp>
             <Turkish>İbre Tarzı</Turkish>
         </Key>
         <Key ID="STR_dui_radar_pointer_style_desc">
@@ -2246,8 +2246,8 @@
             <German>Zeigerstil, welcher auf dem Radar angezeigt wird</German>
             <Korean>나침반 구성 요소에 사용할 포인터 스타일</Korean>
             <Japanese>レーダー上に表示されるポインターの形を選択できます</Japanese>
-            <Chinese>在羅盤上顯示的指向風格</Chinese>
-            <Chinesesimp>在罗盘上显示的指向风格</Chinesesimp>
+            <Chinese>羅盤元件使用的指針樣式</Chinese>
+            <Chinesesimp>罗盘组件使用的指针样式</Chinesesimp>
             <Turkish>Pusulada kullanılacak ibrenin tarzı</Turkish>
         </Key>
         <Key ID="STR_dui_radar_pointer_color">
@@ -2259,8 +2259,8 @@
             <German>Zeigerfarbe</German>
             <Korean>포인터 색상</Korean>
             <Japanese>ポインターの色</Japanese>
-            <Chinese>指向顏色</Chinese>
-            <Chinesesimp>指向颜色</Chinesesimp>
+            <Chinese>指針顏色</Chinese>
+            <Chinesesimp>指针颜色</Chinesesimp>
             <Turkish>İbre Rengi</Turkish>
         </Key>
         <!-- ACE pointer styles -->
@@ -2285,7 +2285,7 @@
             <German>Zeige Icon, wenn jemand spricht</German>
             <Korean>유닛이 말할때 아이콘 표시</Korean>
             <Japanese>ユニット発話時はアイコン表示</Japanese>
-            <Chinese>當單位說話時顯示圖標</Chinese>
+            <Chinese>當單位說話時顯示圖示</Chinese>
             <Chinesesimp>当单位说话时显示图标</Chinesesimp>
             <Turkish>Konuşan Kişi İkonu</Turkish>
         </Key>
@@ -2297,8 +2297,8 @@
             <German>Zeigt eine Sprachbox an, wenn eine Einheit mit ACRE oder TFAR spricht</German>
             <Korean>ACRE 또는 TFAR에서 유닛이 말할 때 말풍선 아이콘이 표시됩니다.</Korean>
             <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
-            <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
-            <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
+            <Chinese>當單位透過 ACRE 或 TFAR 通話時，顯示發言氣泡圖示</Chinese>
+            <Chinesesimp>当单位通过 ACRE 或 TFAR 通话时，显示发言气泡图标</Chinesesimp>
             <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points">
@@ -2309,8 +2309,8 @@
             <German>Himmelsrichtungen anzeigen</German>
             <Korean>기본 방위 표시</Korean>
             <Japanese>方位基点を表示</Japanese>
-            <Chinese>顯示基點</Chinese>
-            <Chinesesimp>显示基点</Chinesesimp>
+            <Chinese>顯示基本方位</Chinese>
+            <Chinesesimp>显示基本方位</Chinesesimp>
             <Turkish>Kardinal Noktaları Göster</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_cardinal_points_desc">
@@ -2321,8 +2321,8 @@
             <German>Zeigt die Himmelsrichtungen auf dem Kompass an, wenn du einen hast. Wenn deaktiviert, werden keine Himmelsrichtungen angezeigt, auch wenn man einen Kompass hat</German>
             <Korean>나침반 소지 시 레이더에 방위 표시합니다. 이 기능을 비활성화하면 인벤토리에 나침반이 있어도 방위가 표시되지 않습니다.</Korean>
             <Japanese>コンパスを所持時は方位基点を表示します。無効化すると、コンパスを所持していても表示されなくなります。</Japanese>
-            <Chinese>有一個羅盤時，在雷達上顯示基點。關閉狀態下庫存中有羅盤也不會再雷達上顯示基點</Chinese>
-            <Chinesesimp>有一个罗盘时，在雷达上显示基点。关闭状态下库存中有罗盘也不会再雷达上显示基点</Chinesesimp>
+            <Chinese>持有羅盤時，在雷達上顯示基本方位。關閉後，即使庫存中有羅盤也不會顯示。</Chinese>
+            <Chinesesimp>持有罗盘时，在雷达上显示基本方位。关闭后，即使库存中有罗盘也不会显示。</Chinesesimp>
             <Turkish>Eğer bir pusulaya sahipseniz radarda kardinal noktaları gösterir. Bu ayar kapalıyken envanterda pusula varken bile kardinal noktalar gösterilmez</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon">
@@ -2333,8 +2333,8 @@
             <German>Haupticon mit Sprechicon ersetzen</German>
             <Korean>메인 아이콘을 말하는 아이콘으로 교체</Korean>
             <Japanese>発話時はメイン アイコンを置換</Japanese>
-            <Chinese>正在發言圖標替換主圖標</Chinese>
-            <Chinesesimp>正在发言图标替换主图标</Chinesesimp>
+            <Chinese>以發言圖示替換主圖示</Chinese>
+            <Chinesesimp>用发言图标替换主图标</Chinesesimp>
             <Turkish>Ana İkonu Konuşma İkonuyla Değiştir</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_replace_icon_desc">
@@ -2345,8 +2345,8 @@
             <German>Ersetzt das Icon der Einheit in der Namensliste mit einem Sprechericon</German>
             <Korean>이름 목록에서 해당 유닛의 아이콘을 말하는 아이콘으로 바꿉니다.</Korean>
             <Japanese>ユニットが発話時はネームリスト上にあるアイコンを置き換えます。</Japanese>
-            <Chinese>名單列表中的單位主圖標會被正在發言圖標替換</Chinese>
-            <Chinesesimp>名单列表中的单位主图标会被正在发言图标替换</Chinesesimp>
+            <Chinese>名單列表中單位的主圖示會被替換為發言圖示</Chinese>
+            <Chinesesimp>名单列表中单位的主图标会被替换为发言图标</Chinesesimp>
             <Turkish>Konuşan kişinin İsim listesindeki ikonunu konuşma ikonuyla değiştirir</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio">
@@ -2357,8 +2357,8 @@
             <German>Sprachicon nur bei Funknachrichten</German>
             <Korean>라디오 메세지에만 말하는 아이콘이 표시됩니다.</Korean>
             <Japanese>無線通信時のみ発話アイコン表示</Japanese>
-            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
-            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>僅在無線電通訊時顯示發言圖示</Chinese>
+            <Chinesesimp>仅在无线电通讯时显示发言图标</Chinesesimp>
             <Turkish>Sadece Telsiz İçin Konuşma İkonu</Turkish>
         </Key>
         <Key ID="STR_dui_radar_show_speaking_only_radio_desc">
@@ -2369,8 +2369,8 @@
             <German>Das Sprachicon wird nur angezeigt, wenn man über ein Funkgerät kommuniziert, nicht aber, wenn lokal gesprochen wird</German>
             <Korean>말하는 아이콘은 라디오를 수신하거나 말할 때만 나타나며, 로컬에서 다른 사람과 통화할 때는 나타나지 않습니다.</Korean>
             <Japanese>無線通信時のみ発話アイコンを表示します。直接会話時は表示されません。</Japanese>
-            <Chinese>只在使用無線電的時候顯示正在發言圖標</Chinese>
-            <Chinesesimp>只在使用无线电的时候显示正在发言图标</Chinesesimp>
+            <Chinese>僅在透過無線電接收或通話時顯示發言圖示，面對面交談時不會顯示</Chinese>
+            <Chinesesimp>仅在通过无线电接收或通话时显示发言图标，面对面交谈时不会显示</Chinesesimp>
             <Turkish>Konuşma ikonu sadece telsiz konuşmalarında kullanılır, birisi etrafındakilerle konuşurken aktive olmaz</Turkish>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic">
@@ -2380,8 +2380,8 @@
             <Russian>Тумблер ACE Medic</Russian>
             <German>ACE Sanitäter Umschalter</German>
             <Japanese>ACE 3 医療切り替え</Japanese>
-            <Chinese>ACE醫療切換</Chinese>
-            <Chinesesimp>ACE医疗切换</Chinesesimp>
+            <Chinese>ACE 醫療兵判定方式</Chinese>
+            <Chinesesimp>ACE 医疗兵判定方式</Chinesesimp>
             <Turkish>ACE Medic Göstergesi</Turkish>
         </Key>
         <Key ID="STR_diwako_dui_radar_ace_medic_desc">
@@ -2392,8 +2392,8 @@
             <German>Auswahl, ob Sanitäter anhand der Vanilla Logik oder per ACE Medical Variable angezeigt werden soll</German>
             <Korean>의무병을 기본 특성으로 표시할지, 아니면 ACE3에서 지정된 의무병으로 표시할지 선택하세요.</Korean>
             <Japanese>衛生兵ユニットを表示するときにゲーム標準の衛生兵か、ACE 3 で指定された衛生兵のどちらを元にするか設定できます。</Japanese>
-            <Chinese>選擇是否顯示原版或ACE變量醫療</Chinese>
-            <Chinesesimp>选择是否显示原版或ACE变量医疗</Chinesesimp>
+            <Chinese>選擇以原版特性還是 ACE 變數來判定醫療兵</Chinese>
+            <Chinesesimp>选择以原版特性还是 ACE 变量来判定医疗兵</Chinesesimp>
             <Turkish>Sıhhiyeler ACE ayarlarına göre mi vanilya ayarlara göre mi belirlensin?</Turkish>
         </Key>
         <Key ID="STR_dui_radar_always_show_unit_numbers">
@@ -2410,28 +2410,42 @@
             <German>Zeige immer Index der Gruppenmitglieder an, welche der Gruppenführer nutzen kann, um die Einheit über die Funktionstasten auswählen kann.</German>
             <Korean>분대장이 기능 키를 사용하여 분대원을 선택할 때 사용할 수 있는 부대 번호가 항상 표시됩니다.</Korean>
             <Chinese>將始終顯示單位編號，小隊長可使用功能鍵選取小隊成員。</Chinese>
-            <Chinesesimp>将始终显示单位编号，队长可使用功能键选择小队成员。</Chinesesimp>
+            <Chinesesimp>将始终显示单位编号，小队长可使用功能键选择小队成员。</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_always_show_player_number">
             <English>Show player number</English>
+            <Chinese>顯示玩家編號</Chinese>
+            <Chinesesimp>显示玩家编号</Chinesesimp>
         </Key>
         <Key ID="STR_dui_radar_always_show_player_number_desc">
             <English>Will always show the unit number of the current player</English>
+            <Chinese>將始終顯示當前玩家的單位編號</Chinese>
+            <Chinesesimp>将始终显示当前玩家的单位编号</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_main_options">
             <English>DUI Options</English>
+            <Chinese>DUI 選項</Chinese>
+            <Chinesesimp>DUI 选项</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_main_unittype">
             <English>Unit type</English>
+            <Chinese>單位類型</Chinese>
+            <Chinesesimp>单位类型</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_main_unittype_desc">
             <English>Overrides the dynamic unit type icon lookup with a fixed static one</English>
+            <Chinese>使用固定的靜態圖示代替動態查找的單位類型圖示</Chinese>
+            <Chinesesimp>使用固定的静态图标代替动态查找的单位类型图标</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_radar_customIconRadar">
             <English>Custom Icon Compass/Namelist</English>
+            <Chinese>羅盤/名單列表自訂圖示</Chinese>
+            <Chinesesimp>罗盘/名单列表自定义图标</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_radar_customIconRadar_desc">
             <English>Overrides the unit's icon on the compass, takes precedence to the unit type setting. Icon file must exist else it will be ignored</English>
+            <Chinese>覆蓋單位在羅盤上的圖示，優先於單位類型設定。圖示檔案必須存在，否則將被忽略</Chinese>
+            <Chinesesimp>覆盖单位在罗盘上的图标，优先于单位类型设置。图标文件必须存在，否则将被忽略</Chinesesimp>
         </Key>
     </Package>
 </Project>

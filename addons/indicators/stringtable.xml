@@ -81,7 +81,7 @@
                 <German>Maximal erlaubte Entfernung zur Anzeige der Indikatoren in der Mission/dem Server</German>
                 <Korean>미션/서버에서 개인이 설정 할 수 있는 최대 인디케이터 표시 거리</Korean>
                 <Chinese>由任務/伺服器設定的標記最大允許距離</Chinese>
-                <Chinesesimp>由任务/服务器设定的标记最大允许距离</Chinesesimp>
+                <Chinesesimp>由任务/服务器设置的标记最大允许距离</Chinesesimp>
             </Key>
             <Key ID="STR_dui_indicators_crew_enabled">
                 <English>Allow Crew indicators</English>
@@ -101,8 +101,8 @@
                 <German>Erlaubt Indikatoren mit größerer Reichweite für die Fahrzeugbesatzung.</German>
                 <Korean>승무원이 더 넓은 범위의 인디케이터를 사용 할 수 있도록 허용함.</Korean>
                 <Japanese>車両の乗員用にインジケータ表示範囲を倍増させます。</Japanese>
-                <Chinese>允許乘員有額外的標記距離</Chinese>
-                <Chinesesimp>允许乘员有额外的标记距离</Chinesesimp>
+                <Chinese>允許載具乘員使用更遠的標記距離</Chinese>
+                <Chinesesimp>允许载具乘员使用更远的标记距离</Chinesesimp>
                 <Turkish>Araç mürettebatları için göstergelerin daha uzaktan görünmesine izin ver</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_crew_range">
@@ -123,8 +123,8 @@
                 <German>Maximal zulässige Reichweite zur Anzeige von Indikatoren als Teil der Fahrzeugbesatzung.</German>
                 <Korean>차량에 탑승하는 동안 표시되는 최대 인디케이터 거리를 설정합니다.</Korean>
                 <Japanese>車両の乗員用にインジケータを表示する最大範囲を設定します。</Japanese>
-                <Chinese>作爲載具乘員時允許顯示的最遠的距離</Chinese>
-                <Chinesesimp>作为载具乘员时允许显示的最远的距离</Chinesesimp>
+                <Chinese>作為載具乘員時允許顯示標記的最大距離</Chinese>
+                <Chinesesimp>作为载具乘员时允许显示标记的最大距离</Chinesesimp>
                 <Turkish>Mürettebat için göstergelerin gösterileceği maximum mesafe</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_style">
@@ -138,7 +138,7 @@
                 <German>Icon-Stil</German>
                 <Korean>아이콘 스타일</Korean>
                 <Japanese>アイコンのスタイル</Japanese>
-                <Chinese>圖標風格</Chinese>
+                <Chinese>圖示風格</Chinese>
                 <Chinesesimp>图标风格</Chinesesimp>
                 <Turkish>İkon Tarzı</Turkish>
             </Key>
@@ -153,7 +153,7 @@
                 <German>Welcher Icon-Stil soll genutzt werden?</German>
                 <Korean>사용하는 아이콘 스타일을 설정합니다.</Korean>
                 <Japanese>使用するアイコン スタイルを設定します。</Japanese>
-                <Chinese>要使用哪種圖標風格</Chinese>
+                <Chinese>要使用哪種圖示風格</Chinese>
                 <Chinesesimp>要使用哪种图标风格</Chinesesimp>
                 <Turkish>Kullanılacak ikon tarzı</Turkish>
             </Key>
@@ -166,7 +166,7 @@
                 <German>Größe</German>
                 <Korean>크기</Korean>
                 <Japanese>大きさ</Japanese>
-                <Chinese>圖標大小</Chinese>
+                <Chinese>圖示大小</Chinese>
                 <Chinesesimp>图标大小</Chinesesimp>
                 <Turkish>Boyut</Turkish>
             </Key>
@@ -179,7 +179,7 @@
                 <German>Setzt die Größe der Indikatoren</German>
                 <Korean>인디케이터 아이콘의 사이즈를 설정합니다.</Korean>
                 <Japanese>インジケータのアイコンの大きさを決定します</Japanese>
-                <Chinese>設置圖標的大小</Chinese>
+                <Chinese>設定圖示的大小</Chinese>
                 <Chinesesimp>设置图标的大小</Chinesesimp>
                 <Turkish>Gösterge ikonlarının boyunu belirler</Turkish>
             </Key>
@@ -203,8 +203,8 @@
                 <German>Setzt die Transparenz der Indikatoren gleich wie die Nametags von ACE. Überschreibt die normale Reichweite und Verhalten!</German>
                 <Korean>인디케이터 투명도를 ACE 이름표 투명도와 일치시킵니다. 정상 범위와 동작을 무시합니다!</Korean>
                 <Japanese>インジケータの透明度を ACE 名札の透明度と同じにします。これは通常の距離と挙動を上書きします!</Japanese>
-                <Chinese>將標識透明度匹配ACE名牌的透明度設置。會複寫一般設置中的距離和行爲！</Chinese>
-                <Chinesesimp>将标识透明度匹配ACE名牌的透明度设置。会复写一般设置中的距离和行为！</Chinesesimp>
+                <Chinese>使標記透明度與 ACE 名牌的透明度保持一致。將覆蓋常規的距離與行為設定！</Chinese>
+                <Chinesesimp>使标记透明度与 ACE 名牌的透明度保持一致。将覆盖常规的距离与行为设置！</Chinesesimp>
                 <Turkish>Gösterge renklerini ACE Nametags rekleri ile eşleştir. Normal renk ve davranışı değiştirir!</Turkish>
             </Key>
             <!-- Indicator styles -->
@@ -270,7 +270,7 @@
                 <German>Icons</German>
                 <Korean>아이콘</Korean>
                 <Japanese>アイコン</Japanese>
-                <Chinese>圖標</Chinese>
+                <Chinese>圖示</Chinese>
                 <Chinesesimp>图标</Chinesesimp>
                 <Turkish>İkonlar</Turkish>
             </Key>
@@ -283,7 +283,7 @@
                 <German>Gruppenführer anzeigen</German>
                 <Korean>분대장 아이콘 표시</Korean>
                 <Japanese>リーダー アイコンを表示</Japanese>
-                <Chinese>顯示隊長圖標</Chinese>
+                <Chinese>顯示隊長圖示</Chinese>
                 <Chinesesimp>显示队长图标</Chinesesimp>
                 <Turkish>Lider İkonunu Göster</Turkish>
             </Key>
@@ -296,7 +296,7 @@
                 <German>Buddy anzeigen</German>
                 <Korean>친구 아이콘 표시</Korean>
                 <Japanese>バディ アイコンを表示</Japanese>
-                <Chinese>顯示搭檔圖標</Chinese>
+                <Chinese>顯示搭檔圖示</Chinese>
                 <Chinesesimp>显示搭档图标</Chinesesimp>
                 <Turkish>Eş İkonunu Göster</Turkish>
             </Key>
@@ -309,7 +309,7 @@
                 <German>Medic anzeigen</German>
                 <Korean>의무병 아이콘 표시</Korean>
                 <Japanese>衛生兵アイコンを表示</Japanese>
-                <Chinese>顯示醫療兵圖標</Chinese>
+                <Chinese>顯示醫療兵圖示</Chinese>
                 <Chinesesimp>显示医疗兵图标</Chinesesimp>
                 <Turkish>Sıhhiye İkonunu Göster</Turkish>
             </Key>
@@ -322,8 +322,8 @@
                 <German>Mit Entfernung Skalieren</German>
                 <Korean>범위에 따라 크기 조정</Korean>
                 <Japanese>距離で大きさ変化</Japanese>
-                <Chinese>重設距離大小</Chinese>
-                <Chinesesimp>重设距离大小</Chinesesimp>
+                <Chinese>隨距離調整大小</Chinese>
+                <Chinesesimp>随距离调整大小</Chinesesimp>
                 <Turkish>Mesafe ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_range_scale_desc">
@@ -335,8 +335,8 @@
                 <German>Indikatoren werden anhand der Entfernung zur Einheit skaliert</German>
                 <Korean>인디케이터의 크기가 유닛까지의 거리에 따라 변합니다</Korean>
                 <Japanese>インジケータの大きさはユニットまでの距離に応じて変化します</Japanese>
-                <Chinese>標識的大小根據到達單位的距離而變化</Chinese>
-                <Chinesesimp>标识的大小根据到达单位的距离而变化</Chinesesimp>
+                <Chinese>標記的大小根據到達單位的距離而變化</Chinese>
+                <Chinesesimp>标记的大小根据到达单位的距离而变化</Chinesesimp>
                 <Turkish>Mesafeye göre göstergelerin boyutunu ayarla</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale">
@@ -348,8 +348,8 @@
                 <German>Mit FOV skalieren</German>
                 <Korean>시야각에 따라 크기 조정</Korean>
                 <Japanese>視野角で大きさ変化</Japanese>
-                <Chinese>重設視野範圍角度</Chinese>
-                <Chinesesimp>重设视野范围角度</Chinesesimp>
+                <Chinese>隨視野角度調整大小</Chinese>
+                <Chinesesimp>随视野角度调整大小</Chinesesimp>
                 <Turkish>FOV ile Boyut Değiştir</Turkish>
             </Key>
             <Key ID="STR_dui_indicators_fov_scale_desc">
@@ -361,15 +361,19 @@
                 <German>Indikatoren werden entsprechend der aktuellen Blinkwinkelgröße skaliert</German>
                 <Korean>현재 시야에 따라 인디케이터를 조정합니다</Korean>
                 <Japanese>インジケータの大きさは現在の視野角に応じて変化します</Japanese>
-                <Chinese>根據視野範圍角度調節標識大小</Chinese>
-                <Chinesesimp>根据视野范围角度调节标识大小</Chinesesimp>
+                <Chinese>根據視野範圍角度調節標記大小</Chinese>
+                <Chinesesimp>根据视野范围角度调节标记大小</Chinesesimp>
                 <Turkish>O anki FOV'a göre göstergelerin boyunu ayarla</Turkish>
             </Key>
             <Key ID="STR_diwako_dui_indicators_customIconIndicators">
                 <English>Custom Icon Indicators</English>
+                <Chinese>標記自訂圖示</Chinese>
+                <Chinesesimp>标记自定义图标</Chinesesimp>
             </Key>
             <Key ID="STR_diwako_dui_indicators_customIconIndicators_desc">
                 <English>Overrides the unit's icon used in the indicator feature. File must exist! Path starting without a "\" are treated as mission files!</English>
+                <Chinese>覆蓋標記功能中使用的單位圖示。檔案必須存在！不以 "\" 開頭的路徑將被視為任務檔案！</Chinese>
+                <Chinesesimp>覆盖标记功能中使用的单位图标。文件必须存在！不以 "\" 开头的路径将被视为任务文件！</Chinesesimp>
             </Key>
         </Container>
     </Package>

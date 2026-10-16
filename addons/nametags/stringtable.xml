@@ -96,7 +96,7 @@
             <German>Schrift-Einstellungen</German>
             <Korean>폰트 설정</Korean>
             <Japanese>フォント設定</Japanese>
-            <Chinese>字體設置</Chinese>
+            <Chinese>字體設定</Chinese>
             <Chinesesimp>字体设置</Chinesesimp>
             <Turkish>Font Ayarları</Turkish>
         </Key>
@@ -129,8 +129,8 @@
             <German>Gruppenname Schriftart</German>
             <Korean>분대 이름 폰트</Korean>
             <Japanese>グループ名フォント</Japanese>
-            <Chinese>團隊名稱字體</Chinese>
-            <Chinesesimp>团队名称字体</Chinesesimp>
+            <Chinese>小組名稱字體</Chinese>
+            <Chinesesimp>小组名称字体</Chinesesimp>
             <Turkish>Grup İsmi Fontu</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_groupNameFont_desc">
@@ -140,8 +140,8 @@
             <German>Die Schriftart, die für den Gruppennamen im Namensschild verwendet wird</German>
             <Korean>이름표에 들어갈 그룹 이름의 폰트 설정</Korean>
             <Japanese>ネームタグ内のグループ名に適用されます。</Japanese>
-            <Chinese>名牌中團隊名稱的字體</Chinese>
-            <Chinesesimp>名牌中团队名称的字体</Chinesesimp>
+            <Chinese>名牌中小組名稱的字體</Chinese>
+            <Chinesesimp>名牌中小组名称的字体</Chinesesimp>
             <Turkish>Grup isimlerini göstermek için kullanılacak font</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_fontNameSize">
@@ -173,8 +173,8 @@
             <German>Gruppenname Schriftart Skalierung</German>
             <Korean>그룹 이름 폰트 크기</Korean>
             <Japanese>グループ名フォントの大きさ</Japanese>
-            <Chinese>團隊名稱字體大小</Chinese>
-            <Chinesesimp>团队名称字体大小</Chinesesimp>
+            <Chinese>小組名稱字體大小</Chinese>
+            <Chinesesimp>小组名称字体大小</Chinesesimp>
             <Turkish>Grup İsmi Font Ölceği</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_fontGroupNameSize_desc">
@@ -184,8 +184,8 @@
             <German>Die Skalierung, die auf den Gruppennamen angewendet wird</German>
             <Korean>그룹 이름의 크기를 설정합니다.</Korean>
             <Japanese>グループ名の大きさを設定します。</Japanese>
-            <Chinese>團隊名稱所使用的字體大小</Chinese>
-            <Chinesesimp>团队名称所使用的字体大小</Chinesesimp>
+            <Chinese>應用於小組名稱的縮放比例</Chinese>
+            <Chinesesimp>应用于小组名称的缩放比例</Chinesesimp>
             <Turkish>Grup ismi fontuna uygulanacak ölçek</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_deadColor">
@@ -217,8 +217,8 @@
             <German>Eigene Gruppenfarbe</German>
             <Korean>자신의 그룹 색상</Korean>
             <Japanese>自グループ色</Japanese>
-            <Chinese>自己團隊的顏色</Chinese>
-            <Chinesesimp>自己团队的颜色</Chinesesimp>
+            <Chinese>自己小組的顏色</Chinese>
+            <Chinesesimp>自己小组的颜色</Chinesesimp>
             <Turkish>Kengi Grup Rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_groupColor_desc">
@@ -228,8 +228,8 @@
             <German>Die Farbe, die der Gruppenname haben wird, wenn die Einheit zu deiner Gruppe gehört.</German>
             <Korean>해당 유닛이 그룹에 속해 있을 경우 그룹 이름에 표시될 색상입니다.</Korean>
             <Japanese>自グループに属するユニットのグループ名に表示される色を設定します。</Japanese>
-            <Chinese>當一個單位和你一個團隊時，他團隊名稱會顯示的顏色</Chinese>
-            <Chinesesimp>当一个单位和你一个团队时，他团队名称会显示的颜色</Chinesesimp>
+            <Chinese>當單位與你在同一小組時，其小組名稱顯示的顏色</Chinese>
+            <Chinesesimp>当单位与你在同一小组时，其小组名称显示的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubundaki birimlerin isim rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor">
@@ -239,8 +239,8 @@
             <German>Andere Gruppenfarbe</German>
             <Korean>다른 그룹 색상</Korean>
             <Japanese>他グループ色</Japanese>
-            <Chinese>其他團隊的顏色</Chinese>
-            <Chinesesimp>其他团队的颜色</Chinesesimp>
+            <Chinese>其他小組的顏色</Chinese>
+            <Chinesesimp>其他小组的颜色</Chinesesimp>
             <Turkish>Diğer Grup İsim Rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_groupNameOtherColor_desc">
@@ -250,8 +250,8 @@
             <German>Die Farbe die andere Gruppen haben</German>
             <Korean>다른 그룹 색상을 설정합니다.</Korean>
             <Japanese>他グループの色を設定します。</Japanese>
-            <Chinese>其他團隊的顏色</Chinese>
-            <Chinesesimp>其他团队的颜色</Chinesesimp>
+            <Chinese>其他小組的顏色</Chinese>
+            <Chinesesimp>其他小组的颜色</Chinesesimp>
             <Turkish>Oyuncunun grubu olmayan grupların isim rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor">
@@ -261,8 +261,8 @@
             <German>Andere Gruppennamen Farbe</German>
             <Korean>다른 그룹 이름 색상</Korean>
             <Japanese>他グループ名色</Japanese>
-            <Chinese>其他團隊的名稱顏色</Chinese>
-            <Chinesesimp>其他团队的名称颜色</Chinesesimp>
+            <Chinese>其他小組的名稱顏色</Chinese>
+            <Chinesesimp>其他小组的名称颜色</Chinesesimp>
             <Turkish>Diğer Grup Rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_nameOtherColor_desc">
@@ -272,8 +272,8 @@
             <German>Die Farbe in der andere Spielernamen angezeigt werden, die nicht in deiner Gruppe sind.</German>
             <Korean>다른 그룹 이름의 색상을 설정합니다.</Korean>
             <Japanese>他グループ名の色を設定します。</Japanese>
-            <Chinese>非本團隊玩家名稱顏色</Chinese>
-            <Chinesesimp>非本团队玩家名称颜色</Chinesesimp>
+            <Chinese>非本小組玩家名稱顏色</Chinese>
+            <Chinesesimp>非本小组玩家名称颜色</Chinesesimp>
             <Turkish>Oyuncunun grubunda olmayan birimlerin isim rengi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_renderDistance">
@@ -349,8 +349,8 @@
             <German>Gruppenschatten</German>
             <Korean>그룹 그림자</Korean>
             <Japanese>グループの影</Japanese>
-            <Chinese>團隊陰影</Chinese>
-            <Chinesesimp>团队阴影</Chinesesimp>
+            <Chinese>小組陰影</Chinese>
+            <Chinesesimp>小组阴影</Chinesesimp>
             <Turkish>Grup Gölgesi</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost">
@@ -360,8 +360,8 @@
             <German>FOV-Boost aktivieren</German>
             <Korean>시야각 부스트 활성화</Korean>
             <Japanese>FOV ブースト有効化</Japanese>
-            <Chinese>啟用視野範圍角度增強</Chinese>
-            <Chinesesimp>启用视野范围角度增强</Chinesesimp>
+            <Chinese>啟用視野增強</Chinese>
+            <Chinesesimp>启用视野增强</Chinesesimp>
             <Turkish>FOV'a Göre Arttır</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_enableFOVBoost_desc">
@@ -371,8 +371,8 @@
             <German>Erhöht die Sichtbarkeit von Namensschildern beim Zoomen.</German>
             <Korean>확대 시 이름표의 가시성을 높입니다.</Korean>
             <Japanese>ズーム時にネームタグの視認性を向上させます。</Japanese>
-            <Chinese>放大時增強名牌可視度</Chinese>
-            <Chinesesimp>放大时增强名牌可视度</Chinesesimp>
+            <Chinese>變焦放大時提高名牌可見度</Chinese>
+            <Chinesesimp>变焦放大时提高名牌可见度</Chinesesimp>
             <Turkish>İsimlerin görünebilirliğini o anki zoom'a göre arttır</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_showUnconAsDead">
@@ -383,7 +383,7 @@
             <Korean>기절 상태를 사망으로 표시</Korean>
             <Japanese>無意識者を死体として表示</Japanese>
             <Chinese>將失去意識視為死亡</Chinese>
-            <Chinesesimp>将失去意识归类为死亡</Chinesesimp>
+            <Chinesesimp>将失去意识视为死亡</Chinesesimp>
             <Turkish>Bilincini Kaybedenleri Ölü Olarak Göster</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly">
@@ -393,8 +393,8 @@
             <German>sideIsFriendly verwenden</German>
             <Korean>아군 진영 사용</Korean>
             <Japanese>友軍陣営を使用</Japanese>
-            <Chinese>使用陣營友好</Chinese>
-            <Chinesesimp>使用阵营友好</Chinesesimp>
+            <Chinese>使用陣營友好判定</Chinese>
+            <Chinesesimp>使用阵营友好判定</Chinesesimp>
             <Turkish>Takım Dostlarını Kullan</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useSideIsFriendly_desc">
@@ -405,7 +405,7 @@
             <Korean>이 설정이 활성화되면 시스템은 진영만 확인하는 대신 BIS_fnc_sideIsFriendly를 사용합니다.</Korean>
             <Japanese>有効化するとシステムが現在の友軍を確認するようになります。</Japanese>
             <Chinese>如果這個設定啟用，系統會使用 BIS_fnc_sideIsFriendly 來代替陣營檢查</Chinese>
-            <Chinesesimp>如果这个设定启用，系统会使用 BIS_fnc_sideIsFriendly 来代替阵营检查</Chinesesimp>
+            <Chinesesimp>如果启用此设置，系统将使用 BIS_fnc_sideIsFriendly 代替单纯的阵营检查</Chinesesimp>
             <Turkish>Eğer bu ayar açık ise sistem normal taraflara bakmak yerine BIS_fnc_sideIsFriendly kullanır</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_useLIS">
@@ -437,8 +437,8 @@
             <German>DUI-Namensschilder</German>
             <Korean>DUI 이름표</Korean>
             <Japanese>DUI ネームタグ</Japanese>
-            <Chinese>DUI名牌</Chinese>
-            <Chinesesimp>DUI名牌</Chinesesimp>
+            <Chinese>DUI 名牌</Chinese>
+            <Chinesesimp>DUI 名牌</Chinesesimp>
             <Turkish>DUI İsimler</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_UIGrids_description">
@@ -448,8 +448,8 @@
             <German>Nametag UI-Element, ziehen Sie es per Drag &amp; Drop, um es neu zu positionieren.</German>
             <Korean>이름표 UI 요소를 드래그 앤 드롭하여 위치를 변경할 수 있습니다.</Korean>
             <Japanese>DUI の UI をドラッグ アンド ドロップで配置できます。</Japanese>
-            <Chinese>名牌UI元件，拖拽與松開它來給他重新設定位置</Chinese>
-            <Chinesesimp>名牌UI元件，拖拽与松开它来给他重新设定位置</Chinesesimp>
+            <Chinese>名牌 UI 元件，可拖曳以重新定位。</Chinese>
+            <Chinesesimp>名牌 UI 组件，可拖拽以重新定位。</Chinesesimp>
             <Turkish>İsimler ve UI elementi, sürükleyip bırakarak yerini değiştirebilirsin</Turkish>
         </Key>
         <Key ID="STR_dui_nametags_rankNameStyle">
@@ -494,32 +494,48 @@
         <Key ID="STR_dui_nametags_customInfoFont">
             <English>Custom Info Font</English>
             <Korean>사용자 정의 정보 폰트</Korean>
+            <Chinese>自訂資訊字體</Chinese>
+            <Chinesesimp>自定义信息字体</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customInfoFont_desc">
             <English>The font that is used for the custom information text below the group name. This feature can be used by mission makers or other mods to add additional information to a unit. For example, if the unit is a VIP, another sub team, or their pronouns, etc.</English>
             <Korean>그룹 이름 아래에 표시되는 사용자 지정 정보 텍스트에 사용되는 글꼴입니다. 이 기능은 미션 제작자나 다른 모드 제작자가 유닛에 추가 정보를 추가하는 데 사용할 수 있습니다. 예를 들어, 해당 유닛이 VIP인지, 다른 하위 팀인지, 또는 대명사를 사용하는지 등을 표시할 수 있습니다.</Korean>
+            <Chinese>用於小組名稱下方自訂資訊文字的字體。任務作者或其他模組可使用此功能為單位添加附加資訊，例如該單位是 VIP、其他小隊或其人稱代詞等</Chinese>
+            <Chinesesimp>用于小组名称下方自定义信息文字的字体。任务作者或其他模组可使用此功能为单位添加附加信息，例如该单位是 VIP、其他小队或其人称代词等</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customInfoShadow">
             <English>Custom Info Shadow</English>
             <Korean>사용자 정의 정보 그림자</Korean>
+            <Chinese>自訂資訊陰影</Chinese>
+            <Chinesesimp>自定义信息阴影</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_fontCustomInfoSize">
             <English>Custom Info Font Scale</English>
             <Korean>사용자 정의 정보 크기</Korean>
+            <Chinese>自訂資訊字體大小</Chinese>
+            <Chinesesimp>自定义信息字体大小</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_fontCustomInfoSize_desc">
             <English>The Scaling that is applied to the custom information font</English>
             <Korean>사용자 지정 정보 글꼴에 적용되는 크기 조정</Korean>
+            <Chinese>應用於自訂資訊字體的縮放</Chinese>
+            <Chinesesimp>应用于自定义信息字体的缩放</Chinesesimp>
         </Key>
         <Key ID="STR_dui_nametags_customInfoColor">
             <English>Custom Info Color</English>
             <Korean>사용자 정의 정보 색상</Korean>
+            <Chinese>自訂資訊顏色</Chinese>
+            <Chinesesimp>自定义信息颜色</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_nametags_customNametagInfo">
             <English>Custom Nametag Info</English>
+            <Chinese>名牌自訂資訊</Chinese>
+            <Chinesesimp>名牌自定义信息</Chinesesimp>
         </Key>
         <Key ID="STR_diwako_dui_nametags_customNametagInfo_desc">
             <English>Sets value of the third row of the nametags</English>
+            <Chinese>設定名牌第三行的內容值</Chinese>
+            <Chinesesimp>设置名牌第三行的内容值</Chinesesimp>
         </Key>
     </Package>
 </Project>

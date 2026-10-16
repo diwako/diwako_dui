@@ -40,7 +40,7 @@
                 <German>Nur zeigen, wenn der Kompass verfügbar ist</German>
                 <Korean>나침반을 소지했을 때만 표시</Korean>
                 <Chinese>僅在持有羅盤時顯示</Chinese>
-                <Chinesesimp>仅在拥有罗盘时显示</Chinesesimp>
+                <Chinesesimp>仅在持有罗盘时显示</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_draw_directions">
                 <English>Directions Drawn</English>
@@ -55,7 +55,7 @@
                 <French>Contour des icônes</French>
                 <German>Icon Umriss</German>
                 <Korean>아이콘 외곽선</Korean>
-                <Chinese>圖標描邊</Chinese>
+                <Chinese>圖示描邊</Chinese>
                 <Chinesesimp>图标描边</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color">
@@ -63,7 +63,7 @@
                 <French>Couleur de l'icône par défaut</French>
                 <German>Standardfarbe des Icons</German>
                 <Korean>기본 아이콘 색상</Korean>
-                <Chinese>預設圖標顏色</Chinese>
+                <Chinese>預設圖示顏色</Chinese>
                 <Chinesesimp>默认图标颜色</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_default_icon_color_desc">
@@ -71,7 +71,7 @@
                 <French>Couleur par défaut des icônes sans affectation à une équipe</French>
                 <German>Standardfarbe für Icons ohne Zuweisung zu einem Feuerteam</German>
                 <Korean>화력팀이 지정되지 않았을 때 아이콘의 기본 색상</Korean>
-                <Chinese>未分配火力小組時的圖標預設顏色</Chinese>
+                <Chinese>未分配火力小組時的圖示預設顏色</Chinese>
                 <Chinesesimp>未分配火力小组时的图标默认颜色</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_default_waypoint_color">
@@ -127,8 +127,8 @@
                 <French>Points cardinaux</French>
                 <German>Haupt- und Nebenrichtungen</German>
                 <Korean>주 방위각 및 보조 방위각만</Korean>
-                <Chinese>僅主方位與間方位</Chinese>
-                <Chinesesimp>仅主方位与间方位</Chinesesimp>
+                <Chinese>僅主方位與次方位</Chinese>
+                <Chinesesimp>仅主方位与次方位</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_draw_bearings_all">
                 <English>All</English>
@@ -160,7 +160,7 @@
                 <German>Linien-Kompass UI Element, mit der Maus an gewünschte Position ziehen. Die Position kann durch CBA Einstellungen auf den Standard zurückgesetzt werden!</German>
                 <Korean>라인 나침반 UI 요소입니다. 드래그하여 위치를 옮길 수 있습니다. 문제가 생기면 CBA 설정에서 위치를 초기화할 수 있습니다!</Korean>
                 <Chinese>線性羅盤 UI 元件，可拖曳以重新定位；若出現問題，可在 CBA 設定中重置位置。</Chinese>
-                <Chinesesimp>线性罗盘 UI 元件，可拖拽以重新定位；若出现问题，可在 CBA 设置中重置位置。</Chinesesimp>
+                <Chinesesimp>线性罗盘 UI 组件，可拖拽以重新定位；若出现问题，可在 CBA 设置中重置位置。</Chinesesimp>
             </Key>
             <Key ID="STR_dui_linecompass_show_custom_waypoint">
                 <English>Show Custom Waypoint</English>
@@ -184,7 +184,7 @@
                 <German>Zeige Icon, wenn jemand spricht</German>
                 <Korean>유닛이 말할 때 아이콘 표시</Korean>
                 <Japanese>ユニット発話時はアイコン表示</Japanese>
-                <Chinese>當單位說話時顯示圖標</Chinese>
+                <Chinese>當單位說話時顯示圖示</Chinese>
                 <Chinesesimp>当单位说话时显示图标</Chinesesimp>
                 <Turkish>Konuşan Kişi İkonu</Turkish>
             </Key>
@@ -196,15 +196,19 @@
                 <German>Zeigt eine Sprachbox an, wenn eine Einheit mit ACRE oder TFAR spricht</German>
                 <Korean>유닛이 ACRE 또는 TFAR로 말할 때 말풍선 아이콘을 표시합니다.</Korean>
                 <Japanese>ユニットが ACRE または TFAR を通じて発話時に、アイコンを変更します。</Japanese>
-                <Chinese>當單位使用ACRE或TFAR說話時，顯示一個正在發言圖標</Chinese>
-                <Chinesesimp>当单位使用ACRE或TFAR说话时，显示一个正在发言图标</Chinesesimp>
+                <Chinese>當單位透過 ACRE 或 TFAR 通話時，顯示發言氣泡圖示</Chinese>
+                <Chinesesimp>当单位通过 ACRE 或 TFAR 通话时，显示发言气泡图标</Chinesesimp>
                 <Turkish>ACRE veya TFAR ile konuşurken konuşanın ikonunu konuşma balonu ile değiştir</Turkish>
             </Key>
             <Key ID="STR_diwako_dui_linecompass_customIconLineCompass">
                 <English>Custom Icon Linecompass</English>
+                <Chinese>線性羅盤自訂圖示</Chinese>
+                <Chinesesimp>线性罗盘自定义图标</Chinesesimp>
             </Key>
             <Key ID="STR_diwako_dui_linecompass_customIconLineCompass_desc">
                 <English>Overrides the unit's icon used in the linecompass feature. Must be an array of size 2. First entry must be the file path. File must exist! Second entry must be the numeric size above 0</English>
+                <Chinese>覆蓋線性羅盤功能中使用的單位圖示。必須是一個大小為 2 的陣列。第一項必須是檔案路徑，檔案必須存在！第二項必須是大於 0 的數字大小</Chinese>
+                <Chinesesimp>覆盖线性罗盘功能中使用的单位图标。必须是一个大小为 2 的数组。第一项必须是文件路径，文件必须存在！第二项必须是大于 0 的数字大小</Chinesesimp>
             </Key>
         </Container>
     </Package>

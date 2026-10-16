@@ -12,8 +12,8 @@
             <German>Als Buddy markieren [HUD]</German>
             <Korean>친구로 등록 [HUD]</Korean>
             <Japanese>バディに登録 [HUD]</Japanese>
-            <Chinese>搭檔登錄 [HUD]</Chinese>
-            <Chinesesimp>搭档登录 [HUD]</Chinesesimp>
+            <Chinese>指定搭檔 [HUD]</Chinese>
+            <Chinesesimp>指定搭档 [HUD]</Chinesesimp>
             <Turkish>Eş Seç [HUD]</Turkish>
         </Key>
         <Key ID="STR_dui_buddy_action_remove">
@@ -27,8 +27,8 @@
             <German>Buddymarkierung aufheben [HUD]</German>
             <Korean>친구 해제 [HUD]</Korean>
             <Japanese>バディを解除 [HUD]</Japanese>
-            <Chinese>搭檔解除 [HUD]</Chinese>
-            <Chinesesimp>搭档解除 [HUD]</Chinesesimp>
+            <Chinese>取消指定搭檔 [HUD]</Chinese>
+            <Chinesesimp>取消指定搭档 [HUD]</Chinesesimp>
             <Turkish>Eş Kaldır [HUD]</Turkish>
         </Key>
     </Package>

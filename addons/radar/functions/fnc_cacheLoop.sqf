@@ -93,13 +93,14 @@ if (_specialTrack isEqualType [] && {_specialTrack isNotEqualTo []}) then {
     GVAR(group) = _toTrack + GVAR(group) - [objNull];
 };
 
-// start compass if enabeld but not running yet
+// start compass if enabled but not running yet
 if (diwako_dui_enable_compass) then {
     private _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
     if (GVAR(compass_pfHandle) <= -1 || {isNull _compassDisplay}) then {
         [GVAR(compass_pfHandle)] call CBA_fnc_removePerFrameHandler;
         "diwako_dui_compass" cutRsc ["diwako_dui_RscCompass","PLAIN", 0, false];
         [] call FUNC(compass);
+        _compassDisplay = uiNamespace getVariable ["diwako_dui_RscCompass", displayNull];
     };
 
     private _compassCtrl = _compassDisplay displayCtrl IDC_COMPASS;
